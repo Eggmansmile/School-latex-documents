@@ -1,0 +1,458 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[dutch]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+\geometry{margin=2.5cm}
+\title{Oefeningen Wiskunde voor Systemen}
+\author{KU Leuven - ESAT}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Hoofdstuk 1: Signalen en Systemen - Eerste Kennismaking}
+
+\subsection{Oefening 1.1: Lineaire Systemen}
+Gegeven een systeem met operator $\mathcal{T}$ gedefinieerd als $\mathcal{T}\{x(t)\} = 3x(t) + 2$.
+
+\textbf{Vraag:} Onderzoek of dit systeem lineair is.
+
+\subsection{Oefening 1.2: RC-Circuit}
+Een RC-circuit heeft $R = 1000$ $\Omega$ en $C = 10$ $\mu$F. De ingangsspanning is een stapfunctie $v_{\text{in}}(t) = 5u(t)$ V. 
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Schrijf de differentiaalvergelijking op voor de uitgangsspanning $v_{\text{uit}}(t)$.
+\item Bereken de tijdsconstante $\tau$ van het circuit.
+\item Bepaal de uitgangsspanning na $10$ ms als $v_{\text{uit}}(0) = 0$ V.
+\end{enumerate}
+
+\subsection{Oefening 1.3: Radioactief Verval}
+Een radio-isotoop heeft een halveringstijd van $6$ uur. Om 08:00 uur wordt 20 mg geproduceerd.
+
+\textbf{Vraag:} Hoeveel milligram blijft over om 14:00 uur?
+
+\newpage
+\section{Hoofdstuk 2: Basissignalen en Bewerkingen}
+
+\subsection{Oefening 2.1: Exponentiële Functies}
+Gegeven de signalen $x_1(t) = e^{0.2t}$ en $x_2(t) = e^{-0.5t}$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal welk signaal exponentiële groei en welk exponentieel verval vertoont.
+\item Bereken de waarde van elk signaal op $t = 5$ s.
+\end{enumerate}
+
+\subsection{Oefening 2.2: Sinus en Cosinus}
+Een sinusgolf is gegeven door $x(t) = 3\sin(4\pi t + \frac{\pi}{6})$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal de amplitude, hoekfrequentie $\omega$, frequentie $f$, en fasehoek.
+\item Schrijf dit signaal als een cosinusfunctie.
+\end{enumerate}
+
+\subsection{Oefening 2.3: Complexe Exponentiële Functie}
+Gegeven $z(t) = e^{j2\pi t}$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Schrijf dit signaal in termen van sinus en cosinus gebruikmakend van de formule van Euler.
+\item Bepaal de waarde op $t = 0.25$ s.
+\end{enumerate}
+
+\subsection{Oefening 2.4: Convolutie}
+Bereken de convolutie van twee pulssignalen:
+\[
+f(t) = u(t) - u(t-1), \quad g(t) = u(t) - u(t-1)
+\]
+
+\textbf{Vraag:} Bepaal $(f * g)(t)$ en schets het resultaat.
+
+\newpage
+\section{Hoofdstuk 3: Laplacetransformatie}
+
+\subsection{Oefening 3.1: Eenvoudige Laplacetransformaties}
+Bepaal de Laplacetransformatie van de volgende functies:
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item $f(t) = 5u(t)$
+\item $f(t) = e^{-3t}u(t)$
+\item $f(t) = t \cdot u(t)$
+\item $f(t) = \cos(5t) \cdot u(t)$
+\end{enumerate}
+
+\subsection{Oefening 3.2: Inverse Laplacetransformatie}
+Bepaal de inverse Laplacetransformatie van:
+\[
+F(s) = \frac{3}{s+2} + \frac{5}{s^2 + 4}
+\]
+
+\textbf{Vraag:} Vind $f(t)$.
+
+\subsection{Oefening 3.3: Eerste-Orde Systeem}
+Los de volgende differentiaalvergelijking op met Laplacetransformatie:
+\[
+\frac{dy}{dt} + 4y = 8u(t), \quad y(0) = 2
+\]
+
+\textbf{Vraag:} Bepaal $y(t)$.
+
+\subsection{Oefening 3.4: Tweede-Orde Systeem}
+Een massa-veer-dempersysteem wordt beschreven door:
+\[
+\frac{d^2y}{dt^2} + 4\frac{dy}{dt} + 3y = 0, \quad y(0) = 1, \quad y'(0) = 0
+\]
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal de karakteristieke vergelijking.
+\item Vind de wortels van de karakteristieke vergelijking.
+\item Los de differentiaalvergelijking op voor $y(t)$.
+\end{enumerate}
+
+\newpage
+\section{Hoofdstuk 5: Fourierreeksen}
+
+\subsection{Oefening 5.1: Blokgolf}
+Een periodieke blokgolf met periode $T = 2$ s is gedefinieerd als:
+\[
+f(t) = \begin{cases}
+1, & 0 < t < 1 \\
+-1, & 1 < t < 2
+\end{cases}
+\]
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal of de functie even, oneven, of geen van beide is.
+\item Bereken de Fouriercoëfficiënten $a_0$, $a_n$, en $b_n$.
+\item Schrijf de Fourierreeks tot de 3e harmonische.
+\end{enumerate}
+
+\subsection{Oefening 5.2: Zaagtandgolf}
+Een zaagtandgolf met periode $T = 1$ s is gegeven door $f(t) = 2t$ voor $0 < t < 1$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bereken $a_0$.
+\item Bepaal $b_1$ en $b_2$.
+\item Schrijf de benaderende Fouriersom met 2 termen.
+\end{enumerate}
+
+\newpage
+\section{Hoofdstuk 6: LTC-Systemen}
+
+\subsection{Oefening 6.1: Impulsrespons}
+Een eerste-orde systeem heeft impulsrespons $h(t) = 2e^{-5t}u(t)$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bereken de systeemrespons op een stapingang $f(t) = u(t)$ door convolutie.
+\item Verifieer je antwoord met de Laplacetransformatie.
+\end{enumerate}
+
+\subsection{Oefening 6.2: Massa-Veer-Demper}
+Een massa-veer-dempersysteem heeft $m = 2$ kg, $k = 8$ N/m, en $c = 4$ Ns/m.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Schrijf de differentiaalvergelijking.
+\item Bepaal de natuurlijke eigenfrequentie $\omega_0$.
+\item Is het systeem ondergedempt, kritisch gedempt, of overgedempt?
+\end{enumerate}
+
+\newpage
+\section{Oplossingen}
+
+\subsection{Oplossingen Hoofdstuk 1}
+
+\subsubsection*{Oplossing 1.1}
+Het systeem is \textbf{niet lineair}.
+
+\textbf{Bewijs:}
+\begin{itemize}
+\item Test eigenschap 1 (schaling): $\mathcal{T}\{ax(t)\} = 3ax(t) + 2 \neq a\mathcal{T}\{x(t)\} = a(3x(t) + 2)$
+\item Omdat de schalingsvoorwaarde niet voldaan is, is het systeem niet lineair.
+\end{itemize}
+
+\subsubsection*{Oplossing 1.2}
+\begin{enumerate}[label=(\alph*)]
+\item De differentiaalvergelijking: $RC\frac{dv_{\text{uit}}}{dt} + v_{\text{uit}} = v_{\text{in}}$
+\[
+(1000)(10 \times 10^{-6})\frac{dv_{\text{uit}}}{dt} + v_{\text{uit}} = 5u(t)
+\]
+\[
+0.01\frac{dv_{\text{uit}}}{dt} + v_{\text{uit}} = 5u(t)
+\]
+
+\item Tijdsconstante: $\tau = RC = (1000)(10 \times 10^{-6}) = 0.01$ s $= 10$ ms
+
+\item Voor een staprespons met $v_{\text{uit}}(0) = 0$:
+\[
+v_{\text{uit}}(t) = 5(1 - e^{-t/\tau})u(t) = 5(1 - e^{-100t})u(t)
+\]
+Op $t = 10$ ms $= 0.01$ s:
+\[
+v_{\text{uit}}(0.01) = 5(1 - e^{-1}) = 5(1 - 0.368) = 5(0.632) = 3.16 \text{ V}
+\]
+\end{enumerate}
+
+\subsubsection*{Oplossing 1.3}
+Model radioactief verval: $N(t) = N_0 e^{-kt}$
+
+Halveringstijd $t_{1/2} = 6$ uur: $\frac{1}{2} = e^{-6k} \Rightarrow k = \frac{\ln(2)}{6} = 0.1155$ h$^{-1}$
+
+Van 08:00 tot 14:00 is $\Delta t = 6$ uur:
+\[
+N(6) = 20 e^{-0.1155 \times 6} = 20 e^{-0.693} = 20 \times 0.5 = 10 \text{ mg}
+\]
+
+\subsection{Oplossingen Hoofdstuk 2}
+
+\subsubsection*{Oplossing 2.1}
+\begin{enumerate}[label=(\alph*)]
+\item $x_1(t) = e^{0.2t}$: exponentiële \textbf{groei} (positieve exponent)\\
+$x_2(t) = e^{-0.5t}$: exponentieel \textbf{verval} (negatieve exponent)
+
+\item Op $t = 5$ s:
+\begin{align*}
+x_1(5) &= e^{0.2 \times 5} = e^{1} = 2.718\\
+x_2(5) &= e^{-0.5 \times 5} = e^{-2.5} = 0.082
+\end{align*}
+\end{enumerate}
+
+\subsubsection*{Oplossing 2.2}
+\begin{enumerate}[label=(\alph*)]
+\item Van $x(t) = 3\sin(4\pi t + \frac{\pi}{6})$:
+\begin{itemize}
+\item Amplitude: $A = 3$
+\item Hoekfrequentie: $\omega = 4\pi$ rad/s
+\item Frequentie: $f = \frac{\omega}{2\pi} = \frac{4\pi}{2\pi} = 2$ Hz
+\item Fasehoek: $\phi = \frac{\pi}{6}$ rad $= 30°$
+\end{itemize}
+
+\item Als cosinusfunctie: $\sin(\theta) = \cos(\theta - \frac{\pi}{2})$
+\[
+x(t) = 3\cos\left(4\pi t + \frac{\pi}{6} - \frac{\pi}{2}\right) = 3\cos\left(4\pi t - \frac{\pi}{3}\right)
+\]
+\end{enumerate}
+
+\subsubsection*{Oplossing 2.3}
+\begin{enumerate}[label=(\alph*)]
+\item Formule van Euler: $e^{j\theta} = \cos(\theta) + j\sin(\theta)$
+\[
+z(t) = e^{j2\pi t} = \cos(2\pi t) + j\sin(2\pi t)
+\]
+
+\item Op $t = 0.25$ s:
+\[
+z(0.25) = \cos(2\pi \times 0.25) + j\sin(2\pi \times 0.25) = \cos(\frac{\pi}{2}) + j\sin(\frac{\pi}{2}) = 0 + j \cdot 1 = j
+\]
+\end{enumerate}
+
+\subsubsection*{Oplossing 2.4}
+Voor twee identieke pulsen van breedte 1:
+\[
+(f * g)(t) = \begin{cases}
+0, & t < 0\\
+t, & 0 \le t < 1\\
+2-t, & 1 \le t < 2\\
+0, & t \ge 2
+\end{cases}
+\]
+Dit is een driehoeksfunctie met maximum 1 op $t=1$ en breedte 2.
+
+\subsection{Oplossingen Hoofdstuk 3}
+
+\subsubsection*{Oplossing 3.1}
+\begin{enumerate}[label=(\alph*)]
+\item $\mathcal{L}\{5u(t)\} = \frac{5}{s}$, ROC: $\sigma > 0$
+
+\item $\mathcal{L}\{e^{-3t}u(t)\} = \frac{1}{s+3}$, ROC: $\sigma > -3$
+
+\item $\mathcal{L}\{t \cdot u(t)\} = \frac{1}{s^2}$, ROC: $\sigma > 0$
+
+\item $\mathcal{L}\{\cos(5t) \cdot u(t)\} = \frac{s}{s^2 + 25}$, ROC: $\sigma > 0$
+\end{enumerate}
+
+\subsubsection*{Oplossing 3.2}
+\[
+F(s) = \frac{3}{s+2} + \frac{5}{s^2 + 4} = \frac{3}{s+2} + \frac{5}{s^2 + 2^2}
+\]
+
+Inverse Laplacetransformatie:
+\[
+f(t) = 3e^{-2t}u(t) + \frac{5}{2}\sin(2t)u(t)
+\]
+
+\subsubsection*{Oplossing 3.3}
+Laplacetransformatie van beide zijden:
+\[
+sY(s) - y(0) + 4Y(s) = \frac{8}{s}
+\]
+\[
+sY(s) - 2 + 4Y(s) = \frac{8}{s}
+\]
+\[
+Y(s)(s+4) = \frac{8}{s} + 2
+\]
+\[
+Y(s) = \frac{8}{s(s+4)} + \frac{2}{s+4}
+\]
+
+Partieelbreuken voor eerste term:
+\[
+\frac{8}{s(s+4)} = \frac{A}{s} + \frac{B}{s+4} = \frac{2}{s} - \frac{2}{s+4}
+\]
+
+Dus:
+\[
+Y(s) = \frac{2}{s} - \frac{2}{s+4} + \frac{2}{s+4} = \frac{2}{s}
+\]
+
+Inverse Laplacetransformatie:
+\[
+y(t) = 2u(t)
+\]
+
+\textbf{Verificatie:} Steady-state waarde: $y_{\infty} = \frac{8}{4} = 2$ ✓
+
+\subsubsection*{Oplossing 3.4}
+\begin{enumerate}[label=(\alph*)]
+\item Karakteristieke vergelijking: $\lambda^2 + 4\lambda + 3 = 0$
+
+\item Wortels: 
+\[
+\lambda = \frac{-4 \pm \sqrt{16-12}}{2} = \frac{-4 \pm 2}{2}
+\]
+$\lambda_1 = -1$, $\lambda_2 = -3$
+
+\item Algemene oplossing:
+\[
+y(t) = c_1 e^{-t} + c_2 e^{-3t}
+\]
+
+Met beginvoorwaarden $y(0) = 1$ en $y'(0) = 0$:
+\[
+c_1 + c_2 = 1
+\]
+\[
+-c_1 - 3c_2 = 0 \Rightarrow c_1 = -3c_2
+\]
+
+Oplossen: $c_2 = -\frac{1}{2}$, $c_1 = \frac{3}{2}$
+
+\[
+y(t) = \frac{3}{2}e^{-t} - \frac{1}{2}e^{-3t}
+\]
+\end{enumerate}
+
+\subsection{Oplossingen Hoofdstuk 5}
+
+\subsubsection*{Oplossing 5.1}
+\begin{enumerate}[label=(\alph*)]
+\item De functie is \textbf{oneven}: $f(-t) = -f(t)$
+
+\item Fouriercoëfficiënten ($\omega_0 = \frac{2\pi}{T} = \pi$ rad/s):
+\[
+a_0 = \frac{1}{T}\int_0^T f(t)dt = \frac{1}{2}\left[\int_0^1 1\,dt + \int_1^2 (-1)dt\right] = \frac{1}{2}[1 - 1] = 0
+\]
+
+Voor oneven functie: $a_n = 0$ voor alle $n$
+
+\[
+b_n = \frac{2}{T}\int_0^T f(t)\sin(n\omega_0 t)dt = \int_0^1 \sin(n\pi t)dt - \int_1^2 \sin(n\pi t)dt
+\]
+
+\[
+b_n = \begin{cases}
+\frac{4}{n\pi}, & n \text{ oneven}\\
+0, & n \text{ even}
+\end{cases}
+\]
+
+\item Fourierreeks tot 3e harmonische:
+\[
+f(t) \approx \frac{4}{\pi}\sin(\pi t) + \frac{4}{3\pi}\sin(3\pi t)
+\]
+\end{enumerate}
+
+\subsubsection*{Oplossing 5.2}
+\begin{enumerate}[label=(\alph*)]
+\item $a_0 = \frac{1}{1}\int_0^1 2t\,dt = 2\left[\frac{t^2}{2}\right]_0^1 = 1$
+
+\item Voor $b_n$ (oneven functie, dus $a_n = 0$):
+\[
+b_n = 2\int_0^1 2t\sin(2\pi n t)dt
+\]
+Met partiële integratie:
+\[
+b_n = -\frac{2}{n\pi}
+\]
+
+Dus: $b_1 = -\frac{2}{\pi}$, $b_2 = -\frac{1}{\pi}$
+
+\item Benaderende Fouriersom:
+\[
+f(t) \approx 1 - \frac{2}{\pi}\sin(2\pi t) - \frac{1}{\pi}\sin(4\pi t)
+\]
+\end{enumerate}
+
+\subsection{Oplossingen Hoofdstuk 6}
+
+\subsubsection*{Oplossing 6.1}
+\begin{enumerate}[label=(\alph*)]
+\item Convolutie:
+\[
+y(t) = h(t) * u(t) = \int_0^t 2e^{-5\tau}d\tau = 2\left[-\frac{1}{5}e^{-5\tau}\right]_0^t = \frac{2}{5}(1 - e^{-5t})u(t)
+\]
+
+\item Via Laplacetransformatie:
+\[
+H(s) = \frac{2}{s+5}, \quad F(s) = \frac{1}{s}
+\]
+\[
+Y(s) = H(s)F(s) = \frac{2}{s(s+5)}
+\]
+Partieelbreuken: $\frac{2}{s(s+5)} = \frac{2/5}{s} - \frac{2/5}{s+5}$
+
+\[
+y(t) = \frac{2}{5}(1 - e^{-5t})u(t)
+\]
+Beide methoden geven hetzelfde resultaat ✓
+\end{enumerate}
+
+\subsubsection*{Oplossing 6.2}
+\begin{enumerate}[label=(\alph*)]
+\item Differentiaalvergelijking:
+\[
+m\frac{d^2y}{dt^2} + c\frac{dy}{dt} + ky = f(t)
+\]
+\[
+2\frac{d^2y}{dt^2} + 4\frac{dy}{dt} + 8y = f(t)
+\]
+
+\item Natuurlijke eigenfrequentie:
+\[
+\omega_0 = \sqrt{\frac{k}{m}} = \sqrt{\frac{8}{2}} = 2 \text{ rad/s}
+\]
+
+\item Karakteristieke vergelijking: $2\lambda^2 + 4\lambda + 8 = 0 \Rightarrow \lambda^2 + 2\lambda + 4 = 0$
+\[
+\lambda = \frac{-2 \pm \sqrt{4-16}}{2} = -1 \pm j\sqrt{3}
+\]
+Complexe wortels → Het systeem is \textbf{ondergedempt}.
+\end{enumerate}
+
+\end{document}
