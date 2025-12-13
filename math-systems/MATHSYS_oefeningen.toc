@@ -31,58 +31,71 @@
 \contentsline {subsection}{\numberline {4.8}Oefening 3.8: Convolutie via Laplace}{13}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}Oefening 3.9: Samenvattingsoefening Laplace}{13}{subsection.4.9}%
 \contentsline {subsection}{\numberline {4.10}Oefening 3.10: Staprespons van Eerste-Orde Systeem}{13}{subsection.4.10}%
-\contentsline {section}{\numberline {5}Hoofdstuk 4: Fouriertransformatie}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Oefening 4.1: Fouriertransformatie van Rechthoekpuls}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Oefening 4.2: Verschuivingsstelling}{14}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Oefening 4.3: Modulation Property}{14}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Oefening 4.4: Parseval's Stelling}{15}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Oefening 4.5: Exponentieel Signaal}{15}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Oefening 4.6: Dirac Delta}{15}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Oefening 4.7: Verschuiving in de Tijd (FTC)}{15}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Oefening 4.8: FTC van delta's}{15}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Hoofdstuk 5: Fourierreeksen}{16}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Oefening 5.1: Blokgolf}{16}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Oefening 5.2: Zaagtandgolf}{16}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Oefening 5.3: Driehoekgolf}{16}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Oefening 5.4: Parseval's Stelling voor Fourierreeksen}{17}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Oefening 5.5: Complexe Fourierreeks en Link met FTC}{17}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Oefening 5.6: Fourierreeks van een eenvoudige som}{17}{subsection.6.6}%
-\contentsline {section}{\numberline {7}Hoofdstuk 6: LTC-Systemen}{18}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Oefening 6.1: Impulsrespons}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Oefening 6.2: Massa-Veer-Demper}{18}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Oefening 6.3: Frequentierespons}{18}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Oefening 6.4: Cascade Systemen}{18}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Oefening 6.5: Stabiliteit en Polen}{19}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Oefening 6.6: Overdracht, Impulsrespons en Nultoestandsrespons}{19}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Oefening 6.7: Impuls- en staprespons (basis)}{19}{subsection.7.7}%
-\contentsline {section}{\numberline {8}Hoofdstuk 7: Eigenwaarden en Eigenvectoren}{20}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Oefening 7.1: Eigenwaarden Berekenen}{20}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Oefening 7.2: Eigenwaarden van Tweede-Orde Systeem}{20}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Oefening 7.3: Diagonalisatie}{20}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Oefening 7.4: Gerschgorin-Cirkelstelling}{20}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Oefening 7.5: Eigenvectoren en Orthogonaliteit}{21}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Oefening 7.6: Matrix Exponenti\"ele}{21}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Oefening 7.7: Niet-diagonaliseerbaar en Matrixexponentiaal}{21}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Oefening 7.8: Eigenwaarden van een diagonaalmatrix (basis)}{21}{subsection.8.8}%
-\contentsline {section}{\numberline {9}Hoofdstuk 8: Examengerichte Oefeningen}{22}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Oefening 8.1: Signaalspektrum en Symmetrie}{22}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Oefening 8.2: Fouriertransformatie met Verschuiving en Modulatie}{22}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Oefening 8.3: Impulsrespons, Causaliteit en Convolutie}{22}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Oefening 8.4: Complexe Fourierreeks van Periodiek Signaal}{23}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Oefening 8.5: Laplacetransformatie met Verschuiving}{23}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Oefening 8.6: Differentiaalvergelijking via Laplace (met Beginvoorwaarden)}{23}{subsection.9.6}%
-\contentsline {subsection}{\numberline {9.7}Oefening 8.7: LTI-Systeem: Stabiliteit, Impuls- en Staprespons}{24}{subsection.9.7}%
-\contentsline {subsection}{\numberline {9.8}Oefening 8.8: Convolutie: Tijdsdomein versus Frequentiedomein}{24}{subsection.9.8}%
-\contentsline {subsection}{\numberline {9.9}Oefening 8.9: Fouriertransformatie en Energieanalyse}{24}{subsection.9.9}%
-\contentsline {subsection}{\numberline {9.10}Oefening 8.10: Reële Fourierreeks: Symmetrie en Spectrum}{24}{subsection.9.10}%
-\contentsline {subsection}{\numberline {9.11}Oefening 8.11: Staatruimtevergelijking en Stabiliteit}{25}{subsection.9.11}%
-\contentsline {section}{\numberline {10}Oplossingen}{26}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Oplossingen Hoofdstuk 1}{26}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Oplossingen Hoofdstuk 2}{28}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Oplossingen Hoofdstuk 3: Laplacetransformatie}{31}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Oplossingen Hoofdstuk 4: Fouriertransformatie}{43}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Oplossingen Hoofdstuk 5}{48}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Oplossingen Hoofdstuk 6}{52}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}Oplossingen Hoofdstuk 7}{55}{subsection.10.7}%
-\contentsline {subsection}{\numberline {10.8}Oplossingen Hoofdstuk 8}{60}{subsection.10.8}%
-\contentsline {subsection}{\numberline {10.9}Oplossingen Hoofdstuk 8}{72}{subsection.10.9}%
+\contentsline {subsection}{\numberline {4.11}Oefening 3.11: Inverse Laplacetransformatie met Tijdsverschuiving}{14}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Oefening 3.12: Differentiaalvergelijking met Beginvoorwaarden}{14}{subsection.4.12}%
+\contentsline {section}{\numberline {5}Hoofdstuk 4: Fouriertransformatie}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Oefening 4.1: Fouriertransformatie van Rechthoekpuls}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Oefening 4.2: Verschuivingsstelling}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Oefening 4.3: Modulation Property}{15}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Oefening 4.4: Parseval's Stelling}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Oefening 4.5: Exponentieel Signaal}{16}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Oefening 4.6: Dirac Delta}{16}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Oefening 4.7: Verschuiving in de Tijd (FTC)}{16}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Oefening 4.8: FTC van delta's}{16}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Oefening 4.9: Spectrum van een Samengesteld Signaal}{17}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Oefening 4.10: Dualiteitseigenschap van FTC}{17}{subsection.5.10}%
+\contentsline {section}{\numberline {6}Hoofdstuk 5: Fourierreeksen}{18}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Oefening 5.1: Blokgolf}{18}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Oefening 5.2: Zaagtandgolf}{18}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Oefening 5.3: Driehoekgolf}{18}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Oefening 5.4: Parseval's Stelling voor Fourierreeksen}{19}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Oefening 5.5: Complexe Fourierreeks en Link met FTC}{19}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Oefening 5.6: Fourierreeks van een eenvoudige som}{19}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Oefening 5.7: De Blokgolf (Symmetrie) — Starter Level}{19}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Oefening 5.8: Fourierreeks door Inspectie — Starter Level}{20}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}Oefening 5.9: Parseval (Energie) — Starter Level}{20}{subsection.6.9}%
+\contentsline {section}{\numberline {7}Hoofdstuk 6: LTC-Systemen}{21}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Oefening 6.1: Impulsrespons}{21}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Oefening 6.2: Massa-Veer-Demper}{21}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Oefening 6.3: Frequentierespons}{21}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Oefening 6.4: Cascade Systemen}{21}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Oefening 6.5: Stabiliteit en Polen}{22}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Oefening 6.6: Overdracht, Impulsrespons en Nultoestandsrespons}{22}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Oefening 6.7: Impuls- en staprespons (basis)}{22}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Oefening 6.8: Van DV naar $H(s)$ — Starter Level}{22}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Oefening 6.9: Impulsrespons en Stabiliteit — Starter Level}{23}{subsection.7.9}%
+\contentsline {subsection}{\numberline {7.10}Oefening 6.10: Gedrag bij frequenties — Starter Level}{23}{subsection.7.10}%
+\contentsline {section}{\numberline {8}Hoofdstuk 7: Eigenwaarden en Eigenvectoren}{24}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Oefening 7.1: Eigenwaarden Berekenen}{24}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Oefening 7.2: Eigenwaarden van Tweede-Orde Systeem}{24}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Oefening 7.3: Diagonalisatie}{24}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Oefening 7.4: Gerschgorin-Cirkelstelling}{24}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Oefening 7.5: Eigenvectoren en Orthogonaliteit}{25}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Oefening 7.6: Matrix Exponenti\"ele}{25}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Oefening 7.7: Niet-diagonaliseerbaar en Matrixexponentiaal}{25}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Oefening 7.8: Eigenwaarden van een diagonaalmatrix (basis)}{25}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Oefening 7.9: Karakteristieke Vergelijking — Starter Level}{26}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Oefening 7.10: Eigenvectoren vinden — Starter Level}{26}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Oefening 7.11: Diagonaalmatrix en machten — Starter Level}{26}{subsection.8.11}%
+\contentsline {section}{\numberline {9}Hoofdstuk 8: Examengerichte Oefeningen}{27}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Oefening 8.1: Signaalspektrum en Symmetrie}{27}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Oefening 8.2: Fouriertransformatie met Verschuiving en Modulatie}{27}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Oefening 8.3: Impulsrespons, Causaliteit en Convolutie}{27}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Oefening 8.4: Complexe Fourierreeks van Periodiek Signaal}{28}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Oefening 8.5: Laplacetransformatie met Verschuiving}{28}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Oefening 8.6: Differentiaalvergelijking via Laplace (met Beginvoorwaarden)}{28}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Oefening 8.7: LTI-Systeem: Stabiliteit, Impuls- en Staprespons}{29}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Oefening 8.8: Convolutie: Tijdsdomein versus Frequentiedomein}{29}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Oefening 8.9: Fouriertransformatie en Energieanalyse}{29}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Oefening 8.10: Reële Fourierreeks: Symmetrie en Spectrum}{29}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}Oefening 8.11: Staatruimtevergelijking en Stabiliteit}{30}{subsection.9.11}%
+\contentsline {section}{\numberline {10}Oplossingen}{31}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Oplossingen Hoofdstuk 1: Signalen en Systemen - Eerste Kennismaking}{31}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Oplossingen Hoofdstuk 2: Basissignalen en Bewerkingen}{33}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Oplossingen Hoofdstuk 3: Laplacetransformatie}{36}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Oplossingen Hoofdstuk 4: Fouriertransformatie}{49}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Oplossingen Hoofdstuk 5: Fourierreeksen}{54}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Oplossingen Hoofdstuk 6: LTC-Systemen}{59}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Oplossingen Hoofdstuk 7: Eigenwaarden en Eigenvectoren}{63}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Oplossingen Hoofdstuk 8: Examengerichte Oefeningen}{68}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}Oplossingen Hoofdstuk 8}{80}{subsection.10.9}%
