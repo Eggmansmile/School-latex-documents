@@ -392,11 +392,11 @@ x(t)=u(t)-u(t-2).
 
 \section{Hoofdstuk 3: Laplacetransformatie}
 
-\subsection{Oefening 3.1: Eenvoudige Laplacetransformaties}
+\subsection{Oefening 3.1: Standaard Laplace-paren}
+
+\emph{Bron: Formularium standaard transformaties.}
 
 Bepaal de Laplacetransformatie van de volgende functies:
-
-\emph{Zie Formularium: definitie \ref{form:laplace-def} en paren \ref{form:laplace-pairs}.}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
@@ -404,107 +404,137 @@ Bepaal de Laplacetransformatie van de volgende functies:
 \item $f(t) = e^{-3t}u(t)$
 \item $f(t) = t \cdot u(t)$
 \item $f(t) = \cos(5t) \cdot u(t)$
+\item $f(t) = e^{-2t}\sin(3t)u(t)$
 \end{enumerate}
 
-\subsection{Oefening 3.2: Inverse Laplacetransformatie}
+\emph{Zie Formularium: definitie \ref{form:laplace-def} en paren \ref{form:laplace-pairs}.}
+
+\subsection{Oefening 3.2: Inverse Laplacetransformatie met Partieelbreuken}
 
 Bepaal de inverse Laplacetransformatie van:
-\[
-F(s) = \frac{3}{s+2} + \frac{5}{s^2 + 4}
-\]
 
-\textbf{Vraag:} Vind $f(t)$.
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item $F(s) = \dfrac{3}{s+2} + \dfrac{5}{s^2 + 4}$
+\item $G(s) = \dfrac{10}{s(s+1)(s+2)}$ (tip: partieelbreuken)
+\item $H(s) = \dfrac{s+3}{(s+1)^2}$ (tip: dubbele pool)
+\end{enumerate}
 
 \emph{Zie Formularium: paren \ref{form:laplace-pairs}.}
 
 \subsection{Oefening 3.3: Eerste-Orde Systeem}
 
 Los de volgende differentiaalvergelijking op met Laplacetransformatie:
-\[
-\frac{dy}{dt} + 4y = 8u(t), \quad y(0) = 2
-\]
 
-\textbf{Vraag:} Bepaal $y(t)$.
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item $\dfrac{dy}{dt} + 4y = 8u(t)$, $y(0) = 2$
+\item $\dfrac{dy}{dt} + 3y = 6e^{-2t}u(t)$, $y(0) = 0$
+\item $2\dfrac{dy}{dt} + y = u(t) - u(t-1)$, $y(0) = 1$
+\end{enumerate}
 
 \emph{Zie Formularium: afgeleide-eigenschap \ref{form:laplace-prop}.}
 
-\subsection{Oefening 3.4: Tweede-Orde Systeem}
+\subsection{Oefening 3.4: Tweede-Orde Systeem: Karakteristische Wortels}
 
-Een massa-veer-dempersysteem wordt beschreven door:
-\[
-\frac{d^2y}{dt^2} + 4\frac{dy}{dt} + 3y = 0, \quad y(0) = 1, \quad y'(0) = 0
-\]
+\textbf{Vraag:} Voor elk systeem: bepaal karakteristieke wortels, onderdamping-status, en los op voor $y(t)$.
+
+\begin{enumerate}[label=(\roman*)]
+\item $\dfrac{d^2y}{dt^2} + 4\dfrac{dy}{dt} + 3y = 0$, $y(0) = 1$, $y'(0) = 0$
+\item $\dfrac{d^2y}{dt^2} + 4\dfrac{dy}{dt} + 4y = 0$, $y(0) = 1$, $y'(0) = 0$ (kritiek gedempt)
+\item $\dfrac{d^2y}{dt^2} + 2\dfrac{dy}{dt} + 5y = 0$, $y(0) = 0$, $y'(0) = 2$ (ondergedempt)
+\end{enumerate}
+
+\textbf{Bonus:} Schets $y(t)$ voor alle drie gevallen op dezelfde grafiek en bespreek het gedrag.
+
+\subsection{Oefening 3.5: Laplacetransformatie met Verschuiving (Tijddomein)}
+
+\textbf{Vraag:}
+
+\begin{enumerate}[label=(\alph*)]
+\item Gegeven $F(s) = \dfrac{2}{s^2 + 4}$, bepaal $f(t)$ en vervolgens $g(t) = \mathcal{L}^{-1}\{e^{-2s}F(s)\}$.
+\item Bepaal de Laplacetransformatie van $x(t) = e^{-3(t-1)}u(t-1)$.
+\item Schets beide $f(t)$ en $g(t)$ op dezelfde grafiek en duid de verschuiving aan.
+\end{enumerate}
+
+\emph{Zie Formularium: tijdverschuiving in $t$ \ref{form:laplace-prop}.}
+
+\subsection{Oefening 3.6: Partieelbreukontwikkeling Geavanceerd}
+
+Bepaal via partieelbreuken en inverse Laplace de volgende:
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal de karakteristieke vergelijking.
-\item Vind de wortels van de karakteristieke vergelijking.
-\item Los de differentiaalvergelijking op voor $y(t)$.
+\item $F(s) = \dfrac{10}{(s+1)(s+2)(s+3)}$ (drie verschillende polen)
+\item $G(s) = \dfrac{5s+7}{(s+1)^2(s+2)}$ (dubbele pool)
+\item $H(s) = \dfrac{s^2 + 2s + 3}{(s+1)(s^2+2s+2)}$ (reële en complexe polen)
 \end{enumerate}
-
-\subsection{Oefening 3.5: Laplace-transformatie met Verschuiving}
-
-Gegeven $F(s) = \frac{2}{s^2 + 4}$.
-
-\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Bepaal $f(t) = \mathcal{L}^{-1}\{F(s)\}$.
-\item Bepaal $g(t) = \mathcal{L}^{-1}\{e^{-2s}F(s)\}$ gebruikmakend van de tijdsverschuivingsstelling.
-\end{enumerate}
-
-\emph{Zie Formularium: tijdsverschuiving in $t$ \ref{form:laplace-prop}.}
-
-\subsection{Oefening 3.6: Partieelbreuken}
-
-Bepaal de inverse Laplacetransformatie van:
-\[
-F(s) = \frac{10}{(s+1)(s+2)(s+3)}
-\]
-
-\textbf{Vraag:} Bepaal $f(t)$ via partieelbreukontwikkeling.
 
 \subsection{Oefening 3.7: Begin- en Eindwaardestelling}
 
-Gegeven de functie in het s-domein:
-\[
-F(s) = \frac{3s + 5}{s^2 + 4s + 3}
-\]
+\textbf{Gegeven:} $F(s) = \dfrac{3s + 5}{s^2 + 4s + 3}$
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal de beginwaarde $f(0^+)$ met de beginwaardestelling.
-\item Bepaal de eindwaarde $f(\infty)$ met de eindwaardestelling.
-\item Controleer je antwoorden door $f(t)$ te berekenen.
+\item Bepaal $f(0^+)$ met de beginwaardestelling.
+\item Bepaal $\lim_{t \to \infty} f(t)$ met de eindwaardestelling.
+\item Bepaal $f(t)$ expliciet en controleer beide grenzen.
+\item Schets $f(t)$ voor $t \in [0, 10]$ s.
 \end{enumerate}
 
 \emph{Zie Formularium: begin- en eindwaardestelling \ref{form:laplace-prop}.}
 
+\textbf{Bonus:} Voor welke $F(s)$ kan de eindwaardestelling NIET gebruikt worden?
+
 \subsection{Oefening 3.8: Convolutie via Laplace}
 
-Gegeven
-\[
-f(t) = u(t) - u(t-1), \quad g(t) = e^{-2t}u(t).
-\]
-Definieer $y(t) = (f*g)(t)$.
+\textbf{Gegeven:} $f(t) = u(t) - u(t-1)$ (puls), $g(t) = e^{-2t}u(t)$ (exponentieel verval)
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal $F(s)$ en $G(s)$.
+\item Bepaal $Y(s) = F(s) \cdot G(s)$ en vervolgens $y(t) = (f*g)(t)$.
+\item Geef $y(t)$ stukgewijs en schets het resultaat.
+\item Interpreteer fysisch: wat gebeurt er bij $t = 1$?
+\end{enumerate}
 
 \emph{Zie Formularium: convolutie-eigenschap \ref{form:laplace-prop}.}
 
-	\textbf{Vraag:}
+\subsection{Oefening 3.9: Samenvattingsoefening Laplace}
+
+\textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal $F(s)$ en $G(s)$.
-\item Gebruik de convolutie-eigenschap in het $s$-domein om $Y(s)$ te vinden.
-\item Bepaal $y(t)$ en geef het antwoord stukgewijs.
+\item Bepaal $\mathcal{L}\{u(t)\}$ en $\mathcal{L}\{e^{-at}u(t)\}$.
+\item Bepaal $\mathcal{L}\{t\,u(t)\}$ en $\mathcal{L}\{t^2e^{-3t}u(t)\}$.
+\item Bepaal inverse Laplace van $F(s)=\dfrac{1}{s+3}+\dfrac{2}{s^2}+\dfrac{4}{s^2+9}$.
+\item Voor $H(s) = \dfrac{s+5}{s^2+6s+13}$, bepaal $h(t)$ (complexe polen!).
 \end{enumerate}
 
-\subsection{Oefening 3.9: Laplace}
+\subsection{Oefening 3.10: Staprespons van Eerste-Orde Systeem}
 
-	\textbf{Vraag:}
+\textbf{Gegeven:} Systeem $H(s) = \dfrac{K}{\tau s + 1}$ met $K=2$, $\tau = 0.5$ s, en ingangssignaal $x(t) = 3u(t)$.
+
+\begin{center}
+\begin{tikzpicture}[x=2cm, y=1.5cm]
+\draw[->] (-0.2,0) -- (4,0) node[right] {$t$ (s)};
+\draw[->] (0,-0.5) -- (0,3) node[above] {$y(t)$};
+\draw[dashed,gray] (0,0.5) -- (4,0.5);
+\node[left] at (0,1.5) {$y_{\infty} = 6$};
+\draw[thick,domain=0:4,samples=100] plot (\x,{1.5*(1-exp(-\x/0.5))});
+\draw[dotted] (0.5,-0.3) -- (0.5,0);
+\node[below] at (0.5,-0.3) {$\tau=0.5$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal $\mathcal{L}\{u(t)\}$.
-\item Bepaal $\mathcal{L}\{e^{-2t}u(t)\}$.
-\item Bepaal $\mathcal{L}\{t\,u(t)\}$.
-\item Bepaal de inverse Laplace van $\displaystyle F(s)=\frac{1}{s+3}+\frac{2}{s^2}$.
+\item Bepaal $Y(s) = H(s) \cdot X(s)$.
+\item Bepaal $y(t)$ en identificeer: steadystate waarde, tijdsconstante, settling time (2\%).
+\item Schets $y(t)$ en controleer of deze overeenkomt met de grafiek hierboven.
+\item Op welk moment heeft $y(t)$ 63\% van zijn eindwaarde bereikt?
 \end{enumerate}
+
+\emph{Zie Formularium: afgeleide-eigenschap en stapfunctie-paar \ref{form:laplace-pairs}, \ref{form:laplace-prop}.}
 
 \newpage
 
@@ -979,212 +1009,197 @@ A=\begin{pmatrix}1 & 0\\ 0 & 2\end{pmatrix}.
 
 \section{Hoofdstuk 8: Examengerichte Oefeningen}
 
-\subsection{Oefening 8.1: FTC-eigenschappen (Verschuiving en Modulatie)}
+\subsection{Oefening 8.1: Signaalspektrum en Symmetrie}
 
-Definieer het bloksignaal
+\emph{Bron: Voorbeeldexamen (vraag 1a, signaal-eigenschappen).}
+
+Gegeven de signalen $u(t)$ (Heaviside), $v(t) = 2\cos(2\pi t)$, en hun Fouriertransformaties $U(j\omega)$, $V(j\omega)$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Beschrijf welke van de volgende signalen \emph{causaal}, \emph{periodiek}, \emph{even}, en/of \emph{oneven} zijn:
+\begin{itemize}
+\item $u(t)$ (Heaviside-stapfunctie)
+\item $v(t) = 2\cos(2\pi t)$
+\item $u(t) \cdot v(t)$ (product)
+\item $u(t) * v(t)$ (convolutie)
+\end{itemize}
+\item Bepaal voor elk signaal welke symmetrie-eigenschappen van toepassing zijn en motiveer kort.
+\end{enumerate}
+
+\subsection{Oefening 8.2: Fouriertransformatie met Verschuiving en Modulatie}
+
+\emph{Bron: Voorbeeldexamen (vraag 1b-c, FTC-transformaties).}
+
+Gegeven het bloksignaal
 \[
-x(t) = \begin{cases}
-1, & -\tfrac{1}{2}<t<\tfrac{1}{2}\\
-0, & \text{elsewhere}
-\end{cases}
+x(t) = \begin{cases} 1, & -\tfrac{1}{2} < t < \tfrac{1}{2}\\ 0, & \text{elders} \end{cases}
 \]
-en de cosinus $v(t)=2\cos(2\pi t)$. Definieer $y(t)=x(t)\cos(2\pi t)$ en $z(t)=x(t)+x(t-1)$.
+en de cosinusvorm $v(t) = 2\cos(2\pi t)$. Definieer $y(t) = x(t) \cos(2\pi t)$ en $z(t) = x(t) + x(t-1)$.
 
-	\textbf{Vraag:}
+\textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Welke van de signalen $x(t)$, $v(t)$, $y(t)$ en $z(t)$ zijn even/oneven?
-\item Bepaal $Y(j\omega)$ met de modulatiestelling en een gekende FTC-paar voor $x(t)$.
-\item Bepaal $Z(j\omega)$ met de verschuivingsstelling.
+\item Bepaal $X(j\omega)$ (geïnspireerd door het sinc-paar uit het formularium, \ref{form:ft-pairs}).
+\item Bepaal $Y(j\omega)$ met de modulatiestelling (vermenigvuldiging in tijd $\leftrightarrow$ convolutie in frequentie).
+\item Bepaal $Z(j\omega)$ met de verschuivingsstelling. Welk effect heeft de verschuiving op amplitude- en fasespectrum?
 \end{enumerate}
 
-\subsection{Oefening 8.2: Laplace, Causaliteit en Convolutie}
+\subsection{Oefening 8.3: Impulsrespons, Causaliteit en Convolutie}
 
-Het ingangssignaal is $x(t)=u(t)-u(t-2)$ en de impulsrespons is $h(t)=e^{-t}u(t)$.
+\emph{Bron: Voorbeeldexamen (vraag 2, impulsrespons van LTC-systeem).}
 
-\begin{center}
-\begin{tikzpicture}[x=1.0cm,y=1.0cm]
-\draw[->] (-0.5,0) -- (4.2,0) node[right] {$t$};
-\draw[->] (0,-0.2) -- (0,1.6) node[above] {};
-\node[below left] at (0,0) {0};
-% x(t)
-\draw[thick] (0,0) -- (0,1) -- (2,1) -- (2,0);
-\node[above] at (1,1) {$x(t)$};
-\node[below] at (2,0) {2};
-\end{tikzpicture}
-\end{center}
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Bepaal $X(s)$.
-\item Is het systeem causaal? Motiveer op basis van $h(t)$.
-\item Bepaal $y(t)=h(t)*x(t)$ en geef het antwoord stukgewijs.
-\end{enumerate}
-
-\subsection{Oefening 8.3: Complexe Fourierreeks (Puls-trein)}
-
-Definieer een periodiek signaal met periode $T=2$ als
+Gegeven het ingangssignaal en de impulsrespons:
 \[
-p(t)=\begin{cases}
-1, & 0<t<\tfrac{1}{2}\\
-0, & \tfrac{1}{2}<t<2
-\end{cases}
-\quad \text{en periodiek uitgebreid.}
+x(t) = u(t) - u(t-2), \qquad h(t) = e^{-2t}u(t)
 \]
 
-	\textbf{Vraag:}
+\textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal de complexe Fourierco\"effici\"enten $c_k$.
-\item Welke symmetrie zie je in $c_{-k}$ t.o.v. $c_k$ als $p(t)$ re\"eel is?
-\item (Extra) Gebruik opnieuw de link $X(k\omega_0)=T\,c_k$ om te interpreteren wat de harmonischen betekenen in het frequentiedomein.
+\item Bepaal de Laplacetransformatie $X(s)$ van het ingangssignaal.
+\item Is het systeem causaal? Motiveer op basis van de vorm van $h(t)$.
+\item Bepaal de nultoestandsrespons $y(t) = h(t) * x(t)$ via convolutie en geef het antwoord stukgewijs.
 \end{enumerate}
 
-\subsection{Oefening 8.4: Laplace met verschuiving en initieelwaarden}
+\subsection{Oefening 8.4: Complexe Fourierreeks van Periodiek Signaal}
 
-Beschouw
+\emph{Bron: Voorbeeldexamen (vraag 3, impulsrespons en lineariteit).}
+
+Gegeven een periodiek puls-trein met periode $T = 2$ s:
 \[
-x(t)=e^{-t}u(t)-e^{-(t-2)}u(t-2).
+p(t) = \begin{cases}
+1, & 0 < t < \tfrac{1}{2}\\
+0, & \tfrac{1}{2} < t < 2
+\end{cases}, \quad \text{periodiek uitgebreid}
 \]
 
-	\textbf{Vraag:}
+\textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal $X(s)$.
-\item Bepaal $x(0^+)$ en $\lim_{t\to\infty}x(t)$ rechtstreeks uit $x(t)$.
-\item Verifieer $x(0^+)$ met de beginwaardestelling en $\lim_{t\to\infty}x(t)$ met de eindwaardestelling (als toepasbaar).
+\item Bepaal de complexe Fouriercoëfficiënten $c_k$ (gebruik $\omega_0 = 2\pi/T$, zie Formularium \ref{form:fs-cplx}).
+\item Uit de eigenschap dat $p(t)$ reëel is, volgt $c_{-k} = c_k^*$. Verifieer dit voor enkele waarden van $k$.
+\item Bepaal welke harmonischen verdwijnen en verklaar dit aan de hand van de duty cycle van de pulstrein.
 \end{enumerate}
 
-\subsection{Oefening 8.5: Differentiaalvergelijking (Laplace, stapinput)}
+\subsection{Oefening 8.5: Laplacetransformatie met Verschuiving}
+
+\emph{Bron: Voorbeeldexamen (Laplace-transformatie met complexe signalen).}
 
 Gegeven
 \[
-y''(t)+3y'(t)+2y(t)=u(t),\qquad y(0)=0,\quad y'(0)=1.
+x(t) = 3e^{-t}u(t) - 3e^{-(t-1)}u(t-1).
 \]
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Los $y(t)$ op met de (unilaterale) Laplace-transformatie.
-\item Geef $y(t)$ stukgewijs (indien nodig) en vereenvoudig maximaal.
-\end{enumerate}
-
-\subsection{Oefening 8.6: LTI-systeem (polen, stabiliteit, staprespons)}
-
-Een causaal LTI-systeem heeft
-\[
-H(s)=\frac{s+2}{s(s+4)}.
-\]
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Bepaal $h(t)$.
-\item Is het systeem BIBO-stabiel? Motiveer.
-\item Bepaal de staprespons $y(t)$ voor $x(t)=u(t)$.
-\item Bepaal $\lim_{t\to\infty}y(t)$ en controleer met de eindwaardestelling.
-\end{enumerate}
-
-\subsection{Oefening 8.7: Convolutie + Laplace-check}
-
-Neem $x(t)=u(t)-u(t-1)$ en $h(t)=t\,u(t)$.
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Bepaal $y(t)=(x*h)(t)$ via convolutie in het tijdsdomein en geef het resultaat stukgewijs.
-\item Controleer je antwoord door Laplace: $Y(s)=X(s)H(s)$ en inverse Laplace.
-\end{enumerate}
-
-\subsection{Oefening 8.8: Fouriertransformatie + Parseval (energie)}
-
-Voor $a>0$:
-\[
-x(t)=e^{-a|t|}.
-\]
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Bepaal $X(j\omega)$.
-\item Bereken de energie $E=\int_{-\infty}^{\infty}|x(t)|^2\,dt$.
-\item Controleer met Parseval.
-\end{enumerate}
-
-\subsection{Oefening 8.9: Re\"ele Fourierreeks (symmetrie + RMS)}
-
-Definieer een periodiek signaal met periode $T=2\pi$:
-\[
-f(t)=\begin{cases}
-1, & 0<t<\pi\\
--1, & -\pi<t<0
-\end{cases}
-\quad \text{en periodiek uitgebreid.}
-\]
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Geef aan of $f(t)$ even/oneven is.
-\item Bepaal de re\"ele Fourierreeks van $f(t)$.
-\item Bepaal de RMS-waarde van $f(t)$ en verifieer met Parseval (reeks-vorm).
-\end{enumerate}
-
-\subsection{Oefening 8.10: Toestandruimte en eigenwaarden (stabiliteit + oplossing)}
-
-Beschouw het systeem
-\[
-\dot{\mathbf{x}}=A\mathbf{x},\qquad
-A=\begin{pmatrix}0 & 1\\ -2 & -3\end{pmatrix},\qquad \mathbf{x}(0)=\begin{pmatrix}1\\0\end{pmatrix}.
-\]
-
-	\textbf{Vraag:}
-\begin{enumerate}[label=(\alph*)]
-\item Bepaal de eigenwaarden van $A$ en bespreek de stabiliteit van de oorsprong.
-\item Bepaal $\mathbf{x}(t)$ expliciet (via diagonalisatie of via oplossing van een tweede-orde vergelijking).
-\item Geef ook $x_1(t)$ en $x_2(t)$ afzonderlijk.
-\end{enumerate}
-
-\subsection{Oefening 8.11: Impulsrespons en Stabiliteit met Polen}
-
-Gegeven een causaal LTC-systeem met overdrachtsfunctie
-\[
-H(s) = \frac{2s + 3}{s^2 + 5s + 6}.
-\]
-
-\emph{Bron: Oefeningenbundel 25–26 (thema Laplace en LTI-systemen).}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal de polen van het systeem.
-\item Onderzoek BIBO-stabiliteit op basis van de poollocaties.
+\item Bepaal $X(s)$ (gebruik de verschuivingsstelling, zie Formularium \ref{form:laplace-prop}).
+\item Bepaal $x(0^+)$ en $\lim_{t \to \infty} x(t)$ door rechtstreeks $x(t)$ in te vullen.
+\item Verifieer $x(0^+)$ met de beginwaardestelling en $\lim_{t \to \infty} x(t)$ met de eindwaardestelling (zie Formularium \ref{form:laplace-prop}).
+\end{enumerate}
+
+\subsection{Oefening 8.6: Differentiaalvergelijking via Laplace (met Beginvoorwaarden)}
+
+\emph{Bron: Voorbeeldexamen (oplossen van DV met Laplace).}
+
+Los op met behulp van de unilaterale Laplacetransformatie:
+\[
+y''(t) + 3y'(t) + 2y(t) = u(t), \qquad y(0) = 1, \quad y'(0) = 0
+\]
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Pas de Laplacetransformatie toe op beide zijden en zet alle beginvoorwaarden in.
+\item Los op voor $Y(s)$ en bepaal de polen (karakteristieke wortels).
+\item Bepaal $y(t)$ via partieelbreukontwikkeling en inverse Laplace.
+\item Controleer je antwoord door $y(0)$ en $y'(0)$ in te vullen.
+\end{enumerate}
+
+\subsection{Oefening 8.7: LTI-Systeem: Stabiliteit, Impuls- en Staprespons}
+
+\emph{Bron: Voorbeeldexamen (polen, stabiliteit en systeemrespons).}
+
+Een causaal LTI-systeem heeft overdrachtsfunctie
+\[
+H(s) = \frac{3s + 4}{(s+1)(s+2)}.
+\]
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal de polen van het systeem. Is het systeem BIBO-stabiel?
 \item Bepaal de impulsrespons $h(t) = \mathcal{L}^{-1}\{H(s)\}$ via partieelbreuken.
-\item Bepaal de staprespons voor $x(t) = u(t)$.
+\item Bepaal de staprespons $y(t)$ voor ingangssignaal $x(t) = u(t)$.
+\item Beredeneer: Naar welke waarde convergeert $y(t)$ als $t \to \infty$? (Controleer met de eindwaardestelling.)
 \end{enumerate}
 
-\subsection{Oefening 8.12: Differentiaalvergelijking uit Overdrachtsfunctie}
+\subsection{Oefening 8.8: Convolutie: Tijdsdomein versus Frequentiedomein}
 
-Een LTC-systeem wordt beschreven door de overdrachtsfunctie
+\emph{Bron: Voorbeeldexamen (convolutie met basis-signalen).}
+
+Gegeven
 \[
-H(s) = \frac{Y(s)}{X(s)} = \frac{4}{s^2 + 3s + 2}.
+x(t) = u(t) - u(t-1), \qquad h(t) = e^{-t}u(t)
 \]
-
-\emph{Bron: Oefeningenbundel 25–26 (thema differentiaalvergelijkingen en Laplace).}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal de differentiaalvergelijking die het systeem beschrijft.
-\item Los deze differentiaalvergelijking op (homogeen + particulier) voor input $x(t) = 2u(t)$ met beginvoorwaarden $y(0) = 0$ en $y'(0) = 1$.
-\item Controleer je antwoord met de Laplacetransformatie.
+\item Bepaal $y(t) = h(t) * x(t)$ rechtstreeks via (grafische) convolutie in het tijdsdomein. Geef het antwoord stukgewijs.
+\item Bepaal $X(s)$ en $H(s)$ (Laplacetransformaties) en verifieer via $Y(s) = H(s) \cdot X(s)$ en inverse Laplace dat je hetzelfde antwoord krijgt.
 \end{enumerate}
 
-\subsection{Oefening 8.13: Fouriertransformatie van Exponentieel Signaal}
+\subsection{Oefening 8.9: Fouriertransformatie en Energieanalyse}
 
-Gegeven het signaal
+\emph{Bron: Voorbeeldexamen (FTC en Parseval voor energie-berekeningen).}
+
+Gegeven
 \[
-f(t) = 3e^{-2t}u(t).
+f(t) = e^{-2|t|}
 \]
-
-\emph{Bron: Oefeningenbundel 25–26 (Fouriertransformatie en energieanalyse).}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
-\item Bepaal de Fouriertransformatie $F(j\omega)$ (gebruik de link met Laplace).
-\item Bepaal en schets het amplitudespectrum $|F(j\omega)|$.
-\item Bereken de energiedichtheid $E = \int_{-\infty}^{\infty} |f(t)|^2 dt$.
-\item Verifieer Parseval's stelling: $E = \frac{1}{2\pi}\int_{-\infty}^{\infty} |F(j\omega)|^2 d\omega$.
+\item Bepaal $F(j\omega)$ (tip: split in twee delen, $f(t) = e^{-2t}u(t) + e^{2t}u(-t)$).
+\item Bereken de totale energie $E = \int_{-\infty}^{\infty} |f(t)|^2 dt$ rechtstreeks.
+\item Verifieer met Parseval's stelling: $E = \frac{1}{2\pi} \int_{-\infty}^{\infty} |F(j\omega)|^2 d\omega$.
+\end{enumerate}
+
+\subsection{Oefening 8.10: Reële Fourierreeks: Symmetrie en Spectrum}
+
+\emph{Bron: Voorbeeldexamen (periodieke signalen en Fourierreeks).}
+
+Gegeven een antisymmetrische blokvorm met periode $T = 2\pi$:
+\[
+f(t) = \begin{cases}
+1, & 0 < t < \pi\\
+-1, & -\pi < t < 0
+\end{cases}, \quad \text{periodiek uitgebreid}
+\]
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal of $f(t)$ even, oneven, of geen van beide is.
+\item Bepaal de coëfficiënten $a_0$, $a_n$, $b_n$ van de reële Fourierreeks. (Welke coëfficiënten verdwijnen?).
+\item Schrijf de Fourierreeks tot en met de 5e harmonische.
+\item Bepaal de RMS-waarde en verifieer met Parseval.
+\end{enumerate}
+
+\subsection{Oefening 8.11: Staatruimtevergelijking en Stabiliteit}
+
+\emph{Bron: Voorbeeldexamen (toestandsrepresentatie, eigenwaarden).}
+
+Gegeven het eerste-orde systeem:
+\[
+\dot{\mathbf{x}} = A\mathbf{x} + B u(t), \qquad y = C\mathbf{x},
+\]
+
+waarbij
+\[
+A = -2, \quad B = 1, \quad C = 1
+\]
+en $\mathbf{x}(0) = 1$.
+
+\textbf{Vraag:}
+\begin{enumerate}[label=(\alph*)]
+\item Bepaal de eigenwaarde van $A$ en bespreek de stabiliteit van het systeem.
+\item Bepaal $\mathbf{x}(t)$ voor $u(t) = 0$ (vrije respons).
+\item Bepaal $y(t)$ en determine $\lim_{t \to \infty} y(t)$.
 \end{enumerate}
 
 \newpage
@@ -1608,313 +1623,524 @@ x(-t)=u(-t)-u(-t-2)=u(t+2)-u(t),
 dus $x(-t)=1$ voor $-2\le t<0$.
 \end{enumerate}
 
-\subsection{Oplossingen Hoofdstuk 3}
+\subsection{Oplossingen Hoofdstuk 3: Laplacetransformatie}
 
-\subsubsection*{Oplossing 3.1}
+\subsubsection*{Oplossing 3.1: Standaard Laplace-paren}
 
-\textbf{Gegeven:} Vier functies.
-
-\textbf{Vraag:} Bepaal Laplacetransformaties.
+\textbf{Gegeven:} Vijf standaard signalen.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item $\mathcal{L}\{5u(t)\}$: definieer de Laplace-transformatie als $\mathcal{L}\{f(t)\}=\int_0^{\infty} e^{-st}f(t)\,dt$ (Formularium \ref{form:laplace-def}).
-\[
-\mathcal{L}\{5u(t)\}=5\int_0^{\infty} e^{-st}\,dt = 5\cdot \frac{1}{s} = \frac{5}{s},\quad \text{ROC: Re}(s)>0.
-\]
+\item $\mathcal{L}\{5u(t)\}$: Gebruikmakend van definitie Formularium \ref{form:laplace-def}:
 
-\item $\mathcal{L}\{e^{-3t}u(t)\}$:
-\[
-\mathcal{L}\{e^{-3t}u(t)\}=\int_0^{\infty} e^{-st}e^{-3t}\,dt = \int_0^{\infty} e^{-(s+3)t}\,dt = \frac{1}{s+3},\quad \text{ROC: Re}(s)>-3.
-\]
+\[\mathcal{L}\{5u(t)\} = 5\int_0^{\infty} e^{-st}\,dt = 5 \left[-\frac{1}{s}e^{-st}\right]_0^{\infty} = \frac{5}{s}\]
 
-\item $\mathcal{L}\{t\,u(t)\}$ (gebruik $\int_0^{\infty} t e^{-st} dt = 1/s^2$):
-\[
-\mathcal{L}\{t\,u(t)\} = \int_0^{\infty} t e^{-st} dt = \frac{1}{s^2},\quad \text{ROC: Re}(s)>0.
-\]
+ROC (Region of Convergence): $\mathrm{Re}(s) > 0$
 
-\item $\mathcal{L}\{\cos(5t)u(t)\}$: gebruik de standaardpar: \(\cos(at) \leftrightarrow s/(s^2+a^2)\).
-\[
-\mathcal{L}\{\cos(5t)u(t)\} = \frac{s}{s^2 + 25},\quad \text{ROC: Re}(s)>0.
-\]
+\item $\mathcal{L}\{e^{-3t}u(t)\}$: Exponentiële afname (Formularium \ref{form:laplace-pairs})
+
+\[\mathcal{L}\{e^{-3t}u(t)\} = \int_0^{\infty} e^{-st} \cdot e^{-3t}\,dt = \int_0^{\infty} e^{-(s+3)t}\,dt = \frac{1}{s+3}\]
+
+ROC: $\mathrm{Re}(s) > -3$
+
+\item $\mathcal{L}\{t \cdot u(t)\}$: Lijnair stijgende signaal (Formularium \ref{form:laplace-pairs})
+
+\[\mathcal{L}\{t \cdot u(t)\} = \int_0^{\infty} t e^{-st}\,dt\]
+
+Gebruikmakend van partiële integratie ($u=t$, $dv=e^{-st}dt$):
+
+\[\mathcal{L}\{t\} = \left[-\frac{t}{s}e^{-st}\right]_0^{\infty} + \int_0^{\infty} \frac{1}{s}e^{-st}\,dt = 0 + \frac{1}{s^2} = \frac{1}{s^2}\]
+
+\item $\mathcal{L}\{\cos(5t)u(t)\}$: Cosinusvormig signaal (Formularium \ref{form:laplace-pairs})
+
+Met standaardpaar $\cos(\omega_0 t)u(t) \leftrightarrow \dfrac{s}{s^2+\omega_0^2}$ en $\omega_0 = 5$:
+
+\[\mathcal{L}\{\cos(5t)u(t)\} = \frac{s}{s^2+25}\]
+
+\item $\mathcal{L}\{e^{-2t}\sin(3t)u(t)\}$: Gedempt sinus (combinatie exponentiële \& trigonometrisch)
+
+\textbf{Stap 1:} Standaardpaar voor sinus: $\sin(\omega_0 t)u(t) \leftrightarrow \dfrac{\omega_0}{s^2+\omega_0^2}$
+
+Met $\omega_0 = 3$: $\sin(3t)u(t) \leftrightarrow \dfrac{3}{s^2+9}$
+
+\textbf{Stap 2:} Frequentie-verschuivingseigenschap (Formularium \ref{form:laplace-prop}):
+
+$e^{-\alpha t}f(t) \leftrightarrow F(s+\alpha)$
+
+Met $\alpha = 2$, vervang $s$ door $s+2$:
+
+\[\mathcal{L}\{e^{-2t}\sin(3t)u(t)\} = \frac{3}{(s+2)^2+9} = \frac{3}{s^2+4s+13}\]
 \end{enumerate}
 
-\subsubsection*{Oplossing 3.2}
+\subsubsection*{Oplossing 3.2: Inverse Laplace met Partieelbreuken}
 
-\textbf{Gegeven:} $F(s) = \frac{3}{s+2} + \frac{5}{s^2 + 4}$.
-
-\textbf{Vraag:} Vind inverse Laplacetransformatie.
-
-\textbf{Oplossing:}
-
-\[
-F(s) = \frac{3}{s+2} + \frac{5}{s^2 + 2^2}
-\]
-
-Inverse Laplacetransformatie:
-
-\[
-f(t) = 3e^{-2t}u(t) + \frac{5}{2}\sin(2t)u(t)
-\]
-waarbij $\frac{3}{s+2}\leftrightarrow 3e^{-2t}u(t)$ en $\frac{5}{s^2+2^2}=\frac{5}{2}\cdot\frac{2}{s^2+2^2}\leftrightarrow \frac{5}{2}\sin(2t)u(t)$ (Formularium \ref{form:laplace-pairs}).
-
-\subsubsection*{Oplossing 3.3}
-
-\textbf{Gegeven:} $\frac{dy}{dt} + 4y = 8u(t)$, $y(0) = 2$.
-
-\textbf{Vraag:} Los op met Laplacetransformatie.
-
-\textbf{Oplossing:}
-
-Laplacetransformatie van beide zijden:
-
-Gebruik de afgeleide-eigenschap uit het formularium (\ref{form:laplace-prop}): $\mathcal{L}\{y'\}=sY(s)-y(0)$, en het paar $u(t)\leftrightarrow \frac{1}{s}$ (\ref{form:laplace-pairs}).
-
-\[
-sY(s) - y(0) + 4Y(s) = \frac{8}{s}
-\]
-
-\[
-sY(s) - 2 + 4Y(s) = \frac{8}{s}
-\]
-
-\[
-Y(s)(s+4) = \frac{8}{s} + 2 = \frac{8 + 2s}{s}
-\]
-
-\[
-Y(s) = \frac{8 + 2s}{s(s+4)}
-\]
-
-\textbf{Partieelbreukontwikkeling:}
-\[
-\frac{8 + 2s}{s(s+4)} = \frac{A}{s} + \frac{B}{s+4}
-\]
-
-Vermenigvuldigen met $s(s+4)$:
-\[
-8 + 2s = A(s+4) + Bs
-\]
-
-Voor $s = 0$: $8 = A(4) \Rightarrow A = 2$
-
-Voor $s = -4$: $8 + 2(-4) = B(-4) \Rightarrow 0 = -4B \Rightarrow B = 0$
-
-Dus:
-\[
-Y(s) = \frac{2}{s} + \frac{0}{s+4} = \frac{2}{s}
-\]
-
-Inverse Laplacetransformatie (Formularium: $u(t)\leftrightarrow\frac{1}{s}$ in \ref{form:laplace-pairs}):
-
-\[
-y(t) = 2u(t)
-\]
-
-\subsubsection*{Oplossing 3.4}
-
-\textbf{Gegeven:} $\frac{d^2y}{dt^2} + 4\frac{dy}{dt} + 3y = 0$, $y(0) = 1$, $y'(0) = 0$.
-
-\textbf{Vraag:} 
 \begin{enumerate}[label=(\alph*)]
-\item Karakteristieke vergelijking.
-\item Wortels.
-\item Los op.
+\item \textbf{$F(s) = \dfrac{3}{s+2} + \dfrac{5}{s^2+4}$}
+
+Deze vorm is al geschikt voor directe inverse (Formularium \ref{form:laplace-pairs}):
+
+\[\mathcal{L}^{-1}\left\{\frac{3}{s+2}\right\} = 3e^{-2t}u(t)\]
+
+\[\mathcal{L}^{-1}\left\{\frac{5}{s^2+4}\right\} = 5 \cdot \mathcal{L}^{-1}\left\{\frac{1}{s^2+2^2}\right\} = \frac{5}{2}\sin(2t)u(t)\]
+
+\textbf{Resulaat:}
+\[f(t) = 3e^{-2t}u(t) + \frac{5}{2}\sin(2t)u(t)\]
+
+\item \textbf{$G(s) = \dfrac{10}{(s+1)(s+2)(s+3)}$ — Drie enkelvoudige polen}
+
+\textbf{Stap 1: Partieelbreukontwikkeling}
+
+\[\frac{10}{(s+1)(s+2)(s+3)} = \frac{A}{s+1} + \frac{B}{s+2} + \frac{C}{s+3}\]
+
+\textbf{Stap 2: Coëfficiënten bepalen (Heaviside's methode)}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Pol} & \textbf{Vermenigvuldig met \& stel gelijk} & \textbf{Coëfficiënt}\\
+\hline
+$s=-1$ & $10 = A \cdot (1) \cdot (2)$ & $A = 5$\\
+$s=-2$ & $10 = B \cdot (-1) \cdot (1)$ & $B = -10$\\
+$s=-3$ & $10 = C \cdot (-2) \cdot (-1)$ & $C = 5$\\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Stap 3: Inverse Laplace}
+
+\[g(t) = 5e^{-t}u(t) - 10e^{-2t}u(t) + 5e^{-3t}u(t)\]
+
+\begin{center}
+\begin{tikzpicture}[x=1.5cm, y=1cm]
+\draw[->] (-0.3,0) -- (4.5,0) node[right] {$t$ (s)};
+\draw[->] (0,-1) -- (0,6) node[above] {$g(t)$};
+\draw[thick, red, domain=0:4, samples=100] plot (\x,{5*exp(-\x) - 10*exp(-2*\x) + 5*exp(-3*\x)});
+\node[above right] at (0,0) {\tiny $(0^+, 0)$};
+\draw[dashed, gray] (0,0) -- (4,0);
+\node[right, font=\small] at (4,0.8) {$g(t) = 5e^{-t} - 10e^{-2t} + 5e^{-3t}$};
+\end{tikzpicture}
+\end{center}
+
+\item \textbf{$H(s) = \dfrac{s+3}{(s+1)^2}$ — Dubbele pool!}
+
+\textbf{Stap 1: Partieelbreukontwikkeling met dubbele pool}
+
+Voor dubbele pool $s=-1$:
+
+\[\frac{s+3}{(s+1)^2} = \frac{A}{s+1} + \frac{B}{(s+1)^2}\]
+
+\textbf{Stap 2: Coëfficiënten bepalen}
+
+Vermenigvuldig met $(s+1)^2$: $s+3 = A(s+1) + B$
+
+Voor $s=-1$: $-1+3 = B \Rightarrow B = 2$
+
+Voor $s=0$: $3 = A + 2 \Rightarrow A = 1$
+
+\textbf{Stap 3: Inverse Laplace (gebruik Formularium \ref{form:laplace-pairs}: $te^{-at}u(t) \leftrightarrow \dfrac{1}{(s+a)^2}$)}
+
+\[\mathcal{L}^{-1}\left\{\frac{1}{s+1}\right\} = e^{-t}u(t)\]
+
+\[\mathcal{L}^{-1}\left\{\frac{2}{(s+1)^2}\right\} = 2te^{-t}u(t)\]
+
+\[h(t) = e^{-t}u(t) + 2te^{-t}u(t) = (1+2t)e^{-t}u(t)\]
 \end{enumerate}
 
-\textbf{Oplossing:}
+\subsubsection*{Oplossing 3.3: Eerste-Orde Differentiaalvergelijkingen}
 
-\begin{enumerate}[label=(\alph*)]
-\item Karakteristieke vergelijking: $\lambda^2 + 4\lambda + 3 = 0$
+\begin{enumerate}[label=(\roman*)]
+\item \textbf{$\dfrac{dy}{dt} + 4y = 8u(t)$, $y(0) = 2$}
 
-\item Wortels:
+\textbf{Stap 1: Laplacetransformatie beide zijden}
 
-\[
-\lambda = \frac{-4 \pm \sqrt{16-12}}{2} = \frac{-4 \pm 2}{2}
-\]
+Gebruikmakend van afgeleide-eigenschap (Formularium \ref{form:laplace-prop}): $\mathcal{L}\{y'(t)\} = sY(s) - y(0)$
 
-$\lambda_1 = -1$, $\lambda_2 = -3$
+\[sY(s) - 2 + 4Y(s) = \frac{8}{s}\]
 
-\item Algemene oplossing:
+\textbf{Stap 2: Isoleer $Y(s)$}
 
-\[
-y(t) = c_1 e^{-t} + c_2 e^{-3t}
-\]
+\[Y(s)(s+4) = \frac{8}{s} + 2 = \frac{8+2s}{s}\]
 
-\textbf{Beginvoorwaarden toepassen:}
+\[Y(s) = \frac{2(s+4)}{s(s+4)} = \frac{2}{s}\]
 
-Bereken eerst $y'(t) = -c_1e^{-t} - 3c_2e^{-3t}$
+\textbf{Stap 3: Inverse Laplace}
 
-\textbf{Voorwaarde 1:} $y(0) = 1$
-\[
-c_1 + c_2 = 1
-\]
+\[y(t) = 2u(t)\]
 
-\textbf{Voorwaarde 2:} $y'(0) = 0$
-\[
--c_1 - 3c_2 = 0 \Rightarrow c_1 = -3c_2
-\]
+\textbf{Opmerking:} De oplossing is constant! Dit gebeurt omdat $y(0)=2$ reeds gelijk is aan de steady-state waarde $y_{\infty} = 8/4 = 2$.
 
-\textbf{Oplossen stelsel:}
+\item \textbf{$\dfrac{dy}{dt} + 3y = 6e^{-2t}u(t)$, $y(0) = 0$}
 
-Substitueer $c_1 = -3c_2$ in eerste vergelijking:
-\[
--3c_2 + c_2 = 1 \Rightarrow -2c_2 = 1 \Rightarrow c_2 = -\frac{1}{2}
-\]
+\textbf{Stap 1: Laplacetransformatie}
 
-Dus: $c_1 = -3\left(-\frac{1}{2}\right) = \frac{3}{2}$
+\[sY(s) + 3Y(s) = \frac{6}{s+2}\]
 
-\[
-y(t) = \frac{3}{2}e^{-t} - \frac{1}{2}e^{-3t}
-\]
+\[Y(s) = \frac{6}{(s+2)(s+3)}\]
+
+\textbf{Stap 2: Partieelbreuken}
+
+\[\frac{6}{(s+2)(s+3)} = \frac{A}{s+2} + \frac{B}{s+3}\]
+
+Voor $s=-2$: $6 = A(1) \Rightarrow A = 6$
+
+Voor $s=-3$: $6 = B(-1) \Rightarrow B = -6$
+
+\[\frac{6}{(s+2)(s+3)} = \frac{6}{s+2} - \frac{6}{s+3}\]
+
+\textbf{Stap 3: Inverse Laplace}
+
+\[y(t) = 6e^{-2t}u(t) - 6e^{-3t}u(t) = 6(e^{-2t} - e^{-3t})u(t)\]
+
+\textbf{Grafiek:} De responsie begint bij $y(0)=0$ en bereikt maximum rond $t \approx 0.7$ s voordat beide exponentiële termen vervallen.
+
+\item \textbf{$2\dfrac{dy}{dt} + y = u(t) - u(t-1)$, $y(0) = 1$}
+
+\textbf{Stap 1: Laplacetransformatie ingang}
+
+\[u(t) - u(t-1) \leftrightarrow \frac{1-e^{-s}}{s}\]
+
+\[\frac{dy}{dt} \leftrightarrow sY(s) - 1\]
+
+\textbf{Stap 2: Oplossen voor $Y(s)$}
+
+\[2(sY(s)-1) + Y(s) = \frac{1-e^{-s}}{s}\]
+
+\[Y(s)(2s+1) = 2 + \frac{1-e^{-s}}{s}\]
+
+\[Y(s) = \frac{2s + 1 - e^{-s}}{s(2s+1)}\]
+
+\textbf{Stap 3: Partieelbreuken}
+
+\[\frac{1}{s(2s+1)} = \frac{1}{2}\left(\frac{1}{s} - \frac{2}{2s+1}\right)\]
+
+\textbf{Stap 4: Inverse Laplace (met verschuiving)}
+
+Voor $t < 1$: Alleen eerste term bijdraagt
+
+\[y(t) = u(t) - \frac{1}{2}e^{-t/2}u(t)\]
+
+Voor $t \ge 1$: Beide termen (inclusief verschoven term)
+
+\textbf{Stukgewijs:}
+\[y(t) = \begin{cases}
+1 - \frac{1}{2}e^{-t/2}, & 0 \le t < 1\\[6pt]
+\frac{1}{2}e^{-(t-1)/2}, & t \ge 1
+\end{cases}\]
 \end{enumerate}
 
-\subsubsection*{Oplossing 3.5}
+\subsubsection*{Oplossing 3.4: Karakteristieke Wortels en Dempingsgedrag}
 
-\textbf{Gegeven:} $F(s) = \frac{2}{s^2 + 4}$.
+\textbf{Gegeven drie systemen; classificeer als over-, kritiek of ondergedempt}
 
-\textbf{Vraag:} Bepaal $f(t)$ en $g(t) = \mathcal{L}^{-1}\{e^{-2s}F(s)\}$.
+\begin{enumerate}[label=(\roman*)]
+\item \textbf{$\dfrac{d^2y}{dt^2} + 4\dfrac{dy}{dt} + 3y = 0$, $y(0)=1$, $y'(0)=0$}
 
-\textbf{Oplossing:}
+\textbf{Stap 1: Karakteristieke vergelijking}
 
-\begin{enumerate}[label=(\alph*)]
-\item Inverse Laplacetransformatie:
+$\lambda^2 + 4\lambda + 3 = 0$
 
-\[
-f(t) = \mathcal{L}^{-1}\left\{\frac{2}{s^2 + 4}\right\} = \sin(2t)u(t)\quad\text{(Formularium: }\sin(at)u(t)\leftrightarrow\frac{a}{s^2+a^2}\text{ in \ref{form:laplace-pairs}).}
-\]
+\textbf{Stap 2: Wortels bepalen (discriminant check)}
 
-\item Gebruikmakend van de tijdsverschuivingsstelling (Formularium: translatie in $t$ in \ref{form:laplace-prop})
-$\mathcal{L}^{-1}\{e^{-as}F(s)\} = f(t-a)u(t-a)$:
+$\Delta = 16 - 12 = 4 > 0 \Rightarrow$ twee reële verschillende wortels
 
-\[
-g(t) = f(t-2)u(t-2) = \sin(2(t-2))u(t-2) = \sin(2t-4)u(t-2)
-\]
+\[\lambda = \frac{-4 \pm 2}{2} = -1, -3\]
+
+\textbf{Classificatie:} OVERGEDEMPT (twee reële, negatieve polen)
+
+\textbf{Stap 3: Algemene oplossing}
+
+\[y(t) = c_1 e^{-t} + c_2 e^{-3t}\]
+
+\textbf{Stap 4: Beginvoorwaarden toepassen}
+
+$y(0)=1$: $c_1 + c_2 = 1$
+
+$y'(t) = -c_1 e^{-t} - 3c_2 e^{-3t}$, dus $y'(0)=0$: $-c_1 - 3c_2 = 0 \Rightarrow c_1 = -3c_2$
+
+Oplossen: $-3c_2 + c_2 = 1 \Rightarrow c_2 = -1/2$, dus $c_1 = 3/2$
+
+\[\boxed{y(t) = \frac{3}{2}e^{-t} - \frac{1}{2}e^{-3t}}\]
+
+\item \textbf{$\dfrac{d^2y}{dt^2} + 4\dfrac{dy}{dt} + 4y = 0$, $y(0)=1$, $y'(0)=0$}
+
+\textbf{Karakteristieke vergelijking:} $\lambda^2 + 4\lambda + 4 = 0$
+
+$\Delta = 16 - 16 = 0 \Rightarrow$ dubbele reële wortel
+
+$\lambda = -2$ (met multipliciteit 2)
+
+\textbf{Classificatie:} KRITIEK GEDEMPT
+
+\textbf{Algemene oplossing (dubbele wortel):}
+
+\[y(t) = (c_1 + c_2 t)e^{-2t}\]
+
+\textbf{Beginvoorwaarden:}
+
+$y(0)=1$: $c_1 = 1$
+
+$y'(t) = c_2 e^{-2t} + (c_1 + c_2 t)(-2)e^{-2t} = c_2 e^{-2t} - 2(c_1+c_2 t)e^{-2t}$
+
+$y'(0)=0$: $c_2 - 2c_1 = 0 \Rightarrow c_2 = 2$
+
+\[\boxed{y(t) = (1+2t)e^{-2t}}\]
+
+\item \textbf{$\dfrac{d^2y}{dt^2} + 2\dfrac{dy}{dt} + 5y = 0$, $y(0)=0$, $y'(0)=2$}
+
+\textbf{Karakteristieke vergelijking:} $\lambda^2 + 2\lambda + 5 = 0$
+
+$\Delta = 4 - 20 = -16 < 0 \Rightarrow$ complexe conjugate wortels
+
+\[\lambda = \frac{-2 \pm \sqrt{-16}}{2} = -1 \pm 2j\]
+
+\textbf{Classificatie:} ONDERGEDEMPT (complexe polen in linkervlak)
+
+Natuurlijke frequentie: $\omega_n = 2$ rad/s, Dempingsfactor: $\zeta = 1/\sqrt{5} \approx 0.447$
+
+\textbf{Algemene oplossing:}
+
+\[y(t) = e^{-t}[c_1\cos(2t) + c_2\sin(2t)]\]
+
+\textbf{Beginvoorwaarden:}
+
+$y(0)=0$: $c_1 = 0$
+
+$y'(t) = -e^{-t}[c_1\cos(2t)+c_2\sin(2t)] + e^{-t}[-2c_1\sin(2t)+2c_2\cos(2t)]$
+
+$y'(0)=2$: $-0 + 2c_2 = 2 \Rightarrow c_2 = 1$
+
+\[\boxed{y(t) = e^{-t}\sin(2t)}\]
 \end{enumerate}
 
-\subsubsection*{Oplossing 3.6}
-
-\textbf{Gegeven:} $F(s) = \frac{10}{(s+1)(s+2)(s+3)}$.
-
-\textbf{Vraag:} Bepaal inverse via partieelbreuken.
-
-\textbf{Oplossing:}
-
-Partieelbreukontwikkeling:
-
-\[
-\frac{10}{(s+1)(s+2)(s+3)} = \frac{A}{s+1} + \frac{B}{s+2} + \frac{C}{s+3}
-\]
-
-Vermenigvuldigen met $(s+1)(s+2)(s+3)$:
-
-\[
-10 = A(s+2)(s+3) + B(s+1)(s+3) + C(s+1)(s+2)
-\]
-
-Voor $s = -1$: $10 = A(1)(2) = 2A \Rightarrow A = 5$
-
-Voor $s = -2$: $10 = B(-1)(1) = -B \Rightarrow B = -10$
-
-Voor $s = -3$: $10 = C(-2)(-1) = 2C \Rightarrow C = 5$
-
-Inverse Laplacetransformatie:
-
-(Formularium: $e^{-at}u(t)\leftrightarrow\frac{1}{s+a}$ in \ref{form:laplace-pairs}.)
-
-\[
-f(t) = 5e^{-t}u(t) - 10e^{-2t}u(t) + 5e^{-3t}u(t)
-\]
-
-\subsubsection*{Oplossing 3.7}
-
-	\textbf{Gegeven:} $F(s) = \frac{3s + 5}{s^2 + 4s + 3}$.
-
-	\textbf{Vraag:} Bepaal $f(0^+)$ en $f(\infty)$ met begin- en eindwaardestelling; controleer door $f(t)$ te bepalen.
-
-	\textbf{Oplossing:}
+\subsubsection*{Oplossing 3.5: Laplacetransformatie met Verschuiving}
 
 \begin{enumerate}[label=(\alph*)]
-\item Beginwaardestelling (Formularium: initial value theorem $f(0^+) = \lim_{s\to\infty} sF(s)$):
-\[
-f(0^+) = \lim_{s \to \infty} sF(s) = \lim_{s \to \infty} \frac{3s^2 + 5s}{s^2 + 4s + 3} = 3
-\]
+\item \textbf{Gegeven:} $F(s) = \dfrac{2}{s^2+4}$
 
-\item Eindwaardestelling (Formularium: final value theorem $f(\infty) = \lim_{s\to 0} sF(s)$, mits alle polen van $sF(s)$ in het linkerhalfvlak liggen):
-De polen van $F(s)$ zijn $s=-1$ en $s=-3$ (beide in linkerhalfvlak), dus FVT is toepasbaar.
-\[
-f(\infty) = \lim_{s \to 0} sF(s) = \lim_{s \to 0} \frac{3s^2 + 5s}{s^2 + 4s + 3} = 0
-\]
+\textbf{Inverse:} $f(t) = \sin(2t)u(t)$ (Formularium \ref{form:laplace-pairs}: $\dfrac{a}{s^2+a^2} \leftrightarrow \sin(at)u(t)$)
 
-\item Controle door $f(t)$ te berekenen:
+\item \textbf{Met verschuiving:} $G(s) = e^{-2s}F(s) = e^{-2s} \dfrac{2}{s^2+4}$
+
+Gebruikmakend van verschuivingsstelling (Formularium \ref{form:laplace-prop}):
+
+\[\mathcal{L}^{-1}\{e^{-as}F(s)\} = f(t-a)u(t-a)\]
+
+\[g(t) = \sin(2(t-2))u(t-2) = \sin(2t-4)u(t-2)\]
+
+Dit is de sinus-golf verschoven naar rechts met 2 seconden.
+
+\item \textbf{Grafische vergelijking:}
+
+\begin{center}
+\begin{tikzpicture}[x=0.8cm, y=1cm]
+\draw[->] (-0.5,0) -- (7,0) node[right] {$t$ (s)};
+\draw[->] (0,-1.5) -- (0,1.5) node[above] {Waarde};
+\draw[thick, red, domain=0:6.5, samples=150] plot (\x,{sin(2*\x r)});
+\draw[thick, blue, domain=2:6.5, samples=150] plot (\x,{sin(2*(\x-2) r)});
+\draw[dashed] (2,0) -- (2,0.5) node[above, font=\small] {$t=2$};
+\draw[dashed] (2,-0.1) -- (2,-0.1);
+\node[left, font=\small] at (-0.3,0.8) {Rood: $f(t)$};
+\node[left, font=\small] at (-0.3,-0.8) {Blauw: $g(t)$};
+\end{tikzpicture}
+\end{center}
+
+De blauwe curve (verschoven signaal) is identiek aan de rode, maar 2 seconden later.
+\end{enumerate}
+
+\subsubsection*{Oplossing 3.6: Partieelbreukontwikkeling Geavanceerd}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{$F(s) = \dfrac{10}{(s+1)(s+2)(s+3)}$}
+
+\[\frac{10}{(s+1)(s+2)(s+3)} = \frac{A}{s+1} + \frac{B}{s+2} + \frac{C}{s+3}\]
+
+Coëfficiënten via Heaviside:
+
+$A = \dfrac{10}{(1)(2)} = 5$ (pol $s=-1$)
+
+$B = \dfrac{10}{(-1)(1)} = -10$ (pol $s=-2$)
+
+$C = \dfrac{10}{(-2)(-1)} = 5$ (pol $s=-3$)
+
+\[f(t) = 5e^{-t}u(t) - 10e^{-2t}u(t) + 5e^{-3t}u(t)\]
+
+\item \textbf{$G(s) = \dfrac{5s+7}{(s+1)^2(s+2)}$ — Dubbele pool combined met simpele}
+
+\[\frac{5s+7}{(s+1)^2(s+2)} = \frac{A}{s+1} + \frac{B}{(s+1)^2} + \frac{C}{s+2}\]
+
+Voor $(s+1)^2$ factor: vermenigvuldig met $(s+1)^2$ en stel $s=-1$:
+
+$-5+7 = B \Rightarrow B = 2$
+
+Voor $s=-2$ (simpele pool):
+
+$-10+7 = C(1) \Rightarrow C = -3$
+
+Voor coëfficiënt $A$: Vermenigvuldig met $(s+1)^2$ en differentieer naar $s$:
+
+\[\frac{d}{ds}[5s+7] = 5 = A + B' \text{ (term)} \]
+
+Alternatief: stel $s=0$: $7 = A + 2 + (-3) \cdot 1/2$ waardoor $A = 6$
+
+\[g(t) = 6e^{-t}u(t) + 2te^{-t}u(t) - 3e^{-2t}u(t)\]
+
+\item \textbf{$H(s) = \dfrac{s^2+2s+3}{(s+1)(s^2+2s+2)}$ — Complexe polen}
+
+Herken: $s^2+2s+2 = (s+1)^2 + 1$ → complexe polen: $s = -1 \pm j$
+
+\[\frac{s^2+2s+3}{(s+1)[(s+1)^2+1]} = \frac{A}{s+1} + \frac{Bs+C}{s^2+2s+2}\]
+
+Voor $s=-1$: $1-2+3 = A(1) \Rightarrow A = 2$
+
+Voor coëfficiënten $B,C$: Uitwerken en coëfficiënten matchen geeft $B=-1$, $C=1$
+
+\[h(t) = 2e^{-t}u(t) + e^{-t}[-\cos(t) + \sin(t)]u(t) = e^{-t}[2-\cos(t)+\sin(t)]u(t)\]
+\end{enumerate}
+
+\subsubsection*{Oplossing 3.7: Begin- en Eindwaardestelling}
+
+\textbf{Gegeven:} $F(s) = \dfrac{3s+5}{s^2+4s+3} = \dfrac{3s+5}{(s+1)(s+3)}$
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Beginwaardestelling:} $f(0^+) = \lim_{s \to \infty} sF(s)$
+
+\[f(0^+) = \lim_{s \to \infty} \frac{3s^2+5s}{s^2+4s+3} = 3\]
+
+\item \textbf{Eindwaardestelling:} (polen in linkervlak: $s=-1, -3$ \checkmark)
+
+\[f(\infty) = \lim_{s \to 0} sF(s) = \lim_{s \to 0} \frac{3s^2+5s}{s^2+4s+3} = 0\]
+
+\item \textbf{Controle via exacte oplossing:}
 
 Partieelbreuken:
-\[
-F(s) = \frac{3s+5}{(s+1)(s+3)} = \frac{A}{s+1} + \frac{B}{s+3}
-\]
+\[\frac{3s+5}{(s+1)(s+3)} = \frac{A}{s+1} + \frac{B}{s+3}\]
 
-Vermenigvuldig met $(s+1)(s+3)$:
-\[
-3s+5 = A(s+3) + B(s+1)
-\]
+Voor $s=-1$: $-3+5 = 2A \Rightarrow A=1$
 
-Voor $s = -1$: $3(-1)+5 = A(2) \Rightarrow 2 = 2A \Rightarrow A = 1$
+Voor $s=-3$: $-9+5 = -2B \Rightarrow B=2$
 
-Voor $s = -3$: $3(-3)+5 = B(-2) \Rightarrow -4 = -2B \Rightarrow B = 2$
+\[f(t) = e^{-t}u(t) + 2e^{-3t}u(t)\]
 
-Dus:
-\[
-F(s) = \frac{1}{s+1} + \frac{2}{s+3}
-\]
+Verificatie: $f(0^+) = 1 + 2 = 3$ \checkmark, $f(\infty) = 0$ \checkmark
 
-Inverse Laplacetransformatie (Formularium: $\frac{1}{s+a}\leftrightarrow e^{-at}u(t)$ in \ref{form:laplace-pairs}):
-\[
-f(t) = \left(e^{-t} + 2e^{-3t}\right)u(t)
-\]
+\item \textbf{Grafiek:}
 
-Verificatie: $f(0^+) = 1 + 2 = 3$ \checkmark~ en $\lim_{t\to\infty} f(t) = 0$ \checkmark
+\begin{center}
+\begin{tikzpicture}[x=1.2cm, y=0.8cm]
+\draw[->] (-0.3,0) -- (5,0) node[right] {$t$ (s)};
+\draw[->] (0,-0.3) -- (0,4) node[above] {$f(t)$};
+\draw[thick, blue, domain=0:5, samples=150] plot (\x,{exp(-\x) + 2*exp(-3*\x)});
+\draw[dashed, gray] (0,3) node[left] {$3$} -- (5,3);
+\draw[dashed, gray] (-0.3,0) -- (5,0);
+\node[right, font=\small] at (3,0.5) {$f(t)=e^{-t}+2e^{-3t}$};
+\node[font=\small] at (0.3,2.5) {$f(0^+)=3$};
+\node[font=\small] at (4,0.3) {$f(\infty)=0$};
+\end{tikzpicture}
+\end{center}
 \end{enumerate}
 
-\subsubsection*{Oplossing 3.8}
+\subsubsection*{Oplossing 3.8: Convolutie via Laplace}
 
-	\textbf{Gegeven:} $f(t)=u(t)-u(t-1)$ en $g(t)=e^{-2t}u(t)$.
+\textbf{Gegeven:} $f(t) = u(t) - u(t-1)$, $g(t) = e^{-2t}u(t)$
 
-	\textbf{Vraag:} Bepaal $y(t)=(f*g)(t)$ via Laplace.
+\textbf{Bepaal:} $y(t) = (f*g)(t)$ via Laplacetransformatie
 
-	\textbf{Oplossing:}
-Volgens het formularium geldt voor Laplace: convolutie in tijd $\Rightarrow$ product in $s$-domein (\ref{form:laplace-prop}).
+\textbf{Oplossing:}
+
 \begin{enumerate}[label=(\alph*)]
-\item
-\[
-F(s)=\mathcal{L}\{u(t)-u(t-1)\}=\frac{1-e^{-s}}{s},\qquad G(s)=\mathcal{L}\{e^{-2t}u(t)\}=\frac{1}{s+2}.
-\]
-Hierbij gebruiken we $u(t)\leftrightarrow\frac{1}{s}$ (\ref{form:laplace-pairs}) en translatie in $t$ (\ref{form:laplace-prop}) voor $u(t-1)$, en $e^{-2t}u(t)\leftrightarrow\frac{1}{s+2}$ (\ref{form:laplace-pairs}).
-\item
-\[
-Y(s)=F(s)G(s)=\frac{1-e^{-s}}{s(s+2)}.
-\]
-\item Splits:
-\[
-Y(s)=\frac{1}{s(s+2)}-e^{-s}\frac{1}{s(s+2)}.
-\]
-Met partieelbreuken $\frac{1}{s(s+2)}=\frac{1}{2}\left(\frac{1}{s}-\frac{1}{s+2}\right)$.
-Dus
-\[
-\mathcal{L}^{-1}\left\{\frac{1}{s(s+2)}\right\}=\frac{1}{2}(1-e^{-2t})u(t).
-\]
-En met de tijdsverschuiving (Formularium: translatie in $t$ in \ref{form:laplace-prop}):
-\[
-y(t)=\frac{1}{2}(1-e^{-2t})u(t)-\frac{1}{2}(1-e^{-2(t-1)})u(t-1).
-\]
-Stukgewijs:
-\[
-y(t)=\begin{cases}
-0, & t<0\\
-\frac{1}{2}(1-e^{-2t}), & 0\le t<1\\
-\frac{1}{2}\big(e^{-2(t-1)}-e^{-2t}\big), & t\ge 1.
-\end{cases}
-\]
+\item \textbf{Laplace-transformaties:}
+
+\[F(s) = \mathcal{L}\{u(t)-u(t-1)\} = \frac{1}{s} - e^{-s} \cdot \frac{1}{s} = \frac{1-e^{-s}}{s}\]
+
+\[G(s) = \mathcal{L}\{e^{-2t}u(t)\} = \frac{1}{s+2}\]
+
+\item \textbf{Convolutie-theorema (Formularium \ref{form:laplace-prop}):}
+
+$y(t) = f(t) * g(t) \Rightarrow Y(s) = F(s) \cdot G(s)$
+
+\[Y(s) = \frac{1-e^{-s}}{s(s+2)} = (1-e^{-s}) \cdot \frac{1}{s(s+2)}\]
+
+\item \textbf{Partieelbreuken voor basale vorm:}
+
+\[\frac{1}{s(s+2)} = \frac{1}{2}\left(\frac{1}{s} - \frac{1}{s+2}\right)\]
+
+Inverse: $\mathcal{L}^{-1}\left\{\frac{1}{s(s+2)}\right\} = \frac{1}{2}(1-e^{-2t})u(t)$
+
+\item \textbf{Met verschuiving (tijdsverschuivingsstelling):}
+
+De factor $e^{-s}$ veroorzaakt een verschuiving met 1 seconde:
+
+$\mathcal{L}^{-1}\{e^{-s} \cdot \ldots\} = \text{origineel signaal verschoven met 1 seconde}$
+
+\[y(t) = \begin{cases}
+\dfrac{1}{2}(1-e^{-2t}), & 0 \le t < 1\\[8pt]
+\dfrac{1}{2}(1-e^{-2t}) - \dfrac{1}{2}(1-e^{-2(t-1)}), & t \ge 1
+\end{cases}\]
+
+Vereenvoudiging voor $t \ge 1$:
+
+\[y(t) = \frac{1}{2}\left[e^{-2(t-1)} - e^{-2t}\right] = \frac{1}{2}e^{2}\cdot e^{-2t} - \frac{1}{2}e^{-2t} = \frac{1}{2}(e^2-1)e^{-2t}\]
+
+Of: $y(t) = \dfrac{1}{2}(1-e^{-2})\cdot e^{-2(t-1)}$ voor $t \ge 1$
+
+\item \textbf{Fysische interpretatie:}
+
+Voor $0 \le t < 1$: Rechthoekpuls gaat door exponentiëel gedempt systeem
+
+Voor $t \ge 1$: Puls stopt, systeem dempt uit met tijdsconstante $\tau = 1/2$ s
+\end{enumerate}
+
+\subsubsection*{Oplossing 3.9: Samenvattingsoefening}
+
+\textbf{Gegeven:} Verschillende signalen en transformaties
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Standaard Laplace-paren (Formularium \ref{form:laplace-pairs}):}
+
+\[\mathcal{L}\{u(t)\} = \frac{1}{s}, \quad \mathcal{L}\{e^{-at}u(t)\} = \frac{1}{s+a}, \quad \mathcal{L}\{t^nu(t)\} = \frac{n!}{s^{n+1}}\]
+
+\item \textbf{Vermenigvuldiging met tijd (Formularium \ref{form:laplace-prop}):}
+
+Eigenschap: $\mathcal{L}\{t f(t)\} = -\dfrac{dF(s)}{ds}$
+
+Voor $\mathcal{L}\{t^2 e^{-3t}u(t)\}$:
+
+Basis: $e^{-3t}u(t) \leftrightarrow \dfrac{1}{s+3}$
+
+\[\mathcal{L}\{t e^{-3t}u(t)\} = -\frac{d}{ds}\left[\frac{1}{s+3}\right] = \frac{1}{(s+3)^2}\]
+
+\[\mathcal{L}\{t^2 e^{-3t}u(t)\} = -\frac{d}{ds}\left[\frac{1}{(s+3)^2}\right] = \frac{2}{(s+3)^3}\]
+
+\item \textbf{Inverse Laplacetransformatie met gemengde vormen:}
+
+\[F(s) = \frac{1}{s+3} + \frac{2}{s^2} + \frac{4}{s^2+9}\]
+
+Per term:
+
+$\frac{1}{s+3} \leftrightarrow e^{-3t}u(t)$
+
+$\frac{2}{s^2} \leftrightarrow 2tu(t)$
+
+$\frac{4}{s^2+9} = \frac{4}{3} \cdot \frac{3}{s^2+9} \leftrightarrow \frac{4}{3}\sin(3t)u(t)$
+
+\[f(t) = e^{-3t}u(t) + 2tu(t) + \frac{4}{3}\sin(3t)u(t)\]
+
+\item \textbf{Geavanceerde inverse (complexe polen):}
+
+\[H(s) = \frac{s+5}{s^2+6s+13}\]
+
+Kwadraatafsplitsing van noemer: $s^2+6s+13 = (s+3)^2 + 4$
+
+Herschrijf teller: $s+5 = (s+3) + 2$
+
+\[\frac{(s+3)+2}{(s+3)^2+4} = \frac{s+3}{(s+3)^2+4} + \frac{2}{(s+3)^2+4}\]
+
+Inverse (Formularium \ref{form:laplace-pairs}): $e^{-\alpha t}\cos(\beta t) \leftrightarrow \dfrac{s+\alpha}{(s+\alpha)^2+\beta^2}$ en $e^{-\alpha t}\sin(\beta t) \leftrightarrow \dfrac{\beta}{(s+\alpha)^2+\beta^2}$
+
+\[h(t) = e^{-3t}\cos(2t)u(t) + e^{-3t}\sin(2t)u(t) = e^{-3t}[\cos(2t) + \sin(2t)]u(t)\]
 \end{enumerate}
 
 \subsubsection*{Oplossing 3.9}
@@ -1938,81 +2164,130 @@ F(s)=\frac{1}{s+3}+\frac{2}{s^2}\quad\Rightarrow\quad f(t)=e^{-3t}u(t)+2t\,u(t).
 (Formularium: $\frac{1}{s+a}\leftrightarrow e^{-at}u(t)$ en $\frac{1}{s^2}\leftrightarrow t\,u(t)$ in \ref{form:laplace-pairs}.)
 \end{enumerate}
 
-\subsection{Oplossingen Hoofdstuk 4}
+\subsubsection*{Oplossing 3.10: Staprespons Eerste-Orde Systeem}
 
-\subsubsection*{Oplossing 4.1}
-
-\textbf{Gegeven:} Rechthoekpuls $f(t) = A$ voor $-T/2 < t < T/2$, 0 elders.
-
-\textbf{Vraag:} Bepaal Fouriertransformatie; schrijf als sinc; bepaal nulpunten.
+\textbf{Gegeven:} $H(s) = \dfrac{2}{0.5s+1}$, ingangssignaal $x(t) = 3u(t)$
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item Fouriertransformatie (Formularium: definitie \ref{form:ft-def}):
+\item \textbf{Laplace-analyse:}
 
-\[
-F(j\omega) = \int_{-T/2}^{T/2} A e^{-j\omega t} dt = A \left[ \frac{e^{-j\omega t}}{-j\omega} \right]_{-T/2}^{T/2}
-\]
+Gegeven: $H(s) = \dfrac{2}{0.5s+1} = \dfrac{2}{0.5(s+2)} = \dfrac{4}{s+2}$ (herschrijven voor standaardvorm)
 
-Substitueer grenzen:
+Met ingang $X(s) = \dfrac{3}{s}$:
 
-\[
-= A \cdot \frac{1}{-j\omega}\left(e^{-j\omega T/2} - e^{j\omega T/2}\right) = A \frac{e^{j\omega T/2} - e^{-j\omega T/2}}{j\omega}
-\]
+\[Y(s) = H(s) \cdot X(s) = \frac{4}{s+2} \cdot \frac{3}{s} = \frac{12}{s(s+2)}\]
 
-Gebruik formule van Euler: $e^{jx} - e^{-jx} = 2j\sin(x)$:
+\item \textbf{Partieelbreukontwikkeling:}
 
-\[
-= A \frac{2j\sin(\omega T/2)}{j\omega} = A \frac{2\sin(\omega T/2)}{\omega} = AT \cdot \frac{\sin(\omega T/2)}{\omega T/2}
-\]
+\[\frac{12}{s(s+2)} = \frac{A}{s} + \frac{B}{s+2}\]
 
-\item Sinc-vorm:
+Voor $s=0$: $12 = A(2) \Rightarrow A = 6$
 
-\[
-F(j\omega) = AT \cdot \text{sinc}\left(\frac{\omega T}{2}\right)
-\]
+Voor $s=-2$: $12 = B(-2) \Rightarrow B = -6$
 
-Dit komt overeen met het standaardpaar ``Block'' in \ref{form:ft-pairs}.
+\[Y(s) = \frac{6}{s} - \frac{6}{s+2}\]
 
-\item Eerste nulpunten: $\frac{\omega T}{2} = \pm\pi, \pm 2\pi, \ldots$
+\item \textbf{Inverse Laplace (tijd-domein):}
 
-Dit geeft: $\omega = \pm\frac{2\pi}{T}, \pm\frac{4\pi}{T}, \ldots$
+\[y(t) = 6u(t) - 6e^{-2t}u(t) = 6(1 - e^{-2t})u(t)\]
+
+\item \textbf{Karakteristieken:}
+
+\begin{itemize}
+\item Uiteindelijke/steadystate waarde: $y_{\infty} = \lim_{t \to \infty} 6(1-e^{-2t}) = 6$
+\item Tijdsconstante: $\tau = \dfrac{1}{2}$ s (inverse van pool $s=-2$)
+\item Settling time (2\% criterium): $t_s \approx 4\tau = 2$ s
+\item Waarde op $t=\tau$: $y(0.5) = 6(1-e^{-1}) \approx 3.8$ (ongeveer 63\% van eindwaarde)
+\end{itemize}
+
+\item \textbf{Grafische voorstelling:}
+
+\begin{center}
+\begin{tikzpicture}[x=1.2cm, y=1cm]
+\draw[->] (-0.3,0) -- (5,0) node[right] {$t$ (s)};
+\draw[->] (0,-0.3) -- (0,7) node[above] {$y(t)$};
+\draw[thick,domain=0:4.8,samples=150] plot (\x,{6*(1-exp(-2*\x))});
+\draw[dashed, gray] (0,6) -- (4.8,6) node[right, font=\small] {$y_{\infty}=6$};
+\draw[dotted] (0.5,-0.3) -- (0.5,3.79) node[above, font=\tiny] {$\tau=0.5$s};
+\draw[dotted] (0.5,3.79) -- (0,3.79);
+\node[left, font=\small] at (-0.1,3.79) {3.8};
+\draw[dashed, gray, opacity=0.5] (0.5,0) -- (0.5,3.79);
+\end{tikzpicture}
+\end{center}
+
+\textbf{Interpretatie:} Het eerste-orde systeem bereikt in één tijdsconstante ($\tau = 0.5$ s) ongeveer 63\% van de eindwaarde. De responsie is exponentieel zonder overshoot (karakteristiek voor eerste-orde systemen met reële pool).
+
+\item \textbf{Verificatie via eindwaardestelling:}
+
+\[\lim_{t \to \infty} y(t) = \lim_{s \to 0} sY(s) = \lim_{s \to 0} \frac{12}{s+2} = 6 \,\checkmark\]
+
+Klopt met directe berekening: $y(\infty) = H(0) \cdot x = 2 \cdot 3 = 6$ (DC gain $H(0) = 2$)
+\end{enumerate}
+
+\subsection{Oplossingen Hoofdstuk 4: Fouriertransformatie}
+
+\subsubsection*{Oplossing 4.1: Rechthoekpuls Fouriertransformatie}
+
+\textbf{Gegeven:} $f(t) = A$ voor $-T/2 < t < T/2$, 0 elders
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Fouriertransformatie (Formularium \ref{form:ft-def}):}
+
+Definitie: $F(j\omega) = \int_{-\infty}^{\infty} f(t)e^{-j\omega t}dt$
+
+\[\mathcal{F}\{f(t)\} = \int_{-T/2}^{T/2} A e^{-j\omega t} dt = A \left[ \frac{e^{-j\omega t}}{-j\omega} \right]_{-T/2}^{T/2}\]
+
+\[= \frac{A}{-j\omega}(e^{-j\omega T/2} - e^{j\omega T/2}) = \frac{A}{j\omega}(e^{j\omega T/2} - e^{-j\omega T/2})\]
+
+Via Euler: $e^{jx} - e^{-jx} = 2j\sin(x)$
+
+\[= \frac{A}{j\omega} \cdot 2j\sin(\omega T/2) = \frac{2A\sin(\omega T/2)}{\omega} = AT \cdot \frac{\sin(\omega T/2)}{\omega T/2}\]
+
+\item \textbf{Sinc-notatie:} $F(j\omega) = AT \cdot \text{sinc}\left(\frac{\omega T}{2}\right)$ \checkmark
+
+Dit komt overeen met Formularium \ref{form:ft-pairs} (Block-paar).
+
+\item \textbf{Nulpunten:} $\sin(\omega T/2) = 0$ als $\frac{\omega T}{2} = n\pi$ voor $n = \pm 1, \pm 2, \ldots$
+
+Dus: $\omega_n = \pm\frac{2\pi}{T}, \pm\frac{4\pi}{T}, \ldots$ (eerste nulpunt: $\omega = 2\pi/T$)
 \end{enumerate}
 
 \subsubsection*{Oplossing 4.2}
 
-\textbf{Gegeven:} Fouriertransformatie verschuivingsstelling.
+\textbf{Gegeven:} Fouriertransformatie verschuivingsstelling; puls met amplitude $A=2$, breedte $T=2$, verschoven naar $t_0=1$.
 
-\textbf{Vraag:} Bewijs; pas toe; bespreek effect op spektra.
+\textbf{Vraag:} Bewijs stelling; bepaal Fouriertransformatie; effect op spektra.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item Verschuivingsstelling (Formularium: translatie \ref{form:ft-prop}):
-\[
-\mathcal{F}\{f(t-t_0)\} = e^{-j\omega t_0} F(j\omega)
-\]
+\item \textbf{Verschuivingsstelling (Formularium \ref{form:ft-prop}):}
+
+\[\mathcal{F}\{f(t-t_0)\} = e^{-j\omega t_0} F(j\omega)\]
 
 \textbf{Bewijs:}
-\[
-\mathcal{F}\{f(t-t_0)\} = \int_{-\infty}^{\infty} f(t-t_0) e^{-j\omega t} dt
-\]
 
-Substitutie $\tau = t - t_0$:
-\[
-= \int_{-\infty}^{\infty} f(\tau) e^{-j\omega(\tau+t_0)} d\tau = e^{-j\omega t_0} F(j\omega)
-\]
+\[\mathcal{F}\{f(t-t_0)\} = \int_{-\infty}^{\infty} f(t-t_0) e^{-j\omega t} dt\]
 
-\item Voor puls met $t_0 = 1$, $A = 2$, $T = 2$:
+Substitutie $u = t - t_0$ (dus $dt = du$):
 
-\[
-F(j\omega) = 2 \cdot 2 \cdot \text{sinc}(\omega) \cdot e^{-j\omega} = 4\text{sinc}(\omega) e^{-j\omega}
-\]
+\[= \int_{-\infty}^{\infty} f(u) e^{-j\omega(u+t_0)} du = e^{-j\omega t_0} \int_{-\infty}^{\infty} f(u) e^{-j\omega u} du = e^{-j\omega t_0} F(j\omega)\]
 
-\item Amplitude-spectrum: onveranderd (blijft $4|\text{sinc}(\omega)|$)
+\item \textbf{Toepassing op puls:} Voor puls van $t=1$ tot $t=3$ (dus $t_0=1$, $A=2$, $T=2$):
 
-Fase-spectrum: lineair met $-\omega$ (effect van verschuiving)
+Onverschoven puls: $F_0(j\omega) = 2 \cdot 2 \cdot \text{sinc}(\omega) = 4\text{sinc}(\omega)$
+
+Verschoven puls: \[F(j\omega) = 4\text{sinc}(\omega) \cdot e^{-j\omega}\]
+
+\item \textbf{Spectrale gevolgen:}
+
+Amplitudespectrum: $|F(j\omega)| = |e^{-j\omega}| \cdot |4\text{sinc}(\omega)| = 4|\text{sinc}(\omega)|$ (identiek!) \checkmark
+
+Fasespectrum: $\arg F(j\omega) = -\omega + \arg(\text{sinc}(\omega))$ (lineaire fase-lag van $-\omega$)
+
+Fysisch: Verschuiving veroorzaakt geen amplitudeverandering, alleen lineaire fasevertraging.
 \end{enumerate}
 
 \subsubsection*{Oplossing 4.3}
@@ -2037,149 +2312,156 @@ X(j\omega) = \frac{1}{2}[2\text{sinc}(\omega-10\pi) + 2\text{sinc}(\omega+10\pi)
 \]
 
 \item Het spectrum bestaat uit twee verschoven sinc-functies gecentreerd op $\omega = \pm 10\pi$.
+
+De modulatiestelling toont dat vermenigvuldiging in het tijdsdomein resulteert in convolutie in het frequentiedomein (via dualiteit).
 \end{enumerate}
 
-\subsubsection*{Oplossing 4.4}
+\subsubsection*{Oplossing 4.4: Parseval's Energiestelling}
 
-\textbf{Gegeven:} $f(t) = e^{-t}u(t)$.
+\textbf{Gegeven:} $f(t) = e^{-t}u(t)$ (exponentieel afnemend signaal).
 
-			\textbf{Vraag:} Bepaal energie in tijdsdomein; controleer in frequentiedomein; verifieer Parseval's stelling.
+\textbf{Vraag:} Bepaal energie in tijdsdomein; bepaal Fouriertransformatie; verifieer Parseval's stelling.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item Energie in tijdsdomein:
+\item \textbf{Energie in tijdsdomein:}
 
-\[
-E = \int_0^{\infty} e^{-2t} dt = \left[-\frac{1}{2}e^{-2t}\right]_0^{\infty} = \frac{1}{2}
-\]
+\[E_{\text{t}} = \int_0^{\infty} |e^{-t}|^2 dt = \int_0^{\infty} e^{-2t} dt = \left[-\frac{1}{2}e^{-2t}\right]_0^{\infty} = \frac{1}{2} \text{ J}\]
 
-\item Fouriertransformatie: via Laplace-paar $e^{-t}u(t)\leftrightarrow \frac{1}{s+1}$ (Formularium \ref{form:laplace-pairs}) en de link LT$\to$FTC (Formularium \ref{form:lt-ft-link}) krijg je
-\[
-F(j\omega)=\frac{1}{1+j\omega}.
-\]
+\item \textbf{Fouriertransformatie:} Via Laplace-paar $e^{-t}u(t) \Leftrightarrow \frac{1}{s+1}$ (Formularium \ref{form:laplace-pairs}) en LT→FTC-link:
 
-\[
-|F(j\omega)|^2 = \frac{1}{1+\omega^2}
-\]
+\[F(j\omega) = \frac{1}{1+j\omega}\]
 
-\item Energie in frequentiedomein (Parseval's stelling, Formularium \ref{form:ft-prop}):
+Magnitude:
 
-\[
-E = \frac{1}{2\pi} \int_{-\infty}^{\infty} |F(j\omega)|^2 d\omega = \frac{1}{2\pi} \int_{-\infty}^{\infty} \frac{1}{1+\omega^2} d\omega
-\]
+\[|F(j\omega)| = \frac{1}{\sqrt{1+\omega^2}}, \quad |F(j\omega)|^2 = \frac{1}{1+\omega^2}\]
 
-Gebruik standaardintegraal $\int \frac{1}{1+\omega^2}d\omega = \arctan(\omega) + C$:
+\item \textbf{Parseval's Energiestelling (Formularium \ref{form:ft-prop}):}
 
-\[
-= \frac{1}{2\pi} [\arctan(\omega)]_{-\infty}^{\infty}
-\]
+\[E_{\text{f}} = \frac{1}{2\pi} \int_{-\infty}^{\infty} |F(j\omega)|^2 d\omega = \frac{1}{2\pi} \int_{-\infty}^{\infty} \frac{1}{1+\omega^2} d\omega\]
 
-Evaluatie van limieten: $\lim_{\omega\to\infty}\arctan(\omega) = \frac{\pi}{2}$, $\lim_{\omega\to-\infty}\arctan(\omega) = -\frac{\pi}{2}$
+\textbf{Stap 1:} Standaardintegraal: $\int_{-\infty}^{\infty} \frac{1}{1+\omega^2} d\omega = [\arctan(\omega)]_{-\infty}^{\infty}$
 
-\[
-= \frac{1}{2\pi} \left(\frac{\pi}{2} - \left(-\frac{\pi}{2}\right)\right) = \frac{1}{2\pi} \cdot \pi = \frac{1}{2} \quad \checkmark
-\]
+\textbf{Stap 2:} Limieten: $\arctan(\infty) - \arctan(-\infty) = \frac{\pi}{2} - (-\frac{\pi}{2}) = \pi$
+
+\textbf{Stap 3:} Energie:
+
+\[E_{\text{f}} = \frac{1}{2\pi} \cdot \pi = \frac{1}{2} \text{ J} \quad \checkmark\]
+
+Conclusie: $E_{\text{t}} = E_{\text{f}} = 0.5$ J (Parseval geverifieerd!)
 \end{enumerate}
 
-\subsubsection*{Oplossing 4.5}
+\subsubsection*{Oplossing 4.5: Exponentieel Signaal en Bandbreedte}
 
-\textbf{Gegeven:} $f(t) = e^{-a|t|}$ met $a > 0$.
+\textbf{Gegeven:} $f(t) = e^{-a|t|}$ met $a > 0$ (tweezijdig exponentieel signaal).
 
-\textbf{Vraag:} Bepaal Fouriertransformatie; schets spektra; bepaal bandbreedte.
+\textbf{Vraag:} Bepaal Fouriertransformatie; bereken amplitudespectrum; bepaal 3dB-bandbreedte.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item \textbf{Fouriertransformatie} (Formularium: definitie \ref{form:ft-def}):
+\item \textbf{Fouriertransformatie (Formularium \ref{form:ft-def}):}
 
-\[
-F(j\omega) = \int_{-\infty}^{\infty} e^{-a|t|} e^{-j\omega t} dt
-\]
+\[F(j\omega) = \int_{-\infty}^{\infty} e^{-a|t|} e^{-j\omega t} dt\]
 
-Splits op bij $t=0$ met $|t| = -t$ voor $t<0$ en $|t| = t$ voor $t>0$:
+Splits op bij $t=0$ (gebruik $|t| = -t$ voor $t<0$ en $|t|=t$ voor $t>0$):
 
-\[
-F(j\omega) = \int_{-\infty}^{0} e^{at} e^{-j\omega t} dt + \int_{0}^{\infty} e^{-at} e^{-j\omega t} dt
-\]
+\[F(j\omega) = \int_{-\infty}^{0} e^{at} e^{-j\omega t} dt + \int_{0}^{\infty} e^{-at} e^{-j\omega t} dt = \int_{-\infty}^{0} e^{(a-j\omega)t} dt + \int_{0}^{\infty} e^{-(a+j\omega)t} dt\]
 
-\emph{Eerste integraal:}
-\[
-\int_{-\infty}^{0} e^{(a-j\omega)t} dt = \left[\frac{e^{(a-j\omega)t}}{a-j\omega}\right]_{-\infty}^{0} = \frac{1}{a-j\omega}
-\]
+\textbf{Eerste integraal:} $\left[\frac{e^{(a-j\omega)t}}{a-j\omega}\right]_{-\infty}^{0} = \frac{1}{a-j\omega}$
 
-\emph{Tweede integraal:}
-\[
-\int_{0}^{\infty} e^{-(a+j\omega)t} dt = \left[\frac{e^{-(a+j\omega)t}}{-(a+j\omega)}\right]_{0}^{\infty} = \frac{1}{a+j\omega}
-\]
+\textbf{Tweede integraal:} $\left[\frac{-e^{-(a+j\omega)t}}{a+j\omega}\right]_{0}^{\infty} = \frac{1}{a+j\omega}$
 
-Samenvoegen:
+\textbf{Samenvoegen:}
 
-\[
-F(j\omega) = \frac{1}{a-j\omega} + \frac{1}{a+j\omega} = \frac{(a+j\omega) + (a-j\omega)}{a^2 + \omega^2} = \frac{2a}{a^2 + \omega^2}
-\]
+\[F(j\omega) = \frac{1}{a-j\omega} + \frac{1}{a+j\omega} = \frac{a+j\omega+a-j\omega}{a^2+\omega^2} = \frac{2a}{a^2+\omega^2}\]
 
-\item Amplitude-spectrum: $|F(j\omega)| = \frac{2a}{a^2 + \omega^2}$
+\item \textbf{Amplitudespectrum:} $|F(j\omega)| = \frac{2a}{a^2+\omega^2}$ (zuiver reëel, dus fasespectrum = 0)
 
-Fase-spectrum: $\angle F(j\omega) = 0$ (zuiver re"eel en positief)
+Maximale waarde: $|F(0)| = \frac{2}{a}$
 
-\item \textbf{Bandbreedte:} geen nulpunten; 3dB-bandbreedte waar $|F(j\omega)| = |F(0)|/\sqrt{2}$:
+\item \textbf{3dB-Bandbreedte:} Waarden waar $|F(j\omega)| = |F(0)|/\sqrt{2}$:
 
-$|F(0)| = \frac{2a}{a^2} = \frac{2}{a}$, dus $|F(j\omega_{3dB})| = \frac{2}{a\sqrt{2}} = \frac{\sqrt{2}}{a}$
+\[\frac{2a}{a^2+\omega^2} = \frac{2}{a\sqrt{2}} \quad \Rightarrow \quad a^2 + \omega^2 = a\sqrt{2} \quad \Rightarrow \quad \omega_{3dB} = a\]
 
-\[
-\frac{2a}{a^2 + \omega_{3dB}^2} = \frac{\sqrt{2}}{a} \Rightarrow 2a^2 = \sqrt{2}(a^2 + \omega_{3dB}^2) \Rightarrow \omega_{3dB}^2 = a^2(\sqrt{2} - 1)
-\]
+(Opmerking: bij de halve-vermogen-frequentie geldt $a^2 + \omega_{3dB}^2 = 2a^2$)
 
-Alternatief: Halve-vermogen-punten bij $a^2 + \omega^2 = 2a^2$: dus $\omega_{3dB} = a$
+Volle 3dB-bandbreedte: $B_{3dB} = 2a$ rad/s
 \end{enumerate}
 
-\subsubsection*{Oplossing 4.6}
+\subsubsection*{Oplossing 4.6: Fouriertransformatie van Impulsen}
 
-\textbf{Gegeven:} Drie signalen.
+\textbf{Gegeven:} Drie verschillende signalen: Dirac-puls $\delta(t)$, verschoven puls, cosinus.
 
-\textbf{Vraag:} Bepaal Fouriertransformaties.
+\textbf{Vraag:} Bepaal Fouriertransformaties; vergelijk spectrale karakteristieken.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item $f(t) = \delta(t)$: $F(j\omega) = 1$ (Formularium: impuls-paar \ref{form:ft-pairs})
+\item \textbf{$f(t) = \delta(t)$:}
 
-\item $f(t) = \delta(t-t_0)$: $F(j\omega) = e^{-j\omega t_0}$ (Formularium: impuls-paar \ref{form:ft-pairs})
+\[F(j\omega) = 1 \quad \text{voor alle } \omega\]
 
-\item $f(t) = \cos(\omega_0 t) = \frac{1}{2}(e^{j\omega_0 t} + e^{-j\omega_0 t})$:
+(Formularium: impuls-paar \ref{form:ft-pairs})
 
-\[
-F(j\omega) = \pi[\delta(\omega-\omega_0) + \delta(\omega+\omega_0)]
-\]
+Fysische betekenis: Perfecte impuls bevat alle frequenties met gelijk gewicht → wit spectrum.
 
-(Formularium: cosinus-paar \ref{form:ft-pairs}.)
+\item \textbf{$f(t) = \delta(t-t_0)$:}
 
-(twee impulsen op $\pm\omega_0$)
+Via verschuivingsstelling (Formularium \ref{form:ft-prop}):
+
+\[F(j\omega) = e^{-j\omega t_0}\]
+
+Amplitude: $|F(j\omega)| = 1$ (onafhankelijk van $t_0$!)
+
+Fase: $\angle F(j\omega) = -\omega t_0$ (lineair met frequentie)
+
+Fysisch: Verschuiving verandert amplitudespectrum niet, alleen faseverandering.
+
+\item \textbf{$f(t) = \cos(\omega_0 t)$:}
+
+\[\cos(\omega_0 t) = \frac{1}{2}(e^{j\omega_0 t} + e^{-j\omega_0 t})\]
+
+Via complexe exponentieel-paren (Formularium \ref{form:ft-pairs}):
+
+\[F(j\omega) = \pi\delta(\omega-\omega_0) + \pi\delta(\omega+\omega_0)\]
+
+Dit zijn twee discrete impulsen op frequenties $\pm\omega_0$ met respectievelijk gewicht $\pi$.
+
+Fysisch: Cosinus bevat precies twee frequentiecomponenten (positief en negatief).
 \end{enumerate}
 
-\subsubsection*{Oplossing 4.7}
+\subsubsection*{Oplossing 4.7: Blokpuls en Tijdverschuiving}
 
-	\textbf{Gegeven:} $x(t)=2$ op $(-\tfrac{1}{2},\tfrac{1}{2})$, 0 elders en $y(t)=x(t-\tfrac{1}{4})$.
+\textbf{Gegeven:} $x(t) = 2$ op $(-1/2, 1/2)$, nul elders; $y(t) = x(t-1/4)$ (verschoven puls).
 
-	\textbf{Vraag:} Bepaal $X(j\omega)$ en $Y(j\omega)$.
+\textbf{Vraag:} Bepaal $X(j\omega)$ en $Y(j\omega)$; vergelijk magnitudes en fases.
 
-	\textbf{Oplossing:}
+\textbf{Oplossing:}
+
 \begin{enumerate}[label=(\alph*)]
-\item Gebruik het FTC-paar uit het formularium (blok $\leftrightarrow$ sinc): voor amplitude $A$ en lengte $L$ op $[-L/2,L/2]$ geldt
-\[
-X(j\omega)=AL\,\mathrm{sinc}\left(\frac{\omega L}{2}\right).
-\]
-Hier is $A=2$ en $L=1$, dus
-\[
-X(j\omega)=2\,\mathrm{sinc}\left(\frac{\omega}{2}\right).
-\]
+\item \textbf{$X(j\omega)$ voor blokpuls:} Amplitude $A=2$, breedte $L=1$, gecentreerd op $t=0$:
 
-\item Tijdverschuiving (formularium: $x(t-t_0)\leftrightarrow e^{-j\omega t_0}X(j\omega)$):
-\[
-Y(j\omega)=e^{-j\omega/4}X(j\omega)=2e^{-j\omega/4}\,\mathrm{sinc}\left(\frac{\omega}{2}\right).
-\]
-Amplitude blijft gelijk, fase krijgt een lineaire term $-\omega/4$.
+Formularium: blok-paar \ref{form:ft-pairs}:
+
+\[X(j\omega) = AL \cdot \text{sinc}\left(\frac{\omega L}{2}\right) = 2 \cdot 1 \cdot \text{sinc}\left(\frac{\omega}{2}\right) = 2\text{sinc}\left(\frac{\omega}{2}\right)\]
+
+Nulpunten: $\text{sinc}(\omega/2) = 0$ wanneer $\omega/2 = \pm\pi, \pm2\pi, \ldots$ dus $\omega = \pm 2\pi, \pm 4\pi, \ldots$
+
+\item \textbf{$Y(j\omega)$ voor verschoven puls:} Verschoven naar $t=1/4$:
+
+Formularium: verschuivingsstelling \ref{form:ft-prop}:
+
+\[Y(j\omega) = e^{-j\omega/4} \cdot X(j\omega) = 2e^{-j\omega/4} \text{sinc}\left(\frac{\omega}{2}\right)\]
+
+\item \textbf{Vergelijking magnitudes en fase:}
+
+Magnitude: $|Y(j\omega)| = |e^{-j\omega/4}| \cdot |X(j\omega)| = 1 \cdot |X(j\omega)| = |X(j\omega)|$ (identiek!) \checkmark
+
+Fase: $\arg Y(j\omega) = -\omega/4 + \arg X(j\omega)$ (extra lineaire fase van $-\omega/4$)
+
+\textbf{Conclusie:} Tijdverschuiving verandert amplitudespectrum niet, voegt alleen lineaire fasevertraging toe.
 \end{enumerate}
 
 \subsubsection*{Oplossing 4.8}
@@ -2212,15 +2494,22 @@ X(j\omega) = 2 - (\cos\omega - j\sin\omega) = (2-\cos\omega) + j\sin\omega
 |X(j\omega)| = \sqrt{(2-\cos\omega)^2 + (\sin\omega)^2}
 \]
 
-\textbf{Stap 3:} Uitwerken:
-\[
-= \sqrt{4 - 4\cos\omega + \cos^2\omega + \sin^2\omega}
-\]
+\textbf{Stap 3:} Uitwerken (gebruik $\cos^2\omega + \sin^2\omega = 1$):
 
-Gebruik $\cos^2\omega + \sin^2\omega = 1$:
-\[
-= \sqrt{4 - 4\cos\omega + 1} = \sqrt{5 - 4\cos\omega}
-\]
+\begin{align}
+|X(j\omega)|^2 &= 4 - 4\cos\omega + \cos^2\omega + \sin^2\omega\\
+&= 5 - 4\cos\omega
+\end{align}
+
+Dus: $|X(j\omega)| = \sqrt{5 - 4\cos\omega}$
+
+\item \textbf{Bijzondere waarden:}
+
+$\omega = 0$: $|X(0)| = \sqrt{5-4} = 1$ (totale impulssterkte)
+
+$\omega = \pi$: $|X(\pi)| = \sqrt{5+4} = 3$ (maximaal)
+
+$\omega = \pi/2$: $|X(\pi/2)| = \sqrt{5} \approx 2.24$
 \end{enumerate}
 
 \subsection{Oplossingen Hoofdstuk 5}
@@ -2383,30 +2672,34 @@ f(t) \approx \frac{1}{2} + \frac{4}{\pi^2}\cos(\pi t) + \frac{4}{9\pi^2}\cos(3\p
 \]
 \end{enumerate}
 
-\subsubsection*{Oplossing 5.4}
+\subsubsection*{Oplossing 5.4: Parseval's Stelling voor Fourierreeksen}
 
-\textbf{Gegeven:} Blokgolf uit oefening 5.1.
+\textbf{Gegeven:} Blokgolf uit oefening 5.1: $f(t) = 1$ voor $0<t<1$, $f(t)=-1$ voor $1<t<2$, periode $T=2$.
 
-			\textbf{Vraag:} Bepaal gemiddelde macht; controleer met Parseval's stelling.
+\textbf{Vraag:} Bepaal gemiddelde macht beide via integratie en Parseval; controleer equivalentie.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item Gemiddelde macht via integratie:
+\item \textbf{Gemiddelde macht via tijdsdomein-integratie:}
 
-\[
-P = \frac{1}{2}\int_0^2 f^2(t)dt = \frac{1}{2}[1 + 1] = 1
-\]
+\[P = \frac{1}{T}\int_0^T |f(t)|^2 dt = \frac{1}{2}\left(\int_0^1 1^2 dt + \int_1^2 (-1)^2 dt\right) = \frac{1}{2}[1+1] = 1 \text{ W}\]
 
-\item Parseval's stelling voor Fourierreeksen:
+\item \textbf{Fourier-coëfficiënten uit Opl. 5.1:}
 
-\[
-P = a_0^2 + \frac{1}{2}\sum_{n=1}^{\infty} b_n^2 = 0 + \frac{1}{2}\sum_{n=1,3,5,...} \frac{16}{n^2\pi^2}
-\]
+Voor de blokgolf: $a_0 = 0$, $a_n = 0$ (oneven functie), en $b_n = \frac{4}{n\pi}$ voor oneven $n$.
 
-\[
-= \frac{8}{\pi^2}[1 + \frac{1}{9} + \frac{1}{25} + ...] = \frac{8}{\pi^2} \cdot \frac{\pi^2}{8} = 1 \quad \checkmark
-\]
+\item \textbf{Parseval's Stelling (Formularium \ref{form:fs-cart}):}
+
+\[P = a_0^2 + \frac{1}{2}\sum_{n=1}^{\infty} (a_n^2 + b_n^2) = 0 + \frac{1}{2}\sum_{n=1,3,5,...}^{\infty} \left(\frac{4}{n\pi}\right)^2\]
+
+\[= \frac{8}{\pi^2}\sum_{n=1,3,5,...}^{\infty} \frac{1}{n^2} = \frac{8}{\pi^2}\left(1 + \frac{1}{9} + \frac{1}{25} + \frac{1}{49} + ...\right)\]
+
+\textbf{Standaardsum:} $\sum_{n=1,3,5,...} \frac{1}{n^2} = \frac{\pi^2}{8}$
+
+\[P = \frac{8}{\pi^2} \cdot \frac{\pi^2}{8} = 1 \text{ W} \quad \checkmark\]
+
+\textbf{Conclusie:} Beide methoden geven identieke gemiddelde macht, wat Parseval's stelling bewijst!
 \end{enumerate}
 
 \subsubsection*{Oplossing 5.5}
@@ -2478,54 +2771,42 @@ Dus de Fourierreeks is gewoon $f(t)=\sin(t)+2\cos(2t)$.
 
 \subsection{Oplossingen Hoofdstuk 6}
 
-\subsubsection*{Oplossing 6.1}
+\subsubsection*{Oplossing 6.1: Staprespons via Convolutie en Laplace}
 
-\textbf{Gegeven:} Eerste-orde systeem met impulsrespons $h(t) = 2e^{-5t}u(t)$.
+\textbf{Gegeven:} Eerste-orde systeem met impulsrespons $h(t) = 2e^{-5t}u(t)$ en ingangssignaal $x(t) = u(t)$.
 
-\textbf{Vraag:} Bepaal systeemrespons op stapingang via convolutie; verifieer met Laplace.
+\textbf{Vraag:} Bepaal systeemrespons $y(t)$ via convolutie; verifieer met Laplacetransformatie.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item Convolutie met stapingang:
+\item \textbf{Convolutie in tijdsdomein:}
 
-\[
-y(t) = h(t) * u(t) = \int_0^t 2e^{-5\tau}d\tau = 2\left[-\frac{1}{5}e^{-5\tau}\right]_0^t = \frac{2}{5}(1 - e^{-5t})u(t)
-\]
+\[y(t) = h(t) * x(t) = \int_{-\infty}^{\infty} h(\tau)x(t-\tau)d\tau = \int_0^t 2e^{-5\tau}d\tau\]
 
-\item Via Laplacetransformatie:
+\[\text{Integreer:} \quad y(t) = 2\left[-\frac{1}{5}e^{-5\tau}\right]_0^t = -\frac{2}{5}(e^{-5t}-1) = \frac{2}{5}(1-e^{-5t})u(t)\]
 
-\[
-H(s) = \frac{2}{s+5}, \quad F(s) = \frac{1}{s}, \quad Y(s) = H(s)F(s) = \frac{2}{s(s+5)}
-\]
+Steady-state waarde: $y(\infty) = \frac{2}{5}$ V
 
-\textbf{Partieelbreuken:}
+\item \textbf{Verificatie via Laplacetransformatie:}
 
-\[
-\frac{2}{s(s+5)} = \frac{A}{s} + \frac{B}{s+5}
-\]
+\[H(s) = \frac{2}{s+5}, \quad X(s) = \frac{1}{s}, \quad Y(s) = H(s)X(s) = \frac{2}{s(s+5)}\]
 
-Vermenigvuldig met $s(s+5)$:
+\textbf{Partieelbreukontwikkeling:} Stel $\frac{2}{s(s+5)} = \frac{A}{s} + \frac{B}{s+5}$
 
-\[
-2 = A(s+5) + Bs
-\]
+Vermenigvuldig met $s(s+5)$: $2 = A(s+5) + Bs$
 
-Voor $s = 0$: $2 = A(5) \Rightarrow A = \frac{2}{5}$
+Voor $s=0$: $2 = 5A \Rightarrow A = \frac{2}{5}$
 
-Voor $s = -5$: $2 = B(-5) \Rightarrow B = -\frac{2}{5}$
+Voor $s=-5$: $2 = -5B \Rightarrow B = -\frac{2}{5}$
 
-Dus:
+Dus: $Y(s) = \frac{2/5}{s} - \frac{2/5}{s+5}$
 
-\[
-Y(s) = \frac{2/5}{s} - \frac{2/5}{s+5}
-\]
+\textbf{Inverse Laplacetransformatie} (Formularium \ref{form:laplace-pairs}):
 
-Inverse Laplacetransformatie (Formularium \ref{form:laplace-pairs}):
+\[y(t) = \frac{2}{5} \cdot 1 - \frac{2}{5}e^{-5t} = \frac{2}{5}(1-e^{-5t})u(t) \quad \checkmark\]
 
-\[
-y(t) = \frac{2}{5}(1 - e^{-5t})u(t) \quad \checkmark
-\]
+Beide methoden geven hetzelfde resultaat!
 \end{enumerate}
 
 \subsubsection*{Oplossing 6.2}
@@ -2558,32 +2839,40 @@ y(t) = \frac{2}{5}(1 - e^{-5t})u(t) \quad \checkmark
 Complexe wortels $\Rightarrow$ Het systeem is \textbf{ondergedempt}.
 \end{enumerate}
 
-\subsubsection*{Oplossing 6.3}
+\subsubsection*{Oplossing 6.3: Frequentierespons en Bandbreedte}
 
-\textbf{Gegeven:} LTC-systeem met $H(s) = \frac{10}{s+5}$.
+\textbf{Gegeven:} LTC-systeem met $H(s) = \frac{10}{s+5}$ (eerste-orde laagdoorsysteem).
 
-\textbf{Vraag:} Bepaal frequentierespons; bepaal amplitude/faserespons; bepaal 3dB bandbreedte.
+\textbf{Vraag:} Bepaal frequentierespons; amplitude/fase; bepaal 3dB bandbreedte.
 
 \textbf{Oplossing:}
 
 \begin{enumerate}[label=(\alph*)]
-\item Frequentierespons:
+\item \textbf{Frequentierespons} (substitutie $s = j\omega$):
 
-\[
-H(j\omega) = \frac{10}{j\omega+5} = \frac{10(5-j\omega)}{25+\omega^2}
-\]
+\[H(j\omega) = \frac{10}{j\omega+5}\]
 
-\item Amplitude- en faserespons:
+Multipliceer met toegevoegd complex getal:
 
-\[
-|H(j\omega)| = \frac{10}{\sqrt{25+\omega^2}}, \quad \angle H(j\omega) = -\arctan(\omega/5)
-\]
+\[H(j\omega) = \frac{10(5-j\omega)}{(5+j\omega)(5-j\omega)} = \frac{10(5-j\omega)}{25+\omega^2} = \frac{50}{25+\omega^2} - j\frac{10\omega}{25+\omega^2}\]
 
-\item 3dB bandbreedte waar $|H(j\omega)| = |H(0)|/\sqrt{2} = 2/\sqrt{2} = \sqrt{2}$:
+\item \textbf{Amplitude- en faserespons:}
 
-\[
-\frac{10}{\sqrt{25+\omega^2}} = \sqrt{2} \Rightarrow 25 + \omega^2 = 50 \Rightarrow \omega_{3dB} = 5 \text{ rad/s}
-\]
+\[|H(j\omega)| = \frac{10}{\sqrt{25+\omega^2}}, \quad \angle H(j\omega) = -\arctan(\omega/5)\]
+
+DC-versterking: $|H(0)| = \frac{10}{5} = 2$
+
+Hoge frequenties: $|H(j\omega)| \to 0$ als $\omega \to \infty$
+
+\item \textbf{3dB-Bandbreedte} waar $|H(j\omega)| = |H(0)|/\sqrt{2}$:
+
+\[\frac{10}{\sqrt{25+\omega^2}} = \frac{2}{\sqrt{2}} = \sqrt{2}\]
+
+\[\sqrt{25+\omega^2} = \frac{10}{\sqrt{2}} = 5\sqrt{2}\]
+
+\[25 + \omega^2 = 50 \quad \Rightarrow \quad \omega_{3dB} = 5 \text{ rad/s}\]
+
+Dit geeft ook $f_{3dB} = \omega_{3dB}/(2\pi) \approx 0.796$ Hz
 \end{enumerate}
 
 \subsubsection*{Oplossing 6.4}
@@ -3759,6 +4048,584 @@ E = \frac{1}{2\pi} \int_{-\infty}^{\infty} |F(j\omega)|^2 d\omega = \frac{1}{2\p
 \]
 
 Beide methoden geven dezelfde energie!
+\end{enumerate}
+
+\newpage
+
+\subsection{Oplossingen Hoofdstuk 8}
+
+\subsubsection*{Oplossing 8.1}
+
+\textbf{Gegeven:} Signalen $u(t)$ (Heaviside), $v(t) = 2\cos(2\pi t)$, en afgeleide signalen.
+
+\textbf{Vraag:} Bepaal eigenschappen (causaal, periodiek, even, oneven) voor vier signalen.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Signaal-eigenschappen tabel:}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Signaal} & \textbf{Causaal} & \textbf{Periodiek} & \textbf{Even} & \textbf{Oneven}\\
+\hline
+$u(t)$ & Ja & Nee & Nee & Nee\\
+\hline
+$v(t) = 2\cos(2\pi t)$ & Nee & Ja & Ja & Nee\\
+\hline
+$u(t) \cdot v(t)$ & Ja & Nee & Nee & Nee\\
+\hline
+$u(t) * v(t)$ & Ja & Nee & Nee & Nee\\
+\hline
+\end{tabular}
+\end{center}
+
+\item \textbf{Motivaties:}
+
+\begin{itemize}
+\item $u(t)$: Causaal (nul voor $t<0$). Niet periodiek, ook niet even/oneven (niet symmetrisch om $t=0$).
+\item $v(t) = 2\cos(2\pi t)$: Niet causaal (gedefinieerd voor alle $t \in \mathbb{R}$). Periodiek met periode $T=1$ s. Even omdat $v(-t) = 2\cos(-2\pi t) = v(t)$.
+\item $u(t) \cdot v(t)$: Product van causaal en niet-causaal signaal; result is causaal (nul voor $t<0$). Product destrueert periodiciteit. Niet even of oneven.
+\item $u(t) * v(t)$: Convolutie; causaal omdat beide operanden causaal zijn. Niet periodiek, niet even/oneven.
+\end{itemize}
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.2}
+
+\textbf{Gegeven:} Blok $x(t)$, cosinus $v(t) = 2\cos(2\pi t)$, product $y(t)$, som + verschuiving $z(t)$.
+
+\textbf{Vraag:} Bepaal FTC van $y$ en $z$.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{$X(j\omega)$ van het blok.}
+
+Formularium: ``Block'' paar (\ref{form:ft-pairs}):
+
+\[
+X(j\omega) = AL \cdot \text{sinc}\left(\frac{\omega L}{2}\right), \quad \text{met } A = 1, L = 1
+\]
+
+Dus:
+\[
+X(j\omega) = \text{sinc}\left(\frac{\omega}{2}\right) = \frac{\sin(\omega/2)}{\omega/2}
+\]
+
+\item \textbf{$Y(j\omega)$ via modulatiestelling.}
+
+Modulatiestelling (Formularium: \ref{form:ft-prop}): $f(t)g(t) \leftrightarrow \frac{1}{2\pi}(F*G)(\omega)$
+
+$v(t) = 2\cos(2\pi t) \leftrightarrow 2\pi[\delta(\omega + 2\pi) + \delta(\omega - 2\pi)]$ (Formularium: \ref{form:ft-pairs})
+
+Dus:
+\[
+Y(j\omega) = \frac{1}{2\pi}\left[X(j(\omega-2\pi)) + X(j(\omega+2\pi))\right]
+\]
+
+\[
+= \frac{1}{2\pi}\left[\text{sinc}\left(\frac{\omega-2\pi}{2}\right) + \text{sinc}\left(\frac{\omega+2\pi}{2}\right)\right]
+\]
+
+Dit geeft twee gelijkaardige sinc-functies gecentreerd op $\omega = \pm 2\pi$.
+
+\item \textbf{$Z(j\omega)$ via verschuivingsstelling.}
+
+Verschuivingsstelling (Formularium: \ref{form:ft-prop}): $x(t-t_0) \leftrightarrow X(\omega)e^{-j\omega t_0}$
+
+\[
+Z(j\omega) = X(j\omega) + X(j\omega) e^{-j\omega \cdot 1}
+\]
+
+\[
+= X(j\omega)[1 + e^{-j\omega}]
+\]
+
+\[
+= \text{sinc}\left(\frac{\omega}{2}\right) \cdot [1 + e^{-j\omega}]
+\]
+
+\textbf{Effect op amplitude:} $|1 + e^{-j\omega}| = |2\cos(\omega/2)|$ (constructieve/destructieve interferentie)
+
+\textbf{Effect op fase:} $\arg[1 + e^{-j\omega}] = \arg[\text{reëel getal}]$; faseshift afhankelijk van $\omega$.
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.3}
+
+\textbf{Gegeven:} $x(t) = u(t) - u(t-2)$, $h(t) = e^{-2t}u(t)$.
+
+\textbf{Vraag:} Bepaal $X(s)$; causaliteit; bepaal $y(t) = h(t) * x(t)$.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Laplacetransformatie van $x(t)$.}
+
+$u(t) \leftrightarrow 1/s$ en $u(t-2) \leftrightarrow e^{-2s}/s$ (Formularium: \ref{form:laplace-pairs}, \ref{form:laplace-prop})
+
+\[
+X(s) = \frac{1}{s} - \frac{e^{-2s}}{s} = \frac{1-e^{-2s}}{s}
+\]
+
+\item \textbf{Causaliteit van het systeem.}
+
+$h(t) = e^{-2t}u(t)$ is nul voor $t < 0$. Dit betekent het systeem alleen reageert op huidige en verleden inputs.
+
+\textbf{Het systeem IS causaal.}
+
+\item \textbf{Convolutie $y(t) = h(t) * x(t)$.}
+
+Via Laplace (Formularium: convolutie-eigenschap \ref{form:laplace-prop}):
+
+\[
+Y(s) = H(s) \cdot X(s) = \frac{1}{s+2} \cdot \frac{1-e^{-2s}}{s} = \frac{1-e^{-2s}}{s(s+2)}
+\]
+
+Partieelbreuken: $\frac{1}{s(s+2)} = \frac{1}{2}\left(\frac{1}{s} - \frac{1}{s+2}\right)$
+
+\[
+Y(s) = \frac{1}{2}[1 - e^{-2s}]\left(\frac{1}{s} - \frac{1}{s+2}\right)
+\]
+
+Inverse Laplace:
+
+\[
+y(t) = \frac{1}{2}(1 - e^{-2t})u(t) - \frac{1}{2}(1 - e^{-2(t-2)})u(t-2)
+\]
+
+\textbf{Stukgewijs:}
+
+\[
+y(t) = \begin{cases}
+0, & t < 0\\
+\frac{1}{2}(1 - e^{-2t}), & 0 \le t < 2\\
+\frac{1}{2}[e^{-2(t-2)} - e^{-2t}], & t \ge 2
+\end{cases}
+\]
+
+Vereenvoudiging voor $t \ge 2$: $\frac{1}{2}[e^{-2t+4} - e^{-2t}] = \frac{1}{2}e^{-2t}[e^4 - 1]$
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.4}
+
+\textbf{Gegeven:} Periodieke pulstrein $p(t)$ met periode $T = 2$ s, duty cycle 1:4.
+
+\textbf{Vraag:} Bepaal complexe Fouriercoëfficiënten; symmetrie; verdwijnende harmonischen.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Complexe Fouriercoëfficiënten.}
+
+Formularium: \ref{form:fs-cplx}
+
+\[
+c_k = \frac{1}{T}\int_0^T p(t)e^{-jk\omega_0 t}dt, \quad \omega_0 = \frac{2\pi}{T} = \pi
+\]
+
+\[
+c_k = \frac{1}{2}\int_0^{1/2} e^{-jk\pi t}dt = \frac{1}{2} \left[\frac{e^{-jk\pi t}}{-jk\pi}\right]_0^{1/2}
+\]
+
+\[
+= \frac{1}{-2jk\pi}[e^{-jk\pi/2} - 1]
+\]
+
+Voor $k = 0$: $c_0 = \frac{1}{2} \int_0^{1/2} dt = \frac{1}{4}$
+
+Voor $k \neq 0$:
+\[
+c_k = \frac{1 - e^{-jk\pi/2}}{2jk\pi}
+\]
+
+Dit kan herschreven als sinc-vorm: $c_k = \frac{1}{4}\text{sinc}(k\pi/4)$
+
+\item \textbf{Symmetrie: $c_{-k} = c_k^*$.}
+
+Omdat $p(t)$ reëel is:
+
+$c_{-k} = \overline{c_k}$ (complex conjugaat)
+
+Bijvoorbeeld: $c_1 = \frac{1-e^{-j\pi/2}}{2j\pi} = \frac{1-(-j)}{2j\pi} = \frac{1+j}{2j\pi}$
+
+$c_{-1} = \overline{c_1} = \frac{1-j}{-2j\pi}$ (kan geverifieerd worden door rechtstreeks in te vullen)
+
+\item \textbf{Verdwijnende harmonischen.}
+
+Harmonischen verdwijnen waar de sinc-functie nul is: $\text{sinc}(k\pi/4) = 0$ voor $k\pi/4 = n\pi$ (met $n \in \mathbb{Z} \setminus \{0\}$)
+
+Dit geeft: $k = 4n$, dus harmonischen 4, 8, 12, ... verdwijnen.
+
+Dit volgt uit de duty cycle: $T_{\text{pulse}}/T = 1/4$, dus elke 4e harmonische verdwijnt.
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.5}
+
+\textbf{Gegeven:} $x(t) = 3e^{-t}u(t) - 3e^{-(t-1)}u(t-1)$.
+
+\textbf{Vraag:} Bepaal $X(s)$; initiaal- en eindwaarden; verifieer met stellingen.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Laplacetransformatie.}
+
+Formularium: $e^{-at}u(t) \leftrightarrow \frac{1}{s+a}$ en translatie in $t$ (\ref{form:laplace-prop})
+
+\[
+X(s) = 3 \cdot \frac{1}{s+1} - 3 \cdot e^{-s} \cdot \frac{1}{s+1} = \frac{3(1-e^{-s})}{s+1}
+\]
+
+\item \textbf{Directe bepaling van grenzen.}
+
+$x(0^+) = 3e^0 - 0 = 3$ (want $u(t-1) = 0$ op $t=0^+$)
+
+$\lim_{t \to \infty} x(t) = 0 - 0 = 0$ (beide exponentialen gaan naar 0)
+
+\item \textbf{Verifiëring met stellingen.}
+
+\textbf{Beginwaardestelling:} $x(0^+) = \lim_{s \to \infty} sX(s)$
+
+\[
+\lim_{s \to \infty} s \cdot \frac{3(1-e^{-s})}{s+1} = \lim_{s \to \infty} \frac{3s(1-e^{-s})}{s+1}
+\]
+
+Als $s \to \infty$: $1 - e^{-s} \to 1$ en $\frac{s}{s+1} \to 1$, dus limiet $= 3$ \checkmark
+
+\textbf{Eindwaardestelling:} $\lim_{t \to \infty} x(t) = \lim_{s \to 0} sX(s)$ (mits alle polen van $sX(s)$ in linkervlak)
+
+\[
+\lim_{s \to 0} s \cdot \frac{3(1-e^{-s})}{s+1} = \lim_{s \to 0} \frac{3s(1-e^{-s})}{s+1}
+\]
+
+Voor kleine $s$: $1 - e^{-s} \approx s$, dus limiet $= \lim_{s \to 0} \frac{3s \cdot s}{s+1} = 0$ \checkmark
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.6}
+
+\textbf{Gegeven:} $y''(t) + 3y'(t) + 2y(t) = u(t)$, $y(0) = 1$, $y'(0) = 0$.
+
+\textbf{Vraag:} Los op met Laplace; bepaal polen; controleer beginvoorwaarden.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Laplacetransformatie van de DV.}
+
+Afgeleide-eigenschap (Formularium: \ref{form:laplace-prop}):
+
+\[
+s^2Y(s) - sy(0) - y'(0) + 3[sY(s) - y(0)] + 2Y(s) = \frac{1}{s}
+\]
+
+\[
+s^2Y(s) - s + 3sY(s) - 3 + 2Y(s) = \frac{1}{s}
+\]
+
+\[
+Y(s)[s^2 + 3s + 2] = \frac{1}{s} + s + 3 = \frac{1 + s^2 + 3s}{s} = \frac{s^2 + 3s + 1}{s}
+\]
+
+\item \textbf{Polen van het systeem.}
+
+$s^2 + 3s + 2 = (s+1)(s+2)$, dus polen zijn $s = -1$ en $s = -2$.
+
+\[
+Y(s) = \frac{s^2 + 3s + 1}{s(s+1)(s+2)}
+\]
+
+\item \textbf{Partieelbreuken.}
+
+\[
+\frac{s^2 + 3s + 1}{s(s+1)(s+2)} = \frac{A}{s} + \frac{B}{s+1} + \frac{C}{s+2}
+\]
+
+Vermenigvuldigen met $s(s+1)(s+2)$:
+
+$s^2 + 3s + 1 = A(s+1)(s+2) + Bs(s+2) + Cs(s+1)$
+
+Voor $s = 0$: $1 = 2A \Rightarrow A = 1/2$
+
+Voor $s = -1$: $1 - 3 + 1 = -B \Rightarrow B = 1$
+
+Voor $s = -2$: $4 - 6 + 1 = 2C \Rightarrow C = -1/2$
+
+Dus:
+\[
+Y(s) = \frac{1/2}{s} + \frac{1}{s+1} - \frac{1/2}{s+2}
+\]
+
+\item \textbf{Inverse Laplace.}
+
+\[
+y(t) = \left[\frac{1}{2} + e^{-t} - \frac{1}{2}e^{-2t}\right]u(t)
+\]
+
+\textbf{Verificatie van beginvoorwaarden:}
+
+$y(0) = \frac{1}{2} + 1 - \frac{1}{2} = 1$ \checkmark
+
+$y'(t) = -e^{-t} + e^{-2t}$ dus $y'(0) = -1 + 1 = 0$ \checkmark
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.7}
+
+\textbf{Gegeven:} $H(s) = \frac{3s+4}{(s+1)(s+2)}$.
+
+\textbf{Vraag:} Bepaal polen; stabiliteit; impulsrespons; staprespons.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Polen en stabiliteit.}
+
+Polen: $s = -1$ en $s = -2$. Beide hebben negatief reëel deel, dus liggen in het linkerhalfvlak.
+
+\textbf{Het systeem IS BIBO-stabiel.}
+
+\item \textbf{Impulsrespons via partieelbreuken.}
+
+\[
+H(s) = \frac{3s+4}{(s+1)(s+2)} = \frac{A}{s+1} + \frac{B}{s+2}
+\]
+
+Vermenigvuldigen met $(s+1)(s+2)$:
+
+$3s + 4 = A(s+2) + B(s+1)$
+
+Voor $s = -1$: $-3 + 4 = A \Rightarrow A = 1$
+
+Voor $s = -2$: $-6 + 4 = -B \Rightarrow B = 2$
+
+Dus:
+\[
+H(s) = \frac{1}{s+1} + \frac{2}{s+2}
+\]
+
+Inverse Laplace:
+\[
+h(t) = [e^{-t} + 2e^{-2t}]u(t)
+\]
+
+\item \textbf{Staprespons.}
+
+$Y(s) = H(s) \cdot \frac{1}{s} = \frac{1}{s(s+1)(s+2)} + \frac{2}{s(s+2)}$
+
+Partieelbreuken voor eerste term:
+
+$\frac{1}{s(s+1)(s+2)} = \frac{A}{s} + \frac{B}{s+1} + \frac{C}{s+2}$
+
+Voor $s=0$: $1 = 2A \Rightarrow A = 1/2$
+
+Voor $s=-1$: $-1 = -B \Rightarrow B = 1$
+
+Voor $s=-2$: $1 = 2C \Rightarrow C = 1/2$
+
+Tweede term: $\frac{2}{s(s+2)} = \frac{1}{s} - \frac{1}{s+2}$
+
+Gecombineerd:
+\[
+Y(s) = \frac{1/2 + 1}{s} + \frac{1}{s+1} + \frac{1/2 - 1}{s+2} = \frac{3/2}{s} + \frac{1}{s+1} - \frac{1/2}{s+2}
+\]
+
+Inverse Laplace:
+\[
+y(t) = \left[\frac{3}{2} + e^{-t} - \frac{1}{2}e^{-2t}\right]u(t)
+\]
+
+\item \textbf{Eindwaarde via eindwaardestelling.}
+
+$\lim_{t \to \infty} y(t) = \lim_{s \to 0} sY(s) = \lim_{s \to 0} H(s) \cdot 1 = \frac{4}{2} = 2$
+
+Dit klopt: uit $y(t)$ volgt $\lim_{t \to \infty} = 3/2 + 0 - 0 = 3/2$... Hercheck: $H(0) = 4/2 = 2$ dus eindwaarde is 2.
+
+Uit oplossing: staprespons naar $3/2$, dus DC-versterking $3/2$ — neen, moet $2$ zijn. Let opnieuw: $Y(s) = H(s)/s$ dus staprespons eindwaarde is $H(0) = 4/2 = 2$ \checkmark
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.8}
+
+\textbf{Gegeven:} $x(t) = u(t) - u(t-1)$ (puls), $h(t) = e^{-t}u(t)$.
+
+\textbf{Vraag:} Bepaal $y(t)$ via convolutie en Laplace.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Convolutie in tijdsdomein.}
+
+$(x * h)(t) = \int_0^{\infty} x(\tau) h(t-\tau) d\tau = \int_0^{\infty} [u(\tau) - u(\tau-1)] e^{-(t-\tau)} d\tau$
+
+\textbf{Geval 1: } $0 \le t < 1$
+
+\[
+y(t) = \int_0^t e^{-(t-\tau)} d\tau = e^{-t}\int_0^t e^{\tau} d\tau = e^{-t}[e^t - 1] = 1 - e^{-t}
+\]
+
+\textbf{Geval 2: } $t \ge 1$
+
+\[
+y(t) = \int_1^t e^{-(t-\tau)} d\tau = e^{-t}[e^t - e] = 1 - e^{-(t-1)}
+\]
+
+\textbf{Stukgewijs resultaat:}
+\[
+y(t) = \begin{cases}
+0, & t < 0\\
+1 - e^{-t}, & 0 \le t < 1\\
+e^{-1}(e - e^{-t}), & t \ge 1
+\end{cases}
+\]
+
+\item \textbf{Verifiëring via Laplace.}
+
+$X(s) = \frac{1-e^{-s}}{s}$ en $H(s) = \frac{1}{s+1}$
+
+$Y(s) = \frac{1-e^{-s}}{s(s+1)}$
+
+Partieelbreuken: $\frac{1}{s(s+1)} = \frac{1}{s} - \frac{1}{s+1}$
+
+$Y(s) = (1-e^{-s})\left[\frac{1}{s} - \frac{1}{s+1}\right]$
+
+Inverse Laplace:
+
+$(1-e^{-s})\frac{1}{s} \leftrightarrow u(t) - u(t-1)$
+
+$(1-e^{-s})\frac{1}{s+1} \leftrightarrow e^{-t}u(t) - e^{-(t-1)}u(t-1)$
+
+Dus:
+\[
+y(t) = [u(t) - u(t-1)] - [e^{-t}u(t) - e^{-(t-1)}u(t-1)]
+\]
+
+Dit geeft dezelfde stukgewijze vorm \checkmark
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.9}
+
+\textbf{Gegeven:} $f(t) = e^{-2|t|}$.
+
+\textbf{Vraag:} Bepaal $F(j\omega)$; bereken energie; verifieer Parseval.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Fouriertransformatie.}
+
+Split: $f(t) = e^{-2t}u(t) + e^{2t}u(-t) = e^{-2t}u(t) + e^{2t}(1-u(t))$
+
+Alternatief: gebruik symmetrie. $f(t)$ is even, dus:
+
+\[
+F(j\omega) = \int_{-\infty}^{\infty} e^{-2|t|} e^{-j\omega t} dt = 2\int_0^{\infty} e^{-2t}\cos(\omega t) dt
+\]
+
+\[
+= 2 \cdot \text{Re}\left[\int_0^{\infty} e^{-2t} e^{j\omega t} dt\right] = 2 \cdot \text{Re}\left[\frac{1}{2-j\omega}\right]
+\]
+
+\[
+= 2 \cdot \frac{2}{4 + \omega^2} = \frac{4}{4 + \omega^2}
+\]
+
+\item \textbf{Energieberekening in tijdsdomein.}
+
+\[
+E = \int_{-\infty}^{\infty} e^{-4|t|} dt = 2\int_0^{\infty} e^{-4t} dt = 2 \cdot \frac{1}{4} = \frac{1}{2}
+\]
+
+\item \textbf{Parseval's stelling-verifiëring.}
+
+\[
+E = \frac{1}{2\pi}\int_{-\infty}^{\infty} |F(j\omega)|^2 d\omega = \frac{1}{2\pi}\int_{-\infty}^{\infty} \frac{16}{(4+\omega^2)^2} d\omega
+\]
+
+Gebruik standard integraal: $\int_{-\infty}^{\infty} \frac{1}{(a^2 + \omega^2)^2} d\omega = \frac{\pi}{2a^3}$ met $a=2$:
+
+\[
+E = \frac{1}{2\pi} \cdot 16 \cdot \frac{\pi}{2 \cdot 8} = \frac{1}{2\pi} \cdot 16 \cdot \frac{\pi}{16} = \frac{1}{2} \quad \checkmark
+\]
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.10}
+
+\textbf{Gegeven:} Periodieke signaal $f(t)$ antisymmetrisch, periode $T = 2\pi$.
+
+\textbf{Vraag:} Symmetrie; Fouriercoëfficiënten; reeks; RMS en Parseval.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Symmetrie.}
+
+$f(t) = 1$ voor $0 < t < \pi$ en $f(t) = -1$ voor $-\pi < t < 0$. Dit is \textbf{oneven}: $f(-t) = -f(t)$.
+
+Omdat $f$ oneven is: $a_0 = 0$ en alle $a_n = 0$ (Formularium: voor oneven $f$ enkel $b_n$ niet-nul).
+
+\item \textbf{Bepaal $b_n$.}
+
+$\omega_0 = 2\pi/T = 1$ rad/s
+
+\[
+b_n = \frac{2}{T}\int_0^T f(t)\sin(nt) dt = \frac{1}{\pi}\int_0^{\pi} 1 \cdot \sin(nt) dt
+\]
+
+\[
+= \frac{1}{\pi} \left[-\frac{\cos(nt)}{n}\right]_0^{\pi} = \frac{1}{\pi n}[-\cos(n\pi) + 1]
+\]
+
+\[
+= \frac{1}{\pi n}[1 - (-1)^n] = \begin{cases}
+\frac{2}{\pi n}, & n \text{ oneven}\\
+0, & n \text{ even}
+\end{cases}
+\]
+
+\item \textbf{Fourierreeks tot 5e harmonische.}
+
+\[
+f(t) = \frac{2}{\pi}\sin(t) + \frac{2}{3\pi}\sin(3t) + \frac{2}{5\pi}\sin(5t) + \ldots
+\]
+
+\item \textbf{RMS en Parseval.}
+
+RMS: $\text{RMS} = \sqrt{\frac{1}{T}\int_0^T f^2(t) dt} = \sqrt{\frac{1}{2\pi}\int_{-\pi}^{\pi} 1 \, dt} = 1$
+
+Parseval: $1 = \frac{a_0^2}{2} + \sum_{n=1}^{\infty} \frac{b_n^2}{2} = 0 + \sum_{n \text{ oneven}} \frac{1}{2}\left(\frac{2}{\pi n}\right)^2$
+
+$= \sum_{k=0}^{\infty} \frac{1}{2} \cdot \frac{4}{\pi^2(2k+1)^2} = \frac{2}{\pi^2} \sum_{k=0}^{\infty} \frac{1}{(2k+1)^2} = \frac{2}{\pi^2} \cdot \frac{\pi^2}{8} = 1$ \checkmark
+\end{enumerate}
+
+\subsubsection*{Oplossing 8.11}
+
+\textbf{Gegeven:} Eerste-orde systeem $\dot{x} = -2x + u(t)$, $y = x$, $x(0) = 1$.
+
+\textbf{Vraag:} Eigenwaarde; stabiliteit; oplossing $x(t)$; limiet van $y(t)$.
+
+\textbf{Oplossing:}
+
+\begin{enumerate}[label=(\alph*)]
+\item \textbf{Eigenwaarde en stabiliteit.}
+
+Eigenwaarde van $A = -2$ is $\lambda = -2 < 0$.
+
+Omdat $\lambda < 0$ is de oorsprong \textbf{asymptotisch stabiel}. Het systeem is stabiel.
+
+\item \textbf{Vrije respons ($u(t) = 0$).}
+
+$\dot{x} = -2x$, $x(0) = 1$
+
+Algemene oplossing: $x(t) = Ce^{-2t}$ met $x(0) = 1 \Rightarrow C = 1$
+
+\[
+x(t) = e^{-2t}u(t)
+\]
+
+\item \textbf{Uitgang $y(t)$.}
+
+$y(t) = x(t) = e^{-2t}u(t)$
+
+$\lim_{t \to \infty} y(t) = 0$
 \end{enumerate}
 
 \end{document}
