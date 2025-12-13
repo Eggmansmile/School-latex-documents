@@ -37,16 +37,16 @@ Dit formularium is een compacte samenvatting van de standaardformules uit het ``
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-\text{Definitie:} & f(t)\,u(t) & \longleftrightarrow\; F(s)=\displaystyle\int_0^{\infty} f(t)e^{-st}\,dt\\
-\text{translatie in } s: & f(t)e^{-at}\,u(t) & \longleftrightarrow\; F(s+a)\\
-\text{translatie in } t: & f(t-a)\,u(t-a) & \longleftrightarrow\; e^{-as}F(s)\\
-\text{afgeleide in } t: & \dfrac{d}{dt}\big(f(t)u(t)\big) & \longleftrightarrow\; sF(s)-f(0^+)\\
+			ext{Definitie:} & f(t)\,u(t) & \longleftrightarrow\; F(s)=\displaystyle\int_0^{\infty} f(t)e^{-st}\,dt\\
+			ext{translatie in } s: & f(t)e^{-at}\,u(t) & \longleftrightarrow\; F(s+a)\\
+			ext{translatie in } t: & f(t-a)\,u(t-a) & \longleftrightarrow\; e^{-as}F(s)\\
+			ext{afgeleide in } t: & \dfrac{d}{dt}\big(f(t)u(t)\big) & \longleftrightarrow\; sF(s)-f(0^+)\\
  & \dfrac{d^2}{dt^2}\big(f(t)u(t)\big) & \longleftrightarrow\; s^2F(s)-s f(0^+)-f'(0^+)\\
 
-\text{afgeleide in } s: & t\,f(t)\,u(t) & \longleftrightarrow\; -\dfrac{d}{ds}F(s)\\
+			ext{afgeleide in } s: & t\,f(t)\,u(t) & \longleftrightarrow\; -\dfrac{d}{ds}F(s)\\
  & t^n f(t)\,u(t) & \longleftrightarrow\; (-1)^n\,\dfrac{d^n}{ds^n}F(s)\\
-\text{convolutie:} & \big(f*g\big)(t)\,u(t) & \longleftrightarrow\; F(s)\,G(s)\\
-\text{schaling:} & f(a t) & \longleftrightarrow\; \dfrac{1}{a}\,F\!\left(\dfrac{s}{a}\right)\\
+			ext{convolutie:} & \big(f*g\big)(t)\,u(t) & \longleftrightarrow\; F(s)\,G(s)\\
+			ext{schaling:} & f(a t) & \longleftrightarrow\; \dfrac{1}{a}\,F\!\left(\dfrac{s}{a}\right)\\
 \end{array}
 \]
 \endgroup
@@ -94,12 +94,12 @@ x(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty} X(\omega)e^{j\omega t}\,d\omega.
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-\text{convolution theorem (tijd):} & f(t)*g(t) & \longleftrightarrow\; F(\omega)\,G(\omega)\\
-\text{convolution theorem (freq.):} & f(t)\,g(t) & \longleftrightarrow\; \dfrac{1}{2\pi}\,(F*G)(\omega)\\
-\text{translatie:} & x(t-t_0) & \longleftrightarrow\; X(\omega)e^{-j\omega t_0}\\
-\text{symmetry (reëel $x$):} &  & X(-\omega)=X^*(\omega)\\
-\text{time symmetry (reëel $x$):} & x(-t) & \longleftrightarrow\; X(-\omega)=X^*(\omega)\\
-\text{link FS--FTC:} &  & X(k\omega_0)=T\,c_k\quad(\omega_0=2\pi/T)
+	ext{convolution theorem (tijd):} & f(t)*g(t) & \longleftrightarrow\; F(\omega)\,G(\omega)\\
+	ext{convolution theorem (freq.):} & f(t)\,g(t) & \longleftrightarrow\; \dfrac{1}{2\pi}\,(F*G)(\omega)\\
+	ext{translatie:} & x(t-t_0) & \longleftrightarrow\; X(\omega)e^{-j\omega t_0}\\
+	ext{symmetry (reëel $x$):} &  & X(-\omega)=X^*(\omega)\\
+	ext{time symmetry (reëel $x$):} & x(-t) & \longleftrightarrow\; X(-\omega)=X^*(\omega)\\
+	ext{link FS--FTC:} &  & X(k\omega_0)=T\,c_k\quad(\omega_0=2\pi/T)
 \end{array}
 \]
 \endgroup
@@ -113,15 +113,15 @@ We gebruiken $\mathrm{sinc}(x)=\dfrac{\sin(x)}{x}$.
 \renewcommand{\arraystretch}{1.4}
 \[
 \begin{array}{@{}lcl@{}}
-\text{Block:} & x(t)=\begin{cases}A,& t\in[-L/2,L/2]\\0,& \text{elders}\end{cases}
+	ext{Block:} & x(t)=\begin{cases}A,& t\in[-L/2,L/2]\\0,& \text{elders}\end{cases}
 & \longleftrightarrow\; X(\omega)=AL\,\mathrm{sinc}\!\left(\dfrac{\omega L}{2}\right)\\
-\text{Sinc:} & x(t)=A\,\mathrm{sinc}(\omega_0 t)
+	ext{Sinc:} & x(t)=A\,\mathrm{sinc}(\omega_0 t)
 & \longleftrightarrow\; X(\omega)=\begin{cases}\dfrac{A\pi}{\omega_0},& |\omega|<\omega_0\\0,& \text{elders}\end{cases}\\
-\text{Impuls:} & \delta(t-t_0) & \longleftrightarrow\; e^{-j\omega t_0}\\
-\text{Complex expon.:} & e^{j\omega_0 t} & \longleftrightarrow\; 2\pi\,\delta(\omega-\omega_0)\\
-\text{Cosine:} & \cos(\omega_0 t) & \longleftrightarrow\; \pi\,[\delta(\omega+\omega_0)+\delta(\omega-\omega_0)]\\
-\text{Sine:} & \sin(\omega_0 t) & \longleftrightarrow\; j\pi\,[\delta(\omega+\omega_0)-\delta(\omega-\omega_0)]\\
-\text{Delta train:} & \sum\limits_{k=-\infty}^{\infty}\delta(t-kT) & \longleftrightarrow\; \dfrac{2\pi}{T}\sum\limits_{k=-\infty}^{\infty}\delta\!\left(\omega-\dfrac{2\pi k}{T}\right)
+	ext{Impuls:} & \delta(t-t_0) & \longleftrightarrow\; e^{-j\omega t_0}\\
+	ext{Complex expon.:} & e^{j\omega_0 t} & \longleftrightarrow\; 2\pi\,\delta(\omega-\omega_0)\\
+	ext{Cosine:} & \cos(\omega_0 t) & \longleftrightarrow\; \pi\,[\delta(\omega+\omega_0)+\delta(\omega-\omega_0)]\\
+	ext{Sine:} & \sin(\omega_0 t) & \longleftrightarrow\; j\pi\,[\delta(\omega+\omega_0)-\delta(\omega-\omega_0)]\\
+	ext{Delta train:} & \sum\limits_{k=-\infty}^{\infty}\delta(t-kT) & \longleftrightarrow\; \dfrac{2\pi}{T}\sum\limits_{k=-\infty}^{\infty}\delta\!\left(\omega-\dfrac{2\pi k}{T}\right)
 \end{array}
 \]
 \endgroup
@@ -2901,9 +2901,6 @@ x_1(t)=2e^{-t}-e^{-2t},\qquad x_2(t)=\dot x_1(t)=-2e^{-t}+2e^{-2t}.
 \end{enumerate}
 
 \end{document}
-
-
-
 
 
 

@@ -22,152 +22,6 @@
 \tableofcontents
 \newpage
 
-\section{Formularium}
-\label{sec:formularium}
-
-Dit formularium is een compacte samenvatting van de standaardformules uit het ``Signals and Systems'' formularium. In de oefeningen wordt hiernaar verwezen.
-
-\subsection{Laplace transform (LT)}
-\label{form:laplace}
-
-\subsubsection*{1.1 Definitie en eigenschappen}
-\label{form:laplace-def}
-\begingroup
-\setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.35}
-\[
-\begin{array}{@{}lcl@{}}
-\text{Definitie:} & f(t)\,u(t) & \longleftrightarrow\; F(s)=\displaystyle\int_0^{\infty} f(t)e^{-st}\,dt\\
-\text{translatie in } s: & f(t)e^{-at}\,u(t) & \longleftrightarrow\; F(s+a)\\
-\text{translatie in } t: & f(t-a)\,u(t-a) & \longleftrightarrow\; e^{-as}F(s)\\
-\text{afgeleide in } t: & \dfrac{d}{dt}\big(f(t)u(t)\big) & \longleftrightarrow\; sF(s)-f(0^+)\\
- & \dfrac{d^2}{dt^2}\big(f(t)u(t)\big) & \longleftrightarrow\; s^2F(s)-s f(0^+)-f'(0^+)\\
-
-\text{afgeleide in } s: & t\,f(t)\,u(t) & \longleftrightarrow\; -\dfrac{d}{ds}F(s)\\
- & t^n f(t)\,u(t) & \longleftrightarrow\; (-1)^n\,\dfrac{d^n}{ds^n}F(s)\\
-\text{convolutie:} & \big(f*g\big)(t)\,u(t) & \longleftrightarrow\; F(s)\,G(s)\\
-\text{schaling:} & f(a t) & \longleftrightarrow\; \dfrac{1}{a}\,F\!\left(\dfrac{s}{a}\right)\\
-\end{array}
-\]
-\endgroup
-
-\noindent\textbf{Initial value theorem:}
-\[
-\lim_{t\to 0^+} f(t)=\lim_{s\to\infty} sF(s).
-\]
-\noindent\textbf{Final value theorem:}
-\[
-\lim_{t\to\infty} f(t)=\lim_{s\to 0} sF(s)\quad(\text{onder de gebruikelijke poolvoorwaarden}).
-\]
-\noindent\textbf{Link met FTC:}
-\[
-\mathrm{LT}(s=j\omega)=\mathrm{FTC}(j\omega)\quad \text{als } x(t) \text{ absoluut integreerbaar is.}
-\]
-
-\subsubsection*{1.2 Useful Laplace pairs}
-\label{form:laplace-pairs}
-\begingroup
-\setlength{\tabcolsep}{10pt}
-\renewcommand{\arraystretch}{1.35}
-\[
-\begin{array}{@{}lcl@{\qquad}lcl@{}}
-e^{-at}u(t) & \longleftrightarrow & \dfrac{1}{s+a} & t^n u(t) & \longleftrightarrow & \dfrac{n!}{s^{n+1}}\\
-\cos(a t)u(t) & \longleftrightarrow & \dfrac{s}{s^2+a^2} & \sin(a t)u(t) & \longleftrightarrow & \dfrac{a}{s^2+a^2}\\
-\delta(t) & \longleftrightarrow & 1 & u(t) & \longleftrightarrow & \dfrac{1}{s}\\
-t\cos(a t)u(t) & \longleftrightarrow & \dfrac{s^2-a^2}{(s^2+a^2)^2} & t\sin(a t)u(t) & \longleftrightarrow & \dfrac{2sa}{(s^2+a^2)^2}
-\end{array}
-\]
-\endgroup
-
-\subsection{Fourier transform (FTC)}
-\label{form:ft}
-
-\subsubsection*{2.1 Basic formulae}
-\label{form:ft-def}
-\[
-X(\omega)=\int_{-\infty}^{\infty} x(t)e^{-j\omega t}\,dt,\qquad
-x(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty} X(\omega)e^{j\omega t}\,d\omega.
-\]
-
-\begingroup
-\setlength{\tabcolsep}{6pt}
-\renewcommand{\arraystretch}{1.35}
-\[
-\begin{array}{@{}lcl@{}}
-\text{convolution theorem (tijd):} & f(t)*g(t) & \longleftrightarrow\; F(\omega)\,G(\omega)\\
-\text{convolution theorem (freq.):} & f(t)\,g(t) & \longleftrightarrow\; \dfrac{1}{2\pi}\,(F*G)(\omega)\\
-\text{translatie:} & x(t-t_0) & \longleftrightarrow\; X(\omega)e^{-j\omega t_0}\\
-\text{symmetry (reëel $x$):} &  & X(-\omega)=X^*(\omega)\\
-\text{time symmetry (reëel $x$):} & x(-t) & \longleftrightarrow\; X(-\omega)=X^*(\omega)\\
-\text{link FS--FTC:} &  & X(k\omega_0)=T\,c_k\quad(\omega_0=2\pi/T)
-\end{array}
-\]
-\endgroup
-
-\subsubsection*{2.2 Useful Fourier pairs}
-\label{form:ft-pairs}
-We gebruiken $\mathrm{sinc}(x)=\dfrac{\sin(x)}{x}$.
-
-\begingroup
-\setlength{\tabcolsep}{8pt}
-\renewcommand{\arraystretch}{1.4}
-\[
-\begin{array}{@{}lcl@{}}
-\text{Block:} & x(t)=\begin{cases}A,& t\in[-L/2,L/2]\\0,& \text{elders}\end{cases}
-& \longleftrightarrow\; X(\omega)=AL\,\mathrm{sinc}\!\left(\dfrac{\omega L}{2}\right)\\
-\text{Sinc:} & x(t)=A\,\mathrm{sinc}(\omega_0 t)
-& \longleftrightarrow\; X(\omega)=\begin{cases}\dfrac{A\pi}{\omega_0},& |\omega|<\omega_0\\0,& \text{elders}\end{cases}\\
-\text{Impuls:} & \delta(t-t_0) & \longleftrightarrow\; e^{-j\omega t_0}\\
-\text{Complex expon.:} & e^{j\omega_0 t} & \longleftrightarrow\; 2\pi\,\delta(\omega-\omega_0)\\
-\text{Cosine:} & \cos(\omega_0 t) & \longleftrightarrow\; \pi\,[\delta(\omega+\omega_0)+\delta(\omega-\omega_0)]\\
-\text{Sine:} & \sin(\omega_0 t) & \longleftrightarrow\; j\pi\,[\delta(\omega+\omega_0)-\delta(\omega-\omega_0)]\\
-\text{Delta train:} & \sum\limits_{k=-\infty}^{\infty}\delta(t-kT) & \longleftrightarrow\; \dfrac{2\pi}{T}\sum\limits_{k=-\infty}^{\infty}\delta\!\left(\omega-\dfrac{2\pi k}{T}\right)
-\end{array}
-\]
-\endgroup
-
-\subsection{Fourier series (FS)}
-\label{form:fs}
-
-\subsubsection*{3.1 Cartesian form}
-\label{form:fs-cart}
-Voor periode $T$ met $\omega_0=\dfrac{2\pi}{T}$:
-\[
-f(t)=\frac{a_0}{2}+\sum_{k=1}^{\infty}\left[a_k\cos\left(\frac{2\pi k}{T}t\right)+b_k\sin\left(\frac{2\pi k}{T}t\right)\right].
-\]
-\[
-a_0=\frac{2}{T}\int_{0}^{T} f(t)\,dt,\qquad
-a_k=\frac{2}{T}\int_{0}^{T} f(t)\cos\left(\frac{2\pi k}{T}t\right)\,dt,\qquad
-b_k=\frac{2}{T}\int_{0}^{T} f(t)\sin\left(\frac{2\pi k}{T}t\right)\,dt.
-\]
-
-\subsubsection*{3.2 Complex form}
-\label{form:fs-cplx}
-\[
-x(t)=\sum_{k=-\infty}^{\infty} c_k e^{jk\omega_0 t},\qquad \omega_0=\frac{2\pi}{T},\qquad
-c_k=\frac{1}{T}\int_{0}^{T} f(t)\,e^{-jk\omega_0 t}\,dt.
-\]
-\noindent\textbf{symmetry (reëel $f$):}\; $c_{-k}=c_k^*$.
-
-\noindent\textbf{Spectrum:}
-\[
-X(\omega)=\frac{2\pi}{T}\sum_{k=-\infty}^{\infty} c_k\,\delta(\omega-k\omega_0).
-\]
-
-\subsubsection*{3.3 Links between cartesian and complex form}
-\label{form:fs-ft-link}
-\[
-c_k=\frac{a_k-jb_k}{2},\qquad c_k^*=\frac{a_k+jb_k}{2}.
-\]
-\[
-|c_k|=\frac{1}{2}\sqrt{a_k^2+b_k^2},\qquad \varphi_k=\mathrm{Arctan2}(a_k,-b_k).
-\]
-\[
-a_k=2\,\mathrm{Re}\{c_k\},\qquad b_k=-2\,\mathrm{Im}\{c_k\}.
-\]
-
-\newpage
-
 \section{Hoofdstuk 1: Signalen en Systemen - Eerste Kennismaking}
 
 \subsection{Oefening 1.1: Lineaire Systemen}
@@ -303,8 +157,6 @@ f(t) = u(t) - u(t-1), \quad g(t) = u(t) - u(t-1)
 \end{tikzpicture}
 \end{center}
 
-\emph{Zie Formularium: convolutie in tijd $\leftrightarrow$ product in frequentie in \ref{form:ft-prop}.}
-
 \textbf{Vraag:} Bepaal $(f * g)(t)$ en schets het resultaat.
 
 \subsection{Oefening 2.5: Signaalverschuiving en Schaling}
@@ -393,8 +245,6 @@ x(t)=u(t)-u(t-2).
 
 Bepaal de Laplacetransformatie van de volgende functies:
 
-\emph{Zie Formularium: definitie \ref{form:laplace-def} en paren \ref{form:laplace-pairs}.}
-
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
 \item $f(t) = 5u(t)$
@@ -412,8 +262,6 @@ F(s) = \frac{3}{s+2} + \frac{5}{s^2 + 4}
 
 \textbf{Vraag:} Vind $f(t)$.
 
-\emph{Zie Formularium: paren \ref{form:laplace-pairs}.}
-
 \subsection{Oefening 3.3: Eerste-Orde Systeem}
 
 Los de volgende differentiaalvergelijking op met Laplacetransformatie:
@@ -422,8 +270,6 @@ Los de volgende differentiaalvergelijking op met Laplacetransformatie:
 \]
 
 \textbf{Vraag:} Bepaal $y(t)$.
-
-\emph{Zie Formularium: afgeleide-eigenschap \ref{form:laplace-prop}.}
 
 \subsection{Oefening 3.4: Tweede-Orde Systeem}
 
@@ -449,8 +295,6 @@ Gegeven $F(s) = \frac{2}{s^2 + 4}$.
 \item Bepaal $g(t) = \mathcal{L}^{-1}\{e^{-2s}F(s)\}$ gebruikmakend van de tijdsverschuivingsstelling.
 \end{enumerate}
 
-\emph{Zie Formularium: tijdsverschuiving in $t$ \ref{form:laplace-prop}.}
-
 \subsection{Oefening 3.6: Partieelbreuken}
 
 Bepaal de inverse Laplacetransformatie van:
@@ -474,8 +318,6 @@ F(s) = \frac{3s + 5}{s^2 + 4s + 3}
 \item Controleer je antwoorden door $f(t)$ te berekenen.
 \end{enumerate}
 
-\emph{Zie Formularium: begin- en eindwaardestelling \ref{form:laplace-prop}.}
-
 \subsection{Oefening 3.8: Convolutie via Laplace}
 
 Gegeven
@@ -483,8 +325,6 @@ Gegeven
 f(t) = u(t) - u(t-1), \quad g(t) = e^{-2t}u(t).
 \]
 Definieer $y(t) = (f*g)(t)$.
-
-\emph{Zie Formularium: convolutie-eigenschap \ref{form:laplace-prop}.}
 
 	\textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
@@ -529,8 +369,6 @@ A, & -T/2 < t < T/2 \\
 \end{tikzpicture}
 \end{center}
 
-\emph{Zie Formularium: blok $\leftrightarrow$ sinc in \ref{form:ft-pairs}.}
-
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
 \item Bepaal de Fouriertransformatie $F(j\omega)$.
@@ -541,8 +379,6 @@ A, & -T/2 < t < T/2 \\
 \subsection{Oefening 4.2: Verschuivingsstelling}
 
 Gegeven $F\{f(t)\} = F(j\omega)$ bepaal de Fouriertransformatie van $f(t-t_0)$.
-
-\emph{Zie Formularium: tijdverschuiving \ref{form:ft-prop}.}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
@@ -560,8 +396,6 @@ x(t) = \cos(10\pi t) \cdot \text{rect}(t)
 
 waarbij $\text{rect}(t) = u(t+1) - u(t-1)$ is.
 
-\emph{Zie Formularium: modulatie (cosinus) in \ref{form:ft-pairs}.}
-
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
 \item Pas de modulatiestelling toe.
@@ -571,8 +405,6 @@ waarbij $\text{rect}(t) = u(t+1) - u(t-1)$ is.
 \subsection{Oefening 4.4: Parseval's Stelling}
 
 De energiedichtheid van een signaal wordt gegeven door Parseval's stelling. Gegeven $f(t) = e^{-t}u(t)$.
-
-\emph{Zie Formularium: FTC-definitie \ref{form:ft-def} en eigenschappen \ref{form:ft-prop}.}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
@@ -662,8 +494,6 @@ f(t) = \begin{cases}
 \node[above] at (1,1.25) {$f(t)$ (1 periode)};
 \end{tikzpicture}
 \end{center}
-
-\emph{Zie Formularium: Fourierreeks (cartesisch) \ref{form:fs-cart} en (complex) \ref{form:fs-cplx}.}
 
 \textbf{Vraag:}
 \begin{enumerate}[label=(\alph*)]
@@ -1198,7 +1028,7 @@ v_{\text{uit}}(0.01) = 5(1 - e^{-1}) = 5(1 - 0.368) = 5(0.632) = 3.16 \text{ V}
 
 \subsubsection*{Oplossing 1.3}
 
-			\textbf{Gegeven:} Radio-isotoop met halveringstijd $t_{1/2} = 6$ uur. Initi\"ele hoeveelheid: 20 mg om 08:00.
+			\\textbf{Gegeven:} Radio-isotoop met halveringstijd $t_{1/2} = 6$ uur. Initi\"ele hoeveelheid: 20 mg om 08:00.
 
 \textbf{Vraag:} Hoeveel mg blijft over om 14:00?
 
@@ -1832,7 +1662,7 @@ X(j\omega) = \frac{1}{2}[2\text{sinc}(\omega-10\pi) + 2\text{sinc}(\omega+10\pi)
 
 \textbf{Gegeven:} $f(t) = e^{-t}u(t)$.
 
-			\textbf{Vraag:} Bepaal energie in tijdsdomein; controleer in frequentiedomein; verifieer Parseval's stelling.
+			\\textbf{Vraag:} Bepaal energie in tijdsdomein; controleer in frequentiedomein; verifieer Parseval's stelling.
 
 \textbf{Oplossing:}
 
@@ -2050,7 +1880,7 @@ f(t) \approx 0.5 + \frac{4}{\pi^2}\cos(\pi t) - \frac{4}{9\pi^2}\cos(3\pi t)
 
 \textbf{Gegeven:} Blokgolf uit oefening 5.1.
 
-			\textbf{Vraag:} Bepaal gemiddelde macht; controleer met Parseval's stelling.
+			\\textbf{Vraag:} Bepaal gemiddelde macht; controleer met Parseval's stelling.
 
 \textbf{Oplossing:}
 
@@ -2393,7 +2223,7 @@ Voor $\lambda_2 = -3$:
 
 \textbf{Gegeven:} $A = \begin{pmatrix} 5 & -2 \\ -2 & 2 \end{pmatrix}$.
 
-			\textbf{Vraag:} Bepaal eigenwaarden/eigenvectoren; controleer orthogonaliteit; bepaal $P^{-1}AP = D$.
+			\\textbf{Vraag:} Bepaal eigenwaarden/eigenvectoren; controleer orthogonaliteit; bepaal $P^{-1}AP = D$.
 
 \textbf{Oplossing:}
 
@@ -2430,7 +2260,7 @@ D = \begin{pmatrix} 6 & 0 \\ 0 & 1 \end{pmatrix}
 
 \textbf{Gegeven:} $A = \begin{pmatrix} 4 & 0.5 & 0.2 \\ 0.3 & -2 & 0.1 \\ 0.2 & 0.4 & 3 \end{pmatrix}$.
 
-			\textbf{Vraag:} Bepaal Gerschgorin-cirkels; geef grenzen; controleer eigenwaarden.
+			\\textbf{Vraag:} Bepaal Gerschgorin-cirkels; geef grenzen; controleer eigenwaarden.
 
 \textbf{Oplossing:}
 
@@ -2584,8 +2414,6 @@ e^{At}=\begin{pmatrix}e^{t} & 0\\0 & e^{2t}\end{pmatrix}.
 
 
 	\textbf{Gegeven:} $x(t)$ is een blok op $[-\tfrac{1}{2},\tfrac{1}{2}]$, $v(t)=2\cos(2\pi t)$, $y(t)=x(t)\cos(2\pi t)$, $z(t)=x(t)+x(t-1)$.
-
-		extbf{Vraag:} (a) bepaal even/oneven; (b) bepaal $Y(j\omega)$ via modulatie; (c) bepaal $Z(j\omega)$ via verschuiving.
 
 	\textbf{Oplossing:}
 \begin{enumerate}[label=(\alph*)]
@@ -2901,9 +2729,6 @@ x_1(t)=2e^{-t}-e^{-2t},\qquad x_2(t)=\dot x_1(t)=-2e^{-t}+2e^{-2t}.
 \end{enumerate}
 
 \end{document}
-
-
-
 
 
 
