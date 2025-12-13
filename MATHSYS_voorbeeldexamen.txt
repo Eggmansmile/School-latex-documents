@@ -1,201 +1,0 @@
-Wiskunde voor Systemen (T2AWS1)
-Prof. dr. ir. Toon van Waterschoot
-KU Leuven, Faculteit Industri¨ele Ingenieurswetenschappen, Campus Groep T
-Voorbeeldexamen
-
-
-Voornaam & Naam: .............................................................................................................................
-Studentennummer:  ...............................................................................................................................
-Groep:   ..................................................................................................................................................
-
-
-Richtlijnen opstart examen
-• Je hebt enkel schrijfgerief, je studentenkaart en een rekentoestel nodig.
-• Alle elektronische communicatiemiddelen (gsm, tablet, laptop, smartwatch, ...) worden uitgeschakeld en opgeborgen in de boekentassen. Jassen en boekentassen leg je onder je eigen stoel of tafel.
-• Leg je studentenkaart zichtbaar op de hoek van je tafel met de foto naar boven.
-
-Richtlijnen verloop examen
-• Het examen begint om 12:00 en eindigt om 15:00. Studenten met de examenfaciliteit "1/3 extra tijd" kunnen verderwerken tot 16:00.
-• Je ontvangt drie bundels papier:
-
-- Het formularium.
-- De bundel met deze instructiepagina is de offici¨ele examenkopij.
-- De bundel met 5 blanco bladen kan je gebruiken als kladpapier.
-• Laat alle bundels samengeniet. Alle bundels moeten aan het einde van het examen worden afgegeven. Het meenemen van papier uit het examenlokaal wordt beschouwd als examenfraude. Je kan indien nodig extra papier vragen aan de surveillant.
-• Schrijf je voornaam, naam en studentennummer op het eerste blad van de examenkopij en de kladbundel. Schrijf alsjeblieft niet op het formularium.
-• Gebruik enkel de offici¨ele examenkopij om je antwoorden op te schrijven. Als je antwoord niet op de voorzijde van de bladen past, dan kan je verderwerken op de achterzijde. Het kladpapier wordt in principe niet verbeterd, tenzij je in de offici¨ele examenkopij expliciet verwijst naar je kladpapier.
-• De examinator zal in elk examenlokaal langskomen om eventuele vragen te beantwoorden. Aangezien het stellen van een vraag moet gebeuren met respect voor de richtlijnen rond physical distancing, verzoeken we om het stellen van vragen zo veel mogelijk te beperken en bij het stellen van een vraag zeker niet een deel van je antwoord prijs te geven aan de naburige studenten.
-• Je draagt tijdens de volledige duur van het examen een mondmasker. Het is toegelaten om dit kortstondig af te nemen in geval van irritatie of om te drinken.
-
-
-Richtlijnen einde examen
-• Vrij afgeven kan ten vroegste 1,5 uur na de start van het examen en ten laatste 15 minuten voor het einde van het examen. Om vrij af te geven steek je je hand op en wacht je op het teken van de surveillant dat je mag afgeven.
-• Op het einde van het examen zal er rij per rij worden afgegeven. De surveillant zal telkens een teken geven aan de student die als volgende mag afgeven.
-• Het afgeven van het examen verloopt volgens de volgende procedure:
-- Je kijkt na of je voornaam, naam en studentennummer op het eerste blad van de examenkopij en de kladbundel staan.
-- Je wacht op het teken van de surveillant dat je mag afgeven.
-- Je neemt de drie bundels (examenkopij, kladbundel en formularium) alsook al je persoonlijke spullen mee naar voor in het examenlokaal en je legt de drie bundels samen in de doos die vooraan klaar staat.
-- Je gaat daarna niet terug naar je plaats maar je verlaat onmiddellijk het examenlokaal en volgt buiten de aanwijzingen van de stewards.
-- Je let er bij het afgeven en buitengaan op dat je ten allen tijde voldoende afstand bewaart van de andere studenten, de surveillanten en de stewards.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. De signalen u(t), v(t), x(t), y(t), z(t) en hun frequentiespectra U (j?), V (j?), X(j?), Y (j?), Z(j?) worden gedefinieerd als volgt (waarbij FTC de Fouriertransformatie voorstelt en IFTC de inverse Fouriertransformatie):
-
-
-u(t) is de Heavisidefunctie
-v(t) = 2 cos(2pt)
-
-U (j?) = FTC [u(t)]
-V (j?) = FTC [v(t)]
-
-X(j?) = U (-j?)
-Y (j?) = e-j?/4V (j?)
-
-x(t) = IFTC [X(j?)]
-y(t) = IFTC [Y (j?)]
-z(t) = u(t) + x(t)
-
-Z(j?) = FTC [z(t)]
-
-(a) In de volgende tabel worden vier van de signalen hierboven en vier signaaleigenschappen opgelijst. Kruis de gepaste vakjes in de tabel aan om aan te duiden welke eigenschappen van toepassing zijn op welke signalen. Het is mogelijk dat meerdere eigenschappen van toepassing zijn voor hetzelfde signaal.
-
-causaalperiodiekevenonevenv(t)????u(t) · v(t)????y(t)????x(t) · y(t)????
-(b) Welke functie stelt het spectrum Z(j?) voor? Schrijf je antwoord op m.b.v. de gepaste wiskundige notatie (en zorg ervoor dat je in je antwoord zeker ook het argument van de functie opschrijft).
-
-
-
-(c) Schrijf het volgende signaal als een Fourierreeks:
-
-v(t) + y(t) + z(t) =
-
-
-
-
-
-
-
-2. De onderstaande figuur toont het ingangssignaal x(t) en de impulsrespons h(t) van een LTC- systeem.
-(a) Bereken de Laplacetransformatie van x(t).
-(b) Stelt de impulsrespons h(t) een causaal systeem voor? Waarom wel/niet?
-(c) Schets de nultoestandsrespons y(t) = h(t) * x(t).
-
-0	1	2	t	0	1	2	t
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3. Gegeven de impulsrespons van een lineair tijdsinvariant continu (LTC) systeem.
-(a) Omcirkel het juiste antwoord: "De impulsrespons komt overeen met de [ natuurlijke respons
-/ gedwongen respons / nulinvoerrespons / nultoestandsrespons ] van een LTC-systeem dat ge¨exciteerd wordt door een impulssignaal."
-(b) Bewijs dat het uitgangssignaal y(t) van een LTC-systeem dat ge¨exciteerd wordt door een willekeurig ingangssignaal x(t) berekend kan worden als de impulsrespons h(t) gekend is.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
