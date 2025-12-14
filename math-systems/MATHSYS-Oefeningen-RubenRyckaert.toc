@@ -1,0 +1,139 @@
+\babel@toc {dutch}{}\relax 
+\contentsline {section}{\numberline {0.1}Formularium}{1}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Laplace transform (LT)}{1}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Fourier transform (FTC)}{1}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Fourier series (FS)}{2}{subsection.0.1.3}%
+\contentsline {chapter}{\numberline {1}Afgeleiden en Integralen}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Fundamentele Analyse in Systeemcontext}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}De Taal van Verandering en Geheugen}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Differentiatie: De Snelheid van Verandering}{6}{subsection.1.1.2}%
+\contentsline {subsubsection}{Fundamentele Afgeleiden}{6}{section*.9}%
+\contentsline {subsubsection}{Rekenregels voor Afgeleiden}{7}{section*.10}%
+\contentsline {subsection}{\numberline {1.1.3}Integratie: Accumulatie en Oppervlakte}{7}{subsection.1.1.3}%
+\contentsline {subsubsection}{Integratietechnieken}{7}{section*.11}%
+\contentsline {section}{\numberline {1.2}Praktische Toepassingen en Oefeningen}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Oefening 1.1: Analyse van Goniometrische Transformaties}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Oefening 1.2: Integratie van Gemoduleerde Signalen}{9}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Oefening 1.3: Afgeleiden van Gedempte Trillingen}{10}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Oefening 1.4: RMS Waarde (Effectieve Waarde)}{11}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Oefening 1.5: Oneigenlijke Integraal}{11}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Oefening 1.6: Partiële Integratie}{12}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Oefening 1.7: Productregel en Kettingregel}{13}{subsection.1.2.7}%
+\contentsline {chapter}{\numberline {2}Differentiaalvergelijkingen}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Modellering van Dynamische Systemen}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Fysische Interpretatie van de Termen}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}De Homogene Oplossing: Natuurlijk Gedrag}{16}{subsection.2.1.2}%
+\contentsline {subsubsection}{Drie Gedragstypes}{16}{section*.12}%
+\contentsline {subsection}{\numberline {2.1.3}De Particuliere Oplossing: Gedwongen Respons}{17}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}De Algemene Oplossing en Beginvoorwaarden}{17}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Analyse van Systeemgedrag}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Oefening 2.1: Vrij Verval van een Eerste-Orde Systeem}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Oefening 2.2: Resonantie en Gedwongen Oscillatie}{18}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Oefening 2.3: Mengtank (Eerste Orde Systeem)}{20}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Oefening 2.4: Opladen van een Condensator}{20}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Oefening 2.2: Dempingsgedrag van Tweede-Orde Systemen}{21}{subsection.2.2.5}%
+\contentsline {chapter}{\numberline {3}Signalen en Systemen: Een Eerste Kennismaking}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Systeemeigenschappen en Classificatie}{23}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Lineariteit}{23}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Tijdsinvariantie}{24}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Causaliteit}{24}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Oefeningen: Systeemanalyse}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Oefening 3.1: Analyse van Lineariteit}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Oefening 3.2: Analyse van een Vertraagd Feedback Systeem}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Oefening 3.3: Modellering van een RC-Kring}{26}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Oefening 3.4: Stabiliteit van een Systeem}{27}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Oefening 3.5: Kwadratisch Modulatiesysteem}{28}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Oefening 3.6: Niet-causaal Integratorsysteem}{29}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Oefening 3.7: Classificatie van Systemen}{30}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Oefening 3.8: Opladen van een Condensator}{32}{subsection.3.2.8}%
+\contentsline {chapter}{\numberline {4}Basissignalen en Bewerkingen}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}De Bouwstenen van Signaalanalyse}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}De Eenheidsstap \(u(t)\)}{33}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}De Impulsfunctie \(\delta (t)\)}{33}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}De Exponentiële Functie \(e^{st}\)}{34}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Convolutie: De Kernoperatie}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Oefeningen: Convolutie en Transformatie}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Oefening 4.1: Convolutie van Blokpulsen}{34}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Oefening 4.2: Signaalmanipulatie}{35}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Oefening 4.3: Convolutie van Exponentiëlen}{36}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Oefening 4.4: Grafische Convolutie (Trapezium)}{37}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Oefening 4.5: Convolutie met een Impuls}{38}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Oefening 4.6: Signaal Schetsen}{39}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Oefening 4.7: Convolutie van Gelijke Exponenten}{40}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Oefening 4.8: Convolutie van Stap en Rechthoek}{41}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Oefening 4.9: Convolutie van Exponentieel en Rechthoek}{43}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Oefening 4.10: Convolutie van Helling en Stap}{44}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.11}Oefening 4.11: Energie en Vermogen}{44}{subsection.4.3.11}%
+\contentsline {chapter}{\numberline {5}De Laplacetransformatie}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Van Tijdsdomein naar s-Domein}{47}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Belangrijkste Eigenschappen}{48}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Oefeningen: Toepassing van Laplace}{48}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Oefening 5.1: Transformatie van Basissignalen}{48}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Oefening 5.2: Frequentieverschuiving}{48}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Oefening 5.3: Oplossen van een Eerste-Orde DV}{49}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Oefening 5.4: Tweede-Orde Systeem met Beginvoorwaarden}{50}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Oefening 5.5: Inverse Laplace met Complexe Polen}{51}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Oefening 5.6: Oplossen van een Differentiaalvergelijking}{52}{subsection.5.2.6}%
+\contentsline {subsection}{\numberline {5.2.7}Oefening 5.7: Convolutie via Laplace}{53}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Oefening 5.7: RC-Circuit met Pulsingang}{54}{subsection.5.2.8}%
+\contentsline {subsection}{\numberline {5.2.9}Oefening 5.8: Transferfunctie en Stabiliteit}{55}{subsection.5.2.9}%
+\contentsline {subsection}{\numberline {5.2.10}Oefening 5.8: Tweede-Orde Mechanisch Systeem}{56}{subsection.5.2.10}%
+\contentsline {subsection}{\numberline {5.2.11}Oefening 5.9: Begin- en Eindwaardestelling}{57}{subsection.5.2.11}%
+\contentsline {subsection}{\numberline {5.2.12}Oefening 5.10: IVP met Externe Forcing}{59}{subsection.5.2.12}%
+\contentsline {chapter}{\numberline {6}De Fouriertransformatie}{61}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Frequentie-analyse van Niet-Periodieke Signalen}{61}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Oefening 6.1: Spectrum van een Rechthoekpuls}{62}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Oefening 6.2: Verschuivingseigenschap}{63}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Oefening 6.3: Differentiatie in het Frequentiedomein}{64}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Oefening 6.4: Impulsrespons via Fourier}{65}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Oefening 6.5: Modulatie-eigenschap}{66}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Oefening 6.6: Tweezijdig Exponentieel Signaal}{66}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}Oefening 6.7: Inverse Fouriertransformatie van een Ideaal Laagdoorlaatfilter}{67}{subsection.6.1.7}%
+\contentsline {subsection}{\numberline {6.1.8}Oefening 6.8: Eenvoudige Inverse Transformaties}{68}{subsection.6.1.8}%
+\contentsline {subsection}{\numberline {6.1.9}Oefening 6.9: Dualiteit}{69}{subsection.6.1.9}%
+\contentsline {subsection}{\numberline {6.1.10}Oefening 6.10: Limietstellingen en Oppervlakte-eigenschappen}{70}{subsection.6.1.10}%
+\contentsline {chapter}{\numberline {7}De Fourierreeks}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Analyse van Periodieke Signalen}{73}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Complexe Exponentiële Vorm}{73}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Trigonometrische (Cartesische) Vorm}{74}{subsection.7.1.2}%
+\contentsline {subsubsection}{Verband tussen beide vormen}{74}{section*.13}%
+\contentsline {subsection}{\numberline {7.1.3}Oefening 7.1: Blokgolf Analyse}{74}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Oefening 7.2: Vermogen van een Signaal}{75}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}Oefening 7.3: Fourierreeks van een Zaagtandgolf}{76}{subsection.7.1.5}%
+\contentsline {subsection}{\numberline {7.1.6}Oefening 7.4: Driehoeksgolf (Even Functie)}{77}{subsection.7.1.6}%
+\contentsline {subsection}{\numberline {7.1.7}Oefening 7.5: Fourierreeks van een Blokpuls (Asymmetrisch)}{77}{subsection.7.1.7}%
+\contentsline {subsection}{\numberline {7.1.8}Oefening 7.6: Halfgolf-Gelijkrichter}{78}{subsection.7.1.8}%
+\contentsline {subsection}{\numberline {7.1.9}Oefening 7.7: Symmetrie-eigenschappen en Convergentie}{80}{subsection.7.1.9}%
+\contentsline {subsection}{\numberline {7.1.10}Oefening 7.8: Dubbelzijdige Gelijkrichting}{82}{subsection.7.1.10}%
+\contentsline {subsection}{\numberline {7.1.11}Oefening 7.9: Sinusgolf met Enkelvoudige Gelijkrichting}{83}{subsection.7.1.11}%
+\contentsline {subsection}{\numberline {7.1.12}Oefening 7.10: Directe Identificatie van Coëfficiënten}{83}{subsection.7.1.12}%
+\contentsline {subsection}{\numberline {7.1.13}Oefening 7.11: Symmetrie Herkenning}{84}{subsection.7.1.13}%
+\contentsline {chapter}{\numberline {8}Lineaire Tijdsinvariante Continue (LTC) systemen}{87}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Systeembeschrijving: De Heilige Drie-eenheid}{87}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}1. Eigenfuncties: De Link met Lineaire Algebra}{87}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}2. De Drie Domeinen}{87}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}3. Polen en Nulpunten: Het DNA van het Systeem}{88}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Oefeningen: Systeemanalyse}{88}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Oefening 8.1: Analyse van Impulsrespons}{88}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Oefening 8.2: Numerieke Analyse van een Massa-Veer-Demper}{89}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Oefening 8.3: Convolutie met een Stapfunctie}{91}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Oefening 8.4: Frequentierespons en Bode Diagram}{91}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Oefening 8.5: Classificatie van Filters}{93}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6}Oefening 8.6: Cascade Systemen}{94}{subsection.8.2.6}%
+\contentsline {subsection}{\numberline {8.2.7}Oefening 8.7: Tweede-Orde Resonantie}{95}{subsection.8.2.7}%
+\contentsline {chapter}{\numberline {9}Eigenwaarden en eigenvectoren}{97}{chapter.9}%
+\contentsline {section}{\numberline {9.1}De Toestandsruimte (State-Space) en Eigenwaarden}{97}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Oefeningen: Matrixanalyse en Eigenstructuur}{98}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Oefening 9.1: Verificatie van Eigenvectoren (3x3 Matrix)}{98}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Oefening 9.2: Eigenfuncties van Operatoren}{98}{subsection.9.2.2}%
+\contentsline {section}{\numberline {9.3}Casus: MIMO Systemen (Gekoppelde Massa's)}{99}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Oefening 9.3: Gekoppelde Massa's}{99}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Oefening 9.4: Eigenwaarden en Stabiliteit}{101}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Oefening 9.5: Van Mechanisch Systeem naar Toestandsruimte}{101}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.4}Oefening 9.6: Eigenvectoren en Modale Analyse}{102}{subsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.3.5}Oefening 9.7: MIMO Systeem (Gekoppelde Tanks)}{103}{subsection.9.3.5}%
+\contentsline {subsection}{\numberline {9.3.6}Oefening 9.8: Gekoppelde Watertanks (MIMO - Bidirectioneel)}{105}{subsection.9.3.6}%
+\contentsline {subsection}{\numberline {9.3.7}Oefening 9.9: Massa-Veer Systeem en Demping}{106}{subsection.9.3.7}%
+\contentsline {subsection}{\numberline {9.3.8}Oefening 9.10: Eigenvectoren van een 3x3 Matrix}{107}{subsection.9.3.8}%
+\contentsline {subsection}{\numberline {9.3.9}Oefening 9.11: Van Transferfunctie naar State-Space}{108}{subsection.9.3.9}%
+\contentsline {subsection}{\numberline {9.3.10}Oefening 9.12: Tijdsdomein Oplossing van een Symmetrisch MIMO Systeem}{108}{subsection.9.3.10}%
