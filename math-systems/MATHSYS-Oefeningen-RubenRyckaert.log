@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  14 DEC 2025 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  14 DEC 2025 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/math-systems/Wiskunde oefeningen hermaakt.tex"
-(c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/math-systems/Wiskunde oefeningen hermaakt.tex
+**"c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/math-systems/MATHSYS-Oefeningen-RubenRyckaert.tex"
+(c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/math-systems/MATHSYS-Oefeningen-RubenRyckaert.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Program Files\MiKTeX\tex/latex/base\book.cls
@@ -669,8 +669,8 @@ File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count343
 \l__pdf_internal_box=\box81
-) (Wiskunde oefeningen hermaakt.aux)
-\openout1 = `"Wiskunde oefeningen hermaakt.aux"'.
+) (MATHSYS-Oefeningen-RubenRyckaert.aux)
+\openout1 = `MATHSYS-Oefeningen-RubenRyckaert.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
@@ -751,12 +751,12 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 97.
-(Wiskunde oefeningen hermaakt.out) (Wiskunde oefeningen hermaakt.out)
+(MATHSYS-Oefeningen-RubenRyckaert.out) (MATHSYS-Oefeningen-RubenRyckaert.out)
 \@outlinefile=\write4
-\openout4 = `"Wiskunde oefeningen hermaakt.out"'.
+\openout4 = `MATHSYS-Oefeningen-RubenRyckaert.out'.
 
 \c@lstlisting=\count350
- (Wiskunde oefeningen hermaakt.toc
+ (MATHSYS-Oefeningen-RubenRyckaert.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -774,7 +774,7 @@ Overfull \hbox (10.23038pt too wide) in paragraph at lines 139--139
 
 )
 \tf@toc=\write5
-\openout5 = `"Wiskunde oefeningen hermaakt.toc"'.
+\openout5 = `MATHSYS-Oefeningen-RubenRyckaert.toc'.
 
  [4]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -945,24 +945,24 @@ Underfull \hbox (badness 2080) in paragraph at lines 4768--4769
 [108]
 Overfull \vbox (127.26065pt too high) has occurred while \output is active []
 
- [109] (Wiskunde oefeningen hermaakt.aux)
+ [109] (MATHSYS-Oefeningen-RubenRyckaert.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `"Wiskunde oefeningen hermaakt".out' has not changed.
+Package rerunfilecheck Info: File `MATHSYS-Oefeningen-RubenRyckaert.out' has not changed.
 (rerunfilecheck)             Checksum: 003088E674C7EF854954646B6597CE42;35907.
  ) 
 Here is how much of TeX's memory you used:
- 39346 strings out of 474486
- 896609 string characters out of 5753569
+ 39343 strings out of 474486
+ 896567 string characters out of 5753569
  1953542 words of memory out of 5000000
- 60714 multiletter control sequences out of 15000+600000
+ 60711 multiletter control sequences out of 15000+600000
  569089 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,87p,834b,2447s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,19n,87p,838b,2447s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "Wiskunde oefeningen hermaakt.pdf" (113 pages, 641119 bytes).
+Output written on MATHSYS-Oefeningen-RubenRyckaert.pdf (113 pages, 641119 bytes).
 PDF statistics:
  1396 PDF objects out of 1440 (max. 8388607)
  348 named destinations out of 1000 (max. 500000)
