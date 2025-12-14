@@ -261,17 +261,25 @@ a_k=2\,\mathrm{Re}\{c_k\},\qquad b_k=-2\,\mathrm{Im}\{c_k\}.
 
 \section{Fundamentele Analyse in Systeemcontext}
 
-De studie van dynamische systemen vereist een diepgaand begrip van de calculus, specifiek de differentiaal- en integraalrekening. In de context van signaalanalyse en systeemmodellering is de onafhankelijke variabele vrijwel zonder uitzondering de tijd \(t\). 
+De studie van dynamische systemen vereist een diepgaand begrip van de calculus, specifiek de differentiaal- en integraalrekening. In de context van signaalanalyse en systeemmodellering is de onafhankelijke variabele vrijwel zonder uitzondering de tijd \(t\). Calculus biedt ons de woordenschat om te spreken over verandering en accumulatie, twee concepten die essentieel zijn voor het begrijpen van de fysieke wereld.
 
 Functies, die we noteren als \(f(t)\), representeren fysische grootheden zoals:
 \begin{itemize}
-    \item Elektrische spanning over een condensator
-    \item De snelheid van een mechanische massa
-    \item De temperatuur in een reactievat
-    \item De verplaatsing van een trillend voorwerp
+    \item Elektrische spanning over een condensator (energieopslag in een elektrisch veld)
+    \item De snelheid van een mechanische massa (kinetische energie)
+    \item De temperatuur in een reactievat (thermische energie)
+    \item De verplaatsing van een trillend voorwerp (potentiële energie)
 \end{itemize}
 
 De wiskundige operaties die op deze signalen worden uitgevoerd, vormen de taal waarin het gedrag van systemen wordt beschreven en voorspeld.
+
+\subsection{De Taal van Verandering en Geheugen}
+
+Calculus in systeemtheorie draait om twee kernconcepten:
+\begin{enumerate}
+    \item \textbf{Differentiatie (Verandering):} Hoe reageert het systeem \emph{nu} op wat er \emph{nu} gebeurt? Differentiatie kijkt naar de momentane verandering. Het is de wiskunde van het "nu". In fysieke systemen is dit vaak gekoppeld aan krachten die beweging tegenwerken (demping) of veroorzaken (versnelling).
+    \item \textbf{Integratie (Geheugen):} Wat is de historie van het systeem? Integratie is het proces van accumulatie. De lading op een condensator is de integraal van de stroom die er in het verleden doorheen heeft gevloeid. Integratie is de wiskunde van het "verleden". Zonder integratie zouden systemen geen geheugen hebben en geen energie kunnen opslaan.
+\end{enumerate}
 
 \subsection{Differentiatie: De Snelheid van Verandering}
 
@@ -284,9 +292,9 @@ Geometrisch gezien correspondeert deze waarde met de helling van de raaklijn aan
 In de systeemtheorie speelt de afgeleide een centrale rol omdat veel fysische wetten geformuleerd zijn in termen van veranderingen:
 
 \begin{enumerate}
-    \item \textbf{Tweede wet van Newton}: Relateert kracht aan versnelling, de tweede afgeleide van positie: \(F = ma = m\ddot{x}(t)\)
-    \item \textbf{Capacitor-stroomrelatie}: De stroom door een condensator is evenredig met de tijdsafgeleide van de spanning: \(i = C\frac{dv(t)}{dt}\)
-    \item \textbf{Voddinger-Planck vergelijking}: Modelleert diffusieprocessen via partiële afgeleiden
+    \item \textbf{Tweede wet van Newton}: Relateert kracht aan versnelling, de tweede afgeleide van positie: \(F = ma = m\ddot{x}(t)\). Hier vertelt de afgeleide ons hoe de snelheid verandert.
+    \item \textbf{Capacitor-stroomrelatie}: De stroom door een condensator is evenredig met de tijdsafgeleide van de spanning: \(i = C\frac{dv(t)}{dt}\). Hier vertelt de afgeleide ons hoe snel de energieopslag verandert.
+    \item \textbf{Inductor-spanningsrelatie}: De spanning over een spoel is evenredig met de verandering van de stroom: \(v = L\frac{di(t)}{dt}\).
 \end{enumerate}
 
 Zonder beheersing van differentiatie is het onmogelijk om de differentiaalvergelijkingen op te stellen die deze systemen regeren.
@@ -443,7 +451,66 @@ Terugsubstitutie geeft de oplossing:
 Dit illustreert hoe patroonherkenning cruciaal is bij het oplossen van systeemintegralen.
 \end{oefenblok}
 
-\subsection{Oefening 1.3: Oneigenlijke Integraal}
+\subsection{Oefening 1.3: Afgeleiden van Gedempte Trillingen}
+
+\begin{oefenblok}[Probleem]
+In de analyse van RLC-kringen en mechanische dempers komen functies voor van de vorm $f(t) = e^{-\alpha t} \cos(\omega t)$.
+Bereken de eerste en tweede afgeleide van $x(t) = e^{-2t} \sin(10t)$.
+Toon aan dat de verhouding tussen de amplitudes van de trilling en zijn afgeleide frequentie-afhankelijk is.
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{Eerste afgeleide (Productregel):}
+\[
+x'(t) = (e^{-2t})' \sin(10t) + e^{-2t} (\sin(10t))'
+\]
+\[
+x'(t) = -2e^{-2t} \sin(10t) + 10e^{-2t} \cos(10t)
+\]
+\[
+x'(t) = e^{-2t} (10 \cos 10t - 2 \sin 10t)
+\]
+
+\textbf{Tweede afgeleide:}
+Differentieer $x'(t)$ opnieuw.
+Term 1: $(-2e^{-2t} \sin 10t)' = 4e^{-2t} \sin 10t - 20e^{-2t} \cos 10t$
+Term 2: $(10e^{-2t} \cos 10t)' = -20e^{-2t} \cos 10t - 100e^{-2t} \sin 10t$
+
+Som:
+\[
+x''(t) = e^{-2t} (4 \sin 10t - 20 \cos 10t - 20 \cos 10t - 100 \sin 10t)
+\]
+\[
+x''(t) = e^{-2t} (-96 \sin 10t - 40 \cos 10t)
+\]
+
+\textbf{Inzicht:} Bij hoge frequenties ($\omega=10 \gg \alpha=2$) domineert de term met $\omega$ in de afgeleide. De snelheid ($x'$) is dan ongeveer $\omega$ keer zo groot als de uitwijking.
+\end{oefenblok}
+
+\subsection{Oefening 1.4: RMS Waarde (Effectieve Waarde)}
+
+\begin{oefenblok}[Probleem]
+De Root Mean Square (RMS) waarde van een signaal is een maat voor het vermogen. Bereken de RMS-waarde van $f(t) = A \cos(\omega t)$.
+Formule: $V_{rms} = \sqrt{\frac{1}{T} \int_0^T f(t)^2 dt}$.
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+Kwadrateer: $f(t)^2 = A^2 \cos^2(\omega t)$.
+Gebruik de dubbele hoek formule: $\cos^2 x = \frac{1 + \cos 2x}{2}$.
+\[
+\int_0^T A^2 \frac{1 + \cos(2\omega t)}{2} dt = \frac{A^2}{2} \left[ t + \frac{\sin(2\omega t)}{2\omega} \right]_0^T
+\]
+Omdat $T = 2\pi/\omega$, is $\sin(2\omega T) = \sin(4\pi) = 0$.
+De integraal wordt $\frac{A^2}{2} \cdot T$.
+
+Delen door $T$ en wortel trekken:
+\[
+V_{rms} = \sqrt{\frac{1}{T} \cdot \frac{A^2 T}{2}} = \sqrt{\frac{A^2}{2}} = \frac{A}{\sqrt{2}}
+\]
+Dit is de standaard factor $0.707$ die gebruikt wordt in het elektriciteitsnet.
+\end{oefenblok}
+
+\subsection{Oefening 1.5: Oneigenlijke Integraal}
 
 \begin{oefenblok}[Probleem]
 Bepaal de oneigenlijke integraal:
@@ -469,7 +536,7 @@ Bij het evalueren van de grenzen nemen we de limiet voor \(t \to \infty\):
 \textbf{Fysische interpretatie:} De totale oppervlakte (of ``lading'') van dit oneindig lange signaal is eindig (gelijk aan 2). Dit is een noodzakelijke voorwaarde voor stabiliteit in veel systemen.
 \end{oefenblok}
 
-\subsection{Oefening 1.4: Partiële Integratie}
+\subsection{Oefening 1.6: Partiële Integratie}
 
 \begin{oefenblok}[Probleem]
 Bepaal de integraal:
@@ -521,6 +588,30 @@ Of gefactoriseerd:
 \]
 \end{oefenblok}
 
+\subsection{Oefening 1.7: Productregel en Kettingregel}
+
+\begin{oefenblok}[Probleem]
+Bereken de afgeleide \(f'(t)\) voor de functie:
+\[
+f(t) = t^2 \cos(t)
+\]
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+We gebruiken de productregel: \((uv)' = u'v + uv'\).
+Stel \(u = t^2\) en \(v = \cos(t)\).
+Dan is \(u' = 2t\) en \(v' = -\sin(t)\).
+
+\[
+f'(t) = (2t)(\cos(t)) + (t^2)(-\sin(t))
+\]
+\[
+\boxed{f'(t) = 2t \cos(t) - t^2 \sin(t)}
+\]
+\end{oefenblok}
+
+
+
 % ============================================================================
 % HOOFDSTUK 2: DIFFERENTIAALVERGELIJKINGEN
 % ============================================================================
@@ -530,8 +621,10 @@ Of gefactoriseerd:
 \section{Modellering van Dynamische Systemen}
 
 \begin{theorieblok}[Kern van Systeemtheorie]
-Differentiaalvergelijkingen vormen het hart van de systeemtheorie. Ze beschrijven niet de toestand van een systeem op één moment, maar hoe de toestand verandert in de tijd.
+Differentiaalvergelijkingen vormen het hart van de systeemtheorie. Ze beschrijven niet de toestand van een systeem op één moment, maar hoe de toestand verandert in de tijd. Een differentiaalvergelijking is in essentie een balansvergelijking van krachten, stromen of energieën.
 \end{theorieblok}
+
+Waarom gebruiken we differentiaalvergelijkingen? Omdat de natuurwetten lokaal zijn. Ze vertellen ons wat er \emph{nu} gebeurt op basis van de huidige toestand. Bijvoorbeeld: een veer oefent een kracht uit die afhangt van de huidige uitrekking, en een demper oefent een kracht uit die afhangt van de huidige snelheid.
 
 Een Lineair Tijdsinvariant Continu (LTC) systeem wordt wiskundig gemodelleerd door een lineaire differentiaalvergelijking (LDV) met constante coëfficiënten. De algemene vorm voor een tweede-orde systeem, zoals een massa-veer-demper of een RLC-kring, is:
 
@@ -541,10 +634,39 @@ a_2 \frac{d^2y(t)}{dt^2} + a_1 \frac{dy(t)}{dt} + a_0 y(t) = x(t)
 
 Hierin is:
 \begin{itemize}
-    \item \(y(t)\) de respons (output)
-    \item \(x(t)\) de excitatie (input)
-    \item \(a_i\) coëfficiënten bepaald door fysische parameters (massa, stijfheid, weerstand, capaciteit)
+    \item \(y(t)\) de respons (output), bijvoorbeeld positie of lading.
+    \item \(x(t)\) de excitatie (input), bijvoorbeeld een externe kracht of spanningsbron.
+    \item \(a_i\) coëfficiënten bepaald door fysische parameters.
 \end{itemize}
+
+\subsection{Fysische Interpretatie van de Termen}
+
+Elke term in de differentiaalvergelijking correspondeert met een specifiek fysisch mechanisme:
+
+\begin{enumerate}
+    \item \textbf{Traagheidsterm} (\(a_2 \frac{d^2y}{dt^2}\)):
+    Deze term verzet zich tegen verandering van snelheid.
+    \begin{itemize}
+        \item Mechanisch: Massa \(m\) (wet van Newton \(F=ma\)).
+        \item Elektrisch: Inductantie \(L\) (verzet zich tegen stroomverandering).
+    \end{itemize}
+    
+    \item \textbf{Dempingsterm} (\(a_1 \frac{dy}{dt}\)):
+    Deze term dissipeert energie en remt beweging af.
+    \begin{itemize}
+        \item Mechanisch: Demper \(c\) (wrijving evenredig met snelheid).
+        \item Elektrisch: Weerstand \(R\) (dissipeert energie als warmte).
+    \end{itemize}
+    
+    \item \textbf{Stijfheidsterm} (\(a_0 y(t)\)):
+    Deze term wil het systeem terugbrengen naar de evenwichtsstand.
+    \begin{itemize}
+        \item Mechanisch: Veerconstante \(k\) (wet van Hooke).
+        \item Elektrisch: Inverse capaciteit \(1/C\) (spanning bouwt op door lading).
+    \end{itemize}
+\end{enumerate}
+
+Deze analogie tussen mechanische en elektrische domeinen toont de kracht van abstracte wiskunde: één vergelijking beschrijft talloze fysische realiteiten.
 
 \subsection{De Homogene Oplossing: Natuurlijk Gedrag}
 
@@ -636,7 +758,7 @@ Fysisch representeren deze bijvoorbeeld:
 
 \section{Analyse van Systeemgedrag}
 
-\subsection{Casus 1: Vrij Verval van een Eerste-Orde Systeem}
+\subsection{Oefening 2.1: Vrij Verval van een Eerste-Orde Systeem}
 
 \begin{oefenblok}[Probleem]
 Beschouw de differentiaalvergelijking:
@@ -696,7 +818,7 @@ Daaruit volgt \(C_1 = 5\).
 \textbf{Interpretatie:} Dit signaal begint op 4, stijgt initieel lichtjes (omdat de snelheid 0 moet zijn, maar de versnelling negatief is), en vervalt dan exponentieel naar nul. De trage component (\(e^{-t}\)) domineert voor grotere \(t\).
 \end{oefenblok}
 
-\subsection{Casus 2: Resonantie en Gedwongen Oscillatie}
+\subsection{Oefening 2.2: Resonantie en Gedwongen Oscillatie}
 
 \begin{oefenblok}[Probleem]
 Beschouw een ongedempt systeem aangedreven door een harmonische kracht:
@@ -761,7 +883,42 @@ Uit \(y'(0) = 0\): \(4C_2 + \frac{4}{3} = 0 \Rightarrow C_2 = -\frac{1}{3}\).
 \textbf{Fysische Interpretatie:} Het systeem vertoont een \concept{zweving} (``beating'') door de interactie tussen de eigenfrequentie (4 rad/s) en de aandrijffrequentie (2 rad/s). Dit fenomeen treedt op bij veel praktische systemen, van geluidversterkingssystemen tot trillingen in bruggen.
 \end{oefenblok}
 
-\subsection{Casus 3: Opladen van een Condensator}
+\subsection{Oefening 2.3: Mengtank (Eerste Orde Systeem)}
+
+\begin{oefenblok}[Probleem]
+Een tank bevat $V = 100$ liter zuiver water. Op $t=0$ begint er zout water in te stromen met een concentratie $C_{in} = 0.5$ kg/L en een debiet $Q = 10$ L/min. Het mengsel wordt goed geroerd en stroomt met hetzelfde debiet $Q$ weer uit de tank.
+Stel de differentiaalvergelijking op voor de hoeveelheid zout $x(t)$ in de tank en los deze op.
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{Massabalans:} Verandering = Instroom - Uitstroom.
+\[
+\frac{dx}{dt} = (\text{Instroom massa}) - (\text{Uitstroom massa})
+\]
+
+\textbf{Instroom:} $Q \cdot C_{in} = 10 \cdot 0.5 = 5$ kg/min.
+
+\textbf{Uitstroom:} $Q \cdot C_{uit}(t)$. Concentratie in tank is $C_{uit}(t) = \frac{x(t)}{V}$.
+Dus uitstroom = $10 \cdot \frac{x(t)}{100} = 0.1 x(t)$.
+
+\textbf{DV:} $\frac{dx}{dt} = 5 - 0.1x(t) \Rightarrow x' + 0.1x = 5$.
+
+\textbf{Oplossing:} Dit is een eerste orde lineaire DV.
+Homogeen ($x' + 0.1x = 0$): $x_h(t) = K e^{-0.1t}$.
+Particulier (voor constante 5): Stel $x_p = A$. Invullen: $0 + 0.1A = 5 \Rightarrow A = 50$.
+Algemeen: $x(t) = 50 + K e^{-0.1t}$.
+
+\textbf{Beginvoorwaarde:} $x(0) = 0$ (zuiver water).
+$0 = 50 + K \cdot 1 \Rightarrow K = -50$.
+
+\[
+x(t) = 50 (1 - e^{-0.1t})
+\]
+
+Na verloop van tijd ($t \to \infty$) nadert de hoeveelheid zout 50 kg (wat logisch is: $100 \text{ L} \cdot 0.5 \text{ kg/L}$). De tijdsconstante is $\tau = 1/0.1 = 10$ minuten.
+\end{oefenblok}
+
+\subsection{Oefening 2.4: Opladen van een Condensator}
 
 \begin{oefenblok}[Probleem]
 Een RC-kring bestaat uit een weerstand \(R = 1 \, \Omega\) en een condensator \(C = 1 \, \text{F}\) in serie. Op \(t=0\) wordt een gelijkspanning van \(10 \, \text{V}\) aangelegd. De condensator is initieel ongeladen (\(v_c(0) = 0\)).
@@ -813,6 +970,58 @@ K e^0 + 10 = 0 \quad \Rightarrow \quad K + 10 = 0 \quad \Rightarrow \quad K = -1
 \textbf{Interpretatie:} De spanning stijgt exponentieel van 0 V naar de eindwaarde van 10 V. De tijdsconstante is \(\tau = RC = 1\) seconde. Na \(5\tau\) (5 seconden) is de condensator voor meer dan 99\% opgeladen.
 \end{oefenblok}
 
+\subsection{Oefening 2.2: Dempingsgedrag van Tweede-Orde Systemen}
+
+\begin{oefenblok}[Probleem]
+Los de volgende homogene differentiaalvergelijkingen op met de gegeven beginvoorwaarden. Bepaal het type demping (ondergedempt, kritisch gedempt of overgedempt).
+\begin{enumerate}
+    \item \(y'' + 6y' + 25y = 0\) met \(y(0)=4\) en \(y'(0)=0\).
+    \item \(y'' + 6y' + 9y = 0\) met \(y(0)=2\) en \(y'(0)=0\).
+\end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{1. Ondergedempt Systeem}
+Karakteristieke vergelijking: \(\lambda^2 + 6\lambda + 25 = 0\).
+Discriminant \(D = 36 - 100 = -64\).
+Wortels: \(\lambda = \frac{-6 \pm j8}{2} = -3 \pm 4j\).
+Omdat de wortels complex toegevoegd zijn, is het systeem \textbf{ondergedempt}.
+
+Algemene oplossing:
+\[
+y(t) = e^{-3t}(A \cos(4t) + B \sin(4t))
+\]
+Beginvoorwaarden:
+\(y(0) = A = 4\).
+\(y'(t) = -3e^{-3t}(A \cos 4t + B \sin 4t) + e^{-3t}(-4A \sin 4t + 4B \cos 4t)\).
+\(y'(0) = -3A + 4B = 0 \Rightarrow 4B = 3(4) = 12 \Rightarrow B = 3\).
+
+Oplossing:
+\[
+y(t) = e^{-3t}(4 \cos(4t) + 3 \sin(4t))
+\]
+
+\textbf{2. Kritisch Gedempt Systeem}
+Karakteristieke vergelijking: \(\lambda^2 + 6\lambda + 9 = 0\).
+Discriminant \(D = 36 - 36 = 0\).
+Wortels: \(\lambda = -3\) (dubbele wortel).
+Het systeem is \textbf{kritisch gedempt}.
+
+Algemene oplossing:
+\[
+y(t) = (A + Bt)e^{-3t}
+\]
+Beginvoorwaarden:
+\(y(0) = A = 2\).
+\(y'(t) = B e^{-3t} - 3(A + Bt)e^{-3t}\).
+\(y'(0) = B - 3A = 0 \Rightarrow B = 3(2) = 6\).
+
+Oplossing:
+\[
+y(t) = (2 + 6t)e^{-3t}
+\]
+\end{oefenblok}
+
 % ============================================================================
 % HOOFDSTUK 3: SIGNALEN EN SYSTEMEN
 % ============================================================================
@@ -821,6 +1030,14 @@ K e^0 + 10 = 0 \quad \Rightarrow \quad K + 10 = 0 \quad \Rightarrow \quad K = -1
 
 \section{Systeemeigenschappen en Classificatie}
 
+In de ingenieurswetenschappen maken we een fundamenteel onderscheid tussen twee entiteiten:
+\begin{itemize}
+    \item \textbf{Signalen:} Dragers van informatie of energie (bijv. spraak, spanning, beurskoersen).
+    \item \textbf{Systemen:} Entiteiten die signalen verwerken, manipuleren of erop reageren (bijv. versterker, filter, de economie).
+\end{itemize}
+
+We beschouwen een systeem vaak als een "Black Box": we weten niet noodzakelijk wat er binnenin gebeurt, maar we kunnen het gedrag beschrijven door te kijken naar de relatie tussen input en output.
+
 \begin{theorieblok}[Formele Systeembeschrijving]
 Een systeem is een operator \(T\) die een ingangssignaal \(x(t)\) transformeert naar een uitgangssignaal \(y(t)\), genoteerd als:
 \[
@@ -828,7 +1045,7 @@ y(t) = T\{x(t)\}
 \]
 \end{theorieblok}
 
-Om systemen effectief te analyseren en ontwerpen, classificeren we ze op basis van fundamentele eigenschappen. De drie belangrijkste zijn:
+Om systemen effectief te analyseren en ontwerpen, classificeren we ze op basis van fundamentele eigenschappen. De heilige graal van de systeemtheorie zijn systemen die zowel \textbf{Lineair} als \textbf{Tijdsinvariant} zijn (LTI-systemen), omdat we voor deze klasse een krachtig en compleet wiskundig raamwerk hebben.
 
 \subsection{Lineariteit}
 
@@ -846,7 +1063,7 @@ T\{ax\} = aT\{x\}
 \]
 \end{definition}
 
-\wichtig{Belang:} Lineariteit stelt ons in staat complexe signalen op te breken in eenvoudige componenten (zoals sinussen of impulsen), de respons op elke component afzonderlijk te berekenen, en deze vervolgens weer samen te voegen.
+\wichtig{Waarom is dit belangrijk?} Lineariteit is de sleutel tot "verdeel en heers". Het stelt ons in staat complexe signalen op te breken in eenvoudige componenten (zoals sinussen of impulsen). We berekenen de respons op elke simpele component afzonderlijk (wat makkelijk is) en tellen de resultaten op om de totale respons te vinden. Zonder lineariteit zou Fourieranalyse onmogelijk zijn.
 
 \subsection{Tijdsinvariantie}
 
@@ -857,7 +1074,7 @@ T\{ax\} = aT\{x\}
 \]
 \end{definition}
 
-De vorm van de respons hangt niet af van wanneer de input wordt aangeboden. Dit is karakteristiek voor fysische systemen waarvan de parameters constant zijn.
+De vorm van de respons hangt niet af van \emph{wanneer} de input wordt aangeboden, alleen van \emph{wat} de input is. Dit is karakteristiek voor fysische systemen waarvan de parameters (massa, weerstand, etc.) constant blijven tijdens het experiment.
 
 \subsection{Causaliteit}
 
@@ -1151,7 +1368,7 @@ Voor twee signalen $x_1(t)$ en $x_2(t)$:
 \textbf{Toepassing:} Niet-causale systemen kunnen wel gebruikt worden in offline signaalverwerking, zoals bij het nabewerken van opgenomen audio of video.
 \end{oefenblok}
 
-\subsection{Oefening 3.1: Classificatie van Systemen}
+\subsection{Oefening 3.7: Classificatie van Systemen}
 
 \begin{oefenblok}[Probleem]
 Bepaal voor elk van de volgende systemen of ze lineair, tijdsinvariant en causaal zijn. Motiveer je antwoord.
@@ -1183,6 +1400,90 @@ Bepaal voor elk van de volgende systemen of ze lineair, tijdsinvariant en causaa
     \item \textbf{Tijdsinvariant:} Nee. Als \(x(t) \to x(t-t_0)\), dan is de output \(y(t) = x(2t - t_0)\). Als we de oorspronkelijke output \(x(2t)\) verschuiven met \(t_0\), krijgen we \(x(2(t-t_0)) = x(2t - 2t_0)\). Deze zijn niet gelijk.
     \item \textbf{Causaal:} Nee. Stel \(t=1\), dan is \(y(1) = x(2)\). De output op \(t=1\) hangt af van de input in de toekomst (\(t=2\)). Dit is een niet-causaal systeem (voorspellend).
 \end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=6cm, height=3cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$x(t)$},
+        domain=-1:3, samples=50,
+        ymin=0, ymax=1.5,
+        title={Input}
+    ]
+    \addplot[thick, blue] coordinates {(-1,0) (0,0) (0,1) (2,1) (2,0) (3,0)};
+    \end{axis}
+\end{tikzpicture}
+\hspace{0.5cm}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=6cm, height=3cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$y(t)=x(2t)$},
+        domain=-1:3, samples=50,
+        ymin=0, ymax=1.5,
+        title={Output (versneld)}
+    ]
+    \addplot[thick, red] coordinates {(-1,0) (0,0) (0,1) (1,1) (1,0) (3,0)};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
+\end{oefenblok}
+
+\subsection{Oefening 3.8: Opladen van een Condensator}
+
+\begin{oefenblok}[Probleem]
+Een condensator van \(1 \, \mu\text{F}\) wordt opgeladen over een weerstand van \(200 \, \Omega\).
+\begin{enumerate}
+    \item Hoeveel bedraagt de maximale lading indien een constante spanning van \(5 \, \text{mV}\) wordt aangelegd op \(t=0\)?
+    \item Na hoeveel tijd is de condensator voor 95\% opgeladen?
+    \item Op het moment dat de spanning wordt ingeschakeld is de condensator leeg.
+\end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{1. Maximale Lading}
+De maximale lading \(Q_{\text{max}}\) wordt bereikt als de condensator volledig is opgeladen en de spanning erover gelijk is aan de bronspanning \(V\).
+\[
+Q_{\text{max}} = C \cdot V = 1 \cdot 10^{-6} \, \text{F} \cdot 5 \cdot 10^{-3} \, \text{V} = 5 \cdot 10^{-9} \, \text{C} = 5 \, \text{nC}
+\]
+
+\textbf{2. Oplaadtijd}
+De tijdsconstante van het RC-circuit is:
+\[
+\tau = R \cdot C = 200 \, \Omega \cdot 1 \cdot 10^{-6} \, \text{F} = 200 \cdot 10^{-6} \, \text{s} = 0.2 \, \text{ms}
+\]
+De lading in functie van de tijd wordt gegeven door:
+\[
+q(t) = Q_{\text{max}} (1 - e^{-t/\tau})
+\]
+We zoeken \(t\) waarvoor \(q(t) = 0.95 Q_{\text{max}}\):
+\[
+0.95 = 1 - e^{-t/\tau} \Rightarrow e^{-t/\tau} = 0.05
+\]
+\[
+-t/\tau = \ln(0.05) \approx -2.996
+\]
+\[
+t \approx 3\tau = 3 \cdot 0.2 \, \text{ms} = 0.6 \, \text{ms}
+\]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=8cm, height=5cm,
+        axis lines=middle,
+        xlabel={$t$ (ms)}, ylabel={$q(t)$ (nC)},
+        domain=0:1, samples=100,
+        ymin=0, ymax=5.5,
+        grid=both
+    ]
+    \addplot[thick, blue] {5 * (1 - exp(-x/0.2))};
+    \draw[dashed] (axis cs:0, 5) -- (axis cs:1, 5);
+    \node at (axis cs: 0.8, 5.2) {$Q_{\text{max}}$};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \end{oefenblok}
 
 % ============================================================================
@@ -1193,28 +1494,38 @@ Bepaal voor elk van de volgende systemen of ze lineair, tijdsinvariant en causaa
 
 \section{De Bouwstenen van Signaalanalyse}
 
-Complexe signalen kunnen wiskundig worden ontleed in elementaire basissignalen. De correcte manipulatie van deze signalen is essentieel voor verdere analyse.
+In de praktijk zijn signalen vaak rommelig en complex. Om ze wiskundig te analyseren, benaderen we ze met geïdealiseerde modellen. Complexe signalen kunnen wiskundig worden ontleed in (of opgebouwd uit) elementaire basissignalen. De correcte manipulatie van deze signalen is essentieel voor verdere analyse.
+
+Er zijn twee belangrijke klassen van signalen die we onderscheiden op basis van hun "grootte":
+\begin{itemize}
+    \item \textbf{Energiesignalen:} Signalen met een eindige totale energie (bijv. een puls). Deze sterven uit na verloop van tijd.
+    \item \textbf{Vermogenssignalen:} Signalen met een oneindige energie maar een eindig gemiddeld vermogen (bijv. een periodieke sinus). Deze blijven eeuwig voortduren.
+\end{itemize}
+
+Hieronder bespreken we de belangrijkste bouwstenen.
 
 \subsection{De Eenheidsstap \texorpdfstring{\(u(t)\)}{u(t)}}
 
 \begin{definition}
-De eenheidsstap wordt gedefinieerd als:
+De eenheidsstap (Heaviside-functie) wordt gedefinieerd als:
 \[
 u(t) = \begin{cases} 1 & \text{als } t > 0 \\ 0 & \text{als } t < 0 \end{cases}
 \]
 
-Dit signaal wordt gebruikt om andere signalen ``aan'' te zetten op \(t = 0\). In praktijk modelleert het het moment waarop een schakelaar wordt gesloten of een systeem wordt ingeschakeld.
+Dit signaal fungeert als een wiskundige schakelaar. Vermenigvuldiging van een signaal \(f(t)\) met \(u(t-t_0)\) zet het signaal "aan" op tijdstip \(t_0\). Dit is cruciaal voor het modelleren van \concept{causale} systemen, die pas reageren nadat ze zijn ingeschakeld.
 \end{definition}
 
 \subsection{De Impulsfunctie \texorpdfstring{\(\delta(t)\)}{delta(t)}}
 
 \begin{definition}
-De Dirac-impuls is een theoretische constructie met:
+De Dirac-impuls is een theoretische constructie (geen echte functie) met:
 \begin{itemize}
     \item Oneindige hoogte
     \item Nul breedte
-    \item Totale oppervlakte (integraal) gelijk aan 1
+    \item Totale oppervlakte (integraal) exact gelijk aan 1
 \end{itemize}
+
+Fysisch modelleert dit een zeer korte, hevige gebeurtenis, zoals een hamerslag of een blikseminslag, die een eindige hoeveelheid energie overdraagt in een infinitesimaal korte tijd.
 
 De cruciale eigenschap is de \concept{zeefeigenschap}:
 \[
@@ -1331,7 +1642,7 @@ Het signaal vervalt twee keer zo snel; de tijdsconstante is gehalveerd van 1 naa
 Dit illustreert een belangrijk principe: compressie in de tijd leidt tot versneld verval en hoger-frequente inhoud.
 \end{oefenblok}
 
-\subsection{Oefening 4.2b: Convolutie van Exponentiëlen}
+\subsection{Oefening 4.3: Convolutie van Exponentiëlen}
 
 \emph{Bron: Analytische convolutie technieken.}
 
@@ -1384,7 +1695,40 @@ y(t) = (e^{-2t} - e^{-3t})u(t)
 \textbf{Fysische interpretatie:} Het resultaat is het verschil van twee exponentiële vervallen. Het signaal start bij 0, bereikt een maximum, en keert terug naar 0. Dit gedrag is typisch voor convolutie van twee vervallende exponenten.
 \end{oefenblok}
 
-\subsection{Oefening 4.3: Convolutie met een Impuls}
+\subsection{Oefening 4.4: Grafische Convolutie (Trapezium)}
+
+\begin{oefenblok}[Probleem]
+Bereken en teken de convolutie $y(t) = x(t) * h(t)$ van twee rechthoekige pulsen met verschillende breedtes:
+$x(t) = u(t) - u(t-2)$ (Puls van 0 tot 2, hoogte 1)
+$h(t) = u(t) - u(t-1)$ (Puls van 0 tot 1, hoogte 1)
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{Stapsgewijs:}
+We schuiven $h(t-\tau)$ over $x(\tau)$.
+
+\textbf{$t < 0$:} Geen overlap. $y(t) = 0$.
+
+\textbf{$0 \le t < 1$ (Inschuiven):}
+De puls $h$ schuift de puls $x$ binnen. De overlap is gelijk aan de breedte van het deel van $h$ dat binnen is: breedte $= t$.
+Integraal = $1 \cdot t = t$. (Lineaire stijging).
+
+\textbf{$1 \le t < 2$ (Volledige overlap):}
+De smalle puls $h$ (breedte 1) bevindt zich volledig binnen de brede puls $x$ (breedte 2).
+De overlap is maximaal en constant: breedte $= 1$.
+Integraal = $1 \cdot 1 = 1$. (Constant plateau).
+
+\textbf{$2 \le t < 3$ (Uitschuiven):}
+De puls $h$ verlaat $x$. De achterkant van $h$ is op $t-1$, de achterkant van $x$ is op $2$.
+De overlap is van $t-1$ tot $2$. Breedte $= 2 - (t-1) = 3 - t$.
+Integraal = $3 - t$. (Lineaire daling).
+
+\textbf{$t \ge 3$:} Geen overlap meer. $y(t) = 0$.
+
+\textbf{Resultaat:} Een trapeziumvormig signaal dat stijgt van 0 tot 1, constant blijft tot 2, en daalt tot 0 bij $t=3$.
+\end{oefenblok}
+
+\subsection{Oefening 4.5: Convolutie met een Impuls}
 
 \begin{oefenblok}[Probleem]
 Bereken de convolutie van een willekeurig signaal \(x(t)\) met een verschoven Dirac-impuls \(\delta(t - t_0)\):
@@ -1420,7 +1764,78 @@ y(t) = x(t - t_0)
 \boxed{\text{Conclusie:}} Convolutie met een verschoven impuls \(\delta(t - t_0)\) verschuift het oorspronkelijke signaal over een tijd \(t_0\). Dit bevestigt dat de impulsrespons van een ideaal vertragingssysteem een verschoven Dirac-impuls is.
 \end{oefenblok}
 
-\subsection{Oefening 4.4: Convolutie van Stap en Rechthoek}
+\subsection{Oefening 4.6: Signaal Schetsen}
+
+\begin{oefenblok}[Probleem]
+Maak een schets van het volgende signaal voor \(t\) in \([0, 2\pi]\):
+\[
+x(t) = 2 - \cos(4t - \pi/2)
+\]
+Bepaal ook de periode.
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{Analyse:}
+\begin{itemize}
+    \item \textbf{DC-offset:} Het signaal is verticaal verschoven met \(+2\).
+    \item \textbf{Frequentie:} De hoekfrequentie is \(\omega = 4\). De periode is \(T = 2\pi / \omega = 2\pi / 4 = \pi/2\).
+    \item \textbf{Faseverschuiving:} \(\cos(4t - \pi/2) = \cos(4(t - \pi/8))\). Dit is een verschuiving naar rechts met \(\pi/8\).
+    \item \textbf{Alternatieve vorm:} We weten dat \(\cos(\theta - \pi/2) = \sin(\theta)\). Dus \(x(t) = 2 - \sin(4t)\).
+\end{itemize}
+
+\textbf{Schets:}
+Het is een sinusgolf die geïnverteerd is (min-teken) en omhoog geschoven met 2.
+Het signaal oscilleert tussen \(2-1=1\) en \(2+1=3\).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=10cm, height=4cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$x(t)$},
+        domain=0:6.28, samples=200,
+        ymin=0, ymax=4,
+        xtick={0, 1.57, 3.14, 4.71, 6.28},
+        xticklabels={0, $\pi/2$, $\pi$, $3\pi/2$, $2\pi$},
+        grid=both
+    ]
+    \addplot[thick, blue] {2 - cos(deg(4*x) - 90)};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
+\end{oefenblok}
+
+\subsection{Oefening 4.7: Convolutie van Gelijke Exponenten}
+
+\begin{oefenblok}[Probleem]
+Bepaal de convolutie van twee gelijke transiënte signalen:
+\[
+f_1(t) = f_2(t) = e^{-at}u(t)
+\]
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\[
+y(t) = f_1(t) * f_2(t) = \int_{-\infty}^{\infty} e^{-a\tau}u(\tau) \cdot e^{-a(t-\tau)}u(t-\tau) d\tau
+\]
+De stapfuncties beperken het integratie-interval:
+\begin{itemize}
+    \item \(u(\tau)\) vereist \(\tau \ge 0\).
+    \item \(u(t-\tau)\) vereist \(t-\tau \ge 0 \Rightarrow \tau \le t\).
+\end{itemize}
+Dus voor \(t < 0\) is de integraal 0. Voor \(t \ge 0\) integreren we van 0 tot \(t\).
+
+\[
+y(t) = \int_{0}^{t} e^{-a\tau} e^{-at + a\tau} d\tau = \int_{0}^{t} e^{-at} (e^{-a\tau} e^{a\tau}) d\tau
+\]
+\[
+= e^{-at} \int_{0}^{t} 1 d\tau = e^{-at} [\tau]_0^t = t e^{-at}
+\]
+
+\boxed{y(t) = t e^{-at} u(t)}
+\end{oefenblok}
+
+\subsection{Oefening 4.8: Convolutie van Stap en Rechthoek}
 
 \begin{oefenblok}[Probleem]
 Bereken de convolutie \(z(t) = x(t) * y(t)\) voor de signalen:
@@ -1484,7 +1899,7 @@ t - 1 & 1 \le t < 3 \\
 Dit is een signaal dat lineair stijgt en daarna constant blijft (verzadiging).
 \end{oefenblok}
 
-\subsection{Oefening 4.5: Convolutie van Exponentieel en Rechthoek}
+\subsection{Oefening 4.9: Convolutie van Exponentieel en Rechthoek}
 
 \begin{oefenblok}[Probleem]
 Bereken de convolutie \(z(t) = x(t) * y(t)\) voor:
@@ -1538,7 +1953,7 @@ z(t) = \begin{cases}
 \]
 \end{oefenblok}
 
-\subsection{Oefening 4.6: Convolutie van Helling en Stap}
+\subsection{Oefening 4.10: Convolutie van Helling en Stap}
 
 \begin{oefenblok}[Probleem]
 Bereken de convolutie \(y(t) = r(t) * u(t)\), waarbij \(r(t) = t u(t)\) de hellingfunctie (ramp function) is en \(u(t)\) de eenheidsstap.
@@ -1573,7 +1988,7 @@ y(t) = \int_{0}^{t} \tau d\tau = \left[ \frac{1}{2}\tau^2 \right]_0^t = \frac{1}
 \textbf{Inzicht:} Convolutie met een stapfunctie \(u(t)\) is equivalent aan integratie. De integraal van een helling \(t\) is een parabool \(t^2/2\).
 \end{oefenblok}
 
-\subsection{Oefening 4.1: Energie en Vermogen}
+\subsection{Oefening 4.11: Energie en Vermogen}
 
 \begin{oefenblok}[Probleem]
 Bereken de totale energie \(E\) of het gemiddeld vermogen \(P\) van de volgende signalen en classificeer ze als energiesignaal of vermogenssignaal.
@@ -1581,6 +1996,34 @@ Bereken de totale energie \(E\) of het gemiddeld vermogen \(P\) van de volgende 
     \item \(x_1(t) = 5 e^{-2t} u(t)\)
     \item \(x_2(t) = 4 \cos(3t)\)
 \end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=6cm, height=4cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$x_1(t)$},
+        domain=-1:2, samples=100,
+        ymin=-1, ymax=6,
+        grid=both
+    ]
+    \addplot[thick, blue] {5*exp(-2*x) * (x>=0)};
+    \end{axis}
+\end{tikzpicture}
+\hspace{0.5cm}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=6cm, height=4cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$x_2(t)$},
+        domain=0:4, samples=100,
+        ymin=-5, ymax=5,
+        grid=both
+    ]
+    \addplot[thick, red] {4*cos(deg(3*x))};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \end{oefenblok}
 
 \begin{oefenblok}[Oplossing]
@@ -1608,11 +2051,28 @@ Hier is \(A=4\), dus \(P = 4^2 / 2 = 16 / 2 = 8 \text{ Watt}\).
 
 \section{Van Tijdsdomein naar s-Domein}
 
-\begin{theorieblok}[Essentiële Transformatie]
-De Laplacetransformatie is het krachtigste gereedschap voor de analyse van continue LTI-systemen. Het transformeert differentiaalvergelijkingen (die moeilijk op te lossen zijn) in algebraïsche vergelijkingen (die eenvoudig zijn) in de variabele \(s = \sigma + j\omega\).
+Het oplossen van differentiaalvergelijkingen in het tijdsdomein kan complex en rekenintensief zijn, vooral bij hogere ordes. De Laplacetransformatie biedt een elegante uitweg door het probleem te verplaatsen naar een ander domein: het \concept{s-domein} of frequentiedomein.
+
+De filosofie achter deze transformatie is analoog aan het gebruik van logaritmen om vermenigvuldiging om te zetten in optelling. Laplace zet differentiatie (calculus) om in vermenigvuldiging (algebra).
+
+\begin{theorieblok}[De Kracht van Laplace]
+De Laplacetransformatie converteert lineaire differentiaalvergelijkingen (moeilijk) naar algebraïsche vergelijkingen (makkelijk).
+\begin{itemize}
+    \item \textbf{Tijdsdomein:} \( \frac{d}{dt} y(t) \) (Differentiatie)
+    \item \textbf{s-Domein:} \( s Y(s) \) (Vermenigvuldiging)
+\end{itemize}
+Bovendien wordt convolutie in de tijd een simpele vermenigvuldiging in het s-domein: \( y(t) = x(t) * h(t) \Rightarrow Y(s) = X(s)H(s) \).
 \end{theorieblok}
 
+De variabele \(s\) is een \concept{complexe frequentie}: \(s = \sigma + j\omega\).
+\begin{itemize}
+    \item Het reële deel \(\sigma\) beschrijft exponentiële groei of demping.
+    \item Het imaginaire deel \(\omega\) beschrijft oscillatie (sinusvormig gedrag).
+\end{itemize}
+Hiermee kunnen we signalen analyseren die niet alleen oscilleren, maar ook opblazen of uitsterven.
+
 \begin{definition}
+De eenzijdige Laplacetransformatie wordt gedefinieerd als:
 \[
 F(s) = \mathcal{L}\{f(t)\} = \int_0^\infty f(t) e^{-st} dt
 \]
@@ -1666,7 +2126,34 @@ Als \(\text{Re}(s) > -3\), is de limiet op oneindig nul. Er rest:
 \textbf{Belangrijk patroon:} Polen op \(s = -3\) corresponderen met exponentieel verval met snelheid 3.
 \end{oefenblok}
 
-\subsection{Oefening 5.2: Oplossen van een Eerste-Orde DV}
+\subsection{Oefening 5.2: Frequentieverschuiving}
+
+\begin{oefenblok}[Probleem]
+Bepaal de Laplacetransformatie van \(f(t) = t^2 e^{-3t} u(t)\).
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+We gebruiken de eigenschap van frequentieverschuiving:
+\[
+\mathcal{L}\{e^{-at} g(t)\} = G(s+a)
+\]
+Hier is \(g(t) = t^2\) en \(a = 3\).
+
+De transformatie van \(t^n\) is \(\frac{n!}{s^{n+1}}\).
+Voor \(t^2\) is dit:
+\[
+G(s) = \frac{2!}{s^{2+1}} = \frac{2}{s^3}
+\]
+
+Vervang nu \(s\) door \(s+3\):
+\[
+F(s) = G(s+3) = \frac{2}{(s+3)^3}
+\]
+
+\boxed{F(s) = \frac{2}{(s+3)^3}}
+\end{oefenblok}
+
+\subsection{Oefening 5.3: Oplossen van een Eerste-Orde DV}
 
 \begin{oefenblok}[Probleem]
 Los op:
@@ -1713,7 +2200,7 @@ Y(s) = \frac{8 + 2s}{s(s+4)} = \frac{2(s+4)}{s(s+4)} = \frac{2}{s}
 \textbf{Interpretatie:} De beginwaarde (\(y = 2\)) is exact gelijk aan de evenwichtswaarde die het systeem zou bereiken (want in steady state is \(y' = 0\), dus \(4y = 8 \Rightarrow y = 2\)). Omdat het systeem al in evenwicht start, vindt er geen transiënt verschijnsel plaats!
 \end{oefenblok}
 
-\subsection{Oefening 5.3: Tweede-Orde Systeem met Beginvoorwaarden}
+\subsection{Oefening 5.4: Tweede-Orde Systeem met Beginvoorwaarden}
 
 \begin{oefenblok}[Probleem]
 Bepaal de oplossing van:
@@ -1767,7 +2254,7 @@ C &= \frac{9 - 6 + 6}{(-3)(-2)} = 1.5
 \textbf{Fysische Interpretatie:} De oplossing bevat een constant deel (evenwicht gelijk aan \(6/3 = 2\)) en twee exponentiële transientcomponenten die naar nul gaan.
 \end{oefenblok}
 
-\subsection{Oefening 5.4: Inverse Laplace met Complexe Polen}
+\subsection{Oefening 5.5: Inverse Laplace met Complexe Polen}
 
 \begin{oefenblok}[Probleem]
 Bepaal de inverse Laplacetransformatie van:
@@ -1812,7 +2299,7 @@ f(t) = 0.5 e^{-t} \sin(2t) u(t)
 \textbf{Interpretatie:} Dit is een gedempte oscillatie met frequentie 2 rad/s en dempingsfactor 1.
 \end{oefenblok}
 
-\subsection{Oefening 5.5: Oplossen van een Differentiaalvergelijking}
+\subsection{Oefening 5.6: Oplossen van een Differentiaalvergelijking}
 
 \begin{oefenblok}[Probleem]
 Los de volgende differentiaalvergelijking op met behulp van de Laplacetransformatie:
@@ -1864,7 +2351,7 @@ y(t) = 2 \cos(2t) u(t)
 \boxed{\text{Resultaat:}} \(y(t) = 2 \cos(2t)\) voor \(t \ge 0\).
 \end{oefenblok}
 
-\subsection{Oefening 5.6: Convolutie via Laplace}
+\subsection{Oefening 5.7: Convolutie via Laplace}
 
 \begin{oefenblok}[Probleem]
 Bereken de convolutie \(y(t) = x(t) * h(t)\) van de volgende twee signalen met behulp van de Laplacetransformatie:
@@ -2183,7 +2670,7 @@ f(\infty) = 0 + 0 = 0 \quad \checkmark
 \textbf{Belangrijk:} De eindwaardestelling kan alleen gebruikt worden als alle polen van $sF(s)$ in het linker halfvlak liggen (stabiel systeem).
 \end{oefenblok}
 
-\subsection{Oefening 5.4: IVP met Externe Forcing}
+\subsection{Oefening 5.10: IVP met Externe Forcing}
 
 \begin{oefenblok}[Probleem]
 Los de volgende differentiaalvergelijking op met behulp van de Laplacetransformatie:
@@ -2219,6 +2706,21 @@ Met \(a=1\) geeft dit:
 \[
 y(t) = t e^{-t} u(t)
 \]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=8cm, height=5cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$y(t) = t e^{-t}$},
+        domain=0:6, samples=100,
+        ymin=0, ymax=0.4,
+        grid=both
+    ]
+    \addplot[thick, blue] {x * exp(-x)};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \end{oefenblok}
 
 % ============================================================================
@@ -2229,7 +2731,32 @@ y(t) = t e^{-t} u(t)
 
 \section{Frequentie-analyse van Niet-Periodieke Signalen}
 
-Terwijl Laplace ideaal is voor transiënte analyse en stabiliteit (s-vlak), is de Fouriertransformatie (FT) geoptimaliseerd voor frequentie-analyse en signaalverwerking (\(\omega\)-as).
+Terwijl Laplace ideaal is voor transiënte analyse en stabiliteit (het volledige s-vlak), is de Fouriertransformatie (FT) geoptimaliseerd voor pure frequentie-analyse en signaalverwerking (de imaginaire as, \(s = j\omega\)).
+
+De kernidee van Fourieranalyse is diepgaand: \textbf{Elk fysisch signaal, hoe complex ook, kan worden beschouwd als een som (of integraal) van sinusvormige golven.}
+
+\begin{theorieblok}[Het Spectrum]
+De Fouriertransformatie vertaalt een signaal van het tijdsdomein (hoe het signaal eruitziet op de oscilloscoop) naar het frequentiedomein (hoe het signaal eruitziet op de spectrumanalyzer).
+\begin{itemize}
+    \item \textbf{Tijdsdomein \(x(t)\):} Vertelt ons \emph{wanneer} iets gebeurt.
+    \item \textbf{Frequentiedomein \(X(\omega)\):} Vertelt ons \emph{hoe vaak} iets gebeurt (welke frequenties aanwezig zijn).
+\end{itemize}
+\end{theorieblok}
+
+\begin{theorieblok}[Filters en Systeemrespons]
+Een van de krachtigste toepassingen van de Fouriertransformatie is het analyseren van filters.
+Als we een signaal \(x(t)\) door een systeem (filter) sturen met impulsrespons \(h(t)\), dan is de output \(y(t)\) de convolutie in de tijd:
+\[ y(t) = x(t) * h(t) \]
+In het frequentiedomein wordt dit een eenvoudige vermenigvuldiging:
+\[ Y(\omega) = X(\omega) \cdot H(\omega) \]
+Hierbij is \(H(\omega)\) de \textbf{frequentierespons} van het filter.
+\begin{itemize}
+    \item \textbf{Laagdoorlaatfilter:} Laat lage frequenties door (\(H(\omega) \approx 1\) voor kleine \(\omega\)) en blokkeert hoge (\(H(\omega) \approx 0\) voor grote \(\omega\)).
+    \item \textbf{Hoogdoorlaatfilter:} Blokkeert lage frequenties en laat hoge door.
+    \item \textbf{Banddoorlaatfilter:} Laat enkel een specifiek frequentiegebied door.
+\end{itemize}
+Dit maakt het ontwerpen van equalizers en ruisonderdrukkers inzichtelijk: je "knipt" simpelweg de ongewenste frequenties weg in \(X(\omega)\).
+\end{theorieblok}
 
 \begin{definition}
 \[
@@ -2238,6 +2765,12 @@ X(\omega) = \int_{-\infty}^{\infty} x(t) e^{-j\omega t} dt
 
 Dit ontleedt een signaal in een continu spectrum van frequenties. Het stelt ons in staat om te zien welke frequenties aanwezig zijn in een puls, een stem, of een digitaal signaal.
 \end{definition}
+
+Een fundamenteel inzicht in signaalverwerking is de inverse relatie tussen tijd en frequentie:
+\begin{itemize}
+    \item Een signaal dat zeer kort duurt in de tijd (zoals een klik), is zeer breed uitgesmeerd in frequentie.
+    \item Een signaal dat zeer lang duurt en weinig verandert (zoals een constante toon), is zeer smal in frequentie.
+\end{itemize}
 
 \subsection{Oefening 6.1: Spectrum van een Rechthoekpuls}
 
@@ -2436,10 +2969,26 @@ Door lineariteit geldt dan direct:
 \textbf{Toepassing:} Dit is het basisprincipe van AM-radio (Amplitude Modulatie). Het spectrum van het audiosignaal \(X(\omega)\) wordt verschoven naar de draaggolffrequentie \(\omega_0\).
 \end{oefenblok}
 
-\subsection{Oefening 6.3: Tweezijdig Exponentieel Signaal}
+\subsection{Oefening 6.6: Tweezijdig Exponentieel Signaal}
 
 \begin{oefenblok}[Probleem]
 Bepaal de Fouriertransformatie van het signaal \(x(t) = e^{-a|t|}\) met \(a > 0\). Dit signaal is niet causaal (het bestaat voor \(t<0\) en \(t>0\)).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=8cm, height=5cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$x(t) = e^{-a|t|}$},
+        domain=-3:3, samples=100,
+        ymin=0, ymax=1.2,
+        grid=both
+    ]
+    \addplot[thick, blue] {exp(-abs(x))};
+    \node at (axis cs: 1, 0.8) [anchor=west] {$a=1$};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \end{oefenblok}
 
 \begin{oefenblok}[Oplossing]
@@ -2466,11 +3015,169 @@ X(\omega) = \frac{1}{a-j\omega} + \frac{1}{a+j\omega} = \frac{(a+j\omega) + (a-j
 Dit is een reële, even functie in het frequentiedomein (een Lorentz-curve), wat consistent is met het feit dat \(x(t)\) reëel en even is in de tijd.
 \end{oefenblok}
 
+\subsection{Oefening 6.7: Inverse Fouriertransformatie van een Ideaal Laagdoorlaatfilter}
+
+\begin{oefenblok}[Probleem]
+Bepaal de inverse Fouriertransformatie van een ideaal laagdoorlaatfilter met bandbreedte \(\omega_0\) en amplitude \(A\):
+\[
+X(\omega) = \begin{cases} A & \text{als } -\omega_0 \le \omega \le \omega_0 \\ 0 & \text{anders} \end{cases}
+\]
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+We gebruiken de definitie van de inverse Fouriertransformatie:
+\[
+x(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} X(\omega) e^{j\omega t} d\omega
+\]
+Omdat \(X(\omega)\) nul is buiten \([-\omega_0, \omega_0]\), worden de grenzen:
+\[
+x(t) = \frac{1}{2\pi} \int_{-\omega_0}^{\omega_0} A e^{j\omega t} d\omega = \frac{A}{2\pi} \left[ \frac{e^{j\omega t}}{jt} \right]_{-\omega_0}^{\omega_0}
+\]
+\[
+x(t) = \frac{A}{2\pi jt} (e^{j\omega_0 t} - e^{-j\omega_0 t})
+\]
+Gebruik de formule van Euler: \(e^{j\theta} - e^{-j\theta} = 2j \sin(\theta)\).
+\[
+x(t) = \frac{A}{2\pi jt} (2j \sin(\omega_0 t)) = \frac{A \sin(\omega_0 t)}{\pi t}
+\]
+We kunnen dit herschrijven in termen van de sinc-functie (\(\text{sinc}(x) = \frac{\sin(x)}{x}\)):
+\[
+x(t) = \frac{A \omega_0}{\pi} \frac{\sin(\omega_0 t)}{\omega_0 t} = \frac{A \omega_0}{\pi} \text{sinc}(\omega_0 t)
+\]
+
+\textbf{Interpretatie:} Een ideale blok in het frequentiedomein (ideaal filter) correspondeert met een sinc-functie in het tijdsdomein. Omdat de sinc-functie zich uitstrekt van \(-\infty\) tot \(+\infty\) (niet causaal), is een ideaal laagdoorlaatfilter fysisch niet realiseerbaar.
+\end{oefenblok}
+
+\subsection{Oefening 6.8: Eenvoudige Inverse Transformaties}
+
+\begin{oefenblok}[Probleem]
+Bepaal de inverse Fouriertransformatie van de volgende spectra met behulp van de tabel (zie Formularium \ref{form:ft-pairs}):
+\begin{enumerate}
+    \item \(X_1(\omega) = \frac{1}{3 + j\omega}\)
+    \item \(X_2(\omega) = \frac{10}{2 + j\omega} + 2\pi \delta(\omega)\)
+    \item \(X_3(\omega) = \frac{4}{4 + \omega^2}\)
+\end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{1. Exponentieel Verval}
+We herkennen de vorm \(\frac{1}{a + j\omega}\).
+Uit het formularium weten we dat:
+\[
+e^{-at}u(t) \longleftrightarrow \frac{1}{a + j\omega}
+\]
+Hier is \(a=3\).
+\[
+\boxed{x_1(t) = e^{-3t}u(t)}
+\]
+
+\textbf{2. Lineariteit en DC-component}
+We gebruiken de lineariteitseigenschap: \(\mathcal{F}^{-1}\{aX + bY\} = a\mathcal{F}^{-1}\{X\} + b\mathcal{F}^{-1}\{Y\}\).
+\begin{itemize}
+    \item Term 1: \(\frac{10}{2 + j\omega} = 10 \cdot \frac{1}{2 + j\omega}\). Dit geeft \(10 e^{-2t}u(t)\).
+    \item Term 2: \(2\pi \delta(\omega)\). Uit het formularium weten we dat \(1 \longleftrightarrow 2\pi \delta(\omega)\). Dit is een constante DC-waarde van 1.
+\end{itemize}
+\[
+\boxed{x_2(t) = 10 e^{-2t}u(t) + 1}
+\]
+
+\textbf{3. Tweezijdig Exponentieel}
+De functie \(\frac{4}{4 + \omega^2}\) lijkt op de Lorentz-curve \(\frac{2a}{a^2 + \omega^2}\).
+Hier is \(a^2 = 4 \Rightarrow a = 2\).
+De teller moet dan \(2a = 4\) zijn, wat klopt.
+Het transformatiepaar is:
+\[
+e^{-a|t|} \longleftrightarrow \frac{2a}{a^2 + \omega^2}
+\]
+\[
+\boxed{x_3(t) = e^{-2|t|}}
+\]
+\end{oefenblok}
+
+\subsection{Oefening 6.9: Dualiteit}
+
+\begin{oefenblok}[Probleem]
+Gegeven is het spectrum \(X(\omega) = \text{rect}(\omega/2)\). Bepaal \(x(t)\).
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+We weten uit Oefening 6.1 dat een rechthoek in de tijd een sinc in frequentie geeft:
+\[
+\text{rect}(t/T) \longleftrightarrow T \cdot \text{sinc}(\omega T/2)
+\]
+De eigenschap van \concept{dualiteit} stelt dat de rollen van tijd en frequentie omkeerbaar zijn (op een factor \(2\pi\) en een minteken na).
+\[
+X(t) \longleftrightarrow 2\pi x(-\omega)
+\]
+Of eenvoudiger, we zoeken in de tabel naar een sinc in de tijd.
+Het paar is:
+\[
+\frac{\omega_c}{\pi} \text{sinc}(\omega_c t) \longleftrightarrow \text{rect}\left(\frac{\omega}{2\omega_c}\right)
+\]
+We hebben \(\text{rect}(\omega/2)\). Dit komt overeen met \(2\omega_c = 2 \Rightarrow \omega_c = 1\).
+Dus:
+\[
+x(t) = \frac{1}{\pi} \text{sinc}(t)
+\]
+\[
+\boxed{x(t) = \frac{\sin(t)}{\pi t}}
+\]
+\end{oefenblok}
+
+\subsection{Oefening 6.10: Limietstellingen en Oppervlakte-eigenschappen}
+
+\begin{oefenblok}[Probleem]
+Gegeven is het spectrum van een causaal signaal \(x(t)\):
+\[
+X(\omega) = \frac{4}{2 + j\omega}
+\]
+Bepaal zonder de inverse transformatie volledig uit te rekenen:
+\begin{enumerate}[label=(\alph*)]
+    \item De integraal van het signaal over de hele tijd: \(\int_{-\infty}^{\infty} x(t) dt\).
+    \item De beginwaarde van het signaal: \(x(0^+)\).
+\end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{(a) Integraal van het signaal (DC-waarde)}
+De oppervlakte onder het tijdsignaal is gelijk aan de waarde van het spectrum bij \(\omega = 0\):
+\[
+\int_{-\infty}^{\infty} x(t) dt = X(0)
+\]
+Invullen van \(\omega = 0\) in \(X(\omega)\):
+\[
+X(0) = \frac{4}{2 + j(0)} = \frac{4}{2} = 2
+\]
+\boxed{\text{Oppervlakte} = 2}
+
+\textbf{(b) Beginwaarde (Initial Value Theorem)}
+Voor een causaal signaal geldt de limietstelling (analoog aan Laplace):
+\[
+x(0^+) = \lim_{\omega \to \infty} j\omega X(\omega)
+\]
+\[
+x(0^+) = \lim_{\omega \to \infty} j\omega \frac{4}{2 + j\omega} = \lim_{\omega \to \infty} \frac{4j\omega}{j\omega(2/j\omega + 1)} = \lim_{\omega \to \infty} \frac{4}{1} = 4
+\]
+\emph{Controle:} Het signaal is \(x(t) = 4e^{-2t}u(t)\). Op \(t=0\) is dit inderdaad 4.
+
+\boxed{x(0^+) = 4}
+\end{oefenblok}
+
 \chapter{De Fourierreeks}
 
 \section{Analyse van Periodieke Signalen}
 
-Voor signalen die zichzelf herhalen met periode \(T\), gebruiken we de Fourierreeks. Het signaal wordt ontbonden in een som van harmonische componenten, die frequenties hebben die gehele veelvouden zijn van de grondfrequentie \(\omega_0 = \frac{2\pi}{T}\).
+Waar de Fouriertransformatie elk signaal kan analyseren, is de Fourierreeks specifiek bedoeld voor \concept{periodieke} signalen: signalen die zichzelf exact herhalen na een vaste tijd \(T\).
+
+Het centrale inzicht van Joseph Fourier was revolutionair: \textbf{Elke periodieke golfvorm, hoe hoekig of grillig ook, kan worden opgebouwd door een oneindig aantal perfecte sinussen en cosinussen bij elkaar op te tellen.}
+
+Deze bouwstenen hebben specifieke frequenties:
+\begin{itemize}
+    \item \textbf{Grondfrequentie (\(\omega_0 = 2\pi/T\)):} Bepaalt de toonhoogte of de periode van het signaal.
+    \item \textbf{Harmonischen (\(k\omega_0\)):} Veelvouden van de grondfrequentie. Deze bepalen de vorm of de "klankkleur" van het signaal.
+\end{itemize}
+
+Dit verklaart waarom een viool anders klinkt dan een piano, zelfs als ze dezelfde noot (dezelfde grondfrequentie) spelen: de verhouding van hun harmonischen (de Fouriercoëfficiënten) is anders.
 
 Er zijn twee gangbare manieren om de Fourierreeks te noteren: de complexe vorm en de trigonometrische (of Cartesische) vorm.
 
@@ -2633,7 +3340,48 @@ f(t) = 2 \left( \sin(t) - \frac{1}{2}\sin(2t) + \frac{1}{3}\sin(3t) - \dots \rig
 \boxed{\text{Resultaat:}} \(f(t) = 2 \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} \sin(nt)\).
 \end{oefenblok}
 
-\subsection{Oefening 7.4: Fourierreeks van een Blokpuls (Asymmetrisch)}
+\subsection{Oefening 7.4: Driehoeksgolf (Even Functie)}
+
+\begin{oefenblok}[Probleem]
+Bepaal de Fourierreeks van de periodieke driehoeksgolf $x(t)$ met periode $T=2$, gedefinieerd als:
+$x(t) = 1 - |t|$ voor $-1 \le t \le 1$.
+(Dit is een even functie, symmetrisch rond de y-as).
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{Symmetrie:} De functie is even, dus $b_n = 0$ (geen sinustermen). We zoeken enkel $a_0$ en $a_n$.
+Grondfrequentie $\omega_0 = 2\pi/T = \pi$.
+
+\textbf{Gemiddelde ($a_0$):}
+Oppervlakte van de driehoek (basis 2, hoogte 1) is $\frac{1}{2} \cdot 2 \cdot 1 = 1$.
+Gemiddelde over periode $T=2$: $a_0 = \frac{1}{T} \int_{-1}^1 x(t) dt = \frac{1}{2} \cdot 1 = 0.5$.
+
+\textbf{Coëfficiënten ($a_n$):}
+$a_n = \frac{2}{T} \int_{-1}^1 (1-|t|) \cos(n\pi t) dt$.
+Wegens even symmetrie: $a_n = \frac{4}{T} \int_0^1 (1-t) \cos(n\pi t) dt = 2 \int_0^1 (1-t) \cos(n\pi t) dt$.
+
+Integreer in delen: $\int u dv = uv - \int v du$.
+Kies $u = 1-t \Rightarrow du = -dt$.
+Kies $dv = \cos(n\pi t) dt \Rightarrow v = \frac{1}{n\pi} \sin(n\pi t)$.
+
+Term 1: $\left[ (1-t) \frac{\sin(n\pi t)}{n\pi} \right]_0^1 = (0) - (1 \cdot 0) = 0$.
+Term 2: $- \int_0^1 \frac{1}{n\pi} \sin(n\pi t) (-dt) = \frac{1}{n\pi} \int_0^1 \sin(n\pi t) dt$.
+$= \frac{1}{n\pi} \left[ \frac{-\cos(n\pi t)}{n\pi} \right]_0^1 = \frac{1}{(n\pi)^2} ( -\cos(n\pi) + \cos(0) )$.
+
+We weten dat $\cos(n\pi) = (-1)^n$ en $\cos(0) = 1$.
+Dus: $a_n = 2 \cdot \frac{1 - (-1)^n}{(n\pi)^2}$.
+
+\textbf{Evaluatie:}
+Voor even $n$: $1 - 1 = 0 \Rightarrow a_n = 0$.
+Voor oneven $n$: $1 - (-1) = 2 \Rightarrow a_n = \frac{4}{(n\pi)^2}$.
+
+\textbf{Reeks:}
+$x(t) = 0.5 + \sum_{n=1,3,5\dots}^{\infty} \frac{4}{(n\pi)^2} \cos(n\pi t)$.
+
+\textbf{Opmerking:} De coëfficiënten nemen af met $1/n^2$, wat typisch is voor signalen zonder sprongen maar met knikken (continue functies), in tegenstelling tot de blokgolf ($1/n$).
+\end{oefenblok}
+
+\subsection{Oefening 7.5: Fourierreeks van een Blokpuls (Asymmetrisch)}
 
 \begin{oefenblok}[Probleem]
 Bepaal de Fourierreeks van de functie:
@@ -2681,7 +3429,7 @@ f(x) = \frac{1}{2} - \frac{2}{\pi} \left( \sin(x) + \frac{1}{3}\sin(3x) + \frac{
 \boxed{\text{Resultaat:}} \(f(x) = \frac{1}{2} - \frac{2}{\pi} \sum_{k=0}^{\infty} \frac{\sin((2k+1)x)}{2k+1}\).
 \end{oefenblok}
 
-\subsection{Oefening 7.5: Halfgolf-Gelijkrichter}
+\subsection{Oefening 7.6: Halfgolf-Gelijkrichter}
 
 \emph{Bron: Elektronica toepassingen.}
 
@@ -2766,7 +3514,7 @@ f(t) = \frac{1}{\pi} + \frac{1}{2}\sin(t) - \frac{2}{3\pi}\cos(2t) - \frac{2}{15
 \textbf{Interpretatie:} De DC-component $\frac{1}{\pi}$ is de gemiddelde waarde. De eerste harmonische ($\sin(t)$) domineert met amplitude 0.5. Hogere harmonischen ($\cos(2t), \cos(4t), \ldots$) zijn zwakker en zorgen voor de "rimpel" in de gelijkgerichte golf.
 \end{oefenblok}
 
-\subsection{Oefening 7.6: Symmetrie-eigenschappen en Convergentie}
+\subsection{Oefening 7.7: Symmetrie-eigenschappen en Convergentie}
 
 \emph{Bron: Geavanceerde eigenschappen.}
 
@@ -2839,7 +3587,7 @@ f_{\text{reeks}}(1) = \frac{f(1^-) + f(1^+)}{2} = \frac{1 + (-1)}{2} = 0
 \textbf{Praktische betekenis:} Bij het reconstrueren van blokgolven (bijv. digitale signalen) met een beperkt aantal harmonischen krijg je altijd deze "ringing" bij scherpe overgangen.
 \end{oefenblok}
 
-\subsection{Oefening 7.7: Dubbelzijdige Gelijkrichting}
+\subsection{Oefening 7.8: Dubbelzijdige Gelijkrichting}
 
 \begin{oefenblok}[Probleem]
 Een dubbelzijdige gelijkrichter (full-wave rectifier) zet een sinus om in zijn absolute waarde:
@@ -2892,11 +3640,28 @@ f(t) = \frac{2}{\pi} - \frac{4}{\pi} \left( \frac{\cos(2t)}{3} + \frac{\cos(4t)}
 \]
 \end{oefenblok}
 
-\subsection{Oefening 7.2: Sinusgolf met Enkelvoudige Gelijkrichting}
+\subsection{Oefening 7.9: Sinusgolf met Enkelvoudige Gelijkrichting}
 
 \begin{oefenblok}[Probleem]
 Een ideale diode in een circuit zorgt voor 'halve-golf gelijkrichting'. Het signaal is \(x(t) = \sin(t)\) voor \(0 \le t < \pi\) en \(x(t) = 0\) voor \(\pi \le t < 2\pi\). De periode is \(T=2\pi\).
 Bepaal de Fouriercoëfficiënt \(a_0\) (de gemiddelde waarde of DC-component).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=10cm, height=4cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={$x(t)$},
+        domain=-1:7, samples=200,
+        ymin=-1.5, ymax=1.5,
+        xtick={0, 3.14, 6.28},
+        xticklabels={0, $\pi$, $2\pi$},
+        grid=both
+    ]
+    \addplot[thick, blue] {sin(deg(x)) * (sin(deg(x))>0)};
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \end{oefenblok}
 
 \begin{oefenblok}[Oplossing]
@@ -2913,24 +3678,151 @@ a_0 = \frac{1}{2\pi} (-(-1) - (-1)) = \frac{1}{2\pi} (1 + 1) = \frac{2}{2\pi} = 
 De gemiddelde waarde van een enkelzijdig gelijkgerichte sinus is dus \(1/\pi \approx 0.318\) van de piekamplitude.
 \end{oefenblok}
 
+\subsection{Oefening 7.10: Directe Identificatie van Coëfficiënten}
+
+\begin{oefenblok}[Probleem]
+Gegeven is het signaal:
+\[
+f(t) = 5 + 2\cos(3t) - 4\sin(6t)
+\]
+Bepaal zonder integralen te berekenen:
+\begin{enumerate}[label=(\alph*)]
+    \item De grondfrequentie $\omega_0$ en de periode $T$.
+    \item De Fouriercoëfficiënten $a_0, a_n$ en $b_n$.
+\end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{(a) Frequentie en Periode}
+De termen zijn constant (DC), $\cos(3t)$ en $\sin(6t)$.
+De frequenties zijn $0$, $3$ en $6$ rad/s.
+De grootste gemene deler (GGD) van de frequenties is de grondfrequentie:
+\[
+\omega_0 = 3 \text{ rad/s}
+\]
+De periode is:
+\[
+T = \frac{2\pi}{\omega_0} = \frac{2\pi}{3} \text{ s}
+\]
+
+\textbf{(b) Fouriercoëfficiënten}
+De Fourierreeks is gedefinieerd als:
+\[
+f(t) = a_0 + \sum_{n=1}^{\infty} (a_n \cos(n\omega_0 t) + b_n \sin(n\omega_0 t))
+\]
+Met $\omega_0 = 3$, worden de termen:
+\begin{itemize}
+    \item $n=0$ (DC): $a_0 = 5$.
+    \item $n=1$ ($1 \cdot 3t$): $2\cos(3t) \Rightarrow a_1 = 2, b_1 = 0$.
+    \item $n=2$ ($2 \cdot 3t = 6t$): $-4\sin(6t) \Rightarrow a_2 = 0, b_2 = -4$.
+    \item Alle andere $n > 2$: $a_n = 0, b_n = 0$.
+\end{itemize}
+
+\boxed{a_0 = 5, \quad a_1 = 2, \quad b_2 = -4, \quad \text{alle andere nul.}}
+\end{oefenblok}
+
+\subsection{Oefening 7.11: Symmetrie Herkenning}
+
+\begin{oefenblok}[Probleem]
+Bekijk de volgende twee signalen (beide met periode $T=2\pi$):
+\begin{enumerate}[label=(\alph*)]
+    \item $x(t) = t^2$ voor $-\pi < t < \pi$ (periodiek herhaald).
+    \item $y(t) = t$ voor $-\pi < t < \pi$ (periodiek herhaald, zaagtand).
+\end{enumerate}
+Bepaal voor elk signaal op basis van symmetrie welke Fouriercoëfficiënten ($a_n$ of $b_n$) nul zijn.
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+\textbf{(a) Signaal $x(t) = t^2$}
+We controleren de symmetrie:
+\[
+x(-t) = (-t)^2 = t^2 = x(t)
+\]
+De functie is \belangrijk{even} (spiegelsymmetrie om de y-as).
+Voor even functies geldt:
+\begin{itemize}
+    \item De sinus-termen vallen weg (want sinus is oneven).
+    \item $b_n = 0$ voor alle $n$.
+\end{itemize}
+De reeks bevat alleen cosinus-termen en eventueel een DC-component ($a_n$).
+
+\textbf{(b) Signaal $y(t) = t$}
+We controleren de symmetrie:
+\[
+y(-t) = (-t) = -t = -y(t)
+\]
+De functie is \belangrijk{oneven} (puntsymmetrie om de oorsprong).
+Voor oneven functies geldt:
+\begin{itemize}
+    \item De cosinus-termen en de DC-component vallen weg (want cosinus en constante zijn even).
+    \item $a_0 = 0$ en $a_n = 0$ voor alle $n$.
+\end{itemize}
+De reeks bevat alleen sinus-termen ($b_n$).
+\end{oefenblok}
+
 \chapter{Lineaire Tijdsinvariante Continue (LTC) systemen}
 
-\section{Systeembeschrijving in s- en t-domein}
+\section{Systeembeschrijving: De Heilige Drie-eenheid}
 
-LTC-systemen vormen de ruggengraat van de regeltechniek en signaalverwerking. Ze worden volledig gekarakteriseerd door:
+LTC-systemen vormen de ruggengraat van de regeltechniek en signaalverwerking. In dit hoofdstuk brengen we alles samen: differentiaalvergelijkingen, Laplace en convolutie. Om deze systemen echt te begrijpen, moeten we kijken naar drie fundamentele concepten: Eigenfuncties, Domeinen en Polen.
+
+\subsection{1. Eigenfuncties: De Link met Lineaire Algebra}
+In de lineaire algebra is een \textbf{eigenvector} $v$ van een matrix $A$ een vector die niet van richting verandert, maar enkel wordt geschaald: $Av = \lambda v$.
+
+Voor LTI-systemen geldt een analoog concept. De \textbf{eigenfuncties} zijn de complexe e-machten $e^{st}$.
+Als we een signaal $x(t) = e^{st}$ in een LTI-systeem sturen, is de output altijd een geschaalde versie van diezelfde e-macht:
+\[
+\text{Input: } e^{st} \quad \longrightarrow \quad \text{Systeem} \quad \longrightarrow \quad \text{Output: } H(s) \cdot e^{st}
+\]
+Hierbij is de schaalfactor $H(s)$ de \textbf{eigenwaarde}, die we de \textbf{Transferfunctie} noemen.
+Dit is waarom we Laplace en Fourier gebruiken: ze ontbinden ingewikkelde signalen in deze "basis-bouwblokken" ($e^{st}$), die het systeem simpelweg één voor één schaalt.
+
+\subsection{2. De Drie Domeinen}
+We kunnen een systeem vanuit drie perspectieven bekijken, die elk een deel van de waarheid onthullen:
 
 \begin{itemize}
-    \item \textbf{Impulsrespons \(h(t)\):} De output wanneer de input een Dirac-puls is. Voor willekeurige input geldt \(y(t)=x(t)*h(t)\).
-    \item \textbf{Transferfunctie \(H(s)\):} De Laplace-getransformeerde van \(h(t)\). Dit is de verhouding \(Y(s)/X(s)\). De polen van \(H(s)\) (de waarden van \(s\) waarvoor de noemer nul is) bepalen de stabiliteit.
+    \item \textbf{Tijdsdomein ($t$): De Realiteit.}
+    Hier leven de differentiaalvergelijkingen ($y'' + ay' + by = x$).
+    De systeemkarakteristiek is de \textbf{Impulsrespons $h(t)$}.
+    \emph{Operatie:} Convolutie $y(t) = x(t) * h(t)$.
+    \emph{Nadeel:} Rekentechnisch zwaar (integralen).
+
+    \item \textbf{Laplace-domein ($s = \sigma + j\omega$): Het Totaalplaatje.}
+    Hier wordt calculus (differentiatie) omgezet in algebra (vermenigvuldiging).
+    De systeemkarakteristiek is de \textbf{Transferfunctie $H(s)$}.
+    \emph{Operatie:} Vermenigvuldiging $Y(s) = H(s) \cdot X(s)$.
+    \emph{Kracht:} Analyseert zowel stabiliteit ($\sigma$) als frequentiegedrag ($\omega$).
+
+    \item \textbf{Frequentiedomein ($s = j\omega$): De Permanente Toestand.}
+    Dit is een "snede" door het Laplace-domein op de imaginaire as ($\sigma=0$).
+    Het beschrijft hoe het systeem reageert op sinusgolven die al oneindig lang aan staan (geen inschakelverschijnselen).
+    \emph{Link:} $H(j\omega)$ is de Frequentierespons (Bode-plot).
 \end{itemize}
 
-\begin{theorem}[Stabiliteit]
-Een systeem is stabiel als alle polen een negatief reëel deel hebben (linker halfvlak).
+\subsection{3. Polen en Nulpunten: Het DNA van het Systeem}
+De transferfunctie is meestal een breuk van polynomen:
+\[
+H(s) = \frac{N(s)}{D(s)} = K \frac{(s-z_1)(s-z_2)\dots}{(s-p_1)(s-p_2)\dots}
+\]
+
+\textbf{De Polen ($p_i$):}
+Dit zijn de waarden van $s$ waarvoor de noemer $D(s)$ nul wordt ($H(s) \to \infty$).
 \begin{itemize}
-    \item Polen op de imaginaire as duiden op oscillatie (marginaal stabiel).
-    \item Polen in het rechtervlak duiden op instabiliteit (exponentiële groei).
+    \item \textbf{Wiskundig:} Het zijn de wortels van de karakteristieke vergelijking uit Hoofdstuk 2 ($\lambda$).
+    \item \textbf{Fysisch:} Het zijn de \emph{natuurlijke frequenties} of \emph{resonantiemodi} van het systeem. Als je het systeem hier exciteert, krijg je een enorme respons (resonantie).
+    \item \textbf{Stabiliteit:} De reële component ($\sigma$) van de pool bepaalt de demping.
+    \begin{itemize}
+        \item $\text{Re}(p) < 0$ (Linker halfvlak): Demping (Stabiel).
+        \item $\text{Re}(p) > 0$ (Rechter halfvlak): Opblazen (Instabiel).
+        \item $\text{Re}(p) = 0$ (Imaginaire as): Oscillatie (Marginaal stabiel).
+    \end{itemize}
 \end{itemize}
-\end{theorem}
+
+\textbf{De Nulpunten ($z_i$):}
+Dit zijn de waarden waarvoor de teller $N(s)$ nul wordt ($H(s) = 0$).
+\begin{itemize}
+    \item \textbf{Fysisch:} Dit zijn frequenties die door het systeem worden \emph{geblokkeerd} of volledig uitgedoofd.
+\end{itemize}
 
 \section{Oefeningen: Systeemanalyse}
 
@@ -3163,7 +4055,56 @@ De 3dB knakfrequentie is waar $|H(j\omega)| = \frac{|H(0)|}{\sqrt{2}}$:
 \textbf{Conclusie:} Dit is een eerste-orde laagdoorlaatfilter. Boven de knakfrequentie rolt de magnitude af met -20 dB/decade.
 \end{oefenblok}
 
-\subsection{Oefening 8.5: Cascade Systemen}
+\subsection{Oefening 8.5: Classificatie van Filters}
+
+\begin{oefenblok}[Probleem]
+Classificeer de volgende systemen als Laagdoorlaat (LP), Hoogdoorlaat (HP), Banddoorlaat (BP), Bandstop (BS) of All-pass (AP). Bepaal ook de orde van het systeem.
+\begin{enumerate}
+    \item \(H(s) = \frac{8s}{s^2 + 8s + 25}\)
+    \item \(H(s) = \frac{s^2 + 16}{s^2 + 8s + 16}\)
+    \item \(H(s) = \frac{s^2}{s^2 + 4s + 16}\)
+    \item \(H(s) = \frac{s^2 - 8s + 16}{s^2 + 8s + 16}\)
+\end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oplossing]
+We analyseren het gedrag bij \(s \to 0\) (DC) en \(s \to \infty\) (hoge frequenties).
+
+\textbf{1. Banddoorlaat (BP)}
+\[ H(s) = \frac{8s}{s^2 + 8s + 25} \]
+\begin{itemize}
+    \item \(s \to 0 \Rightarrow H(0) = 0\) (blokkeert DC).
+    \item \(s \to \infty \Rightarrow H(s) \approx 8s/s^2 \to 0\) (blokkeert hoge frequenties).
+    \item Tussenin is er transmissie. Dit is een \textbf{2e orde Bandpass filter}.
+\end{itemize}
+
+\textbf{2. Bandstop (BS) / Notch}
+\[ H(s) = \frac{s^2 + 16}{s^2 + 8s + 16} \]
+\begin{itemize}
+    \item \(s \to 0 \Rightarrow H(0) = 16/16 = 1\).
+    \item \(s \to \infty \Rightarrow H(s) \approx s^2/s^2 = 1\).
+    \item Bij \(s = j4\) (dus \(\omega = 4\)) wordt de teller \( (j4)^2 + 16 = -16 + 16 = 0\).
+    \item Het filter blokkeert specifiek de frequentie \(\omega = 4\). Dit is een \textbf{2e orde Bandstop filter}.
+\end{itemize}
+
+\textbf{3. Hoogdoorlaat (HP)}
+\[ H(s) = \frac{s^2}{s^2 + 4s + 16} \]
+\begin{itemize}
+    \item \(s \to 0 \Rightarrow H(0) = 0\) (blokkeert DC).
+    \item \(s \to \infty \Rightarrow H(s) \approx s^2/s^2 = 1\) (laat hoge frequenties door).
+    \item Dit is een \textbf{2e orde Highpass filter}.
+\end{itemize}
+
+\textbf{4. All-pass (AP)}
+\[ H(s) = \frac{s^2 - 8s + 16}{s^2 + 8s + 16} = \frac{(s-4)^2}{(s+4)^2} \]
+\begin{itemize}
+    \item De polen liggen op \(-4\) (dubbel), de nulpunten op \(+4\) (dubbel).
+    \item Voor \(s=j\omega\) is \(|H(j\omega)| = \frac{|j\omega - 4|^2}{|j\omega + 4|^2} = 1\) voor alle \(\omega\).
+    \item De magnitude is constant 1, maar de fase verandert. Dit is een \textbf{2e orde All-pass filter}.
+\end{itemize}
+\end{oefenblok}
+
+\subsection{Oefening 8.6: Cascade Systemen}
 
 \emph{Bron: Systeemcombinaties.}
 
@@ -3225,7 +4166,7 @@ De polen zijn $s = -2$ en $s = -3$, beide in het linker halfvlak.
 \textbf{Fysische interpretatie:} Twee laagdoorlaatfilters in serie geven een sterkere demping bij hoge frequenties. De totale fase-verschuiving is de som van beide filters.
 \end{oefenblok}
 
-\subsection{Oefening 8.6: Tweede-Orde Resonantie}
+\subsection{Oefening 8.7: Tweede-Orde Resonantie}
 
 \emph{Bron: Trillingsanalyse.}
 
@@ -3297,11 +4238,20 @@ Het systeem wordt beschreven door twee matrixvergelijkingen:
 Hierbij is \(A\) de \textbf{systeemmatrix}. Deze matrix bevat alle informatie over de interne dynamiek.
 
 \subsection*{De rol van Eigenwaarden en Eigenvectoren}
-De analyse van matrix \(A\) is cruciaal:
+De analyse van matrix \(A\) is cruciaal. Waarom? Omdat matrixvermenigvuldiging normaal gesproken vectoren roteert en schaalt, wat de analyse van gekoppelde differentiaalvergelijkingen moeilijk maakt.
+
+Eigenvectoren zijn speciale richtingen in de ruimte waarvoor de matrixvermenigvuldiging zich gedraagt als een simpele scalaire vermenigvuldiging.
+\[
+A \mathbf{v} = \lambda \mathbf{v}
+\]
+Dit betekent dat als de toestand van het systeem zich langs een eigenvector bevindt, de verandering van de toestand ook in diezelfde richting ligt. De differentiaalvergelijkingen worden \concept{ontkoppeld}.
+
 \begin{itemize}
     \item \textbf{Eigenwaarden (\(\lambda\)):} De eigenwaarden van \(A\) zijn identiek aan de \emph{polen} van de transferfunctie. Ze bepalen de \textbf{stabiliteit} (reëel deel \(<0\)) en de \textbf{snelheid/oscillatie} van de respons (imaginair deel).
-    \item \textbf{Eigenvectoren (\(\mathbf{v}\)):} Een eigenvector \(\mathbf{v}\) definieert een specifieke \emph{richting} in de toestandsruimte. Als de toestand zich in deze richting bevindt, verandert de "vorm" van de toestand niet, enkel de schaal (volgens \(e^{\lambda t}\)). Dit noemen we een \textbf{natuurlijke modus} van het systeem.
+    \item \textbf{Eigenvectoren (\(\mathbf{v}\)):} Een eigenvector \(\mathbf{v}\) definieert een specifieke \emph{richting} in de toestandsruimte. Dit noemen we een \textbf{natuurlijke modus} van het systeem.
 \end{itemize}
+
+Als we het systeem bekijken in de basis van zijn eigenvectoren (diagonalisatie), valt het complexe systeem uiteen in een set van onafhankelijke, simpele 1e-orde systemen.
 
 \section{Oefeningen: Matrixanalyse en Eigenstructuur}
 
@@ -3817,6 +4767,25 @@ x_2(t) = 5e^{-t} - 5e^{-3t}
     \item \(x_2\) begint op 0, stijgt eerst (door instroom uit tank 1) en daalt dan weer naar 0.
     \item De term \(e^{-t}\) is de "trage" modus (evenwichtsvereffening), \(e^{-3t}\) is de "snelle" modus (initieel verschil).
 \end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    \begin{axis}[
+        width=10cm, height=6cm,
+        axis lines=middle,
+        xlabel={$t$}, ylabel={Niveau},
+        domain=0:5, samples=100,
+        ymin=0, ymax=10,
+        grid=both,
+        legend pos=north east
+    ]
+    \addplot[thick, blue] {5*exp(-x) + 5*exp(-3*x)};
+    \addlegendentry{$x_1(t)$}
+    \addplot[thick, red] {5*exp(-x) - 5*exp(-3*x)};
+    \addlegendentry{$x_2(t)$}
+    \end{axis}
+\end{tikzpicture}
+\end{center}
 \end{oefenblok}
 
 \appendix
