@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  14 DEC 2025 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  14 DEC 2025 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -295,44 +295,95 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box54
 \@float@everytoks=\toks26
 \@floatcapt=\box55
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen179
+\calc@Bdimen=\dimen180
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count300
+\calc@Cskip=\skip57
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen181
+\ESO@tempdimb=\dimen182
+ (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+))
+\AM@pagewidth=\dimen183
+\AM@pageheight=\dimen184
+\AM@fboxrule=\dimen185
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count301
+\AM@pagebox=\box56
+\AM@global@opts=\toks27
+\AM@pagecnt=\count302
+\AM@toc@title=\toks28
+\AM@lof@heading=\toks29
+\c@AM@survey=\count303
+\AM@templatesizebox=\box57
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count298
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box58
 ) (Thermische_en_Fluidumwetenschappen.aux)
 \openout1 = `Thermische_en_Fluidumwetenschappen.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen179
-\scratchbox=\box57
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen180
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count305
+\scratchdimen=\dimen186
+\scratchbox=\box59
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen187
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks31
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -373,16 +424,25 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
 (Thermische_en_Fluidumwetenschappen.out) (Thermische_en_Fluidumwetenschappen.out)
 \@outlinefile=\write3
 \openout3 = `Thermische_en_Fluidumwetenschappen.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -391,262 +451,1310 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 ...ynolds Decompositie}{24}{subsection.6.1.3}
+l.37 ...nterne en Externe Stroming}{33}{chapter.6}
                                                   % [1
 
 ] [2])
 \tf@toc=\write4
 \openout4 = `Thermische_en_Fluidumwetenschappen.toc'.
 
- [3]
-Overfull \hbox (32.94395pt too wide) in paragraph at lines 24--25
+
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=517, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf  used on input line 27.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=519, page=1, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[3]
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [4
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=572, page=2, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 2>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page2 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 2>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page2 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 2>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page2 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[5
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=586, page=3, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 3>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page3 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 3>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page3 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 3>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page3 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[6
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=593, page=4, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 4>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page4 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 4>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page4 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 4>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page4 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[7
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=599, page=5, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 5>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page5 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 5>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page5 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 5>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page5 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[8
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=605, page=6, 597.55246pt x 845.07718pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 6>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page6 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 6>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page6 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 6>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page6 used on input line 27.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[9
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=618, page=7, 597.50829pt x 845.0471pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 7>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page7 used on input line 27.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 7>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page7 used on input line 27.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 7>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page7 used on input line 27.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[10
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=665, page=8, 597.50829pt x 845.0471pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 8>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page8 used on input line 27.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 8>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page8 used on input line 27.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 8>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page8 used on input line 27.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[11
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=670, page=9, 614.295pt x 794.97pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 9>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page9 used on input line 27.
+(pdftex.def)             Requested size: 614.3216pt x 795.00444pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 9>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page9 used on input line 27.
+(pdftex.def)             Requested size: 614.3216pt x 795.00444pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 9>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page9 used on input line 27.
+(pdftex.def)             Requested size: 614.3216pt x 795.00444pt.
+[12
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=685, page=10, 614.295pt x 794.97pt>
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 10>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page10 used on input line 27.
+(pdftex.def)             Requested size: 614.3216pt x 795.00444pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 10>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page10 used on input line 27.
+(pdftex.def)             Requested size: 614.3216pt x 795.00444pt.
+File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
+<use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 10>
+Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page10 used on input line 27.
+(pdftex.def)             Requested size: 614.3216pt x 795.00444pt.
+[13
+
+ <./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>]
+Overfull \hbox (32.94395pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/n/10.95 In de we-reld van de in-ge-ni-eurs-we-ten-schap-pen vor-men de dis-ci-pli-nes ther-mo-dy-na-mica, flu[]^^Pdummechanica
  []
 
-[4
+[14
 
-] [5
+] [15
 
-] [6]
+] [16]
 Hoofdstuk 1.
-[7
+[17
 
-] [8]
+] [18]
 Hoofdstuk 2.
-[9
+[19
 
-] [10]
-<assets/hydrostatic_pressure.jpg, id=524, 353.82187pt x 318.43968pt>
+] [20]
+<assets/hydrostatic_pressure.jpg, id=740, 353.82187pt x 318.43968pt>
 File: assets/hydrostatic_pressure.jpg Graphic file (type jpg)
 <use assets/hydrostatic_pressure.jpg>
-Package pdftex.def Info: assets/hydrostatic_pressure.jpg  used on input line 196.
+Package pdftex.def Info: assets/hydrostatic_pressure.jpg  used on input line 203.
 (pdftex.def)             Requested size: 273.14923pt x 245.83583pt.
- [11
+ [21
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.209 \end{itemize}
+l.216 \end{itemize}
                     <./assets/hydrostatic_pressure.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 231.
+(hyperref)                removing `math shift' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\theta' on input line 231.
+(hyperref)                removing `\theta' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 231.
+(hyperref)                removing `math shift' on input line 238.
 
-[12]
-<assets/submerged_plane.png, id=537, 691.821pt x 494.064pt>
+[22]
+<assets/submerged_plane.png, id=752, 691.821pt x 494.064pt>
 File: assets/submerged_plane.png Graphic file (type png)
 <use assets/submerged_plane.png>
-Package pdftex.def Info: assets/submerged_plane.png  used on input line 282.
+Package pdftex.def Info: assets/submerged_plane.png  used on input line 289.
 (pdftex.def)             Requested size: 364.19667pt x 260.0886pt.
- [13
+ [23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.294 \chapter
+l.301 \chapter
               {Kinematica van Stromingen} <./assets/submerged_plane.png>]
 Hoofdstuk 3.
-[14
+[24
 
-] [15]
+] [25]
 Hoofdstuk 4.
-<assets/continuity.png, id=554, 1284.8pt x 481.8pt>
+<assets/continuity.png, id=770, 1284.8pt x 481.8pt>
 File: assets/continuity.png Graphic file (type png)
 <use assets/continuity.png>
-Package pdftex.def Info: assets/continuity.png  used on input line 358.
+Package pdftex.def Info: assets/continuity.png  used on input line 365.
 (pdftex.def)             Requested size: 364.19667pt x 136.5719pt.
-[16
+[26
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.371 \]
+l.378 \]
          <./assets/continuity.png>]
-<assets/bernoulli.png, id=561, 963.6pt x 451.6875pt>
+<assets/bernoulli.png, id=777, 963.6pt x 451.6875pt>
 File: assets/bernoulli.png Graphic file (type png)
 <use assets/bernoulli.png>
-Package pdftex.def Info: assets/bernoulli.png  used on input line 429.
+Package pdftex.def Info: assets/bernoulli.png  used on input line 436.
 (pdftex.def)             Requested size: 364.19667pt x 170.71259pt.
- [17] [18
+ [27] [28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.441 \chapter
+l.448 \chapter
               {Differentiële Analyse van Fluïdumstroming} <./assets/bernoulli.png>]
 Hoofdstuk 5.
-<assets/control_volume.png, id=574, 1027.84pt x 553.06625pt>
+<assets/control_volume.png, id=789, 1027.84pt x 553.06625pt>
 File: assets/control_volume.png Graphic file (type png)
 <use assets/control_volume.png>
-Package pdftex.def Info: assets/control_volume.png  used on input line 456.
+Package pdftex.def Info: assets/control_volume.png  used on input line 463.
 (pdftex.def)             Requested size: 273.14923pt x 146.97537pt.
-<assets/poiseuille_plates.png, id=575, 1027.84pt x 503.8825pt>
+<assets/poiseuille_plates.png, id=790, 1027.84pt x 503.8825pt>
 File: assets/poiseuille_plates.png Graphic file (type png)
 <use assets/poiseuille_plates.png>
-Package pdftex.def Info: assets/poiseuille_plates.png  used on input line 466.
+Package pdftex.def Info: assets/poiseuille_plates.png  used on input line 473.
 (pdftex.def)             Requested size: 364.19667pt x 178.54507pt.
-[19
+[29
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.470 
-       <./assets/control_volume.png>] [20
+l.477 
+       <./assets/control_volume.png>] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.521 \]
+l.528 \]
          <./assets/poiseuille_plates.png>]
-<assets/hagen_poiseuille.png, id=588, 602.25pt x 263.48438pt>
+<assets/hagen_poiseuille.png, id=804, 602.25pt x 263.48438pt>
 File: assets/hagen_poiseuille.png Graphic file (type png)
 <use assets/hagen_poiseuille.png>
-Package pdftex.def Info: assets/hagen_poiseuille.png  used on input line 567.
+Package pdftex.def Info: assets/hagen_poiseuille.png  used on input line 574.
 (pdftex.def)             Requested size: 318.66948pt x 139.4209pt.
- [21] [22
+ [31] [32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.572 \chapter
+l.579 \chapter
               {Interne en Externe Stroming} <./assets/hagen_poiseuille.png>]
 Hoofdstuk 6.
-[23
+[33
 
 ]
-<assets/moody_diagram.png, id=605, 2569.6pt x 1589.94pt>
+<assets/moody_diagram.png, id=821, 2569.6pt x 1589.94pt>
 File: assets/moody_diagram.png Graphic file (type png)
 <use assets/moody_diagram.png>
-Package pdftex.def Info: assets/moody_diagram.png  used on input line 626.
+Package pdftex.def Info: assets/moody_diagram.png  used on input line 633.
 (pdftex.def)             Requested size: 409.71692pt x 253.49796pt.
-<assets/laminar_turbulent.png, id=606, 1027.84pt x 630.355pt>
+<assets/laminar_turbulent.png, id=822, 1027.84pt x 630.355pt>
 File: assets/laminar_turbulent.png Graphic file (type png)
 <use assets/laminar_turbulent.png>
-Package pdftex.def Info: assets/laminar_turbulent.png  used on input line 633.
+Package pdftex.def Info: assets/laminar_turbulent.png  used on input line 640.
 (pdftex.def)             Requested size: 364.19667pt x 223.35918pt.
- [24
+ [34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.637 
+l.644 
        <./assets/moody_diagram.png>]
-<assets/drag_coefficient.png, id=614, 912.40875pt x 563.85657pt>
+<assets/drag_coefficient.png, id=829, 912.40875pt x 563.85657pt>
 File: assets/drag_coefficient.png Graphic file (type png)
 <use assets/drag_coefficient.png>
-Package pdftex.def Info: assets/drag_coefficient.png  used on input line 649.
+Package pdftex.def Info: assets/drag_coefficient.png  used on input line 656.
 (pdftex.def)             Requested size: 364.19667pt x 225.06543pt.
- [25
+ [35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.655 
+l.662 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.655 
-       <./assets/laminar_turbulent.png> <./assets/drag_coefficient.png>] [26] [27
+l.662 
+       <./assets/laminar_turbulent.png> <./assets/drag_coefficient.png>] [36] [37
 
-] [28]
+] [38]
 Hoofdstuk 7.
 
-Overfull \hbox (1.08247pt too wide) in paragraph at lines 660--661
+Overfull \hbox (1.08247pt too wide) in paragraph at lines 667--668
 \OT1/cmr/m/n/10.95 Thermodynamica is de we-ten-schap van ener-gie, af-ge-leid van de Griekse woor-den therme (warmte)
  []
 
-[29
+[39
 
-] [30] [31]
+] [40] [41]
 Hoofdstuk 8.
-[32
+[42
 
-] [33] [34]
+] [43] [44]
 Hoofdstuk 9.
-[35
+[45
 
 ]
-Overfull \hbox (3.49246pt too wide) in paragraph at lines 811--813
+Overfull \hbox (3.49246pt too wide) in paragraph at lines 818--820
 \OT1/cmr/m/n/10.95 Hierin is $\OML/cmm/m/it/10.95 R$ \OT1/cmr/m/n/10.95 de spe-ci-fieke gas-con-stante, die ver-schilt per gas ($\OML/cmm/m/it/10.95 R \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 R[]=M$\OT1/cmr/m/n/10.95 , met $\OML/cmm/m/it/10.95 R[] \OT1/cmr/m/n/10.95 = 8\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 314 \OML/cmm/m/it/10.95 kJ=kmol \OMS/cmsy/m/n/10.95 ^^A
  []
 
-[36]
+[46]
 Hoofdstuk 10.
-[37
+[47
 
-] [38]
+] [48]
 Hoofdstuk 11.
-<assets/otto_cycle.png, id=678, 501.875pt x 494.84875pt>
+<assets/otto_cycle.png, id=894, 501.875pt x 494.84875pt>
 File: assets/otto_cycle.png Graphic file (type png)
 <use assets/otto_cycle.png>
-Package pdftex.def Info: assets/otto_cycle.png  used on input line 876.
+Package pdftex.def Info: assets/otto_cycle.png  used on input line 883.
 (pdftex.def)             Requested size: 273.14923pt x 269.33612pt.
-[39
+[49
 
 ]
-<assets/rankine_cycle.png, id=687, 963.6pt x 626.34pt>
+<assets/rankine_cycle.png, id=903, 963.6pt x 626.34pt>
 File: assets/rankine_cycle.png Graphic file (type png)
 <use assets/rankine_cycle.png>
-Package pdftex.def Info: assets/rankine_cycle.png  used on input line 892.
+Package pdftex.def Info: assets/rankine_cycle.png  used on input line 899.
 (pdftex.def)             Requested size: 364.19667pt x 236.72145pt.
- [40
+ [50
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.896 
-       <./assets/otto_cycle.png>] [41
+l.903 
+       <./assets/otto_cycle.png>] [51
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.900 \chapter
+l.907 \chapter
               {Warmteoverdracht Mechanismen} <./assets/rankine_cycle.png>]
 Hoofdstuk 12.
-[42
+[52
 
-] [43] [44
+] [53] [54
 
 ]
 Hoofdstuk 13.
-[45
+[55
 
-] [46] [47] [48] [49
+] [56] [57] [58] [59]
+Hoofdstuk 14.
+[60
 
 ]
-Overfull \hbox (51.17986pt too wide) in paragraph at lines 1135--1143
+<assets/compressor_exercise.png, id=965, 240.14719pt x 312.41719pt>
+File: assets/compressor_exercise.png Graphic file (type png)
+<use assets/compressor_exercise.png>
+Package pdftex.def Info: assets/compressor_exercise.png  used on input line 1233.
+(pdftex.def)             Requested size: 182.09486pt x 236.89607pt.
+ [61]
+<assets/Turbine_oefening.png, id=972, 291.33844pt x 414.79968pt>
+File: assets/Turbine_oefening.png Graphic file (type png)
+<use assets/Turbine_oefening.png>
+Package pdftex.def Info: assets/Turbine_oefening.png  used on input line 1261.
+(pdftex.def)             Requested size: 182.09486pt x 259.26816pt.
+ [62
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1264 \textbf{Gegeven:}
+                         <./assets/compressor_exercise.png>]
+Overfull \hbox (4.05997pt too wide) in paragraph at lines 1274--1279
+[]\OT1/cmr/bx/n/10.95 Oplossing: \OT1/cmr/m/n/10.95 Uit su-per-he-a-ted gas ta-bel-len (of ge-ge-ven): $\OML/cmm/m/it/10.95 h[] \OT1/cmr/m/n/10.95 = 3658\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 8 \OML/cmm/m/it/10.95 kJ=kg$ $h[] \OT1/cmr/m/n/10.95 = 2855\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 8 \OML/cmm/m/it/10.95 kJ=kg$
+ []
+
+[63
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1297 \textbf{Oplossing:}
+                           <./assets/Turbine_oefening.png>]
+Overfull \hbox (24.32043pt too wide) in paragraph at lines 1297--1299
+[]\OT1/cmr/bx/n/10.95 Oplossing: \OT1/cmr/m/n/10.95 Voor een wurg-pro-ces (adi-a-ba-tisch, geen ar-beid, ver-waar-loos-bare ki-ne-ti-sche/potenti[]ele
+ []
+
+[64] [65
+
+]
+Overfull \hbox (51.17986pt too wide) in paragraph at lines 1352--1360
  [][] 
  []
 
 
-Overfull \hbox (142.86465pt too wide) in paragraph at lines 1153--1154
+Overfull \hbox (142.86465pt too wide) in paragraph at lines 1370--1371
 []\OT1/cmr/m/n/10.95 Meerkeuzevragen Thermo, []$\OT1/cmtt/m/n/10.95 https : / / drive . google . com / open ? id = 1lxMZjQMHufqMOW5fe86Rk0IvT8AmGgEeLlQJ5k5YsNs$[] 
  []
 
-[50
 
-] (Thermische_en_Fluidumwetenschappen.aux)
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=997, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf  used on input line 1373.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=999, page=1, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 1>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 1373.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 1>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[66
+
+]
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 1>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 1>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 1>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [67
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1021, page=2, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 2>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 2>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 2>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[68
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1026, page=3, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 3>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 3>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 3>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[69
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1031, page=4, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 4>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 4>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 4>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[70
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1036, page=5, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 5>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 5>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 5>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[71
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1041, page=6, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 6>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 6>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 6>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[72
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1047, page=7, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 7>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 7>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 7>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[73
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1052, page=8, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 8>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 8>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 8>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[74
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1057, page=9, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 9>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 9>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 9>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[75
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1062, page=10, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 10>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 10>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 10>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[76
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1067, page=11, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 11>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 11>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 11>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[77
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1072, page=12, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 12>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 12>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 12>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[78
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1078, page=13, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 13>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 13>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 13>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[79
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1083, page=14, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 14>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 14>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 14>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[80
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1088, page=15, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 15>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 15>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 15>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[81
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1093, page=16, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 16>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 16>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 16>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[82
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1098, page=17, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 17>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 17>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 17>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[83
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1103, page=18, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 18>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 18>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 18>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[84
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1109, page=19, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 19>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 19>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 19>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[85
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1114, page=20, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 20>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 20>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 20>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[86
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1119, page=21, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 21>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 21>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 21>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[87
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1124, page=22, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 22>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 22>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 22>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[88
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1129, page=23, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 23>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 23>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 23>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[89
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1134, page=24, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 24>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 24>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 24>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[90
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1140, page=25, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 25>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 25>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 25>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[91
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1145, page=26, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 26>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 26>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 26>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[92
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1150, page=27, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 27>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 27>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 27>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[93
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1155, page=28, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 28>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 28>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 28>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[94
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1160, page=29, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 29>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 29>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 29>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[95
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1165, page=30, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 30>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 30>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 30>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[96
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1171, page=31, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 31>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 31>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 31>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[97
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1176, page=32, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 32>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 32>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 32>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[98
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1181, page=33, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 33>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 33>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 33>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[99
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1186, page=34, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 34>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 34>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 34>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[100
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1191, page=35, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 35>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 35>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 35>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[101
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1196, page=36, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 36>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 36>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 36>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[102
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1202, page=37, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 37>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 37>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 37>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[103
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1207, page=38, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 38>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 38>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 38>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[104
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1212, page=39, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 39>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 39>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 39>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[105
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1217, page=40, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 40>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 40>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 40>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[106
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1222, page=41, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 41>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 41>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 41>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[107
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1227, page=42, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 42>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 42>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 42>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[108
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1233, page=43, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 43>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 43>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 43>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[109
+
+ <./Thermodynamic tables and properties.pdf>]
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1238, page=44, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 44>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 44>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 44>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 1373.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[110
+
+ <./Thermodynamic tables and properties.pdf>] (Thermische_en_Fluidumwetenschappen.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Thermische_en_Fluidumwetenschappen.out' has not changed.
-(rerunfilecheck)             Checksum: 25F67233FD5D04BEB70A833E6D008C21;18530.
+(rerunfilecheck)             Checksum: 6CFF260CB70B68FAA80810B617E47291;20593.
  ) 
 Here is how much of TeX's memory you used:
- 12043 strings out of 474486
- 188433 string characters out of 5753569
- 1941542 words of memory out of 5000000
- 33992 multiletter control sequences out of 15000+600000
- 568123 words of font info for 73 fonts, out of 8000000 for 9000
+ 13680 strings out of 474486
+ 222851 string characters out of 5753569
+ 1942542 words of memory out of 5000000
+ 35513 multiletter control sequences out of 15000+600000
+ 568469 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,813b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Thermische_en_Fluidumwetenschappen.pdf (51 pages, 1430820 bytes).
+ 75i,17n,79p,813b,631s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Thermische_en_Fluidumwetenschappen.pdf (111 pages, 39634523 bytes).
 PDF statistics:
- 872 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
- 797 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1379 PDF objects out of 1440 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 1153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
