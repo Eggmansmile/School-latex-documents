@@ -1,6 +1,5 @@
-﻿%\documentclass[a4paper,11pt]{article}
-%
-%\usepackage[dutch]{babel}
+﻿\documentclass[a4paper,11pt]{article}
+\usepackage[dutch]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -20,7 +19,7 @@
 
 \geometry{margin=2.5cm}
 
-%% inhoud voor AI
+
 
 % Custom color definitions
 \definecolor{hoofdkleur}{RGB}{0,51,102}
@@ -290,34 +289,7 @@ y(t) = x(t) \cdot \cos(2\pi t) + x^2(t)
 
 \textbf{Vraag:} Onderzoek de lineariteit en tijdsinvariantie van dit systeem.
 
-\begin{oplossingbox}[Gedetailleerde Oplossing]
-
-\textbf{1. Toetsing van Lineariteit}
-
-We onderzoeken de respons op een geschaalde som van twee invoersignalen: \(x_{\text{in}}(t) = \alpha x_1(t) + \beta x_2(t)\).
-
-De verwachte output voor een lineair systeem zou zijn \(\alpha y_1(t) + \beta y_2(t)\), waarbij:
-\begin{align*}
-y_1(t) &= x_1(t) \cos(2\pi t) + x_1^2(t) \\
-y_2(t) &= x_2(t) \cos(2\pi t) + x_2^2(t)
-\end{align*}
-
-De werkelijke output van het systeem op \(x_{\text{in}}(t)\) is:
-\begin{align*}
-y_{\text{out}}(t) &= [\alpha x_1(t) + \beta x_2(t)] \cos(2\pi t) + [\alpha x_1(t) + \beta x_2(t)]^2 \\
-&= \alpha x_1(t) \cos(2\pi t) + \beta x_2(t) \cos(2\pi t) \\
-&\quad + \alpha^2 x_1^2(t) + 2\alpha\beta x_1(t)x_2(t) + \beta^2 x_2^2(t)
-\end{align*}
-
-Vergelijken we dit met de lineaire combinatie \(\alpha y_1(t) + \beta y_2(t)\):
-\[
-\alpha y_1(t) + \beta y_2(t) = \alpha x_1(t) \cos(2\pi t) + \alpha x_1^2(t) + \beta x_2(t) \cos(2\pi t) + \beta x_2^2(t)
-\]
-
-\belangrijk{Conclusie:} Het systeem is \textbf{niet-lineair}. De term \(x^2(t)\) zorgt voor kruistermen (\(2\alpha\beta x_1 x_2\)) en kwadratische schaling (\(\alpha^2\) in plaats van \(\alpha\)) in de respons. Dit schendt het superpositiebeginsel.
-
-\vspace{0.3cm}
-\textbf{2. Toetsing van Tijdsinvariantie}
+\subsection{Oefening 1.9: Causaliteit van een Integrator met Toekomstblik (Uitgebreid)}
 
 Stel een vertraagde input \(x_2(t) = x_1(t - \tau)\). De respons van het systeem op deze vertraagde input is:
 \[
@@ -344,32 +316,6 @@ y(t) = \int_{t-1}^{t+1} x(\tau) \, d\tau
 
 \textbf{Vraag:} Is dit systeem causaal? Is het lineair?
 
-\begin{oplossingbox}[Oplossing]
-
-\textbf{1. Causaliteit}
-
-Causaliteit vereist dat de output op tijdstip \(t\) niet afhangt van inputs op tijdstippen \(> t\).
-
-De integraal loopt van \(\tau = t-1\) tot \(\tau = t+1\). Om de waarde van \(y(t)\) te berekenen, hebben we de waarden van \(x(\tau)\) nodig in het interval \([t-1, t+1]\).
-
-Dit interval bevat tijdstippen die groter zijn dan \(t\) (namelijk tot \(t+1\)). Het systeem moet dus ``weten'' wat de waarde van het ingangssignaal in de toekomst zal zijn (één seconde vooruit).
-
-\belangrijk{Conclusie:} Het systeem is \textbf{niet-causaal}. Dergelijke systemen zijn niet realiseerbaar in real-time toepassingen.
-
-\vspace{0.5cm}
-\textbf{2. Lineariteit}
-
-Integraaloperatoren zijn inherent lineair:
-\begin{align*}
-y(t) &= \int_{t-1}^{t+1} (a x_1(\tau) + b x_2(\tau)) \, d\tau \\
-&= a \int_{t-1}^{t+1} x_1(\tau) \, d\tau + b \int_{t-1}^{t+1} x_2(\tau) \, d\tau \\
-&= a y_1(t) + b y_2(t)
-\end{align*}
-
-\belangrijk{Conclusie:} Het systeem is \textbf{lineair}.
-
-\end{oplossingbox}
-
 \subsection{Oefening 1.10: Differentiaalvergelijking van een Mechanisch Systeem (Uitgebreid)}
 
 \textbf{Situatie:} Een massa \(M\) beweegt over een oppervlak met wrijvingscoëfficiënt \(B\). De massa is verbonden aan een muur via een veer met constante \(K\) en wordt aangedreven door een externe kracht \(F(t)\). De wrijving is echter niet lineair, maar evenredig met het kwadraat van de snelheid (luchtweerstand).
@@ -379,43 +325,6 @@ y(t) &= \int_{t-1}^{t+1} (a x_1(\tau) + b x_2(\tau)) \, d\tau \\
     \item Stel de differentiaalvergelijking op voor de verplaatsing \(y(t)\).
     \item Is dit systeem lineair? Zo nee, lineariseer het systeem rond een evenwichtssnelheid \(v_0\).
 \end{enumerate}
-
-\begin{oplossingbox}[Oplossing]
-
-\textbf{1. Opstellen Differentiaalvergelijking}
-
-Volgens de tweede wet van Newton is de som der krachten gelijk aan massa maal versnelling (\(M \ddot{y}\)).
-
-De krachten zijn:
-\begin{itemize}
-    \item Aandrijfkracht: \(+F(t)\)
-    \item Veerkracht (herstellend): \(-K y(t)\)
-    \item Wrijving (tegenwerkend, kwadratisch): \(-B v(t)^2 = -B (\dot{y}(t))^2\)
-\end{itemize}
-
-De bewegingsvergelijking wordt:
-\[
-\boxed{M \ddot{y}(t) + B (\dot{y}(t))^2 + K y(t) = F(t)}
-\]
-
-\vspace{0.5cm}
-\textbf{2. Lineariteit en Linearisatie}
-
-De term \((\dot{y}(t))^2\) maakt de differentiaalvergelijking \textbf{niet-lineair}. Om lineaire analysetechnieken te kunnen gebruiken, moeten we lineariseren rond een werkingspunt \(v_0\).
-
-Stel \(f(v) = B v^2\). We benaderen dit met een Taylorreeks rond \(v_0\):
-\[
-B v^2 \approx B v_0^2 + 2 B v_0 (v - v_0)
-\]
-
-De gelineariseerde vergelijking wordt:
-\[
-M \ddot{y}(t) + C_{\text{eq}} \dot{y}(t) + K y(t) = F(t) - B v_0^2
-\]
-
-waarbij \(C_{\text{eq}} = 2Bv_0\) de effectieve dempingscoëfficiënt is. Dit is nu een lineaire differentiaalvergelijking met constante coëfficiënten.
-
-\end{oplossingbox}
 
 \newpage
 
@@ -563,48 +472,6 @@ h(t) &= e^{-2t} u(t)
 
 \textbf{Vraag:} Bepaal de convolutie \(y(t) = (x * h)(t)\).
 
-\begin{oplossingbox}[Oplossing]
-
-De definitie van convolutie is:
-\[
-y(t) = \int_{-\infty}^{\infty} x(\tau) h(t - \tau) \, d\tau
-\]
-
-Invullen van de functies:
-\[
-y(t) = \int_{-\infty}^{\infty} e^{-3\tau} u(\tau) \cdot e^{-2(t-\tau)} u(t-\tau) \, d\tau
-\]
-
-\textbf{Analyse van de grenzen:}
-
-De stapfuncties leggen beperkingen op aan het integratie-interval:
-\begin{itemize}
-    \item \(u(\tau)\) is enkel niet-nul als \(\tau \ge 0\)
-    \item \(u(t-\tau)\) is enkel niet-nul als \(t-\tau \ge 0\), oftewel \(\tau \le t\)
-\end{itemize}
-
-Hieruit volgt dat voor \(t \ge 0\) de integraal wordt:
-\[
-y(t) = \int_{0}^{t} e^{-3\tau} e^{-2(t-\tau)} \, d\tau
-\]
-
-We kunnen \(e^{-2t}\) buiten de integraal halen:
-\[
-y(t) = e^{-2t} \int_{0}^{t} e^{-3\tau} e^{2\tau} \, d\tau = e^{-2t} \int_{0}^{t} e^{-\tau} \, d\tau
-\]
-
-Nu lossen we de elementaire integraal op:
-\[
-\int_{0}^{t} e^{-\tau} \, d\tau = \left[ -e^{-\tau} \right]_{0}^{t} = 1 - e^{-t}
-\]
-
-Dus:
-\[
-\boxed{y(t) = (e^{-2t} - e^{-3t}) u(t)}
-\]
-
-\end{oplossingbox}
-
 \subsection{Oefening 2.10: Grafische Convolutie van een Blok en een Zaagtand (Uitgebreid)}
 
 \textbf{Beschouw de volgende signalen:}
@@ -615,53 +482,13 @@ Dus:
 
 \textbf{Vraag:} Bepaal grafisch en analytisch de convolutie \(y(t)\).
 
-\begin{oplossingbox}[Oplossing]
+\textbf{Beschouw de volgende signalen:}
+\begin{itemize}
+    \item \(x(t)\): Een rechthoekige puls met amplitude 1 tussen \(t=0\) en \(t=2\). (\(x(t) = u(t) - u(t-2)\))
+    \item \(h(t)\): Een zaagtandpuls gegeven door \(h(t) = t\) voor \(0 \le t \le 1\), en 0 elders.
+\end{itemize}
 
-We gebruiken de \concept{schuif-methode}. We spiegelen \(h(\tau)\) en schuiven deze over \(x(\tau)\).
-
-We onderscheiden verschillende intervallen op basis van de overlap:
-
-\textbf{Interval 1: \(t < 0\) en Interval 5: \(t \ge 3\)}
-
-Geen overlap. \(y(t) = 0\).
-
-\vspace{0.3cm}
-\textbf{Interval 2: \(0 \le t < 1\) (Intrede)}
-
-De zaagtand schuift het blok binnen. Overlap is \([0, t]\).
-\[
-y(t) = \int_{0}^{t} 1 \cdot (t - \tau) \, d\tau = \left[ t\tau - \frac{\tau^2}{2} \right]_0^t = \frac{t^2}{2}
-\]
-
-\vspace{0.3cm}
-\textbf{Interval 3: \(1 \le t < 2\) (Volledige overlap)}
-
-De zaagtand (breedte 1) bevindt zich volledig in het blok (breedte 2). Overlap is \([t-1, t]\).
-\[
-y(t) = \int_{t-1}^{t} (t - \tau) \, d\tau = \left[ \frac{u^2}{2} \right]_0^1 = \frac{1}{2}
-\]
-
-\vspace{0.3cm}
-\textbf{Interval 4: \(2 \le t < 3\) (Uittrede)}
-
-De zaagtand verlaat het blok. Overlap is van \([t-1, 2]\).
-\[
-y(t) = \int_{t-1}^{2} (t - \tau) \, d\tau = \frac{1}{2} - \frac{(t-2)^2}{2}
-\]
-
-\vspace{0.5cm}
-\textbf{Samenvatting:}
-\[
-y(t) = \begin{cases}
-0 & t < 0 \\
-\frac{t^2}{2} & 0 \le t < 1 \\
-\frac{1}{2} & 1 \le t < 2 \\
-\frac{1}{2} - \frac{(t-2)^2}{2} & 2 \le t < 3 \\
-0 & t \ge 3
-\end{cases}
-\]
-
-\end{oplossingbox}
+\textbf{Vraag:} Bepaal grafisch en analytisch de convolutie \(y(t)\).
 
 \subsection{Oefening 2.11: RMS en Vermogen (Uitgebreid)}
 
@@ -671,37 +498,6 @@ x(t) = A \cos(\omega_0 t) + B \sin(\omega_0 t)
 \]
 
 \textbf{Vraag:} Bereken de RMS-waarde en toon aan dat de faseverschuiving geen invloed heeft op het vermogen.
-
-\begin{oplossingbox}[Oplossing]
-
-De RMS-waarde van een periodiek signaal \(x(t)\) met periode \(T\) is:
-\[
-x_{\text{RMS}} = \sqrt{\frac{1}{T} \int_0^T x^2(t) \, dt}
-\]
-
-We kunnen \(x(t)\) herschrijven als:
-\[
-x(t) = C \cos(\omega_0 t + \phi)
-\]
-waarbij \(C = \sqrt{A^2 + B^2}\) en \(\phi = -\arctan(B/A)\).
-
-Het vermogen is het kwadraat van de RMS-waarde:
-\[
-P = \frac{1}{T} \int_0^T C^2 \cos^2(\omega_0 t + \phi) \, dt
-\]
-
-Gebruik de identiteit \(\cos^2(\theta) = \frac{1 + \cos(2\theta)}{2}\):
-\[
-P = \frac{C^2}{2T} \int_0^T (1 + \cos(2\omega_0 t + 2\phi)) \, dt = \frac{C^2}{2T} \cdot T = \frac{C^2}{2}
-\]
-
-\[
-\boxed{x_{\text{RMS}} = \sqrt{\frac{A^2 + B^2}{2}} = \frac{C}{\sqrt{2}}}
-\]
-
-\textbf{Conclusie:} Het totale vermogen is onafhankelijk van de faseverschuiving \(\phi\).
-
-\end{oplossingbox}
 
 \newpage
 
@@ -1062,28 +858,6 @@ x(t) = \frac{1}{1+t^2}
 
 \textbf{Tip:} Gebruik het feit dat een driehoek de convolutie is van twee rechthoeken.
 
-\begin{oplossingbox}[Oplossing via Convolutie-eigenschap]
-
-De Fouriertransformatie van een rechthoek is een sinc-functie. Een driehoek is de convolutie van twee identieke rechthoeken.
-
-Laat \(\Pi(t)\) een rechthoek zijn met breedte 1 en hoogte 1 (van \(-0.5\) tot \(0.5\)).
-
-\(\Pi(t) * \Pi(t) = \Lambda(t)\) is een driehoek.
-
-De Fouriertransformatie van de rechthoek is:
-\[
-\mathcal{F}\{\Pi(t)\} = \text{sinc}\left(\frac{\omega}{2}\right)
-\]
-
-Gebruikmakend van de convolutie-eigenschap:
-\[
-\boxed{X(\omega) = \left[ \text{sinc}\left(\frac{\omega}{2}\right) \right]^2}
-\]
-
-Het spectrum daalt als \(1/\omega^2\), sneller dan een rechthoekpuls.
-
-\end{oplossingbox}
-
 \subsection{Oefening 4.12: Dualiteit en Frequentieverschuiving (Uitgebreid)}
 
 \textbf{Gegeven is dat:}
@@ -1092,30 +866,6 @@ Het spectrum daalt als \(1/\omega^2\), sneller dan een rechthoekpuls.
 \]
 
 \textbf{Vraag:} Bepaal zonder integratie de Fouriertransformatie van het signaal \(x(t) = \frac{1}{1+t^2}\).
-
-\begin{oplossingbox}[Oplossing]
-
-We gebruiken de \concept{dualiteitseigenschap}:
-
-Als \(\mathcal{F}\{f(t)\} = F(\omega)\), dan \(\mathcal{F}\{F(t)\} = 2\pi f(-\omega)\).
-
-Laat \(g(t) = e^{-|t|}\), dan \(G(\omega) = \frac{2}{1+\omega^2}\).
-
-We zoeken de transformatie van \(x(t) = \frac{1}{1+t^2}\), wat qua vorm gelijk is aan \(G(t)\).
-
-Volgens dualiteit:
-\[
-\mathcal{F}\left\{\frac{2}{1+t^2}\right\} = 2\pi e^{-|\omega|}
-\]
-
-Onze functie is de helft daarvan:
-\[
-\boxed{\mathcal{F}\left\{\frac{1}{1+t^2}\right\} = \pi e^{-|\omega|}}
-\]
-
-Het spectrum van een Lorentz-curve is een dubbele exponentiaal in het frequentiedomein.
-
-\end{oplossingbox}
 
 \newpage
 
@@ -1294,34 +1044,6 @@ x(t) = |\sin(t)|
     \item Bepaal de complexe Fouriercoëfficiënten \(c_k\).
 \end{enumerate}
 
-\begin{oplossingbox}[Oplossing]
-
-\textbf{1. Periode}
-
-Hoewel \(\sin(t)\) periode \(2\pi\) heeft, zorgt de absolute waarde ervoor dat het negatieve deel wordt omgeklapt. De vorm herhaalt zich dus elke \(\pi\).
-
-\(T = \pi\). Grondfrequentie \(\omega_0 = \frac{2\pi}{T} = 2\) rad/s.
-
-\vspace{0.5cm}
-\textbf{2. Coëfficiënten}
-
-Formule: \(c_k = \frac{1}{T} \int_0^T x(t) e^{-jk\omega_0 t} \, dt\).
-\[
-c_k = \frac{1}{\pi} \int_0^{\pi} \sin(t) e^{-j2kt} \, dt
-\]
-
-Gebruik de Euler-vorm voor sinus: \(\sin(t) = \frac{e^{jt} - e^{-jt}}{2j}\).
-
-Na evaluatie van de integraal (zie volledige uitwerking) resulteert:
-
-\[
-\boxed{c_k = \frac{2}{\pi(1 - 4k^2)}}
-\]
-
-\textbf{Resultaat:} De coëfficiënten zijn reëel en nemen af als \(1/k^2\). Dit komt omdat het signaal even is en geen discontinuïteiten heeft.
-
-\end{oplossingbox}
-
 \newpage
 
 \section{Hoofdstuk 6: LTC-Systemen}
@@ -1470,74 +1192,12 @@ H(s) = \frac{10}{s + 2}
 
 \textbf{Vraag:} Bepaal de steady-state output \(y_{ss}(t)\) als de input \(x(t) = 3 \cos(2t + 45^\circ)\) is.
 
-\begin{oplossingbox}[Oplossing]
-
-\textbf{1. Frequentierespons bepalen}
-
-Vervang \(s\) door \(j\omega\). De inputfrequentie is \(\omega = 2\) rad/s.
-\[
-H(j2) = \frac{10}{j2 + 2} = \frac{10}{2(1+j)}
-\]
-
-\vspace{0.3cm}
-\textbf{2. Magnitude en Fase berekenen}
-
-Magnitude:
-\[
-|H(j2)| = \frac{10}{2\sqrt{1^2 + 1^2}} = \frac{10}{2\sqrt{2}} = \frac{5}{\sqrt{2}} \approx 3.536
-\]
-
-Fase:
-\[
-\angle H(j2) = 0^\circ - \arctan\left(\frac{2}{2}\right) = -45^\circ
-\]
-
-\vspace{0.3cm}
-\textbf{3. Output samenstellen}
-
-Amplitude output: \(A_{\text{out}} = 3 \times 3.536 = 10.61\)
-
-Fase output: \(\phi_{\text{out}} = 45^\circ - 45^\circ = 0^\circ\)
-
-\[
-\boxed{y_{ss}(t) = 10.61 \cos(2t)}
-\]
-
-Het systeem versterkt het signaal en introduceert een fasevertraging van \(-45^\circ\).
-
-\end{oplossingbox}
-
 \subsection{Oefening 6.12: Stabiliteitsanalyse via Polen (Uitgebreid)}
 
 \textbf{Bepaal voor welke waarden van \(K\) het teruggekoppelde systeem met open-lus transferfunctie stabiel is:}
 \[
 G(s) = \frac{K}{s(s+1)(s+2)}
 \]
-
-\begin{oplossingbox}[Oplossing]
-
-De karakteristieke vergelijking is \(1 + G(s) = 0\):
-\[
-s(s+1)(s+2) + K = 0 \implies s^3 + 3s^2 + 2s + K = 0
-\]
-
-\textbf{Routh-Hurwitz criterium:}
-
-Voor stabiliteit moeten alle elementen in de eerste kolom van de Routh-tabel positief zijn:
-\begin{enumerate}
-    \item \(1 > 0\) \checkmark
-    \item \(3 > 0\) \checkmark
-    \item \(\frac{3(2) - 1(K)}{3} = \frac{6-K}{3} > 0 \implies K < 6\)
-    \item \(K > 0\)
-\end{enumerate}
-
-\[
-\boxed{0 < K < 6}
-\]
-
-\textbf{Conclusie:} Het systeem is stabiel voor \(0 < K < 6\). Bij \(K=6\) treedt marginale stabiliteit op, en voor \(K>6\) wordt het onstabiel.
-
-\end{oplossingbox}
 
 \newpage
 
