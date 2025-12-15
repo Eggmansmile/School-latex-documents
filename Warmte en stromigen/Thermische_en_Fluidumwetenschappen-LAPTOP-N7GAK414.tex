@@ -1,0 +1,1573 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{tikz}
+
+% Dynamische opgave-nummering (1., 2., ...) per oefenzitting
+\newcounter{opgave}
+\newcommand{\opgave}[1]{%
+    \refstepcounter{opgave}%
+    \subsection*{\arabic{opgave}.\ #1}%
+}
+
+% Consistente markering van kernbegrippen
+\newcommand{\term}[1]{\textbf{#1}}
+\newcommand{\Tau}{\tau}
+
+
+\geometry{margin=2.5cm}
+
+\title{Ruben Ryckaert's Samenvatting\\ \large Theorie, Analyse en Toepassingen van Thermische en Fluïdumwetenschappen}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter*{Formularium}
+%\includepdf{Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf}
+\addcontentsline{toc}{chapter}{Formularium}
+Dit is een \term{eigen formularium} met de \term{algemene formules} die in dit document gebruikt worden.
+Numerieke invullingen in voorbeelden zijn bewust niet opgenomen.
+
+\section*{Deel 1: Stromingen}
+\subsection*{Basisgrootheden (eigenschappen fluïda)}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+\rho &=& \dfrac{m}{V} & \text{dichtheid }[kg/m^3]\\
+\Tau &=& \mu\,\dfrac{\partial u}{\partial y} & \text{schuifspanning }[Pa]\\
+\nu &=& \dfrac{\mu}{\rho} & \text{kinematische viscositeit }[m^2/s]\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Hydrostatica}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+\dfrac{\partial p}{\partial z} &=& -\rho g & \text{hydrostatisch evenwicht}\\
+p_2 &=& p_1 + \rho g\,h & (h=z_1-z_2)\,\text{bij }\rho=\text{const.}\\
+p(z) &=& p(z_0)\,\exp\!\left(-\dfrac{g(z-z_0)}{RT}\right) & \text{isotherm ideaal gas}\\
+F_B &=& \rho_{vloeistof}\,g\,V_{onder} & \text{wet van Archimedes}\\
+F_R &=& p_{gem}\,A = (p_0+\rho g h_c)A & \text{kracht op vlak oppervlak}\\
+y_p &=& y_c + \dfrac{I_{xx,c}}{y_cA} & \text{drukpunt (verticaal vlak)}\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Kinematica en behoudswetten}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+\dfrac{D}{Dt} &=& \dfrac{\partial}{\partial t}+\vec{v}\cdot\nabla & \text{materiële afgeleide}\\
+\dfrac{\partial}{\partial t}\int_{CV}\rho\,dV &+& \int_{CS}\rho\,\vec{v}\cdot\hat{n}\,dA = 0 & \text{continuïteit (alg.)}\\
+\nabla\cdot\vec{v} &=& 0 & \text{onsamendrukbaar}\\
+A_1V_1 &=& A_2V_2 & \text{1D onsamendrukbaar}\\
+\sum\vec{F}_{ext} &=& \dfrac{\partial}{\partial t}\int_{CV}\rho\vec{v}\,dV + \int_{CS}\rho\vec{v}(\vec{v}\cdot\hat{n})\,dA & \text{impulsvergelijking}\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Bernoulli en energievergelijking}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+p + \dfrac{1}{2}\rho v^2 + \rho g z &=& \text{constant} & \text{Bernoulli (stationair, wrijvingsloos)}\\
+\dfrac{P_1}{\rho g}+\dfrac{V_1^2}{2g}+z_1+h_{pomp} &=& \dfrac{P_2}{\rho g}+\dfrac{V_2^2}{2g}+z_2+h_{turbine}+h_L & \text{uitgebreid (head)}\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Viskeuze stroming (Navier--Stokes, Poiseuille, leidingverliezen)}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+\rho\dfrac{D\vec{v}}{Dt} &=& -\nabla p + \mu\nabla^2\vec{v} + \rho\vec{g} & \text{Navier--Stokes (Newtoniaans)}\\
+u(r) &=& \dfrac{1}{4\mu}\dfrac{\partial p}{\partial x}(R^2-r^2) & \text{buis: laminaire Poiseuille}\\
+Q &=& \dfrac{\pi R^4\,\Delta p}{8\mu L} & \text{Hagen--Poiseuille}\\
+Re &=& \dfrac{\rho V D}{\mu}=\dfrac{VD}{\nu} & \text{Reynoldsgetal}\\
+\Delta P &=& f\,\dfrac{L}{D}\,\dfrac{\rho V^2}{2} & \text{Darcy--Weisbach}\\
+\dfrac{1}{\sqrt{f}} &=& -2\log\!\left(\dfrac{\varepsilon/D}{3.7}+\dfrac{2.51}{Re\sqrt{f}}\right) & \text{Colebrook}\\
+F_D &=& C_D\,A\,\dfrac{1}{2}\rho V^2 & \text{dragkracht}\\
+\end{array}
+\]
+\endgroup
+
+\section*{Deel 2: Warmte (Thermodynamica)}
+\subsection*{Eerste hoofdwet, arbeid en enthalpie}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+E_{in}-E_{uit} &=& \Delta E_{systeem} & \text{energiebehoud (alg.)}\\
+Q_{net,in}-W_{net,uit} &=& \Delta E_{systeem} & \text{gesloten systeem}\\
+W_b &=& \displaystyle\int_{1}^{2} P\,dV & \text{grensverplaatsingsarbeid}\\
+h &=& u+Pv & \text{definitie enthalpie}\\
+\dot{Q}-\dot{W} &=& \dot{m}\left[(h_2-h_1)+\dfrac{V_2^2-V_1^2}{2}+g(z_2-z_1)\right] & \text{SFEE (stationair)}\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Zuivere stoffen en ideale gassen}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+x &=& \dfrac{m_{damp}}{m_{totaal}} & \text{kwaliteit/dampfractie}\\
+y_{gem} &=& y_f + x\,y_{fg} & (y_{fg}=y_g-y_f)\\
+Pv &=& RT & \text{ideale gaswet (specifiek)}\\
+\Delta u &=& c_v\,\Delta T & \text{(ideaal gas, }c_v\approx\text{const.)}\\
+\Delta h &=& c_p\,\Delta T & \text{(ideaal gas, }c_p\approx\text{const.)}\\
+k &=& \dfrac{c_p}{c_v} & \text{warmteverhouding}\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Tweede hoofdwet en cycli}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+dS &\ge& \dfrac{\delta Q}{T} & \text{entropie-ongelijkheid}\\
+\eta_T &\approx& \dfrac{h_1-h_{2a}}{h_1-h_{2s}} & \text{isentropische turbine-eff.}\\
+\eta_C &\approx& \dfrac{h_{2s}-h_1}{h_{2a}-h_1} & \text{isentropische compressor-eff.}\\
+\eta_{th,Carnot} &=& 1-\dfrac{T_L}{T_H} & \text{Carnot rendement}\\
+\end{array}
+\]
+\endgroup
+
+\section*{Deel 3: Warmteoverdracht}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{\qquad}l@{}}
+\dot{Q}_{cond} &=& -kA\,\dfrac{dT}{dx} & \text{Fourier (geleiding)}\\
+\dot{Q} &=& kA\,\dfrac{\Delta T}{L} & \text{vlakke wand (stationair)}\\
+\dot{Q}_{conv} &=& hA_s(T_s-T_{\infty}) & \text{Newton (convectie)}\\
+\dot{Q}_{max} &=& \sigma A_s T_s^4 & \text{Stefan--Boltzmann (zwart lichaam)}\\
+\dot{Q} &=& \varepsilon\sigma A_s T_s^4 & \text{reëel oppervlak (emissiviteit)}\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Symbolen (kort)}
+\begingroup
+\setlength{\tabcolsep}{8pt}
+\renewcommand{\arraystretch}{1.2}
+\[
+\begin{array}{@{}ll@{\qquad}ll@{}}
+\rho & \text{dichtheid }[kg/m^3] & \mu & \text{dynamische viscositeit }[Pa\cdot s]\\
+\nu & \text{kinematische viscositeit }[m^2/s] & p,P & \text{druk }[Pa]\\
+V,v & \text{snelheid }[m/s] & g & \text{zwaartekrachtversnelling }[m/s^2]\\
+z,h & \text{hoogte/diepte }[m] & A & \text{oppervlakte }[m^2]\\
+Q,\dot{Q} & \text{warmte / warmtestroom }[J],[W] & W,\dot{W} & \text{arbeid / vermogen }[J],[W]\\
+u,h & \text{spec. interne energie / enthalpie }[J/kg] & T & \text{temperatuur }[K]\,(of\,^{\circ}C)\\
+k & \text{thermische geleidbaarheid }[W/(m\cdot K)] & h(\text{conv}) & \text{convectiecoëff. }[W/(m^2\cdot K)]\\
+\sigma & \text{Stefan--Boltzmann }[W/(m^2\cdot K^4)] & \varepsilon & \text{emissiviteit }[-]\\
+\end{array}
+\]
+\endgroup
+
+
+\chapter*{Inleiding}
+In de wereld van de ingenieurswetenschappen vormen de disciplines thermodynamica, fluïdummechanica en warmteoverdracht de fundamentele bouwstenen voor het begrijpen van energie en materie. Deze vakgebieden, vaak gezamenlijk aangeduid als de thermische en fluïdumwetenschappen, zijn onlosmakelijk met elkaar verbonden. Of het nu gaat om het ontwerpen van een straalmotor, het optimaliseren van een warmtewisselaar in een energiecentrale, of het modelleren van bloedstroom in het menselijk lichaam, de interactie tussen thermische energie en stromende media speelt een centrale rol.
+
+Dit rapport biedt een uitputtende analyse van deze wetenschappen, gebaseerd op een synthese van academische bronteksten, vraagstukken en handboeken. Het document is gestructureerd in drie hoofddelen: `Deel 1: Stromingen', dat de mechanica van vloeistoffen en gassen in rust en beweging behandelt; `Deel 2: Warmte', waarin de wetten van de thermodynamica en warmteoverdracht worden ontleed; en `Deel 3: Oefeningen', waarin de theorie wordt toegepast op concrete technische vraagstukken. De benadering is gericht op een stap-voor-stap uitleg van concepten en formules, waarbij complexe fysische fenomenen worden vertaald naar begrijpelijke en toepasbare kennis.
+
+\part{Stromingen}
+In dit deel verschuiven we de focus naar de fluïdummechanica: de studie van fluïda in rust en in beweging. Een fluïdum (vloeistof of gas) wordt gedefinieerd als een stof die continu vervormt onder invloed van een schuifspanning, hoe klein die ook is.
+
+\chapter{Eigenschappen van Fluïda}
+\section{Definitie van een Fluïdum}
+Een fluïdum is een stof die niet in staat is blijvende weerstand te bieden tegen afschuiving. Waar een vaste stof zijn vorm behoudt onder schuifspanning, zal een fluïdum continu blijven vervormen zolang de schuifkracht wordt aangehouden. Fluïda omvatten zowel vloeistoffen als gassen.
+
+\section{Dichtheid}
+De \term{dichtheid} $\rho$ van een \term{fluïdum} wordt gedefinieerd als de massa per volume-eenheid:
+\[
+\rho = \frac{m}{V} \quad [kg/m^3]
+\]
+Voor een continuum-benadering is er een minimum volume $V^*$ nodig waaronder de dichtheid constant blijft. Voor water geldt bijvoorbeeld dat $1 \, mm^3 \approx 3 \times 10^{16}$ moleculen bevat, waardoor de continuum-aanname gerechtvaardigd is.
+
+\section{Viscositeit}
+	erm{Viscositeit} is een maat voor de interne wrijving van een \term{fluïdum}. Voor een \term{Newtoniaans fluïdum} geldt een lineair verband tussen de \term{schuifspanning} $\tau$ en de snelheidsgradiënt:
+\[
+\tau = \mu \frac{\partial u}{\partial y}
+\]
+waarbij:
+\begin{itemize}
+    \item $\tau$ de schuifspanning is [Pa]
+    \item $\mu$ de dynamische viscositeit [Pa·s]
+    \item $\frac{\partial u}{\partial y}$ de snelheidsgradiënt loodrecht op de stroomrichting
+\end{itemize}
+De kinematische viscositeit wordt gedefinieerd als:
+\[
+\nu = \frac{\mu}{\rho} \quad [m^2/s]
+\]
+Voor vloeistoffen neemt de viscositeit af met toenemende temperatuur, terwijl voor gassen de viscositeit toeneemt met temperatuur.
+
+\subsubsection*{Voorbeeld: Schuifspanning in een olielaag}
+\textbf{Gegeven:} Een vlakke plaat met oppervlakte $A = 0.5 \, m^2$ wordt met een snelheid van $V = 2 \, m/s$ over een vlakke ondergrond getrokken. Tussen de plaat en de ondergrond bevindt zich een olielaagje met dikte $d = 1 \, mm$ en dynamische viscositeit $\mu = 0.1 \, Pa \cdot s$.
+\textbf{Gevraagd:} Bereken de benodigde kracht $F$ om de plaat te bewegen.
+\textbf{Oplossing:}
+De snelheidsgradiënt is lineair (Couette stroming):
+\[
+\frac{du}{dy} \approx \frac{V}{d} = \frac{2 \, m/s}{0.001 \, m} = 2000 \, s^{-1}
+\]
+De schuifspanning is:
+\[
+\tau = \mu \frac{du}{dy} = 0.1 \cdot 2000 = 200 \, Pa
+\]
+De benodigde kracht is:
+\[
+F = \tau \cdot A = 200 \, N/m^2 \cdot 0.5 \, m^2 = 100 \, N
+\]
+
+\chapter{Fluïdumstatica (Hydrostatica)}
+	erm{Fluïdumstatica} behandelt vloeistoffen die in rust zijn. In deze toestand zijn er geen relatieve bewegingen tussen vloeistoflagen, dus er zijn geen \term{schuifspanningen}. Alleen normaalkrachten (\term{druk}) spelen een rol.
+
+\section{Drukverdeling in een Fluïdum in Rust}
+\subsection{Het Infinitesimale Controle Volume}
+We beginnen met het beschouwen van een infinitesimaal klein controle volume in een fluïdum dat in rust is. Dit is een kubisch volume met afmetingen:
+\begin{itemize}
+    \item Lengte in x-richting: $dx$
+    \item Lengte in y-richting: $dy$
+    \item Lengte in z-richting: $dz$
+\end{itemize}
+Het volume van dit element is dus:
+\[
+dV = dx \cdot dy \cdot dz
+\]
+	extbf{Belangrijke aanname:} Het \term{fluïdum} is in rust, wat betekent dat er geen weerstand tegen \term{schuifspanningen} optreedt in het fluïdum. De enige krachten die werken zijn \term{drukkrachten} (loodrecht op oppervlakken) en \term{zwaartekrachten}.
+
+\subsection{Identificatie van Krachten}
+Op dit controle volume werken verschillende krachten:
+
+\textbf{1. Drukkrachten op elk oppervlak:}
+\begin{itemize}
+    \item \textbf{Linkervlak (in x-richting):}
+    \begin{itemize}
+        \item Oppervlakte: $A_x = dy \cdot dz$
+        \item Druk: $p$
+        \item Kracht richting positieve x: $F_{x,links} = p \cdot dy \cdot dz$
+    \end{itemize}
+    \item \textbf{Rechtervlak (in x-richting):}
+    \begin{itemize}
+        \item Oppervlakte: $A_x = dy \cdot dz$
+        \item Druk: $p + \frac{\partial p}{\partial x} dx$ (druk verandert over afstand $dx$)
+        \item Kracht richting negatieve x: $F_{x,rechts} = -\left(p + \frac{\partial p}{\partial x} dx\right) \cdot dy \cdot dz$
+    \end{itemize}
+\end{itemize}
+
+\textbf{2. Zwaartekracht:}
+De massa van het element is:
+\[
+dm = \rho \cdot dV = \rho \cdot dx \cdot dy \cdot dz
+\]
+De zwaartekracht werkt in de negatieve z-richting:
+\[
+G = dm \cdot g = \rho \cdot g \cdot dx \cdot dy \cdot dz
+\]
+
+\subsection{Krachtenevenwicht}
+\textbf{Krachtenevenwicht in x-richting:}
+Voor een fluïdum in rust moet de som van alle krachten in x-richting nul zijn ($\sum F_x = 0$):
+\[
+p \cdot dy \cdot dz - \left(p + \frac{\partial p}{\partial x} dx\right) \cdot dy \cdot dz = 0
+\]
+Uitwerken:
+\[
+-\frac{\partial p}{\partial x} dx \cdot dy \cdot dz = 0 \implies \frac{\partial p}{\partial x} = 0
+\]
+\textbf{Conclusie:} De druk verandert niet in de horizontale x-richting in een fluïdum in rust.
+
+\textbf{Krachtenevenwicht in y-richting:}
+Volledig analoog aan de x-richting ($\sum F_y = 0$):
+\[
+\frac{\partial p}{\partial y} = 0
+\]
+\textbf{Conclusie:} De druk verandert niet in de horizontale y-richting in een fluïdum in rust.
+
+\textbf{Krachtenevenwicht in z-richting (verticaal):}
+In de verticale richting hebben we zowel drukkrachten als zwaartekracht.
+\begin{itemize}
+    \item \textbf{Ondervlak (beneden):} Kracht omhoog $F_{z,onder} = p \cdot dx \cdot dy$
+    \item \textbf{Bovenvlak (boven):} Kracht omlaag $F_{z,boven} = -\left(p + \frac{\partial p}{\partial z} dz\right) \cdot dx \cdot dy$
+    \item \textbf{Zwaartekracht:} Omlaag $G = -\rho g \cdot dx \cdot dy \cdot dz$
+\end{itemize}
+Krachtenevenwicht ($\sum F_z = 0$):
+\[
+p \cdot dx \cdot dy - \left(p + \frac{\partial p}{\partial z} dz\right) \cdot dx \cdot dy - \rho g \cdot dx \cdot dy \cdot dz = 0
+\]
+Uitwerken en delen door $dx \cdot dy \cdot dz$:
+\[
+-\frac{\partial p}{\partial z} - \rho g = 0 \implies \frac{\partial p}{\partial z} = -\rho g
+\]
+\textbf{Cruciale conclusie:} De druk neemt af in de positieve z-richting (omhoog). Dit betekent dat de druk toeneemt met de diepte!
+
+\subsection{Integratie}
+\textbf{Integratie voor Vloeistoffen ($\rho = \text{constant}$):}
+\[
+\int_{z_1}^{z_2} dp = \int_{z_1}^{z_2} (-\rho g) \, dz \implies p_2 - p_1 = -\rho g (z_2 - z_1)
+\]
+Als we definiëren dat $h = z_1 - z_2$ (de diepte onder punt 1):
+\[
+p_2 = p_1 + \rho g h
+\]
+Dit is de fundamentele hydrostatische vergelijking. Voor water ($\rho \approx 1000 \, kg/m^3$) is $\Delta p \approx 9810 \, Pa/m \approx 0.1 \, bar/m$.
+
+\textbf{Integratie voor Gassen ($\rho = \rho(z)$):}
+Voor gassen volgt de dichtheid de ideale gaswet $\rho = \frac{p}{RT}$. Substitueren in $\frac{dp}{dz} = -\rho g$:
+\[
+\frac{dp}{dz} = -\frac{p \cdot g}{RT} \implies \frac{dp}{p} = -\frac{g}{RT} dz
+\]
+Voor een isotherme atmosfeer ($T = \text{constant}$), integreren van $z_1$ tot $z_2$:
+\[
+p_2 = p_1 \exp\left(-\frac{g(z_2 - z_1)}{RT}\right)
+\]
+Dit verklaart waarom de luchtdruk exponentieel afneemt met de hoogte.
+
+\subsubsection*{Voorbeeld: Druk op diepte}
+\textbf{Gegeven:} Een duiker bevindt zich op $20 \, m$ diepte in zeewater ($\rho = 1025 \, kg/m^3$). De atmosferische druk aan het oppervlak is $P_{atm} = 101.3 \, kPa$.
+\textbf{Gevraagd:} De absolute druk op de duiker.
+\textbf{Oplossing:}
+\[
+P = P_{atm} + \rho g h
+\]
+\[
+P = 101300 + 1025 \cdot 9.81 \cdot 20
+\]
+\[
+P = 101300 + 201105 = 302405 \, Pa \approx 3.02 \, bar
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/hydrostatic_pressure.jpg}
+    \caption{Lineaire toename van hydrostatische druk met de diepte.}
+    \label{fig:hydrostatic_pressure}
+\end{figure}
+
+\section{Krachten op Onderdompelde Oppervlakken}
+\subsection{Rechthoekig Oppervlak - Basisprobleem}
+Beschouw een rechthoekig oppervlak volledig ondergedompeld in water:
+\begin{itemize}
+    \item Breedte: $b$
+    \item Hoogte: $a$
+    \item Georiënteerd verticaal ($\theta = 90^\circ$)
+    \item Bovenkant op diepte 0, onderkant op diepte $a$
+\end{itemize}
+
+\textbf{Drukverdeling en Totale Kracht:}
+Op diepte $y$ is de druk $p(y) = \rho g y$ (waarbij $p_0$ verwaarloosbaar is).
+De kracht op een infinitesimale strip met hoogte $dy$ is $dF = p(y) \cdot b \cdot dy = \rho g y \cdot b \cdot dy$.
+Integreren over de hoogte:
+\[
+F = \int_0^a \rho g y \cdot b \, dy = \rho g b \left[ \frac{y^2}{2} \right]_0^a = \frac{1}{2} \rho g b a^2
+\]
+Alternatief: $F = p_{gem} \cdot A = (\rho g \frac{a}{2}) \cdot (ab) = \frac{1}{2} \rho g a^2 b$.
+
+\textbf{Aangrijpingspunt (Center of Pressure):}
+Het moment van de drukkracht om de bovenkant moet gelijk zijn aan het moment van de resulterende kracht ($F \cdot y_p = \int y \cdot dF$):
+\[
+F \cdot y_p = \int_0^a y \cdot (\rho g y \cdot b) \, dy = \rho g b \int_0^a y^2 \, dy = \rho g b \left[ \frac{y^3}{3} \right]_0^a = \frac{1}{3} \rho g b a^3
+\]
+Invullen van $F$:
+\[
+\left(\frac{1}{2} \rho g b a^2\right) \cdot y_p = \frac{1}{3} \rho g b a^3 \implies y_p = \frac{2}{3} a
+\]
+\textbf{Conclusie:} Het aangrijpingspunt ligt op twee derde van de hoogte vanaf de bovenkant.
+
+\subsection{Schuin Rechthoekig Oppervlak onder Hoek $\theta$}
+\textbf{Coördinatensysteem:}
+Voor een oppervlak onder hoek $\theta$ met de horizontaal definiëren we $y'$ als de afstand langs het schuine oppervlak vanaf de bovenkant. De verticale diepte is $h = y' \sin \theta$.
+
+\textbf{Totale Kracht:}
+De druk op positie $y'$ is $p(y') = \rho g y' \sin \theta$.
+De kracht op een strip is $dF = \rho g y' \sin \theta \cdot b \cdot dy'$.
+\[
+F = \int_0^a \rho g \sin \theta \cdot b \cdot y' \, dy' = \frac{1}{2} \rho g \sin \theta \cdot b \cdot a^2
+\]
+De kracht kan ontbonden worden in een horizontale component $F_x = F \sin \theta$ en een verticale component $F_y = F \cos \theta$.
+
+\textbf{Aangrijpingspunt:}
+\[
+F \cdot y_p = \int_0^a y' \cdot dF = \int_0^a y' \cdot (\rho g \sin \theta \cdot b \cdot y') \, dy' = \frac{1}{3} \rho g \sin \theta \cdot b \cdot a^3
+\]
+Dit leidt opnieuw tot:
+\[
+y_p = \frac{2a}{3}
+\]
+
+\subsection{Algemene Formules}
+\textbf{Totale Kracht:}
+Voor een algemeen ondergedompeld oppervlak:
+\[
+F = p_{gem} \cdot A = (\rho g h_c) \cdot A
+\]
+waarbij $h_c$ de verticale diepte van het zwaartepunt is.
+
+\textbf{Aangrijpingspunt (Center of Pressure):}
+Het aangrijpingspunt wordt bepaald door het traagheidsmoment:
+\[
+y_p = y_c + \frac{I_{xx,c}}{y_c \cdot A}
+\]
+waarbij $y_p$ en $y_c$ posities langs het oppervlak zijn, en $I_{xx,c}$ het traagheidsmoment rond de horizontale as door het zwaartepunt is.
+
+\subsubsection*{Voorbeeld: Kracht op een sluisdeur}
+\textbf{Gegeven:} Een rechthoekige sluisdeur is $4 \, m$ breed en het water staat $3 \, m$ hoog tegen de deur.
+\textbf{Gevraagd:} De totale hydrostatische kracht op de deur.
+\textbf{Oplossing:}
+Het zwaartepunt van het natte oppervlak ligt op halve hoogte: $h_c = 1.5 \, m$.
+De oppervlakte is $A = 4 \cdot 3 = 12 \, m^2$.
+\[
+F = \rho g h_c A = 1000 \cdot 9.81 \cdot 1.5 \cdot 12
+\]
+\[
+F = 176580 \, N \approx 176.6 \, kN
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/submerged_plane.png}
+    \caption{Hydrostatische krachten op een ondergedompeld vlak oppervlak.}
+    \label{fig:submerged_plane}
+\end{figure}
+
+\section{Opwaartse Kracht en Stabiliteit}
+Het principe van Archimedes stelt dat een ondergedompeld lichaam een opwaartse kracht ondervindt die gelijk is aan het gewicht van de verplaatste vloeistof:
+\[
+F_B = \rho_{vloeistof} g V_{ondergedompeld}
+\]
+Deze kracht grijpt aan in het drukkpunt van de verplaatste vloeistof. Voor de stabiliteit van drijvende lichamen is de positie van het metacentrum ten opzichte van het zwaartepunt cruciaal. Als het metacentrum boven het zwaartepunt ligt, ontstaat bij een kleine kanteling een herstellend moment en is het lichaam stabiel.
+
+\chapter{Kinematica van Stromingen}
+\section{Euleriaanse vs. Lagrangiaanse Beschrijving}
+Er bestaan twee fundamentele benaderingen voor het beschrijven van stromingen:
+\begin{itemize}
+    \item \textbf{Lagrangiaanse beschrijving:} We volgen individuele vloeistofdeeltjes in de tijd. De positie van een deeltje wordt gegeven door $\vec{X}(t)$, en de snelheid is $\vec{V}_p(t) = \frac{d\vec{X}(t)}{dt}$.
+    \item \textbf{Euleriaanse beschrijving:} We beschrijven het snelheidsveld op vaste punten in de ruimte: $\vec{V}(\vec{x}, t)$.
+\end{itemize}
+
+\section{Materiële Afgeleide}
+De materiële afgeleide (ook wel substantiële of convectieve afgeleide genoemd) beschrijft de verandering van een grootheid terwijl we met een vloeistofdeeltje meebewegen:
+\[
+\frac{D}{Dt} = \frac{\partial}{\partial t} + \vec{v} \cdot \nabla
+\]
+In cartesische coördinaten:
+\[
+\frac{D}{Dt} = \frac{\partial}{\partial t} + u \frac{\partial}{\partial x} + v \frac{\partial}{\partial y} + w \frac{\partial}{\partial z}
+\]
+De versnelling van een vloeistofdeeltje is dus:
+\[
+\vec{a} = \frac{D\vec{v}}{Dt} = \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla)\vec{v}
+\]
+waarbij $\frac{\partial \vec{v}}{\partial t}$ de lokale versnelling is en $(\vec{v} \cdot \nabla)\vec{v}$ de convectieve versnelling.
+
+\section{Voorbeeld: 1D Stroming in een Convergerende Kanaal}
+Beschouw een stationair snelheidsveld $V(x) = V_0 (1 + \frac{x}{L})$.
+Voor een vloeistofdeeltje dat op $t=0$ bij $x=0$ start, zoeken we de positie $x_p(t)$ en snelheid $V_p(t)$.
+Positie van het deeltje:
+\[
+V_p(t) = \frac{dx_p(t)}{dt} = V_0 (1 + \frac{x_p}{L})
+\]
+Dit is een scheidbare differentiaalvergelijking. Oplossing voor de positie:
+\[
+x_p(t) = L (e^{V_0 t/L} - 1)
+\]
+Snelheid van het deeltje:
+\[
+V_p(t) = \frac{dx_p(t)}{dt} = V_0 e^{V_0 t/L}
+\]
+Versnelling van het deeltje:
+\[
+a_p(t) = \frac{dV_p(t)}{dt} = \frac{V_0^2}{L} e^{V_0 t/L}
+\]
+Dit voorbeeld illustreert dat zelfs in een stationair snelheidsveld ($\frac{\partial V}{\partial t} = 0$), vloeistofdeeltjes kunnen versnellen door de convectieve term.
+
+\chapter{Fluïdumdynamica: De Bewegingsvergelijkingen}
+Wanneer fluïda bewegen, wordt de analyse complexer door de effecten van traagheid, viscositeit en turbulentie.
+
+\section{Behoudswetten en Control Volume Analyse}
+\subsection{Continuïteitsvergelijking (Massabehoud)}
+De wet van behoud van massa stelt dat massa noch gecreëerd noch vernietigd kan worden. Voor een controle volume geldt:
+\[
+\frac{\partial}{\partial t} \int_{CV} \rho \, dV + \int_{CS} \rho \vec{v} \cdot \hat{n} \, dA = 0
+\]
+Voor stationaire stroming ($\frac{\partial}{\partial t} = 0$):
+\[
+\int_{CS} \rho \vec{v} \cdot \hat{n} \, dA = 0 \implies \dot{m}_{in} = \dot{m}_{uit}
+\]
+Voor onsamendrukbare stroming ($\rho = \text{constant}$):
+\[
+\nabla \cdot \vec{v} = 0 \implies A_1 V_1 = A_2 V_2
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/continuity.png}
+    \caption{Illustratie van de continuïteitsvergelijking: $A_1 V_1 = A_2 V_2$.}
+    \label{fig:continuity}
+\end{figure}
+
+\subsection{Impulsbehoud (Momentumvergelijking)}
+Voor een controle volume geldt de impulsvergelijking:
+\[
+\sum \vec{F}_{ext} = \frac{\partial}{\partial t} \int_{CV} \rho \vec{v} \, dV + \int_{CS} \rho \vec{v} (\vec{v} \cdot \hat{n}) \, dA
+\]
+Voor stationaire stroming:
+\[
+\sum \vec{F}_{ext} = \int_{CS} \rho \vec{v} (\vec{v} \cdot \hat{n}) \, dA = \dot{m}_{uit} \vec{v}_{uit} - \dot{m}_{in} \vec{v}_{in}
+\]
+De externe krachten omvatten druk-, zwaarte- en wrijvingskrachten.
+
+\section{Afleiding van de Wet van Bernoulli}
+\subsection{Afleiding via Euler Vergelijking}
+De Euler vergelijking beschrijft de beweging van een ideaal (wrijvingsloos) fluïdum:
+\[
+\rho \frac{D\vec{v}}{Dt} = -\nabla p + \rho \vec{g}
+\]
+Met de identiteit voor de materiële afgeleide $\frac{D\vec{v}}{Dt} = \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla)\vec{v}$.
+Voor stationaire stroming ($\frac{\partial \vec{v}}{\partial t} = 0$):
+\[
+\rho (\vec{v} \cdot \nabla)\vec{v} = -\nabla p + \rho \vec{g}
+\]
+
+\subsection{Afleiding Langs een Stroomlijn}
+Neem het inproduct met een infinitesimale verplaatsing $d\vec{r}$ langs een stroomlijn:
+\[
+\rho \vec{v} \cdot d\vec{v} = -dp + \rho \vec{g} \cdot d\vec{r}
+\]
+waarbij $\vec{v} \cdot d\vec{v} = d(\frac{v^2}{2})$ en $\vec{g} \cdot d\vec{r} = -g dz$.
+Dit geeft:
+\[
+\rho d(\frac{v^2}{2}) = -dp - \rho g dz
+\]
+Integratie langs de stroomlijn levert de wet van Bernoulli:
+\[
+p + \frac{1}{2}\rho v^2 + \rho g z = \text{constant}
+\]
+
+\subsection{Interpretatie van de Termen}
+De wet van Bernoulli drukt behoud van mechanische energie uit per volume-eenheid:
+\begin{itemize}
+    \item $p$: Statische druk (drukenergie per volume)
+    \item $\frac{1}{2}\rho v^2$: Dynamische druk (kinetische energie per volume)
+    \item $\rho g z$: Hydrostatische druk (potentiële energie per volume)
+\end{itemize}
+
+\subsubsection*{Voorbeeld: Wet van Torricelli}
+\textbf{Gegeven:} Een groot open reservoir gevuld met water heeft een klein gaatje op $5 \, m$ onder het wateroppervlak.
+\textbf{Gevraagd:} De uitstroomsnelheid $V_2$.
+\textbf{Oplossing:}
+Pas Bernoulli toe tussen het oppervlak (1) en het gaatje (2).
+$P_1 = P_2 = P_{atm}$ (beide open aan atmosfeer).
+$V_1 \approx 0$ (reservoir is groot).
+$z_1 = 5 \, m$, $z_2 = 0 \, m$.
+\[
+P_{atm} + 0 + \rho g (5) = P_{atm} + \frac{1}{2} \rho V_2^2 + 0
+\]
+\[
+\rho g (5) = \frac{1}{2} \rho V_2^2 \implies V_2 = \sqrt{2 \cdot g \cdot 5}
+\]
+\[
+V_2 = \sqrt{2 \cdot 9.81 \cdot 5} = \sqrt{98.1} \approx 9.9 \, m/s
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/bernoulli.png}
+    \caption{Diagram van de Wet van Bernoulli.}
+    \label{fig:bernoulli}
+\end{figure}
+
+\section{De Algemene Energievergelijking}
+In de praktijk is er altijd wrijving en worden pompen of turbines gebruikt. We gebruiken dan de uitgebreide energievergelijking, vaak uitgedrukt in termen van "hoogte" (head, in meters vloeistofkolom):
+\[
+\frac{P_1}{\rho g} + \frac{V_1^2}{2g} + z_1 + h_{pomp} = \frac{P_2}{\rho g} + \frac{V_2^2}{2g} + z_2 + h_{turbine} + h_{L}
+\]
+Hierbij vertegenwoordigt $h_L$ het totaal aan energieverliezen (head loss) door wrijving in leidingen en componenten.
+
+\chapter{Differentiële Analyse van Fluïdumstroming}
+\section{Navier-Stokes Vergelijkingen}
+\subsection{Algemene Vorm}
+Voor een viskeus, Newtoniaans fluïdum gelden de Navier-Stokes vergelijkingen:
+\[
+\rho \frac{D\vec{v}}{Dt} = -\nabla p + \mu \nabla^2 \vec{v} + \rho \vec{g}
+\]
+In componentvorm voor de x-richting:
+\[
+\rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \right) = -\frac{\partial p}{\partial x} + \mu \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} \right) + \rho g_x
+\]
+Vergelijkbare vergelijkingen bestaan voor de y- en z-richtingen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/control_volume.png}
+    \caption{Controlevolume voor de afleiding van behoudswetten.}
+    \label{fig:control_volume}
+\end{figure}
+
+\section{Oplossing: Stroming tussen Parallelle Platen (Poiseuille)}
+\textbf{Probleemstelling:} Stationaire, volledig ontwikkelde stroming tussen twee parallelle platen op afstand $a$ van elkaar.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/poiseuille_plates.png}
+    \caption{Snelheidsprofiel voor laminaire stroming tussen parallelle platen.}
+    \label{fig:poiseuille_plates}
+\end{figure}
+
+\textbf{Aannames:}
+\begin{itemize}
+    \item Stationair: $\frac{\partial}{\partial t} = 0$
+    \item 2D stroming: $w = 0$
+    \item Geen verandering in x-richting: $\frac{\partial u}{\partial x} = 0$
+    \item Snelheid alleen in x-richting: $v = 0$
+\end{itemize}
+
+\textbf{Continuïteitsvergelijking:}
+\[
+\frac{\partial u}{\partial x} = 0 \Rightarrow u = u(y)
+\]
+
+\textbf{Navier-Stokes in x-richting:}
+\[
+0 = -\frac{\partial p}{\partial x} + \mu \frac{\partial^2 u}{\partial y^2}
+\]
+
+\textbf{Navier-Stokes in y-richting:}
+\[
+0 = -\frac{\partial p}{\partial y} \Rightarrow p = p(x)
+\]
+
+Omdat $\frac{\partial p}{\partial x}$ niet afhangt van $y$, en $\frac{\partial^2 u}{\partial y^2}$ niet afhangt van $x$, moet:
+\[
+\frac{\partial p}{\partial x} = \text{constant}
+\]
+
+\textbf{Integratie:}
+\[
+\frac{d^2 u}{dy^2} = \frac{1}{\mu} \frac{\partial p}{\partial x}
+\]
+Eerste integratie:
+\[
+\frac{du}{dy} = \frac{1}{\mu} \frac{\partial p}{\partial x} y + C_1
+\]
+Tweede integratie:
+\[
+u(y) = \frac{1}{2\mu} \frac{\partial p}{\partial x} y^2 + C_1 y + C_2
+\]
+
+\textbf{Randvoorwaarden:}
+\begin{itemize}
+    \item Bij $y=0$: $u(0) = 0$ (no-slip conditie)
+    \item Bij $y=a$: $u(a) = U_p$ (snelheid van bovenste plaat)
+\end{itemize}
+
+\textbf{Toepassing van randvoorwaarden:}
+\[
+C_2 = 0
+\]
+\[
+C_1 = \frac{U_p}{a} - \frac{1}{2\mu} \frac{\partial p}{\partial x} a
+\]
+
+\textbf{Oplossing:}
+\[
+u(y) = \frac{1}{2\mu} \frac{\partial p}{\partial x} y^2 + \left( \frac{U_p}{a} - \frac{1}{2\mu} \frac{\partial p}{\partial x} a \right) y
+\]
+Voor vaste platen ($U_p = 0$) wordt dit:
+\[
+u(y) = \frac{1}{2\mu} \frac{\partial p}{\partial x} (y^2 - ay)
+\]
+
+\section{Wet van Poiseuille voor Cilindrische Buis}
+Voor stroming in een cilinder met straal $R$ geldt in cilindercoördinaten:
+\[
+u(r) = \frac{1}{4\mu} \frac{\partial p}{\partial x} (R^2 - r^2)
+\]
+Het volumedebiet is:
+\[
+Q = \int_0^R u(r) \, 2\pi r \, dr = -\frac{\pi}{8\mu} \frac{\partial p}{\partial x} R^4
+\]
+Met $\frac{\partial p}{\partial x} = \frac{p_2 - p_1}{L} = -\frac{\Delta p}{L}$:
+\[
+Q = \frac{\pi R^4 \Delta p}{8\mu L}
+\]
+Dit is de wet van Hagen-Poiseuille.
+
+\subsubsection*{Voorbeeld: Drukval in een leiding}
+\textbf{Gegeven:} Olie ($\mu = 0.2 \, Pa \cdot s$) stroomt door een horizontale buis met diameter $D = 2 \, cm$ en lengte $L = 10 \, m$. Het debiet is $Q = 0.5 \, liter/s = 0.0005 \, m^3/s$.
+\textbf{Gevraagd:} Het drukverschil $\Delta p$.
+\textbf{Oplossing:}
+Straal $R = 0.01 \, m$.
+\[
+\Delta p = \frac{8 \mu L Q}{\pi R^4}
+\]
+\[
+\Delta p = \frac{8 \cdot 0.2 \cdot 10 \cdot 0.0005}{\pi \cdot (0.01)^4}
+\]
+\[
+\Delta p = \frac{0.008}{\pi \cdot 10^{-8}} \approx 254648 \, Pa \approx 2.55 \, bar
+\]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{assets/hagen_poiseuille.png}
+    \caption{Parabolisch snelheidsprofiel bij Hagen-Poiseuille stroming in een buis.}
+    \label{fig:hagen_poiseuille}
+\end{figure}
+
+\chapter{Interne en Externe Stroming}
+\section{Interne Stroming: Laminair vs. Turbulent}
+\subsection{Reynolds Getal}
+Het Reynolds getal is een dimensieloze parameter die de verhouding tussen traagheids of inertiekrachten en viskeuze krachten aangeeft (intertiekracht/viscositeitskrachten):
+\[
+Re = \frac{\rho V D}{\mu} = \frac{V D}{\nu}
+\]
+waarbij:
+\begin{itemize}
+    \item $V$: karakteristieke snelheid [m/s]
+    \item $D$: karakteristieke lengte (bijv. diameter) [m]
+    \item $\rho$: dichtheid [kg/m³]
+    \item $\mu$: dynamische viscositeit [Pa·s]
+    \item $\nu$: kinematische viscositeit [m²/s]
+\end{itemize}
+
+\subsection{Overgang Laminair-Turbulent}
+Voor stroming in een cilinderbuis:
+\begin{itemize}
+    \item \textbf{Laminair ($Re < 2000$):} De vloeistof stroomt in ordelijke, parallelle lagen. Viscositeit domineert en verstoringen worden uitgedempt. Het snelheidsprofiel is parabolisch ($V_{max} = 2 V_{gem}$).
+    \item \textbf{Transitiegebied ($2000 < Re < 3000$):} De stroming wisselt tussen laminair en turbulent.
+    \item \textbf{Turbulent ($Re > 3000$):} De stroming is chaotisch met wervelingen en sterke menging. Traagheidskrachten domineren. Het snelheidsprofiel is veel vlakker ("plug flow").
+\end{itemize}
+
+\subsubsection*{Voorbeeld: Reynoldsgetal bepalen}
+\textbf{Gegeven:} Water ($20^\circ C$, $\nu = 10^{-6} \, m^2/s$) stroomt door een buis met diameter $50 \, mm$ met een gemiddelde snelheid van $0.1 \, m/s$.
+\textbf{Gevraagd:} Is de stroming laminair of turbulent?
+\textbf{Oplossing:}
+\[
+Re = \frac{V D}{\nu} = \frac{0.1 \cdot 0.05}{10^{-6}} = \frac{0.005}{10^{-6}} = 5000
+\]
+Omdat $Re = 5000 > 3000$, is de stroming \textbf{turbulent}.
+
+\subsection{Reynolds Decompositie}
+In turbulente stroming wordt de momentane snelheid ontbonden in een tijdsgemiddelde en een fluctuerende component:
+\[
+u(t,y) = \bar{u}(y) + u'(t,y)
+\]
+waarbij $\bar{u}(y)$ de tijdsgemiddelde snelheid is en $u'(t,y)$ de turbulente fluctuatie (met $\overline{u'} = 0$).
+De turbulente fluctuaties veroorzaken een extra schijnbare schuifspanning, de Reynoldsspanning: $\tau_{Reynolds} = -\rho \overline{u'v'}$. Deze verhoogt de effectieve wrijving in turbulente stroming aanzienlijk.
+
+\subsection{Wrijvingsfactor en Drukval}
+Voor het berekenen van drukverlies in leidingen gebruiken we de Darcy-Weisbach vergelijking:
+\[
+\Delta P = f \frac{L}{D} \frac{\rho V^2}{2}
+\]
+De wrijvingsfactor $f$ wordt voor turbulent stroming bepaald met het Moody-diagram of de Colebrook-vergelijking:
+\[
+\frac{1}{\sqrt{f}} = -2 \log \left( \frac{\varepsilon/D}{3.7} + \frac{2.51}{Re \sqrt{f}} \right)
+\]
+waarbij $\varepsilon$ de absolute wandruwheid is.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{assets/moody_diagram.png}
+    \caption{Moody-diagram voor het bepalen van de wrijvingsfactor $f$.}
+    \label{fig:moody}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/laminar_turbulent.png}
+    \caption{Laminair versus Turbulent stromingsprofiel.}
+    \label{fig:laminar_turbulent}
+\end{figure}
+
+\section{Externe Stroming: Weerstand en Lift}
+Bij stroming rondom objecten (zoals een auto of vliegtuigvleugel) bestuderen we de krachten die de vloeistof op het object uitoefent.
+
+\textbf{Weerstand (Drag, $F_D$):} De kracht in de richting van de stroming. Deze bestaat uit wrijvingsweerstand (door schuifspanning aan de wand) en drukweerstand (door drukverschillen voor en achter het object).
+\[
+F_D = C_D A \frac{1}{2} \rho V^2
+\]
+Hierbij is $C_D$ de weerstandscoëfficiënt. Drukweerstand wordt dominant wanneer de stroming loslaat van het oppervlak (flow separation), wat een lagedrukgebied (zog) achter het object creëert. Stroomlijning (streamlining) is bedoeld om dit loslaten te vertragen en de drukweerstand te minimaliseren.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/drag_coefficient.png}
+    \caption{Weerstandscoëfficiënt van een bol als functie van het Reynoldsgetal.}
+    \label{fig:drag_coeff}
+\end{figure}
+
+\textbf{Lift ($F_L$):} De kracht loodrecht op de stroming, cruciaal voor vliegtuigen. Deze wordt gegenereerd door drukverschillen tussen de boven- en onderkant van een vleugelprofiel.
+
+\part{Warmte}
+De studie van warmte is in essentie de studie van energie. In de moderne fysica en engineering wordt dit domein onderverdeeld in de thermodynamica, die zich richt op de hoeveelheid energie-overdracht en de evenwichtstoestanden van systemen, en warmteoverdracht, die zich richt op de snelheid waarmee deze energieveranderingen plaatsvinden.
+
+\chapter{Fundamentele Concepten van de Thermodynamica}
+Thermodynamica is de wetenschap van energie, afgeleid van de Griekse woorden therme (warmte) en dynamis (kracht). Historisch gezien ontstond deze wetenschap uit de wens om warmte om te zetten in mechanische arbeid, met name tijdens de industriële revolutie. Tegenwoordig omvat het concept energie veel meer dan alleen warmte en arbeid; het is een centraal begrip in het begrijpen van chemische reacties, faseovergangen en zelfs het uitdijen van het heelal.
+
+\section{Systemen en Controle Volumes}
+Een fundamentele eerste stap in elke thermodynamische analyse is het definiëren van het object van studie: het systeem. Een systeem wordt gedefinieerd als een hoeveelheid materie of een gebied in de ruimte dat gekozen is voor analyse. Alles buiten het systeem wordt de omgeving genoemd. De scheiding tussen het systeem en de omgeving is de grens (boundary). Deze grens kan fysiek zijn (zoals de wand van een tank) of imaginair (zoals de open uitlaat van een pijp), en kan zowel vast als bewegend zijn.
+
+We onderscheiden twee hoofdtypen systemen, die elk een eigen wiskundige benadering vereisen:
+\begin{description}
+    \item[Gesloten Systeem (Controlemassa):] Bij een gesloten systeem is de hoeveelheid massa vast. Er kan geen massa de grens van het systeem passeren. Energie, in de vorm van warmte of arbeid, kan de grens echter wel passeren. Een klassiek voorbeeld is een gas opgesloten in een zuiger-cilinder apparaat. Als het gas wordt verwarmd, zet het uit en beweegt de zuiger. De grens van het systeem beweegt dus en het volume verandert, maar de massa binnenin blijft constant. Als er ook geen energie de grens passeert, spreken we van een geïsoleerd systeem.
+    \item[Open Systeem (Controlevolume):] In veel technische toepassingen, zoals bij compressoren, turbines, en straalmotoren, is er sprake van een continue stroom van massa. In deze gevallen is het handiger om een specifiek volume in de ruimte te bestuderen, het zogenaamde controlevolume. De grenzen van dit volume worden het controleoppervlak genoemd. Zowel massa als energie kunnen deze grenzen passeren. Een boiler is bijvoorbeeld een open systeem: koud water stroomt erin, warmte wordt toegevoegd, en warm water stroomt eruit.
+\end{description}
+
+\section{Eigenschappen van een Systeem}
+Elk systeem wordt gekarakteriseerd door zijn eigenschappen. Dit zijn macroscopische kenmerken zoals druk ($P$), temperatuur ($T$), volume ($V$) en massa ($m$). Thermodynamische eigenschappen kunnen worden onderverdeeld in twee categorieën:
+\begin{itemize}
+    \item \textbf{Intensieve eigenschappen:} Deze zijn onafhankelijk van de massa of de grootte van het systeem. Voorbeelden zijn temperatuur, druk en dichtheid. Als men een systeem in thermisch evenwicht in tweeën deelt, behouden beide helften dezelfde temperatuur en druk als het origineel.
+    \item \textbf{Extensieve eigenschappen:} Deze waarden zijn afhankelijk van de grootte van het systeem. Voorbeelden zijn de totale massa, het totale volume en de totale energie. De waarde van een extensieve eigenschap voor het gehele systeem is de som van de waarden voor de onderdelen.
+\end{itemize}
+Om intensieve en extensieve eigenschappen te koppelen, gebruiken we vaak specifieke eigenschappen. Dit zijn extensieve eigenschappen per eenheid massa. Bijvoorbeeld:
+\begin{itemize}
+    \item Specifiek volume ($v$): $v = V/m$ (m³/kg)
+    \item Specifieke interne energie ($u$): $u = U/m$ (kJ/kg)
+    \item Specifieke enthalpie ($h$): $h = H/m$ (kJ/kg)
+\end{itemize}
+Specifieke eigenschappen zijn intensief, omdat ze niet afhangen van de totale hoeveelheid massa in het systeem.
+
+\section{Toestand en Evenwicht}
+De toestand van een systeem wordt volledig beschreven door zijn eigenschappen. Echter, we hoeven niet alle eigenschappen te meten om de toestand vast te leggen. Het State Postulate stelt dat de toestand van een eenvoudig samendrukbaar systeem volledig bepaald is door twee onafhankelijke intensieve eigenschappen.
+
+Dit is een cruciaal concept. "Eenvoudig samendrukbaar" betekent dat effecten van elektrische, magnetische, zwaartekracht- en oppervlaktespanningsvelden verwaarloosbaar zijn. "Onafhankelijk" betekent dat de ene eigenschap kan variëren terwijl de andere constant blijft. Bijvoorbeeld, temperatuur en specifiek volume zijn altijd onafhankelijk en kunnen samen de toestand bepalen. Temperatuur en druk zijn echter niet onafhankelijk tijdens een faseovergang (zoals kokend water), omdat de kooktemperatuur vastligt bij een bepaalde druk.
+
+Thermodynamica behandelt voornamelijk evenwichtstoestanden. Evenwicht impliceert een staat van balans waarin er geen drijvende krachten meer zijn die verandering veroorzaken:
+\begin{itemize}
+    \item \textbf{Thermisch evenwicht:} De temperatuur is overal in het systeem gelijk.
+    \item \textbf{Mechanisch evenwicht:} De druk is in het systeem constant in de tijd (hoewel deze kan variëren met de hoogte door zwaartekracht).
+    \item \textbf{Fase-evenwicht:} De massa van elke fase (bijv. vloeistof en damp) blijft constant.
+    \item \textbf{Chemisch evenwicht:} De chemische samenstelling verandert niet in de tijd.
+\end{itemize}
+
+\section{Processen en Cycli}
+Wanneer een systeem verandert van de ene evenwichtstoestand naar de andere, ondergaat het een proces. De reeks toestanden die het systeem doorloopt, vormt het pad van het proces. Om een proces volledig te beschrijven, moeten we de begintoestand, de eindtoestand, het pad en de interacties met de omgeving (warmte en arbeid) kennen.
+
+Vaak wordt in analyses aangenomen dat een proces een quasi-evenwichtsproces (of quasi-statisch proces) is. Dit houdt in dat het proces zo langzaam verloopt dat het systeem op elk moment infinitesimaal dicht bij een evenwichtstoestand is. Hoewel dit een idealisatie is, benadert het veel werkelijke processen goed en maakt het berekeningen eenvoudiger omdat de eigenschappen uniform gedefinieerd blijven.
+
+Speciale processen worden aangeduid met het voorvoegsel iso-:
+\begin{itemize}
+    \item \textbf{Isotherm:} Temperatuur blijft constant ($T = C$).
+    \item \textbf{Isobaar:} Druk blijft constant ($P = C$).
+    \item \textbf{Isochoor:} Volume blijft constant ($V = C$).
+    \item \textbf{Adiabatisch:} Er is geen warmte-uitwisseling met de omgeving ($Q = 0$). Let op: adiabatisch betekent niet noodzakelijk dat de temperatuur constant is; expansie zonder warmtetoevoer leidt bijvoorbeeld tot afkoeling.
+\end{itemize}
+Een cyclus is een proces (of reeks processen) waarbij de eindtoestand identiek is aan de begintoestand. De netto verandering van eigenschappen over een cyclus is nul ($\Delta E_{cyclus} = 0$), wat impliceert dat de netto energieoverdracht via warmte gelijk moet zijn aan de netto energieoverdracht via arbeid.
+
+\chapter{De Eerste Hoofdwet van de Thermodynamica: Energiebehoud}
+De Eerste Hoofdwet van de thermodynamica is een uitdrukking van het principe van behoud van energie: energie kan niet worden gecreëerd of vernietigd, alleen van vorm veranderen. Voor elk thermodynamisch systeem geldt:
+\[
+E_{in} - E_{uit} = \Delta E_{systeem}
+\]
+De netto verandering in de totale energie van het systeem is gelijk aan het verschil tussen de energie die binnenkomt en de energie die weggaat.
+
+\section{Vormen van Energie}
+De totale energie $E$ van een systeem bestaat uit macroscopische en microscopische vormen:
+\begin{itemize}
+    \item \textbf{Macroscopische energie:} Gerelateerd aan de beweging en invloed van externe effecten op het systeem als geheel.
+    \begin{itemize}
+        \item Kinetische energie ($KE$): Energie door de beweging van het systeem ($KE = \frac{1}{2}mv^2$).
+        \item Potentiële energie ($PE$): Energie door de positie in een zwaartekrachtveld ($PE = mgz$).
+    \end{itemize}
+    \item \textbf{Microscopische energie (Interne energie, $U$):} Gerelateerd aan de moleculaire structuur en activiteit. Dit omvat translationele, rotationele en vibrationele energie van moleculen, evenals de chemische energie in atoombindingen en de kernenergie in atoomkernen. In de thermodynamica verwijst de term "thermische energie" vaak naar de voelbare (kinetische) en latente (faseverandering) delen van de interne energie.
+\end{itemize}
+Voor stationaire systemen (die niet bewegen als geheel) zijn $\Delta KE$ en $\Delta PE$ nul, en geldt $\Delta E = \Delta U$.
+
+\section{Energie-overdracht: Warmte en Arbeid}
+Energie kan de grens van een gesloten systeem slechts op twee manieren passeren: als warmte of als arbeid.
+\begin{itemize}
+    \item \textbf{Warmte ($Q$):} Warmte is de vorm van energie-overdracht die wordt aangedreven door een temperatuurverschil. Energie stroomt spontaan van een medium met hoge temperatuur naar een medium met lage temperatuur. Een proces zonder warmteoverdracht noemen we adiabatisch. De hoeveelheid warmteoverdracht per tijdseenheid noemen we het warmtestroomdebiet $\dot{Q}$ (in Watt of J/s).
+    \item \textbf{Arbeid ($W$):} Arbeid is de energie-overdracht geassocieerd met een kracht die over een afstand werkt ($W = F \cdot s$). Als de energie-overdracht geen warmte is, dan moet het arbeid zijn. Voorbeelden zijn een draaiende as (as-arbeid), een stijgende zuiger (grensverplaatsingsarbeid) of elektrische stroom die een grens passeert (elektrische arbeid). Arbeid per tijdseenheid is vermogen $\dot{W}$ (in Watt).
+\end{itemize}
+De energiebalans voor een gesloten systeem wordt traditioneel geschreven als:
+\[
+Q_{net, in} - W_{net, uit} = \Delta E_{systeem}
+\]
+Of in differentiële vorm: $\delta Q - \delta W = dE$. Hierbij is de conventie dat warmte toegevoerd aan het systeem positief is, en arbeid verricht door het systeem positief is.
+
+\section{Arbeid bij Grensverplaatsing (Moving Boundary Work)}
+Een van de belangrijkste vormen van arbeid in motoren en compressoren is de arbeid die verricht wordt door een gas dat uitzet of samengedrukt wordt in een zuiger-cilinder apparaat. Dit wordt grensverplaatsingsarbeid of $P dV$-arbeid genoemd. Omdat $F = P \cdot A$ en $ds = dV / A$, kunnen we schrijven $\delta W_b = F ds = P dV$.
+De totale arbeid tijdens een proces van toestand 1 naar 2 is:
+\[
+W_b = \int_{1}^{2} P \, dV
+\]
+Dit betekent dat de arbeid gelijk is aan de oppervlakte onder de procescurve in een $P-V$ diagram. De waarde van de integraal hangt af van de relatie tussen $P$ en $V$ tijdens het proces:
+\begin{itemize}
+    \item Isobaar proces ($P = C$): $W_b = P(V_2 - V_1)$.
+    \item Isotherm proces (ideaal gas, $PV = mRT = C$): $W_b = mRT \ln(V_2/V_1)$.
+    \item Polytroop proces ($PV^n = C$): $W_b = \frac{P_2V_2 - P_1V_1}{1-n}$ (voor $n \neq 1$).
+\end{itemize}
+
+\section{De Eerste Hoofdwet voor Open Systemen (Controlevolumes)}
+Bij open systemen stroomt massa de grenzen over. Massa draagt energie met zich mee (interne energie $u$, kinetische energie $V^2/2$ en potentiële energie $gz$). Daarnaast is er energie nodig om de massa in of uit het systeem te duwen tegen de heersende druk in. Deze mechanische energie noemen we stromingsarbeid of flow work ($W_{flow} = Pv$).
+
+Om de thermodynamische analyse van open systemen te vereenvoudigen, combineren we de interne energie $u$ en de stromingsarbeid $Pv$ in een nieuwe eigenschap: enthalpie ($h$).
+\[
+h = u + Pv
+\]
+Enthalpie vertegenwoordigt dus de microscopische energie van een fluïdum plus de energie die nodig is om het fluïdum te laten stromen.
+
+De energiebalans voor een algemeen stromingsproces is:
+\[
+\dot{Q}_{in} + \dot{W}_{in} + \sum \dot{m}_{in} \theta_{in} = \dot{Q}_{uit} + \dot{W}_{uit} + \sum \dot{m}_{uit} \theta_{uit} + \frac{dE_{sys}}{dt}
+\]
+Waarbij $\theta$ de totale energie per eenheid massa van de stromende vloeistof is: $\theta = h + \frac{V^2}{2} + gz$.
+
+Voor een stationair stromingsproces (steady-flow), waarbij de eigenschappen in het controlevolume niet veranderen met de tijd ($dE_{sys}/dt = 0$) en de in- en uitgaande massastromen gelijk zijn ($\dot{m}_{in} = \dot{m}_{uit} = \dot{m}$), vereenvoudigt dit tot:
+\[
+\dot{Q} - \dot{W} = \dot{m} \left[ (h_2 - h_1) + \frac{V_2^2 - V_1^2}{2} + g(z_2 - z_1) \right]
+\]
+Hierbij staat punt 1 voor de inlaat en punt 2 voor de uitlaat. In veel apparaten, zoals nozzles en diffusers, zijn warmte en arbeid verwaarloosbaar, en balanceert de verandering in enthalpie direct de verandering in kinetische energie.
+
+\chapter{Eigenschappen van Zuivere Stoffen}
+Om de energiebalansen op te lossen, moeten we de waarden van $u$, $h$ en $v$ kunnen bepalen. Stoffen zoals water of koelmiddel (R-134a) gedragen zich complexer dan ideale gassen vanwege faseovergangen. Een zuivere stof heeft een uniforme chemische samenstelling.
+
+\section{Fasen en Faseverandering}
+We kennen drie hoofdfasen: vaste stof, vloeistof en gas. De thermodynamica van faseverandering is rijk aan terminologie:
+\begin{itemize}
+    \item \textbf{Gecomprimeerde vloeistof (subcooled liquid):} Vloeistof die niet op het punt staat te verdampen (bijv. water bij 20°C en 1 atm).
+    \item \textbf{Verzadigde vloeistof (saturated liquid):} Vloeistof die op het punt staat te koken. Elke toevoeging van warmte zorgt voor dampvorming.
+    \item \textbf{Verzadigde damp (saturated vapor):} Damp die op het punt staat te condenseren. Elke onttrekking van warmte zorgt voor druppelvorming.
+    \item \textbf{Oververhitte damp (superheated vapor):} Damp die niet op het punt staat te condenseren (bijv. stoom bij 300°C en 1 atm).
+\end{itemize}
+\textbf{Verzadigingstemperatuur ($T_{sat}$) en -druk ($P_{sat}$):} Bij een gegeven druk is er een specifieke temperatuur waarbij een zuivere stof kookt. Water kookt bijvoorbeeld bij 100°C bij 1 atm, maar bij een lagere temperatuur op grote hoogte waar de druk lager is.
+
+\section{Eigenschapsdiagrammen en Tabellen}
+De relaties tussen eigenschappen worden gevisualiseerd in $T-v$, $P-v$ en $P-T$ diagrammen. Op een $T-v$ diagram zien we een karakteristieke "koepel" (de verzadigingskoepel):
+\begin{itemize}
+    \item De linkerzijde van de koepel is de verzadigde vloeistoflijn.
+    \item De rechterzijde is de verzadigde damplijn.
+    \item Het punt waar de lijnen samenkomen is het kritieke punt. Boven de kritieke temperatuur en druk is er geen duidelijk onderscheid meer tussen vloeistof en damp.
+\end{itemize}
+Onder de koepel bevindt zich het menggebied, waar vloeistof en damp in evenwicht samen bestaan. In dit gebied zijn druk en temperatuur afhankelijk van elkaar. Om de toestand vast te leggen, gebruiken we de kwaliteit of dampfractie $x$, gedefinieerd als de verhouding van de massa damp tot de totale massa van het mengsel:
+\[
+x = \frac{m_{damp}}{m_{totaal}}
+\]
+De waarde van $x$ loopt van 0 (verzadigde vloeistof) tot 1 (verzadigde damp). De eigenschappen van het mengsel worden berekend als een gewogen gemiddelde:
+\[
+y_{gem} = y_f + x \cdot y_{fg}
+\]
+Waarbij $y$ staat voor een specifieke eigenschap ($v$, $u$, of $h$). $y_f$ is de waarde voor verzadigde vloeistof en $y_{fg}$ is het verschil tussen verzadigde damp en vloeistof ($y_g - y_f$). Deze waarden vinden we in thermodynamische tabellen.
+
+\section{De Ideale Gaswet}
+Voor gassen bij hoge temperatuur en lage druk (ten opzichte van hun kritieke waarden) zijn de intermoleculaire krachten verwaarloosbaar klein. Onder deze omstandigheden kunnen we de Ideale Gaswet gebruiken:
+\[
+Pv = RT
+\]
+Hierin is $R$ de specifieke gasconstante, die verschilt per gas ($R = R_u / M$, met $R_u = 8.314 \, kJ/kmol\cdot K$ de universele gasconstante en $M$ de molaire massa).
+
+Een belangrijke eigenschap van ideale gassen is dat de interne energie en enthalpie enkel afhangen van de temperatuur ($u = u(T)$ en $h = h(T)$). Dit leidt tot de definities van de soortelijke warmten:
+\begin{itemize}
+    \item $c_v = (\frac{\partial u}{\partial T})_v = \frac{du}{dT}$ $\rightarrow$ $\Delta u = c_v \Delta T$ (voor constante $c_v$)
+    \item $c_p = (\frac{\partial h}{\partial T})_p = \frac{dh}{dT}$ $\rightarrow$ $\Delta h = c_p \Delta T$ (voor constante $c_p$)
+\end{itemize}
+De verhouding $k = c_p / c_v$ is de specifieke warmteverhouding, die een rol speelt bij adiabatische processen van ideale gassen ($Pv^k = C$).
+
+Indien een gas te sterk afwijkt van ideaal gedrag (bijvoorbeeld bij hoge druk), gebruiken we de compressibiliteitsfactor $Z$ ($Pv = ZRT$) of complexere toestandsvergelijkingen zoals van der Waals of Beattie-Bridgeman.
+
+\chapter{De Tweede Hoofdwet en Entropie}
+De Eerste Wet stelt dat energie behouden blijft, maar zegt niets over de richting van een proces. Een kop koffie koelt af in een kamer, maar wordt nooit spontaan warmer door energie uit de kamerlucht te onttrekken, hoewel dit de eerste wet niet zou schenden. Dit inzicht leidt tot de Tweede Hoofdwet van de Thermodynamica.
+
+\section{Kelvin-Planck en Clausius}
+De Tweede Wet wordt vaak geformuleerd in termen van onmogelijkheden:
+\begin{itemize}
+    \item \textbf{Kelvin-Planck stelling:} Het is onmogelijk om een apparaat te bouwen dat in een cyclus werkt en warmte uit één enkel reservoir ontvangt en dit volledig omzet in arbeid. Met andere woorden: geen enkele warmtemotor kan een thermisch rendement van 100\% hebben. Een warmtemotor moet een deel van de warmte afstaan aan een koud reservoir ("waste heat").
+    \item \textbf{Clausius stelling:} Het is onmogelijk om een apparaat te bouwen dat warmte van een koud medium naar een warmer medium verplaatst zonder toevoeging van arbeid. Dit betekent dat een koelkast niet "gratis" kan werken; er is altijd een compressor nodig die arbeid verbruikt.
+\end{itemize}
+
+\section{Entropie}
+Om de Tweede Wet kwantitatief te maken, introduceerde Clausius het concept entropie ($S$). Entropie kan worden gezien als een maat voor moleculaire wanorde of de "kwaliteit" van energie. Hoe hoger de entropie, hoe minder bruikbaar de energie is voor arbeid.
+De verandering in entropie $dS$ wordt gedefinieerd als $dQ/T$ voor een intern reversibel proces. Voor elk proces geldt het principe van toename van entropie:
+\[
+dS \ge \frac{\delta Q}{T}
+\]
+Voor een geïsoleerd systeem betekent dit dat de entropie altijd toeneemt (bij irreversibele, echte processen) of gelijk blijft (bij reversibele, ideale processen), maar nooit afneemt ($\Delta S_{gen} \ge 0$). Irreversibiliteiten zoals wrijving, menging en warmteoverdracht over een eindig temperatuurverschil genereren entropie.
+
+\section{Isentropische Processen en Efficiëntie}
+Een proces dat zowel adiabatisch ($Q=0$) als reversibel ($S_{gen}=0$) is, wordt isentroop genoemd. Hierbij blijft de entropie constant ($\Delta s = 0$). Isentropische processen dienen als het ideale vergelijkingsmodel voor machines zoals turbines, compressoren en nozzles.
+
+De isentropische efficiëntie is een maat voor hoe dicht een werkelijk apparaat de ideale prestatie benadert:
+\begin{itemize}
+    \item Voor een turbine: $\eta_T = \frac{\text{Werkelijke Arbeid}}{\text{Isentropische Arbeid}} \approx \frac{h_1 - h_{2a}}{h_1 - h_{2s}}$
+    \item Voor een compressor: $\eta_C = \frac{\text{Isentropische Arbeid}}{\text{Werkelijke Arbeid}} \approx \frac{h_{2s} - h_1}{h_{2a} - h_1}$
+\end{itemize}
+
+\chapter{Thermodynamische Cycli}
+De toepassing van thermodynamica culmineert in de analyse van cycli voor krachtcentrales en koelmachines.
+
+\section{De Carnot Cyclus}
+Dit is de meest efficiënte theoretische cyclus die mogelijk is tussen twee temperatuurlimieten. Hij bestaat uit vier volledig reversibele processen:
+\begin{enumerate}
+    \item Isotherme expansie (warmtetoevoer bij $T_H$)
+    \item Adiabatische expansie (temperatuurdaling tot $T_L$)
+    \item Isotherme compressie (warmteafvoer bij $T_L$)
+    \item Adiabatische compressie (temperatuurstijging tot $T_H$)
+\end{enumerate}
+Het thermisch rendement van een Carnot-motor hangt enkel af van de absolute temperaturen van de reservoirs:
+\[
+\eta_{th, Carnot} = 1 - \frac{T_L}{T_H}
+\]
+Dit stelt de theoretische bovengrens voor elke warmtemotor. Om het rendement te verhogen, moet men $T_H$ verhogen of $T_L$ verlagen.
+
+\section{Otto en Diesel Cycli}
+Dit zijn de geïdealiseerde modellen voor interne verbrandingsmotoren (resp. benzine en diesel).
+\begin{itemize}
+    \item \textbf{Otto-cyclus:} Bestaat uit isentrope compressie, isochore warmtetoevoer (ontsteking), isentrope expansie (arbeidsslag) en isochore warmteafvoer. Het rendement is een functie van de compressieverhouding $r$ en de specifieke warmteverhouding $k$: $\eta = 1 - r^{1-k}$.
+    \item \textbf{Diesel-cyclus:} Verschilt van Otto doordat de verbranding trager verloopt; dit wordt gemodelleerd als warmtetoevoer bij constante druk (isobaar) gedurende een deel van de expansieslag.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/otto_cycle.png}
+    \caption{P-V diagram van de Otto-cyclus.}
+    \label{fig:otto}
+\end{figure}
+
+\section{Rankine Cyclus}
+Dit is de basiscyclus voor stoomkrachtcentrales. De werkvloeistof (water) ondergaat faseveranderingen:
+\begin{enumerate}
+    \item \textbf{Pomp:} Verhoogt de druk van vloeibaar water (isentrope compressie).
+    \item \textbf{Ketel (Boiler):} Verdampt het water tot stoom bij constante druk (isobare warmtetoevoer).
+    \item \textbf{Turbine:} De stoom expandeert en levert arbeid (isentrope expansie).
+    \item \textbf{Condensor:} De stoom condenseert terug naar vloeistof bij constante druk (isobare warmteafvoer).
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/rankine_cycle.png}
+    \caption{Schema van de Rankine-cyclus.}
+    \label{fig:rankine}
+\end{figure}
+
+\section{Dampcompressie Koelcyclus}
+Dit is de cyclus die gebruikt wordt in koelkasten en airconditioners. Het is in wezen een omgekeerde warmtemotor, bestaande uit een compressor, condensor, expansieventiel en verdamper. Een bijzonderheid is het expansieventiel, waar vloeistof door een vernauwing stroomt. Dit is een onomkeerbaar proces waarbij de druk sterk daalt en een deel van de vloeistof verdampt ("flashing"), wat leidt tot een sterke temperatuurdaling. Dit proces wordt als isenthalpisch ($h \approx \text{constant}$) beschouwd.
+
+\chapter{Warmteoverdracht Mechanismen}
+Thermodynamica vertelt ons hoeveel warmte wordt overgedragen om van de ene toestand naar de andere te gaan, maar zegt niets over hoe lang dat duurt. Warmteoverdracht is de wetenschap die de snelheid van energie-overdracht berekent, gedreven door een temperatuurverschil $\Delta T$. Er zijn drie fundamentele mechanismen.
+
+\section{Conductie (Geleiding)}
+Conductie is de overdracht van energie van de meer energetische deeltjes van een stof naar de minder energetische aangrenzende deeltjes, als gevolg van interacties tussen de deeltjes. In vaste stoffen gebeurt dit door trillingen van het kristalrooster (fononen) en door vrije elektronen.
+
+De snelheid van warmtegeleiding wordt beschreven door de Wet van Fourier:
+\[
+\dot{Q}_{cond} = -kA \frac{dT}{dx}
+\]
+Hier is $k$ de thermische geleidbaarheid ($W/m \cdot K$), een materiaaleigenschap die aangeeft hoe goed een materiaal warmte geleidt. Koper heeft een hoge $k$ ($\approx 400$), terwijl isolatoren zoals lucht ($\approx 0.026$) en piepschuim zeer lage waarden hebben. Het minteken geeft aan dat warmte stroomt in de richting van dalende temperatuur. Voor een vlakke muur met dikte $L$ en temperatuurverschil $\Delta T$ wordt dit: $\dot{Q} = kA \frac{\Delta T}{L}$.
+
+\section{Convectie}
+Convectie is de energie-overdracht tussen een vast oppervlak en een aangrenzend stromend fluïdum (gas of vloeistof). Het is een combinatie van geleiding (direct aan het oppervlak) en advectie (macroscopische beweging van de vloeistof die de warmte meevoert).
+
+De snelheid wordt berekend met de Wet van Newton voor afkoeling:
+\[
+\dot{Q}_{conv} = h A_s (T_s - T_{\infty})
+\]
+Hier is $h$ de convectiecoëfficiënt ($W/m^2 \cdot K$). Deze waarde is geen materiaaleigenschap, maar hangt complex af van de stromingscondities (snelheid, turbulentie, viscositeit) en de geometrie.
+
+We onderscheiden:
+\begin{itemize}
+    \item \textbf{Gedwongen convectie:} De stroming wordt aangedreven door externe middelen zoals een ventilator, pomp of wind. Dit levert doorgaans hoge $h$-waarden op.
+    \item \textbf{Natuurlijke (vrije) convectie:} De stroming ontstaat door dichtheidsverschillen als gevolg van temperatuurverschillen in het fluïdum (warme lucht is lichter en stijgt op).
+\end{itemize}
+
+\section{Straling}
+Straling is energie-overdracht via elektromagnetische golven (fotonen). In tegenstelling tot conductie en convectie, heeft straling geen medium nodig; het werkt het efficiëntst in een vacuüm. Alle materie boven het absolute nulpunt zendt thermische straling uit.
+
+De maximale straling die een oppervlak kan uitzenden wordt gegeven door de Wet van Stefan-Boltzmann voor een zwart lichaam:
+\[
+\dot{Q}_{max} = \sigma A_s T_s^4
+\]
+Waarbij $\sigma = 5.67 \times 10^{-8} \, W/m^2 \cdot K^4$ de Stefan-Boltzmann constante is. Voor reële oppervlakken wordt dit vermenigvuldigd met de emissiviteit $\varepsilon$ (tussen 0 en 1). Omdat straling afhangt van $T^4$, wordt dit mechanisme dominant bij hoge temperaturen.
+
+\part{Oefeningen Warmte en Stromingen}
+\chapter{Oefeningen}
+\section{Oefenzitting 1\&2: Hydrostatica}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Hydrostatische druk:} $P = P_{atm} + \rho g h$ \\
+    Beschrijft de druk op een diepte $h$ in een stilstaande vloeistof.
+    \item \textbf{Hydrostatische kracht op een vlak:} $F_R = P_{gem} A = (P_0 + \rho g h_c) A$ \\
+    De totale kracht op een ondergedompeld oppervlak, werkend op het drukpunt.
+    \item \textbf{Locatie drukpunt:} $y_p = y_c + \frac{I_{xx,c}}{y_c A}$ \\
+    De verticale positie waar de resultante kracht aangrijpt (altijd dieper dan het zwaartepunt).
+    \begin{itemize}
+    \item \textbf{Wet van Archimedes:} $F_b = \rho_{vloeistof} g V_{onder}$ \\
+    De opwaartse kracht is gelijk aan het gewicht van de verplaatste vloeistof.
+    \item \textbf{Drijvend object:} $F_b = W_{object} \Rightarrow \rho_{vloeistof} V_{onder} = \rho_{object} V_{totaal}$ \\
+    Voor een object dat in evenwicht drijft.
+\end{itemize}
+\end{itemize}
+
+\opgave{Manometer en Drukverschil}
+\textbf{Gegeven:}
+Een manometer met kwik ($\rho_{Hg} = 13.600 \, kg/m^3$) is aangesloten op een tank met gas. Het niveauverschil in de manometer is $h = 40 \, cm$. De atmosferische druk is $P_{atm} = 101 \, kPa$. De zwaartekrachtversnelling is $g = 9,81 \, m/s^2$.
+
+\textbf{Gevraagd:}
+Bepaal de absolute druk in de tank.
+
+\textbf{Oplossing:}
+De druk in de tank duwt de kwikkolom omlaag. Op het scheidingsvlak (isobaar vlak) geldt dat de druk in de linker- en rechtertak gelijk moet zijn.
+\[ P_{tank} = P_{atm} + \rho_{Hg} g h \]
+Invullen van de waarden:
+\[ P_{tank} = 101.000 \, Pa + (13.600 \, kg/m^3)(9,81 \, m/s^2)(0,40 \, m) \]
+\[ P_{tank} = 101.000 + 53.366,4 \, Pa \]
+\[ P_{tank} \approx 154,4 \, kPa \]
+
+\opgave{Kracht op een Ondergedompeld Luik}
+\textbf{Gegeven:}
+Een rechthoekig luik van $2 \, m$ breed en $3 \, m$ hoog bevindt zich verticaal in een waterreservoir. De bovenkant van het luik bevindt zich $1 \, m$ onder het wateroppervlak.
+
+\textbf{Gevraagd:}
+De totale hydrostatische kracht op het luik en de locatie van het drukpunt.
+
+\textbf{Oplossing:}
+De gemiddelde druk werkt op het zwaartepunt (centroid) van het luik.
+De diepte van het zwaartepunt $h_c$ is:
+\[ h_c = 1 \, m + \frac{3 \, m}{2} = 2,5 \, m \]
+De gemiddelde druk is:
+\[ P_{gem} = \rho g h_c = 1000 \cdot 9,81 \cdot 2,5 = 24.525 \, Pa \]
+De totale kracht is:
+\[ F_R = P_{gem} \cdot A = 24.525 \cdot (2 \cdot 3) = 147.150 \, N \approx 147,2 \, kN \]
+De locatie van het drukpunt $y_p$ (gemeten vanaf het oppervlak):
+\[ y_p = y_c + \frac{I_{xx,c}}{y_c A} \]
+Met $y_c = h_c = 2,5 \, m$ en $I_{xx,c} = \frac{b h^3}{12} = \frac{2 \cdot 3^3}{12} = 4,5 \, m^4$.
+\[ y_p = 2,5 + \frac{4,5}{2,5 \cdot 6} = 2,5 + \frac{4,5}{15} = 2,5 + 0,3 = 2,8 \, m \]
+Het drukpunt ligt dus $0,3 \, m$ onder het zwaartepunt.
+
+\opgave{Hydrostatische Druk (Duikboot)}
+\textbf{Gegeven:} Een duikboot bevindt zich op $175 \, ft$ ($53,34 \, m$) diepte in zee. De dichtheid van zeewater is $1025 \, kg/m^3$.
+
+\textbf{Gevraagd:} De hydrostatische druk op de romp.
+
+\textbf{Oplossing:}
+\[ P = \rho g h = 1025 \, kg/m^3 \cdot 9,81 \, m/s^2 \cdot 53,34 \, m \]
+\[ P = 536.345 \, Pa \approx 536 \, kPa \approx 5,36 \, bar \]
+
+\opgave{Druk door Gewicht (Vrouw op Hakken)}
+\textbf{Gegeven:} Een vrouw van $70 \, kg$ staat op de grond. De totale oppervlakte van haar schoenzolen is $400 \, cm^2$.
+
+\textbf{Gevraagd:} De druk die zij uitoefent op de grond.
+
+\textbf{Oplossing:}
+De kracht is gelijk aan haar gewicht:
+\[ F = m \cdot g = 70 \, kg \cdot 9,81 \, m/s^2 = 686,7 \, N \]
+De oppervlakte in $m^2$:
+\[ A = 400 \, cm^2 = 400 \cdot 10^{-4} \, m^2 = 0,04 \, m^2 \]
+De druk is:
+\[ P = \frac{F}{A} = \frac{686,7 \, N}{0,04 \, m^2} = 17.167,5 \, Pa \approx 17,2 \, kPa \]
+
+\opgave{Drijvend IJsblok}
+\textbf{Gegeven:}
+Een ijsblok ($\rho_{ijs} = 917 \, kg/m^3$) drijft in zeewater ($\rho_{zee} = 1025 \, kg/m^3$).
+
+\textbf{Gevraagd:}
+Welk percentage van het volume van het ijsblok bevindt zich onder water?
+
+\textbf{Oplossing:}
+Volgens de wet van Archimedes is de opwaartse kracht gelijk aan het gewicht van de verplaatste vloeistof. Voor een drijvend object is de opwaartse kracht gelijk aan het eigen gewicht.
+\[ F_{b} = W_{ijs} \]
+\[ \rho_{zee} g V_{onder} = \rho_{ijs} g V_{totaal} \]
+De verhouding is:
+\[ \frac{V_{onder}}{V_{totaal}} = \frac{\rho_{ijs}}{\rho_{zee}} = \frac{917}{1025} \approx 0,895 \]
+Dus $89,5\%$ van het ijsblok bevindt zich onder water.
+
+\section{Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Bernoulli-vergelijking:} $P + \frac{1}{2}\rho V^2 + \rho g z = \text{constant}$ \\
+    Geldt langs een stroomlijn voor stationaire, onsamendrukbare en wrijvingsloze stroming.
+    \item \textbf{Continuïteitsvergelijking:} $A_1 V_1 = A_2 V_2$ \\
+    Behoud van massa voor onsamendrukbare stroming in een buis.
+    \item \textbf{Impulsvergelijking (lineair):} $\sum \vec{F} = \dot{m} (\vec{V}_{uit} - \vec{V}_{in})$ \\
+    De som van externe krachten op een controlevolume is gelijk aan de verandering in impulsstroom.
+    \item \textbf{Massadebiet:} $\dot{m} = \rho A V$ \\
+    De hoeveelheid massa die per tijdseenheid door een doorsnede stroomt.
+\end{itemize}
+
+\opgave{Venturi-meter}
+\textbf{Gegeven:}
+Water stroomt door een horizontale Venturi-meter. De inlaatdiameter is $D_1 = 10 \, cm$ en de keeldiameter is $D_2 = 5 \, cm$. Het drukverschil tussen inlaat en keel is $\Delta P = 20 \, kPa$.
+
+\textbf{Gevraagd:}
+De stroomsnelheid bij de inlaat $V_1$.
+
+\textbf{Oplossing:}
+Bernoulli vergelijking tussen 1 en 2 (horizontaal, dus $z_1=z_2$):
+\[ P_1 + \frac{1}{2}\rho V_1^2 = P_2 + \frac{1}{2}\rho V_2^2 \]
+Continuïteitsvergelijking: $A_1 V_1 = A_2 V_2 \Rightarrow V_2 = V_1 \frac{A_1}{A_2} = V_1 (\frac{D_1}{D_2})^2 = V_1 (2)^2 = 4V_1$.
+Substitueren in Bernoulli:
+\[ P_1 - P_2 = \frac{1}{2}\rho (V_2^2 - V_1^2) = \frac{1}{2}\rho ((4V_1)^2 - V_1^2) = \frac{1}{2}\rho (15 V_1^2) \]
+\[ 20.000 = \frac{1}{2}(1000)(15 V_1^2) = 7500 V_1^2 \]
+\[ V_1^2 = \frac{20.000}{7500} = 2,67 \Rightarrow V_1 \approx 1,63 \, m/s \]
+
+
+
+
+\subsection{Oefenzitting 4: Tabellen en eenheden}
+\setcounter{opgave}{0}
+\section{Basisconcepten}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Dichtheid:} $\rho = \frac{m}{V}$ \\
+    Massa per volume-eenheid.
+    \item \textbf{Tweede wet van Newton:} $F = m a$ \\
+    Kracht is massa maal versnelling.
+    \item \textbf{Gewicht:} $W = m g$ \\
+    De zwaartekracht op een massa.
+\end{itemize}
+
+
+\section{Oefenzitting 5: Gesloten systemen}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Eerste Hoofdwet:} $Q - W = \Delta U$ \\
+    Energiebehoud voor een gesloten systeem (geen massa-overdracht).
+    \item \textbf{Grensverplaatsingsarbeid:} $W_b = \int P dV$ \\
+    Arbeid geleverd door expansie of compressie.
+    \item \textbf{Isobaar proces:} $W_b = P(V_2 - V_1)$ \\
+    Arbeid bij constante druk.
+\end{itemize}
+
+\opgave{Zuiger-Cilinder}
+\textbf{Gegeven:}
+Gas expandeert isobaar ($P=200 \, kPa$) van $V_1 = 0,1 \, m^3$ naar $V_2 = 0,3 \, m^3$. Er wordt $50 \, kJ$ warmte toegevoerd.
+
+\textbf{Gevraagd:}
+De verandering in interne energie $\Delta U$.
+
+\textbf{Oplossing:}
+Arbeid $W_b = P(V_2 - V_1) = 200 (0,3 - 0,1) = 40 \, kJ$.
+Eerste wet: $Q - W = \Delta U$.
+$50 \, kJ - 40 \, kJ = \Delta U$.
+$\Delta U = 10 \, kJ$.
+
+\section{Oefenzitting 6: Open systemen}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Eerste Hoofdwet (Stationair):} $\dot{Q} - \dot{W} = \dot{m} \Delta (h + \frac{V^2}{2} + gz)$ \\
+    Energiebehoud voor een open systeem (controlevolume) in stationaire toestand.
+    \item \textbf{Enthalpie:} $h = u + Pv$ \\
+    Combinatie van interne energie en stromingsarbeid.
+    \item \textbf{Ideaal gas:} $\Delta h = c_p \Delta T$ \\
+    Enthalpieverandering voor een ideaal gas met constante soortelijke warmte.
+
+    Bekijk je tabellen voor specifieke waarden van $c_p$, $h$, T, $P$. Zorg dat je ziet wanneer je superheated, gesatureerd of vloeibaar hebt.
+\end{itemize}
+
+\opgave{Compressor (Helium)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/compressor_exercise.png}
+    \caption{Compressor met in- en uitgaande stromen.}
+\end{figure}
+\textbf{Gegeven:}
+Helium wordt gecomprimeerd van $P_1 = 105 \, kPa$ en $T_1 = 295 \, K$ naar $P_2 = 700 \, kPa$ en $T_2 = 460 \, K$.
+Er treedt een warmteverlies op van $q_{uit} = 15 \, kJ/kg$.
+Het massadebiet is $\dot{m} = 60 \, kg/min$.
+Kinetische energieveranderingen worden verwaarloosd.
+
+\textbf{Gevraagd:}
+Het benodigde vermogen $\dot{W}_{in}$.
+
+\textbf{Oplossing:}
+Voor een open systeem (compressor) geldt de eerste hoofdwet. Omdat Helium een ideaal gas is, geldt $\Delta h = c_p \Delta T$.
+De energiebalans per eenheid massa (waarbij $w_{in}$ positief is voor toevoer en $q_{uit}$ positief voor verlies):
+\[ w_{in} = \Delta h + q_{uit} = c_p(T_2 - T_1) + q_{uit} \]
+Voor Helium is de soortelijke warmte bij constante druk $c_p = 5,1926 \, kJ/kgK$.
+\[ w_{in} = 5,1926 \cdot (460 - 295) + 15 \]
+\[ w_{in} = 5,1926 \cdot 165 + 15 = 856,78 + 15 = 871,8 \, kJ/kg \]
+Het totale vermogen is:
+\[ \dot{W}_{in} = \dot{m} \cdot w_{in} \]
+Eerst het massadebiet omrekenen naar $kg/s$:
+\[ \dot{m} = 60 \, kg/min = \frac{60}{60} \, kg/s = 1 \, kg/s \]
+\[ \dot{W}_{in} = 1 \, kg/s \cdot 871,8 \, kJ/kg = 871,8 \, kW \]
+
+\section{Oefenzitting 7: Eerste hoofdwet cycli}
+\setcounter{opgave}{0}
+\opgave{Stoomturbine}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/Turbine_oefening.png}
+    \caption{Stoomturbine met in- en uitgaande stromen.}
+\end{figure}
+\textbf{Gegeven:}
+Stoom stroomt door een turbine met een massadebiet $\dot{m} = 26 \, kg/s$.
+Inlaat (1): $P_1 = 6 \, MPa$, $T_1 = 600^\circ C$, $V_1 \approx 0 \, m/s$.
+Uitlaat (2): $P_2 = 0,5 \, MPa$, $T_2 = 200^\circ C$, $V_2 = 180 \, m/s$.
+De turbine levert een vermogen van $\dot{W}_{out} = 20 \, MW$.
+Hoogteverschillen zijn verwaarloosbaar ($\Delta z \approx 0$).
+
+\textbf{Gevraagd:}
+De warmteoverdracht $\dot{Q}_{uit}$ (warmteverlies).
+
+\textbf{Oplossing:}
+Uit superheated gas tabellen (of gegeven):
+$h_1 = 3658,8 \, kJ/kg$
+$h_2 = 2855,8 \, kJ/kg$
+De verandering in kinetische energie:
+\[ \Delta ke = \frac{V_2^2 - V_1^2}{2} = \frac{180^2 - 0}{2} = 16.200 \, J/kg = 16,2 \, kJ/kg \]
+De energiebalans voor een open systeem (turbine):
+\[ \dot{E}_{in} = \dot{E}_{out} \]
+\[ \dot{m}(h_1 + \frac{V_1^2}{2}) = \dot{W}_{out} + \dot{Q}_{uit} + \dot{m}(h_2 + \frac{V_2^2}{2}) \]
+Omschrijven voor $\dot{Q}_{uit}$:
+\[ \dot{Q}_{uit} = \dot{m}(h_1 - h_2 - \frac{V_2^2}{2}) - \dot{W}_{out} \]
+Invullen van de waarden (let op eenheden, $20 \, MW = 20.000 \, kW$):
+\[ \dot{Q}_{uit} = 26 \left( 3658,8 - 2855,8 - 16,2 \right) - 20.000 \]
+\[ \dot{Q}_{uit} = 26 \left( 786,8 \right) - 20.000 \]
+\[ \dot{Q}_{uit} = 20.456,8 - 20.000 = 456,8 \, kW \]
+
+\opgave{Expansieventiel (Koelmiddel-134a)}
+\textbf{Gegeven:}
+Koelmiddel-134a wordt gewurgd (throttled) van een verzadigde vloeistoftoestand bij $700 \, kPa$ naar een druk van $160 \, kPa$.
+
+\textbf{Gevraagd:}
+De temperatuurdaling $\Delta T$ en het uiteindelijke specifieke volume $v_2$.
+
+\textbf{Oplossing:}
+Voor een wurgproces (adiabatisch, geen arbeid, verwaarloosbare kinetische/potentiële energie) geldt dat de enthalpie constant blijft: $h_1 = h_2$.
+
+\textit{Toestand 1:} $P_1 = 700 \, kPa$, verzadigde vloeistof ($x_1=0$).
+Uit tabellen voor R-134a:
+\[ T_1 = T_{sat@700kPa} = 26,69^\circ C \]
+\[ h_1 = h_{f@700kPa} = 88,2 \, kJ/kg \]
+
+\textit{Toestand 2:} $P_2 = 160 \, kPa$.
+\[ h_2 = h_1 = 88,2 \, kJ/kg \]
+Uit tabellen bij $160 \, kPa$:
+\[ T_2 = T_{sat@160kPa} = -15,6^\circ C \]
+\[ h_f = 31,21 \, kJ/kg, \quad h_g = 241,11 \, kJ/kg \]
+Kwaliteit $x_2$ berekenen:
+\[ h_2 = h_f + x_2 (h_g - h_f) \]
+\[ 88,2 = 31,21 + x_2 (241,11 - 31,21) \]
+\[ x_2 = \frac{88,2 - 31,21}{209,9} \approx 0,27 \]
+Specifiek volume $v_2$ (met $v_g$ bij $160 \, kPa$):
+\[v_2 = v_f + x_2 (v_g - v_f) \]
+(je mag Vf verwaarlozen omdat het zo klein is vergeleken met Vg)
+\[ v_2 \approx x_2 v_g \approx 0,0335 \, m^3/kg \]
+
+Temperatuurdaling:
+\[ \Delta T = T_1 - T_2 = 26,69 - (-15,6) = 42,3^\circ C \]
+
+\section{Oefenzitting 8 : Entropie en tweede hoofdwet}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Thermisch rendement:} $\eta_{th} = \frac{W_{netto}}{Q_{in}} = 1 - \frac{Q_{uit}}{Q_{in}}$ \\
+    Efficiëntie van een warmtemotor.
+    \item \textbf{COP Warmtepomp:} $COP_{HP} = \frac{Q_H}{W_{in}}$ \\
+    Prestatiecoëfficiënt voor verwarming.
+    \item \textbf{COP Koelmachine:} $COP_{R} = \frac{Q_L}{W_{in}}$ \\
+    Prestatiecoëfficiënt voor koeling.
+\end{itemize}
+
+\opgave{Warmtepomp}
+\textbf{Gegeven:}
+Een warmtepomp levert $10 \, kW$ warmte aan een huis ($20^\circ C$) en onttrekt warmte aan de buitenlucht ($0^\circ C$). De COP is $3,5$.
+
+\textbf{Gevraagd:}
+Het benodigde elektrische vermogen.
+
+\textbf{Oplossing:}
+$COP_{HP} = \frac{\dot{Q}_H}{\dot{W}_{in}}$.
+$3,5 = \frac{10 \, kW}{\dot{W}_{in}}$.
+$\dot{W}_{in} = \frac{10}{3,5} \approx 2,86 \, kW$.
+
+
+\section{Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Reynoldsgetal:} $Re = \frac{\rho V D}{\mu} = \frac{V D}{\nu}$ \\
+    Bepaalt of een stroming laminair ($Re < 2300$) of turbulent ($Re > 4000$) is.
+    \item \textbf{Drukverlies (Darcy-Weisbach):} $\Delta P_L = f \frac{L}{D} \frac{\rho V^2}{2}$ \\
+    Berekent het drukverlies door wrijving in een buis.
+    \item \textbf{Wrijvingsfactor (Laminair):} $f = \frac{64}{Re}$ \\
+    Geldt voor volledig ontwikkelde laminaire stroming in een ronde buis.
+\end{itemize}
+
+\opgave{Drukverlies in een Buis}
+\textbf{Gegeven:}
+Olie ($\rho = 900 \, kg/m^3, \nu = 10^{-4} \, m^2/s$) stroomt door een buis ($D=0,1 \, m, L=100 \, m$) met $V=2 \, m/s$.
+
+\textbf{Gevraagd:}
+Het drukverlies $\Delta P$.
+
+\textbf{Oplossing:}
+Reynoldsgetal: $Re = \frac{V D}{\nu} = \frac{2 \cdot 0,1}{10^{-4}} = 2000$.
+Dit is laminair ($Re \le 2300$).
+Wrijvingsfactor $f = \frac{64}{Re} = \frac{64}{2000} = 0,032$.
+Drukverlies (Darcy-Weisbach):
+\[ \Delta P = f \frac{L}{D} \frac{1}{2}\rho V^2 \]
+\[ \Delta P = 0,032 \cdot \frac{100}{0,1} \cdot \frac{1}{2} \cdot 900 \cdot 2^2 \]
+\[ \Delta P = 0,032 \cdot 1000 \cdot 1800 = 57.600 \, Pa = 57,6 \, kPa \]
+
+\section{Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}
+\setcounter{opgave}{0}
+\opgave{Olievat (leidingverlies)}
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
+        % Tank
+        \draw[thick] (0,0) ellipse (1.6 and 0.35);
+        \draw[thick] (-1.6,0) -- (-1.6,-2.8);
+        \draw[thick] (1.6,0) -- (1.6,-2.8);
+        \draw[thick] (0,-2.8) ellipse (1.6 and 0.35);
+        % Vloeistofniveau (stippellijn)
+        \draw[dashed] (-1.45,0.05) .. controls (-0.6,0.25) and (0.6,0.25) .. (1.45,0.05);
+        % Leiding
+        \draw[thick] (1.6,-2.1) -- (3.4,-2.1);
+        \draw[thick,->] (3.4,-2.1) -- (3.9,-2.1);
+        % Hoogtemaat 4 m
+        \draw[thin,<->] (2.7,0.0) -- (2.7,-2.1);
+        \node[right] at (2.75,-1.05) {$4\,m$};
+        % Diameter label
+        \node[below] at (2.4,-2.1) {$D=8\,mm$};
+        % Labels
+        \node at (0,-1.3) {Olievat};
+    \end{tikzpicture}
+    \caption{Figuur 12Olievat: afstroming uit een olievat via een lange dunne leiding.}
+\end{figure}
+
+    	extbf{Gegeven:}
+Olie met dichtheid $\rho = 850\,\mathrm{kg/m^3}$ en kinematische viscositeit $\nu = 0{,}00062\,\mathrm{m^2/s}$ stroomt uit een opslagtank (open naar de atmosfeer) via een horizontale buis met diameter $D=8\,\mathrm{mm}$ en lengte $L=40\,\mathrm{m}$. Het vloeistofniveau in de tank ligt $\Delta z = 4\,\mathrm{m}$ boven het buiscentrum. Kleine verliezen worden verwaarloosd.
+
+    	extbf{Gevraagd:}
+Het volumetrisch debiet $Q$ door de leiding.
+
+    	extbf{Oplossing:}
+We passen Bernoulli toe tussen het vrije vloeistofoppervlak (1) en de leiding-uitlaat (2).
+Omdat de tank open is geldt $p_1=p_2=p_{atm}$ en omdat de tank groot is nemen we $V_1\approx 0$.
+Met enkel leidingverlies (Darcy-Weisbach) volgt:
+\[
+\Delta z = \frac{V^2}{2g} + h_f,\qquad h_f = f\frac{L}{D}\frac{V^2}{2g}
+\]
+Dus:
+\[
+\Delta z = \left(1+ f\frac{L}{D}\right)\frac{V^2}{2g}
+\]
+
+Omdat $\nu$ zeer groot is, controleren we of de stroming laminair is. Voor laminaire stroming geldt:
+\[
+f = \frac{64}{Re},\qquad Re = \frac{VD}{\nu}
+\]
+Invullen van $f$ in $h_f$:
+\[
+h_f = \frac{64}{Re}\frac{L}{D}\frac{V^2}{2g}
+= \frac{64\nu}{VD}\frac{L}{D}\frac{V^2}{2g}
+= \frac{64\nu L}{D^2}\,\frac{V}{2g}
+\]
+De energievergelijking wordt dan lineair-kwadratisch in $V$:
+\[
+\Delta z = \frac{V^2}{2g} + \frac{64\nu L}{D^2}\,\frac{V}{2g}
+\]
+Vermenigvuldig met $2g$:
+\[
+2g\Delta z = V^2 + \left(\frac{64\nu L}{D^2}\right)V
+\]
+Met $g=9{,}81\,\mathrm{m/s^2}$, $\Delta z=4\,\mathrm{m}$, $\nu=0{,}00062\,\mathrm{m^2/s}$, $L=40\,\mathrm{m}$ en $D=0{,}008\,\mathrm{m}$:
+\[
+\frac{64\nu L}{D^2} = \frac{64\cdot 0{,}00062\cdot 40}{0{,}008^2} = 24800\,\mathrm{s^{-1}}
+\]
+Dus:
+\[
+78{,}48 = V^2 + 24800\,V
+\]
+Oplossen van de kwadratische vergelijking (positieve wortel):
+\[
+V = \frac{-24800 + \sqrt{24800^2 + 4\cdot 78{,}48}}{2} \approx 0{,}00316\,\mathrm{m/s}
+\]
+Reynoldsgetal:
+\[
+Re = \frac{VD}{\nu} = \frac{0{,}00316\cdot 0{,}008}{0{,}00062} \approx 0{,}041\ (<2300)\Rightarrow\ \text{laminair (aanname klopt).}
+\]
+Het debiet is $Q = AV$ met $A = \frac{\pi D^2}{4}$:
+\[
+A = \frac{\pi\,(0{,}008)^2}{4} = 5{,}03\times 10^{-5}\,\mathrm{m^2}
+\]
+\[
+Q = AV = 5{,}03\times 10^{-5}\cdot 0{,}00316 \approx 1{,}59\times 10^{-7}\,\mathrm{m^3/s}
+\]
+Of in liter per seconde:
+\[
+Q \approx 1{,}59\times 10^{-4}\,\mathrm{L/s}\ (\approx 0{,}159\,\mathrm{mL/s})
+\]
+
+\opgave{Dimensieanalyse (Weerstandskracht)}
+\textbf{Gegeven:}
+De weerstandskracht $F_D$ hangt af van snelheid $V$, diameter $D$, dichtheid $\rho$ en viscositeit $\mu$.
+
+\textbf{Gevraagd:}
+Leid de dimensieloze groepen af met Buckingham Pi.
+
+\textbf{Oplossing:}
+Variabelen: $F_D, V, D, \rho, \mu$ ($n=5$).
+Basisdimensies: $M, L, T$ ($j=3$).
+Aantal Pi-groepen: $k = 5 - 3 = 2$.
+Kies herhalende variabelen: $\rho, V, D$.
+$\Pi_1 = F_D \rho^a V^b D^c \Rightarrow \frac{F_D}{\rho V^2 D^2} = C_D$ (Weerstandscoëfficiënt).
+$\Pi_2 = \mu \rho^a V^b D^c \Rightarrow \frac{\mu}{\rho V D} = Re^{-1}$ (Reynoldsgetal).
+Functioneel verband: $C_D = f(Re)$.
+
+\chapter*{Conclusie}
+Dit document heeft de kernprincipes van warmte en stroming samengevat. Van de fundamentele wetten van thermodynamica die energiebehoud dicteren, tot de complexe bewegingsvergelijkingen van fluïda. Het correct toepassen van deze principes vereist inzicht in de aannames (zoals incompressibiliteit of reversibiliteit) en nauwkeurigheid in berekeningen. Met de aangereikte theorie en oefeningen bent u toegerust om thermische en fluïdumtechnische systemen te analyseren.
+
+\chapter*{Bijlagen}
+\section*{Tabel 1: Samenvatting Dimensieloze Getallen}
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Getal} & \textbf{Symbool} & \textbf{Definitie} & \textbf{Fysische Betekenis} \\ \midrule
+Reynolds & $Re$ & $\frac{\rho V L}{\mu}$ & Traagheidskrachten / Viskeuze krachten (Laminair vs Turbulent) \\
+Prandtl & $Pr$ & $\frac{\nu}{\alpha}$ & Impulsdiffusie / Warmtediffusie (Snelheids- vs Thermische grenslaag) \\
+Nusselt & $Nu$ & $\frac{h L}{k}$ & Convectie / Geleiding (Effectiviteit van warmteoverdracht) \\
+Mach & $Ma$ & $\frac{V}{c}$ & Snelheid / Geluidssnelheid (Compressibiliteitseffecten) \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Geciteerd werk}
+\begin{enumerate}
+    \item Solution manual to Fundamentals of Thermal-Fluid Sciences -- Yunus A. Cengel, Robert H. Turner, John M. Cimbala -- 3, 2008 -- McGraw Hill -- 22c2bc36.pdf
+    \item Stromingen.pdf
+    \item Warmte.pdf
+    \item Fundamentals of Thermal-Fluid Sciences -- Yunus A. Çengel, John M. Cimbala, Robert H. Turner -- 2015 -- b016e765b4c1726c9af5bd86146500f5.pdf
+    \item Warmte en stroming\_Thermal-Fluid Sciences Formularium.pdf
+    \item Thermodynamic tables and properties.pdf
+    \item Meerkeuzevragen Thermo, \url{https://drive.google.com/open?id=1lxMZjQMHufqMOW5fe86Rk0IvT8AmGgEeLlQJ5k5YsNs}
+\end{enumerate}
+
+%\includepdf[pages=-]{Thermodynamic tables and properties.pdf}
+
+\end{document}
