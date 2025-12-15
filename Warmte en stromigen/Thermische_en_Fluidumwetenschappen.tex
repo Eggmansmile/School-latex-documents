@@ -9,10 +9,19 @@
 \usepackage{enumitem}
 \usepackage{float}
 \usepackage{pdfpages}
+\usepackage{tikz}
+
+% Dynamische opgave-nummering (1., 2., ...) per oefenzitting
+\newcounter{opgave}
+\newcommand{\opgave}[1]{%
+    \refstepcounter{opgave}%
+    \subsection*{\arabic{opgave}.\ #1}%
+}
+
 
 \geometry{margin=2.5cm}
 
-\title{Ruben Ryckaert's Awesome Samenvatting\\ \large Theorie, Analyse en Toepassingen van Thermische en Fluïdumwetenschappen}
+\title{Ruben Ryckaert's Samenvatting\\ \large Theorie, Analyse en Toepassingen van Thermische en Fluïdumwetenschappen}
 \author{}
 \date{\today}
 
@@ -579,7 +588,7 @@ Straal $R = 0.01 \, m$.
 \chapter{Interne en Externe Stroming}
 \section{Interne Stroming: Laminair vs. Turbulent}
 \subsection{Reynolds Getal}
-Het Reynolds getal is een dimensieloze parameter die de verhouding tussen traagheids- en viskeuze krachten aangeeft:
+Het Reynolds getal is een dimensieloze parameter die de verhouding tussen traagheids of inertiekrachten en viskeuze krachten aangeeft (intertiekracht/viscositeitskrachten):
 \[
 Re = \frac{\rho V D}{\mu} = \frac{V D}{\nu}
 \]
@@ -940,11 +949,10 @@ De maximale straling die een oppervlak kan uitzenden wordt gegeven door de Wet v
 \]
 Waarbij $\sigma = 5.67 \times 10^{-8} \, W/m^2 \cdot K^4$ de Stefan-Boltzmann constante is. Voor reële oppervlakken wordt dit vermenigvuldigd met de emissiviteit $\varepsilon$ (tussen 0 en 1). Omdat straling afhangt van $T^4$, wordt dit mechanisme dominant bij hoge temperaturen.
 
-\part{Oefeningen}
-
-\chapter{Oefeningen: Stromingen}
-
-\section{Basisconcepten en Hydrostatica}
+\part{Oefeningen Warmte en Stromingen}
+\chapter{Oefeningen}
+\section{Oefenzitting 1\&2: Hydrostatica}
+\setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
 \begin{itemize}
     \item \textbf{Hydrostatische druk:} $P = P_{atm} + \rho g h$ \\
@@ -953,9 +961,15 @@ Waarbij $\sigma = 5.67 \times 10^{-8} \, W/m^2 \cdot K^4$ de Stefan-Boltzmann co
     De totale kracht op een ondergedompeld oppervlak, werkend op het drukpunt.
     \item \textbf{Locatie drukpunt:} $y_p = y_c + \frac{I_{xx,c}}{y_c A}$ \\
     De verticale positie waar de resultante kracht aangrijpt (altijd dieper dan het zwaartepunt).
+    \begin{itemize}
+    \item \textbf{Wet van Archimedes:} $F_b = \rho_{vloeistof} g V_{onder}$ \\
+    De opwaartse kracht is gelijk aan het gewicht van de verplaatste vloeistof.
+    \item \textbf{Drijvend object:} $F_b = W_{object} \Rightarrow \rho_{vloeistof} V_{onder} = \rho_{object} V_{totaal}$ \\
+    Voor een object dat in evenwicht drijft.
+\end{itemize}
 \end{itemize}
 
-\subsection{Opgave 1: Manometer en Drukverschil}
+\opgave{Manometer en Drukverschil}
 \textbf{Gegeven:}
 Een manometer met kwik ($\rho_{Hg} = 13.600 \, kg/m^3$) is aangesloten op een tank met gas. Het niveauverschil in de manometer is $h = 40 \, cm$. De atmosferische druk is $P_{atm} = 101 \, kPa$. De zwaartekrachtversnelling is $g = 9,81 \, m/s^2$.
 
@@ -970,7 +984,7 @@ Invullen van de waarden:
 \[ P_{tank} = 101.000 + 53.366,4 \, Pa \]
 \[ P_{tank} \approx 154,4 \, kPa \]
 
-\subsection{Opgave 2: Kracht op een Ondergedompeld Luik}
+\opgave{Kracht op een Ondergedompeld Luik}
 \textbf{Gegeven:}
 Een rechthoekig luik van $2 \, m$ breed en $3 \, m$ hoog bevindt zich verticaal in een waterreservoir. De bovenkant van het luik bevindt zich $1 \, m$ onder het wateroppervlak.
 
@@ -991,7 +1005,7 @@ Met $y_c = h_c = 2,5 \, m$ en $I_{xx,c} = \frac{b h^3}{12} = \frac{2 \cdot 3^3}{
 \[ y_p = 2,5 + \frac{4,5}{2,5 \cdot 6} = 2,5 + \frac{4,5}{15} = 2,5 + 0,3 = 2,8 \, m \]
 Het drukpunt ligt dus $0,3 \, m$ onder het zwaartepunt.
 
-\subsection{Opgave 3: Hydrostatische Druk (Duikboot)}
+\opgave{Hydrostatische Druk (Duikboot)}
 \textbf{Gegeven:} Een duikboot bevindt zich op $175 \, ft$ ($53,34 \, m$) diepte in zee. De dichtheid van zeewater is $1025 \, kg/m^3$.
 
 \textbf{Gevraagd:} De hydrostatische druk op de romp.
@@ -1000,7 +1014,7 @@ Het drukpunt ligt dus $0,3 \, m$ onder het zwaartepunt.
 \[ P = \rho g h = 1025 \, kg/m^3 \cdot 9,81 \, m/s^2 \cdot 53,34 \, m \]
 \[ P = 536.345 \, Pa \approx 536 \, kPa \approx 5,36 \, bar \]
 
-\subsection{Opgave 4: Druk door Gewicht (Vrouw op Hakken)}
+\opgave{Druk door Gewicht (Vrouw op Hakken)}
 \textbf{Gegeven:} Een vrouw van $70 \, kg$ staat op de grond. De totale oppervlakte van haar schoenzolen is $400 \, cm^2$.
 
 \textbf{Gevraagd:} De druk die zij uitoefent op de grond.
@@ -1013,16 +1027,7 @@ De oppervlakte in $m^2$:
 De druk is:
 \[ P = \frac{F}{A} = \frac{686,7 \, N}{0,04 \, m^2} = 17.167,5 \, Pa \approx 17,2 \, kPa \]
 
-\section{Drijfvermogen en Stabiliteit}
-\subsection*{Belangrijke Formules}
-\begin{itemize}
-    \item \textbf{Wet van Archimedes:} $F_b = \rho_{vloeistof} g V_{onder}$ \\
-    De opwaartse kracht is gelijk aan het gewicht van de verplaatste vloeistof.
-    \item \textbf{Drijvend object:} $F_b = W_{object} \Rightarrow \rho_{vloeistof} V_{onder} = \rho_{object} V_{totaal}$ \\
-    Voor een object dat in evenwicht drijft.
-\end{itemize}
-
-\subsection{Opgave 1: Drijvend IJsblok}
+\opgave{Drijvend IJsblok}
 \textbf{Gegeven:}
 Een ijsblok ($\rho_{ijs} = 917 \, kg/m^3$) drijft in zeewater ($\rho_{zee} = 1025 \, kg/m^3$).
 
@@ -1037,16 +1042,21 @@ De verhouding is:
 \[ \frac{V_{onder}}{V_{totaal}} = \frac{\rho_{ijs}}{\rho_{zee}} = \frac{917}{1025} \approx 0,895 \]
 Dus $89,5\%$ van het ijsblok bevindt zich onder water.
 
-\section{Bernoulli en Energievergelijking}
+\section{Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}
+\setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
 \begin{itemize}
     \item \textbf{Bernoulli-vergelijking:} $P + \frac{1}{2}\rho V^2 + \rho g z = \text{constant}$ \\
     Geldt langs een stroomlijn voor stationaire, onsamendrukbare en wrijvingsloze stroming.
     \item \textbf{Continuïteitsvergelijking:} $A_1 V_1 = A_2 V_2$ \\
     Behoud van massa voor onsamendrukbare stroming in een buis.
+    \item \textbf{Impulsvergelijking (lineair):} $\sum \vec{F} = \dot{m} (\vec{V}_{uit} - \vec{V}_{in})$ \\
+    De som van externe krachten op een controlevolume is gelijk aan de verandering in impulsstroom.
+    \item \textbf{Massadebiet:} $\dot{m} = \rho A V$ \\
+    De hoeveelheid massa die per tijdseenheid door een doorsnede stroomt.
 \end{itemize}
 
-\subsection{Opgave 1: Venturi-meter}
+\opgave{Venturi-meter}
 \textbf{Gegeven:}
 Water stroomt door een horizontale Venturi-meter. De inlaatdiameter is $D_1 = 10 \, cm$ en de keeldiameter is $D_2 = 5 \, cm$. Het drukverschil tussen inlaat en keel is $\Delta P = 20 \, kPa$.
 
@@ -1062,99 +1072,11 @@ Substitueren in Bernoulli:
 \[ 20.000 = \frac{1}{2}(1000)(15 V_1^2) = 7500 V_1^2 \]
 \[ V_1^2 = \frac{20.000}{7500} = 2,67 \Rightarrow V_1 \approx 1,63 \, m/s \]
 
-\section{Impulsbehoud}
-\subsection*{Belangrijke Formules}
-\begin{itemize}
-    \item \textbf{Impulsvergelijking (lineair):} $\sum \vec{F} = \dot{m} (\vec{V}_{uit} - \vec{V}_{in})$ \\
-    De som van externe krachten op een controlevolume is gelijk aan de verandering in impulsstroom.
-    \item \textbf{Massadebiet:} $\dot{m} = \rho A V$ \\
-    De hoeveelheid massa die per tijdseenheid door een doorsnede stroomt.
-\end{itemize}
 
-\subsection{Opgave 1: Kracht op een Bocht}
-\textbf{Gegeven:}
-Water stroomt door een $90^\circ$ horizontale bocht met diameter $10 \, cm$ en snelheid $5 \, m/s$. De druk bij de inlaat is $200 \, kPa$. Verwaarloos wrijving en drukverlies.
 
-\textbf{Gevraagd:}
-De kracht die nodig is om de bocht op zijn plaats te houden.
 
-\textbf{Oplossing:}
-Impulsbalans in x- en y-richting.
-Massastroom $\dot{m} = \rho A V = 1000 \cdot \frac{\pi (0,1)^2}{4} \cdot 5 \approx 39,3 \, kg/s$.
-Druk $P_1 = P_2 = 200 \, kPa$ (verwaarloosbaar verlies).
-Krachtenbalans x-richting (inlaat):
-\[ F_{x,druk} = P_1 A = 200.000 \cdot 0,00785 = 1570 \, N \]
-\[ \sum F_x = \dot{m}(V_{2,x} - V_{1,x}) = \dot{m}(0 - 5) = -196,5 \, N \]
-\[ F_{R,x} + 1570 = -196,5 \Rightarrow F_{R,x} = -1766,5 \, N \]
-Krachtenbalans y-richting (uitlaat):
-\[ F_{y,druk} = -P_2 A = -1570 \, N \] (werkt tegen de y-as in op het fluïdum bij de uitlaat, maar wacht, druk werkt altijd naar binnen. Bij uitlaat stroomt het in +y, dus tegendruk is -y. Bij inlaat stroomt het in +x, druk duwt +x).
-Correctie: Controle volume analyse.
-Inlaat (x): Druk duwt +x. Uitlaat (y): Druk duwt -y (op het CV).
-Impulsstroom uit - in:
-x: $0 - \dot{m}V = -196,5$.
-y: $\dot{m}V - 0 = +196,5$.
-Krachten op CV: $F_{R,x} + P_1 A = -196,5 \Rightarrow F_{R,x} = -1766,5 \, N$.
-$F_{R,y} - P_2 A = 196,5 \Rightarrow F_{R,y} = 196,5 + 1570 = 1766,5 \, N$.
-De kracht OP de bocht is tegengesteld aan $F_R$ (kracht van bocht op water).
-Dus $F_{bocht, x} = 1766,5 \, N$, $F_{bocht, y} = -1766,5 \, N$.
-Resultante $F = \sqrt{F_x^2 + F_y^2} \approx 2500 \, N$.
-
-\subsection{Opgave 2: Straaljager}
-\textbf{Gegeven:}
-Een straalmotor zuigt lucht aan ($200 \, kg/s$) met $250 \, m/s$ en stoot gassen uit met $600 \, m/s$. Verwaarloos brandstofmassa.
-
-\textbf{Gevraagd:}
-De stuwkracht.
-
-\textbf{Oplossing:}
-Stuwkracht $F = \dot{m}(V_{uit} - V_{in})$.
-$F = 200 (600 - 250) = 200 \cdot 350 = 70.000 \, N = 70 \, kN$.
-
-\section{Interne en Externe Stroming}
-\subsection*{Belangrijke Formules}
-\begin{itemize}
-    \item \textbf{Reynoldsgetal:} $Re = \frac{\rho V D}{\mu} = \frac{V D}{\nu}$ \\
-    Bepaalt of een stroming laminair ($Re < 2300$) of turbulent ($Re > 4000$) is.
-    \item \textbf{Drukverlies (Darcy-Weisbach):} $\Delta P_L = f \frac{L}{D} \frac{\rho V^2}{2}$ \\
-    Berekent het drukverlies door wrijving in een buis.
-    \item \textbf{Wrijvingsfactor (Laminair):} $f = \frac{64}{Re}$ \\
-    Geldt voor volledig ontwikkelde laminaire stroming in een ronde buis.
-\end{itemize}
-
-\subsection{Opgave 1: Drukverlies in een Buis}
-\textbf{Gegeven:}
-Olie ($\rho = 900 \, kg/m^3, \nu = 10^{-4} \, m^2/s$) stroomt door een buis ($D=0,1 \, m, L=100 \, m$) met $V=2 \, m/s$.
-
-\textbf{Gevraagd:}
-Het drukverlies $\Delta P$.
-
-\textbf{Oplossing:}
-Reynoldsgetal: $Re = \frac{V D}{\nu} = \frac{2 \cdot 0,1}{10^{-4}} = 2000$.
-Dit is laminair ($Re \le 2300$).
-Wrijvingsfactor $f = \frac{64}{Re} = \frac{64}{2000} = 0,032$.
-Drukverlies (Darcy-Weisbach):
-\[ \Delta P = f \frac{L}{D} \frac{1}{2}\rho V^2 \]
-\[ \Delta P = 0,032 \cdot \frac{100}{0,1} \cdot \frac{1}{2} \cdot 900 \cdot 2^2 \]
-\[ \Delta P = 0,032 \cdot 1000 \cdot 1800 = 57.600 \, Pa = 57,6 \, kPa \]
-
-\subsection{Opgave 2: Dimensieanalyse (Weerstandskracht)}
-\textbf{Gegeven:}
-De weerstandskracht $F_D$ hangt af van snelheid $V$, diameter $D$, dichtheid $\rho$ en viscositeit $\mu$.
-
-\textbf{Gevraagd:}
-Leid de dimensieloze groepen af met Buckingham Pi.
-
-\textbf{Oplossing:}
-Variabelen: $F_D, V, D, \rho, \mu$ ($n=5$).
-Basisdimensies: $M, L, T$ ($j=3$).
-Aantal Pi-groepen: $k = 5 - 3 = 2$.
-Kies herhalende variabelen: $\rho, V, D$.
-$\Pi_1 = F_D \rho^a V^b D^c \Rightarrow \frac{F_D}{\rho V^2 D^2} = C_D$ (Weerstandscoëfficiënt).
-$\Pi_2 = \mu \rho^a V^b D^c \Rightarrow \frac{\mu}{\rho V D} = Re^{-1}$ (Reynoldsgetal).
-Functioneel verband: $C_D = f(Re)$.
-
-\chapter{Oefeningen: Warmte en Thermodynamica}
-
+\subsection{Oefenzitting 4: Tabellen en eenheden}
+\setcounter{opgave}{0}
 \section{Basisconcepten}
 \subsection*{Belangrijke Formules}
 \begin{itemize}
@@ -1166,31 +1088,9 @@ Functioneel verband: $C_D = f(Re)$.
     De zwaartekracht op een massa.
 \end{itemize}
 
-\subsection{Opgave 1: Massa en Volume (Plastic Tank)}
-\textbf{Gegeven:} Een plastic tank met een massa van $3 \, kg$ en een volume van $0,2 \, m^3$ wordt gevuld met water ($\rho = 1000 \, kg/m^3$).
 
-\textbf{Gevraagd:} De totale massa van de gevulde tank.
-
-\textbf{Oplossing:}
-De massa van het water is:
-\[ m_{water} = \rho \cdot V = 1000 \, kg/m^3 \cdot 0,2 \, m^3 = 200 \, kg \]
-De totale massa is:
-\[ m_{totaal} = m_{tank} + m_{water} = 3 \, kg + 200 \, kg = 203 \, kg \]
-
-\subsection{Opgave 2: Tweede Wet van Newton (Steen)}
-\textbf{Gegeven:} Een steen van $3 \, kg$ wordt omhoog geworpen met een kracht van $200 \, N$.
-
-\textbf{Gevraagd:} De netto versnelling van de steen.
-
-\textbf{Oplossing:}
-De zwaartekracht werkt tegen de werpkracht in:
-\[ F_{zwaarte} = m \cdot g = 3 \cdot 9,81 = 29,43 \, N \]
-De netto kracht is:
-\[ F_{netto} = F_{werp} - F_{zwaarte} = 200 - 29,43 = 170,57 \, N \]
-De versnelling is:
-\[ a = \frac{F_{netto}}{m} = \frac{170,57}{3} = 56,86 \, m/s^2 \]
-
-\section{Eerste Hoofdwet: Gesloten Systemen}
+\section{Oefenzitting 5: Gesloten systemen}
+\setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
 \begin{itemize}
     \item \textbf{Eerste Hoofdwet:} $Q - W = \Delta U$ \\
@@ -1201,7 +1101,7 @@ De versnelling is:
     Arbeid bij constante druk.
 \end{itemize}
 
-\subsection{Opgave 1: Zuiger-Cilinder}
+\opgave{Zuiger-Cilinder}
 \textbf{Gegeven:}
 Gas expandeert isobaar ($P=200 \, kPa$) van $V_1 = 0,1 \, m^3$ naar $V_2 = 0,3 \, m^3$. Er wordt $50 \, kJ$ warmte toegevoerd.
 
@@ -1214,7 +1114,8 @@ Eerste wet: $Q - W = \Delta U$.
 $50 \, kJ - 40 \, kJ = \Delta U$.
 $\Delta U = 10 \, kJ$.
 
-\section{Eerste Hoofdwet: Open Systemen}
+\section{Oefenzitting 6: Open systemen}
+\setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
 \begin{itemize}
     \item \textbf{Eerste Hoofdwet (Stationair):} $\dot{Q} - \dot{W} = \dot{m} \Delta (h + \frac{V^2}{2} + gz)$ \\
@@ -1227,7 +1128,7 @@ $\Delta U = 10 \, kJ$.
     Bekijk je tabellen voor specifieke waarden van $c_p$, $h$, T, $P$. Zorg dat je ziet wanneer je superheated, gesatureerd of vloeibaar hebt.
 \end{itemize}
 
-\subsection{Opgave 1: Compressor (Helium)}
+\opgave{Compressor (Helium)}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{assets/compressor_exercise.png}
@@ -1255,7 +1156,9 @@ Eerst het massadebiet omrekenen naar $kg/s$:
 \[ \dot{m} = 60 \, kg/min = \frac{60}{60} \, kg/s = 1 \, kg/s \]
 \[ \dot{W}_{in} = 1 \, kg/s \cdot 871,8 \, kJ/kg = 871,8 \, kW \]
 
-\subsection{Opgave 2: Stoomturbine}
+\section{Oefenzitting 7: Eerste hoofdwet cycli}
+\setcounter{opgave}{0}
+\opgave{Stoomturbine}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{assets/Turbine_oefening.png}
@@ -1287,7 +1190,7 @@ Invullen van de waarden (let op eenheden, $20 \, MW = 20.000 \, kW$):
 \[ \dot{Q}_{uit} = 26 \left( 786,8 \right) - 20.000 \]
 \[ \dot{Q}_{uit} = 20.456,8 - 20.000 = 456,8 \, kW \]
 
-\subsection{Opgave 3: Expansieventiel (Koelmiddel-134a)}
+\opgave{Expansieventiel (Koelmiddel-134a)}
 \textbf{Gegeven:}
 Koelmiddel-134a wordt gewurgd (throttled) van een verzadigde vloeistoftoestand bij $700 \, kPa$ naar een druk van $160 \, kPa$.
 
@@ -1319,7 +1222,8 @@ Specifiek volume $v_2$ (met $v_g$ bij $160 \, kPa$):
 Temperatuurdaling:
 \[ \Delta T = T_1 - T_2 = 26,69 - (-15,6) = 42,3^\circ C \]
 
-\section{Tweede Hoofdwet en Cycli}
+\section{Oefenzitting 8 : Entropie en tweede hoofdwet}
+\setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
 \begin{itemize}
     \item \textbf{Thermisch rendement:} $\eta_{th} = \frac{W_{netto}}{Q_{in}} = 1 - \frac{Q_{uit}}{Q_{in}}$ \\
@@ -1330,7 +1234,7 @@ Temperatuurdaling:
     Prestatiecoëfficiënt voor koeling.
 \end{itemize}
 
-\subsection{Opgave 1: Warmtepomp}
+\opgave{Warmtepomp}
 \textbf{Gegeven:}
 Een warmtepomp levert $10 \, kW$ warmte aan een huis ($20^\circ C$) en onttrekt warmte aan de buitenlucht ($0^\circ C$). De COP is $3,5$.
 
@@ -1341,6 +1245,142 @@ Het benodigde elektrische vermogen.
 $COP_{HP} = \frac{\dot{Q}_H}{\dot{W}_{in}}$.
 $3,5 = \frac{10 \, kW}{\dot{W}_{in}}$.
 $\dot{W}_{in} = \frac{10}{3,5} \approx 2,86 \, kW$.
+
+
+\section{Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Reynoldsgetal:} $Re = \frac{\rho V D}{\mu} = \frac{V D}{\nu}$ \\
+    Bepaalt of een stroming laminair ($Re < 2300$) of turbulent ($Re > 4000$) is.
+    \item \textbf{Drukverlies (Darcy-Weisbach):} $\Delta P_L = f \frac{L}{D} \frac{\rho V^2}{2}$ \\
+    Berekent het drukverlies door wrijving in een buis.
+    \item \textbf{Wrijvingsfactor (Laminair):} $f = \frac{64}{Re}$ \\
+    Geldt voor volledig ontwikkelde laminaire stroming in een ronde buis.
+\end{itemize}
+
+\opgave{Drukverlies in een Buis}
+\textbf{Gegeven:}
+Olie ($\rho = 900 \, kg/m^3, \nu = 10^{-4} \, m^2/s$) stroomt door een buis ($D=0,1 \, m, L=100 \, m$) met $V=2 \, m/s$.
+
+\textbf{Gevraagd:}
+Het drukverlies $\Delta P$.
+
+\textbf{Oplossing:}
+Reynoldsgetal: $Re = \frac{V D}{\nu} = \frac{2 \cdot 0,1}{10^{-4}} = 2000$.
+Dit is laminair ($Re \le 2300$).
+Wrijvingsfactor $f = \frac{64}{Re} = \frac{64}{2000} = 0,032$.
+Drukverlies (Darcy-Weisbach):
+\[ \Delta P = f \frac{L}{D} \frac{1}{2}\rho V^2 \]
+\[ \Delta P = 0,032 \cdot \frac{100}{0,1} \cdot \frac{1}{2} \cdot 900 \cdot 2^2 \]
+\[ \Delta P = 0,032 \cdot 1000 \cdot 1800 = 57.600 \, Pa = 57,6 \, kPa \]
+
+\section{Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}
+\setcounter{opgave}{0}
+\opgave{Olievat (leidingverlies)}
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
+        % Tank
+        \draw[thick] (0,0) ellipse (1.6 and 0.35);
+        \draw[thick] (-1.6,0) -- (-1.6,-2.8);
+        \draw[thick] (1.6,0) -- (1.6,-2.8);
+        \draw[thick] (0,-2.8) ellipse (1.6 and 0.35);
+        % Vloeistofniveau (stippellijn)
+        \draw[dashed] (-1.45,0.05) .. controls (-0.6,0.25) and (0.6,0.25) .. (1.45,0.05);
+        % Leiding
+        \draw[thick] (1.6,-2.1) -- (3.4,-2.1);
+        \draw[thick,->] (3.4,-2.1) -- (3.9,-2.1);
+        % Hoogtemaat 4 m
+        \draw[thin,<->] (2.7,0.0) -- (2.7,-2.1);
+        \node[right] at (2.75,-1.05) {$4\,m$};
+        % Diameter label
+        \node[below] at (2.4,-2.1) {$D=8\,mm$};
+        % Labels
+        \node at (0,-1.3) {Olievat};
+    \end{tikzpicture}
+    \caption{Figuur 12Olievat: afstroming uit een olievat via een lange dunne leiding.}
+\end{figure}
+
+    	extbf{Gegeven:}
+Olie met dichtheid $\rho = 850\,\mathrm{kg/m^3}$ en kinematische viscositeit $\nu = 0{,}00062\,\mathrm{m^2/s}$ stroomt uit een opslagtank (open naar de atmosfeer) via een horizontale buis met diameter $D=8\,\mathrm{mm}$ en lengte $L=40\,\mathrm{m}$. Het vloeistofniveau in de tank ligt $\Delta z = 4\,\mathrm{m}$ boven het buiscentrum. Kleine verliezen worden verwaarloosd.
+
+    	extbf{Gevraagd:}
+Het volumetrisch debiet $Q$ door de leiding.
+
+    	extbf{Oplossing:}
+We passen Bernoulli toe tussen het vrije vloeistofoppervlak (1) en de leiding-uitlaat (2).
+Omdat de tank open is geldt $p_1=p_2=p_{atm}$ en omdat de tank groot is nemen we $V_1\approx 0$.
+Met enkel leidingverlies (Darcy-Weisbach) volgt:
+\[
+\Delta z = \frac{V^2}{2g} + h_f,\qquad h_f = f\frac{L}{D}\frac{V^2}{2g}
+\]
+Dus:
+\[
+\Delta z = \left(1+ f\frac{L}{D}\right)\frac{V^2}{2g}
+\]
+
+Omdat $\nu$ zeer groot is, controleren we of de stroming laminair is. Voor laminaire stroming geldt:
+\[
+f = \frac{64}{Re},\qquad Re = \frac{VD}{\nu}
+\]
+Invullen van $f$ in $h_f$:
+\[
+h_f = \frac{64}{Re}\frac{L}{D}\frac{V^2}{2g}
+= \frac{64\nu}{VD}\frac{L}{D}\frac{V^2}{2g}
+= \frac{64\nu L}{D^2}\,\frac{V}{2g}
+\]
+De energievergelijking wordt dan lineair-kwadratisch in $V$:
+\[
+\Delta z = \frac{V^2}{2g} + \frac{64\nu L}{D^2}\,\frac{V}{2g}
+\]
+Vermenigvuldig met $2g$:
+\[
+2g\Delta z = V^2 + \left(\frac{64\nu L}{D^2}\right)V
+\]
+Met $g=9{,}81\,\mathrm{m/s^2}$, $\Delta z=4\,\mathrm{m}$, $\nu=0{,}00062\,\mathrm{m^2/s}$, $L=40\,\mathrm{m}$ en $D=0{,}008\,\mathrm{m}$:
+\[
+\frac{64\nu L}{D^2} = \frac{64\cdot 0{,}00062\cdot 40}{0{,}008^2} = 24800\,\mathrm{s^{-1}}
+\]
+Dus:
+\[
+78{,}48 = V^2 + 24800\,V
+\]
+Oplossen van de kwadratische vergelijking (positieve wortel):
+\[
+V = \frac{-24800 + \sqrt{24800^2 + 4\cdot 78{,}48}}{2} \approx 0{,}00316\,\mathrm{m/s}
+\]
+Reynoldsgetal:
+\[
+Re = \frac{VD}{\nu} = \frac{0{,}00316\cdot 0{,}008}{0{,}00062} \approx 0{,}041\ (<2300)\Rightarrow\ \text{laminair (aanname klopt).}
+\]
+Het debiet is $Q = AV$ met $A = \frac{\pi D^2}{4}$:
+\[
+A = \frac{\pi\,(0{,}008)^2}{4} = 5{,}03\times 10^{-5}\,\mathrm{m^2}
+\]
+\[
+Q = AV = 5{,}03\times 10^{-5}\cdot 0{,}00316 \approx 1{,}59\times 10^{-7}\,\mathrm{m^3/s}
+\]
+Of in liter per seconde:
+\[
+Q \approx 1{,}59\times 10^{-4}\,\mathrm{L/s}\ (\approx 0{,}159\,\mathrm{mL/s})
+\]
+
+\opgave{Dimensieanalyse (Weerstandskracht)}
+\textbf{Gegeven:}
+De weerstandskracht $F_D$ hangt af van snelheid $V$, diameter $D$, dichtheid $\rho$ en viscositeit $\mu$.
+
+\textbf{Gevraagd:}
+Leid de dimensieloze groepen af met Buckingham Pi.
+
+\textbf{Oplossing:}
+Variabelen: $F_D, V, D, \rho, \mu$ ($n=5$).
+Basisdimensies: $M, L, T$ ($j=3$).
+Aantal Pi-groepen: $k = 5 - 3 = 2$.
+Kies herhalende variabelen: $\rho, V, D$.
+$\Pi_1 = F_D \rho^a V^b D^c \Rightarrow \frac{F_D}{\rho V^2 D^2} = C_D$ (Weerstandscoëfficiënt).
+$\Pi_2 = \mu \rho^a V^b D^c \Rightarrow \frac{\mu}{\rho V D} = Re^{-1}$ (Reynoldsgetal).
+Functioneel verband: $C_D = f(Re)$.
 
 \chapter*{Conclusie}
 Dit document heeft de kernprincipes van warmte en stroming samengevat. Van de fundamentele wetten van thermodynamica die energiebehoud dicteren, tot de complexe bewegingsvergelijkingen van fluïda. Het correct toepassen van deze principes vereist inzicht in de aannames (zoals incompressibiliteit of reversibiliteit) en nauwkeurigheid in berekeningen. Met de aangereikte theorie en oefeningen bent u toegerust om thermische en fluïdumtechnische systemen te analyseren.
@@ -1370,7 +1410,6 @@ Mach & $Ma$ & $\frac{V}{c}$ & Snelheid / Geluidssnelheid (Compressibiliteitseffe
     \item Meerkeuzevragen Thermo, \url{https://drive.google.com/open?id=1lxMZjQMHufqMOW5fe86Rk0IvT8AmGgEeLlQJ5k5YsNs}
 \end{enumerate}
 
-\includepdf[pages=-]{Thermodynamic tables and properties.pdf}
-
+ \includepdf[pages=-]{Thermodynamic tables and properties.pdf}
 
 \end{document}
