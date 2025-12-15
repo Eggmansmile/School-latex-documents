@@ -69,15 +69,32 @@
 \contentsline {section}{\numberline {12.1}Conductie (Geleiding)}{52}{section.12.1}%
 \contentsline {section}{\numberline {12.2}Convectie}{52}{section.12.2}%
 \contentsline {section}{\numberline {12.3}Straling}{53}{section.12.3}%
-\contentsline {part}{III\hspace {1em}Oefeningen Warmte en Stromingen}{54}{part.3}%
-\contentsline {chapter}{\numberline {13}Oefeningen}{55}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Oefenzitting 1\&2: Hydrostatica}{55}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}{57}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Oefenzitting 4: Tabellen en eenheden}{58}{subsection.13.2.1}%
-\contentsline {section}{\numberline {13.3}Basisconcepten}{58}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Oefenzitting 5: Gesloten systemen}{58}{section.13.4}%
-\contentsline {section}{\numberline {13.5}Oefenzitting 6: Open systemen}{58}{section.13.5}%
-\contentsline {section}{\numberline {13.6}Oefenzitting 7: Eerste hoofdwet cycli}{60}{section.13.6}%
-\contentsline {section}{\numberline {13.7}Oefenzitting 8 : Entropie en tweede hoofdwet}{61}{section.13.7}%
-\contentsline {section}{\numberline {13.8}Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}{62}{section.13.8}%
-\contentsline {section}{\numberline {13.9}Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}{62}{section.13.9}%
+\contentsline {part}{III\hspace {1em}Oefeningen}{54}{part.3}%
+\contentsline {chapter}{\numberline {13}Oefeningen: Stromingen}{55}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Basisconcepten en Hydrostatica}{55}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}Opgave 1: Manometer en Drukverschil}{55}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Opgave 2: Kracht op een Ondergedompeld Luik}{55}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.1.3}Opgave 3: Hydrostatische Druk (Duikboot)}{56}{subsection.13.1.3}%
+\contentsline {subsection}{\numberline {13.1.4}Opgave 4: Druk door Gewicht (Vrouw op Hakken)}{56}{subsection.13.1.4}%
+\contentsline {section}{\numberline {13.2}Drijfvermogen en Stabiliteit}{56}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Opgave 1: Drijvend IJsblok}{57}{subsection.13.2.1}%
+\contentsline {section}{\numberline {13.3}Bernoulli en Energievergelijking}{57}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Opgave 1: Venturi-meter}{57}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Impulsbehoud}{57}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Opgave 1: Kracht op een Bocht}{58}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Opgave 2: Straaljager}{58}{subsection.13.4.2}%
+\contentsline {section}{\numberline {13.5}Interne en Externe Stroming}{58}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Opgave 1: Drukverlies in een Buis}{58}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Opgave 2: Dimensieanalyse (Weerstandskracht)}{59}{subsection.13.5.2}%
+\contentsline {chapter}{\numberline {14}Oefeningen: Warmte en Thermodynamica}{60}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Basisconcepten}{60}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}Opgave 1: Massa en Volume (Plastic Tank)}{60}{subsection.14.1.1}%
+\contentsline {subsection}{\numberline {14.1.2}Opgave 2: Tweede Wet van Newton (Steen)}{60}{subsection.14.1.2}%
+\contentsline {section}{\numberline {14.2}Eerste Hoofdwet: Gesloten Systemen}{61}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Opgave 1: Zuiger-Cilinder}{61}{subsection.14.2.1}%
+\contentsline {section}{\numberline {14.3}Eerste Hoofdwet: Open Systemen}{61}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Opgave 1: Compressor (Helium)}{62}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Opgave 2: Stoomturbine}{63}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Opgave 3: Expansieventiel (Koelmiddel-134a)}{64}{subsection.14.3.3}%
+\contentsline {section}{\numberline {14.4}Tweede Hoofdwet en Cycli}{64}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}Opgave 1: Warmtepomp}{64}{subsection.14.4.1}%

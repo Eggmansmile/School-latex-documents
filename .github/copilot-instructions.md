@@ -31,5 +31,3 @@ The exercises are stated earlier; worked solutions are under `\section{Oplossing
 When adding/editing solutions:
 - Show **concrete intermediate steps**, not only the final result.
 - Prefer `\begin{enumerate}[label=(\alph*)]` for subquestions and `itemize` for short reasoning checks.
-
-in the folder you're working check for a txt file named Links with usefull links to websites that can help you with the exercises or theory.
