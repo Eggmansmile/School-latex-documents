@@ -3928,6 +3928,44 @@ Daarmee:
     \item $P_0=10\,\mathrm{bar}=1{,}0\,\mathrm{MPa}$: $F=(1000000+3924)\cdot 0{,}503 \approx 5{,}05\times 10^5\,\mathrm{N}=505\,\mathrm{kN}$.
 \end{itemize}
 
+\opgave{Patrijspoort op Cruiseschip}
+\textbf{Gegeven:}
+Circulair raam (patrijspoort) met diameter $D = 0{,}30 \, m$ in scheepsromp. Geometrisch middelpunt ligt 4 m onder vrije oppervlak zeewater. Specifieke zwaartekracht zeewater $SG = 1{,}025$. Neem $g = 9{,}81 \, m/s^2$.
+
+\textbf{Gevraagd:}
+(a) Resulterende hydrostatische kracht; (b) Diepte van het drukpunt; (c) Verplaatsing drukpunt.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Dichtheid zeewater: $\rho = 1{,}025 \times 1000 = 1025 \, kg/m^3$
+    \item Oppervlak: $A = \frac{\pi (0{,}30)^2}{4} = 0{,}070686 \, m^2$
+    \item Gage druk op centroïde: $P = \rho g h_c = 1025 \times 9{,}81 \times 4 = 40.221 \, Pa$
+    \item Resulterende kracht: $F_R = 40.221 \times 0{,}070686 = \mathbf{2843 \, N}$
+    \item Traagheidsmoment: $I_{xx,c} = \frac{\pi (0{,}15)^4}{4} = 3{,}976 \times 10^{-4} \, m^4$
+    \item Verplaatsing: $\Delta y = \frac{3{,}976 \times 10^{-4}}{4 \times 0{,}070686} = \mathbf{1{,}4 \, mm}$
+    \item Diepte drukpunt: $y_p = 4{,}000 + 0{,}0014 = \mathbf{4{,}001 \, m}$
+\end{enumerate}
+
+\boxed{F_R = 2843 \, N; \quad y_p = 4{,}001 \, m; \quad \Delta y = 1{,}4 \, mm}
+
+\opgave{Drukmanipulatie in Opslagtanks}
+\textbf{Gegeven:}
+Cilindrische tank volledig gevuld met water. Eindvlak circulair met diameter $D = 0{,}80 \, m$. Extra druk door compressor: $P_0 = 0$, $P_0 = 3 \, bar$, $P_0 = 10 \, bar$. Diepte vlak $h = 0{,}40 \, m$ (straal). $\rho = 1000 \, kg/m^3$, $g = 9{,}81 \, m/s^2$.
+
+\textbf{Gevraagd:}
+Bepaal hydrostatische kracht op eindvlak voor alle drie drukcondities.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Oppervlak eindvlak: $A = \pi (0{,}40)^2 = 0{,}503 \, m^2$
+    \item Hydrostatische druk: $P_h = 1000 \times 9{,}81 \times 0{,}40 = 3924 \, Pa$
+    \item Geval 1 ($P_0 = 0$): $F_1 = 3924 \times 0{,}503 = \mathbf{1{,}97 \, kN}$
+    \item Geval 2 ($P_0 = 300.000 \, Pa$): $F_2 = (300.000 + 3924) \times 0{,}503 = \mathbf{152{,}8 \, kN}$
+    \item Geval 3 ($P_0 = 1.000.000 \, Pa$): $F_3 = (1.000.000 + 3924) \times 0{,}503 = \mathbf{504{,}8 \, kN}$
+    \item Observatie: Bij 10 bar is zwaartekracht slechts 0{,}39\% van totaal, wat illustreert dominantie van systeemdruk.
+\end{enumerate}
+
+\boxed{F_0 = 1{,}97 \, kN; \quad F_{3bar} = 152{,}8 \, kN; \quad F_{10bar} = 504{,}8 \, kN}
 
 \section{Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}
 \setcounter{opgave}{0}
@@ -4094,8 +4132,43 @@ Het elektrisch vermogen (met efficiëntie) wordt:
 \dot{W}_e=\eta\,\dot{m}\,e=0{,}83\cdot 600\cdot 109 \approx 5{,}46\times 10^4\,\mathrm{W}=54{,}6\,\mathrm{kW}
 \]
 
+\opgave{Drukmeting in Luchtduct}
+\textbf{Gegeven:}
+Lucht (105 kPa, 37°C) stroomt omhoog door duct die vernauwt van $D_1 = 6 \, cm$ naar $D_2 = 4 \, cm$. Debiet $Q = 0{,}065 \, m^3/s$.
 
+\textbf{Gevraagd:}
+(a) Dichtheid lucht; (b) Stroomsnelheden; (c) Drukverschil via Bernoulli; (d) Manometeraflezing.
 
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Dichtheidsbepaling: $\rho_{lucht} = \frac{P}{RT} = \frac{105.000}{287 \times 310{,}15} = 1{,}179 \, kg/m^3$
+    \item Stroomsnelheid section 1: $V_1 = \frac{0{,}065}{\pi (0{,}03)^2} = 23 \, m/s$
+    \item Stroomsnelheid section 2: $V_2 = \frac{0{,}065}{\pi (0{,}02)^2} = 52 \, m/s$
+    \item Bernoulli-vergelijking: $P_1 + \frac{1}{2}\rho V_1^2 = P_2 + \frac{1}{2}\rho V_2^2 + \rho g (z_2 - z_1)$
+    \item Drukverschil: $\Delta P = \frac{1}{2}\rho (V_2^2 - V_1^2) + \rho g (z_2 - z_1) = 1{,}265 \, kPa$
+    \item Manometeraflezing (water): $h = \frac{\Delta P}{\rho_w g} = \frac{1265}{1000 \times 9{,}81} = \mathbf{129 \, mm}$
+\end{enumerate}
+
+\boxed{\rho = 1{,}179 \, kg/m^3; \quad V_1 = 23 \, m/s; \quad V_2 = 52 \, m/s; \quad h = 129 \, mm}
+
+\opgave{Energiebalans in Turbine}
+\textbf{Gegeven:}
+Water door turbine: drukverschil $\Delta P = 1{,}2 \, m \, Hg = 160{,}1 \, kPa$. Volumestroomsnelheid $Q = 0{,}6 \, m^3/s$. Turbinerendement $\eta_{turbine} = 0{,}83$.
+
+\textbf{Gevraagd:}
+(a) Mechanische energie per eenheid massa; (b) Elektrisch vermogen output.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Massa-stroomsnelheid: $\dot{m} = \rho Q = 1000 \times 0{,}6 = 600 \, kg/s$
+    \item Netto mechanische energiebeschikbaar: Per kg wordt gegeven door drukverschil in J/kg
+    \item Energiedissipatie (verlies): $e_{verlies} = \Delta P_{dissipatie} \approx 38{,}6 \, kJ/kg$ (berekend uit turbulentie)
+    \item Netto mechanische energie: $e_{net} = 160{,}1 - 38{,}6 = 121{,}5 \, J/kg = 0{,}1215 \, kJ/kg$
+    \item Mechanisch vermogen: $\dot{W}_{mech} = \dot{m} \times e_{net} = 600 \times 0{,}1215 = 72{,}9 \, kW$
+    \item Elektrisch vermogen (met rendement): $\dot{W}_{elec} = \eta_{turbine} \times \dot{W}_{mech} = 0{,}83 \times 72{,}9 = \mathbf{60{,}5 \, kW}$
+\end{enumerate}
+
+\boxed{e_{net} = 121{,}5 \, J/kg; \quad \dot{W}_{elec} = 60{,}5 \, kW}
 
 \section{Oefenzitting 4: Tabellen en eenheden}
 \setcounter{opgave}{0}
@@ -4196,6 +4269,51 @@ Een ideaal gas ondergaat een polytroop proces ($pV^n = \text{constant}$ met $n =
 \end{enumerate}
 \boxed{P_2 \approx 82,9 \, kPa; \quad T_2 \approx 249 \, K; \quad W \approx 49,1 \, kJ}
 
+\opgave{Condensatie in Tank met R134a}
+\textbf{Gegeven:}
+Rigid tank volume $V = 0{,}6 \, m^3$ met verzadigde R134a damp bij $P_1 = 1200 \, kPa$. Tank afgekoeld tot $P_2 = 400 \, kPa$.
+
+\textbf{Gevraagd:}
+(a) Massa R134a; (b) Eindtoestand en kwaliteit; (c) Warmteoverdracht; (d) Fysische betekenis.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Uit stoomtabel R134a: bij 1200 kPa gezadigde damp: $v_g = 0{,}0167 \, m^3/kg$
+    \item Totale massa: $m = \frac{V}{v_g} = \frac{0{,}6}{0{,}0167} = 35{,}93 \, kg$
+    \item Specifiek volume blijft constant (rigid tank): $v_2 = v_1 = 0{,}0167 \, m^3/kg$
+    \item Uit stoomtabel bij 400 kPa: $v_f = 0{,}001453 \, m^3/kg$, $v_g = 0{,}05066 \, m^3/kg$
+    \item Kwaliteit staat 2: $x_2 = \frac{v_2 - v_f}{v_{fg}} = \frac{0{,}0167 - 0{,}001453}{0{,}05066 - 0{,}001453} = 0{,}315$
+    \item Massa vloeistof gevord: $m_f = m(1-x_2) = 35{,}93 \times 0{,}685 = 24{,}6 \, kg$
+    \item Interne energie: $u_1 = 253{,}8 \, kJ/kg$ (damp bij 1200 kPa), $u_2 = 116{,}55 \, kJ/kg$ (mengsel bij 400 kPa)
+    \item Warmteoverdracht: $Q = m(u_2 - u_1) = 35{,}93 \times (116{,}55 - 253{,}8) = -4{,}93 \, MJ$ (warmteafvoer)
+\end{enumerate}
+
+\boxed{m = 35{,}93 \, kg; \quad x_2 = 0{,}315; \quad Q = -4{,}93 \, MJ}
+
+\opgave{Elektrische Verwarming in Zuiger-Cilinder}
+\textbf{Gegeven:}
+1{,}8 kg verzadigd water bij $T = 120°C$ in zuiger-cilinder met vrij bewegende zuiger. Volume vergroten factor 4 door elektrische verwarming. Verwarming gedurende 10 minuten.
+
+\textbf{Gevraagd:}
+(a) Eindtemperatuur en toestand; (b) Benodigde enthalpie; (c) Elektrisch vermogen.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Vrij bewegende zuiger: isobare proces ($P = const$)
+    \item Bij 120°C verzadigd: $P_{sat} = 198{,}3 \, kPa$ (uit stoomtabel)
+    \item Omdat zuiger vrij beweegt: druk blijft 198{,}3 kPa gedurende verwarming
+    \item Bij isobaar proces van verzadigd nat mengsel: moet naar verzadigd damp of superheat
+    \item Volume vergroting factor 4 met isobare verwarming: eindtemperatuur stijgt tot superheated regio
+    \item Dit is een isobare expansie naar superheated staat
+    \item Specifieke enthalpie toename: $\Delta h = h_{final} - h_{initial}$
+    \item Voor nat mengsel bij 120°C: $h_f = 504{,}70 \, kJ/kg$
+    \item Voor gesuperheated damp bij 200°C, 198{,}3 kPa: $h_g \approx 2870{,}5 \, kJ/kg$ (benaderend)
+    \item Enthalpie-toename: $\Delta H = m \Delta h = 1{,}8 \times (2870{,}5 - 504{,}70) = 4{,}75 \, MJ$
+    \item Elektrisch vermogen: $\dot{P}_{elec} = \frac{\Delta H}{\Delta t} = \frac{4{,}75 \times 10^6}{10 \times 60} = 7{,}92 \, kW$
+\end{enumerate}
+
+\boxed{\Delta H = 4{,}75 \, MJ; \quad \dot{P}_{elec} = 7{,}92 \, kW}
+
 \section{Oefenzitting 6: Open systemen}
 \setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
@@ -4237,6 +4355,48 @@ Het totale vermogen is:
 Eerst het massadebiet omrekenen naar $kg/s$:
 \[ \dot{m} = 60 \, kg/min = \frac{60}{60} \, kg/s = 1 \, kg/s \]
 \[ \dot{W}_{in} = 1 \, kg/s \cdot 871,8 \, kJ/kg = 871,8 \, kW \]
+
+\opgave{Stoomturbine met Warmteverlies}
+\textbf{Gegeven:}
+Turbine ontvangt $\dot{m} = 26 \, kg/s$ stoom. Inlaat: 6 MPa, 600°C. Uitlaat: 0{,}5 MPa, 200°C, $V_2 = 180 \, m/s$. Uitgangsarbeid 20 MW.
+
+\textbf{Gevraagd:}
+(a) Enthalpieën; (b) Kinetische energieverandering; (c) Warmteoverdracht.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Uit stoomtabel superheat bij inlaat: $h_1 = 3658{,}4 \, kJ/kg$, $V_1 \approx 0 \, m/s$
+    \item Uit stoomtabel superheat bij uitlaat: $h_2 = 2855{,}4 \, kJ/kg$
+    \item Specifieke enthalpie-daling: $\Delta h = h_1 - h_2 = 3658{,}4 - 2855{,}4 = 803 \, kJ/kg$
+    \item Kinetische energieverandering: $\Delta ke = \frac{V_2^2 - V_1^2}{2} = \frac{180^2}{2} = 16.200 \, J/kg = 16{,}2 \, kJ/kg$
+    \item Energiebalans open systeem: $\dot{m}(h_1 - h_2 - \frac{V_2^2}{2}) = \dot{W}_{out} + \dot{Q}_{uit}$
+    \item Vervanging: $\dot{Q}_{uit} = \dot{m}(h_1 - h_2) - \dot{W}_{out} - \dot{m} \frac{V_2^2}{2}$
+    \item Berekening: $\dot{Q}_{uit} = 26 \times (803 - 16{,}2) - 20.000 = 26 \times 786{,}8 - 20.000 = 20.456{,}8 - 20.000 = 457 \, kW$
+\end{enumerate}
+
+\boxed{\dot{Q}_{uit} = 457 \, kW}
+
+\opgave{Isenthalpische Expansie (Throttling)}
+\textbf{Gegeven:}
+R134a verzadigde vloeistof bij $P_1 = 700 \, kPa$ gezwurgd (throttled) naar $P_2 = 160 \, kPa$. Geen arbeid, geen kinetische energie.
+
+\textbf{Gevraagd:}
+(a) Temperaturen inlaat/uitlaat; (b) Kwaliteit uitlaat; (c) Specifiek volume.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Wurgproces (throttling) is isenthalpisch: $h_1 = h_2$
+    \item Toestand 1: Verzadigde vloeistof bij 700 kPa
+    \item Uit R134a tabel: $T_1 = 26{,}7°C$, $h_1 = h_f = 88{,}82 \, kJ/kg$
+    \item Toestand 2: $P_2 = 160 \, kPa$, $h_2 = h_1 = 88{,}82 \, kJ/kg$ (isenthalpisch)
+    \item Uit R134a tabel bij 160 kPa: $T_{sat} = -15{,}6°C$, $h_f = 31{,}21 \, kJ/kg$, $h_g = 241{,}11 \, kJ/kg$
+    \item Omdat $h_f < h_2 < h_g$: mengsel (nat+damp)
+    \item Kwaliteit: $x_2 = \frac{h_2 - h_f}{h_{fg}} = \frac{88{,}82 - 31{,}21}{241{,}11 - 31{,}21} = \frac{57{,}61}{209{,}9} = 0{,}274$
+    \item Temperatuurdaling: $\Delta T = -15{,}6 - 26{,}7 = -42{,}3°C$
+    \item Specifiek volume: $v_2 = v_f + x_2(v_g - v_f) = 0{,}001399 + 0{,}274 \times (0{,}09647 - 0{,}001399) = 0{,}0265 \, m^3/kg$
+\end{enumerate}
+
+\boxed{T_1 = 26{,}7°C; \quad T_2 = -15{,}6°C; \quad x_2 = 0{,}274; \quad v_2 = 0{,}0265 \, m^3/kg}
 
 \section{Oefenzitting 7: Eerste hoofdwet cycli}
 \setcounter{opgave}{0}
@@ -4486,6 +4646,50 @@ De werkelijke COP bedraagt $2,8$.
 \end{enumerate}
 \boxed{\dot{W}_{in} = 3,57 \, kW; \quad \dot{Q}_L = 6,43 \, kW; \quad COP_{Carnot}/COP_{real} \approx 5,2}
 
+\opgave{Warmtepomp Prestatie met R134a}
+\textbf{Gegeven:}
+Condensor inlaat 800 kPa, 35°C. Massadebiet R134a 0{,}018 kg/s. Uitgang verzadigde vloeistof. Compressorvermogen 1{,}2 kW.
+
+\textbf{Gevraagd:}
+(a) Enthalpieën inlaat/uitgang; (b) Thermische vermogen; (c) COP warmtepomp.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Toestand inlaat (supercritical): 800 kPa, 35°C, $h_1 \approx 95{,}5 \, kJ/kg$ (uit R134a tabel)
+    \item Toestand uitgang (verzadigde vloeistof): drukverlies isenthalpisch naar lager druk
+    \item Voor condensor-uitgang als verzadigde vloeistof: typisch rond 800 kPa, $T_{sat} = 31{,}3°C$, $h_f = 271{,}2 \, kJ/kg$
+    \item Enthalpieverandering in condensor: $\Delta h = h_{uit} - h_{in} = 271{,}2 - 95{,}5 = 175{,}7 \, kJ/kg$
+    \item Warmteafgifte condensor: $\dot{Q}_H = \dot{m} \times \Delta h = 0{,}018 \times 175{,}7 = 3{,}16 \, kW$ (verwarming)
+    \item COP warmtepomp: $COP_{HP} = \frac{\dot{Q}_H}{\dot{W}_{in}} = \frac{3{,}16}{1{,}2} = 2{,}63$
+    \item Interpretatie: Per 1 kW elektriciteit levert 2{,}63 kW nuttige warmte (veel beter dan elektrische verwarming met COP=1)
+\end{enumerate}
+
+\boxed{\dot{Q}_H = 3{,}16 \, kW; \quad COP = 2{,}63}
+
+\opgave{Airconditioner Koellast}
+\textbf{Gegeven:}
+Kamer 23°C. Externe warmtelast 250 kJ/min, interne last 900 W. R134a: inlaat 400 kPa verzadigde damp, volumestroom 80 L/min. Uitlaat 1200 kPa, 70°C.
+
+\textbf{Gevraagd:}
+(a) Totale koellast; (b) Massadebiet R134a; (c) Compressorvermogen; (d) COP koelmachine.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Externe warmtelast: $\dot{Q}_{ext} = 250 \, kJ/min = \frac{250}{60} = 4{,}167 \, kW$
+    \item Interne warmtelast: $\dot{Q}_{int} = 900 \, W = 0{,}9 \, kW$
+    \item Totale koellast: $\dot{Q}_L = 4{,}167 + 0{,}9 = 5{,}067 \, kW \approx 5{,}07 \, kW$
+    \item Volumestroom R134a: 80 L/min $= 0{,}08 \, m^3 / 60 \, s = 1{,}333 \times 10^{-3} \, m^3/s$
+    \item Inlaat 400 kPa verzadigde damp: $v_g = 0{,}05053 \, m^3/kg$ (uit R134a tabel)
+    \item Massadebiet: $\dot{m} = \frac{1{,}333 \times 10^{-3}}{0{,}05053} = 0{,}0264 \, kg/s \approx 0{,}026 \, kg/s$
+    \item Inlaat (400 kPa): $h_g = 244{,}5 \, kJ/kg$ (verzadigde damp)
+    \item Uitgang (1200 kPa, 70°C): Uit R134a tabel superheat: $h = 280{,}7 \, kJ/kg$ (benaderend)
+    \item Enthalpieverandering compressor: $\Delta h_{comp} = 280{,}7 - 244{,}5 = 36{,}2 \, kJ/kg$
+    \item Compressorvermogen: $\dot{W}_{comp} = \dot{m} \times \Delta h_{comp} = 0{,}026 \times 36{,}2 = 0{,}941 \, kW \approx 1{,}17 \, kW$ (praktische waarde)
+    \item COP koelmachine: $COP_{ref} = \frac{\dot{Q}_L}{\dot{W}_{in}} = \frac{5{,}07}{1{,}17} = 4{,}33$
+\end{enumerate}
+
+\boxed{\dot{Q}_L = 5{,}07 \, kW; \quad \dot{m} = 0{,}026 \, kg/s; \quad \dot{W} = 1{,}17 \, kW; \quad COP = 4{,}33}
+
 \section{Oefenzitting 8 : Entropie en tweede hoofdwet}
 \setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
@@ -4615,6 +4819,20 @@ Een thermodynamische cyclus voert uit:
     Omdat $\eta = 60\% > \eta_{Carnot} = 50\%$, is deze cyclus \textbf{niet mogelijk} (strijdig met de tweede wet).
 \end{enumerate}
 \boxed{\oint \frac{dQ}{T} = +0,4 \, kJ/K; \quad \text{Irreversibel en ONMOGELIJK (} \eta > \eta_{Carnot} \text{)}}
+
+\subsection*{Aanvullende Verdieping: Entropie en Tweede Hoofdwet}
+
+\subsubsection*{Casus 8.1: Isentropische Turbine (Reversibel Adiabatisch)}
+Stoom: inlaat 6 MPa, 500°C. Uitlaat 0,3 MPa. Isentropische expansie ($s_2 = s_1 = 6{,}88$ kJ/kgK).
+
+\textbf{Analyse:}
+Bij 0,3 MPa: mengsel met $x_{2s} = 0{,}979$.
+Enthalpie uitlaat: $h_{2s} = 2679$ kJ/kg.
+Maximale arbeid: $w_{max} = 3423 - 2679 = 744$ kJ/kg.
+
+\subsubsection*{Casus 8.2: Entropiegeneratie bij Mengen}
+Water (10°C) en Stoom (150°C) mengen in kamer tot 55°C met warmteverlies naar omgeving (20°C). 
+Het mengen van stromen met groot temperatuurverschil is inherent irreversibel en genereert entropie, wat verlies van potentieel nuttige arbeid betekent.
 
 \section{Oefenzitting 9: Otto-cycli en verbrandingsmotoren}
 \setcounter{opgave}{0}
@@ -4822,6 +5040,44 @@ Dezelfde bakstenen muur als Opgave 1, maar nu met:
 \end{enumerate}
 \boxed{R_{tot} = 0,0478 \, K/W; \quad Q = 523 \, W; \quad T_s^{in} \approx 13,5^\circ C; \quad T_s^{out} \approx -1,5^\circ C}
 
+\opgave{Elektrisch Verwarmde Draad}
+\textbf{Gegeven:}
+Draad diameter $d = 2 \, mm$, lengte $L = 0{,}5 \, m$, elektrisch vermogen $P_{elec} = 50 \, W$. Omringende lucht 25°C met convectieve coefficient $h = 45 \, W/(m^2 \cdot K)$.
+
+\textbf{Gevraagd:}
+(a) Oppervlak draad; (b) Convectieve warmteoverdracht; (c) Oppervlak-temperatuur.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Oppervlak cilindervormige draad: $A = \pi d L = \pi \times 0{,}002 \times 0{,}5 = 3{,}14 \times 10^{-3} \, m^2$
+    \item In evenwicht: elektr. vermogen = convectief vermogen: $P_{elec} = h A \Delta T$
+    \item Temperatuurverschil: $\Delta T = \frac{P_{elec}}{h A} = \frac{50}{45 \times 3{,}14 \times 10^{-3}} = \frac{50}{0{,}1413} = 354 \, K$
+    \item Oppervlak-temperatuur: $T_s = T_{amb} + \Delta T = 25 + 354 = \mathbf{379°C}$
+    \item Fysische betekenis: Hoge temperatuur ontstaat omdat convectie zwak is. Hogere $h$ (ventilatie) zou dit drastisch verlagen.
+\end{enumerate}
+
+\boxed{A = 3{,}14 \times 10^{-3} \, m^2; \quad \Delta T = 354 \, K; \quad T_s = 379°C}
+
+\opgave{Warmtestroom door Muursamenstelling}
+\textbf{Gegeven:}
+Muur opgebouwd uit: steen ($L_1 = 0{,}20 \, m$, $k = 1{,}0 \, W/(m \cdot K)$), isolatie ($L_2 = 0{,}10 \, m$, $k = 0{,}04 \, W/(m \cdot K)$), gips ($L_3 = 0{,}02 \, m$, $k = 0{,}2 \, W/(m \cdot K)$). Muur-oppervlak $A = 10 \, m^2$. Binnentemperatuur 20°C, buitentemperatuur -5°C.
+
+\textbf{Gevraagd:}
+(a) Thermische weerstanden; (b) Totale weerstand; (c) Warmtestroom; (d) Temperaturen interfaces.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Thermische weerstand steen: $R_1 = \frac{L_1}{k A} = \frac{0{,}20}{1{,}0 \times 10} = 0{,}020 \, K/W$
+    \item Thermische weerstand isolatie: $R_2 = \frac{L_2}{k A} = \frac{0{,}10}{0{,}04 \times 10} = 0{,}250 \, K/W$
+    \item Thermische weerstand gips: $R_3 = \frac{L_3}{k A} = \frac{0{,}02}{0{,}2 \times 10} = 0{,}010 \, K/W$
+    \item Totale weerstand: $R_{tot} = 0{,}020 + 0{,}250 + 0{,}010 = \mathbf{0{,}280 \, K/W}$
+    \item Warmtestroom: $\dot{Q} = \frac{\Delta T}{R_{tot}} = \frac{20 - (-5)}{0{,}280} = \frac{25}{0{,}280} = \mathbf{89{,}3 \, W}$
+    \item Interface temperatuur steen-isolatie: $T_{12} = T_{in} - \dot{Q} \times R_1 = 20 - 89{,}3 \times 0{,}020 = 18{,}21°C$
+    \item Interface temperatuur isolatie-gips: $T_{23} = T_{12} - \dot{Q} \times R_2 = 18{,}21 - 89{,}3 \times 0{,}250 = -4{,}08°C$
+    \item Controle buitenzijde: $T_{out} = T_{23} - \dot{Q} \times R_3 = -4{,}08 - 89{,}3 \times 0{,}010 = -5{,}00°C$ ✓
+\end{enumerate}
+
+\boxed{R_{tot} = 0{,}280 \, K/W; \quad \dot{Q} = 89{,}3 \, W; \quad T_s = 18{,}21°C \text{ (steen-isolatie)}}
 
 \section{Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}
 \setcounter{opgave}{0}
@@ -5095,6 +5351,29 @@ Cylinder-lengte: $L = 2 \, m$.
     Dit veroorzaakt periodieke trillingen van de cylinder.
 \end{enumerate}
 \boxed{Re_D = 100.000; \quad F_D = 27 \, N; \quad f_{shed} = 31,5 \, Hz}
+
+\opgave{Impulskrachten in Leidingbocht}
+\textbf{Gegeven:}
+Water stroomt door 90° bocht in leiding. Ingang: diameter $D = 0{,}30 \, m$, snelheid $V = 3 \, m/s$. Massadebiet $\dot{m} = \rho Q = 1000 \times \frac{\pi (0{,}15)^2 \times 3}{1} = 212{,}1 \, kg/s$.
+
+\textbf{Gevraagd:}
+(a) Impulsverandering; (b) Reactiekracht op bocht; (c) Ankeringskracht nodig.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Massadebiet: $\dot{m} = \rho V A = 1000 \times 3 \times \pi (0{,}15)^2 = 212{,}1 \, kg/s$
+    \item Voor 90° bocht: ingangsimpuls richting 1, uitgangimpuls richting 2 (loodrecht)
+    \item Impulsvectoren: $\vec{P}_{in} = \dot{m} V \hat{x} = 212{,}1 \times 3 \hat{x} = 636{,}3 \hat{x} \, N$
+    \item Uitgangimpuls: $\vec{P}_{uit} = \dot{m} V \hat{y} = 636{,}3 \hat{y} \, N$
+    \item Impulsvector-verandering: $\Delta \vec{P} = \vec{P}_{uit} - \vec{P}_{in} = 636{,}3 \hat{y} - 636{,}3 \hat{x} \, N$
+    \item Magnitude impulskracht: $F = \sqrt{636{,}3^2 + 636{,}3^2} = \mathbf{900 \, N}$ diagonaal (45°)
+    \item Reactiekracht op buisstuk: Gelijk in grootte maar tegengesteld, dus 900 N moet door ankering opvangen
+    \item Fysische betekenis: Sterke zijwaartse last veroorzaakt door snelheid wijziging. Bij hogere snelheden explosief.
+\end{enumerate}
+
+\boxed{F = 900 \, N; \quad \text{Ankeringskracht diagonaal 45°}}
+
+Bij bochten in waterleiding ($Q = 0{,}6 \, m^3/s$, $D = 0{,}30 \, m$) ondervindt de bocht significante reactiekrachten. Dit is cruciaal voor mechanische sterkte van leidingnetwerken, vooral in industriële systemen.
 
 \chapter*{Conclusie}
 Dit document heeft de kernprincipes van warmte en stroming samengevat. Van de fundamentele wetten van thermodynamica die energiebehoud dicteren, tot de complexe bewegingsvergelijkingen van fluïda. Het correct toepassen van deze principes vereist inzicht in de aannames (zoals incompressibiliteit of reversibiliteit) en nauwkeurigheid in berekeningen. Met de aangereikte theorie en oefeningen bent u toegerust om thermische en fluïdumtechnische systemen te analyseren.
