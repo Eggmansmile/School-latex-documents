@@ -1,0 +1,113 @@
+\babel@toc {nil}{}\relax 
+\contentsline {chapter}{Formularium}{7}{chapter*.2}%
+\contentsline {part}{I\hspace {1em}Stromingen}{10}{part.1}%
+\contentsline {chapter}{\numberline {1}Fluïdumstatica (Hydrostatica)}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Drukverdeling in een Fluïdum in Rust}{11}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Het Infinitesimale Controle Volume}{11}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Identificatie van Krachten}{11}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Krachtenevenwicht}{12}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Integratie}{13}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Krachten op Onderdompelde Oppervlakken}{14}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Rechthoekig Oppervlak - Basisprobleem}{14}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Schuin Rechthoekig Oppervlak onder Hoek $\theta $}{15}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Algemene Formules}{15}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}De Methode van het Drukprisma}{15}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Krachten op Gekromde Oppervlakken}{16}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Horizontale Component ($F_H$)}{16}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Verticale Component ($F_V$)}{16}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Resultante}{16}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Archimedes' kracht en Drijfvermogen}{17}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Kinematica van Stromingen}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Euleriaanse Beschrijving}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Materiële Afgeleide}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Reynolds Transport Stelling (RTT)}{20}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Fluïdumdynamica: De Bewegingsvergelijkingen}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Behoudswetten en Control Volume Analyse}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Continuïteitsvergelijking (Massabehoud)}{21}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Impulsbehoud (Momentumvergelijking)}{22}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Afleiding van de Wet van Bernoulli}{22}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Afleiding via Euler Vergelijking}{22}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Projectie op een Stroomlijn}{23}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Beperkingen van Bernoulli}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Interpretatie van de Termen}{24}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}De Algemene Energievergelijking}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Correctiefactoren voor Profielen}{25}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Differentiële Analyse van Fluïdumstroming}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Afleiding van de Navier-Stokes Vergelijkingen}{26}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Newton's Tweede Wet voor een Fluïdumdeeltje}{26}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Krachtenbalans}{26}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}De Navier-Stokes Vergelijking}{26}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Stappenplan voor Vereenvoudiging ("Exacte Oplossingen")}{27}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Oplossing: Stroming tussen Parallelle Platen (Poiseuille)}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Wet van Poiseuille voor Cilindrische Buis}{29}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Interne en Externe Stroming}{30}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Interne Stroming: Laminair vs. Turbulent}{30}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Reynolds Getal}{30}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Overgang Laminair-Turbulent}{30}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Reynolds Decompositie}{32}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Wrijvingsfactor en Drukval}{32}{subsection.5.1.4}%
+\contentsline {subsubsection}{Bepaling van de Wrijvingsfactor $f$}{32}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Major en Minor Losses}{33}{subsection.5.1.5}%
+\contentsline {subsubsection}{Major Losses (Wrijvingsverliezen)}{34}{subsection.5.1.5}%
+\contentsline {subsubsection}{Minor Losses (Lokale Verliezen)}{34}{subsection.5.1.5}%
+\contentsline {subsubsection}{Totale Head Loss}{34}{figure.5.4}%
+\contentsline {subsection}{\numberline {5.1.6}Leidingsystemen: Serie en Parallel}{36}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Iteratieve Oplossingsmethoden (Type 2 Problemen)}{36}{subsection.5.1.7}%
+\contentsline {section}{\numberline {5.2}Externe Stroming: Weerstand en Lift}{36}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Weerstand (Drag)}{37}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Lift}{38}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Extra oefeningen: Interne en Externe Stroming}{38}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Oefening 1: Drukverlies in een Leidingsysteem}{38}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Oefening 2: Luchtweerstand op een Auto}{39}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Oefening 3: Liftkracht op een Vleugel}{40}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Oefening 4: Reynoldsgetal en Stromingsregime}{40}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Oefening 5: Drukverlies in een Buis (Laminaire Stroming)}{41}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Oefening 6: Weerstand op een Bol (Sphere)}{41}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Oefening 7: Weerstand en Vermogen voor een Auto in Wind}{42}{subsection.5.3.7}%
+\contentsline {part}{II\hspace {1em}Warmte}{43}{part.2}%
+\contentsline {chapter}{\numberline {6}Fundamentele Concepten van de Thermodynamica}{44}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Systemen en Controle Volumes}{44}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Eigenschappen van een Systeem}{45}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Toestand en Evenwicht}{46}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Processen en Cycli}{46}{section.6.4}%
+\contentsline {chapter}{\numberline {7}De Eerste Hoofdwet van de Thermodynamica: Energiebehoud}{47}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Vormen van Energie}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Energie-overdracht: Warmte en Arbeid}{47}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Arbeid bij Grensverplaatsing (Moving Boundary Work)}{48}{section.7.3}%
+\contentsline {section}{\numberline {7.4}De Eerste Hoofdwet voor Open Systemen (Controlevolumes)}{49}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Specifieke Componenten: Smoring en Mengkamers}{50}{subsection.7.4.1}%
+\contentsline {chapter}{\numberline {8}Eigenschappen van Zuivere Stoffen}{51}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Fasen en Faseverandering}{51}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Het Staatspostulaat en Onafhankelijkheid}{51}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Eigenschapsdiagrammen en Tabellen}{51}{section.8.3}%
+\contentsline {section}{\numberline {8.4}De Ideale Gaswet}{53}{section.8.4}%
+\contentsline {chapter}{\numberline {9}De Tweede Hoofdwet en Entropie}{54}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Kelvin-Planck en Clausius}{54}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Entropie}{54}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Entropiebalans en Efficiëntie}{56}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Entropiebalans voor Open Systemen}{56}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Isentropische Efficiënties}{56}{subsection.9.3.2}%
+\contentsline {chapter}{\numberline {10}Thermodynamische Cycli}{58}{chapter.10}%
+\contentsline {section}{\numberline {10.1}De Carnot Cyclus}{58}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Otto en Diesel Cycli}{61}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Rankine Cyclus}{63}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Dampcompressie Koelcyclus}{65}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Omkeerbare versus Onomkeerbare Cycli}{68}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Warmteoverdracht Mechanismen}{75}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Convectie}{75}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Straling}{76}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Combinatie van Convectie, Geleiding en Straling}{77}{section.11.3}%
+\contentsline {part}{III\hspace {1em}Oefeningen Warmte en Stromingen}{82}{part.3}%
+\contentsline {chapter}{\numberline {12}Oefeningen}{83}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Oefenzitting 1\&2: Hydrostatica}{83}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}{90}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Oefenzitting 4: Tabellen en eenheden}{94}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Oefenzitting 5: Gesloten systemen}{94}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Oefenzitting 6: Open systemen}{97}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Oefenzitting 7: Eerste hoofdwet cycli}{99}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Oefenzitting 7: Cycli en Tweede Hoofdwet}{101}{section.12.7}%
+\contentsline {section}{\numberline {12.8}Oefenzitting 8 : Entropie en tweede hoofdwet}{105}{section.12.8}%
+\contentsline {section}{\numberline {12.9}Oefenzitting 9: Otto-cycli en verbrandingsmotoren}{107}{section.12.9}%
+\contentsline {section}{\numberline {12.10}Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}{112}{section.12.10}%
+\contentsline {section}{\numberline {12.11}Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}{113}{section.12.11}%
+\contentsline {chapter}{\numberline {13}Bijlagen}{118}{chapter.13}%
