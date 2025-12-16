@@ -216,6 +216,113 @@ Symbool & Betekenis & Eenheid\\
 
 \part{Stromingen}
 
+\chapter{Eigenschappen van Fluïda}
+\section{Definitie van een Fluïdum}
+Een \term{fluïdum} is een stof die niet in staat is blijvende weerstand te bieden tegen afschuiving. Waar een vaste stof zijn vorm behoudt onder schuifspanning, zal een fluïdum continu blijven vervormen zolang de schuifkracht wordt aangehouden. Fluïda omvatten zowel vloeistoffen als gassen.
+
+\section{Dichtheid}
+De dichtheid $\rho$ van een fluïdum wordt gedefinieerd als de massa per volume-eenheid:
+\[
+\rho = \frac{m}{V} \quad [kg/m^3]
+\]
+\symS{\rho}{dichtheid}{kg/m$^3$}
+\symS{m}{massa}{kg}
+Voor een continuum-benadering is er een minimum volume $V^*$ nodig waaronder de dichtheid constant blijft. Voor water geldt bijvoorbeeld dat $1 \, mm^3 \approx 3 \times 10^{16}$ moleculen bevat, waardoor de continuum-aanname gerechtvaardigd is.
+
+Een belangrijk criterium voor de geldigheid van deze hypothese is het \term{Knudsen-getal} ($Kn$), gedefinieerd als de verhouding tussen de gemiddelde vrije weglengte van de moleculen ($\lambda$) en de karakteristieke lengteschaal van de stroming ($L$):
+\[
+Kn = \frac{\lambda}{L}
+\]
+Wanneer $Kn < 0{,}01$, is de continuümhypothese geldig en kunnen de Navier-Stokes vergelijkingen veilig worden toegepast. Voor de macroscopische systemen in dit handboek (dammen, leidingen) is deze aanname altijd geldig.
+
+\section{Viscositeit}
+Viscositeit is een maat voor de interne wrijving van een fluïdum. Voor een Newtoniaans fluïdum geldt een lineair verband tussen de schuifspanning $\tau$ en de snelheidsgradiënt:
+\[
+\tau = \mu \frac{\partial u}{\partial y}
+\]
+\symS{\tau}{schuifspanning}{Pa}
+\symS{\mu}{dynamische viscositeit}{Pa\,s}
+waarbij:
+\begin{itemize}
+    \item $\tau$ de schuifspanning is [Pa]
+    \item $\mu$ de dynamische viscositeit [Pa·s]
+    \item $\frac{\partial u}{\partial y}$ de snelheidsgradiënt loodrecht op de stroomrichting
+\end{itemize}
+De kinematische viscositeit wordt gedefinieerd als:
+\[
+\nu = \frac{\mu}{\rho} \quad [m^2/s]
+\]
+\symS{\nu}{kinematische viscositeit}{m$^2$/s}
+Voor vloeistoffen neemt de viscositeit af met toenemende temperatuur, terwijl voor gassen de viscositeit toeneemt met temperatuur.
+
+\subsubsection*{Voorbeeld: Schuifspanning in een olielaag}
+\textbf{Gegeven:} Een vlakke plaat met oppervlakte $A = 0.5 \, m^2$ wordt met een snelheid van $V = 2 \, m/s$ over een vlakke ondergrond getrokken. Tussen de plaat en de ondergrond bevindt zich een olielaagje met dikte $d = 1 \, mm$ en dynamische viscositeit $\mu = 0.1 \, Pa \cdot s$.
+\symS{A}{oppervlakte}{m$^2$}
+\symS{V}{snelheid}{m/s}
+\symS{d}{laagdikte}{m}
+\textbf{Gevraagd:} Bereken de benodigde kracht $F$ om de plaat te bewegen.
+\symS{F}{kracht}{N}
+\textbf{Oplossing:}
+De snelheidsgradiënt is lineair (Couette stroming):
+\[
+\frac{du}{dy} \approx \frac{V}{d} = \frac{2 \, m/s}{0.001 \, m} = 2000 \, s^{-1}
+\]
+De schuifspanning is:
+\[
+\tau = \mu \frac{du}{dy} = 0.1 \cdot 2000 = 200 \, Pa
+\]
+De benodigde kracht is:
+\[
+F = \tau \cdot A = 200 \, N/m^2 \cdot 0.5 \, m^2 = 100 \, N
+\]
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[x=1.15cm,y=1.15cm]
+        % plates
+        \draw[thick] (0,0) -- (6,0);
+        \draw[thick] (0,2) -- (6,2);
+        \node[below] at (3,0) {vaste plaat};
+        \node[above] at (3,2) {bewegende plaat ($V$)};
+
+        % fluid region
+        \fill[lightblue,opacity=0.35] (0,0) rectangle (6,2);
+
+        % velocity profile
+        \draw[thick,darkblue] (1.0,0.15) -- (5.0,1.85);
+        \node[right] at (5.0,1.85) {$u(y)$};
+
+        % arrow for plate motion
+        \draw[thick,->] (5.2,2.3) -- (6.6,2.3);
+        \node[above] at (5.9,2.3) {$V$};
+
+        % gap label
+        \draw[<->] (-0.4,0) -- (-0.4,2);
+        \node[left] at (-0.4,1) {$d$};
+    \end{tikzpicture}
+    \caption{Couette-stroming: lineair snelheidsprofiel tussen een vaste en een bewegende plaat.}
+\end{figure}
+
+\subsection{Viscositeit in Roterende Systemen}
+In roterende systemen, zoals bij een koppeling (clutch) of viscometer, is de snelheid $V$ niet constant maar afhankelijk van de straal $r$ ($V=\omega r$). Hierdoor wordt de schuifspanning een functie van de positie:
+\[
+\tau(r) = \mu \frac{V(r)}{h} = \mu \frac{\omega r}{h}
+\]
+Het totale koppel $T$ wordt verkregen door integratie over het oppervlak. Voor een schijf met straal $R$:
+\[
+T = \int_A r \cdot \tau(r) \, dA = \int_0^R r \left( \mu \frac{\omega r}{h} \right) 2\pi r \, dr = \frac{2\pi\mu\omega}{h} \int_0^R r^3 \, dr = \frac{\pi\mu\omega R^4}{2h}
+\]
+Dit inzicht is essentieel voor oefeningen waarbij koppeloverdracht via een vloeistoffilm wordt berekend.
+
+\subsection{De Algemene Constitutieve Vergelijking}
+Voor multidimensionale stromingen is de schuifspanning niet enkel een afgeleide in één richting. De spanningstensor $\tau_{ij}$ voor een Newtoniaans fluïdum wordt gegeven door:
+\[
+\tau_{ij} = \mu \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)
+\]
+Dit formalisme verklaart waarom viskeuze krachten in alle richtingen werken, wat later terugkomt in de Navier-Stokes vergelijkingen.
+
+
+
 \chapter{Fluïdumstatica (Hydrostatica)}
 Fluïdumstatica behandelt vloeistoffen die in rust zijn. In deze toestand zijn er geen relatieve bewegingen tussen vloeistoflagen, dus er zijn geen schuifspanningen. Alleen normaalkrachten (druk) spelen een rol.
 
