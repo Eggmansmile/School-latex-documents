@@ -743,26 +743,36 @@ De Euler vergelijking beschrijft de beweging van een ideaal (wrijvingsloos) flu�
 Hierin is de term $(\vec{v} \cdot \nabla)\vec{v}$ de convectieve versnelling.
 
 \subsection{Projectie op een Stroomlijn}
-We beschouwen een infinitesimale verplaatsing $d\vec{s}$ langs een stroomlijn. Omdat de snelheid $\vec{v}$ raakt aan de stroomlijn, is $d\vec{s}$ evenwijdig aan $\vec{v}$.
-We nemen het inproduct van de hele vergelijking met $d\vec{s}$:
+We vermenigvuldigen elke term van de Euler vergelijking scalair met een infinitesimale verplaatsing $d\vec{s}$ langs een stroomlijn. Omdat de snelheid $\vec{v}$ raakt aan de stroomlijn, is $d\vec{s}$ evenwijdig aan $\vec{v}$.
 \[
-\rho [(\vec{v} \cdot \nabla)\vec{v}] \cdot d\vec{s} = -\nabla p \cdot d\vec{s} + \rho \vec{g} \cdot d\vec{s}
+\underbrace{\rho [(\vec{v} \cdot \nabla)\vec{v}] \cdot d\vec{s}}_{\text{Traagheidsterm}} = \underbrace{-\nabla p \cdot d\vec{s}}_{\text{Drukterm}} + \underbrace{\rho \vec{g} \cdot d\vec{s}}_{\text{Zwaartekrachtterm}}
 \]
-We analyseren de termen afzonderlijk:
+We werken elke term afzonderlijk uit:
+
 \begin{itemize}
-    \item \textbf{Drukterm:} De verandering van druk langs de weg $d\vec{s}$ is de totale differentiaal $dp = \nabla p \cdot d\vec{s}$. Dus $-\nabla p \cdot d\vec{s} = -dp$.
-    \item \textbf{Zwaartekrachtterm:} De zwaartekracht werkt verticaal omlaag: $\vec{g} = -g \hat{k}$. Als $dz$ de verticale verplaatsing is, dan is $\vec{g} \cdot d\vec{s} = -g dz$.
-    \item \textbf{Versnellingsterm:} Langs een stroomlijn is de convectieve versnelling gelijk aan de verandering van de snelheidgrootte $v$ langs de baan $s$: $(\vec{v} \cdot \nabla)\vec{v} \cdot d\vec{s} = v \frac{dv}{ds} ds = v dv = d(\frac{1}{2}v^2)$.
+    \item \textbf{Drukterm:} De gradiënt $\nabla p$ is een vector die de richting van de grootste drukverandering aangeeft. Het inproduct met de verplaatsing $d\vec{s}$ geeft de totale verandering van de druk $dp$ over die afstand (totale differentiaal):
+    \[ -\nabla p \cdot d\vec{s} = -\left( \frac{\partial p}{\partial x} dx + \frac{\partial p}{\partial y} dy + \frac{\partial p}{\partial z} dz \right) = -dp \]
+
+    \item \textbf{Zwaartekrachtterm:} De zwaartekracht werkt verticaal omlaag: $\vec{g} = -g \hat{k} = (0, 0, -g)$. De verplaatsing is $d\vec{s} = (dx, dy, dz)$. Het inproduct wordt:
+    \[ \rho \vec{g} \cdot d\vec{s} = \rho (0 \cdot dx + 0 \cdot dy - g \cdot dz) = -\rho g dz \]
+    Dit komt overeen met de verandering in potentiële energie.
+
+    \item \textbf{Traagheidsterm (Convectieve versnelling):} We gebruiken de vectoridentiteit $(\vec{v} \cdot \nabla)\vec{v} = \frac{1}{2}\nabla v^2 - \vec{v} \times (\nabla \times \vec{v})$.
+    Het inproduct met $d\vec{s}$ wordt:
+    \[ \rho \left( \frac{1}{2}\nabla v^2 - \vec{v} \times (\nabla \times \vec{v}) \right) \cdot d\vec{s} \]
+    Omdat we integreren \textit{langs een stroomlijn}, is $d\vec{s}$ evenwijdig aan $\vec{v}$. Het vectorproduct $\vec{v} \times (\dots)$ staat loodrecht op $\vec{v}$ en dus ook loodrecht op $d\vec{s}$. Het inproduct van loodrechte vectoren is nul, dus de rotatieterm valt weg.
+    \[ \rho \frac{1}{2}\nabla v^2 \cdot d\vec{s} = \rho d\left(\frac{1}{2}v^2\right) = \rho v dv \]
 \end{itemize}
-Invullen geeft de differentiaalvergelijking langs de stroomlijn:
+
+Invullen van deze termen in de oorspronkelijke vergelijking geeft:
 \[
-\rho d\left(\frac{1}{2}v^2\right) = -dp - \rho g dz
+\rho v dv = -dp - \rho g dz
 \]
-Ofwel:
+Herschikken levert de differentiaalvergelijking van Bernoulli:
 \[
-dp + \rho d\left(\frac{1}{2}v^2\right) + \rho g dz = 0
+dp + \rho v dv + \rho g dz = 0
 \]
-Voor een onsamendrukbare vloeistof ($\rho$ is constant) kunnen we integreren:
+Voor een onsamendrukbare vloeistof ($\rho$ is constant) kunnen we integreren tussen twee punten op de stroomlijn:
 \[
 \int dp + \int \rho v dv + \int \rho g dz = \text{constant}
 \]
@@ -829,17 +839,51 @@ In de praktijk is er altijd wrijving en worden pompen of turbines gebruikt. We g
 Hierbij vertegenwoordigt $h_L$ het totaal aan energieverliezen (head loss) door wrijving in leidingen en componenten.
 
 \chapter{Differentiële Analyse van Fluïdumstroming}
-\section{Navier-Stokes Vergelijkingen}
-\subsection{Algemene Vorm}
-Voor een viskeus, Newtoniaans fluïdum gelden de Navier-Stokes vergelijkingen:
+\section{Afleiding van de Navier-Stokes Vergelijkingen}
+De Navier-Stokes vergelijkingen zijn de fundamentele bewegingsvergelijkingen voor viskeuze vloeistoffen. Ze zijn een uitbreiding van de Euler vergelijking (die wrijving verwaarloost) door toevoeging van viskeuze krachten.
+
+\subsection{Newton's Tweede Wet voor een Fluïdumdeeltje}
+We vertrekken opnieuw van de tweede wet van Newton ($\vec{F} = m\vec{a}$) toegepast op een infinitesimaal fluïdumdeeltje met volume $dV$ en massa $dm = \rho dV$.
 \[
-\rho \frac{D\vec{v}}{Dt} = -\nabla p + \mu \nabla^2 \vec{v} + \rho \vec{g}
+\rho dV \frac{D\vec{v}}{Dt} = \sum \vec{F}_{ext}
 \]
-In componentvorm voor de x-richting:
+Hierin is $\frac{D\vec{v}}{Dt}$ de materiële afgeleide (totale versnelling), die bestaat uit de lokale versnelling en de convectieve versnelling:
+\[
+\frac{D\vec{v}}{Dt} = \underbrace{\frac{\partial \vec{v}}{\partial t}}_{\text{lokaal}} + \underbrace{(\vec{v} \cdot \nabla)\vec{v}}_{\text{convectief}}
+\]
+
+\subsection{Krachtenbalans}
+De krachten die op het deeltje werken kunnen worden onderverdeeld in lichaamskrachten en oppervlaktekrachten:
+\[
+\sum \vec{F}_{ext} = \vec{F}_{zwaartekracht} + \vec{F}_{druk} + \vec{F}_{viskeus}
+\]
+
+\begin{itemize}
+    \item \textbf{Zwaartekracht:} Werkt op de massa van het deeltje.
+    \[ \vec{F}_{zwaartekracht} = \rho \vec{g} \, dV \]
+
+    \item \textbf{Drukkrachten:} Netto kracht door drukverschillen op de oppervlakken (normaalspanningen). Zoals eerder afgeleid bij Euler:
+    \[ \vec{F}_{druk} = -\nabla p \, dV \]
+
+    \item \textbf{Viskeuze krachten (Stroperigheid):} In een reëel fluïdum ontstaan er schuifspanningen door snelheidsgradiënten. Voor een \textit{Newtoniaans fluïdum} is de schuifspanning evenredig met de vervormingssnelheid. De evenredigheidsconstante is de dynamische viscositeit $\mu$.
+    
+    De netto viskeuze kracht per volume-eenheid is de divergentie van de viskeuze spanningstensor. Voor een onsamendrukbare stroming ($\nabla \cdot \vec{v} = 0$) vereenvoudigt dit tot:
+    \[ \vec{F}_{viskeus} = \mu \nabla^2 \vec{v} \, dV \]
+    Hierin is $\nabla^2 = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}$ de Laplace-operator. Deze term representeert de diffusie van impuls door wrijving.
+\end{itemize}
+
+\subsection{De Navier-Stokes Vergelijking}
+Door alle termen in te vullen en te delen door het volume $dV$, verkrijgen we de Navier-Stokes vergelijking voor een onsamendrukbaar, Newtoniaans fluïdum:
+
+\[
+\underbrace{\rho \left( \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla)\vec{v} \right)}_{\text{Traagheidskrachten}} = \underbrace{-\nabla p}_{\text{Drukkrachten}} + \underbrace{\mu \nabla^2 \vec{v}}_{\text{Viskeuze krachten}} + \underbrace{\rho \vec{g}}_{\text{Zwaartekracht}}
+\]
+
+Dit is een vectorvergelijking. In componentvorm (bijvoorbeeld de x-richting) ziet dit er als volgt uit:
 \[
 \rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \right) = -\frac{\partial p}{\partial x} + \mu \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} \right) + \rho g_x
 \]
-Vergelijkbare vergelijkingen bestaan voor de y- en z-richtingen.
+Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. Samen met de continuïteitsvergelijking ($\nabla \cdot \vec{v} = 0$) vormen deze een gesloten stelsel om het stromingsveld te beschrijven.
 
 \begin{figure}[H]
     \centering
@@ -986,6 +1030,56 @@ Voor stroming in een cilinderbuis:
     \item \textbf{Turbulent ($Re > 3000$):} De stroming is chaotisch met wervelingen en sterke menging. Traagheidskrachten domineren. Het snelheidsprofiel is veel vlakker ("plug flow").
 \end{itemize}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/laminar_turbulent.png}
+    \caption{Visuele weergave van laminaire (boven) en turbulente (onder) stroming, zoals zichtbaar gemaakt met kleurstofinjectie (Osborne Reynolds experiment).}
+    \label{fig:laminar_turbulent}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.9]
+        % Laminar
+        \begin{scope}[xshift=0cm]
+            \draw[thick] (0,2.5) -- (4,2.5);
+            \draw[thick] (0,0) -- (4,0);
+            \draw[dashed] (0,1.25) -- (4,1.25);
+            \node at (2, -0.5) {\textbf{Laminair} ($Re < 2000$)};
+            
+            % Parabolic profile: v = vmax * (1 - (r/R)^2)
+            % y goes from 0 to 2.5. Center at 1.25. R = 1.25.
+            % r = y - 1.25.
+            \draw[thick, blue, domain=0:2.5, samples=50] plot ({2 + 1.5*(1 - (((\x-1.25)/1.25)^2))}, \x);
+            
+            % Arrows
+            \foreach \y in {0.25, 0.75, 1.25, 1.75, 2.25} {
+                \draw[->, blue] (2, \y) -- ({2 + 1.5*(1 - (((\y-1.25)/1.25)^2))}, \y);
+            }
+            \node[blue, right] at (3.6, 1.25) {$v(r)$};
+        \end{scope}
+        
+        % Turbulent
+        \begin{scope}[xshift=6cm]
+            \draw[thick] (0,2.5) -- (4,2.5);
+            \draw[thick] (0,0) -- (4,0);
+            \draw[dashed] (0,1.25) -- (4,1.25);
+            \node at (2, -0.5) {\textbf{Turbulent} ($Re > 3000$)};
+            
+            % Power law profile: v = vmax * (1 - r/R)^(1/7)
+            \draw[thick, red, domain=0:2.5, samples=100] plot ({2 + 1.5*((1 - abs((\x-1.25)/1.25))^(1/7))}, \x);
+            
+            % Arrows
+            \foreach \y in {0.25, 0.75, 1.25, 1.75, 2.25} {
+                \draw[->, red] (2, \y) -- ({2 + 1.5*((1 - abs((\y-1.25)/1.25))^(1/7))}, \y);
+            }
+             \node[red, right] at (3.6, 1.25) {$\bar{v}(r)$};
+        \end{scope}
+    \end{tikzpicture}
+    \caption{Vergelijking van snelheidsprofielen: Laminair (parabolisch) vs. Turbulent (vlakker profiel).}
+    \label{fig:velocity_profiles_comparison}
+\end{figure}
+
 \subsubsection*{Voorbeeld: Reynoldsgetal bepalen}
 \textbf{Gegeven:} Water ($20^\circ C$, $\nu = 10^{-6} \, m^2/s$) stroomt door een buis met diameter $50 \, mm$ met een gemiddelde snelheid van $0.1 \, m/s$.
 \textbf{Gevraagd:} Is de stroming laminair of turbulent?
@@ -1004,78 +1098,277 @@ waarbij $\bar{u}(y)$ de tijdsgemiddelde snelheid is en $u'(t,y)$ de turbulente f
 De turbulente fluctuaties veroorzaken een extra schijnbare schuifspanning, de Reynoldsspanning: $\tau_{Reynolds} = -\rho \overline{u'v'}$. Deze verhoogt de effectieve wrijving in turbulente stroming aanzienlijk.
 
 \subsection{Wrijvingsfactor en Drukval}
-Voor het berekenen van drukverlies in leidingen gebruiken we de Darcy-Weisbach vergelijking:
+Het energieverlies door wrijving in een rechte leiding resulteert in een drukval $\Delta p$. Deze wordt berekend met de \textbf{Darcy-Weisbach vergelijking}:
 \[
-\Delta P = f \frac{L}{D} \frac{\rho V^2}{2}
+\Delta p = f \frac{L}{D} \frac{1}{2}\rho V^2
 \]
-De wrijvingsfactor $f$ wordt voor turbulent stroming bepaald met het Moody-diagram of de Colebrook-vergelijking:
+Of uitgedrukt als wrijvingshoogte (head loss):
 \[
-\frac{1}{\sqrt{f}} = -2 \log \left( \frac{\varepsilon/D}{3.7} + \frac{2.51}{Re \sqrt{f}} \right)
+h_f = \frac{\Delta p}{\rho g} = f \frac{L}{D} \frac{V^2}{2g}
 \]
-waarbij $\varepsilon$ de absolute wandruwheid is.
+Hierin is:
+\begin{itemize}
+    \item $f$: de Darcy-wrijvingsfactor (dimensieloos)
+    \item $L$: lengte van de leiding [m]
+    \item $D$: diameter van de leiding [m]
+    \item $V$: gemiddelde stroomsnelheid [m/s]
+\end{itemize}
+
+\subsubsection{Bepaling van de Wrijvingsfactor $f$}
+De waarde van $f$ hangt af van het stromingsregime (Reynoldsgetal) en de wandruwheid.
+
+\textbf{1. Laminaire stroming ($Re < 2000$):}
+Bij laminaire stroming wordt de wrijving puur bepaald door viskeuze krachten en is de wandruwheid verwaarloosbaar. De factor $f$ volgt uit een exacte analytische oplossing (Hagen-Poiseuille):
+\[
+f = \frac{64}{Re}
+\]
+
+\textbf{2. Turbulente stroming ($Re > 3000$):}
+Bij turbulente stroming spelen zowel de viskeuze sublaag als de wandruwheid een rol. De wrijvingsfactor hangt af van:
+\begin{itemize}
+    \item Het Reynoldsgetal $Re$
+    \item De relatieve wandruwheid $\varepsilon/D$ (waarbij $\varepsilon$ de gemiddelde ruwheidshoogte is)
+\end{itemize}
+
+De waarde van $f$ kan worden afgelezen uit het \textbf{Moody-diagram} (Figuur \ref{fig:moody}) of berekend met de impliciete \textbf{Colebrook-vergelijking}:
+\[
+\frac{1}{\sqrt{f}} = -2 \log_{10} \left( \frac{\varepsilon/D}{3.7} + \frac{2.51}{Re \sqrt{f}} \right)
+\]
+Voor handberekeningen is de \textbf{Haaland-benadering} (expliciet) vaak nauwkeurig genoeg:
+\[
+\frac{1}{\sqrt{f}} \approx -1.8 \log_{10} \left( \left( \frac{\varepsilon/D}{3.7} \right)^{1.11} + \frac{6.9}{Re} \right)
+\]
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/moody_diagram.png}
-    \caption{Moody-diagram voor het bepalen van de wrijvingsfactor $f$.}
+    \includegraphics[width=0.8\textwidth]{assets/moody_diagram.png}
+    \caption{Moody-diagram: $f$ als functie van $Re$ en relatieve ruwheid $\varepsilon/D$.}
     \label{fig:moody}
 \end{figure}
 
+\subsubsection*{Voorbeeldoefening: Drukverlies in een waterleiding}
+\textbf{Gegeven:} Water ($\rho=1000\,\mathrm{kg/m^3}$, $\nu=10^{-6}\,\mathrm{m^2/s}$) stroomt door een horizontale stalen buis ($\varepsilon=0.045\,\mathrm{mm}$) met een diameter $D=50\,\mathrm{mm}$ en lengte $L=20\,\mathrm{m}$. De snelheid is $V=4.0\,\mathrm{m/s}$.\\
+\textbf{Gevraagd:} Bereken de drukval $\Delta p$ over de leiding.\\
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Bereken Reynoldsgetal:}
+    \[ Re = \frac{VD}{\nu} = \frac{4.0 \cdot 0.050}{10^{-6}} = 200\,000 \]
+    Dit is $>3000$, dus de stroming is \textbf{turbulent}.
+    
+    \item \textbf{Bepaal relatieve ruwheid:}
+    \[ \frac{\varepsilon}{D} = \frac{0.045\,\mathrm{mm}}{50\,\mathrm{mm}} = 0.0009 \]
+    
+    \item \textbf{Bepaal wrijvingsfactor $f$:}
+    Via Moody-diagram bij $Re=2\cdot 10^5$ en $\varepsilon/D=0.0009$ vinden we $f \approx 0.021$.
+    (Of via Haaland formule: $f \approx 0.0208$).
+    
+    \item \textbf{Bereken drukval:}
+    \[ \Delta p = f \frac{L}{D} \frac{1}{2}\rho V^2 = 0.021 \cdot \frac{20}{0.050} \cdot \frac{1}{2} \cdot 1000 \cdot (4.0)^2 \]
+    \[ \Delta p = 0.021 \cdot 400 \cdot 8000 = 67\,200\,\mathrm{Pa} \]
+\end{enumerate}
+De drukval is dus \boxed{67.2\,\mathrm{kPa}}.
+
+\subsection{Major en Minor Losses}
+In leidingsystemen wordt het totale energieverlies (head loss, $h_L$) onderverdeeld in twee categorieën:
+
+\subsubsection{Major Losses (Wrijvingsverliezen)}
+Dit zijn de verliezen door viskeuze wrijving in de rechte stukken leiding. Zoals eerder besproken worden deze berekend met Darcy-Weisbach:
+\[ h_{major} = f \frac{L}{D} \frac{V^2}{2g} \]
+Hoewel ze "major" heten, zijn ze niet altijd de grootste verliezen; de naam verwijst naar het feit dat ze over de hele lengte optreden.
+
+\subsubsection{Minor Losses (Lokale Verliezen)}
+Dit zijn verliezen die optreden bij componenten zoals bochten, afsluiters, vernauwingen, verwijdingen en in- of uitlaten. Deze verliezen worden veroorzaakt door stroomloslating en wervelingen die energie dissiperen.
+\[ h_{minor} = K_L \frac{V^2}{2g} \]
+Hierin is $K_L$ de verliescoëfficiënt (loss coefficient), die afhangt van de geometrie van de component.
+Enkele typische waarden voor $K_L$:
+\begin{itemize}
+    \item Scherpe inlaat: $K_L \approx 0.5$
+    \item Afgeronde inlaat: $K_L \approx 0.04$
+    \item Uitlaat (in reservoir): $K_L = 1.0$ (alle kinetische energie gaat verloren)
+    \item 90$^\circ$ bocht (standaard): $K_L \approx 0.3 - 0.9$
+    \item Volledig open bolkraan: $K_L \approx 10$
+\end{itemize}
+
+Soms wordt ook de equivalente lengte $L_{eq}$ gebruikt: $h_{minor} = f \frac{L_{eq}}{D} \frac{V^2}{2g}$.
+
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[x=1.15cm,y=1.15cm]
-        % axes
-        \draw[->] (0,0) -- (5.6,0) node[right] {$u/u_{max}$};
-        \draw[->] (0,0) -- (0,3.8) node[above] {$r/R$ (van as naar wand)};
-
-        % wall line
-        \draw[dashed] (0,3.4) -- (5.2,3.4);
-        \node[left] at (0,3.4) {wand};
-        \draw[dashed] (0,0.2) -- (5.2,0.2);
-        \node[left] at (0,0.2) {as};
-
-        % laminar (parabolic)
-        \draw[thick,darkblue] (0.2,3.4) .. controls (1.6,2.7) and (3.2,1.4) .. (5.0,0.2);
-        \node[darkblue] at (2.1,2.8) {laminair};
-
-        % turbulent (fuller)
-        \draw[thick,darkred] (0.2,3.4) .. controls (3.0,3.0) and (4.2,1.4) .. (5.0,0.2);
-        \node[darkred] at (3.9,2.8) {turbulent};
+    \begin{tikzpicture}[scale=1.3]
+        % Pipe
+        \draw[thick] (0,1) -- (5,1);
+        \draw[thick] (0,0) -- (5,0);
+        
+        % Major Loss
+        \foreach \x in {0.5, 1.0, 1.5} {
+            \draw[->, red] (\x, 0.8) -- (\x+0.5, 0.8);
+            \draw[->, red] (\x, 0.2) -- (\x+0.5, 0.2);
+        }
+        \node[red, align=center, font=\small] at (1.25, 0.5) {Wrijving aan wand\\(Major Loss)};
+        
+        % Minor Loss (Orifice plate)
+        \draw[thick, fill=gray] (3, 1) -- (3, 0.6);
+        \draw[thick, fill=gray] (3, 0) -- (3, 0.4);
+        
+        % Streamlines
+        \draw[blue, ->] (2.5, 0.5) -- (3, 0.5);
+        \draw[blue, dashed] (3, 0.5) .. controls (3.5, 0.5) .. (4, 0.8);
+        \draw[blue, dashed] (3, 0.5) .. controls (3.5, 0.5) .. (4, 0.2);
+        
+        % Eddies
+        \draw[->, darkgray] (3.2, 0.8) arc (180:-90:0.15);
+        \draw[->, darkgray] (3.2, 0.2) arc (180:90:0.15);
+        \node[darkgray, align=center, font=\small] at (4.2, 0.5) {Wervelingen\\(Minor Loss)};
     \end{tikzpicture}
-    \caption{Schematisch: laminair profiel is parabolisch, turbulent profiel is “vlakker” (meer plug-achtig).}
+    \caption{Illustratie van Major Losses (wandwrijving) en Minor Losses (wervelingen door obstructies).}
+    \label{fig:losses_concept}
 \end{figure}
+
+\subsubsection{Totale Head Loss}
+Het totale verlies is de som van alle major en minor losses in het systeem:
+\[ h_{L,totaal} = \sum h_{major} + \sum h_{minor} = \sum f_i \frac{L_i}{D_i} \frac{V_i^2}{2g} + \sum K_{L,j} \frac{V_j^2}{2g} \]
+Als de diameter (en dus snelheid $V$) constant is over het hele systeem, kan dit vereenvoudigd worden tot:
+\[ h_{L,totaal} = \left( f \frac{L}{D} + \sum K_L \right) \frac{V^2}{2g} \]
+
+\subsubsection*{Voorbeeldoefening: Leidingsysteem met verliezen}
+\textbf{Gegeven:} Water stroomt uit een groot reservoir door een horizontale pijp ($D=10\,\mathrm{cm}$, $L=50\,\mathrm{m}$, $f=0.02$) naar de atmosfeer. Het systeem bevat:
+\begin{itemize}
+    \item Een scherpe inlaat ($K_L=0.5$)
+    \item Twee 90$^\circ$ bochten ($K_L=0.3$ elk)
+    \item Een volledig open afsluiter ($K_L=0.2$)
+\end{itemize}
+Het waterniveau in het reservoir staat $H=10\,\mathrm{m}$ boven de uitlaat.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/laminar_turbulent.png}
-    \caption{Laminair versus Turbulent stromingsprofiel.}
-    \label{fig:laminar_turbulent}
+    \begin{tikzpicture}[scale=0.8]
+        % Tank
+        \draw[thick] (0, 5) -- (0, 0) -- (3, 0);
+        \draw[thick] (0, 5) -- (0, 6);
+        \draw[thick] (3, 0) -- (3, 1);
+        \draw[thick] (3, 2) -- (3, 6);
+        
+        % Water
+        \draw[blue, thick] (0, 5.5) -- (3, 5.5);
+        \node[blue, above] at (1.5, 5.5) {(1)};
+        \draw[<->] (-0.5, 5.5) -- (-0.5, 1.5) node[midway, left] {$H=10m$};
+        
+        % Pipe segments (schematic)
+        \draw[thick] (3, 1.2) -- (6, 1.2) -- (6, -2) -- (9, -2);
+        \draw[thick] (3, 1.8) -- (6.6, 1.8) -- (6.6, -2.6) -- (9, -2.6);
+        
+        % Fill water
+        \fill[cyan!20] (3, 1.2) -- (6, 1.2) -- (6, -2) -- (9, -2) -- (9, -2.6) -- (6.6, -2.6) -- (6.6, 1.8) -- (3, 1.8) -- cycle;
+        
+        % Components labels
+        \node[above, font=\footnotesize] at (4, 1.8) {Inlaat ($K_L=0.5$)};
+        \node[right, font=\footnotesize] at (6.6, 1.2) {Bocht 1 ($K_L=0.3$)};
+        \node[right, font=\footnotesize] at (6.6, -1.0) {Bocht 2 ($K_L=0.3$)};
+        
+        % Valve
+        \draw[fill=black] (8, -2) -- (8.2, -1.7) -- (8.4, -2) -- (8.2, -2.3) -- cycle;
+        \node[above, font=\footnotesize] at (8.2, -1.7) {Afsluiter ($K_L=0.2$)};
+        
+        % Exit
+        \node[right] at (9, -2.3) {(2) Uitlaat};
+        
+    \end{tikzpicture}
+    \caption{Schematische voorstelling van het leidingsysteem uit de oefening.}
+    \label{fig:exercise_losses}
 \end{figure}
+
+\textbf{Gevraagd:} Het debiet $Q$.\\
+\textbf{Oplossing:}
+We passen de uitgebreide Bernoulli-vergelijking toe tussen het oppervlak van het reservoir (1) en de uitlaat (2):
+\[ \frac{p_1}{\rho g} + \frac{V_1^2}{2g} + z_1 = \frac{p_2}{\rho g} + \frac{V_2^2}{2g} + z_2 + h_L \]
+\begin{itemize}
+    \item $p_1 = p_2 = p_{atm}$ (beide open aan atmosfeer) $\rightarrow$ vallen weg.
+    \item $V_1 \approx 0$ (groot reservoir).
+    \item $z_1 - z_2 = H = 10\,\mathrm{m}$.
+\end{itemize}
+De vergelijking wordt:
+\[ H = \frac{V_2^2}{2g} + h_L \]
+Het totale verlies is:
+\[ h_L = \left( f \frac{L}{D} + \sum K_L \right) \frac{V_2^2}{2g} \]
+Waarbij $\sum K_L = K_{inlaat} + 2 \cdot K_{bocht} + K_{afsluiter} = 0.5 + 2(0.3) + 0.2 = 1.3$.
+Invullen:
+\[ 10 = \frac{V_2^2}{2g} + \left( 0.02 \frac{50}{0.10} + 1.3 \right) \frac{V_2^2}{2g} \]
+\[ 10 = \frac{V_2^2}{2g} \left( 1 + 0.02 \cdot 500 + 1.3 \right) = \frac{V_2^2}{2g} (1 + 10 + 1.3) = \frac{V_2^2}{2g} (12.3) \]
+\[ V_2^2 = \frac{10 \cdot 2 \cdot 9.81}{12.3} = \frac{196.2}{12.3} \approx 15.95 \]
+\[ V_2 = \sqrt{15.95} \approx 3.99\,\mathrm{m/s} \]
+Het debiet is $Q = V_2 \cdot A = 3.99 \cdot \frac{\pi}{4}(0.10)^2 = 3.99 \cdot 0.007854 \approx 0.0313\,\mathrm{m^3/s}$.
+Dus \boxed{Q \approx 31.3\,\mathrm{L/s}}.
 
 \section{Externe Stroming: Weerstand en Lift}
-Bij stroming rondom objecten (zoals een auto of vliegtuigvleugel) bestuderen we de krachten die de vloeistof op het object uitoefent.
+Bij externe stroming beweegt een fluïdum rondom een object (of beweegt een object door een stilstaand fluïdum). De krachten die het fluïdum op het object uitoefent, worden ontbonden in twee componenten:
+\begin{itemize}
+    \item \textbf{Weerstand (Drag, $F_D$):} De krachtcomponent evenwijdig aan de stromingsrichting (remmend).
+    \item \textbf{Lift ($F_L$):} De krachtcomponent loodrecht op de stromingsrichting.
+\end{itemize}
 
-\textbf{Weerstand (Drag, $F_D$):} De kracht in de richting van de stroming. Deze bestaat uit wrijvingsweerstand (door schuifspanning aan de wand) en drukweerstand (door drukverschillen voor en achter het object).
+\subsection{Weerstand (Drag)}
+De totale weerstandskracht wordt gegeven door:
 \[
 F_D = C_D A \frac{1}{2} \rho V^2
 \]
-Hierbij is $C_D$ de weerstandscoëfficiënt. Drukweerstand wordt dominant wanneer de stroming loslaat van het oppervlak (flow separation), wat een lagedrukgebied (zog) achter het object creëert. Stroomlijning (streamlining) is bedoeld om dit loslaten te vertragen en de drukweerstand te minimaliseren.
+Hierin is:
+\begin{itemize}
+    \item $C_D$: de weerstandscoëfficiënt (dimensieloos, experimenteel bepaald).
+    \item $A$: het frontaal oppervlak (geprojecteerd oppervlak loodrecht op de stroming).
+    \item $\rho$: de dichtheid van het fluïdum.
+    \item $V$: de relatieve snelheid.
+\end{itemize}
+
+De weerstand bestaat uit twee bijdragen:
+\begin{enumerate}
+    \item \textbf{Wrijvingsweerstand:} Veroorzaakt door schuifspanningen aan het oppervlak (viscositeit). Dominant bij slanke, gestroomlijnde lichamen (zoals een vliegtuigvleugel).
+    \item \textbf{Drukweerstand (Vormweerstand):} Veroorzaakt door drukverschillen. Aan de voorkant is de druk hoog (stuwpunt), aan de achterkant laag, vooral als de stroming loslaat (\textit{flow separation}) en een turbulent zog vormt. Dominant bij stompe voorwerpen (zoals een bal of vrachtwagen).
+\end{enumerate}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{assets/drag_coefficient.png}
-    \caption{Weerstandscoëfficiënt van een bol als functie van het Reynoldsgetal.}
+    \caption{Weerstandscoëfficiënt van een bol als functie van het Reynoldsgetal. Merk de plotse daling op bij $Re \approx 3 \cdot 10^5$ (overgang naar turbulente grenslaag, waardoor loslating wordt uitgesteld).}
     \label{fig:drag_coeff}
 \end{figure}
 
-\textbf{Lift ($F_L$):} De kracht loodrecht op de stroming, cruciaal voor vliegtuigen. Deze wordt gegenereerd door drukverschillen tussen de boven- en onderkant van een vleugelprofiel.
+\subsubsection*{Voorbeeldoefening: Weerstand op een auto}
+\textbf{Gegeven:} Een auto met frontaal oppervlak $A = 2.4 \, m^2$ en $C_D = 0.30$ rijdt met $108 \, km/u$ door lucht ($\rho = 1.2 \, kg/m^3$).\\
+\textbf{Gevraagd:} Het vermogen nodig om de luchtweerstand te overwinnen.\\
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Zet snelheid om naar m/s: $V = 108 / 3.6 = 30 \, m/s$.
+    \item Bereken de weerstandskracht:
+    \[ F_D = C_D A \frac{1}{2} \rho V^2 = 0.30 \cdot 2.4 \cdot \frac{1}{2} \cdot 1.2 \cdot (30)^2 = 0.30 \cdot 2.4 \cdot 0.6 \cdot 900 = 388.8 \, N \]
+    \item Bereken het vermogen ($P = F \cdot V$):
+    \[ P = F_D \cdot V = 388.8 \, N \cdot 30 \, m/s = 11664 \, W \approx 11.7 \, kW \]
+\end{enumerate}
+Het benodigde vermogen is \boxed{11.7 \, kW}.
 
+\subsection{Lift}
+Lift wordt gegenereerd door een asymmetrische stroming rond een lichaam, waardoor de druk aan de ene kant lager is dan aan de andere kant (Bernoulli: hogere snelheid = lagere druk).
+\[
+F_L = C_L A \frac{1}{2} \rho V^2
+\]
+Hier is $A$ meestal het \textit{planform area} (bovenaanzicht oppervlak) bij vleugels, niet het frontaal oppervlak.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{assets/Lift.png}
-    \caption{Schematisch: weerstand $F_D$ in stromingsrichting en lift $F_L$ loodrecht daarop door drukverschil rond een profiel.}
+    \caption{Krachtenbalans op een vleugelprofiel: Lift loodrecht op de stroming, Drag evenwijdig.}
 \end{figure}
+
+\subsubsection*{Voorbeeldoefening: Opstijgend vliegtuig}
+\textbf{Gegeven:} Een vliegtuigje (massa $1500 \, kg$) moet opstijgen. Vleugeloppervlak $A = 20 \, m^2$. Maximale liftcoëfficiënt $C_{L,max} = 1.5$. Luchtdichtheid $\rho = 1.2 \, kg/m^3$.\\
+\textbf{Gevraagd:} De minimale opstijgsnelheid (stall speed).\\
+\textbf{Oplossing:}
+Om op te stijgen moet de liftkracht gelijk zijn aan het gewicht ($F_L = m \cdot g$).
+\[ m g = C_{L,max} A \frac{1}{2} \rho V_{min}^2 \]
+Herschrijven voor $V_{min}$:
+\[ V_{min} = \sqrt{\frac{2 m g}{C_{L,max} \rho A}} \]
+Invullen:
+\[ V_{min} = \sqrt{\frac{2 \cdot 1500 \cdot 9.81}{1.5 \cdot 1.2 \cdot 20}} = \sqrt{\frac{29430}{36}} = \sqrt{817.5} \approx 28.6 \, m/s \]
+De minimale snelheid is \boxed{28.6 \, m/s} (ongeveer $103 \, km/u$).
+
 
 \part{Warmte}
 
