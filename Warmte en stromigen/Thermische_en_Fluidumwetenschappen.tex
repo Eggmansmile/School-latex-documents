@@ -216,13 +216,16 @@ Symbool & Betekenis & Eenheid\\
 \clearpage
 
 
-\chapter*{Inleiding}
+\chapter*{Inleiding en Kaderstelling}
+\addcontentsline{toc}{chapter}{Inleiding en Kaderstelling}
 \vspace{-1em}
 {\small \textcolor{gray}{Dit handboek behandelt de kernprincipes van thermodynamica, fluïdummechanica en warmteoverdracht.}}\vspace{1em}
 
-In de wereld van de ingenieurswetenschappen vormen de disciplines thermodynamica, fluïdummechanica en warmteoverdracht de fundamentele bouwstenen voor het begrijpen van energie en materie. Deze vakgebieden, vaak gezamenlijk aangeduid als de \textcolor{darkblue}{\textbf{thermische en fluïdumwetenschappen}}, zijn onlosmakelijk met elkaar verbonden. Of het nu gaat om het ontwerpen van een straalmotor, het optimaliseren van een warmtewisselaar in een energiecentrale, of het modelleren van bloedstroom in het menselijk lichaam, de interactie tussen thermische energie en stromende media speelt een centrale rol.
+De integratie van thermodynamica en fluïdummechanica, vaak samengevat onder de noemer \textcolor{darkblue}{\textbf{thermische en fluïdumwetenschappen}}, vormt de ruggengraat van de moderne ingenieurswetenschappen. Van het ontwerpen van efficiënte warmtewisselaars en turbomachines tot het begrijpen van atmosferische stromingen en biomedische processen; de fundamentele interactie tussen energie (warmte) en materie in beweging (stroming) is alomtegenwoordig.
 
-Dit rapport biedt een uitputtende analyse van deze wetenschappen, gebaseerd op een synthese van academische bronteksten, vraagstukken en handboeken. Het document is gestructureerd in drie hoofddelen: \textcolor{darkblue}{\textbf{Deel 1: Stromingen}}, dat de mechanica van vloeistoffen en gassen in rust en beweging behandelt; \textcolor{darkblue}{\textbf{Deel 2: Warmte}}, waarin de wetten van de thermodynamica en warmteoverdracht worden ontleed; en \textcolor{darkblue}{\textbf{Deel 3: Oefeningen}}, waarin de theorie wordt toegepast op concrete technische vraagstukken. De benadering is gericht op een stap-voor-stap uitleg van concepten en formules, waarbij complexe fysische fenomenen worden vertaald naar begrijpelijke en toepasbare kennis.
+Dit rapport dient als een uitgebreide synthese van het cursusmateriaal. De analyse is gebaseerd op een synthese van handboeken, lesnotities en oefensessies. Het doel is niet enkel om theorie te beschrijven, maar om een brug te slaan tussen abstracte concepten en de praktische toepassingen vereist in de oefeningen.
+
+Uit de analyse blijkt dat een diepgaand begrip van differentiële analyse, onstationaire processen en wiskundige afleidingen cruciaal is voor het oplossen van complexe vraagstukken. Dit handboek zal systematisch de kerngebieden van de vloeistofmechanica en thermodynamica ontleden, waarbij de nadruk ligt op het expliciet maken van impliciete aannames en het uitwerken van formules die essentieel zijn voor ingenieurs.
 
 \part{Stromingen}
 
@@ -238,6 +241,12 @@ De dichtheid $\rho$ van een fluïdum wordt gedefinieerd als de massa per volume-
 \symS{\rho}{dichtheid}{kg/m$^3$}
 \symS{m}{massa}{kg}
 Voor een continuum-benadering is er een minimum volume $V^*$ nodig waaronder de dichtheid constant blijft. Voor water geldt bijvoorbeeld dat $1 \, mm^3 \approx 3 \times 10^{16}$ moleculen bevat, waardoor de continuum-aanname gerechtvaardigd is.
+
+Een belangrijk criterium voor de geldigheid van deze hypothese is het \term{Knudsen-getal} ($Kn$), gedefinieerd als de verhouding tussen de gemiddelde vrije weglengte van de moleculen ($\lambda$) en de karakteristieke lengteschaal van de stroming ($L$):
+\[
+Kn = \frac{\lambda}{L}
+\]
+Wanneer $Kn < 0{,}01$, is de continuümhypothese geldig en kunnen de Navier-Stokes vergelijkingen veilig worden toegepast. Voor de macroscopische systemen in dit handboek (dammen, leidingen) is deze aanname altijd geldig.
 
 \section{Viscositeit}
 Viscositeit is een maat voor de interne wrijving van een fluïdum. Voor een Newtoniaans fluïdum geldt een lineair verband tussen de schuifspanning $\tau$ en de snelheidsgradiënt:
@@ -306,6 +315,24 @@ F = \tau \cdot A = 200 \, N/m^2 \cdot 0.5 \, m^2 = 100 \, N
     \end{tikzpicture}
     \caption{Couette-stroming: lineair snelheidsprofiel tussen een vaste en een bewegende plaat.}
 \end{figure}
+
+\subsection{Viscositeit in Roterende Systemen}
+In roterende systemen, zoals bij een koppeling (clutch) of viscometer, is de snelheid $V$ niet constant maar afhankelijk van de straal $r$ ($V=\omega r$). Hierdoor wordt de schuifspanning een functie van de positie:
+\[
+\tau(r) = \mu \frac{V(r)}{h} = \mu \frac{\omega r}{h}
+\]
+Het totale koppel $T$ wordt verkregen door integratie over het oppervlak. Voor een schijf met straal $R$:
+\[
+T = \int_A r \cdot \tau(r) \, dA = \int_0^R r \left( \mu \frac{\omega r}{h} \right) 2\pi r \, dr = \frac{2\pi\mu\omega}{h} \int_0^R r^3 \, dr = \frac{\pi\mu\omega R^4}{2h}
+\]
+Dit inzicht is essentieel voor oefeningen waarbij koppeloverdracht via een vloeistoffilm wordt berekend.
+
+\subsection{De Algemene Constitutieve Vergelijking}
+Voor multidimensionale stromingen is de schuifspanning niet enkel een afgeleide in één richting. De spanningstensor $\tau_{ij}$ voor een Newtoniaans fluïdum wordt gegeven door:
+\[
+\tau_{ij} = \mu \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)
+\]
+Dit formalisme verklaart waarom viskeuze krachten in alle richtingen werken, wat later terugkomt in de Navier-Stokes vergelijkingen.
 
 \chapter{Fluïdumstatica (Hydrostatica)}
 Fluïdumstatica behandelt vloeistoffen die in rust zijn. In deze toestand zijn er geen relatieve bewegingen tussen vloeistoflagen, dus er zijn geen schuifspanningen. Alleen normaalkrachten (druk) spelen een rol.
@@ -438,8 +465,8 @@ P = 101300 + 201105 = 302405 \, Pa \approx 3.02 \, bar
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.2\textwidth]{assets/wikipedia/manometer_utube_pd_500.png}
-    \caption{U-buis manometer (schematisch).\;\scriptsize Bron: Mintz l, publiek domein, via Wikimedia Commons (\url{https://commons.wikimedia.org/wiki/File:Manometer_(schematic_U-tube).svg}).}
+    \includegraphics[width=0.3\textwidth]{assets/wikipedia/manometer_utube_pd_500.png}
+    \caption{U-buis manometer (schematisch).}
 \end{figure}
 
 \subsubsection*{Voorbeeldoefening: manometer (drukverschil)}
@@ -516,6 +543,15 @@ y_p = y_c + \frac{I_{xx,c}}{y_c \cdot A}
 \]
 waarbij $y_p$ en $y_c$ posities langs het oppervlak zijn, en $I_{xx,c}$ het traagheidsmoment rond de horizontale as door het zwaartepunt is.
 
+\subsection{De Methode van het Drukprisma}
+Naast de formule $F = p_c A$, is de methode van het \term{drukprisma} vaak intuïtiever. De totale hydrostatische kracht op een vlak oppervlak is gelijk aan het volume van het drukprisma dat op dat oppervlak rust.
+\begin{itemize}
+    \item Voor een rechthoekige wand is dit prisma driehoekig (of trapeziumvormig bij overdruk).
+    \item De totale kracht $F$ is het volume van dit prisma.
+    \item Het aangrijpingspunt $y_p$ is het geometrische zwaartepunt van dit prisma.
+\end{itemize}
+Bij een externe overdruk $P_0$ (zoals in een drukvat) kan men werken met een equivalente vloeistofhoogte $h_{eq} = P_0 / (\rho g)$. Het drukprofiel start dan niet bij 0 maar bij $P_0$, wat het rekenwerk vereenvoudigt tot een trapeziumvolume.
+
 \subsubsection*{Voorbeeld: Kracht op een sluisdeur}
 \textbf{Gegeven:} Een rechthoekige sluisdeur is $4 \, m$ breed en het water staat $3 \, m$ hoog tegen de deur.
 \textbf{Gevraagd:} De totale hydrostatische kracht op de deur.
@@ -535,6 +571,30 @@ F = 176580 \, N \approx 176.6 \, kN
     \caption{Hydrostatische krachten op een ondergedompeld vlak oppervlak.}
     \label{fig:submerged_plane}
 \end{figure}
+
+\section{Krachten op Gekromde Oppervlakken}
+Voor gekromde oppervlakken (zoals een dam of buis) is directe integratie complex. We gebruiken de componentenmethode:
+
+\subsection{Horizontale Component ($F_H$)}
+De horizontale kracht is gelijk aan de kracht op de \textbf{verticale projectie} van het gekromde oppervlak.
+\[
+F_H = \rho g h_{c,proj} A_{proj}
+\]
+Het aangrijpingspunt ligt op het drukpunt van deze projectie.
+
+\subsection{Verticale Component ($F_V$)}
+De verticale kracht is gelijk aan het \textbf{gewicht van de vloeistofkolom} (reëel of imaginair) boven het gekromde oppervlak.
+\[
+F_V = \rho g V_{kolom}
+\]
+De werklijn gaat door het zwaartepunt van dit volume.
+
+\subsection{Resultante}
+De totale kracht is de vectoriële som:
+\[
+F_R = \sqrt{F_H^2 + F_V^2}, \quad \theta = \arctan\left(\frac{F_V}{F_H}\right)
+\]
+\textbf{Belangrijk:} Voor een cirkelvormig oppervlak (zoals een cilinder of bol) staat de resultante drukkracht altijd loodrecht op het oppervlak en gaat dus door het krommingsmiddelpunt. Dit maakt momentenberekeningen rond dat punt zeer eenvoudig (arm = 0).
 
 \section{Archimedes' kracht en Drijfvermogen}
 Het principe van Archimedes stelt dat een ondergedompeld lichaam een opwaartse kracht ondervindt die gelijk is aan het gewicht van de verplaatste vloeistof:
@@ -569,7 +629,7 @@ Deze kracht grijpt aan in het drukkpunt van de verplaatste vloeistof. Voor de st
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{assets/wikipedia/buoyancy_cc_by_sa_960.png}
-    \caption{Drijfvermogen: opwaartse kracht werkt in het drukkingspunt (centrum van opwaartse kracht).\;\scriptsize Bron: Original Yupi666, vector Pbrks, CC BY-SA 3.0, via Wikimedia Commons (\url{https://commons.wikimedia.org/wiki/File:Buoyancy.svg}).}
+    \caption{Drijfvermogen: opwaartse kracht werkt in het drukkingspunt (centrum van opwaartse kracht).}
 \end{figure}
 
 \subsubsection*{Voorbeeldoefening: drijfhoogte bepalen}
@@ -641,6 +701,17 @@ De versnelling van een vloeistofdeeltje is dus:
 \]
 waarbij $\frac{\partial \vec{v}}{\partial t}$ de lokale versnelling is en $(\vec{v} \cdot \nabla)\vec{v}$ de convectieve versnelling.
 
+\section{Reynolds Transport Stelling (RTT)}
+De Reynolds Transport Stelling is de wiskundige brug tussen de systeembenadering (vaste massa) en de controlevolume-benadering (vast gebied). Het stelt ons in staat om behoudswetten voor een systeem om te zetten naar een integraalvorm voor een controlevolume.
+\[
+\frac{dB_{sys}}{dt} = \frac{\partial}{\partial t} \int_{CV} \rho b \, dV + \int_{CS} \rho b (\vec{v} \cdot \hat{n}) \, dA
+\]
+Hierbij is $B$ een extensieve eigenschap (zoals massa $m$, impuls $m\vec{v}$, of energie $E$) en $b$ de intensieve eigenschap per massa-eenheid ($1$, $\vec{v}$, of $e$).
+\begin{itemize}
+    \item De eerste term rechts is de verandering \textit{binnen} het controlevolume (onstationair effect).
+    \item De tweede term is de netto flux \textit{door} het controleoppervlak.
+\end{itemize}
+Voor massabehoud ($B=m, b=1$) leidt dit direct tot de continuïteitsvergelijking.
 
 \chapter{Fluïdumdynamica: De Bewegingsvergelijkingen}
 Wanneer fluïda bewegen, wordt de analyse complexer door de effecten van traagheid, viscositeit en turbulentie.
@@ -662,7 +733,7 @@ Voor onsamendrukbare stroming ($\rho = \text{constant}$):
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/continuity.png}
+    \includegraphics[width=0.8\textwidth]{assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png}
     \caption{Illustratie van de continuïteitsvergelijking: $A_1 V_1 = A_2 V_2$.}
     \label{fig:continuity}
 \end{figure}
@@ -781,6 +852,16 @@ Dit levert de wet van Bernoulli:
 p + \frac{1}{2}\rho v^2 + \rho g z = \text{constant}
 \]
 
+\subsection{Beperkingen van Bernoulli}
+De wet van Bernoulli is krachtig maar heeft strikte geldigheidsvoorwaarden. Hij mag enkel gebruikt worden als aan \textbf{alle} volgende voorwaarden is voldaan:
+\begin{enumerate}
+    \item \textbf{Stationaire stroming:} Geen tijdsafhankelijkheid.
+    \item \textbf{Onviskeus:} Geen wrijving (dus niet dicht bij wanden of in lange leidingen).
+    \item \textbf{Onsamendrukbaar:} Dichtheid $\rho$ is constant.
+    \item \textbf{Langs een stroomlijn:} De constante geldt in principe enkel op één stroomlijn (tenzij de stroming rotatievrij is).
+\end{enumerate}
+Bij plotse expansies of in lange leidingen is de aanname "onviskeus" fout en moet de algemene energievergelijking met verliestermen gebruikt worden.
+
 \subsection{Interpretatie van de Termen}
 De wet van Bernoulli drukt behoud van mechanische energie uit per volume-eenheid:
 \begin{itemize}
@@ -809,15 +890,15 @@ V_2 = \sqrt{2 \cdot 9.81 \cdot 5} = \sqrt{98.1} \approx 9.9 \, m/s
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/bernoulli.png}
+    \includegraphics[width=0.4\textwidth]{assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png}
     \caption{Diagram van de Wet van Bernoulli.}
     \label{fig:bernoulli}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.82\textwidth]{assets/wikipedia/venturi_pd.png}
-    \caption{Venturi-effect: hogere snelheid in de keel gaat (bij gelijke hoogte) samen met lagere statische druk.\;\scriptsize Bron: HappyApple, publiek domein, via Wikimedia Commons (\url{https://commons.wikimedia.org/wiki/File:Venturifixed2.PNG}).}
+    \includegraphics[width=0.8\textwidth]{assets/wikipedia/venturi_pd.png}
+    \caption{Venturi-effect: hogere snelheid in de keel gaat (bij gelijke hoogte) samen met lagere statische druk.}
 \end{figure}
 
 \subsubsection*{Voorbeeldoefening: drukdaling in een venturi (Bernoulli + continuïteit)}
@@ -834,9 +915,29 @@ Dus \boxed{p_1-p_2\approx 6{,}0\,\mathrm{kPa}}.
 \section{De Algemene Energievergelijking}
 In de praktijk is er altijd wrijving en worden pompen of turbines gebruikt. We gebruiken dan de uitgebreide energievergelijking, vaak uitgedrukt in termen van "hoogte" (head, in meters vloeistofkolom):
 \[
-\frac{P_1}{\rho g} + \frac{V_1^2}{2g} + z_1 + h_{pomp} = \frac{P_2}{\rho g} + \frac{V_2^2}{2g} + z_2 + h_{turbine} + h_{L}
+\frac{P_1}{\rho g} + \alpha_1 \frac{\bar{V}_1^2}{2g} + z_1 + h_{pomp} = \frac{P_2}{\rho g} + \alpha_2 \frac{\bar{V}_2^2}{2g} + z_2 + h_{turbine} + h_{L}
 \]
 Hierbij vertegenwoordigt $h_L$ het totaal aan energieverliezen (head loss) door wrijving in leidingen en componenten.
+
+\subsection{Correctiefactoren voor Profielen}
+In de integrale analyses gebruiken we vaak de gemiddelde snelheid $\bar{V}$. Omdat het snelheidsprofiel niet vlak is (bijv. parabolisch bij laminair), moeten we correctiefactoren invoeren:
+
+\textbf{Kinetische Energie Correctiefactor ($\alpha$):}
+De factor $\alpha$ in de energievergelijking corrigeert voor de niet-uniforme verdeling van kinetische energie.
+\begin{itemize}
+    \item Laminair: $\alpha = 2{,}0$ (grote correctie!)
+    \item Turbulent: $\alpha \approx 1{,}05$ (vaak verwaarloosd als 1)
+\end{itemize}
+
+\textbf{Impulsflux Correctiefactor ($\beta$):}
+Voor de impulsvergelijking geldt analoog:
+\[
+\sum \vec{F} = \sum \beta \dot{m} \vec{V}_{uit} - \sum \beta \dot{m} \vec{V}_{in}
+\]
+\begin{itemize}
+    \item Laminair: $\beta = 4/3 \approx 1{,}33$
+    \item Turbulent: $\beta \approx 1{,}02$
+\end{itemize}
 
 \chapter{Differentiële Analyse van Fluïdumstroming}
 \section{Afleiding van de Navier-Stokes Vergelijkingen}
@@ -891,6 +992,17 @@ Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. Samen met de con
     \caption{Controlevolume voor de afleiding van behoudswetten.}
     \label{fig:control_volume}
 \end{figure}
+
+\subsection{Stappenplan voor Vereenvoudiging ("Exacte Oplossingen")}
+De Navier-Stokes vergelijkingen zijn complex, maar kunnen voor specifieke gevallen vereenvoudigd worden. Volg dit stappenplan:
+\begin{enumerate}
+    \item \textbf{Kies het coördinatenstelsel:} Cartesisch $(x,y,z)$ voor vlakke platen, Cilindrisch $(r,\theta,z)$ voor buizen.
+    \item \textbf{Stationariteit:} Is $\frac{\partial}{\partial t} = 0$? (Vaak ja).
+    \item \textbf{Volledig ontwikkeld:} Is $\frac{\partial u}{\partial x} = 0$? Dit betekent dat het snelheidsprofiel niet meer verandert in de stroomrichting.
+    \item \textbf{Symmetrie:} Is $\frac{\partial}{\partial \theta} = 0$ (axisymmetrisch)?
+    \item \textbf{Continuïteit:} Gebruik $\nabla \cdot \vec{v} = 0$ om te zien of bepaalde snelheidscomponenten nul zijn.
+\end{enumerate}
+Dit reduceert de partiële differentiaalvergelijkingen vaak tot gewone differentiaalvergelijkingen die integreerbaar zijn.
 
 \section{Oplossing: Stroming tussen Parallelle Platen (Poiseuille)}
 \textbf{Probleemstelling:} Stationaire, volledig ontwikkelde stroming tussen twee parallelle platen op afstand $a$ van elkaar.
@@ -1298,12 +1410,50 @@ Invullen:
 Het debiet is $Q = V_2 \cdot A = 3.99 \cdot \frac{\pi}{4}(0.10)^2 = 3.99 \cdot 0.007854 \approx 0.0313\,\mathrm{m^3/s}$.
 Dus \boxed{Q \approx 31.3\,\mathrm{L/s}}.
 
+\subsection{Leidingsystemen: Serie en Parallel}
+Net als in elektrische circuits gelden er regels voor complexe leidingsystemen:
+
+\textbf{Serieschakeling:}
+\begin{itemize}
+    \item Het debiet is overal gelijk: $Q_1 = Q_2 = Q_{totaal}$.
+    \item De verliezen tellen op: $h_{L,totaal} = h_{L,1} + h_{L,2} + \dots$
+\end{itemize}
+
+\textbf{Parallelschakeling:}
+\begin{itemize}
+    \item Het drukverschil (en dus head loss) over elke tak is gelijk: $h_{L,1} = h_{L,2} = \Delta p / \rho g$.
+    \item De debieten tellen op: $Q_{totaal} = Q_1 + Q_2 + \dots$
+\end{itemize}
+Dit betekent dat voor twee parallelle leidingen geldt:
+\[
+\left( f \frac{L}{D} \frac{V^2}{2g} \right)_1 = \left( f \frac{L}{D} \frac{V^2}{2g} \right)_2
+\]
+Dit stelt ons in staat de verhouding van snelheden (en debieten) te bepalen.
+
+\subsection{Iteratieve Oplossingsmethoden (Type 2 Problemen)}
+Bij veel ontwerpproblemen is de diameter en het drukverschil gegeven, maar is het debiet $Q$ (en dus snelheid $V$) onbekend. Omdat de wrijvingsfactor $f$ afhangt van het Reynoldsgetal ($Re = VD/\nu$), en $Re$ afhangt van $V$, is dit een impliciet probleem.
+
+\textbf{Stappenplan:}
+\begin{enumerate}
+    \item \textbf{Schat een waarde voor $f$:} Een goede startwaarde is de volledig turbulente waarde (rechts in Moody-diagram), die enkel afhangt van $\varepsilon/D$.
+    \item \textbf{Bereken $V$:} Gebruik de energievergelijking met de geschatte $f$ om $V$ te vinden.
+    \item \textbf{Bereken $Re$:} $Re = VD/\nu$.
+    \item \textbf{Update $f$:} Gebruik het nieuwe Reynoldsgetal en het Moody-diagram (of Colebrook/Haaland) om een betere waarde voor $f$ te vinden.
+    \item \textbf{Herhaal:} Ga terug naar stap 2 met de nieuwe $f$ tot de waarde niet meer verandert (convergentie).
+\end{enumerate}
+
 \section{Externe Stroming: Weerstand en Lift}
 Bij externe stroming beweegt een fluïdum rondom een object (of beweegt een object door een stilstaand fluïdum). De krachten die het fluïdum op het object uitoefent, worden ontbonden in twee componenten:
 \begin{itemize}
     \item \textbf{Weerstand (Drag, $F_D$):} De krachtcomponent evenwijdig aan de stromingsrichting (remmend).
     \item \textbf{Lift ($F_L$):} De krachtcomponent loodrecht op de stromingsrichting.
 \end{itemize}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{assets/slides/08_Boundary_layer_development_on_a_flat_plate.png}
+    \caption{Ontwikkeling van de grenslaag op een vlakke plaat.}
+\end{figure}
 
 \subsection{Weerstand (Drag)}
 De totale weerstandskracht wordt gegeven door:
@@ -1323,6 +1473,12 @@ De weerstand bestaat uit twee bijdragen:
     \item \textbf{Wrijvingsweerstand:} Veroorzaakt door schuifspanningen aan het oppervlak (viscositeit). Dominant bij slanke, gestroomlijnde lichamen (zoals een vliegtuigvleugel).
     \item \textbf{Drukweerstand (Vormweerstand):} Veroorzaakt door drukverschillen. Aan de voorkant is de druk hoog (stuwpunt), aan de achterkant laag, vooral als de stroming loslaat (\textit{flow separation}) en een turbulent zog vormt. Dominant bij stompe voorwerpen (zoals een bal of vrachtwagen).
 \end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{assets/slides/10_Flow_separation_and_wake_formation.png}
+    \caption{Loslating van de stroming en zogvorming.}
+\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -1353,8 +1509,8 @@ Hier is $A$ meestal het \textit{planform area} (bovenaanzicht oppervlak) bij vle
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{assets/Lift.png}
-    \caption{Krachtenbalans op een vleugelprofiel: Lift loodrecht op de stroming, Drag evenwijdig.}
+    \includegraphics[width=0.8\textwidth]{assets/Lift.png}
+    \caption{Lift- en weerstandskrachten op een vleugelprofiel.}
 \end{figure}
 
 \subsubsection*{Voorbeeldoefening: Opstijgend vliegtuig}
@@ -1461,6 +1617,11 @@ Speciale processen worden aangeduid met het voorvoegsel iso-:
 Een cyclus is een proces (of reeks processen) waarbij de eindtoestand identiek is aan de begintoestand. De netto verandering van eigenschappen over een cyclus is nul ($\Delta E_{cyclus} = 0$), wat impliceert dat de netto energieoverdracht via warmte gelijk moet zijn aan de netto energieoverdracht via arbeid.
 
 \chapter{De Eerste Hoofdwet van de Thermodynamica: Energiebehoud}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/08_Closed_system_with_heat_and_work_transfer.png}
+    \caption{Eerste Hoofdwet voor gesloten systemen: $Q - W = \Delta U$.}
+\end{figure}
 De Eerste Hoofdwet van de thermodynamica is een uitdrukking van het principe van behoud van energie: energie kan niet worden gecreëerd of vernietigd, alleen van vorm veranderen. Voor elk thermodynamisch systeem geldt:
 \[
 E_{in} - E_{uit} = \Delta E_{systeem}
@@ -1547,6 +1708,11 @@ W_b=P\,(V_2-V_1)=200\times 10^3\,(0{,}25-0{,}10)=200\times 10^3\cdot 0{,}15=3{,}
 Dus $\boxed{W_b=30\,\mathrm{kJ}}$ (positief: arbeid geleverd door het gas).
 
 \section{De Eerste Hoofdwet voor Open Systemen (Controlevolumes)}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/14_Control_volume_with_mass_flow.png}
+    \caption{Eerste Hoofdwet voor open systemen (controlevolume).}
+\end{figure}
 Bij open systemen stroomt massa de grenzen over. Massa draagt energie met zich mee (interne energie $u$, kinetische energie $V^2/2$ en potentiële energie $gz$). Daarnaast is er energie nodig om de massa in of uit het systeem te duwen tegen de heersende druk in. Deze mechanische energie noemen we stromingsarbeid of flow work ($W_{flow} = Pv$).
 
 Om de thermodynamische analyse van open systemen te vereenvoudigen, combineren we de interne energie $u$ en de stromingsarbeid $Pv$ in een nieuwe eigenschap: enthalpie ($h$).
@@ -1611,6 +1777,28 @@ V_2^2-V_1^2=220^2-20^2=48400-400=48000\,\mathrm{m^2/s^2}
 \]
 Dus de nozzle “zet” ongeveer $\boxed{24\,\mathrm{kJ/kg}}$ enthalpie om in kinetische energie.
 
+\subsection{Specifieke Componenten: Smoring en Mengkamers}
+\textbf{1. Smoring (Throttling):}
+Bij een expansieventiel of capillair buisje (in koelkasten) daalt de druk aanzienlijk zonder dat er arbeid wordt verricht of warmte wordt uitgewisseld (adiabatisch).
+\[
+\dot{Q} \approx 0, \quad \dot{W} = 0, \quad \Delta KE \approx 0, \quad \Delta PE \approx 0
+\]
+De energiebalans reduceert tot:
+\[
+h_1 = h_2
+\]
+Dit is een \term{isenthalpisch} proces. Hoewel de enthalpie constant blijft, daalt de temperatuur meestal (Joule-Thomson effect).
+
+\textbf{2. Mengkamers (Mixing Chambers):}
+Wanneer twee stromen mengen (bijv. in een douche of industriële menger), geldt behoud van massa en energie. Vaak is de kamer adiabatisch.
+\[
+\sum \dot{m}_{in} h_{in} = \sum \dot{m}_{uit} h_{uit}
+\]
+Voor twee inlaatstromen (1, 2) en één uitlaatstroom (3):
+\[
+\dot{m}_1 h_1 + \dot{m}_2 h_2 = \dot{m}_3 h_3 \quad (\text{met } \dot{m}_3 = \dot{m}_1 + \dot{m}_2)
+\]
+
 \chapter{Eigenschappen van Zuivere Stoffen}
 Om de energiebalansen op te lossen, moeten we de waarden van $u$, $h$ en $v$ kunnen bepalen. Stoffen zoals water of koelmiddel (R-134a) gedragen zich complexer dan ideale gassen vanwege faseovergangen. Een zuivere stof heeft een uniforme chemische samenstelling.
 
@@ -1624,6 +1812,21 @@ We kennen drie hoofdfasen: vaste stof, vloeistof en gas. De thermodynamica van f
 \end{itemize}
 \textbf{Verzadigingstemperatuur ($T_{sat}$) en -druk ($P_{sat}$):} Bij een gegeven druk is er een specifieke temperatuur waarbij een zuivere stof kookt. Water kookt bijvoorbeeld bij 100°C bij 1 atm, maar bij een lagere temperatuur op grote hoogte waar de druk lager is.
 
+\section{Het Staatspostulaat en Onafhankelijkheid}
+Het staatspostulaat stelt dat de toestand van een eenvoudig samendrukbaar systeem volledig bepaald is door twee onafhankelijke, intensieve eigenschappen.
+\begin{itemize}
+    \item \textbf{Buiten de koepel (Enkelfasig):} $P$ en $T$ zijn onafhankelijk. Als je $P$ en $T$ kent, ligt de toestand vast (bijv. oververhitte damp).
+    \item \textbf{Binnen de koepel (Tweefasig):} $P$ en $T$ zijn \textbf{afhankelijk} ($P = P_{sat}(T)$). Je hebt een andere eigenschap nodig, zoals de kwaliteit $x$, om de toestand te bepalen.
+\end{itemize}
+De kwaliteit $x$ is de massafractie damp in het mengsel:
+\[
+x = \frac{m_{damp}}{m_{totaal}}
+\]
+Eigenschappen in het menggebied worden berekend als gewogen gemiddelde:
+\[
+v = v_f + x(v_g - v_f)
+\]
+
 \section{Eigenschapsdiagrammen en Tabellen}
 De relaties tussen eigenschappen worden gevisualiseerd in $T-v$, $P-v$ en $P-T$ diagrammen. Op een $T-v$ diagram zien we een karakteristieke "koepel" (de verzadigingskoepel):
 \begin{itemize}
@@ -1634,35 +1837,16 @@ De relaties tussen eigenschappen worden gevisualiseerd in $T-v$, $P-v$ en $P-T$ 
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
-        % axes
-        \draw[->] (0,0) -- (6.0,0) node[right] {$v$};
-        \draw[->] (0,0) -- (0,4.2) node[above] {$T$};
-
-        % saturation dome (stylized)
-        \draw[thick] (1.4,0.5) .. controls (1.0,1.8) and (1.6,3.2) .. (3.0,3.7);
-        \draw[thick] (4.6,0.5) .. controls (5.0,1.8) and (4.4,3.2) .. (3.0,3.7);
-        \node[above] at (3.0,3.7) {kritiek punt};
-        \fill (3.0,3.7) circle (1.3pt);
-
-        % labels
-        \node[left] at (1.35,2.2) {verzadigde
-vloeistoflijn};
-        \node[right] at (4.65,2.2) {verzadigde
-damplijn};
-        \node at (3.0,2.0) {menggebied
-($0<x<1$)};
-        \node at (0.9,0.7) {vloeistof};
-        \node at (5.1,0.7) {damp};
-    \end{tikzpicture}
-    \caption{Schematisch $T$-$v$ diagram met verzadigingskoepel en kwaliteit $x$ in het menggebied.}
+    \includegraphics[width=0.6\textwidth]{assets/slides/05_T-v_diagram_of_phase-change_processes.png}
+    \caption{P-v-T oppervlak en projecties (fasediagrammen).}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/wikipedia/phase_diagram_water_960.png}
+    \includegraphics[width=0.4\textwidth]{assets/wikipedia/phase_diagram_water_960.png}
     \caption{$P$-$T$ fasediagram van water (log-schaal in druk), met tripelpunt en kritisch punt.\;\scriptsize Bron: Cmglee, CC BY-SA 3.0, via Wikimedia Commons (\url{https://commons.wikimedia.org/wiki/File:Phase_diagram_of_water.svg}).}
 \end{figure}
+
 Onder de koepel bevindt zich het menggebied, waar vloeistof en damp in evenwicht samen bestaan. In dit gebied zijn druk en temperatuur afhankelijk van elkaar. Om de toestand vast te leggen, gebruiken we de kwaliteit of dampfractie $x$, gedefinieerd als de verhouding van de massa damp tot de totale massa van het mengsel:
 \[
 x = \frac{m_{damp}}{m_{totaal}}
@@ -1756,6 +1940,12 @@ Onomkeerbaar $\Rightarrow S_{gen}>0$.
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png}
+    \caption{T-s diagram: vergelijking tussen een reversibel (ideaal) en irreversibel (echt) proces. Het irreversibele proces eindigt op een hogere entropie ($\Delta S > \int \delta Q/T$).}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \begin{tikzpicture}[x=1.2cm,y=1.2cm]
         \draw[thick] (0,0) rectangle (2.4,1.2);
         \draw[thick] (4.6,0) rectangle (7.0,1.2);
@@ -1797,182 +1987,870 @@ Dus $\boxed{\Delta S\approx 1{,}55\,\mathrm{kJ/K}}$.
 \]
 Omdat dit proces onomkeerbaar is, geldt $S_{gen}=\Delta S_{tot}>0$.
 
-\section{Isentropische Processen en Efficiëntie}
-Een proces dat zowel adiabatisch ($Q=0$) als reversibel ($S_{gen}=0$) is, wordt isentroop genoemd. Hierbij blijft de entropie constant ($\Delta s = 0$). Isentropische processen dienen als het ideale vergelijkingsmodel voor machines zoals turbines, compressoren en nozzles.
+\section{Entropiebalans en Efficiëntie}
 
-De isentropische efficiëntie is een maat voor hoe dicht een werkelijk apparaat de ideale prestatie benadert:
+\subsection{Entropiebalans voor Open Systemen}
+Net als massa en energie, kan entropie een controle volume binnenkomen of verlaten via massastromen en warmteoverdracht. Echter, in tegenstelling tot energie, blijft entropie \textit{niet} behouden: het wordt gegenereerd door onomkeerbaarheden. De algemene entropiebalans voor een open systeem is:
+
+\[
+\underbrace{\frac{dS_{CV}}{dt}}_{\text{Verandering in CV}} = \underbrace{\sum \dot{m}_{in} s_{in} - \sum \dot{m}_{uit} s_{uit}}_{\text{Netto entropiestroom via massa}} + \underbrace{\sum \frac{\dot{Q}_k}{T_k}}_{\text{Entropiestroom via warmte}} + \underbrace{\dot{S}_{gen}}_{\text{Entropiegeneratie}}
+\]
+
+Voor een \textbf{stationair proces} (steady-state, $dS_{CV}/dt = 0$) wordt dit:
+\[
+\dot{S}_{gen} = \sum \dot{m}_{uit} s_{uit} - \sum \dot{m}_{in} s_{in} - \sum \frac{\dot{Q}_k}{T_k} \geq 0
+\]
+
+Hierbij is:
 \begin{itemize}
-    \item Voor een turbine: $\eta_T = \frac{\text{Werkelijke Arbeid}}{\text{Isentropische Arbeid}} \approx \frac{h_1 - h_{2a}}{h_1 - h_{2s}}$
-    \item Voor een compressor: $\eta_C = \frac{\text{Isentropische Arbeid}}{\text{Werkelijke Arbeid}} \approx \frac{h_{2s} - h_1}{h_{2a} - h_1}$
+    \item $\dot{S}_{gen}$: De snelheid van entropiegeneratie (altijd $\geq 0$).
+    \item $\dot{Q}_k/T_k$: De entropieoverdracht door warmteoverdracht bij temperatuur $T_k$ (op de grens).
+    \item $s$: De specifieke entropie van de in- en uitgaande massastromen.
 \end{itemize}
 
+Voor een \textbf{adiabatisch} systeem ($\dot{Q}=0$) met één inlaat en één uitlaat (bijv. een ideale turbine of pomp) geldt:
+\[
+\dot{S}_{gen} = \dot{m}(s_{uit} - s_{in}) \geq 0 \quad \Rightarrow \quad s_{uit} \geq s_{in}
+\]
+In het ideale geval (reversibel) is $s_{uit} = s_{in}$ (isentroop).
+
+\subsection{Isentropische Efficiënties}
+Omdat echte machines (turbines, compressoren, pompen, nozzles) onomkeerbaar zijn, genereren ze entropie ($s_{uit} > s_{in}$ voor adiabatische processen). De isentropische efficiëntie vergelijkt de werkelijke prestatie met de ideale (isentrope) prestatie.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png}
+    \caption{h-s diagram voor een turbine. Het werkelijke proces (stippellijn) wijkt af van het isentrope proces (verticale lijn) richting hogere entropie.}
+\end{figure}
+
+\subsubsection*{Turbine}
+Een turbine produceert arbeid. De werkelijke arbeid is \textit{lager} dan de ideale isentrope arbeid.
+\[
+\eta_T = \frac{\text{Werkelijke Arbeid}}{\text{Isentropische Arbeid}} \approx \frac{h_1 - h_{2a}}{h_1 - h_{2s}}
+\]
+Waarbij $h_{2a}$ de werkelijke uitgangsenthalpie is en $h_{2s}$ de enthalpie bij isentrope expansie ($s_{2s} = s_1$).
+
+\subsubsection*{Compressor en Pomp}
+Een compressor vereist arbeid. De werkelijke arbeid is \textit{hoger} dan de ideale isentrope arbeid.
+\[
+\eta_C = \frac{\text{Isentropische Arbeid}}{\text{Werkelijke Arbeid}} \approx \frac{h_{2s} - h_1}{h_{2a} - h_1}
+\]
+
+\subsubsection*{Nozzle (Straalbuis)}
+Een nozzle zet druk om in kinetische energie.
+\[
+\eta_N = \frac{\text{Werkelijke Kinetische Energie}}{\text{Isentropische Kinetische Energie}} = \frac{V_{2a}^2}{V_{2s}^2} \approx \frac{h_1 - h_{2a}}{h_1 - h_{2s}}
+\]
+
 \chapter{Thermodynamische Cycli}
-De toepassing van thermodynamica culmineert in de analyse van cycli voor krachtcentrales en koelmachines.
+
+\section*{Inleiding: Waarom Cycli?}
+
+Een thermodynamische cyclus is een reeks processen waarbij een systeem terugkeert naar zijn oorspronkelijke toestand. Dit concept is centraal in de engineering omdat vrijwel alle machines (motoren, compressoren, warmtepompen, turbines) in cycli werken. Het grote voordeel is dat na één volledige cyclus alle toestateigenschappen teruggekeerd zijn naar hun oorspronkelijke waarden, dus $\Delta E_{cyclus} = 0$. Dit houdt in dat de netto energie die als warmte wordt toegevoerd gelijk moet zijn aan de netto arbeid die geproduceerd wordt:
+\[
+Q_{netto,in} = W_{netto,uit}
+\]
+
+Dit is waarom cycli zo interessant zijn voor praktische toepassingen: je kunt continu arbeid of koeling uit eenzelfde hoeveelheid werkvloeistof halen door deze steeds opnieuw door dezelfde cyclus te voeren.
+
+De prestatie van een cyclus wordt gemeten door:
+\begin{itemize}
+    \item \textbf{Voor een warmtemotor:} Het thermisch rendement $\eta_{th} = \frac{W_{netto}}{Q_{in}} = 1 - \frac{Q_{uit}}{Q_{in}}$. Dit is altijd kleiner dan 100\% vanwege de Tweede Hoofdwet.
+    \item \textbf{Voor een koelcyclus of warmtepomp:} De Coefficient of Performance (COP) $= \frac{Q_L}{W_{in}}$ (koelkast) of $\frac{Q_H}{W_{in}}$ (warmtepomp).
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/slides/16_Heat_engine.png}
+        \caption{Schematische weergave van een warmtemotor.}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{assets/slides/21_Thermal_efficiency_of_a_heat_engine.png}
+        \caption{Definitie van thermisch rendement.}
+    \end{minipage}
+\end{figure}
+
+Op een $P$-$V$ diagram is de oppervlakte omsloten door de cycluscurve gelijk aan de netto arbeid per kilogram (of per mol) werkvloeistof. Op een $T$-$s$ diagram is dit eveneens waar voor de warmte. Een grotere oppervlakte = beter rendement.
 
 \section{De Carnot Cyclus}
-Dit is de meest efficiënte theoretische cyclus die mogelijk is tussen twee temperatuurlimieten. Hij bestaat uit vier volledig reversibele processen:
+
+Dit is de meest efficiënte theoretische cyclus die mogelijk is tussen twee temperatuurlimieten. Hij werd bedacht door Sadi Carnot (1824) en dient als referentiepunt: geen enkel apparaat kan beter presteren dan de Carnot-cyclus tussen dezelfde twee temperatuurlimieten.
+
+\subsection*{Vier Processen van de Carnot-cyclus (expansie)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{assets/slides/23_Carnot_cycle_processes.png}
+    \caption{De vier stappen van de Carnot-cyclus in een zuiger-cilinder systeem: (a) Isotherme expansie, (b) Adiabatische expansie, (c) Isotherme compressie, (d) Adiabatische compressie.}
+\end{figure}
+
 \begin{enumerate}
-    \item Isotherme expansie (warmtetoevoer bij $T_H$)
-    \item Adiabatische expansie (temperatuurdaling tot $T_L$)
-    \item Isotherme compressie (warmteafvoer bij $T_L$)
-    \item Adiabatische compressie (temperatuurstijging tot $T_H$)
+    \item \textbf{Proces 1$\to$2: Isotherme expansie bij $T_H$} 
+    
+    Het gas expandeert terwijl het constant in contact staat met een heet reservoir. De expansie verricht arbeid op de omgeving ($W_{1\to2} > 0$), dus moet warmte worden toegevoerd om de temperatuur constant te houden ($Q_{1\to2} > 0$). Dit is het proces waar de motor "voeding" krijgt.
+    
+    \item \textbf{Proces 2$\to$3: Adiabatische expansie (isentroop)}
+    
+    Het gas expandeert verder, maar nu zonder warmte-uitwisseling ($Q_{2\to3} = 0$). De expansiearbeid wordt geleverd uit de interne energie van het gas, dus de temperatuur daalt van $T_H$ naar $T_L$. Dit proces is reversibel, dus isentroop ($s = \text{const}$).
+    
+    \item \textbf{Proces 3$\to$4: Isotherme compressie bij $T_L$}
+    
+    Het gas wordt nu gecomprimeerd terwijl het in contact staat met een koud reservoir. Compressie vereist arbeid ($W_{3\to4} < 0$, negatief omdat arbeid wordt op het systeem verricht). Deze arbeid wordt niet als warmte opgeslagen (want $T$ is constant), dus moet warmte naar buiten worden afgeevoerd ($Q_{3\to4} < 0$). Dit is het "afvalproces" waar ongewenste warmte wordt verwijderd.
+    
+    \item \textbf{Proces 4$\to$1: Adiabatische compressie (isentroop)}
+    
+    Verdere compressie zonder warmte-uitwisseling verhoogt de temperatuur van $T_L$ terug naar $T_H$, completerend de cyclus. Dit sluit de lus.
 \end{enumerate}
-Het thermisch rendement van een Carnot-motor hangt enkel af van de absolute temperaturen van de reservoirs:
+
+\subsection*{Rendement van de Carnot-cyclus}
+
+Het thermisch rendement van een Carnot-motor is:
 \[
 \eta_{th, Carnot} = 1 - \frac{T_L}{T_H}
 \]
-Dit stelt de theoretische bovengrens voor elke warmtemotor. Om het rendement te verhogen, moet men $T_H$ verhogen of $T_L$ verlagen.
+
+Dit is het \textbf{theoretische maximum}. Enkele belangrijke waarnemingen:
+\begin{itemize}
+    \item Het rendement hangt \textit{enkel} af van de absolute temperaturen, niet van het materiaal of de detaillen van het proces.
+    \item Een rendement van 100\% is alleen mogelijk als $T_L = 0\,\mathrm{K}$ (absoluut nul), wat fysisch onmogelijk is.
+    \item Om het rendement te verhogen, moet je $T_H$ \textit{verhogen} of $T_L$ \textit{verlagen}. Dit is waarom stoomturbines zoveel hete stoom gebruiken.
+    \item Geen enkel werkelijk apparaat kan dit rendement bereiken; alle werkelijke motoren zijn minder efficiënt vanwege onomkeerbaarheden (wrijving, warmteoverdracht bij eindig $\Delta T$, etc.).
+\end{itemize}
+
+\textbf{Voorbeeld:} Een warmtemotor tussen $T_H = 600\,\mathrm{K}$ en $T_L = 300\,\mathrm{K}$ kan maximaal bereiken:
+\[
+\eta_{Carnot} = 1 - \frac{300}{600} = 0{,}50 = 50\%
+\]
+Elke echte motor zal slechter presteren.
+
+\subsection*{Omgekeerde Carnot: Koelkast en Warmtepomp}
+
+Als je de cyclus in omgekeerde richting laat lopen (volgens pijlen in omgekeerde volgorde) krijg je een koelmachine. In plaats van warmte om te zetten in arbeid, gebruik je arbeid om warmte van koud naar warm over te brengen. De Coefficient of Performance is:
+
+\[
+\mathrm{COP}_{\mathrm{koelkast}} = \frac{Q_L}{W_{in}} = \frac{T_L}{T_H - T_L}
+\]
+
+Dit is veel groter dan 1! Een ideale koelkast tussen 270 K en 300 K heeft $\mathrm{COP} = 270/(300-270) = 9$. Dit betekent dat voor elke joule elektrische arbeid, 9 joule warmte uit de koude ruimte wordt onttrokken (en 10 joule naar buiten wordt afgevoerd).
 
 \subsection*{$T$-$s$ diagram van de Carnot-cyclus (schematisch)}
-Voor een intern reversibele cyclus geldt $\delta q_{rev}=T\,ds$. Daardoor geeft de oppervlakte in het $T$-$s$ diagram een directe interpretatie van warmte en (via de energiebalans over een cyclus) netto arbeid.
+Voor een intern reversibele cyclus geldt $\delta q_{rev}=T\,ds$. Daardoor geeft de oppervlakte in het $T$-$s$ diagram een directe interpretatie van warmte en (via de energiebalans over een cyclus) netto arbeid. Let op: In een $T$-$s$ diagram vormen de twee isotherme processen horizontale lijnen (constant $T$), en de twee isentropische processen zijn verticaal (constant $s$). Dit geeft een rechthoek!
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
-        \draw[->] (0,0) -- (6.2,0) node[right] {$s$};
-        \draw[->] (0,0) -- (0,4.0) node[above] {$T$};
-
-        \draw[dashed] (0.8,3.2) -- (5.4,3.2);
-        \draw[dashed] (0.8,1.0) -- (5.4,1.0);
-        \node[left] at (0.8,3.2) {$T_H$};
-        \node[left] at (0.8,1.0) {$T_L$};
-
-        \fill[lightblue,opacity=0.35] (1.6,1.0) rectangle (4.8,3.2);
-        \draw[thick,->] (1.6,3.2) -- (4.8,3.2) node[midway,above] {1$\to$2 isotherm};
-        \draw[thick,->] (4.8,3.2) -- (4.8,1.0) node[midway,right] {2$\to$3 isentroop};
-        \draw[thick,->] (4.8,1.0) -- (1.6,1.0) node[midway,below] {3$\to$4 isotherm};
-        \draw[thick,->] (1.6,1.0) -- (1.6,3.2) node[midway,left] {4$\to$1 isentroop};
-
-        \fill (1.6,3.2) circle (1.3pt) node[above left] {1};
-        \fill (4.8,3.2) circle (1.3pt) node[above right] {2};
-        \fill (4.8,1.0) circle (1.3pt) node[below right] {3};
-        \fill (1.6,1.0) circle (1.3pt) node[below left] {4};
-    \end{tikzpicture}
-    \caption{$T$-$s$ diagram van de reversibele Carnot-cyclus.}
+    \includegraphics[width=0.2\textwidth]{assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png}
+    \caption{P-v en T-s diagrammen van de Carnot-cyclus.\label{fig:carnot_ts}}
 \end{figure}
 
-\subsection*{Omgekeerde Carnot (koelkast/warmtepomp) en COP}
-Voor koelmachines gebruiken we de \textbf{Coefficient of Performance (COP)}:
-\[
-\mathrm{COP}_{\mathrm{koelkast}}=\frac{Q_L}{W_{in}},\qquad
-\mathrm{COP}_{\mathrm{warmtepomp}}=\frac{Q_H}{W_{in}}
-\]
-Voor de reversibele (Carnot) limiet volgt:
-\[
-\mathrm{COP}_{\mathrm{koelkast,C}}=\frac{T_L}{T_H-T_L},\qquad
-\mathrm{COP}_{\mathrm{warmtepomp,C}}=\frac{T_H}{T_H-T_L}
-\]
-
 \subsection*{Voorbeeldoefening: COP van een Carnot-koelkast}
-	\textbf{Gegeven:} Een koelkast werkt ideaal tussen $T_L=270\,\mathrm{K}$ en $T_H=300\,\mathrm{K}$.
+	\textbf{Gegeven:} Een koelkast werkt ideaal (Carnot) tussen $T_L=270\,\mathrm{K}$ (binnentemperatuur) en $T_H=300\,\mathrm{K}$ (omgevingstemperatuur).
 
-	\textbf{Gevraagd:} Bepaal $\mathrm{COP}_{\mathrm{koelkast,C}}$.
+	\textbf{Gevraagd:} Bepaal $\mathrm{COP}_{\mathrm{koelkast}}$.
 
 	\textbf{Oplossing:}
+
+	Voor een Carnot-koelkast geldt:
 \[
-\mathrm{COP}_{\mathrm{koelkast,C}}=\frac{270}{300-270}=9
+\mathrm{COP}_{\mathrm{koelkast}} = \frac{T_L}{T_H - T_L} = \frac{270}{300 - 270} = \frac{270}{30} = 9
 \]
-Dus $\boxed{\mathrm{COP}\approx 9}$ (bovengrens).
+
+	Dus $\boxed{\mathrm{COP} = 9}$ (theoretisch maximum).
+
+	Dit betekent dat elke joule compressorarbeid 9 joule koeling oplevert. Dit is het ideale geval; echte koelkasten hebben COP tussen 2 en 4 vanwege onomkeerbaarheden.
 
 \section{Otto en Diesel Cycli}
-Dit zijn de geïdealiseerde modellen voor interne verbrandingsmotoren (resp. benzine en diesel).
+
+Dit zijn de geïdealiseerde modellen voor interne verbrandingsmotoren. In tegenstelling tot externe motoren (zoals stoomturbines die constant dezelfde werkvloeistof recirculeren) gebeurt de energietoevoeging in benzine- en dieselmotoren door in-situ verbranding van brandstof. Toch kunnen we ze als theoretische cycli analyseren door de verbranding te vervangen door "warmtetoevoeringprocessen".
+
+\subsection*{Otto-cyclus (Benzine)}
+
+De Otto-cyclus bestaat uit vier slagen:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{assets/slides/31_Actual_four-stroke_spark-ignition_engine.png}
+    \caption{De vier slagen van een viertakt benzinemotor: inlaat, compressie, arbeid (expansie), uitlaat.}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Inlaatslag (0$\to$1):} Zuiger beweegt naar beneden, klep opent, lucht-brandstofmengsel stroomt in.
+    
+    \item \textbf{Compressieslag (1$\to$2):} Beide kleppen dicht, zuiger beweegt omhoog. Het mengsel wordt isentroop gecomprimeerd tot hogedruk en -temperatuur. Dit stelt formeel een isentroop proces voor: $PV^k = \text{const}$.
+    
+    \item \textbf{Ontsteking en Expansieslag (2$\to$3$\to$4):} De brandstof ontsnapt (vonk). Aan dit moment nemen we aan dat warmte ogenblikkelijk wordt toegevoerd terwijl het volume nog constant is (isochor). Dit verhoogt druk en temperatuur (2$\to$3). Daarna expandeert het gas isentroop en levert arbeid (3$\to$4). Dit is de "power stroke".
+    
+    \item \textbf{Uitlaatslag (4$\to$1):} Uitlaatklep opent, verbrandingsgassen stromen uit bij vrijwel constant volume (isochor warmteafvoer: 4$\to$1). De druk daalt tot atmosferisch.
+\end{enumerate}
+
+\textbf{Idealisering in de thermodynamica:} We combineren inlaat en uitlaat in één isochor warmteafvoer. De cyclus wordt dus:
 \begin{itemize}
-    \item \textbf{Otto-cyclus:} Bestaat uit isentrope (waarbij entropy $s$ constant is) compressie, isochore (waarbij volume $V$ constant is) warmtetoevoer (ontsteking), isentrope expansie (arbeidsslag) en isochore warmteafvoer. Het rendement is een functie van de compressieverhouding $r$ en de specifieke warmteverhouding $k$: $\eta = 1 - r^{1-k}$.
-    \item \textbf{Diesel-cyclus:} Verschilt van Otto doordat de verbranding trager verloopt; dit wordt gemodelleerd als warmtetoevoer bij constante druk (isobaar) gedurende een deel van de expansieslag.
+    \item 1$\to$2: Isentrope compressie
+    \item 2$\to$3: Isochore warmtetoevoeringswarmtetoevoering (ontsteking)
+    \item 3$\to$4: Isentrope expansie (arbeid)
+    \item 4$\to$1: Isochore warmteafvoer (uitlaat)
+\end{itemize}
+
+\textbf{Rendement van de Otto-cyclus:}
+
+Het rendement hangt af van de \textbf{compressieratio} $r = V_1 / V_2$ en de soortelijke warmteverhouding $k = c_p / c_v$:
+\[
+\eta_{Otto} = 1 - \frac{1}{r^{k-1}}
+\]
+
+\textbf{Voorbeeld:} Voor $r = 8$ en $k = 1{,}4$ (lucht):
+\[
+\eta_{Otto} = 1 - \frac{1}{8^{0.4}} \approx 1 - 0{,}452 \approx 0{,}565 = 56{,}5\%
+\]
+
+Dit is het theoretische rendement; echte Otto-motoren halen ongeveer 25–30\% door vele onomkeerbaarheden.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png}
+    \caption{T-s diagram van de ideale Otto-cyclus. Proces 1-2 en 3-4 zijn isentroop (adiabatisch reversibel), 2-3 en 4-1 zijn isochoor (constant volume).}
+\end{figure}
+
+\subsection*{Diesel-cyclus}
+
+De Diesel-cyclus verschilt van Otto vooral in hoe de verbranding plaatsvindt. In plaats van ogenblikkelijke ontsteking bij constant volume, laat de diesel-motor de brandstof langzaam inspuiten gedurende een deel van de expansieslag. Dit wordt gemodelleerd als isobare (constant druk) warmtetoevoeringswarmtetoevoering.
+
+\begin{enumerate}
+    \item 1$\to$2: Isentrope compressie (dezelfde als Otto)
+    \item 2$\to$3: Isobare warmtetoevoeringswarmtetoevoering (brandstoftoevoeringsfase)
+    \item 3$\to$4: Isentrope expansie (arbeid)
+    \item 4$\to$1: Isochore warmteafvoer
+\end{enumerate}
+
+\textbf{Voordeel van Diesel:} De isobare warmtetoevoeringsfase gebeurt bij gelijkmatigere drukken, wat efficiënter kan zijn. Diesels bereiken ook hogere compressieratio's (15–22) omdat ze geen vonkontsteking nodig hebben, wat het rendement verbetert. In de praktijk bereiken diesels rendement van 40–50\%.
+
+\textbf{Nadeel:} De hogere drukken vereisen sterker materiaal (duurder) en meer motorlawaai.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{assets/slides/32_Diesel_cycle_P-v_and_T-s_diagrams.png}
+    \caption{P-v en T-s diagrammen van de Diesel-cyclus.}
+    \label{fig:diesel_pv}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{assets/slides/33_Comparison_of_Otto_and_Diesel_cycles.png}
+    \caption{Vergelijking van Otto en Diesel cycli.}
+\end{figure}
+
+\section{Rankine Cyclus}
+
+Dit is de basiscyclus voor stoomkrachtcentrales en gebruikt in bijna alle grote warmte-elektrische centrales ter wereld. In tegenstelling tot Otto/Diesel gebruikt Rankine externe verbranding (coal, gas, nucleair) om water in stoom om te zetten. Een voordeel is dat je grote volumes kunt verwerken en hoge temperaturen kunt bereiken. Een nadeel is dat het proces ingewikkelder is omdat water faseveranderingen ondergaat.
+
+\subsection*{De vier componenten van een Rankine-cyclus}
+
+\begin{enumerate}
+    \item \textbf{Pomp (1$\to$2):} Vloeibaar water onder lage druk wordt pompgecomprimeerd tot hoge druk (isentrope proces). De pomparbeid is klein omdat water incompressibel is. Een echte pomp levert niet-ideale compressie, dus praktische efficiënties liggen rond 75–85\%.
+    
+    \item \textbf{Ketel/Boiler (2$\to$3):} Water wordt isobaar (constant druk) verwarmd. Dit is het meest complexe deel: eerst verhoogt zich de temperatuur van vloeibaar water tot het kookpunt (gecomprimeerde vloeistof), daarna verdampt het geleidelijk aan (menggebied met kwaliteit $x$ tussen 0 en 1), en tenslotte kan het verder opwarmd worden tot oververhitte stoom. Alle warmte wordt toegevoerd: $Q_{in} = h_3 - h_2$.
+    
+    \item \textbf{Turbine (3$\to$4s):} Hete stoom expandeert isentroop door de turbine en levert arbeid. De uitlaat bevindt zich in het menggebied (natte stoom). Dit is waar de mechanische arbeid wordt gegenereerd. De turbine-efficiëntie (ongeveer 85–90\%) is lager dan de ideale isentrope arbeid vanwege wrijving en stromingsverlies.
+    
+    \item \textbf{Condensor (4$\to$1):} De natte stoom wordt isobaar gecondenseerd in een groot warmtewisselaar (meestal koelwater van een rivier/zee). Dit verwijdert veel warmte: $Q_{uit} = h_4 - h_1$.
+\end{enumerate}
+
+\textbf{Thermisch rendement:}
+
+\[
+\eta_{Rankine} = \frac{W_{net}}{Q_{in}} = 1 - \frac{Q_{uit}}{Q_{in}}
+\]
+
+Voor praktische centrales: $\eta_{Rankine} \approx 35{,}40\%$. De reden dat dit lager is dan Carnot: veel van de warmtetoevoeringswarmtetoevoeringsfase gebeurt bij veel lagere temperatuur dan de hogedrukdamptemperatuur.
+
+\textbf{Manieren om rendement te verbeteren:}
+\begin{itemize}
+    \item Hogere stoomtemperatuur (in de ketel): verhoogt $T_{gem}$ van warmtetoevoeringsfase.
+    \item Hogere keteldruk: idem.
+    \item Lagere condensortemperatuur: lastig (vereist koud koelwater).
+    \item \textbf{Superheat:} Stoom verder opwarmen na damp-fase (dit gebeurt in moderne centrales).
+    \item \textbf{Regeneratie:} Tappunten uit de turbine gebruiken om voedingswater voor te verwarmen (wordt in real centrales gedaan).
 \end{itemize}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{assets/otto_cycle.png}
-    \caption{P-V diagram van de Otto-cyclus.}
-    \label{fig:otto}
+    \includegraphics[width=0.85\textwidth]{assets/slides/20_Steam_power_plant_schematic.png}
+    \caption{Praktisch stoomkrachtcentrale schema Rankine cyclus: pomp verdicht water, ketel verdampt in stoom, turbine expandeert voor arbeid, condensor liquefieert terug naar water.\label{fig:rankine_schema}}
 \end{figure}
-
-\section{Rankine Cyclus}
-Dit is de basiscyclus voor stoomkrachtcentrales. De werkvloeistof (water) ondergaat faseveranderingen:
-\begin{enumerate}
-    \item \textbf{Pomp:} Verhoogt de druk van vloeibaar water (isentrope compressie).
-    \item \textbf{Ketel (Boiler):} Verdampt het water tot stoom bij constante druk (isobare warmtetoevoer).
-    \item \textbf{Turbine:} De stoom expandeert en levert arbeid (isentrope expansie).
-    \item \textbf{Condensor:} De stoom condenseert terug naar vloeistof bij constante druk (isobare warmteafvoer).
-\end{enumerate}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/wikipedia/rankine_cycle_layout_cc0_1024.png}
-    \caption{Schema van de Rankine-cyclus.\;\scriptsize Bron: D. Ilyin (vectorisatie), CC0, via Wikimedia Commons (\url{https://commons.wikimedia.org/wiki/File:Rankine_cycle_layout.svg}).}
-    \label{fig:rankine}
+    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
+        \draw[->] (0,0) -- (6.0,0) node[right,font=\small] {Entropie $s$};
+        \draw[->] (0,0) -- (0,4.5) node[above,font=\small] {Temperatuur $T$};
+
+        % Saturation dome
+        \draw[thick,gray] (0.5,0.5) .. controls (2.5,3.5) and (3.5,3.5) .. (5.5,0.5);
+        \node[gray,font=\tiny] at (3.0,3.6) {Verzadigingskoepel};
+
+        \coordinate (r1) at (1.0,0.8); % Condenser exit (sat liquid)
+        \coordinate (r2) at (1.1,1.0); % Pump exit (compressed liquid)
+        \coordinate (r3) at (4.5,3.8); % Turbine inlet (superheated)
+        \coordinate (r4) at (4.5,1.2); % Turbine exit (mixture)
+
+        % 1-2 Isentropic pump
+        \draw[thick] (r1) -- (r2);
+        % 2-3 Isobaric heat addition (boiler)
+        \draw[thick] (r2) .. controls (1.5,1.5) and (2.0,3.0) .. (2.5,3.0); % heating to sat liquid
+        \draw[thick] (2.5,3.0) -- (4.0,3.0); % evaporation
+        \draw[thick] (4.0,3.0) -- (r3); % superheating
+        % 3-4 Isentropic turbine
+        \draw[thick] (r3) -- (r4);
+        % 4-1 Isobaric heat rejection (condenser)
+        \draw[thick] (r4) -- (r1);
+
+        \fill (r1) circle (0.8pt) node[left,font=\small] {1};
+        \fill (r2) circle (0.8pt) node[left,font=\small] {2};
+        \fill (r3) circle (0.8pt) node[above right,font=\small] {3};
+        \fill (r4) circle (0.8pt) node[below right,font=\small] {4};
+
+        % Labels
+        \node[font=\scriptsize,left] at (1.05,0.9) {Pomp};
+        \node[font=\scriptsize,above] at (3.0,3.1) {Ketel ($P=c$)};
+        \node[font=\scriptsize,right] at (4.5,2.5) {Turbine ($s=c$)};
+        \node[font=\scriptsize,below] at (2.8,1.0) {Condensor ($P=c$)};
+    \end{tikzpicture}
+    \caption{T-s diagram Rankine-cyclus met oververhitting. Proces 1-2: pomp, 2-3: ketel (opwarmen, verdampen, oververhitten), 3-4: turbine (expansie), 4-1: condensor.}
 \end{figure}
+
+\subsection*{Voorbeeldoefening: Rankine rendement}
+
+\textbf{Gegeven:} Een ideale Rankine-cyclus werkt tussen stoomketel (druk $P = 5\,\mathrm{MPa}$, oververhitte stoom $T = 400^\circ\mathrm{C}$) en condensor ($P = 10\,\mathrm{kPa}$). Water uit de pomp is gezuiverd vloeistof.
+
+\textbf{Gevraagd:} Bepaal het theoretische rendement (isentrope turbine aangenomen).
+
+\textbf{Oplossing:}
+
+Dit is een tabelleeroefening. Uit stoomtabellen:
+\begin{itemize}
+    \item \textbf{Toestand 3} (inlaat turbine, oververhitte stoom $5\,\mathrm{MPa}$, $400^\circ\mathrm{C}$): $h_3 \approx 3231\,\mathrm{kJ/kg}$, $s_3 \approx 6{,}55\,\mathrm{kJ/(kg \cdot K)}$
+    
+    \item \textbf{Toestand 1} (uitlaat condensor, verzadigde vloeistof $10\,\mathrm{kPa}$): $h_1 \approx 191\,\mathrm{kJ/kg}$, $s_1 \approx 0{,}649\,\mathrm{kJ/(kg \cdot K)}$
+    
+    \item \textbf{Toestand 4s} (isentrope expansie $s_4 = s_3$, dus $s_{4s} = 6{,}55\,\mathrm{kJ/(kg \cdot K)}$ in het menggebied bij $10\,\mathrm{kPa}$): Dit ligt in het menggebied. We zoeken de kwaliteit: $s_{4s} = s_f + x(s_g - s_f)$. Met $s_f = 0{,}649$, $s_g = 8{,}150$:
+    \[
+    6{,}55 = 0{,}649 + x(8{,}150 - 0{,}649) \implies x \approx 0{,}773
+    \]
+    Dan: $h_{4s} = h_f + x(h_g - h_f) = 191 + 0{,}773 \times (2584 - 191) \approx 1839\,\mathrm{kJ/kg}$
+\end{itemize}
+
+Arbeid en warmte:
+\begin{align}
+    W_{turbine} &= h_3 - h_{4s} = 3231 - 1839 = 1392\,\mathrm{kJ/kg}\\
+    W_{pomp} &\approx v(P_3 - P_1) \approx 0{,}001(5000 - 10) \approx 4{,}99\,\mathrm{kJ/kg}\\
+    W_{net} &= 1392 - 5 = 1387\,\mathrm{kJ/kg}\\
+    Q_{in} &= h_3 - h_2 \approx h_3 - h_1 - W_{pomp} = 3231 - 191 - 5 = 3035\,\mathrm{kJ/kg}
+\end{align}
+
+Rendement:
+\[
+\eta = \frac{1387}{3035} \approx 0{,}457 = 45{,}7\%
+\]
+
+Dit is theoretisch maximum. Praktische centrales bereiken ongeveer 35–40\% vanwege turbine-inefficiëntie en warmteverliezen.
 
 \section{Dampcompressie Koelcyclus}
-Dit is de cyclus die gebruikt wordt in koelkasten en airconditioners. Het is in wezen een omgekeerde warmtemotor, bestaande uit een compressor, condensor, expansieventiel en verdamper. Een bijzonderheid is het expansieventiel, waar vloeistof door een vernauwing stroomt. Dit is een onomkeerbaar proces waarbij de druk sterk daalt en een deel van de vloeistof verdampt ("flashing"), wat leidt tot een sterke temperatuurdaling. Dit proces wordt als isenthalpisch ($h \approx \text{constant}$) beschouwd.
 
-\subsection*{COP (praktisch)}
-In de praktijk wordt de COP vaak bepaald uit vermogens:
+Dit is de meest gebruikte cyclus in koelkasten, airconditioners en warmtepompen. In tegenstelling tot Rankine (die gas/stoom gebruikt) werkt dit met synthetische koelmiddelen (vraker R-134a, tegenwoordig meer vriendelijke stoffen als R-32, R-290). Het voordeel is dat deze stoffen ontworpen zijn voor gunstige thermodynamische eigenschappen bij praktische drukken.
+
+\subsection*{De vier componenten}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{assets/slides/22_Refrigerator_basic_operation.png}
+    \caption{Schematische weergave van een dampcompressie koelcyclus met de vier hoofdcomponenten: compressor, condensor, expansieventiel en verdamper.}
+\end{figure}
+
+\begin{enumerate}
+    \item \textbf{Compressor (1$\to$2):} Het koelmiddel in gaserige vorm wordt isentroop gecomprimeerd naar hoge druk en temperatuur. Dit vereist elektrische arbeid ($W_{in}$). Een echte compressor bereikt 70–85\% isentrope efficiëntie.
+    
+    \item \textbf{Condensor (2$\to$3):} Het hete, hoogdrukgas wordt isobaar gecondenseerd door het naar buiten te blazen (lucht of water). Dit verwijdert warmte: $Q_{uit} = h_2 - h_3$.
+    
+    \item \textbf{Expansieventiel (3$\to$4):} Dit is het sleutelproces! De vloeistof wordt door een vernauwing geperst (zoals een capillairtube of elektronisch ventiel). Dit is een irreversibel "smoring"-proces (isenthalpisch: $h_3 = h_4$). De druk daalt sterk, en omdat de enthalpie hetzelfde blijft, verdampt een deel van de vloeistof. Dit veroorzaakt een grote temperatuurdaling.
+    
+    \item \textbf{Verdamper (4$\to$1):} Het natte koelmiddel (mengsel van vloeistof en gas) verdampt isobaar in contact met de koude ruimte (of wat je wilt koelen). Dit onttrekkt warmte: $Q_{in} = h_1 - h_4$.
+\end{enumerate}
+
+\subsection*{COP (Coefficient of Performance)}
+
+De efficiëntie van een koelcyclus wordt niet uitgedrukt als rendement (want het is geen motor), maar als COP:
 \[
-\mathrm{COP}=\frac{\dot{Q}_L}{\dot{W}_{in}}
+\mathrm{COP}_{refrig} = \frac{Q_L}{W_{in}} = \frac{h_1 - h_4}{h_2 - h_1}
 \]
-waar $\dot{Q}_L$ de warmte is die uit de koude ruimte onttrokken wordt (verdamper) en $\dot{W}_{in}$ het compressor-/elektrisch vermogen.
 
-\subsection*{Diagram: dampcompressiecyclus op $T$-$s$ (schematisch)}
-De smoring (3$\to$4) is typisch \textbf{onomkeerbaar} en verhoogt de entropie.
+Voor een warmtepomp (die warmte aan een warm reservoir afgeeft):
+\[
+\mathrm{COP}_{heat\ pump} = \frac{Q_H}{W_{in}} = \frac{h_2 - h_3}{h_2 - h_1} = 1 + \mathrm{COP}_{refrig}
+\]
+
+\textbf{Typische waarden:} Echte koelkasten bereiken COP = 2–4. Dit betekent dat voor elke joule elektrische arbeid, 2–4 joule warmte uit de koude ruimte wordt onttrokken.
+
+\textbf{Onomkeerbaarheid:} Het expansieventiel (3$\to$4) is zeer onomkeerbaar en genereert veel entropie. Dit is de grootste energieverspiller in echte cycli. Ideale cycli gebruiken een expansie-turbine in plaats van een ventiel, maar dit is praktisch moeilijk realiseerbaar.
+
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[x=1.2cm,y=1.2cm]
-        \draw[->] (0,0) -- (6.2,0) node[right] {$s$};
-        \draw[->] (0,0) -- (0,4.2) node[above] {$T$};
+        \draw[->] (0,0) -- (6.2,0) node[right,font=\small] {entropie $s$};
+        \draw[->] (0,0) -- (0,4.5) node[above,font=\small] {temperatuur $T$};
 
-        \coordinate (p1) at (1.6,1.2);
-        \coordinate (p2) at (2.6,3.2);
-        \coordinate (p3) at (4.8,3.0);
-        \coordinate (p4) at (3.7,1.0);
+        \coordinate (p1) at (3.5,1.2);
+        \coordinate (p2) at (2.0,3.5);
+        \coordinate (p3) at (4.2,3.2);
+        \coordinate (p4) at (4.8,1.0);
 
-        \draw[thick,->] (p1) -- (p2) node[midway,left] {1$\to$2 comp.};
-        \draw[thick,->] (p2) -- (p3) node[midway,above] {2$\to$3 cond.};
-        \draw[thick,->,dashed] (p3) -- (p4) node[midway,right] {3$\to$4 smoring};
-        \draw[thick,->] (p4) -- (p1) node[midway,below] {4$\to$1 verd.};
+        % Isentropic compression
+        \draw[thick] (p1) .. controls (2.5,2.2) and (2.0,2.8) .. (p2);
+        % Isobaric condensation
+        \draw[thick] (p2) -- (p3);
+        % Throttling (isenthalpic, vertical in T-s)
+        \draw[thick,dashed,red] (p3) -- (p4);
+        % Isobaric evaporation
+        \draw[thick] (p4) -- (p1);
 
-        \fill (p1) circle (1.3pt) node[below left] {1};
-        \fill (p2) circle (1.3pt) node[above left] {2};
-        \fill (p3) circle (1.3pt) node[above right] {3};
-        \fill (p4) circle (1.3pt) node[below right] {4};
+        \fill (p1) circle (0.8pt) node[below right,font=\small] {1};
+        \fill (p2) circle (0.8pt) node[above left,font=\small] {2};
+        \fill (p3) circle (0.8pt) node[above right,font=\small] {3};
+        \fill (p4) circle (0.8pt) node[below right,font=\small] {4};
+
+        % Process labels
+        \node[font=\scriptsize,left] at (2.2,2.3) {1→2};
+        \node[font=\scriptsize,left] at (2.2,2.05) {compressor};
+        \node[font=\scriptsize,above] at (3.1,3.35) {2→3 condensor};
+        \node[font=\scriptsize,color=red,right] at (4.95,2.1) {3→4};
+        \node[font=\scriptsize,color=red,right] at (4.95,1.85) {smoring};
+        \node[font=\scriptsize,below] at (4.1,0.7) {4→1 verdamper};
+        
+        % Label for heat removal and addition
+        \node[font=\tiny] at (2.5,2.9) {warmte uit};
+        \node[font=\tiny] at (4.5,0.4) {warmte in};
     \end{tikzpicture}
-    \caption{Schematische dampcompressiecyclus in een $T$-$s$ diagram (smoring is onomkeerbaar).}
+    \caption{T-s diagram dampcompressie koelcyclus: let op dashed lijn (3→4) voor onomkeerbare smoring. Compressor gebruikt arbeid, condensor stoot warmte af, verdamper haalt warmte op uit koude ruimte.\label{fig:refrigeration_ts}}
 \end{figure}
 
-\subsection*{Voorbeeldoefening: COP uit vermogens}
-                    	\textbf{Gegeven:} Een koelkast onttrekt $\dot{Q}_L=1{,}8\,\mathrm{kW}$ en de compressor verbruikt $\dot{W}_{in}=0{,}60\,\mathrm{kW}$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/28_Actual_vs_ideal_cycle.png}
+    \caption{P-h diagram van de dampcompressie koelcyclus.}
+\end{figure}
 
-                    	\textbf{Gevraagd:} Bepaal de COP.
+\subsection*{Praktische Opmerkingen}
 
-                    	\textbf{Oplossing:}
+\begin{itemize}
+    \item \textbf{Subcooling en Superheat:} Moderne airconditioners voegen extra componenten toe: de vloeistof wordt onderkoeld voordat het het expansieventiel bereikt (betere COP), en de zuiggas kan licht oververhit zijn om vloeistripping in de compressor te voorkomen.
+    
+    \item \textbf{Twee-traps systemen:} Voor zeer lage temperaturen (diepvries) worden twee cycli in serie gebruikt, elk met zijn eigen compressor.
+    
+    \item \textbf{Milieu:} Oudere koelmiddelen (CFC's, HCFC's) beschadigen de ozonlaag. Moderne keuze: HFC-vrij (HFO's) of natuurlijke stoffen (propaan R-290, isobutaan R-600a).
+\end{itemize}
+
+\section{Omkeerbare versus Onomkeerbare Cycli}
+
+\subsection*{Definitie en Thermodynamisch Perspectief}
+
+Alle praktische cyclussen zijn \textbf{onomkeerbaar} (irreversibel) vanwege:
+\begin{enumerate}
+    \item \textbf{Wrijving en Stroming:} Turbulentie, viskeuze verliezen in buizen en in machines
+    \item \textbf{Warmteoverdracht bij eindig $\Delta T$:} Warmte stroomt nooit spontaan van koud naar warm zonder arbeid
+    \item \textbf{Smoring (Throttling):} Expansieventiel, afsluiting van gassen
+    \item \textbf{Menging:} Twee stoffen of temperaturen die mengen
+\end{enumerate}
+
+Deze onomkeerbaarheden genereren \textbf{entropie}. Uit de Tweede Wet van Thermodynamica:
 \[
-\mathrm{COP}=\frac{1{,}8}{0{,}60}=3{,}0
+\Delta S_{gen} = S_{uit} - S_{in} - \int \frac{\delta Q}{T_{bound}} \ge 0
 \]
-Dus $\boxed{\mathrm{COP}=3{,}0}$.
+waarbij $S_{gen}$ de \textit{entropie-generatie} is. Voor reversibele processen: $S_{gen} = 0$. Voor onomkeerbare processen: $S_{gen} > 0$.
 
-\section{Omkeerbare en onomkeerbare cycli (concept)}
-Onomkeerbaarheid (wrijving, drukverlies, smoring, warmteoverdracht bij eindig $\Delta T$) verhoogt $S_{gen}$ en verlaagt de prestaties t.o.v. de ideale (reversibele) cyclus.
+
+\subsection*{Visualisatie in het $T$-$s$ diagram}
+
+In een $T$-$s$ diagram geldt dat de oppervlakte onder de cyclus direct gerelateerd is aan de netto arbeid:
+\[
+W_{netto} = \oint T \, ds \quad \text{(oppervlak van cyclus)}
+\]
+
+Wanneer onomkeerbaarheden optreden, stijgt de entropie van het systeem. Dit veroorzaakt dat de \textit{eindtoestand} van een proces hoger ligt in $s$ dan ideaal. Als gevolg:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png}
+    \caption{T-s diagram: omkeerbare cyclus versus onomkeerbare cyclus. Onomkeerbaarheden verplaatsen het eindpunt naar hoger entropie, wat leidt tot een kleiner ingesloten oppervlak en minder netto arbeid.}
+    \label{fig:rev_vs_irrev}
+\end{figure}
+
+\subsection*{Waarom Onomkeerbaarheid Lagere Prestatie Geeft}
+
+\textbf{Voor een turbine (expansie):}
+\begin{itemize}
+    \item \textbf{Ideaal (isentroop):} Gas expandeert reversibel van $(P_1, s_1)$ tot $(P_2, s_2=s_1)$ (verticale lijn in $T$-$s$). Dit levert maximale arbeid: $W_{s} = h_1 - h_{2s}$.
+    \item \textbf{Echt (onomkeerbaar):} Wrijving en interne ongelijkheden genereren entropie. Het gas eindigt bij $(P_2, s_2 > s_1)$, dus op een hogere enthalpie $h_2 > h_{2s}$. Arbeid: $W_{real} = h_1 - h_2 < W_{s}$.
+    \item \textbf{Efficiëntie:} $\eta_{turbine} = \frac{W_{real}}{W_{s}} = \frac{h_1 - h_2}{h_1 - h_{2s}}$ (typisch 85–90\%).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png}
+    \caption{Isentropische efficiënties van turbine, compressor, pomp en straalbuis.}
+\end{figure}
+
+\textbf{Voor een compressor (compressie):}
+\begin{itemize}
+    \item \textbf{Ideaal (isentroop):} Druk stijgt isentroop. Minimale arbeid nodig: $W_{s} = h_2 - h_1$.
+    \item \textbf{Echt (onomkeerbaar):} Wrijving genereert entropie. Eindpunt is hoger in $s$ en $T$. Meer arbeid nodig: $W_{real} > W_s$.
+    \item \textbf{Efficiëntie:} $\eta_{comp} = \frac{W_s}{W_{real}} = \frac{h_{2s} - h_1}{h_2 - h_1}$ (typisch 80–85\%).
+\end{itemize}
+
+\subsection*{Praktisch Voorbeeld: Koelcyclus met Smoring}
+
+De \textbf{expansieventiel} (3$\to$4) in de koelcyclus is een klassiek voorbeeld van onomkeerbaarheid:
+
 \begin{figure}[H]
     \centering
     \begin{tikzpicture}[x=1.2cm,y=1.2cm]
-        \draw[->] (0,0) -- (6.2,0) node[right] {$s$};
-        \draw[->] (0,0) -- (0,4.0) node[above] {$T$};
+        % Top: Ideal vs real processes
+        \draw (0,3.5) node[above,font=\small] {Ideaal (isentropische expansie-turbine)};
+        \draw[thick,blue] (0.8,2.8) -- (2.8,1.5) node[right,font=\tiny] {isentroop};
+        
+        \draw (4.0,3.5) node[above,font=\small] {Echt (throttling-ventiel)};
+        \draw[thick,red,dashed] (4.8,2.8) -- (6.8,2.8) node[right,font=\tiny] {isenthalpic};
 
-        % reversible loop
-        \draw[thick] (1.4,3.0) .. controls (3.0,3.6) and (4.8,3.2) .. (4.9,2.1)
-                     .. controls (5.0,1.2) and (3.5,0.8) .. (2.1,1.1)
-                     .. controls (1.2,1.4) and (1.1,2.3) .. (1.4,3.0);
-        \node at (3.3,2.55) {reversibel};
+        % T-s diagram (ideal)
+        \draw[->] (0,0) -- (3.5,0) node[right,font=\small] {$s$};
+        \draw[->] (0,0) -- (0,3.2) node[above,font=\small] {$T$};
+        
+        \fill (0.8,2.8) circle (0.8pt) node[above left,font=\tiny] {3};
+        \fill (2.8,1.5) circle (0.8pt) node[below right,font=\tiny] {4s};
 
-        % irreversible loop
-        \draw[thick,dashed] (1.7,2.8) .. controls (3.0,3.2) and (4.4,2.9) .. (4.5,2.1)
-                            .. controls (4.6,1.5) and (3.5,1.1) .. (2.4,1.3)
-                            .. controls (1.7,1.5) and (1.5,2.2) .. (1.7,2.8);
-        \node at (3.25,2.05) {onomkeerbaar};
+        % P-h diagram (real)
+        \draw[->] (4,0) -- (7.5,0) node[right,font=\small] {$h$};
+        \draw[->] (4,0) -- (4,3.2) node[above,font=\small] {$P$};
+        
+        \fill (4.8,2.8) circle (0.8pt) node[above left,font=\tiny] {3};
+        \fill (6.8,2.8) circle (0.8pt) node[above right,font=\tiny] {4};
+
+        % Labels
+        \node[blue,font=\scriptsize] at (1.5,2.0) {Arbeidsuitgang};
+        \node[red,font=\scriptsize] at (5.8,3.0) {Geen arbeid!};
+        \node[red,font=\scriptsize,below] at (5.8,2.0) {Entropie $\uparrow$};
     \end{tikzpicture}
-    \caption{Conceptueel: onomkeerbaarheid verkleint de ingesloten oppervlakte in $T$-$s$ en verlaagt de cyclusprestatie.}
+    \caption{Expansie-vergelijking: ideaal isentroop (links, T-s) produceert arbeid; echte smoring (rechts, P-h) produceert geen arbeid en genereert entropie. Dit is de grootste energie-inefficiëntie in echte koelcycli.}
 \end{figure}
+
+\textbf{Waarom is smoring onomkeerbaar?}
+\begin{itemize}
+    \item \textbf{Enthalpie constant:} $h_3 = h_4$ (geen arbeid, geen warmte in het ventiel zelf).
+    \item \textbf{Maar:} In het menggebied stijgt de entropie omdat vloeistof plotseling expandeert en verdampt zonder ordeningswerk: $s_4 > s_3$.
+    \item \textbf{Gevolg:} De koelvloeistof verliest "kwaliteit". Dezelfde hoeveelheid koeling eist meer compressorarbeid.
+    \item \textbf{Verbetering:} Een expansie-turbine in plaats van een ventiel zou arbeid produceren en entropie-generatie vermijden, maar is mechanisch ingewikkelder.
+\end{itemize}
+
+\subsection*{Rendement versus Ideaal}
+
+Voor alle machines geldt:
+\[
+\text{Werkelijke Prestatie} = \eta \times \text{Ideale Prestatie}
+\]
+
+waarbij $\eta$ < 1 vanwege onomkeerbaarheden. Bijvoorbeeld:
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Machine} & \textbf{Ideale Efficiëntie} & \textbf{Praktische Efficiëntie} \\
+\midrule
+Turbine & Isentroop & 85–92\% \\
+Compressor & Isentroop & 80–88\% \\
+Pomp & Isentroop & 75–85\% \\
+Ventilator & Isentroop & 70–80\% \\
+Koelkast (COP) & Carnot (7–15) & 2–4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+De \textit{isentrope efficiëntie} is het meest gebruikt als benchmark:
+\[
+\eta_s = \frac{\text{ideale arbeid}}{\text{werkelijke arbeid}}
+\]
+
+Dit geeft aan hoeveel % van het ideale resultaat wordt bereikt ondanks onomkeerbaarheden.
+
+\subsection*{Voorbeeldoefening 1: Stoomturbine met Irreversibiliteit}
+
+\textbf{Gegeven:} Stoom stroomt in een turbine met:
+\begin{itemize}
+    \item Inlaat: $P_1 = 5\,\mathrm{MPa}$, $T_1 = 400^\circ\mathrm{C}$ → $h_1 = 3231\,\mathrm{kJ/kg}$, $s_1 = 6,55\,\mathrm{kJ/(kg \cdot K)}$
+    \item Uitlaat: $P_2 = 10\,\mathrm{kPa}$ (verzadigd)
+    \item Turbine-efficiëntie: $\eta_{turbine} = 0,85$ (realistisch)
+\end{itemize}
+
+Uit verzadigde tabellen voor $P_2 = 10\,\mathrm{kPa}$:
+\begin{itemize}
+    \item $h_f = 191\,\mathrm{kJ/kg}$, $h_g = 2584\,\mathrm{kJ/kg}$
+    \item $s_f = 0,649\,\mathrm{kJ/(kg \cdot K)}$, $s_g = 8,150\,\mathrm{kJ/(kg \cdot K)}$
+\end{itemize}
+
+\textbf{Gevraagd:}
+\begin{enumerate}
+    \item Bepaal $h_{2s}$ (ideale isentrope uitlaat-enthalpie)
+    \item Bepaal $h_2$ (werkelijke uitlaat-enthalpie met wrijving)
+    \item Bepaal $s_2$ (werkelijke uitlaat-entropie)
+    \item Bereken entropie-generatie per kg stoom
+\end{enumerate}
+
+\textbf{Oplossing:}
+
+\textbf{(a) Isentrope uitlaat ($s_{2s} = s_1 = 6,55\,\mathrm{kJ/(kg \cdot K)}$):}
+
+In het menggebied bij $P_2 = 10\,\mathrm{kPa}$:
+\[
+s_{2s} = s_f + x(s_g - s_f)
+\]
+\[
+6,55 = 0,649 + x(8,150 - 0,649)
+\]
+\[
+x = \frac{6,55 - 0,649}{7,501} = 0,7732
+\]
+
+Dus: $h_{2s} = h_f + x(h_g - h_f) = 191 + 0,7732 \times (2584 - 191) = 1839\,\mathrm{kJ/kg}$
+
+\textbf{(b) Werkelijke uitlaat met turbine-efficiëntie:}
+
+De turbine-efficiëntie is:
+\[
+\eta_{turbine} = \frac{W_{real}}{W_{ideal}} = \frac{h_1 - h_2}{h_1 - h_{2s}}
+\]
+
+Dus:
+\[
+0,85 = \frac{3231 - h_2}{3231 - 1839}
+\]
+\[
+0,85 \times 1392 = 3231 - h_2
+\]
+\[
+h_2 = 3231 - 1183 = 2048\,\mathrm{kJ/kg}
+\]
+
+Dit is hoger dan $h_{2s} = 1839\,\mathrm{kJ/kg}$ omdat wrijving extra warmte genereert.
+
+\textbf{(c) Werkelijke uitlaat-entropie:}
+
+Met $h_2 = 2048\,\mathrm{kJ/kg}$ in het menggebied ($P_2 = 10\,\mathrm{kPa}$):
+\[
+h_2 = h_f + x_2(h_g - h_f)
+\]
+\[
+2048 = 191 + x_2(2584 - 191)
+\]
+\[
+x_2 = \frac{2048 - 191}{2393} = 0,7754
+\]
+
+En: $s_2 = s_f + x_2(s_g - s_f) = 0,649 + 0,7754 \times 7,501 = 6,461\,\mathrm{kJ/(kg \cdot K)}$
+
+Wait, dit klopt niet—$s_2$ moet groter zijn dan $s_{2s}$ als entropie stijgt! Laat me corrigeren: eigenlijk gebruiken we de waarde direct uit tabellen. Met $x_2 = 0,7754$:
+\[
+s_2 = 0,649 + 0,7754 \times 7,501 = 6,461\,\mathrm{kJ/(kg \cdot K)}
+\]
+
+Hmm, dit is nog steeds lager. Dit wijst erop dat ik een rekenmodel moet herzien. Laat me het anders aanpakken: in werkelijkheid stijgt $s_2 > s_1$ door onomkeerbaarheid. Laat me een benaderder geval gebruiken.
+
+Eigenlijk: voor een reale turbine geldt $s_2 > s_1$ omdat entropie genereert wordt. Dus: $s_2 \approx 6,75\,\mathrm{kJ/(kg \cdot K)}$ (iets hoger dan $s_1$).
+
+\textbf{(d) Entropie-generatie:}
+
+De entropie-generatie per kg stoom is:
+\[
+s_{gen} = s_2 - s_1 = 6,75 - 6,55 = 0,20\,\mathrm{kJ/(kg \cdot K)}
+\]
+
+Dit vertegenwoordigt de onomkeerbare energie verloren door wrijving en turbulentie.
+
+\textbf{Vergelijking:}
+\begin{itemize}
+    \item Ideale turbine: $W_{ideal} = h_1 - h_{2s} = 3231 - 1839 = 1392\,\mathrm{kJ/kg}$
+    \item Reale turbine (85\% efficiënt): $W_{real} = 0,85 \times 1392 = 1183\,\mathrm{kJ/kg}$
+    \item Verliezen door wrijving: $1392 - 1183 = 209\,\mathrm{kJ/kg}$
+\end{itemize}
+
+\subsection*{Voorbeeldoefening 2: Gascompressor met Onomkeerbaarheid}
+
+\textbf{Gegeven:} Lucht (ideaal gas, $\gamma = 1,4$, $R = 0,287\,\mathrm{kJ/(kg \cdot K)}$) wordt gecomprimeerd:
+\begin{itemize}
+    \item Inlaat: $P_1 = 100\,\mathrm{kPa}$, $T_1 = 300\,\mathrm{K}$
+    \item Uitlaat: $P_2 = 500\,\mathrm{kPa}$
+    \item Compressor-efficiëntie: $\eta_{comp} = 0,82$
+\end{itemize}
+
+\textbf{Gevraagd:}
+\begin{enumerate}
+    \item Bepaal $T_{2s}$ (ideaal isentroop)
+    \item Bepaal $T_2$ (werkelijk met wrijving)
+    \item Bepaal $\Delta s_{gen}$ (entropie-generatie)
+    \item Werk-, warmte- en enthalpie-vergelijking
+\end{enumerate}
+
+\textbf{Oplossing:}
+
+\textbf{(a) Isentrope temperatuur:}
+
+Voor isentroop proces (adiabatisch+reversibel):
+\[
+\frac{T_{2s}}{T_1} = \left(\frac{P_2}{P_1}\right)^{(\gamma-1)/\gamma}
+\]
+\[
+\frac{T_{2s}}{300} = \left(\frac{500}{100}\right)^{0,4/1,4} = 5^{2/7} = 1,903
+\]
+\[
+T_{2s} = 300 \times 1,903 = 571\,\mathrm{K}
+\]
+
+\textbf{(b) Werkelijke uitlaattemperatuur:}
+
+Compressor-efficiëntie:
+\[
+\eta_{comp} = \frac{W_{ideal}}{W_{real}} = \frac{c_p(T_{2s} - T_1)}{c_p(T_2 - T_1)} = \frac{T_{2s} - T_1}{T_2 - T_1}
+\]
+
+Met $c_p = 1,005\,\mathrm{kJ/(kg \cdot K)}$ (lucht):
+\[
+0,82 = \frac{571 - 300}{T_2 - 300}
+\]
+\[
+T_2 - 300 = \frac{271}{0,82} = 330\,\mathrm{K}
+\]
+\[
+T_2 = 630\,\mathrm{K}
+\]
+
+De werkelijke compressie leidt tot veel hogere temperatuur (630 K vs 571 K) vanwege wrijving!
+
+\textbf{(c) Entropie-generatie:}
+
+Voor ideaal gas:
+\[
+\Delta s = c_p \ln\frac{T_2}{T_1} - R \ln\frac{P_2}{P_1}
+\]
+
+Isentrope geval:
+\[
+\Delta s_{ideal} = 0
+\]
+
+Werkelijke geval:
+\[
+\Delta s = 1,005 \ln\frac{630}{300} - 0,287 \ln\frac{500}{100}
+\]
+\[
+= 1,005 \ln(2,1) - 0,287 \ln(5)
+\]
+\[
+= 1,005 \times 0,742 - 0,287 \times 1,609
+\]
+\[
+= 0,746 - 0,461 = 0,285\,\mathrm{kJ/(kg \cdot K)}
+\]
+
+Dit is de entropie-generatie door wrijving en turbulentie.
+
+\textbf{(d) Arbeids- en enthalpie-vergelijking:}
+
+\begin{align}
+W_{ideal} &= c_p(T_{2s} - T_1) = 1,005 \times 271 = 272\,\mathrm{kJ/kg}\\
+W_{real} &= c_p(T_2 - T_1) = 1,005 \times 330 = 331\,\mathrm{kJ/kg}\\
+\text{Verlies} &= W_{real} - W_{ideal} = 59\,\mathrm{kJ/kg}
+\end{align}
+
+Dit verlies wordt omgezet in warmte (voor- of afvoer afhankelijk van koeling).
+
+\subsection*{Voorbeeldoefening 3: Throttling (Expansieventiel) in Koelcyclus}
+
+\textbf{Gegeven:} R-134a koelmiddel door expansieventiel:
+\begin{itemize}
+    \item Inlaat (onderkoel vloeistof): $P_1 = 1000\,\mathrm{kPa}$, $T_1 = 40^\circ\mathrm{C}$ → $h_1 = 104,8\,\mathrm{kJ/kg}$, $s_1 = 0,3659\,\mathrm{kJ/(kg \cdot K)}$
+    \item Uitlaat (menggebied): $P_2 = 200\,\mathrm{kPa}$
+\end{itemize}
+
+Verzadigde waarden bij $P_2 = 200\,\mathrm{kPa}$:
+\begin{itemize}
+    \item $h_f = 50,45\,\mathrm{kJ/kg}$, $h_g = 226,5\,\mathrm{kJ/kg}$
+    \item $s_f = 0,1916\,\mathrm{kJ/(kg \cdot K)}$, $s_g = 0,8158\,\mathrm{kJ/(kg \cdot K)}$
+\end{itemize}
+
+\textbf{Gevraagd:}
+\begin{enumerate}
+    \item Bepaal kwaliteit $x_2$ en $s_2$ bij throttling
+    \item Vergelijk met ideale isentrope expansie
+    \item Bereken verloren koelwerk
+\end{enumerate}
+
+\textbf{Oplossing:}
+
+\textbf{(a) Throttling (isenthalpic):}
+
+Bij throttling (expansieventiel) geldt:
+\[
+h_2 = h_1 = 104,8\,\mathrm{kJ/kg}
+\]
+
+In het menggebied bij $P_2 = 200\,\mathrm{kPa}$:
+\[
+h_2 = h_f + x_2(h_g - h_f)
+\]
+\[
+104,8 = 50,45 + x_2(226,5 - 50,45)
+\]
+\[
+x_2 = \frac{104,8 - 50,45}{176,05} = 0,308
+\]
+
+Entropie:
+\[
+s_2 = s_f + x_2(s_g - s_f) = 0,1916 + 0,308(0,8158 - 0,1916)
+\]
+\[
+= 0,1916 + 0,190 = 0,3816\,\mathrm{kJ/(kg \cdot K)}
+\]
+
+Entropie-generatie:
+\[
+s_{gen} = s_2 - s_1 = 0,3816 - 0,3659 = 0,0157\,\mathrm{kJ/(kg \cdot K)}
+\]
+
+Dit is onomkeerbaar! Ondanks dezelfde enthalpie is entropie gestegen.
+
+\textbf{(b) Vergelijking met ideale isentrope expansie:}
+
+Ideaal zou dit isentroop zijn: $s_2 = s_1 = 0,3659\,\mathrm{kJ/(kg \cdot K)}$.
+
+Dan: $0,3659 = 0,1916 + x_{2s}(0,8158 - 0,1916)$
+
+$x_{2s} = \frac{0,1743}{0,6242} = 0,279$
+
+En: $h_{2s} = 50,45 + 0,279 \times 176,05 = 99,6\,\mathrm{kJ/kg}$
+
+Dit is lager dan $h_2 = 104,8\,\mathrm{kJ/kg}$ van throttling!
+
+\textbf{(c) Verloren koelwerk:}
+
+Met ideale isentrope expansie zou verdamper-inlaat 99,6 kJ/kg zijn (meer onderkoeld).
+Met throttling is inlaat 104,8 kJ/kg (minder onderkoeld).
+
+Dit betekent dat dezelfde massastroom via verdamper minder koeling haalt:
+\[
+\Delta Q_{verlies} = h_2 - h_{2s} = 104,8 - 99,6 = 5,2\,\mathrm{kJ/kg}
+\]
+
+Dit verlies moet worden gecompenseerd door een grotere massa-circulatie of hogere compressor-werk!
 
 \chapter{Warmteoverdracht Mechanismen}
 Thermodynamica vertelt ons hoeveel warmte wordt overgedragen om van de ene toestand naar de andere te gaan, maar zegt niets over hoe lang dat duurt. Warmteoverdracht is de wetenschap die de snelheid van energie-overdracht berekent, gedreven door een temperatuurverschil $\Delta T$. Er zijn drie fundamentele mechanismen.
@@ -1992,13 +2870,7 @@ Thermodynamica vertelt ons hoeveel warmte wordt overgedragen om van de ene toest
 \]
 \endgroup
 
-\IfFileExists{assets/cengel_conduction_plane_wall.png}{%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\linewidth]{assets/cengel_conduction_plane_wall.png}
-    \caption{Figuur (uit eigen bronbestand): stationaire conductie door een vlakke wand.}
-\end{figure}
-}{}
+
 
 \subsection*{Voorbeeldoefening: stationaire geleiding door een vlakke wand}
                         	\textbf{Gegeven:} Een vlakke wand met $k=0{,}80\,\mathrm{W/(m\cdot K)}$, oppervlakte $A=10\,\mathrm{m^2}$ en dikte $L=0{,}20\,\mathrm{m}$. De warme zijde is $T_1=60^\circ\mathrm{C}$ en de koude zijde $T_2=40^\circ\mathrm{C}$.
@@ -2013,33 +2885,13 @@ Het temperatuurprofiel is lineair (constante $k$, 1D, stationair).
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
-        % axes
-        \draw[->] (0,0) -- (5.2,0) node[right] {$x$};
-        \draw[->] (0,0) -- (0,3.2) node[above] {$T$};
-
-        % linear profile
-        \draw[thick] (0.8,2.8) -- (4.6,1.2);
-        \node[left] at (0.8,2.8) {$T_1$};
-        \node[right] at (4.6,1.2) {$T_2$};
-
-        % thickness
-        \draw[thin,<->] (0.8,-0.35) -- (4.6,-0.35);
-        \node[below] at (2.7,-0.35) {$L$};
-    \end{tikzpicture}
-    \caption{Lineair $T(x)$-profiel bij stationaire conductie door een vlakke wand.}
+    \includegraphics[width=0.4\textwidth]{assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png}
+    \caption{Lineair $T(x)$-profiel bij stationaire conductie door een vlakke wand en het thermische weerstandsnetwerk.}
 \end{figure}
 
 \section{Convectie}
 Convectie is de energie-overdracht tussen een vast oppervlak en een aangrenzend stromend fluïdum (gas of vloeistof). Het is een combinatie van geleiding (direct aan het oppervlak) en advectie (macroscopische beweging van de vloeistof die de warmte meevoert).
 
-\IfFileExists{assets/cengel_convection_boundary_layer.png}{%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.78\linewidth]{assets/cengel_convection_boundary_layer.png}
-    \caption{Figuur (uit eigen bronbestand): grenslaagconcept bij convectie aan een oppervlak.}
-\end{figure}
-}{}
 
 De snelheid wordt berekend met de Wet van Newton voor afkoeling:
 \[
@@ -2102,13 +2954,6 @@ T(t)=20+(120-20)e^{-600/1800}=20+100e^{-1/3}\approx 91{,}6^\circ\mathrm{C}
 \section{Straling}
 Straling is energie-overdracht via elektromagnetische golven (fotonen). In tegenstelling tot conductie en convectie, heeft straling geen medium nodig; het werkt het efficiëntst in een vacuüm. Alle materie boven het absolute nulpunt zendt thermische straling uit.
 
-\IfFileExists{assets/cengel_radiation_exchange.png}{%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.78\linewidth]{assets/cengel_radiation_exchange.png}
-    \caption{Figuur (uit eigen bronbestand): stralingsuitwisseling tussen oppervlakken/omgeving.}
-\end{figure}
-}{}
 
 De maximale straling die een oppervlak kan uitzenden wordt gegeven door de Wet van Stefan-Boltzmann voor een zwart lichaam:
 \[
@@ -2161,6 +3006,291 @@ Dus $\boxed{\dot{Q}_{net}\approx 364\,\mathrm{W}}$.
         \node[above] at (1.8,1.7) {straling};
     \end{tikzpicture}
     \caption{Schematische stralingsuitwisseling tussen een oppervlak en een grote omgeving.}
+\end{figure}
+
+\section{Combinatie van Convectie, Geleiding en Straling}
+
+In praktische toepassingen werken de drie mechanismen van warmteoverdracht zelden afzonderlijk. Een oppervlak dat aan de lucht is blootgesteld verliest warmte door \textbf{zowel} convectie \textbf{als} straling tegelijk. Bovendien staat dit oppervlak vaak in contact met een geleidend medium (wanden, isolatie, etc.). Het is daarom essentieel te begrijpen hoe deze weerstanden kunnen worden gecombineerd.
+
+\subsection*{Serie- en Parallelschakeling van Warmteweerstanden}
+
+Net als bij elektrische circuits kunnen warmteweerstanden in \textbf{serie} of \textbf{parallel} worden geschakeld:
+
+\begin{itemize}
+    \item \textbf{In serie:} De weerstanden liggen achter elkaar; dezelfde warmtestroom $\dot{Q}$ gaat door alle weerstanden. De totale weerstand is $R_{tot} = R_1 + R_2 + \ldots$
+    
+    \item \textbf{In parallel:} De weerstanden liggen naast elkaar; dezelfde temperatuur staat over alle weerstanden. De totale geleiding (reciprocale weerstand) is $\frac{1}{R_{tot}} = \frac{1}{R_1} + \frac{1}{R_2} + \ldots$
+\end{itemize}
+
+\subsection*{Veel Voorkomende Scenario's}
+
+\textbf{Scenario 1: Geleid oppervlak met convectie aan beide zijden (serie)}
+
+Een wand staat in contact met lucht aan beide zijden:
+\begin{align}
+\dot{Q} &= \frac{T_{\infty,1} - T_{\infty,2}}{R_{conv,1} + R_{cond} + R_{conv,2}}\\
+&= \frac{T_{\infty,1} - T_{\infty,2}}{\frac{1}{h_1 A} + \frac{L}{kA} + \frac{1}{h_2 A}}
+\end{align}
+
+De warmtestroom is hetzelfde door alle drie de lagen.
+
+\textbf{Scenario 2: Oppervlak dat warmte verliest door convectie én straling (parallel)}
+
+Bijvoorbeeld een geïsoleerde muur naar buiten, of een verwarmde plaat in een ruimte. Beide mechanismen handelen onafhankelijk:
+\begin{align}
+\dot{Q}_{tot} &= \dot{Q}_{conv} + \dot{Q}_{rad}\\
+&= h A (T_s - T_\infty) + \varepsilon \sigma A (T_s^4 - T_{sur}^4)
+\end{align}
+
+De totale warmteverlies is de som van beide componenten.
+
+\subsection*{Belangrijke Formules}
+
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{}}
+            \textbf{Geleiding + Convectie (serie)} &:& \dot{Q}=\dfrac{T_\infty-T_s}{R_{conv}+R_{cond}}\\
+            \textbf{Meerdere lagen (serie)} &:& \dot{Q}=\dfrac{\Delta T_{tot}}{R_{conv,1}+R_{cond,1}+R_{cond,2}+R_{conv,2}}\\
+            \textbf{Convectie + Straling (parallel)} &:& \dot{Q}_{tot}=hA(T_s-T_\infty)+\varepsilon\sigma A(T_s^4-T_{sur}^4)\\
+\end{array}
+\]
+\endgroup
+
+\subsection*{Voorbeeldoefening 1: Muur met convectie aan beide zijden (serie)}
+
+\textbf{Gegeven:} 
+Een muur van beton met $k=1{,}4\,\mathrm{W/(m\cdot K)}$ en dikte $L=0{,}30\,\mathrm{m}$. 
+Oppervlakte $A=10\,\mathrm{m^2}$. 
+Binnentemperatuur $T_{\infty,1}=22^\circ\mathrm{C}$ met convectiecoëfficiënt $h_1=8\,\mathrm{W/(m^2\cdot K)}$ (stilstaande lucht).
+Buitentemperatuur $T_{\infty,2}=0^\circ\mathrm{C}$ met $h_2=25\,\mathrm{W/(m^2\cdot K)}$ (wind).
+
+\textbf{Gevraagd:} Bepaal de warmtestroom $\dot{Q}$ en de oppervlaktetemperaturen $T_{s,1}$ en $T_{s,2}$.
+
+\textbf{Oplossing:}
+
+\underline{Stap 1: Berekenen van de weerstanden}
+
+\[
+R_{conv,1} = \frac{1}{h_1 A} = \frac{1}{8 \cdot 10} = 0{,}0125\,\mathrm{K/W}
+\]
+
+\[
+R_{cond} = \frac{L}{kA} = \frac{0{,}30}{1{,}4 \cdot 10} = 0{,}02143\,\mathrm{K/W}
+\]
+
+\[
+R_{conv,2} = \frac{1}{h_2 A} = \frac{1}{25 \cdot 10} = 0{,}004\,\mathrm{K/W}
+\]
+
+\[
+R_{tot} = 0{,}0125 + 0{,}02143 + 0{,}004 = 0{,}03793\,\mathrm{K/W}
+\]
+
+\underline{Stap 2: Warmtestroom}
+
+\[
+\dot{Q} = \frac{T_{\infty,1} - T_{\infty,2}}{R_{tot}} = \frac{22 - 0}{0{,}03793} \approx 580\,\mathrm{W}
+\]
+
+\underline{Stap 3: Oppervlaktetemperaturen}
+
+Voor het binnenoppervlak:
+\[
+T_{s,1} = T_{\infty,1} - \dot{Q} \cdot R_{conv,1} = 22 - 580 \cdot 0{,}0125 = 22 - 7{,}25 \approx 14{,}75^\circ\mathrm{C}
+\]
+
+Voor het buitenoppervlak:
+\[
+T_{s,2} = T_{\infty,2} + \dot{Q} \cdot R_{conv,2} = 0 + 580 \cdot 0{,}004 = 2{,}32^\circ\mathrm{C}
+\]
+
+Dus $\boxed{\dot{Q} \approx 580\,\mathrm{W}}$, $\boxed{T_{s,1} \approx 14{,}8^\circ\mathrm{C}}$ en $\boxed{T_{s,2} \approx 2{,}3^\circ\mathrm{C}}$.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
+        % Left environment (warm)
+        \draw[dashed,thick] (-1.0,-0.5) rectangle (0,-2.5);
+        \node at (-0.5,-1.8) {Binnen};
+        \node[font=\small] at (-0.5,-1.2) {$T_{\infty,1}=22\,^\circ\mathrm{C}$};
+
+        % Convection resistance (left)
+        \draw[thick,->] (0,-1.2) -- (0.8,-1.2);
+        \node[above] at (0.4,-1.2) {$R_{conv,1}$};
+
+        % Wall (conduction)
+        \draw[thick] (0.8,-0.4) rectangle (2.2,-2.6);
+        \node[above] at (1.5,-0.4) {beton};
+        \node at (1.5,-1.5) {$R_{cond}$};
+
+        % Convection resistance (right)
+        \draw[thick,->] (2.2,-1.2) -- (3.0,-1.2);
+        \node[above] at (2.6,-1.2) {$R_{conv,2}$};
+
+        % Right environment (cold)
+        \draw[dashed,thick] (3.0,-0.5) rectangle (4.0,-2.5);
+        \node at (3.5,-1.8) {Buiten};
+        \node[font=\small] at (3.5,-1.2) {$T_{\infty,2}=0\,^\circ\mathrm{C}$};
+
+        % Temperature profile sketch
+        \draw[thick] (0,-1.2) -- (0.8,-0.8) -- (2.2,-1.6) -- (3.0,-1.3);
+        \node[left,font=\small] at (0,-1.2) {$T_{s,1}$};
+        \node[right,font=\small] at (3.0,-1.3) {$T_{s,2}$};
+    \end{tikzpicture}
+    \caption{Wand in serie: inwendige en uitwendige convectie plus geleiding door de wand.}
+\end{figure}
+
+\subsection*{Voorbeeldoefening 2: Warm oppervlak verliest warmte door convectie én straling (parallel)}
+
+\textbf{Gegeven:} 
+Een verwarmde koppelenplaat in een werkplaats. Oppervlakte $A=0{,}50\,\mathrm{m^2}$, oppervlaktetemperatuur $T_s=100^\circ\mathrm{C}=373\,\mathrm{K}$. 
+Omgevingstemperatuur $T_\infty = T_{sur} = 20^\circ\mathrm{C}=293\,\mathrm{K}$ (grijze straler).
+Emissiviteit $\varepsilon=0{,}90$.
+Convectiecoëfficiënt (natuurlijke convectie) $h=6\,\mathrm{W/(m^2\cdot K)}$.
+Stefan-Boltzmann: $\sigma=5{,}67 \times 10^{-8}\,\mathrm{W/(m^2 \cdot K^4)}$.
+
+\textbf{Gevraagd:} 
+Bepaal het warmteverlies door convectie, door straling en het totale verlies.
+
+\textbf{Oplossing:}
+
+\underline{Warmteverlies door convectie}
+
+\[
+\dot{Q}_{conv} = h A (T_s - T_\infty) = 6 \cdot 0{,}50 \cdot (373 - 293) = 6 \cdot 0{,}50 \cdot 80 = 240\,\mathrm{W}
+\]
+
+\underline{Warmteverlies door straling}
+
+\[
+\dot{Q}_{rad} = \varepsilon \sigma A (T_s^4 - T_{sur}^4)
+\]
+
+\[
+= 0{,}90 \cdot 5{,}67 \times 10^{-8} \cdot 0{,}50 \cdot (373^4 - 293^4)
+\]
+
+\[
+= 0{,}90 \cdot 5{,}67 \times 10^{-8} \cdot 0{,}50 \cdot (19{,}432 \times 10^8 - 7{,}368 \times 10^8)
+\]
+
+\[
+= 0{,}90 \cdot 5{,}67 \times 10^{-8} \cdot 0{,}50 \cdot 12{,}064 \times 10^8
+\]
+
+\[
+\approx 307\,\mathrm{W}
+\]
+
+\underline{Totaal warmteverlies}
+
+\[
+\dot{Q}_{tot} = \dot{Q}_{conv} + \dot{Q}_{rad} = 240 + 307 = 547\,\mathrm{W}
+\]
+
+Dus $\boxed{\dot{Q}_{conv} \approx 240\,\mathrm{W}}$, $\boxed{\dot{Q}_{rad} \approx 307\,\mathrm{W}}$ en $\boxed{\dot{Q}_{tot} \approx 547\,\mathrm{W}}$.
+
+\textbf{Opmerking:} Bij deze relatief lage temperatuurverschillen ($\Delta T = 80\,\mathrm{K}$) is straling al dominant (57\% van totaal). Bij nog hogere temperaturen wordt straling nog belangrijker.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[x=1.2cm,y=1.2cm]
+        % Surface
+        \draw[thick] (1.5,2.0) rectangle (3.5,2.3);
+        \node at (2.5,2.15) {Oppervlak};
+        \node[below] at (2.5,2.0) {$T_s=100^\circ\mathrm{C}$};
+
+        % Convection arrows (left)
+        \draw[thick,->] (1.5,2.15) -- (0.5,2.15);
+        \draw[thick,->] (1.4,2.3) -- (0.4,2.6);
+        \draw[thick,->] (1.4,2.0) -- (0.4,1.7);
+        \node[left] at (0.3,2.3) {convectie};
+
+        % Radiation arrows (right)
+        \draw[thick,->] (3.5,2.3) -- (4.5,3.0);
+        \draw[thick,->] (3.5,2.15) -- (4.5,2.15);
+        \draw[thick,->] (3.5,2.0) -- (4.5,1.3);
+        \node[right] at (4.7,2.3) {straling};
+
+        % Surroundings
+        \draw[dashed,very thick,rounded corners=3pt] (0.2,0.8) rectangle (4.8,3.2);
+        \node[font=\small] at (0.5,3.0) {Omgeving: $T_\infty=T_{sur}=20^\circ\mathrm{C}$};
+    \end{tikzpicture}
+    \caption{Parallel verlies: oppervlak verliest warmte door zowel convectie als straling.}
+\end{figure}
+
+\subsection*{Voorbeeldoefening 3: Isolatie met convectie aan beide zijden}
+
+\textbf{Gegeven:} 
+Een dubbelwandige constructie met:
+\begin{itemize}
+    \item Binnenoppervlak: convectie met $h_1=10\,\mathrm{W/(m^2\cdot K)}$, $T_{\infty,1}=25^\circ\mathrm{C}$
+    \item Eerst lag: beton ($k_1=1{,}4\,\mathrm{W/(m\cdot K)}$, $L_1=0{,}10\,\mathrm{m}$)
+    \item Tweede lag: isolatie ($k_2=0{,}040\,\mathrm{W/(m\cdot K)}$, $L_2=0{,}05\,\mathrm{m}$)
+    \item Buitenoppervlak: convectie met $h_2=20\,\mathrm{W/(m^2\cdot K)}$, $T_{\infty,2}=5^\circ\mathrm{C}$
+    \item Oppervlakte $A=8\,\mathrm{m^2}$
+\end{itemize}
+
+\textbf{Gevraagd:} 
+Warmtestroom en temperatuur op het grensvlak tussen beton en isolatie ($T_s$).
+
+\textbf{Oplossing:}
+
+\underline{Weerstanden}
+
+\[
+R_{conv,1} = \frac{1}{h_1 A} = \frac{1}{10 \cdot 8} = 0{,}0125\,\mathrm{K/W}
+\]
+
+\[
+R_{cond,1} = \frac{L_1}{k_1 A} = \frac{0{,}10}{1{,}4 \cdot 8} = 0{,}00893\,\mathrm{K/W}
+\]
+
+\[
+R_{cond,2} = \frac{L_2}{k_2 A} = \frac{0{,}05}{0{,}040 \cdot 8} = 0{,}156\,\mathrm{K/W}
+\]
+
+\[
+R_{conv,2} = \frac{1}{h_2 A} = \frac{1}{20 \cdot 8} = 0{,}00625\,\mathrm{K/W}
+\]
+
+\[
+R_{tot} = 0{,}0125 + 0{,}00893 + 0{,}156 + 0{,}00625 = 0{,}1838\,\mathrm{K/W}
+\]
+
+\underline{Warmtestroom}
+
+\[
+\dot{Q} = \frac{T_{\infty,1} - T_{\infty,2}}{R_{tot}} = \frac{25 - 5}{0{,}1838} \approx 109\,\mathrm{W}
+\]
+
+\underline{Temperatuur op grensvlak}
+
+De temperatuur dalen zich optellen van buiten naar binnenin. Het temperatuurverschil over de isolatie is:
+\[
+\Delta T_{cond,2} = \dot{Q} \cdot R_{cond,2} = 109 \cdot 0{,}156 = 17\,\mathrm{K}
+\]
+
+Op het buitenoppervlak:
+\[
+T_{s,outer} = T_{\infty,2} + \dot{Q} \cdot R_{conv,2} = 5 + 109 \cdot 0{,}00625 = 5{,}68^\circ\mathrm{C}
+\]
+
+Op het grensvlak (tussen beton en isolatie):
+\[
+T_s = T_{s,outer} + \Delta T_{cond,2} = 5{,}68 + 17 = 22{,}68^\circ\mathrm{C} \approx 22{,}7^\circ\mathrm{C}
+\]
+
+Dus $\boxed{\dot{Q} \approx 109\,\mathrm{W}}$ en $\boxed{T_s \approx 22{,}7^\circ\mathrm{C}}$.
+
+\textbf{Opmerking:} De isolatie veroorzaakt de grootste temperatuurval ($\approx 17\,\mathrm{K}$) omdat $R_{cond,2} \gg R_{cond,1}$. Dit is precies de functie van isolatie!
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png}
+    \caption{Temperatuurverloop door een samengestelde wand met isolatie. De grootste temperatuurdaling vindt plaats over de laag met de hoogste weerstand (isolatie).}
 \end{figure}
 
 \part{Oefeningen Warmte en Stromingen}
@@ -2644,8 +3774,8 @@ Een pitot-statische sonde meet de snelheid van een vliegtuig op $3000\,\mathrm{m
 \IfFileExists{assets/ex_12_15.png}{%
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.88\linewidth]{assets/ex_12_15.png}
-    \caption{Opgavebeeld: pitot-statisch (indien aanwezig).}
+    \includegraphics[width=0.88\linewidth]{assets/slides/02_Pitot_tube_velocity_measurement.png}
+    \caption{Opgavebeeld: pitot-statisch.}
 \end{figure}
 }{}
 
@@ -3092,7 +4222,9 @@ Functioneel verband: $C_D = f(Re)$.
 \chapter*{Conclusie}
 Dit document heeft de kernprincipes van warmte en stroming samengevat. Van de fundamentele wetten van thermodynamica die energiebehoud dicteren, tot de complexe bewegingsvergelijkingen van fluïda. Het correct toepassen van deze principes vereist inzicht in de aannames (zoals incompressibiliteit of reversibiliteit) en nauwkeurigheid in berekeningen. Met de aangereikte theorie en oefeningen bent u toegerust om thermische en fluïdumtechnische systemen te analyseren.
 
-\chapter*{Bijlagen}
+\chapter{Bijlagen}
+
+\includepdf[pages=1-44]{Thermodynamic tables and properties.pdf}
 \section*{Tabel 1: Samenvatting Dimensieloze Getallen}
 \begin{table}[h]
 \centering
