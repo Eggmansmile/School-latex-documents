@@ -2,13 +2,13 @@
 
 ## Beschrijving
 
-Dit is een **samenstelling van universiteits-oefeningen in LaTeX** voor het vak **"Wiskunde voor Systemen"** aan **KU Leuven**, onderdeel van het **Industrieel Ingenieurschap (EM 2)** programma.
+Dit is een **samenstelling van universiteits-oefeningen in LaTeX** voor het vak **"Wiskunde voor Systemen"** & **Warmte en stromingen** aan **KU Leuven**, onderdeel van het **Industrieel Ingenieurschap (EM 2)** programma.
 
 Het document bevat systematisch uitgewerkte oefeningen en gedetailleerde stap-voor-stap oplossingen voor alle behandelde onderwerpen.
 
 ---
 
-## Inhoud
+## Inhoud Wiskunde
 
 ### Formularium
 Een naslagwerk met standaardformules voor:
@@ -48,12 +48,24 @@ Bij elke oefening hoort een gedetailleerde oplossing met:
 
 ---
 
-## Compilatie
+## Inhoud Warmte en Stormingen
+### Formularium
 
-```bash
-cd math-systems/
-pdflatex -interaction=nonstopmode MATHSYS_oefeningen.tex
-```
+### 2 Hoofdstukken Theorie, 1 hoofdstuk Oefeningen
+
+### Oplossingen
+Bij elke oefening hoort een gedetailleerde oplossing met:
+- Stap-voor-stap berekeningen
+- Verwijzingen naar het formularium
+- Grafische voorstellingen (TikZ-diagrammen)
+- Verificatie van resultaten
+
+## document
+- **Bestand:** `Thermische_en_Fluidumwetenschappen.tex`
+- **Format:** LaTeX (pdflatex)
+- **Output:** `Thermische_en_Fluidumwetenschappen.pdf`
+
+- **Taal:** Nederlands
 
 **Benodigde pakketten:** tikz, amsmath, amssymb, geometry, enumitem, hyperref
 
@@ -74,8 +86,6 @@ pdflatex -interaction=nonstopmode MATHSYS_oefeningen.tex
 
 Geplande toevoegingen voor komende versies:
 - **Wisselstromingen (AC-circuits)** — Impedantie, faserespons, resonantie
-- **Warmte & Thermodynamica** — Diffusie, warmtegeleiding, steady-state analyses
-- **Stromingen (Fluïdynamica)** — Bernoulli, continuïteitsvergelijking, pijpstroming
 
 ---
 
