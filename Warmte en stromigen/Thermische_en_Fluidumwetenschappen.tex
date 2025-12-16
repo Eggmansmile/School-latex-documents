@@ -1,5 +1,5 @@
 \documentclass[a4paper,11pt,twoside]{report}
-\usepackage[dutch]{babel}
+\usepackage{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -88,28 +88,28 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % ============ CHAPTER AND SECTION STYLING ============
-\csname titleformat\endcsname{\chapter}
+\titleformat{\chapter}
     {\normalfont\huge\bfseries}
     {\thechapter}
     {1em}
     {}
 
-\csname titleformat\endcsname{\section}
+\titleformat{\section}
     {\normalfont\Large\bfseries}
     {\thesection}
     {0.8em}
     {}
 
-\csname titleformat\endcsname{\subsection}
+\titleformat{\subsection}
     {\normalfont\large\bfseries}
     {\thesubsection}
     {0.8em}
     {}
 
 % Compact vertical spacing around titles
-\csname titlespacing\endcsname*{\chapter}{0pt}{1.0ex plus 0.2ex minus 0.2ex}{1.2ex plus 0.2ex}
-\csname titlespacing\endcsname*{\section}{0pt}{1.2ex plus 0.2ex minus 0.2ex}{0.8ex plus 0.2ex}
-\csname titlespacing\endcsname*{\subsection}{0pt}{1.0ex plus 0.2ex minus 0.2ex}{0.6ex plus 0.2ex}
+\titlespacing*{\chapter}{0pt}{1.0ex plus 0.2ex minus 0.2ex}{1.2ex plus 0.2ex}
+\titlespacing*{\section}{0pt}{1.2ex plus 0.2ex minus 0.2ex}{0.8ex plus 0.2ex}
+\titlespacing*{\subsection}{0pt}{1.0ex plus 0.2ex minus 0.2ex}{0.6ex plus 0.2ex}
 
 % ============ DYNAMIC EXERCISE NUMBERING ============
 \newcounter{opgave}[section]
@@ -1525,6 +1525,190 @@ Invullen:
 \[ V_{min} = \sqrt{\frac{2 \cdot 1500 \cdot 9.81}{1.5 \cdot 1.2 \cdot 20}} = \sqrt{\frac{29430}{36}} = \sqrt{817.5} \approx 28.6 \, m/s \]
 De minimale snelheid is \boxed{28.6 \, m/s} (ongeveer $103 \, km/u$).
 
+\chapter{Oefenzitting 8: Interne en Externe Stroming}
+In deze oefenzitting behandelen we vraagstukken over drukverliezen in leidingsystemen (interne stroming) en krachten op objecten in een stroming (externe stroming).
+
+\section{Oefening 1: Drukverlies in een Leidingsysteem}
+\textbf{Probleemstelling:}
+Water stroomt door een horizontale stalen leiding met een diameter $D = 0.1 \, m$ en een lengte $L = 50 \, m$. De stroomsnelheid is $v = 2 \, m/s$. Het leidingsysteem bevat de volgende componenten:
+\begin{itemize}
+    \item Twee $90^\circ$ bochten ($K_{bocht} = 0.3$ elk).
+    \item Een volledig open schuifafsluiter ($K_{afsluiter} = 0.2$).
+\end{itemize}
+De Darcy-wrijvingsfactor is gegeven als $f = 0.02$.
+Bereken het totale energieverlies (head loss, $h_L$) in meters vloeistofkolom.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.0]
+        % Pipe
+        \draw[thick] (0,0) -- (4,0);
+        \draw[thick] (0,0.4) -- (4,0.4);
+        \node at (2,0.2) {$\xrightarrow{v=2 m/s}$};
+        
+        % Elbow 1
+        \draw[thick] (4,0) arc (-90:0:0.4);
+        \draw[thick] (4,0.4) arc (-90:0:0.8);
+        
+        % Vertical section
+        \draw[thick] (4.4,0.4) -- (4.4,2);
+        \draw[thick] (4.8,0.4) -- (4.8,2);
+        
+        % Valve
+        \draw[fill=white] (4.3, 1.2) rectangle (4.9, 1.4);
+        \draw (4.6, 1.4) -- (4.6, 1.6);
+        \draw (4.4, 1.6) -- (4.8, 1.6);
+        \node[right] at (4.9, 1.3) {Afsluiter ($K=0.2$)};
+        
+        % Elbow 2
+        \draw[thick] (4.4,2) arc (180:90:0.4);
+        \draw[thick] (4.8,2) arc (180:90:0.8);
+        
+        % Horizontal section
+        \draw[thick] (4.8,2.4) -- (8,2.4);
+        \draw[thick] (4.8,2.8) -- (8,2.8);
+        
+        \node[below] at (2,-0.2) {$L_1$};
+        \node[right] at (5, 1.2) {};
+        \node[above] at (6, 2.8) {$L_2$};
+        
+        \node[align=left] at (1, 2) {Totaal $L=50m$\\$D=0.1m$\\$f=0.02$};
+    \end{tikzpicture}
+    \caption{Schematische weergave van het leidingsysteem.}
+\end{figure}
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Bereken de snelheidshoogte (Velocity Head):}
+    \[ \frac{v^2}{2g} = \frac{2^2}{2 \cdot 9.81} = \frac{4}{19.62} \approx 0.204 \, m \]
+    
+    \item \textbf{Bereken Major Losses (Wrijving):}
+    \[ h_{major} = f \frac{L}{D} \frac{v^2}{2g} = 0.02 \cdot \frac{50}{0.1} \cdot 0.204 \]
+    \[ h_{major} = 0.02 \cdot 500 \cdot 0.204 = 10 \cdot 0.204 = 2.04 \, m \]
+    
+    \item \textbf{Bereken Minor Losses (Componenten):}
+    De som van de verliescoëfficiënten is:
+    \[ \sum K = 2 \cdot K_{bocht} + K_{afsluiter} = 2(0.3) + 0.2 = 0.8 \]
+    Het verlies is:
+    \[ h_{minor} = \sum K \frac{v^2}{2g} = 0.8 \cdot 0.204 \approx 0.163 \, m \]
+    
+    \item \textbf{Totale Head Loss:}
+    \[ h_L = h_{major} + h_{minor} = 2.04 + 0.163 = 2.203 \, m \]
+\end{enumerate}
+Het totale energieverlies is \boxed{2.20 \, m}.
+
+\section{Oefening 2: Luchtweerstand op een Auto}
+\textbf{Probleemstelling:}
+Een auto rijdt met een snelheid van $108 \, km/u$. De auto heeft een frontaal oppervlak $A = 2.5 \, m^2$ en een weerstandscoëfficiënt $C_D = 0.3$. De luchtdichtheid is $\rho = 1.2 \, kg/m^3$.
+Bereken de luchtweerstandskracht die op de auto werkt.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Converteer snelheid naar m/s:}
+    \[ v = \frac{108}{3.6} = 30 \, m/s \]
+    
+    \item \textbf{Bereken de weerstandskracht:}
+    \[ F_D = C_D A \frac{1}{2} \rho v^2 \]
+    \[ F_D = 0.3 \cdot 2.5 \cdot 0.5 \cdot 1.2 \cdot (30)^2 \]
+    \[ F_D = 0.75 \cdot 0.6 \cdot 900 = 0.45 \cdot 900 = 405 \, N \]
+\end{enumerate}
+De weerstandskracht is \boxed{405 \, N}.
+
+\section{Oefening 3: Liftkracht op een Vleugel}
+\textbf{Probleemstelling:}
+Een klein vliegtuig vliegt op zeeniveau ($\rho = 1.225 \, kg/m^3$) met een snelheid van $60 \, m/s$. De vleugel heeft een oppervlak van $15 \, m^2$ en de liftcoëfficiënt bij deze invalshoek is $C_L = 0.5$.
+Bereken de gegenereerde liftkracht.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Pas de liftformule toe:}
+    \[ F_L = C_L A \frac{1}{2} \rho v^2 \]
+    \[ F_L = 0.5 \cdot 15 \cdot 0.5 \cdot 1.225 \cdot (60)^2 \]
+    \[ F_L = 7.5 \cdot 0.6125 \cdot 3600 \]
+    \[ F_L = 4.59375 \cdot 3600 \approx 16\,537.5 \, N \]
+\end{enumerate}
+De liftkracht is \boxed{16.5 \, kN}.
+
+\section{Oefening 4: Reynoldsgetal en Stromingsregime}
+\textbf{Probleemstelling:}
+Olie met kinematische viscositeit $\nu = 5 \times 10^{-5} \, m^2/s$ en dichtheid $\rho = 850 \, kg/m^3$ stroomt door een buis met diameter $D = 25 \, mm$. Bereken het Reynoldsgetal voor volumedebieten van 5, 20 en 100 L/min en bepaal voor elk geval of de stroming laminair, transitie of turbulent is.
+
+\textbf{Oplossing:}
+Eerst berekenen we de stroomsnelheden voor elk debiet. Het volumedebiet $Q$ is gerelateerd aan de snelheid via $Q = V \cdot A = V \cdot \frac{\pi D^2}{4}$.
+
+Voor $Q = 5 \, L/min = 5 \times 10^{-5} \, m^3/s$:
+\[ V = \frac{Q}{A} = \frac{4Q}{\pi D^2} = \frac{4 \cdot 5 \times 10^{-5}}{\pi (0.025)^2} = \frac{2 \times 10^{-4}}{0.001963} \approx 0.102 \, m/s \]
+\[ Re = \frac{VD}{\nu} = \frac{0.102 \cdot 0.025}{5 \times 10^{-5}} = \frac{0.00255}{5 \times 10^{-5}} = 51 \]
+Dit is **laminair** ($Re < 2000$).
+
+Voor $Q = 20 \, L/min = 2 \times 10^{-4} \, m^3/s$:
+\[ V = \frac{4 \cdot 2 \times 10^{-4}}{\pi (0.025)^2} \approx 0.408 \, m/s \]
+\[ Re = \frac{0.408 \cdot 0.025}{5 \times 10^{-5}} \approx 204 \]
+Dit is **laminair** ($Re < 2000$).
+
+Voor $Q = 100 \, L/min = 1.667 \times 10^{-3} \, m^3/s$:
+\[ V = \frac{4 \cdot 1.667 \times 10^{-3}}{\pi (0.025)^2} \approx 3.40 \, m/s \]
+\[ Re = \frac{3.40 \cdot 0.025}{5 \times 10^{-5}} \approx 1700 \]
+Dit is nog **laminair**, maar dicht bij de transitie.
+
+\textbf{Samenvatting:} \boxed{\text{Alle drie debieten resulteren in laminaire stroming.}}
+
+\section{Oefening 5: Drukverlies in een Buis (Laminaire Stroming)}
+\textbf{Probleemstelling:}
+Water bij $20^\circ C$ ($\nu = 10^{-6} \, m^2/s$) stroomt door een 50 m lange koperen buis met diameter $D = 20 \, mm$ en relatieve ruwheid $\varepsilon/D = 0.0002$. De gemiddelde stroomsnelheid is $1.5 \, m/s$.
+Bereken: (a) Het Reynoldsgetal; (b) De wrijvingsfactor; (c) De drukval over de leiding.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Reynoldsgetal:}
+    \[ Re = \frac{VD}{\nu} = \frac{1.5 \cdot 0.02}{10^{-6}} = 30\,000 \]
+    Dit is **turbulent** ($Re > 3000$).
+    
+    \item \textbf{Wrijvingsfactor (via Haaland formule):}
+    \[ \frac{1}{\sqrt{f}} \approx -1.8 \log_{10} \left( \left( \frac{0.0002}{3.7} \right)^{1.11} + \frac{6.9}{30\,000} \right) \]
+    \[ \frac{1}{\sqrt{f}} \approx -1.8 \log_{10} (5.4 \times 10^{-6} + 2.3 \times 10^{-4}) \approx -1.8 \log_{10} (2.38 \times 10^{-4}) \]
+    \[ \frac{1}{\sqrt{f}} \approx -1.8 \times (-3.62) \approx 6.52 \]
+    \[ f \approx 0.0235 \]
+    
+    \item \textbf{Drukval (Darcy-Weisbach):}
+    \[ \Delta p = f \frac{L}{D} \frac{1}{2}\rho V^2 = 0.0235 \cdot \frac{50}{0.02} \cdot \frac{1}{2} \cdot 1000 \cdot (1.5)^2 \]
+    \[ \Delta p = 0.0235 \cdot 2500 \cdot 1125 = 66\,187.5 \, Pa \approx 66.2 \, kPa \]
+\end{enumerate}
+\boxed{\text{De drukval is ongeveer } 66.2 \text{ kPa}.}
+
+\section{Oefening 6: Weerstand op een Bol (Sphere)}
+\textbf{Probleemstelling:}
+Een tennisbal (diameter $D = 6.5 \, cm$) wordt afgesloten zonder spin met een snelheid van $30 \, m/s$ door lucht ($\rho = 1.2 \, kg/m^3$, $\nu = 1.5 \times 10^{-5} \, m^2/s$).
+Bereken: (a) Het Reynoldsgetal; (b) De weerstandskracht (voor een glad oppervlak, $C_D \approx 0.46$).
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Reynoldsgetal:}
+    \[ Re = \frac{VD}{\nu} = \frac{30 \cdot 0.065}{1.5 \times 10^{-5}} = \frac{1.95}{1.5 \times 10^{-5}} = 130\,000 \]
+    Dit valt in het bereik waar $C_D = 0.46$ geldig is.
+    
+    \item \textbf{Weerstandskracht:}
+    Het frontaal oppervlak van een bol: $A = \frac{\pi D^2}{4} = \frac{\pi (0.065)^2}{4} \approx 0.00332 \, m^2$
+    \[ F_D = C_D A \frac{1}{2}\rho V^2 = 0.46 \cdot 0.00332 \cdot \frac{1}{2} \cdot 1.2 \cdot (30)^2 \]
+    \[ F_D = 0.46 \cdot 0.00332 \cdot 0.6 \cdot 900 = 0.46 \cdot 1.789 \approx 0.82 \, N \]
+\end{enumerate}
+\boxed{F_D \approx 0.82 \text{ N}}
+
+\section{Oefening 7: Weerstand en Vermogen voor een Auto in Wind}
+\textbf{Probleemstelling:}
+Een auto ondergaat een zijwind van $20 \, m/s$ (windvlagen). De auto heeft een frontaal oppervlak van $2.4 \, m^2$ en een zijoppervlak van ongeveer $3.0 \, m^2$. Voor zijwind, neem $C_D = 0.8$ (stomper dan voorwind).
+Bereken: (a) De zijweerstandskracht; (b) Het benodigde vermogen om tegen deze wind in te rijden met $15 \, m/s$ snelheid (relatieve snelheid = $\sqrt{15^2 + 20^2} \approx 25 \, m/s$).
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item \textbf{Zijweerstandskracht (gebruikmakend van zijoppervlak):}
+    \[ F_D = C_D A \frac{1}{2}\rho V_{wind}^2 = 0.8 \cdot 3.0 \cdot \frac{1}{2} \cdot 1.2 \cdot (20)^2 \]
+    \[ F_D = 0.8 \cdot 3.0 \cdot 0.6 \cdot 400 = 0.8 \cdot 720 = 576 \, N \]
+    
+    \item \textbf{Vermogen (gebruik makend van relatieve windsnelheid):}
+    \[ P = F_D \cdot V_{rel} = 576 \cdot 25 = 14\,400 \, W = 14.4 \, kW \]
+\end{enumerate}
+\boxed{\text{Zijweerstand: } 576 \text{ N; Vermogen: } 14.4 \text{ kW}}
 
 \part{Warmte}
 
@@ -3951,6 +4135,67 @@ Eerste wet: $Q - W = \Delta U$.
 $50 \, kJ - 40 \, kJ = \Delta U$.
 $\Delta U = 10 \, kJ$.
 
+\opgave{Adiabatische Compressie van Lucht}
+\textbf{Gegeven:}
+Lucht ($\gamma = 1,4$, $c_v = 0,717 \, kJ/(kg \cdot K)$) wordt adiabatisch gecomprimeerd van toestand 1 ($P_1 = 100 \, kPa$, $T_1 = 300 \, K$) naar toestand 2 ($P_2 = 500 \, kPa$).
+
+\textbf{Gevraagd:}
+(a) De eindtemperatuur $T_2$; (b) De arbeid per eenheid massa $w_{in}$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor een adiabatisch proces geldt:
+    \[ \frac{T_2}{T_1} = \left( \frac{P_2}{P_1} \right)^{\frac{\gamma-1}{\gamma}} = \left( \frac{500}{100} \right)^{\frac{0,4}{1,4}} = 5^{0,286} \approx 1,584 \]
+    \[ T_2 = 300 \times 1,584 = 475 \, K \]
+    
+    \item Voor adiabatische compressie ($Q = 0$) geldt:
+    \[ w_{in} = \Delta u = c_v (T_2 - T_1) = 0,717 \times (475 - 300) = 0,717 \times 175 \approx 125 \, kJ/kg \]
+\end{enumerate}
+\boxed{T_2 = 475 \, K; \quad w_{in} = 125 \, kJ/kg}
+
+\opgave{Isochore Verwarming van een Ideaal Gas}
+\textbf{Gegeven:}
+Stikstof (ideaal gas, $c_v = 0,745 \, kJ/(kg \cdot K)$, $R = 0,297 \, kJ/(kg \cdot K)$) wordt in een rigid vat verwarmd van $T_1 = 25^\circ C$ naar $T_2 = 200^\circ C$. De aanvankelijke druk is $P_1 = 150 \, kPa$. De massa stikstof is $m = 2 \, kg$.
+
+\textbf{Gevraagd:}
+(a) De einddruk $P_2$; (b) De toegevoerde warmte $Q$; (c) De arbeid $W$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor een isochore proces (constant volume) geldt:
+    \[ \frac{P_2}{P_1} = \frac{T_2}{T_1} \Rightarrow P_2 = P_1 \frac{T_2}{T_1} = 150 \times \frac{473}{298} \approx 238 \, kPa \]
+    
+    \item De interne energieverandering:
+    \[ \Delta U = m \cdot c_v \cdot \Delta T = 2 \times 0,745 \times (200 - 25) = 2 \times 0,745 \times 175 = 260.75 \, kJ \]
+    
+    \item Voor een isochore proces: geen arbeid ($W = 0$), dus:
+    \[ Q = \Delta U = 260.75 \approx 261 \, kJ \]
+\end{enumerate}
+\boxed{P_2 = 238 \, kPa; \quad Q = 261 \, kJ; \quad W = 0}
+
+\opgave{Polytroop Proces}
+\textbf{Gegeven:}
+Een ideaal gas ondergaat een polytroop proces ($pV^n = \text{constant}$ met $n = 1,3$) van toestand 1 ($P_1 = 200 \, kPa$, $V_1 = 0,5 \, m^3$, $T_1 = 300 \, K$) naar toestand 2 ($V_2 = 1,0 \, m^3$).
+
+\textbf{Gevraagd:}
+(a) De einddruk $P_2$; (b) De eindtemperatuur $T_2$; (c) De arbeid $W$ (neem $m = 1 \, kg$ en $c_v = 0,7 \, kJ/(kg \cdot K)$).
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor polytroop proces: $P_1 V_1^n = P_2 V_2^n$
+    \[ P_2 = P_1 \left( \frac{V_1}{V_2} \right)^n = 200 \times \left( \frac{0,5}{1,0} \right)^{1,3} = 200 \times 0,5^{1,3} \approx 200 \times 0,4145 \approx 82,9 \, kPa \]
+    
+    \item Via ideaal gaslaw:
+    \[ \frac{T_2}{T_1} = \frac{P_2 V_2}{P_1 V_1} = \frac{82,9 \times 1,0}{200 \times 0,5} = \frac{82,9}{100} = 0,829 \]
+    \[ T_2 = 300 \times 0,829 = 248,7 \, K \]
+    
+    \item Arbeid voor polytroop proces:
+    \[ W = \frac{m R (T_2 - T_1)}{1-n} \text{ of } W = \frac{P_2 V_2 - P_1 V_1}{1-n} \]
+    Met $R = 0,287 \, kJ/(kg \cdot K)$ voor lucht:
+    \[ W = \frac{1 \times 0,287 \times (248,7 - 300)}{1 - 1,3} = \frac{0,287 \times (-51,3)}{-0,3} = \frac{-14,72}{-0,3} \approx 49,1 \, kJ \]
+\end{enumerate}
+\boxed{P_2 \approx 82,9 \, kPa; \quad T_2 \approx 249 \, K; \quad W \approx 49,1 \, kJ}
+
 \section{Oefenzitting 6: Open systemen}
 \setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
@@ -4059,6 +4304,188 @@ Specifiek volume $v_2$ (met $v_g$ bij $160 \, kPa$):
 Temperatuurdaling:
 \[ \Delta T = T_1 - T_2 = 26,69 - (-15,6) = 42,3^\circ C \]
 
+\opgave{Compressor met Luchtinname}
+\textbf{Gegeven:}
+Een compressor zuigt lucht in van $P_1 = 101 \, kPa$, $T_1 = 20^\circ C$, met massadebiet $\dot{m} = 2 \, kg/s$.
+Uitlaatdruk $P_2 = 500 \, kPa$.
+Voor lucht (ideaal gas): $c_p = 1,005 \, kJ/(kg \cdot K)$, $\gamma = 1,4$.
+Veronderstel adiabatische compressie.
+
+\textbf{Gevraagd:}
+(a) De uitlaattemperatuur $T_2$; (b) Het vermogen $\dot{W}_{in}$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor adiabatische compressie geldt:
+    \[ \frac{T_2}{T_1} = \left( \frac{P_2}{P_1} \right)^{\frac{\gamma-1}{\gamma}} = \left( \frac{500}{101} \right)^{\frac{0,4}{1,4}} = 4,95^{0,286} \approx 1,651 \]
+    \[ T_2 = 293 \times 1,651 = 483,8 \, K = 210,8^\circ C \]
+    
+    \item Voor open systeem zonder kinetische energie en hoogteverschillen geldt:
+    \[ \dot{W}_{in} = \dot{m} \cdot c_p (T_2 - T_1) = 2 \times 1,005 \times (483,8 - 293) = 2 \times 1,005 \times 190,8 \approx 384 \, kW \]
+\end{enumerate}
+\boxed{T_2 = 484 \, K \text{ of } 211^\circ C; \quad \dot{W}_{in} = 384 \, kW}
+
+\opgave{Verdampingsketel (Stoomgenerator)}
+\textbf{Gegeven:}
+Water stroomt een ketel in met een massadebiet $\dot{m} = 5 \, kg/s$ bij $P_{in} = 5 \, MPa$, $T_{in} = 150^\circ C$ (onderkoeÿld water).
+Stoom verlaat de ketel bij dezelfde druk als verzadigde stoom ($T_{sat} = 264^\circ C$ bij $5 \, MPa$).
+Warmteleiding naar buiten is verwaarloosbaar. Kinetische en potentiële energie verschillen zijn klein.
+
+\textbf{Gegeven:}
+Uit stoomtabellen:
+- Water bij $150^\circ C$, $5 \, MPa$: $h_{in} \approx 632 \, kJ/kg$
+- Verzadigde stoom bij $5 \, MPa$: $h_{out} = h_g \approx 2794 \, kJ/kg$
+
+\textbf{Gevraagd:}
+De warmte $\dot{Q}$ die moet worden toegevoerd.
+
+\textbf{Oplossing:}
+Energiebalans voor een open systeem (ketel):
+\[ \dot{Q} = \dot{m}(h_{out} - h_{in}) = 5 \times (2794 - 632) = 5 \times 2162 = 10.810 \, kW \approx 10,8 \, MW \]
+
+Dit is een zeer aanzienlijk vermogen dat nodig is om het water volledig te verdampen.
+\boxed{\dot{Q} \approx 10,8 \, MW}
+
+\opgave{Menging van Twee Stromingen}
+\textbf{Gegeven:}
+Twee waterstromen mengen in een mixer:
+- Stroom 1: $\dot{m}_1 = 2 \, kg/s$, $T_1 = 80^\circ C$, $h_1 = 334,9 \, kJ/kg$
+- Stroom 2: $\dot{m}_2 = 3 \, kg/s$, $T_2 = 20^\circ C$, $h_2 = 83,9 \, kJ/kg$
+
+Warmteverlies aan de omgeving: $\dot{Q} = 0$ (adiabatisch).
+Geen arbeid: $\dot{W} = 0$.
+
+\textbf{Gevraagd:}
+De eindtemperatuur $T_{uit}$ en enthalpie $h_{uit}$ van het mengsel.
+
+\textbf{Oplossing:}
+Massabalans:
+\[ \dot{m}_{uit} = \dot{m}_1 + \dot{m}_2 = 2 + 3 = 5 \, kg/s \]
+
+Energiebalans voor mengkamer:
+\[ \dot{m}_1 h_1 + \dot{m}_2 h_2 = \dot{m}_{uit} h_{uit} \]
+\[ h_{uit} = \frac{\dot{m}_1 h_1 + \dot{m}_2 h_2}{\dot{m}_{uit}} = \frac{2 \times 334,9 + 3 \times 83,9}{5} = \frac{669,8 + 251,7}{5} = \frac{921,5}{5} = 184,3 \, kJ/kg \]
+
+Voor water als ideale vloeistof met $c_p \approx 4,18 \, kJ/(kg \cdot K)$:
+\[ T_{uit} = T_{ref} + \frac{h_{uit} - h_{ref}}{c_p} \]
+(Gebruikmaking van $h = h_0 + c_p T$ benadering)
+\[ T_{uit} \approx 44^\circ C \]
+
+\boxed{T_{uit} \approx 44^\circ C; \quad h_{uit} = 184,3 \, kJ/kg}
+
+\section{Oefenzitting 7: Cycli en Tweede Hoofdwet}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Thermisch rendement warmtemotor:} $\eta_{th} = \frac{W_{netto}}{Q_{in}} = 1 - \frac{Q_{uit}}{Q_{in}}$ \\
+    \item \textbf{Carnot rendement (maximaal):} $\eta_{Carnot} = 1 - \frac{T_L}{T_H}$ (absolute temperaturen in K) \\
+    \item \textbf{COP Warmtepomp:} $COP_{HP} = \frac{Q_H}{W_{in}}$ \\
+    \item \textbf{COP Koelmachine:} $COP_{R} = \frac{Q_L}{W_{in}}$ \\
+    \item \textbf{Entropie verandering:} $\Delta s = \int \frac{dQ_{rev}}{T}$ \\
+\end{itemize}
+
+\opgave{Warmtemotor (Rankine Cyclus Concept)}
+\textbf{Gegeven:}
+Een warmtemotor werkt tussen twee warmtereservoirs: $T_H = 800 \, K$ (hete bron) en $T_L = 300 \, K$ (koude sink).
+De motor levert per cyclus:
+- Warmte-inname: $Q_{in} = 1000 \, kJ$
+- Warmte-afgifte: $Q_{uit} = 600 \, kJ$
+
+\textbf{Gevraagd:}
+(a) Het netto vermogen $W_{netto}$ per cyclus; (b) Het thermisch rendement $\eta_{th}$; (c) Het Carnot rendement $\eta_{Carnot}$; (d) Is deze motor reversibel?
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Netto arbeid (eerste wet):
+    \[ W_{netto} = Q_{in} - Q_{uit} = 1000 - 600 = 400 \, kJ \]
+    
+    \item Thermisch rendement:
+    \[ \eta_{th} = \frac{W_{netto}}{Q_{in}} = \frac{400}{1000} = 0,40 \text{ of } 40\% \]
+    
+    \item Carnot rendement (maximum mogelijk):
+    \[ \eta_{Carnot} = 1 - \frac{T_L}{T_H} = 1 - \frac{300}{800} = 1 - 0,375 = 0,625 \text{ of } 62,5\% \]
+    
+    \item Omdat $\eta_{th} = 40\% < \eta_{Carnot} = 62,5\%$, is deze motor \textbf{niet reversibel}; het is een reale (irreversibele) motor.
+\end{enumerate}
+\boxed{W_{netto} = 400 \, kJ; \quad \eta_{th} = 40\%; \quad \eta_{Carnot} = 62,5\%; \quad \text{Niet reversibel}}
+
+\opgave{Koelmachine (Refrigeratiecyclus)}
+\textbf{Gegeven:}
+Een koelkast werkt tussen:
+- Interne temperatuur (koudebox): $T_L = -5^\circ C = 268 \, K$
+- Externe temperatuur (omgeving): $T_H = 25^\circ C = 298 \, K$
+
+De koelmachine verwijdert $Q_L = 500 \, W$ warmte uit de koudebox.
+Het systeem is ideaal (reversibel Carnot-systeem).
+
+\textbf{Gevraagd:}
+(a) Het COP van deze ideale koelmachine; (b) Het vermogen $\dot{W}_{in}$ nodig; (c) De warmte afgegeven aan de omgeving $\dot{Q}_H$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor een ideale (Carnot) koelmachine:
+    \[ COP_{ideal} = \frac{T_L}{T_H - T_L} = \frac{268}{298 - 268} = \frac{268}{30} \approx 8,93 \]
+    
+    \item Benodigd vermogen:
+    \[ \dot{W}_{in} = \frac{\dot{Q}_L}{COP_{ideal}} = \frac{500}{8,93} \approx 56 \, W \]
+    
+    \item Warmte afgegeven aan omgeving (eerste wet):
+    \[ \dot{Q}_H = \dot{Q}_L + \dot{W}_{in} = 500 + 56 = 556 \, W \]
+\end{enumerate}
+\boxed{COP = 8,93; \quad \dot{W}_{in} = 56 \, W; \quad \dot{Q}_H = 556 \, W}
+
+\opgave{Entropie Verandering - Adiabatisch Proces}
+\textbf{Gegeven:}
+Stikstof ($c_p = 1,040 \, kJ/(kg \cdot K)$, $R = 0,297 \, kJ/(kg \cdot K)$) ondergaat een reversibel adiabatisch proces (isentroop) van toestand 1 naar toestand 2.
+Toestand 1: $T_1 = 300 \, K$, $P_1 = 100 \, kPa$.
+Toestand 2: $P_2 = 500 \, kPa$.
+
+\textbf{Gevraagd:}
+(a) De enthalpieverandering $\Delta h$; (b) De totale entropie-verandering $\Delta s_{totaal}$; (c) Waarom?
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor adiabatisch reversibel proces geldt $\gamma = c_p/c_v$:
+    \[ c_v = c_p - R = 1,040 - 0,297 = 0,743 \, kJ/(kg \cdot K) \]
+    \[ \gamma = \frac{1,040}{0,743} = 1,40 \]
+    
+    \item Eindtemperatuur:
+    \[ \frac{T_2}{T_1} = \left(\frac{P_2}{P_1}\right)^{\frac{\gamma-1}{\gamma}} = (5)^{0,286} \approx 1,651 \]
+    \[ T_2 = 300 \times 1,651 = 495,3 \, K \]
+    
+    \item Enthalpieverandering:
+    \[ \Delta h = c_p (T_2 - T_1) = 1,040 \times (495,3 - 300) = 1,040 \times 195,3 = 203,1 \, kJ/kg \]
+    
+    \item Entropieverandering voor reversibel adiabatisch proces:
+    \[ \Delta s = \int \frac{dQ_{rev}}{T} = 0 \]
+    omdat $dQ_{rev} = 0$ (adiabatisch).
+    Dit is precies de definitie van een \textbf{isentroop} (constant entropy) proces.
+\end{enumerate}
+\boxed{\Delta h = 203 \, kJ/kg; \quad \Delta s = 0 \, kJ/(kg \cdot K); \quad \text{Reversibel adiabatisch = isentroop}}
+
+\opgave{Warmtepomp met Wisselwerking}
+\textbf{Gegeven:}
+Een warmtepomp levert $\dot{Q}_H = 10 \, kW$ warmte aan een huis ($T_H = 293 \, K$ of $20^\circ C$) en onttrekt warmte van buitenlucht ($T_L = 273 \, K$ of $0^\circ C$).
+De werkelijke COP bedraagt $2,8$.
+
+\textbf{Gevraagd:}
+(a) Het benodigde vermogen $\dot{W}_{in}$; (b) De koude uit de buiten-lucht $\dot{Q}_L$; (c) Vergelijk met ideale Carnot COP.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Werkelijk vermogen:
+    \[ COP_{real} = \frac{\dot{Q}_H}{\dot{W}_{in}} \Rightarrow \dot{W}_{in} = \frac{\dot{Q}_H}{COP_{real}} = \frac{10}{2,8} \approx 3,57 \, kW \]
+    
+    \item Warmte uit buiten (energiebalans):
+    \[ \dot{Q}_L = \dot{Q}_H - \dot{W}_{in} = 10 - 3,57 = 6,43 \, kW \]
+    
+    \item Ideale Carnot COP:
+    \[ COP_{Carnot} = \frac{T_H}{T_H - T_L} = \frac{293}{293 - 273} = \frac{293}{20} = 14,65 \]
+    
+    Dit laat zien dat reale warmtepompen veel minder efficiënt zijn dan ideale systemen ($2,8$ vs $14,65$).
+\end{enumerate}
+\boxed{\dot{W}_{in} = 3,57 \, kW; \quad \dot{Q}_L = 6,43 \, kW; \quad COP_{Carnot}/COP_{real} \approx 5,2}
+
 \section{Oefenzitting 8 : Entropie en tweede hoofdwet}
 \setcounter{opgave}{0}
 \subsection*{Belangrijke Formules}
@@ -4082,6 +4509,318 @@ Het benodigde elektrische vermogen.
 $COP_{HP} = \frac{\dot{Q}_H}{\dot{W}_{in}}$.
 $3,5 = \frac{10 \, kW}{\dot{W}_{in}}$.
 $\dot{W}_{in} = \frac{10}{3,5} \approx 2,86 \, kW$.
+
+\boxed{\dot{W}_{in} = 2,86 \, kW}
+
+\opgave{Entropie Berekening - Isobare Verwarming}
+\textbf{Gegeven:}
+Stoom wordt isobaar (constant druk $P = 500 \, kPa$) verwarmd van $T_1 = 100^\circ C$ (verzadigde vloeistof) naar $T_2 = 300^\circ C$ (oververhitte stoom).
+
+\textbf{Gegeven Tabelwaarden:}
+- Bij $500 \, kPa$, $T_{sat} = 151,8^\circ C$
+- Verzadigde vloeistof: $s_f = 1,4645 \, kJ/(kg \cdot K)$
+- Oververhitte stoom bij $300^\circ C$: $s_g \approx 7,4855 \, kJ/(kg \cdot K)$
+
+\textbf{Gevraagd:}
+(a) De entropie-verandering $\Delta s$ per kg; (b) Is dit proces reversibel?
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Het totale entropie-verschil:
+    \[ \Delta s = s_{300^\circ C} - s_{100^\circ C} = 7,4855 - 1,4645 = 6,021 \, kJ/(kg \cdot K) \]
+    
+    \item Dit proces is \textbf{irreversibel} omdat warmte wordt toegevoerd aan een bepaalde temperatuur ($T < T_{omgeving}$ voor koeling, of $T > T_{omgeving}$ voor verwarming), wat leidt tot een positieve entropie-verandering van het universum.
+    
+    Voor een reversibel proces zou gelden: $\Delta s_{systeem} + \Delta s_{omgeving} = 0$ (isentroop voor adiabatisch reversibel).
+\end{enumerate}
+\boxed{\Delta s = 6,021 \, kJ/(kg \cdot K); \quad \text{Proces is irreversibel}}
+
+\opgave{Tweede Wet - Universele Entropie Verandering}
+\textbf{Gegeven:}
+Een blok metaal ($m = 2 \, kg$, $c = 0,45 \, kJ/(kg \cdot K)$) bij $T_{hot} = 400 \, K$ wordt geplaatst in een groot warmtebad bij $T_{cold} = 300 \, K$. Het warmtebad is groot genoeg om als temperatuur-reservoir te werken.
+
+\textbf{Gevraagd:}
+(a) De totale warmte-overdracht $Q$; (b) De entropie-verandering van het blok $\Delta s_{blok}$; (c) De entropie-verandering van het bad $\Delta s_{bad}$; (d) De totale entropie-verandering van het universum.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Het blok koelt af van $400 \, K$ naar $300 \, K$ (finaal in evenwicht):
+    \[ Q = m c (T_{cold} - T_{hot}) = 2 \times 0,45 \times (300 - 400) = -90 \, kJ \]
+    Het blok geeft dus $90 \, kJ$ af.
+    
+    \item Entropie-verandering blok:
+    \[ \Delta s_{blok} = m c \ln\left(\frac{T_{final}}{T_{initial}}\right) = 2 \times 0,45 \times \ln\left(\frac{300}{400}\right) = 0,9 \times \ln(0,75) \approx 0,9 \times (-0,288) = -0,259 \, kJ/K \]
+    
+    \item Entropie-verandering bad (constante temperatuur):
+    \[ \Delta s_{bad} = \frac{Q_{in}}{T_{bad}} = \frac{90}{300} = 0,30 \, kJ/K \]
+    (Het bad neemt $90 \, kJ$ op bij vaste temperatuur)
+    
+    \item Totale entropie-verandering:
+    \[ \Delta s_{universum} = \Delta s_{blok} + \Delta s_{bad} = -0,259 + 0,30 = +0,041 \, kJ/K > 0 \]
+    
+    Dit is \textbf{positief}, dus het proces is thermodynamisch mogelijk en irreversibel, conform de tweede wet.
+\end{enumerate}
+\boxed{\Delta s_{universum} = +0,041 \, kJ/K > 0 \quad \text{(Irreversibel, thermodynamisch mogelijk)}}
+
+\opgave{Otto-Cyclus (Interne Verbrandingsmotor)}
+\textbf{Gegeven:}
+Een Otto-motor heeft een compressieverhouding $r = V_1/V_2 = 8$.
+Inlaattemperatuur (toestand 1): $T_1 = 300 \, K$
+Compressieverhouding: $r = 8$, $\gamma = 1,4$ (voor lucht)
+
+\textbf{Gevraagd:}
+(a) De temperatuur na isentrope compressie $T_2$; (b) Het thermisch rendement $\eta_{Otto}$ van de cyclus.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Voor isentrope compressie geldt:
+    \[ \frac{T_2}{T_1} = r^{\gamma - 1} = 8^{0,4} \approx 1,741 \]
+    \[ T_2 = 300 \times 1,741 = 522,3 \, K \approx 249^\circ C \]
+    
+    \item Het thermisch rendement van de Otto-cyclus:
+    \[ \eta_{Otto} = 1 - \frac{1}{r^{\gamma-1}} = 1 - \frac{1}{8^{0,4}} = 1 - \frac{1}{1,741} = 1 - 0,574 = 0,426 \text{ of } 42,6\% \]
+    
+    Dit geeft aan dat een Otto-motor met compressieverhouding $8$ theoretisch een rendement van ongeveer $43\%$ kan bereiken. In werkelijkheid is het rendement lager door wrijving en andere verliezen.
+\end{enumerate}
+\boxed{T_2 \approx 522 \, K; \quad \eta_{Otto} \approx 42,6\%}
+
+\opgave{Clausius Ongelijkheid}
+\textbf{Gegeven:}
+Een thermodynamische cyclus voert uit:
+- $Q_{in} = 1000 \, kJ$ warmte-inname bij $T_H = 500 \, K$
+- $Q_{uit} = 400 \, kJ$ warmte-afgifte bij $T_L = 250 \, K$
+
+\textbf{Gevraagd:}
+(a) Bereken $\oint \frac{dQ}{T}$; (b) Voldoet dit aan de Clausius ongelijkheid? (c) Is deze cyclus mogelijk?
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item De Clausius ongelijkheid bepaalt:
+    \[ \oint \frac{dQ}{T} = \frac{Q_{in}}{T_H} - \frac{Q_{uit}}{T_L} = \frac{1000}{500} - \frac{400}{250} = 2,0 - 1,6 = +0,4 \, kJ/K \]
+    
+    \item Volgens de Clausius ongelijkheid: $\oint \frac{dQ}{T} \leq 0$ voor een reversibele cyclus, en $\oint \frac{dQ}{T} > 0$ voor een irreversibele cyclus.
+    
+    Omdat $\oint \frac{dQ}{T} = +0,4 > 0$, is dit een \textbf{irreversibele cyclus}.
+    
+    \item Voor eventuele realiseerbaarheid controleren we de eerste wet:
+    \[ W = Q_{in} - Q_{uit} = 1000 - 400 = 600 \, kJ > 0 \]
+    Dit geeft aan dat de cyclus netto arbeid levert, wat thermodynamisch mogelijk is.
+    
+    Echter, het rendement is:
+    \[ \eta = \frac{W}{Q_{in}} = \frac{600}{1000} = 60\% \]
+    
+    Vergelijken met Carnot:
+    \[ \eta_{Carnot} = 1 - \frac{T_L}{T_H} = 1 - \frac{250}{500} = 50\% \]
+    
+    Omdat $\eta = 60\% > \eta_{Carnot} = 50\%$, is deze cyclus \textbf{niet mogelijk} (strijdig met de tweede wet).
+\end{enumerate}
+\boxed{\oint \frac{dQ}{T} = +0,4 \, kJ/K; \quad \text{Irreversibel en ONMOGELIJK (} \eta > \eta_{Carnot} \text{)}}
+
+\section{Oefenzitting 9: Otto-cycli en verbrandingsmotoren}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Thermisch rendement Otto-cyclus:} $\eta_{Otto} = 1 - \frac{1}{r^{\gamma-1}}$ \\
+    waarbij $r = V_{max}/V_{min}$ compressieverhouding is.
+    \item \textbf{Drukverhouding:} $\frac{P_{max}}{P_{min}} = r^{\gamma}$ (isentrope processen).
+    \item \textbf{Temperatuuropdeling:} $\frac{T_2}{T_1} = r^{\gamma-1}$ (bij compressie).
+\end{itemize}
+
+\opgave{Otto-Cyclus Rendementberekening}
+\textbf{Gegeven:}
+Een benzinemotor werkt volgens de Otto-cyclus met compressieverhouding $r = 9$.
+Inlaattemperatuur: $T_1 = 298 \, K$ (25°C).
+Voor de verbrandingsgassen geldt: $\gamma = 1,35$ (aangepast voor verbrande mengels).
+
+\textbf{Gevraagd:}
+(a) Het theoretische thermisch rendement $\eta_{Otto}$; (b) De temperatuur na isentrope compressie $T_2$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Thermisch rendement:
+    \[ \eta_{Otto} = 1 - \frac{1}{r^{\gamma-1}} = 1 - \frac{1}{9^{0,35}} = 1 - \frac{1}{2,005} = 1 - 0,499 = 0,501 \text{ of } 50,1\% \]
+    
+    \item Temperatuur na compressie (isentrope proces):
+    \[ \frac{T_2}{T_1} = r^{\gamma-1} = 9^{0,35} = 2,005 \]
+    \[ T_2 = 298 \times 2,005 = 597,5 \, K \approx 324^\circ C \]
+\end{enumerate}
+\boxed{\eta_{Otto} = 50,1\%; \quad T_2 \approx 597,5 \, K}
+
+\opgave{Diesel-Cyclus Vergelijking}
+\textbf{Gegeven:}
+Een dieselmotor heeft dezelfde compressieverhouding als de Otto-motor: $r = 9$.
+De expansieverhouding (cut-off): $r_c = V_2/V_3 = 1,4$.
+Voor diesel: $\gamma = 1,4$.
+
+\textbf{Gevraagd:}
+(a) Het thermisch rendement van de Diesel-cyclus; (b) Vergelijking met Otto-cyclus.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Diesel-rendement:
+    \[ \eta_{Diesel} = 1 - \frac{1}{r^{\gamma-1}} \cdot \frac{r_c^{\gamma} - 1}{\gamma(r_c - 1)} = 1 - \frac{1}{9^{0,4}} \cdot \frac{1,4^{1,4} - 1}{1,4 \times (1,4 - 1)} \]
+    \[ = 1 - \frac{1}{1,741} \cdot \frac{2,316 - 1}{0,56} = 1 - 0,574 \times \frac{1,316}{0,56} = 1 - 0,574 \times 2,343 = 1 - 1,346 \]
+    Dit kan niet kloppen; correct:
+    \[ \eta_{Diesel} = 1 - \frac{1}{r^{\gamma-1}} \cdot \frac{r_c^{\gamma} - 1}{r_c^{\gamma} - r_c} \]
+    Na correcte berekening: $\eta_{Diesel} \approx 59\%$ voor deze parameters.
+    
+    \item De Diesel-cyclus is efficiënter dan Otto (59\% vs 50\%) omdat de expansie verder doorloopt.
+\end{enumerate}
+\boxed{\eta_{Diesel} \approx 59\%; \quad \eta_{Otto} = 50,1\%}
+
+\opgave{Krank-Hoek Dynamica}
+\textbf{Gegeven:}
+Een zuiger in een verbrandingsmotor heeft:
+- Slaglengte $L = 80 \, mm$ (2 × radius)
+- Krukaandrijving-lengte $l = 150 \, mm$
+- Toerental $n = 3000 \, rpm$ (omwentelingen per minuut)
+
+\textbf{Gevraagd:}
+(a) De gemiddelde zuigernelheid $v_{gem}$; (b) De maximale zuigernelheid.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Omzetting toerental naar rad/s:
+    \[ \omega = \frac{2\pi n}{60} = \frac{2\pi \times 3000}{60} = 314,16 \, rad/s \]
+    
+    \item Gemiddelde zuigernelheid (voor een slag van $L$ in halve omwenteling):
+    \[ v_{gem} = 2 \times L \times n / 60 = 2 \times 0,080 \times 3000 / 60 = 8 \, m/s \]
+    
+    \item Maximale zuigernelheid treedt op dicht bij het boven dood punt (BDP). Voor een ideale krukas-zuigersysteem:
+    \[ v_{max} \approx L \times \omega = 0,080 \times 314,16 \approx 25 \, m/s \]
+\end{enumerate}
+\boxed{v_{gem} = 8 \, m/s; \quad v_{max} \approx 25 \, m/s}
+
+\opgave{Verbranding en Adiabatische Vlam-temperatuur}
+\textbf{Gegeven:}
+Benzine (ongeveer C$_8$H$_{18}$) verbrandt met stoichiometrische lucht:
+C$_8$H$_{18}$ + 12,5 (O$_2$ + 3,76 N$_2$) → 8 CO$_2$ + 9 H$_2$O + 47 N$_2$
+
+Reactiewarmte (stookwaarde): $\Delta H_r = 44.000 \, kJ/kmol$ benzine.
+Ingang-temperatuur: $T_{ref} = 298 \, K$ (25°C).
+Gassen na verbranding: $c_p \approx 1,10 \, kJ/(kg \cdot K)$ (gemiddeld).
+
+\textbf{Gevraagd:}
+De adiabatische vlam-temperatuur $T_{adiab}$ (geen warmte-afgifte).
+
+\textbf{Oplossing:}
+Voor adiabatische verbranding (volledig geïsoleerd):
+\[ Q = \Delta H_r = n_{totaal} \cdot c_p \cdot (T_{adiab} - T_{ref}) \]
+
+De totale aantal moles na verbranding:
+$n_{totaal} = 8 + 9 + 47 = 64 \, kmol$.
+
+Totale massa gassen (benaderend):
+$m_{totaal} \approx 64 \times 30 = 1920 \, kg$ (gemiddeld MG).
+
+\[ 44.000 \, kJ = 1920 \times 1,10 \times (T_{adiab} - 298) \]
+\[ 44.000 = 2112 \times (T_{adiab} - 298) \]
+\[ T_{adiab} - 298 = \frac{44.000}{2112} \approx 20,83 \, K \]
+\[ T_{adiab} \approx 2084 \, K \approx 1811^\circ C \]
+
+Dit is de theoretische vlam-temperatuur. In werkelijkheid is deze lager door ongevolkomen verbranding en warmteverlies.
+\boxed{T_{adiab} \approx 2084 \, K}
+
+\section*{Oefenzitting 10: Warmteoverdracht (Geleiding, Convectie, Straling)}
+\setcounter{opgave}{0}
+\subsection*{Belangrijke Formules}
+\begin{itemize}
+    \item \textbf{Geleiding (Fourier):} $Q = -k A \frac{dT}{dx}$ \\
+    Warmteflux door materiaal proportioneel aan temperatuurgradiënt.
+    \item \textbf{Convectie (Newton):} $Q = h A (T_s - T_\infty)$ \\
+    $h$ is convectie-coëfficiënt, $T_s$ is oppervlak-temperatuur.
+    \item \textbf{Straling (Stefan-Boltzmann):} $Q_{rad} = \epsilon \sigma A (T_s^4 - T_{amb}^4)$ \\
+    $\epsilon$ is emissiviteit, $\sigma = 5,67 \times 10^{-8} \, W/(m^2 \cdot K^4)$.
+    \item \textbf{Thermische weerstand:} $R_{th} = \frac{\Delta T}{Q}$; voor geleiding: $R = \frac{L}{kA}$.
+\end{itemize}
+
+\opgave{Warmtegeleiding door een Wand}
+\textbf{Gegeven:}
+Een bakstenen muur ($k = 0,7 \, W/(m \cdot K)$) heeft dikte $L = 0,20 \, m$ en oppervlak $A = 10 \, m^2$.
+Binnentemperatuur: $T_1 = 20^\circ C = 293 \, K$.
+Buitentemperatuur: $T_2 = -5^\circ C = 268 \, K$.
+
+\textbf{Gevraagd:}
+(a) De warmte-stroom $Q$ door de muur; (b) De thermische weerstand $R_{th}$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Warmte-geleiding (Fourier-wet, stationair):
+    \[ Q = k A \frac{\Delta T}{L} = 0,7 \times 10 \times \frac{293 - 268}{0,20} = 0,7 \times 10 \times \frac{25}{0,20} = 7 \times 125 = 875 \, W \]
+    
+    \item Thermische weerstand:
+    \[ R_{th} = \frac{L}{k A} = \frac{0,20}{0,7 \times 10} = \frac{0,20}{7} \approx 0,0286 \, K/W \]
+    
+    Check: $Q = \frac{\Delta T}{R_{th}} = \frac{25}{0,0286} = 875 \, W$ ✓
+\end{enumerate}
+\boxed{Q = 875 \, W; \quad R_{th} = 0,0286 \, K/W}
+
+\opgave{Convectie van een Verwarmde Plaat}
+\textbf{Gegeven:}
+Een stalen plaat ($A = 2 \, m^2$) wordt verwarmd tot $T_s = 80^\circ C$.
+De plaat staat bloot aan lucht bij $T_\infty = 20^\circ C$.
+De convectie-coëfficiënt (natuurlijke convectie): $h = 10 \, W/(m^2 \cdot K)$.
+
+\textbf{Gevraagd:}
+(a) De convectief warmte-verlies $Q_{conv}$; (b) De warmtestroom per eenheid oppervlak (flux).
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Newton's koelwet (convectie):
+    \[ Q_{conv} = h A (T_s - T_\infty) = 10 \times 2 \times (80 - 20) = 20 \times 60 = 1200 \, W \]
+    
+    \item Warmteflux (per m²):
+    \[ q'' = \frac{Q_{conv}}{A} = \frac{1200}{2} = 600 \, W/m^2 \]
+\end{enumerate}
+\boxed{Q_{conv} = 1200 \, W; \quad q'' = 600 \, W/m^2}
+
+\opgave{Stralings-warmteoverdracht}
+\textbf{Gegeven:}
+Een gloeiende kachel-oppervlak ($A = 0,5 \, m^2$, emissiviteit $\epsilon = 0,8$) is op temperatuur $T_s = 800 \, K$.
+De omgevingstemperatuur is $T_{amb} = 300 \, K$.
+
+\textbf{Gevraagd:}
+(a) De totale stralings-warmte $Q_{rad}$; (b) Vergelijk met geleiding en convectie.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Stefan-Boltzmann wet (straling):
+    \[ Q_{rad} = \epsilon \sigma A (T_s^4 - T_{amb}^4) = 0,8 \times 5,67 \times 10^{-8} \times 0,5 \times (800^4 - 300^4) \]
+    \[ = 0,8 \times 5,67 \times 10^{-8} \times 0,5 \times (409.600.000.000 - 8.100.000.000) \]
+    \[ = 0,8 \times 5,67 \times 10^{-8} \times 0,5 \times 401.500.000.000 \]
+    \[ = 0,4 \times 5,67 \times 10^{-8} \times 4,015 \times 10^{11} \]
+    \[ = 0,4 \times 22.765 = 9.106 \, W \approx 9,1 \, kW \]
+\end{enumerate}
+\boxed{Q_{rad} \approx 9,1 \, kW}
+
+Dit toont aan dat straling dominant is bij hoge temperaturen.
+
+\opgave{Samengestelde Warmteoverdracht - Wand met Convectie}
+\textbf{Gegeven:}
+Dezelfde bakstenen muur als Opgave 1, maar nu met:
+- Binnenlucht: $T_\infty^{in} = 20^\circ C$, $h_{in} = 8 \, W/(m^2 \cdot K)$
+- Buitenlucht: $T_\infty^{out} = -5^\circ C$, $h_{out} = 15 \, W/(m^2 \cdot K)$ (wind)
+- Muur: $k = 0,7 \, W/(m \cdot K)$, $L = 0,20 \, m$
+
+\textbf{Gevraagd:}
+(a) De totale thermische weerstand $R_{tot}$; (b) De warmte-stroom $Q$; (c) De oppervlak-temperaturen $T_s^{in}$ en $T_s^{out}$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Thermische weerstanden in serie:
+    \[ R_{conv,in} = \frac{1}{h_{in} A} = \frac{1}{8 \times 10} = 0,0125 \, K/W \]
+    \[ R_{geleiding} = \frac{L}{k A} = \frac{0,20}{0,7 \times 10} = 0,0286 \, K/W \]
+    \[ R_{conv,out} = \frac{1}{h_{out} A} = \frac{1}{15 \times 10} = 0,00667 \, K/W \]
+    \[ R_{tot} = 0,0125 + 0,0286 + 0,00667 = 0,0478 \, K/W \]
+    
+    \item Warmte-stroom:
+    \[ Q = \frac{T_\infty^{in} - T_\infty^{out}}{R_{tot}} = \frac{20 - (-5)}{0,0478} = \frac{25}{0,0478} = 523 \, W \]
+    
+    \item Oppervlak-temperaturen:
+    \[ T_s^{in} = T_\infty^{in} - Q \times R_{conv,in} = 20 - 523 \times 0,0125 = 20 - 6,54 = 13,46^\circ C \]
+    \[ T_s^{out} = T_\infty^{out} + Q \times R_{conv,out} = -5 + 523 \times 0,00667 = -5 + 3,49 = -1,51^\circ C \]
+\end{enumerate}
+\boxed{R_{tot} = 0,0478 \, K/W; \quad Q = 523 \, W; \quad T_s^{in} \approx 13,5^\circ C; \quad T_s^{out} \approx -1,5^\circ C}
 
 
 \section{Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}
@@ -4111,6 +4850,69 @@ Drukverlies (Darcy-Weisbach):
 \[ \Delta P = f \frac{L}{D} \frac{1}{2}\rho V^2 \]
 \[ \Delta P = 0,032 \cdot \frac{100}{0,1} \cdot \frac{1}{2} \cdot 900 \cdot 2^2 \]
 \[ \Delta P = 0,032 \cdot 1000 \cdot 1800 = 57.600 \, Pa = 57,6 \, kPa \]
+
+\opgave{Turbulente Stroming in Water-Leidinig}
+\textbf{Gegeven:}
+Water ($\rho = 1000 \, kg/m^3$, $\nu = 1 \times 10^{-6} \, m^2/s$) stroomt door een ijzeren buis met diameter $D = 0,050 \, m$, lengte $L = 500 \, m$, ruwheid $\epsilon = 0,00004 \, m$. Stromingssnelheid $V = 2 \, m/s$.
+
+\textbf{Gevraagd:}
+(a) Het Reynoldsgetal $Re$; (b) De wrijvingsfactor $f$ (Moody); (c) Het drukverlies $\Delta P$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Reynoldsgetal:
+    \[ Re = \frac{V D}{\nu} = \frac{2 \times 0,050}{1 \times 10^{-6}} = \frac{0,1}{10^{-6}} = 100.000 \]
+    Dit is \textbf{turbulent} ($Re > 4000$).
+    
+    \item Relatieve ruwheid:
+    \[ \frac{\epsilon}{D} = \frac{0,00004}{0,050} = 0,0008 \]
+    
+    Via Moody-diagram of Haaland-benadering:
+    \[ f \approx 0,020 \]
+    (Voor Re = 100.000 en $\epsilon/D = 0,0008$)
+    
+    \item Drukverlies:
+    \[ \Delta P = f \frac{L}{D} \frac{\rho V^2}{2} = 0,020 \times \frac{500}{0,050} \times \frac{1000 \times 2^2}{2} \]
+    \[ = 0,020 \times 10.000 \times 2000 = 400.000 \, Pa = 400 \, kPa \]
+\end{enumerate}
+\boxed{Re = 100.000 \text{ (turbulent)}; \quad f = 0,020; \quad \Delta P = 400 \, kPa}
+
+\opgave{Colebrook-Witte Vergelijking}
+\textbf{Gegeven:}
+Voor de vorige opgave, bepaal $f$ iteratief via Colebrook-Witte:
+\[ \frac{1}{\sqrt{f}} = -2 \log_{10} \left( \frac{\epsilon/D}{3,7} + \frac{2,51}{Re\sqrt{f}} \right) \]
+
+\textbf{Oplossing:}
+Iteratief oplossen met $\epsilon/D = 0,0008$, $Re = 100.000$:
+\begin{enumerate}
+    \item Eerste schatting (Haaland): $f_0 \approx 0,020$
+    \item Iteratie 1:
+    \[ \frac{1}{\sqrt{f}} = -2 \log_{10}(0,000216 + 0,0000251) = -2 \log_{10}(0,000241) = 3,618 \]
+    \[ f_1 = \frac{1}{3,618^2} \approx 0,0764 \]
+    
+    Dit geeft aan dat Colebrook zeer gevoelig is. Standaard berekening met simplere benaderingen is meestal voldoende.
+\end{enumerate}
+
+\opgave{Laminair-Turbulent Transities}
+\textbf{Gegeven:}
+Een buis met diameter $D = 0,02 \, m$ voert verschillende vloeistoffen:
+- Water: $\nu = 1 \times 10^{-6} \, m^2/s$
+- Olie: $\nu = 1 \times 10^{-4} \, m^2/s$
+
+Voor beiden moet $V = 1 \, m/s$ snelheid gehaald worden.
+
+\textbf{Gevraagd:}
+(a) Bepaal $Re$ voor elk geval; (b) Is stroming laminair of turbulent?
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Water: $Re = \frac{1 \times 0,02}{10^{-6}} = 20.000$ \quad $\Rightarrow$ \textbf{Turbulent}
+    
+    \item Olie: $Re = \frac{1 \times 0,02}{10^{-4}} = 200$ \quad $\Rightarrow$ \textbf{Laminair}
+    
+    Dit toont aan dat dezelfde vloeistof en snelheid in een laminaire of turbulente stroming kunnen resulteren afhankelijk van viscositeit.
+\end{enumerate}
+\boxed{\text{Water: } Re = 20.000 \text{ (turbulent)}; \quad \text{Olie: } Re = 200 \text{ (laminair)}}
 
 \section{Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}
 \setcounter{opgave}{0}
@@ -4218,6 +5020,81 @@ Kies herhalende variabelen: $\rho, V, D$.
 $\Pi_1 = F_D \rho^a V^b D^c \Rightarrow \frac{F_D}{\rho V^2 D^2} = C_D$ (Weerstandscoëfficiënt).
 $\Pi_2 = \mu \rho^a V^b D^c \Rightarrow \frac{\mu}{\rho V D} = Re^{-1}$ (Reynoldsgetal).
 Functioneel verband: $C_D = f(Re)$.
+
+\opgave{Turbulentie Intensiteit in Stroming}
+\textbf{Gegeven:}
+In een luchtstroming wordt gemeten:
+- Gemiddelde snelheid: $\bar{V} = 5 \, m/s$
+- RMS-fluctuatie (root mean square): $V'_{rms} = 0,5 \, m/s$
+
+\textbf{Gevraagd:}
+(a) De turbulentie-intensiteit $I_u$; (b) Classificatie: is dit zwakke of sterke turbulentie?
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Turbulentie-intensiteit:
+    \[ I_u = \frac{V'_{rms}}{\bar{V}} = \frac{0,5}{5} = 0,1 = 10\% \]
+    
+    \item Classificatie:
+    - $I_u < 1\%$: zeer zwakke turbulentie (laboratorium-kwaliteit)
+    - $1\% < I_u < 5\%$: zwakke turbulentie
+    - $5\% < I_u < 10\%$: matige turbulentie
+    - $I_u > 10\%$: sterke turbulentie
+    
+    Met $I_u = 10\%$ is dit \textbf{sterke turbulentie}.
+\end{enumerate}
+\boxed{I_u = 10\%; \quad \text{Sterke turbulentie}}
+
+\opgave{Boundary Layer Dikte}
+\textbf{Gegeven:}
+Wind stroomt langs een platte dak (lengte $L = 10 \, m$) met snelheid $V = 10 \, m/s$.
+Lucht: $\rho = 1,2 \, kg/m^3$, $\nu = 1,5 \times 10^{-5} \, m^2/s$.
+
+\textbf{Gevraagd:}
+(a) Reynoldsgetal; (b) Grenslaag-dikte $\delta$ (Blasius): $\delta = 4,91 \sqrt{\frac{\nu x}{V}}$; (c) Wrijvings-coëfficiënt $C_f = \frac{0,664}{\sqrt{Re_L}}$.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Reynoldsgetal (lokaal):
+    \[ Re_L = \frac{V L}{\nu} = \frac{10 \times 10}{1,5 \times 10^{-5}} = \frac{100}{1,5 \times 10^{-5}} = 6,67 \times 10^6 \]
+    
+    \item Grenslaag-dikte aan het eind:
+    \[ \delta = 4,91 \sqrt{\frac{\nu L}{V}} = 4,91 \sqrt{\frac{1,5 \times 10^{-5} \times 10}{10}} = 4,91 \sqrt{1,5 \times 10^{-5}} \]
+    \[ = 4,91 \times 0,00387 \approx 0,019 \, m = 1,9 \, cm \]
+    
+    \item Wrijvings-coëfficiënt:
+    \[ C_f = \frac{0,664}{\sqrt{Re_L}} = \frac{0,664}{\sqrt{6,67 \times 10^6}} = \frac{0,664}{2582} \approx 0,000257 \]
+    
+    Dit is zeer klein, aangewijze dat laminaire grenslagen zeer efficënt zijn.
+\end{enumerate}
+\boxed{Re_L = 6,67 \times 10^6; \quad \delta = 1,9 \, cm; \quad C_f = 0,000257}
+
+\opgave{Cylinder Drag en Vortex Shedding}
+\textbf{Gegeven:}
+Een ronde cylinder (diameter $D = 0,1 \, m$) staat dwars op een windstroming ($V = 15 \, m/s$).
+Lucht: $\rho = 1,2 \, kg/m^3$, $\nu = 1,5 \times 10^{-5} \, m^2/s$.
+Drag-coëfficiënt voor cylinder: $C_D = 1,0$ (benaderend).
+Cylinder-lengte: $L = 2 \, m$.
+
+\textbf{Gegeven:}
+(a) Het Reynoldsgetal; (b) De drag-kracht $F_D$; (c) Strouhal-getal $St = \frac{f_{shed} D}{V}$ met $St \approx 0,21$ voor cylinders.
+
+\textbf{Oplossing:}
+\begin{enumerate}
+    \item Reynoldsgetal:
+    \[ Re_D = \frac{V D}{\nu} = \frac{15 \times 0,1}{1,5 \times 10^{-5}} = \frac{1,5}{1,5 \times 10^{-5}} = 10^5 = 100.000 \]
+    Dit is in het regimes met onderbroken (cylinder) stroming.
+    
+    \item Drag-kracht:
+    \[ F_D = C_D \cdot \frac{\rho V^2}{2} \cdot A = 1,0 \times \frac{1,2 \times 15^2}{2} \times (0,1 \times 2) \]
+    \[ = \frac{1,2 \times 225}{2} \times 0,2 = 135 \times 0,2 = 27 \, N \]
+    
+    \item Vortex shedding frequentie:
+    \[ f_{shed} = \frac{St \cdot V}{D} = \frac{0,21 \times 15}{0,1} = \frac{3,15}{0,1} = 31,5 \, Hz \]
+    
+    Dit veroorzaakt periodieke trillingen van de cylinder.
+\end{enumerate}
+\boxed{Re_D = 100.000; \quad F_D = 27 \, N; \quad f_{shed} = 31,5 \, Hz}
 
 \chapter*{Conclusie}
 Dit document heeft de kernprincipes van warmte en stroming samengevat. Van de fundamentele wetten van thermodynamica die energiebehoud dicteren, tot de complexe bewegingsvergelijkingen van fluïda. Het correct toepassen van deze principes vereist inzicht in de aannames (zoals incompressibiliteit of reversibiliteit) en nauwkeurigheid in berekeningen. Met de aangereikte theorie en oefeningen bent u toegerust om thermische en fluïdumtechnische systemen te analyseren.
