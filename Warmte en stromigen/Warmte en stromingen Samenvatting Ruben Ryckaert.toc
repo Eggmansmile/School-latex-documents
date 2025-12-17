@@ -100,20 +100,21 @@
 \contentsline {section}{\numberline {11.5}Dampcompressie Koelcyclus}{65}{section.11.5}%
 \contentsline {section}{\numberline {11.6}Omkeerbare versus Onomkeerbare Cycli}{68}{section.11.6}%
 \contentsline {chapter}{\numberline {12}Warmteoverdracht Mechanismen}{74}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Convectie}{75}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Straling}{76}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Combinatie van Convectie, Geleiding en Straling}{77}{section.12.3}%
-\contentsline {part}{III\hspace {1em}Oefeningen Warmte en Stromingen}{81}{part.3}%
-\contentsline {chapter}{\numberline {13}Oefeningen}{82}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Oefenzitting 1\&2: Hydrostatica}{82}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}{89}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Oefenzitting 4: Tabellen en eenheden}{93}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Oefenzitting 5: Gesloten systemen}{93}{section.13.4}%
-\contentsline {section}{\numberline {13.5}Oefenzitting 6: Open systemen}{96}{section.13.5}%
-\contentsline {section}{\numberline {13.6}Oefenzitting 7: Eerste hoofdwet cycli}{98}{section.13.6}%
-\contentsline {section}{\numberline {13.7}Oefenzitting 7: Cycli en Tweede Hoofdwet}{100}{section.13.7}%
-\contentsline {section}{\numberline {13.8}Oefenzitting 8 : Entropie en tweede hoofdwet}{104}{section.13.8}%
-\contentsline {section}{\numberline {13.9}Oefenzitting 9: Otto-cycli en verbrandingsmotoren}{106}{section.13.9}%
-\contentsline {section}{\numberline {13.10}Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}{111}{section.13.10}%
-\contentsline {section}{\numberline {13.11}Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}{112}{section.13.11}%
-\contentsline {chapter}{\numberline {14}Bijlagen}{116}{chapter.14}%
+\contentsline {section}{\numberline {12.1}Conductie}{74}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Convectie}{75}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Straling}{76}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Combinatie van Convectie, Conductie en Straling}{77}{section.12.4}%
+\contentsline {part}{III\hspace {1em}Oefeningen Warmte en Stromingen}{82}{part.3}%
+\contentsline {chapter}{\numberline {13}Oefeningen}{83}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Oefenzitting 1\&2: Hydrostatica}{83}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Oefenzitting 3: Stromingsleer\&Bernoulli en energievergelijking}{90}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Oefenzitting 4: Tabellen en eenheden}{94}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Oefenzitting 5: Gesloten systemen}{94}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Oefenzitting 6: Open systemen}{97}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Oefenzitting 7: Eerste hoofdwet cycli}{99}{section.13.6}%
+\contentsline {section}{\numberline {13.7}Oefenzitting 7: Cycli en Tweede Hoofdwet}{101}{section.13.7}%
+\contentsline {section}{\numberline {13.8}Oefenzitting 8 : Entropie en tweede hoofdwet}{105}{section.13.8}%
+\contentsline {section}{\numberline {13.9}Oefenzitting 9: Otto-cycli en verbrandingsmotoren}{107}{section.13.9}%
+\contentsline {section}{\numberline {13.10}Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand}{112}{section.13.10}%
+\contentsline {section}{\numberline {13.11}Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming, drag\&lift force}{113}{section.13.11}%
+\contentsline {chapter}{\numberline {14}Bijlagen}{117}{chapter.14}%

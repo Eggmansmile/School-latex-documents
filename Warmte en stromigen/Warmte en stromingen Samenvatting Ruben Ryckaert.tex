@@ -3183,31 +3183,63 @@ Dit betekent dat dezelfde massastroom via verdamper minder koeling haalt:
 Dit verlies moet worden gecompenseerd door een grotere massa-circulatie of hogere compressor-werk!
 
 \chapter{Warmteoverdracht Mechanismen}
-Thermodynamica vertelt ons hoeveel warmte wordt overgedragen om van de ene toestand naar de andere te gaan, maar zegt niets over hoe lang dat duurt. Warmteoverdracht is de wetenschap die de snelheid van energie-overdracht berekent, gedreven door een temperatuurverschil $\Delta T$. Er zijn drie fundamentele mechanismen.
-\subsection*{Belangrijke Formules}
+Thermodynamica zegt \textit{hoeveel} warmte er tussen toestanden wordt uitgewisseld,
+ maar niet \textit{hoe snel} dat gebeurt.
+  Warmteoverdracht bestudeert de \textbf{snelheid} van energie-overdracht (warmtestroomdebiet $\dot{Q}$)
+   als gevolg van een temperatuurverschil $\Delta T$.
+
+In de praktijk verlopen warmteprocessen via drie fundamentele mechanismen:
+\begin{itemize}
+    \item \textbf{Conductie (geleiding):} energie-overdracht door microscopische interacties in een materiaal.
+    \item \textbf{Convectie:} energie-overdracht tussen een oppervlak en een stromend fluïdum via een grenslaag.
+    \item \textbf{Straling:} energie-overdracht via elektromagnetische golven (zonder medium).
+\end{itemize}
+
+\subsection*{Overzicht (kernwetten)}
 \begingroup
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-                    	\textbf{Fourier (1D)} &:& \dot{Q}=-kA\,\dfrac{dT}{dx}\\
-                    	\textbf{Vlakke wand (stationair)} &:& \dot{Q}=kA\,\dfrac{T_1-T_2}{L}\\
-                    	\textbf{Warmteweerstand (vlak)} &:& R_{cond}=\dfrac{L}{kA}\\
-                    	\textbf{Weerstanden in serie} &:& R_{tot}=\sum_i \dfrac{L_i}{k_i A}\\
-                    	\textbf{Weerstandsnetwerk} &:& \dot{Q}=
-        \dfrac{T_{hot}-T_{cold}}{R_{tot}}\\
+    	\textbf{Fourier (conductie, 1D)} &:& \dot{Q}=-kA\,\dfrac{dT}{dx}\\
+    	\textbf{Newton (convectie)} &:& \dot{Q}=hA\,(T_s-T_\infty)\\
+    	\textbf{Stefan--Boltzmann (straling)} &:& \dot{Q}=\varepsilon\sigma A\,(T_s^4-T_{sur}^4)\\
+\end{array}
+\]
+
+
+\[\text{met }\dot{Q}=\text{warmtestroomdebiet (W)},\quad k=\text{warmtegeleidingscoëfficiënt (W/(m·K))},\quad h=\text{convectiecoëfficiënt (W/(m²·K))},\quad \varepsilon=\text{emissiviteit (–)},\quad \sigma=5{,}67\times10^{-8}\,\mathrm{W/(m^2\cdot K^4)}\
+\endgroup
+
+\section{Conductie}
+	extbf{Conductie} is warmteoverdracht \textit{doorheen} een medium (vaste stof, stilstaande vloeistof of gas) door moleculaire interacties. De drijvende kracht is een temperatuurgradiënt. De materiaaleigenschap die conductie bepaalt is de \textbf{warmtegeleidingscoëfficiënt} $k$ (in $\mathrm{W/(m\cdot K)}$).
+
+De lokale (1D) wet van Fourier is:
+\[
+\dot{Q}=-kA\,\frac{dT}{dx}
+\]
+Het minteken geeft aan dat warmte spontaan stroomt van \textit{warm} naar \textit{koud}.
+
+\subsection*{Kernformules (conductie en warmteweerstand)}
+\begingroup
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.35}
+\[
+\begin{array}{@{}lcl@{}}
+    	\textbf{Vlakke wand (stationair, 1D)} &:& \dot{Q}=kA\,\dfrac{T_1-T_2}{L}\\
+    	\textbf{Warmteweerstand (vlak)} &:& R_{cond}=\dfrac{L}{kA}\\
+    	\textbf{Cilinderwand (stationair)} &:& R_{cond}=\dfrac{\ln(r_2/r_1)}{2\pi k L}\\
+    	\textbf{Weerstanden in serie} &:& R_{tot}=\sum_i R_i,\quad \dot{Q}=\dfrac{\Delta T}{R_{tot}}\\
 \end{array}
 \]
 \endgroup
 
-
-
 \subsection*{Voorbeeldoefening: stationaire geleiding door een vlakke wand}
-                        	\textbf{Gegeven:} Een vlakke wand met $k=0{,}80\,\mathrm{W/(m\cdot K)}$, oppervlakte $A=10\,\mathrm{m^2}$ en dikte $L=0{,}20\,\mathrm{m}$. De warme zijde is $T_1=60^\circ\mathrm{C}$ en de koude zijde $T_2=40^\circ\mathrm{C}$.
+	\textbf{Gegeven:} Een vlakke wand met $k=0{,}80\,\mathrm{W/(m\cdot K)}$, oppervlakte $A=10\,\mathrm{m^2}$ en dikte $L=0{,}20\,\mathrm{m}$. De warme zijde is $T_1=60^\circ\mathrm{C}$ en de koude zijde $T_2=40^\circ\mathrm{C}$.
 
-                                	\textbf{Gevraagd:} Bepaal $\dot{Q}$ en schets $T(x)$.
+	\textbf{Gevraagd:} Bepaal $\dot{Q}$ en schets $T(x)$.
 
-                                	\textbf{Oplossing:}
+	\textbf{Oplossing:}
 \[
 \dot{Q}=kA\frac{T_1-T_2}{L}=0{,}80\cdot 10\cdot\frac{20}{0{,}20}=800\,\mathrm{W}
 \]
@@ -3220,31 +3252,31 @@ Het temperatuurprofiel is lineair (constante $k$, 1D, stationair).
 \end{figure}
 
 \section{Convectie}
-Convectie is de warmteoverdracht tussen oppervlakken met verschillende temperaturen.
-Conventie heeft een bepaalde snelheid $\dot{Q}_{conv}$ die afhankelijk is van het temperatuurverschil tussen het oppervlak $T_s$ en de omringende fluïdum $T_{\infty}$/gas.
+	\textbf{Convectie} is warmteoverdracht tussen een oppervlak ($T_s$) en een stromend fluïdum met vrije-stroomtemperatuur $T_\infty$. Fysisch gebeurt de overdracht door \textit{conductie in de grenslaag} vlak bij het oppervlak + \textit{transport door stroming} in het fluïdum.
 
-De snelheid wordt berekend met de Wet van Newton voor afkoeling:
+De wet van Newton voor afkoeling is:
 \[
 \dot{Q}_{conv} = h A_s (T_s - T_{\infty})
 \]
-Hier is $h$ de convectiecoëfficiënt ($W/m^2 \cdot K$). Deze waarde is geen materiaaleigenschap, maar hangt complex af van de stromingscondities (snelheid, turbulentie, viscositeit) en de geometrie.
+Hierbij is $h$ de convectiecoëfficiënt ($\mathrm{W/(m^2\cdot K)}$). Dit is \textit{geen} vaste materiaaleigenschap: $h$ hangt af van stromingsregime (laminair/turbulent), fluïdeigenschappen ($\rho,\mu,k,c_p$), karakteristieke lengte en geometrie.
 
 We onderscheiden:
 \begin{itemize}
-    \item \textbf{Gedwongen convectie:} De stroming wordt aangedreven door externe middelen zoals een ventilator, pomp of wind. Dit levert doorgaans hoge $h$-waarden op.
-    \item \textbf{Natuurlijke (vrije) convectie:} De stroming ontstaat door dichtheidsverschillen als gevolg van temperatuurverschillen in het fluïdum (warme lucht is lichter en stijgt op).
+    \item \textbf{Gedwongen convectie:} stroming door ventilator/pomp/wind (meestal grotere $h$).
+    \item \textbf{Natuurlijke (vrije) convectie:} stroming door dichtheidsverschillen (opdrijving) door $\Delta T$.
 \end{itemize}
 
-\subsection*{Belangrijke Formules}
+\subsection*{Kernformules (convectie)}
 \begingroup
 \setlength{\tabcolsep}{6pt}
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-            \textbf{Newton (convectie)} &:& \dot{Q}=hA\,(T_s-T_\infty)\\
-            \textbf{Convectieweerstand} &:& R_{conv}=\dfrac{1}{hA}\\
-            \textbf{Lumped capacitance} &:& \dfrac{dT}{dt}=-\dfrac{hA}{mc}\,(T-T_\infty)\\
-            \textbf{Oplossing} &:& T(t)=T_\infty+(T_0-T_\infty)e^{-t/\tau},\;\tau=\dfrac{mc}{hA}\\
+    	\textbf{Newton (convectie)} &:& \dot{Q}=hA\,(T_s-T_\infty)\\
+    	\textbf{Convectieweerstand} &:& R_{conv}=\dfrac{1}{hA}\\
+    	\textbf{Nusseltgetal (def.)} &:& Nu=\dfrac{hL_c}{k_{fluid}}\\
+    	\textbf{Lumped capacitance} &:& \dfrac{dT}{dt}=-\dfrac{hA}{mc}\,(T-T_\infty)\\
+    	\textbf{Oplossing} &:& T(t)=T_\infty+(T_0-T_\infty)e^{-t/\tau},\;\tau=\dfrac{mc}{hA}\\
 \end{array}
 \]
 \endgroup
@@ -3284,12 +3316,17 @@ T(t)=20+(120-20)e^{-600/1800}=20+100e^{-1/3}\approx 91{,}6^\circ\mathrm{C}
 \section{Straling}
 Straling is energie-overdracht via elektromagnetische golven (fotonen). In tegenstelling tot conductie en convectie, heeft straling geen medium nodig; het werkt het efficiëntst in een vacuüm. Alle materie boven het absolute nulpunt zendt thermische straling uit.
 
-
-De maximale straling die een oppervlak kan uitzenden wordt gegeven door de Wet van Stefan-Boltzmann voor een zwart lichaam:
+De \textbf{maximale} uitzendende straling hoort bij een \textit{zwart lichaam}:
 \[
 \dot{Q}_{max} = \sigma A_s T_s^4
 \]
-Waarbij $\sigma = 5.67 \times 10^{-8} \, W/m^2 \cdot K^4$ de Stefan-Boltzmann constante is. Voor reële oppervlakken wordt dit vermenigvuldigd met de emissiviteit $\varepsilon$ (tussen 0 en 1). Omdat straling afhangt van $T^4$, wordt dit mechanisme dominant bij hoge temperaturen.
+waarbij $\sigma = 5.67 \times 10^{-8}\,\mathrm{W/(m^2\cdot K^4)}$ de Stefan--Boltzmann constante is. \textbf{Let op:} straling rekent met \textbf{absolute temperatuur} in Kelvin.
+
+Voor reële oppervlakken gebruiken we de \textbf{emissiviteit} $\varepsilon\in[0,1]$:
+\[
+\dot{Q} = \varepsilon\sigma A_s T_s^4
+\]
+Omdat straling afhangt van $T^4$, wordt dit mechanisme relatief belangrijk bij hoge temperaturen.
 
 \subsection*{Belangrijke Formules}
 \begingroup
@@ -3297,9 +3334,12 @@ Waarbij $\sigma = 5.67 \times 10^{-8} \, W/m^2 \cdot K^4$ de Stefan-Boltzmann co
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-            \textbf{Zwart lichaam} &:& \dot{Q}_{max}=\sigma A T^4\\
-            \textbf{Reëel oppervlak} &:& \dot{Q}=\varepsilon\sigma A T^4\\
-            \textbf{Netto naar omgeving} &:& \dot{Q}_{net}=\varepsilon\sigma A\left(T_s^4-T_{sur}^4\right)\\
+            \text{\textbf{Zwart lichaam}} &:& \dot{Q}_{\max}=\sigma A T^4\\
+            \text{\textbf{Reëel oppervlak}} &:& \dot{Q}=\varepsilon\sigma A T^4\\
+            \text{\textbf{Netto naar omgeving}} &:& \dot{Q}_{net}=\varepsilon\sigma A\left(T_s^4-T_{sur}^4\right)\\
+            \text{\textbf{Linearisatie}} &:& \dot{Q}_{rad}\approx h_r A\,(T_s-T_{sur})\\
+            \text{\textbf{Stralingscoëfficiënt}} &:& h_r=\varepsilon\sigma\,(T_s+T_{sur})(T_s^2+T_{sur}^2)\\
+            \text{\textbf{Stralingsweerstand}} &:& R_{rad}=\dfrac{1}{h_r A}\\
 \end{array}
 \]
 \endgroup
@@ -3338,7 +3378,7 @@ Dus $\boxed{\dot{Q}_{net}\approx 364\,\mathrm{W}}$.
     \caption{Schematische stralingsuitwisseling tussen een oppervlak en een grote omgeving.}
 \end{figure}
 
-\section{Combinatie van Convectie, Geleiding en Straling}
+\section{Combinatie van Convectie, Conductie en Straling}
 
 In praktische toepassingen werken de drie mechanismen van warmteoverdracht zelden afzonderlijk. Een oppervlak dat aan de lucht is blootgesteld verliest warmte door \textbf{zowel} convectie \textbf{als} straling tegelijk. Bovendien staat dit oppervlak vaak in contact met een geleidend medium (wanden, isolatie, etc.). Het is daarom essentieel te begrijpen hoe deze weerstanden kunnen worden gecombineerd.
 
@@ -3381,9 +3421,9 @@ De totale warmteverlies is de som van beide componenten.
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-            \textbf{Geleiding + Convectie (serie)} &:& \dot{Q}=\dfrac{T_\infty-T_s}{R_{conv}+R_{cond}}\\
-            \textbf{Meerdere lagen (serie)} &:& \dot{Q}=\dfrac{\Delta T_{tot}}{R_{conv,1}+R_{cond,1}+R_{cond,2}+R_{conv,2}}\\
-            \textbf{Convectie + Straling (parallel)} &:& \dot{Q}_{tot}=hA(T_s-T_\infty)+\varepsilon\sigma A(T_s^4-T_{sur}^4)\\
+            	extbf{Serie (algemeen)} &:& \dot{Q}=\dfrac{\Delta T}{\sum_i R_i}\\
+            	extbf{Vlakke wand + convectie (beide zijden)} &:& \dot{Q}=\dfrac{T_{\infty,1}-T_{\infty,2}}{\frac{1}{h_1A}+\frac{L}{kA}+\frac{1}{h_2A}}\\
+            	extbf{Convectie + straling (parallel)} &:& \dot{Q}_{tot}=hA(T_s-T_\infty)+\varepsilon\sigma A(T_s^4-T_{sur}^4)\\
 \end{array}
 \]
 \endgroup
@@ -3704,17 +3744,6 @@ De vorm van de klep (in haar vlak) wordt beschreven door het gebied begrensd doo
     \centering
     \includegraphics[width=0.88\linewidth]{assets/ex_11_20.png}
     \caption{Opgavebeeld: schuine klep in bezinktank (indien aanwezig).}
-\end{figure}
-}{}
-
-    \textbf{Gevraagd:}
-Bepaal de resulterende hydrostatische kracht op de klep en de lijn van werking (afstand vanaf de onderkant langs de klep).
-
-\IfFileExists{assets/ex_11_20_schema.png}{%
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\linewidth]{assets/ex_11_20_schema.png}
-    \caption{Schematische voorstelling (vormdetails in de opgavefiguur).}
 \end{figure}
 }{%
 \begin{figure}[H]
