@@ -1,6 +1,8 @@
 \documentclass[a4paper,11pt,twoside]{report}
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\DeclareUnicodeCharacter{00B0}{\ensuremath{^\circ}}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -13,6 +15,7 @@
 \usepackage{tikz}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{etoolbox}
 \usepackage[stretch=10,expansion=false]{microtype}
 \usepackage{soul}
 \usepackage[framemethod=tikz]{mdframed}
@@ -111,6 +114,11 @@
 \titlespacing*{\section}{0pt}{1.2ex plus 0.2ex minus 0.2ex}{0.8ex plus 0.2ex}
 \titlespacing*{\subsection}{0pt}{1.0ex plus 0.2ex minus 0.2ex}{0.6ex plus 0.2ex}
 
+% Chapters should not force a new page
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
 % ============ DYNAMIC EXERCISE NUMBERING ============
 \newcounter{opgave}[section]
 \newcommand{\opgave}[1]{%
@@ -128,7 +136,10 @@
 
 {\let\newpage\relax\maketitle}
 
-{\textcolor{darkblue}{\tableofcontents}}
+\begingroup
+\hypersetup{linkcolor=darkblue}
+\csname tableofcontents\endcsname
+\endgroup
 
 \chapter*{Formularium}
 
@@ -810,7 +821,8 @@ De Euler vergelijking beschrijft de beweging van een ideaal (wrijvingsloos) flu�
 Hierin is de term $(\vec{v} \cdot \nabla)\vec{v}$ de convectieve versnelling.
 
 \subsection{Projectie op een Stroomlijn}
-We vermenigvuldigen elke term van de Euler vergelijking scalair met een infinitesimale verplaatsing $d\vec{s}$ langs een stroomlijn. Omdat de snelheid $\vec{v}$ raakt aan de stroomlijn, is $d\vec{s}$ evenwijdig aan $\vec{v}$.
+We vermenigvuldigen elke term van de Euler vergelijking scalair met een infinitesimale verplaatsing $d\vec{s}$ langs een stroomlijn. 
+Omdat de snelheid $\vec{v}$ raakt aan de stroomlijn, is $d\vec{s}$ evenwijdig aan $\vec{v}$.
 \[
 \underbrace{\rho [(\vec{v} \cdot \nabla)\vec{v}] \cdot d\vec{s}}_{\text{Traagheidsterm}} = \underbrace{-\nabla p \cdot d\vec{s}}_{\text{Drukterm}} + \underbrace{\rho \vec{g} \cdot d\vec{s}}_{\text{Zwaartekrachtterm}}
 \]
@@ -935,8 +947,32 @@ Voor de impulsvergelijking geldt analoog:
     \item Turbulent: $\beta \approx 1{,}02$
 \end{itemize}
 
-\chapter{Differentiële Analyse van Fluïdumstroming}
-\section{Afleiding van de Navier-Stokes Vergelijkingen}
+\chapter{Controlevolume Analyse}
+\section {Controle volume Analyse Stappenplan}
+
+\subsection*{Behoud van massa}
+massa in = massa uit
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/Behoud van massa.png}
+    \caption{Controlevolume voor massabehoud.}
+\end{figure}
+\subsection*{Behoud van momentum}
+
+
+
+\subsection*{Reynold transport theorema}
+
+
+
+\section{Interne Stromingen}
+de invloed van viscositeit op de euler en bernoulli vergelijkingen
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/viscous vloeistof.png}
+    \caption{Vergelijkingen voor viskeuze vloeistoffen. }
+\end{figure}
 De Navier-Stokes vergelijkingen zijn de fundamentele bewegingsvergelijkingen voor viskeuze vloeistoffen. Ze zijn een uitbreiding van de Euler vergelijking (die wrijving verwaarloost) door toevoeging van viskeuze krachten.
 
 \subsection{Newton's Tweede Wet voor een Fluïdumdeeltje}
@@ -944,7 +980,8 @@ We vertrekken opnieuw van de tweede wet van Newton ($\vec{F} = m\vec{a}$) toegep
 \[
 \rho dV \frac{D\vec{v}}{Dt} = \sum \vec{F}_{ext}
 \]
-Hierin is $\frac{D\vec{v}}{Dt}$ de materiële afgeleide (totale versnelling), die bestaat uit de lokale versnelling en de convectieve versnelling:
+Hierin is $\frac{D\vec{v}}{Dt}$ de materiële afgeleide (totale versnelling),
+ die bestaat uit de lokale versnelling en de convectieve versnelling:
 \[
 \frac{D\vec{v}}{Dt} = \underbrace{\frac{\partial \vec{v}}{\partial t}}_{\text{lokaal}} + \underbrace{(\vec{v} \cdot \nabla)\vec{v}}_{\text{convectief}}
 \]
@@ -980,7 +1017,8 @@ Dit is een vectorvergelijking. In componentvorm (bijvoorbeeld de x-richting) zie
 \[
 \rho \left( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} + v \frac{\partial u}{\partial y} + w \frac{\partial u}{\partial z} \right) = -\frac{\partial p}{\partial x} + \mu \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial z^2} \right) + \rho g_x
 \]
-Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. Samen met de continuïteitsvergelijking ($\nabla \cdot \vec{v} = 0$) vormen deze een gesloten stelsel om het stromingsveld te beschrijven.
+Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. 
+Samen met de continuïteitsvergelijking ($\nabla \cdot \vec{v} = 0$) vormen deze een gesloten stelsel om het stromingsveld te beschrijven.
 
 \begin{figure}[H]
     \centering
@@ -989,23 +1027,13 @@ Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. Samen met de con
     \label{fig:control_volume}
 \end{figure}
 
-\subsection{Stappenplan voor Vereenvoudiging ("Exacte Oplossingen")}
-De Navier-Stokes vergelijkingen zijn complex, maar kunnen voor specifieke gevallen vereenvoudigd worden. Volg dit stappenplan:
-\begin{enumerate}
-    \item \textbf{Kies het coördinatenstelsel:} Cartesisch $(x,y,z)$ voor vlakke platen, Cilindrisch $(r,\theta,z)$ voor buizen.
-    \item \textbf{Stationariteit:} Is $\frac{\partial}{\partial t} = 0$? (Vaak ja).
-    \item \textbf{Volledig ontwikkeld:} Is $\frac{\partial u}{\partial x} = 0$? Dit betekent dat het snelheidsprofiel niet meer verandert in de stroomrichting.
-    \item \textbf{Symmetrie:} Is $\frac{\partial}{\partial \theta} = 0$ (axisymmetrisch)?
-    \item \textbf{Continuïteit:} Gebruik $\nabla \cdot \vec{v} = 0$ om te zien of bepaalde snelheidscomponenten nul zijn.
-\end{enumerate}
-Dit reduceert de partiële differentiaalvergelijkingen vaak tot gewone differentiaalvergelijkingen die integreerbaar zijn.
 
 \section{Oplossing: Stroming tussen Parallelle Platen (Poiseuille)}
 \textbf{Probleemstelling:} Stationaire, volledig ontwikkelde stroming tussen twee parallelle platen op afstand $a$ van elkaar met een van de platen die beweegt.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/poiseuille_plates.png}
+    %\includegraphics[width=0.8\textwidth]{assets/poiseuille_plates.png}
     \caption{Snelheidsprofiel voor laminaire stroming tussen parallelle platen.}
     \label{fig:poiseuille_plates}
 \end{figure}
@@ -1816,12 +1844,11 @@ Bereken: (a) De zijweerstandskracht; (b) Het benodigde vermogen om tegen deze wi
 \part{Warmte}
 
 \chapter{Fundamentele Concepten van de Thermodynamica}
-Thermodynamica is de wetenschap van energie, afgeleid van de Griekse woorden therme (warmte) en dynamis (kracht). Historisch gezien ontstond deze wetenschap uit de wens om warmte om te zetten in mechanische arbeid, met name tijdens de industriële revolutie. Tegenwoordig omvat het concept energie veel meer dan alleen warmte en arbeid; het is een centraal begrip in het begrijpen van chemische reacties, faseovergangen en zelfs het uitdijen van het heelal.
 
 \section{Systemen en Controle Volumes}
-Een fundamentele eerste stap in elke thermodynamische analyse is het definiëren van het object van studie: het systeem. Een systeem wordt gedefinieerd als een hoeveelheid materie of een gebied in de ruimte dat gekozen is voor analyse. Alles buiten het systeem wordt de omgeving genoemd. De scheiding tussen het systeem en de omgeving is de grens (boundary). Deze grens kan fysiek zijn (zoals de wand van een tank) of imaginair (zoals de open uitlaat van een pijp), en kan zowel vast als bewegend zijn.
 
-We onderscheiden twee hoofdtypen systemen, die elk een eigen wiskundige benadering vereisen:
+
+Er zijn twee soorten systemen die we eerst bestuderen:
 \begin{description}
     \item[Gesloten Systeem (Controlemassa):] Bij een gesloten systeem is de hoeveelheid massa vast. Er kan geen massa de grens van het systeem passeren. Energie, in de vorm van warmte of arbeid, kan de grens echter wel passeren. Een klassiek voorbeeld is een gas opgesloten in een zuiger-cilinder apparaat. Als het gas wordt verwarmd, zet het uit en beweegt de zuiger. De grens van het systeem beweegt dus en het volume verandert, maar de massa binnenin blijft constant. Als er ook geen energie de grens passeert, spreken we van een geïsoleerd systeem.
     \item[Open Systeem (Controlevolume):] In veel technische toepassingen, zoals bij compressoren, turbines, en straalmotoren, is er sprake van een continue stroom van massa. In deze gevallen is het handiger om een specifiek volume in de ruimte te bestuderen, het zogenaamde controlevolume. De grenzen van dit volume worden het controleoppervlak genoemd. Zowel massa als energie kunnen deze grenzen passeren. Een boiler is bijvoorbeeld een open systeem: koud water stroomt erin, warmte wordt toegevoegd, en warm water stroomt eruit.
@@ -1859,35 +1886,18 @@ We onderscheiden twee hoofdtypen systemen, die elk een eigen wiskundige benaderi
 \end{figure}
 
 \section{Eigenschappen van een Systeem}
-Elk systeem wordt gekarakteriseerd door zijn eigenschappen. Dit zijn macroscopische kenmerken zoals druk ($P$), temperatuur ($T$), volume ($V$) en massa ($m$). Thermodynamische eigenschappen kunnen worden onderverdeeld in twee categorieën:
-\symW{P}{druk}{Pa}
-\symW{T}{temperatuur}{K}
-\symW{V}{volume}{m$^3$}
-\symW{m}{massa}{kg}
-\begin{itemize}
-    \item \textbf{Intensieve eigenschappen:} Deze zijn onafhankelijk van de massa of de grootte van het systeem. Voorbeelden zijn temperatuur, druk en dichtheid. Als men een systeem in thermisch evenwicht in tweeën deelt, behouden beide helften dezelfde temperatuur en druk als het origineel.
-    \item \textbf{Extensieve eigenschappen:} Deze waarden zijn afhankelijk van de grootte van het systeem. Voorbeelden zijn de totale massa, het totale volume en de totale energie. De waarde van een extensieve eigenschap voor het gehele systeem is de som van de waarden voor de onderdelen.
-\end{itemize}
-Om intensieve en extensieve eigenschappen te koppelen, gebruiken we vaak specifieke eigenschappen. Dit zijn extensieve eigenschappen per eenheid massa. Bijvoorbeeld:
+Elk systeem wordt gekarakteriseerd door zijn eigenschappen. Dit zijn macroscopische kenmerken zoals druk ($P$), temperatuur ($T$), volume ($V$) en massa ($m$).
+
+Belangrijke concepten zijn ook de specifieke eigenschappen, die de eigenschap per eenheid massa weergeven.
+
 \begin{itemize}
     \item Specifiek volume ($v$): $v = V/m$ (m³/kg)
     \item Specifieke interne energie ($u$): $u = U/m$ (kJ/kg)
     \item Specifieke enthalpie ($h$): $h = H/m$ (kJ/kg)
 \end{itemize}
-Specifieke eigenschappen zijn intensief, omdat ze niet afhangen van de totale hoeveelheid massa in het systeem.
 
-\section{Toestand en Evenwicht}
-De toestand van een systeem wordt volledig beschreven door zijn eigenschappen. Echter, we hoeven niet alle eigenschappen te meten om de toestand vast te leggen. Het State Postulate stelt dat de toestand van een eenvoudig samendrukbaar systeem volledig bepaald is door twee onafhankelijke intensieve eigenschappen.
 
-Dit is een cruciaal concept. "Eenvoudig samendrukbaar" betekent dat effecten van elektrische, magnetische, zwaartekracht- en oppervlaktespanningsvelden verwaarloosbaar zijn. "Onafhankelijk" betekent dat de ene eigenschap kan variëren terwijl de andere constant blijft. Bijvoorbeeld, temperatuur en specifiek volume zijn altijd onafhankelijk en kunnen samen de toestand bepalen. Temperatuur en druk zijn echter niet onafhankelijk tijdens een faseovergang (zoals kokend water), omdat de kooktemperatuur vastligt bij een bepaalde druk.
 
-Thermodynamica behandelt voornamelijk evenwichtstoestanden. Evenwicht impliceert een staat van balans waarin er geen drijvende krachten meer zijn die verandering veroorzaken:
-\begin{itemize}
-    \item \textbf{Thermisch evenwicht:} De temperatuur is overal in het systeem gelijk.
-    \item \textbf{Mechanisch evenwicht:} De druk is in het systeem constant in de tijd (hoewel deze kan variëren met de hoogte door zwaartekracht).
-    \item \textbf{Fase-evenwicht:} De massa van elke fase (bijv. vloeistof en damp) blijft constant.
-    \item \textbf{Chemisch evenwicht:} De chemische samenstelling verandert niet in de tijd.
-\end{itemize}
 
 \section{Processen en Cycli}
 Wanneer een systeem verandert van de ene evenwichtstoestand naar de andere, ondergaat het een proces. De reeks toestanden die het systeem doorloopt, vormt het pad van het proces. Om een proces volledig te beschrijven, moeten we de begintoestand, de eindtoestand, het pad en de interacties met de omgeving (warmte en arbeid) kennen.
@@ -2130,8 +2140,8 @@ De relaties tussen eigenschappen worden gevisualiseerd in $T-v$, $P-v$ en $P-T$ 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{assets/wikipedia/phase_diagram_water_960.png}
-    \caption{$P$-$T$ fasediagram van water (log-schaal in druk), met tripelpunt en kritisch punt.\;\scriptsize Bron: Cmglee, CC BY-SA 3.0, via Wikimedia Commons (\url{https://commons.wikimedia.org/wiki/File:Phase_diagram_of_water.svg}).}
+    \includegraphics[width=0.4\textwidth]{assets/slides/06_T-v_diagram_of_a_pure_substance.png}
+    \caption{$P$-$T$ fasediagram}
 \end{figure}
 
 Onder de koepel bevindt zich het menggebied, waar vloeistof en damp in evenwicht samen bestaan. In dit gebied zijn druk en temperatuur afhankelijk van elkaar. Om de toestand vast te leggen, gebruiken we de kwaliteit of dampfractie $x$, gedefinieerd als de verhouding van de massa damp tot de totale massa van het mengsel:
@@ -2181,12 +2191,6 @@ Indien een gas te sterk afwijkt van ideaal gedrag (bijvoorbeeld bij hoge druk), 
 \chapter{De Tweede Hoofdwet en Entropie}
 De Eerste Wet stelt dat energie behouden blijft, maar zegt niets over de richting van een proces. Een kop koffie koelt af in een kamer, maar wordt nooit spontaan warmer door energie uit de kamerlucht te onttrekken, hoewel dit de eerste wet niet zou schenden. Dit inzicht leidt tot de Tweede Hoofdwet van de Thermodynamica.
 
-\section{Kelvin-Planck en Clausius}
-De Tweede Wet wordt vaak geformuleerd in termen van onmogelijkheden:
-\begin{itemize}
-    \item \textbf{Kelvin-Planck stelling:} Het is onmogelijk om een apparaat te bouwen dat in een cyclus werkt en warmte uit één enkel reservoir ontvangt en dit volledig omzet in arbeid. Met andere woorden: geen enkele warmtemotor kan een thermisch rendement van 100\% hebben. Een warmtemotor moet een deel van de warmte afstaan aan een koud reservoir ("waste heat").
-    \item \textbf{Clausius stelling:} Het is onmogelijk om een apparaat te bouwen dat warmte van een koud medium naar een warmer medium verplaatst zonder toevoeging van arbeid. Dit betekent dat een koelkast niet "gratis" kan werken; er is altijd een compressor nodig die arbeid verbruikt.
-\end{itemize}
 
 \section{Entropie}
 Om de Tweede Wet kwantitatief te maken, introduceerde Clausius het concept entropie ($S$). Entropie kan worden gezien als een maat voor moleculaire wanorde of de "kwaliteit" van energie. Hoe hoger de entropie, hoe minder bruikbaar de energie is voor arbeid.
@@ -2311,48 +2315,39 @@ Omdat echte machines (turbines, compressoren, pompen, nozzles) onomkeerbaar zijn
 \end{figure}
 
 \subsubsection*{Turbine}
-Een turbine produceert arbeid. De werkelijke arbeid is \textit{lager} dan de ideale isentrope arbeid.
-\[
-\eta_T = \frac{\text{Werkelijke Arbeid}}{\text{Isentropische Arbeid}} \approx \frac{h_1 - h_{2a}}{h_1 - h_{2s}}
-\]
-Waarbij $h_{2a}$ de werkelijke uitgangsenthalpie is en $h_{2s}$ de enthalpie bij isentrope expansie ($s_{2s} = s_1$).
+Turbines leveren arbeid; de werkelijke arbeid is \textit{lager} dan de ideale isentrope arbeid. Rendement (inline om witruimte te beperken): $\eta_T = \dfrac{\text{Werkelijke Arbeid}}{\text{Isentropische Arbeid}} \approx \dfrac{h_1 - h_{2a}}{h_1 - h_{2s}}$, waarbij $h_{2a}$ de werkelijke uitgangsenthalpie is en $h_{2s}$ de enthalpie bij isentrope expansie ($s_{2s} = s_1$).
 
 \subsubsection*{Compressor en Pomp}
-Een compressor vereist arbeid. De werkelijke arbeid is \textit{hoger} dan de ideale isentrope arbeid.
-\[
-\eta_C = \frac{\text{Isentropische Arbeid}}{\text{Werkelijke Arbeid}} \approx \frac{h_{2s} - h_1}{h_{2a} - h_1}
-\]
+Een compressor vereist arbeid; de werkelijke arbeid is \textit{hoger} dan de ideale isentrope arbeid. Rendement: $\eta_C = \dfrac{\text{Isentropische Arbeid}}{\text{Werkelijke Arbeid}} \approx \dfrac{h_{2s} - h_1}{h_{2a} - h_1}$.
 
 \subsubsection*{Nozzle (Straalbuis)}
-Een nozzle zet druk om in kinetische energie.
-\[
-\eta_N = \frac{\text{Werkelijke Kinetische Energie}}{\text{Isentropische Kinetische Energie}} = \frac{V_{2a}^2}{V_{2s}^2} \approx \frac{h_1 - h_{2a}}{h_1 - h_{2s}}
-\]
+Een nozzle zet druk om in kinetische energie. Rendement: $\eta_N = \dfrac{\text{Werkelijke Kinetische Energie}}{\text{Isentropische Kinetische Energie}} = \dfrac{V_{2a}^2}{V_{2s}^2} \approx \dfrac{h_1 - h_{2a}}{h_1 - h_{2s}}$.
 
 \chapter{Thermodynamische Cycli}
 
-\section*{Inleiding: Waarom Cycli?}
+\section*{Inleiding: Cycli?}
 
-Een thermodynamische cyclus is een reeks processen waarbij een systeem terugkeert naar zijn oorspronkelijke toestand. Dit concept is centraal in de engineering omdat vrijwel alle machines (motoren, compressoren, warmtepompen, turbines) in cycli werken. Het grote voordeel is dat na één volledige cyclus alle toestateigenschappen teruggekeerd zijn naar hun oorspronkelijke waarden, dus $\Delta E_{cyclus} = 0$. Dit houdt in dat de netto energie die als warmte wordt toegevoerd gelijk moet zijn aan de netto arbeid die geproduceerd wordt:
+Een thermodynamische cyclus is een reeks processen waarbij een systeem terugkeert naar zijn oorspronkelijke toestand.
+ Cycli worden in alle moderne machines (motoren, compressoren, warmtepompen, turbines) gebruikt.
+  Het grote voordeel is dat na één volledige cyclus alle toestateigenschappen teruggekeerd zijn naar hun oorspronkelijke waarden, 
+  dus $\Delta E_{cyclus} = 0$. Dit houdt in dat de netto energie die als warmte wordt toegevoerd gelijk moet zijn aan de netto arbeid die geproduceerd wordt:
 \[
 Q_{netto,in} = W_{netto,uit}
 \]
 
-Dit is waarom cycli zo interessant zijn voor praktische toepassingen: je kunt continu arbeid of koeling uit eenzelfde hoeveelheid werkvloeistof halen door deze steeds opnieuw door dezelfde cyclus te voeren.
+Dit is waarom cycli zo interessant zijn voor praktische toepassingen: 
+je kunt continu arbeid of koeling uit eenzelfde hoeveelheid werkvloeistof halen
+ door deze steeds opnieuw door dezelfde cyclus te voeren.
 
-De prestatie van een cyclus wordt gemeten door:
-\begin{itemize}
-    \item \textbf{Voor een warmtemotor:} Het thermisch rendement $\eta_{th} = \frac{W_{netto}}{Q_{in}} = 1 - \frac{Q_{uit}}{Q_{in}}$. Dit is altijd kleiner dan 100\% vanwege de Tweede Hoofdwet.
-    \item \textbf{Voor een koelcyclus of warmtepomp:} De Coefficient of Performance (COP) $= \frac{Q_L}{W_{in}}$ (koelkast) of $\frac{Q_H}{W_{in}}$ (warmtepomp).
-\end{itemize}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \begin{minipage}{0.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{assets/slides/16_Heat_engine.png}
         \caption{Schematische weergave van een warmtemotor.}
     \end{minipage}
+
     \hfill
     \begin{minipage}{0.3\textwidth}
         \centering
@@ -2361,36 +2356,59 @@ De prestatie van een cyclus wordt gemeten door:
     \end{minipage}
 \end{figure}
 
-Op een $P$-$V$ diagram is de oppervlakte omsloten door de cycluscurve gelijk aan de netto arbeid per kilogram (of per mol) werkvloeistof. Op een $T$-$s$ diagram is dit eveneens waar voor de warmte. Een grotere oppervlakte = beter rendement.
+Op een $P$-$V$ diagram is de oppervlakte omsloten door de cycluscurve gelijk aan de netto arbeid per kilogram (of per mol)
+ werkvloeistof. Op een $T$-$s$ diagram is dit eveneens waar voor de warmte. 
+ Een grotere oppervlakte = beter rendement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png}
+    \caption{P-V diagrammen van een thermodynamische cyclus.}
+\end{figure}
+    
 
 \section{De Carnot Cyclus}
 
-Dit is de meest efficiënte theoretische cyclus die mogelijk is tussen twee temperatuurlimieten. Hij werd bedacht door Sadi Carnot (1824) en dient als referentiepunt: geen enkel apparaat kan beter presteren dan de Carnot-cyclus tussen dezelfde twee temperatuurlimieten.
+Dit is de meest efficiënte theoretische cyclus die mogelijk is tussen twee temperatuurlimieten. 
+Hij werd bedacht door Sadi Carnot (1824) en dient als referentiepunt:
+ geen enkel apparaat kan beter presteren dan de Carnot-cyclus tussen dezelfde twee temperatuurlimieten.
 
 \subsection*{Vier Processen van de Carnot-cyclus (expansie)}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/slides/23_Carnot_cycle_processes.png}
+    \includegraphics[width=0.8\textwidth]{assets/slides/23_Carnot_cycle_processes.png}
     \caption{De vier stappen van de Carnot-cyclus in een zuiger-cilinder systeem: (a) Isotherme expansie, (b) Adiabatische expansie, (c) Isotherme compressie, (d) Adiabatische compressie.}
 \end{figure}
 
 \begin{enumerate}
     \item \textbf{Proces 1$\to$2: Isotherme expansie bij $T_H$} 
     
-    Het gas expandeert terwijl het constant in contact staat met een heet reservoir. De expansie verricht arbeid op de omgeving ($W_{1\to2} > 0$), dus moet warmte worden toegevoerd om de temperatuur constant te houden ($Q_{1\to2} > 0$). Dit is het proces waar de motor "voeding" krijgt.
+    Het gas expandeert terwijl het constant in contact staat met een heet reservoir.
+     De expansie verricht arbeid op de omgeving ($W_{1\to2} > 0$), dus moet warmte worden toegevoerd om de temperatuur constant te houden ($Q_{1\to2} > 0$). Dit is het proces waar de motor "voeding" krijgt.
     
     \item \textbf{Proces 2$\to$3: Adiabatische expansie (isentroop)}
     
-    Het gas expandeert verder, maar nu zonder warmte-uitwisseling ($Q_{2\to3} = 0$). De expansiearbeid wordt geleverd uit de interne energie van het gas, dus de temperatuur daalt van $T_H$ naar $T_L$. Dit proces is reversibel, dus isentroop ($s = \text{const}$).
+    Het gas expandeert verder, 
+    maar nu zonder warmte-uitwisseling ($Q_{2\to3} = 0$).
+     De expansiearbeid wordt geleverd uit de interne energie van het gas, 
+     dus de temperatuur daalt van $T_H$ naar $T_L$.
+      Dit proces is reversibel, dus isentroop ($s = \text{const}$).
     
     \item \textbf{Proces 3$\to$4: Isotherme compressie bij $T_L$}
     
-    Het gas wordt nu gecomprimeerd terwijl het in contact staat met een koud reservoir. Compressie vereist arbeid ($W_{3\to4} < 0$, negatief omdat arbeid wordt op het systeem verricht). Deze arbeid wordt niet als warmte opgeslagen (want $T$ is constant), dus moet warmte naar buiten worden afgeevoerd ($Q_{3\to4} < 0$). Dit is het "afvalproces" waar ongewenste warmte wordt verwijderd.
+    Het gas wordt nu gecomprimeerd terwijl het in contact staat met een koud reservoir. 
+    Compressie vereist arbeid ($W_{3\to4} < 0$, 
+    negatief omdat arbeid wordt op het systeem verricht). 
+    Deze arbeid wordt niet als warmte opgeslagen (want $T$ is constant), 
+    dus moet warmte naar buiten worden afgeevoerd ($Q_{3\to4} < 0$). 
+    Dit is het "afvalproces" waar ongewenste warmte wordt verwijderd.
     
     \item \textbf{Proces 4$\to$1: Adiabatische compressie (isentroop)}
     
-    Verdere compressie zonder warmte-uitwisseling verhoogt de temperatuur van $T_L$ terug naar $T_H$, completerend de cyclus. Dit sluit de lus.
+    Verdere compressie zonder warmte-uitwisseling verhoogt de temperatuur van $T_L$ terug naar $T_H$, 
+    completerend de cyclus. 
+    Dit sluit de lus.
 \end{enumerate}
 
 \subsection*{Rendement van de Carnot-cyclus}
@@ -2402,10 +2420,15 @@ Het thermisch rendement van een Carnot-motor is:
 
 Dit is het \textbf{theoretische maximum}. Enkele belangrijke waarnemingen:
 \begin{itemize}
-    \item Het rendement hangt \textit{enkel} af van de absolute temperaturen, niet van het materiaal of de detaillen van het proces.
-    \item Een rendement van 100\% is alleen mogelijk als $T_L = 0\,\mathrm{K}$ (absoluut nul), wat fysisch onmogelijk is.
-    \item Om het rendement te verhogen, moet je $T_H$ \textit{verhogen} of $T_L$ \textit{verlagen}. Dit is waarom stoomturbines zoveel hete stoom gebruiken.
-    \item Geen enkel werkelijk apparaat kan dit rendement bereiken; alle werkelijke motoren zijn minder efficiënt vanwege onomkeerbaarheden (wrijving, warmteoverdracht bij eindig $\Delta T$, etc.).
+    \item Het rendement hangt \textit{enkel} af van de absolute temperaturen, 
+    niet van het materiaal of de detaillen van het proces.
+    \item Een rendement van 100\% is alleen mogelijk 
+    als $T_L = 0\,\mathrm{K}$ (absoluut nul), wat fysisch onmogelijk is.
+    \item Om het rendement te verhogen, 
+    moet je $T_H$ \textit{verhogen} of $T_L$ \textit{verlagen}. 
+    Dit is waarom stoomturbines zoveel hete stoom gebruiken.
+    \item Geen enkel werkelijk apparaat kan dit rendement bereiken; 
+    alle werkelijke motoren zijn minder efficiënt vanwege onomkeerbaarheden (wrijving, warmteoverdracht bij eindig $\Delta T$, etc.).
 \end{itemize}
 
 \textbf{Voorbeeld:} Een warmtemotor tussen $T_H = 600\,\mathrm{K}$ en $T_L = 300\,\mathrm{K}$ kan maximaal bereiken:
@@ -2414,22 +2437,44 @@ Dit is het \textbf{theoretische maximum}. Enkele belangrijke waarnemingen:
 \]
 Elke echte motor zal slechter presteren.
 
+
+\section{COP, Coefficients Of Performance}
+
+COP toont hoe effectief een koel- of verwarmingssysteem is.
+ Het is de verhouding van nuttige warmteoverdracht tot de benodigde arbeid.
+
+ De COP voor een warmtepomp (verwarming) is:
+\[
+\mathrm{COP}_{\mathrm{warmtepomp}} = \frac{Q_H}{W_{in}} = \frac{T_H}{T_H - T_L}
+\]
+
+
+ De COP voor een koelkast (koeling) is:
+\[\mathrm{COP}_{\mathrm{koelkast}} = \frac{Q_L}{W_{in}} = \frac{T_L}{T_H - T_L}\]
+
+
 \subsection*{Omgekeerde Carnot: Koelkast en Warmtepomp}
 
-Als je de cyclus in omgekeerde richting laat lopen (volgens pijlen in omgekeerde volgorde) krijg je een koelmachine. In plaats van warmte om te zetten in arbeid, gebruik je arbeid om warmte van koud naar warm over te brengen. De Coefficient of Performance is:
+Als je de cyclus in omgekeerde richting laat lopen 
+(volgens pijlen in omgekeerde volgorde) 
+krijg je een koelmachine. In plaats van warmte om te zetten in arbeid,
+ gebruik je arbeid om warmte van koud naar warm over te brengen. 
+ De Coefficient of Performance is:
 
 \[
 \mathrm{COP}_{\mathrm{koelkast}} = \frac{Q_L}{W_{in}} = \frac{T_L}{T_H - T_L}
 \]
 
-Dit is veel groter dan 1! Een ideale koelkast tussen 270 K en 300 K heeft $\mathrm{COP} = 270/(300-270) = 9$. Dit betekent dat voor elke joule elektrische arbeid, 9 joule warmte uit de koude ruimte wordt onttrokken (en 10 joule naar buiten wordt afgevoerd).
-
+Dit is veel groter dan 1! Een ideale koelkast tussen 270 K en 300 K heeft $\mathrm{COP} = 270/(300-270) = 9$.
+ Dit betekent dat voor elke joule elektrische arbeid,
+ 9 joule warmte uit de koude ruimte wordt onttrokken $Q_L$ (en 10 joule naar buiten wordt afgevoerd $Q_H$).
+    
 \subsection*{$T$-$s$ diagram van de Carnot-cyclus (schematisch)}
 Voor een intern reversibele cyclus geldt $\delta q_{rev}=T\,ds$. Daardoor geeft de oppervlakte in het $T$-$s$ diagram een directe interpretatie van warmte en (via de energiebalans over een cyclus) netto arbeid. Let op: In een $T$-$s$ diagram vormen de twee isotherme processen horizontale lijnen (constant $T$), en de twee isentropische processen zijn verticaal (constant $s$). Dit geeft een rechthoek!
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.2\textwidth]{assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png}
+    \includegraphics[width=0.4\textwidth]{assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png}
     \caption{P-v en T-s diagrammen van de Carnot-cyclus.\label{fig:carnot_ts}}
 \end{figure}
 
@@ -2451,15 +2496,16 @@ Voor een intern reversibele cyclus geldt $\delta q_{rev}=T\,ds$. Daardoor geeft 
 
 \section{Otto en Diesel Cycli}
 
-Dit zijn de geïdealiseerde modellen voor interne verbrandingsmotoren. In tegenstelling tot externe motoren (zoals stoomturbines die constant dezelfde werkvloeistof recirculeren) gebeurt de energietoevoeging in benzine- en dieselmotoren door in-situ verbranding van brandstof. Toch kunnen we ze als theoretische cycli analyseren door de verbranding te vervangen door "warmtetoevoeringprocessen".
-
+Dit zijn de geïdealiseerde modellen voor interne verbrandingsmotoren.
+ In tegenstelling tot externe motoren (zoals stoomturbines die constant dezelfde werkvloeistof recirculeren) 
+ gebeurt de energietoevoeging in benzine- en dieselmotoren door in-situ verbranding van brandstof.
 \subsection*{Otto-cyclus (Benzine)}
 
 De Otto-cyclus bestaat uit vier slagen:
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{assets/slides/31_Actual_four-stroke_spark-ignition_engine.png}
+    \includegraphics[width=0.8\textwidth]{assets/slides/31_Actual_four-stroke_spark-ignition_engine.png}
     \caption{De vier slagen van een viertakt benzinemotor: inlaat, compressie, arbeid (expansie), uitlaat.}
 \end{figure}
 
@@ -2495,7 +2541,7 @@ Het rendement hangt af van de \textbf{compressieratio} $r = V_1 / V_2$ en de soo
 
 Dit is het theoretische rendement; echte Otto-motoren halen ongeveer 25–30\% door vele onomkeerbaarheden.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png}
     \caption{T-s diagram van de ideale Otto-cyclus. Proces 1-2 en 3-4 zijn isentroop (adiabatisch reversibel), 2-3 en 4-1 zijn isochoor (constant volume).}
@@ -2503,7 +2549,10 @@ Dit is het theoretische rendement; echte Otto-motoren halen ongeveer 25–30\% d
 
 \subsection*{Diesel-cyclus}
 
-De Diesel-cyclus verschilt van Otto vooral in hoe de verbranding plaatsvindt. In plaats van ogenblikkelijke ontsteking bij constant volume, laat de diesel-motor de brandstof langzaam inspuiten gedurende een deel van de expansieslag. Dit wordt gemodelleerd als isobare (constant druk) warmtetoevoeringswarmtetoevoering.
+De Diesel-cyclus verschilt van Otto vooral in hoe de verbranding plaatsvindt. 
+In plaats van ogenblikkelijke ontsteking bij constant volume, 
+laat de diesel-motor de brandstof langzaam inspuiten gedurende een deel van de expansieslag. 
+Dit wordt gemodelleerd als isobare (constant druk) warmtetoevoeringswarmtetoevoering.
 
 \begin{enumerate}
     \item 1$\to$2: Isentrope compressie (dezelfde als Otto)
@@ -2531,7 +2580,10 @@ De Diesel-cyclus verschilt van Otto vooral in hoe de verbranding plaatsvindt. In
 
 \section{Rankine Cyclus}
 
-Dit is de basiscyclus voor stoomkrachtcentrales en gebruikt in bijna alle grote warmte-elektrische centrales ter wereld. In tegenstelling tot Otto/Diesel gebruikt Rankine externe verbranding (coal, gas, nucleair) om water in stoom om te zetten. Een voordeel is dat je grote volumes kunt verwerken en hoge temperaturen kunt bereiken. Een nadeel is dat het proces ingewikkelder is omdat water faseveranderingen ondergaat.
+Dit is de basiscyclus voor stoomkrachtcentrales en gebruikt in bijna alle grote warmte-elektrische centrales ter wereld. 
+In tegenstelling tot Otto/Diesel gebruikt Rankine externe verbranding (coal, gas, nucleair) om water in stoom om te zetten. 
+Een voordeel is dat je grote volumes kunt verwerken en hoge temperaturen kunt bereiken. 
+Een nadeel is dat het proces ingewikkelder is omdat water faseveranderingen ondergaat.
 
 \subsection*{De vier componenten van een Rankine-cyclus}
 
@@ -2867,7 +2919,7 @@ De \textit{isentrope efficiëntie} is het meest gebruikt als benchmark:
 \eta_s = \frac{\text{ideale arbeid}}{\text{werkelijke arbeid}}
 \]
 
-Dit geeft aan hoeveel % van het ideale resultaat wordt bereikt ondanks onomkeerbaarheden.
+Dit geeft aan hoeveel percent van het ideale resultaat wordt bereikt ondanks onomkeerbaarheden.
 
 \subsection*{Voorbeeldoefening 1: Stoomturbine met Irreversibiliteit}
 
@@ -2943,15 +2995,6 @@ x_2 = \frac{2048 - 191}{2393} = 0,7754
 \]
 
 En: $s_2 = s_f + x_2(s_g - s_f) = 0,649 + 0,7754 \times 7,501 = 6,461\,\mathrm{kJ/(kg \cdot K)}$
-
-Wait, dit klopt niet—$s_2$ moet groter zijn dan $s_{2s}$ als entropie stijgt! Laat me corrigeren: eigenlijk gebruiken we de waarde direct uit tabellen. Met $x_2 = 0,7754$:
-\[
-s_2 = 0,649 + 0,7754 \times 7,501 = 6,461\,\mathrm{kJ/(kg \cdot K)}
-\]
-
-Hmm, dit is nog steeds lager. Dit wijst erop dat ik een rekenmodel moet herzien. Laat me het anders aanpakken: in werkelijkheid stijgt $s_2 > s_1$ door onomkeerbaarheid. Laat me een benaderder geval gebruiken.
-
-Eigenlijk: voor een reale turbine geldt $s_2 > s_1$ omdat entropie genereert wordt. Dus: $s_2 \approx 6,75\,\mathrm{kJ/(kg \cdot K)}$ (iets hoger dan $s_1$).
 
 \textbf{(d) Entropie-generatie:}
 
@@ -3177,8 +3220,8 @@ Het temperatuurprofiel is lineair (constante $k$, 1D, stationair).
 \end{figure}
 
 \section{Convectie}
-Convectie is de energie-overdracht tussen een vast oppervlak en een aangrenzend stromend fluïdum (gas of vloeistof). Het is een combinatie van geleiding (direct aan het oppervlak) en advectie (macroscopische beweging van de vloeistof die de warmte meevoert).
-
+Convectie is de warmteoverdracht tussen oppervlakken met verschillende temperaturen.
+Conventie heeft een bepaalde snelheid $\dot{Q}_{conv}$ die afhankelijk is van het temperatuurverschil tussen het oppervlak $T_s$ en de omringende fluïdum $T_{\infty}$/gas.
 
 De snelheid wordt berekend met de Wet van Newton voor afkoeling:
 \[
