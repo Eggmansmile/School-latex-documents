@@ -1001,7 +1001,7 @@ De Navier-Stokes vergelijkingen zijn complex, maar kunnen voor specifieke gevall
 Dit reduceert de partiële differentiaalvergelijkingen vaak tot gewone differentiaalvergelijkingen die integreerbaar zijn.
 
 \section{Oplossing: Stroming tussen Parallelle Platen (Poiseuille)}
-\textbf{Probleemstelling:} Stationaire, volledig ontwikkelde stroming tussen twee parallelle platen op afstand $a$ van elkaar.
+\textbf{Probleemstelling:} Stationaire, volledig ontwikkelde stroming tussen twee parallelle platen op afstand $a$ van elkaar met een van de platen die beweegt.
 
 \begin{figure}[H]
     \centering
@@ -1069,16 +1069,99 @@ C_1 = \frac{U_p}{a} - \frac{1}{2\mu} \frac{\partial p}{\partial x} a
 \[
 u(y) = \frac{1}{2\mu} \frac{\partial p}{\partial x} y^2 + \left( \frac{U_p}{a} - \frac{1}{2\mu} \frac{\partial p}{\partial x} a \right) y
 \]
+
+\textbf{Visuele weergave van het snelheidsprofiel:}
+
 Voor vaste platen ($U_p = 0$) wordt dit:
 \[
 u(y) = \frac{1}{2\mu} \frac{\partial p}{\partial x} (y^2 - ay)
 \]
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+        % Platen
+        \draw[very thick] (-0.5, 0) -- (3, 0);
+        \draw[very thick] (-0.5, 2) -- (3, 2);
+        
+        % Labels
+        \node[left] at (-0.7, 0) {$y=0$};
+        \node[left] at (-0.7, 2) {$y=a$};
+        \node at (-0.3, 1) {$\mu$};
+        
+        % Snelheidsprofiel (parabolisch)
+        \draw[thick, blue, domain=0:2, samples=100] plot ({0.5 + 1.5*(\x/2)^2 - 1.5*(\x/2)}, \x);
+        
+        % Referentie-pijlen voor snelheid
+        \foreach \y in {0.5, 1, 1.5} {
+            \pgfmathsetmacro{\uy}{0.5 + 1.5*(\y/2)^2 - 1.5*(\y/2)}
+            \draw[->, red, thick] (0.5, \y) -- (\uy, \y);
+        }
+        
+        % Drukgradiënt aanduiding
+        \draw[->, darkgreen, ultra thick] (-0.3, -0.5) -- (2.5, -0.5);
+        \node[below] at (1, -0.7) {$\frac{\partial p}{\partial x} < 0$ (druk daalt)};
+        
+        % Annotatie voor max snelheid
+        \node[right, blue] at (2.2, 1) {$u_{max}$};
+        
+        % Grenslaag indicatie
+        \draw[dashed, gray] (0.5, 0) -- (0.5, 2);
+        \draw[dashed, gray] (2.3, 0) -- (2.3, 2);
+        \node[above, gray] at (1.4, 2.2) {$\Delta x$ (ontwikkelinglengte)};
+    \end{tikzpicture}
+    \caption{Snelheidsprofiel voor Couette-Poiseuille stroming tussen vaste platen. De parabolische curve toont hoe de snelheid van nul aan de wand tot het maximum in het midden stijgt.}
+\end{figure}
+
+\textbf{Karakteristieken van het profiel:}
+\begin{itemize}
+    \item \textbf{No-slip voorwaarde:} Snelheid is nul aan beide wanden ($u(0) = u(a) = 0$)
+    \item \textbf{Maximale snelheid:} Optreedt in het midden: $u_{max} = -\frac{1}{8\mu} \frac{\partial p}{\partial x} a^2$
+    \item \textbf{Parabolische vorm:} Rechtstreeks gevolg van lineaire visceuze spanningen
+    \item \textbf{Volumedebiet:} $Q = -\frac{a^3}{12\mu} \frac{\partial p}{\partial x}$ (geïntegreerd over diepte)
+\end{itemize}
 
 \section{Wet van Poiseuille voor Cilindrische Buis}
 Voor stroming in een cilinder met straal $R$ geldt in cilindercoördinaten:
 \[
 u(r) = \frac{1}{4\mu} \frac{\partial p}{\partial x} (R^2 - r^2)
 \]
+
+\textbf{Visuele weergave van het axiaal snelheidsprofiel:}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.2]
+        % Cilinderwanden
+        \draw[very thick, darkblue] (0, -1.5) arc (-90:90:1.5 and 1.5);
+        \draw[very thick, darkblue] (0, 1.5) -- (4, 1.5);
+        \draw[very thick, darkblue] (0, -1.5) -- (4, -1.5);
+        \draw[dashed, darkblue] (0, -1.5) arc (270:450:1.5 and 1.5);
+        
+        % Snelheidsprofiel (paraboloid gesneden)
+        \draw[thick, red, domain=-1.5:1.5, samples=50] plot ({1 + 3*(1-(\x/1.5)^2)/2}, \x);
+        
+        % Snelheidsvektoren
+        \foreach \y in {-1.2, -0.6, 0, 0.6, 1.2} {
+            \pgfmathsetmacro{\ux}{3*(1-(\y/1.5)^2)/2}
+            \draw[->, red, thick] (1, \y) -- ({1 + \ux}, \y);
+        }
+        
+        % Drukgradiënt
+        \draw[->, darkgreen, ultra thick] (-0.5, -2.2) -- (3.5, -2.2);
+        \node[below] at (1.5, -2.4) {$\frac{\partial p}{\partial x} < 0$};
+        
+        % Straal aanduiding
+        \draw[dashed, gray] (0, 0) -- (0, 1.5);
+        \node[left] at (-0.2, 0.75) {$R$};
+        
+        % Centerline
+        \draw[dashed, gray] (0, 0) -- (4, 0);
+        \node[above] at (4.2, 0) {$u_{max}$};
+    \end{tikzpicture}
+    \caption{Parabolisch snelheidsprofiel in een cilindrische buis. Dwarsdoorsnede toont de karakteristieke paraboloïde vorm met maximale snelheid in het centrum.}
+\end{figure}
+
 Het volumedebiet is:
 \[
 Q = \int_0^R u(r) \, 2\pi r \, dr = -\frac{\pi}{8\mu} \frac{\partial p}{\partial x} R^4
@@ -1087,7 +1170,14 @@ Met $\frac{\partial p}{\partial x} = \frac{p_2 - p_1}{L} = -\frac{\Delta p}{L}$:
 \[
 Q = \frac{\pi R^4 \Delta p}{8\mu L}
 \]
-Dit is de wet van Hagen-Poiseuille.
+Dit is de \textbf{wet van Hagen-Poiseuille}.
+
+\textbf{Belangrijke observaties:}
+\begin{itemize}
+    \item Het debiet is proportioneel aan $R^4$ (zeer gevoelig voor diameter!)
+    \item Het debiet is omgekeerd evenredig met viscositeit $\mu$ en buislengte $L$
+    \item Een kleine vernauwing reduceert het debiet drastisch (praktisch belangrijk voor medische toepassingen)
+\end{itemize}
 
 \subsubsection*{Voorbeeld: Drukval in een leiding}
 \textbf{Gegeven:} Olie ($\mu = 0.2 \, Pa \cdot s$) stroomt door een horizontale buis met diameter $D = 2 \, cm$ en lengte $L = 10 \, m$. Het debiet is $Q = 0.5 \, liter/s = 0.0005 \, m^3/s$.
@@ -1204,6 +1294,8 @@ u(t,y) = \bar{u}(y) + u'(t,y)
 \]
 waarbij $\bar{u}(y)$ de tijdsgemiddelde snelheid is en $u'(t,y)$ de turbulente fluctuatie (met $\overline{u'} = 0$).
 De turbulente fluctuaties veroorzaken een extra schijnbare schuifspanning, de Reynoldsspanning: $\tau_{Reynolds} = -\rho \overline{u'v'}$. Deze verhoogt de effectieve wrijving in turbulente stroming aanzienlijk.
+
+Dit verklaart ook de bollere vorm van de snelheidsprofielen in turbulente stroming, omdat de Reynoldsspanningen de snelheid dichter bij de wanden verhogen.
 
 \subsection{Wrijvingsfactor en Drukval}
 Het energieverlies door wrijving in een rechte leiding resulteert in een drukval $\Delta p$. Deze wordt berekend met de \textbf{Darcy-Weisbach vergelijking}:
@@ -1426,6 +1518,7 @@ Dit betekent dat voor twee parallelle leidingen geldt:
 \]
 Dit stelt ons in staat de verhouding van snelheden (en debieten) te bepalen.
 
+
 \subsection{Iteratieve Oplossingsmethoden (Type 2 Problemen)}
 Bij veel ontwerpproblemen is de diameter en het drukverschil gegeven, maar is het debiet $Q$ (en dus snelheid $V$) onbekend. Omdat de wrijvingsfactor $f$ afhangt van het Reynoldsgetal ($Re = VD/\nu$), en $Re$ afhangt van $V$, is dit een impliciet probleem.
 
@@ -1445,11 +1538,29 @@ Bij externe stroming beweegt een fluïdum rondom een object (of beweegt een obje
     \item \textbf{Lift ($F_L$):} De krachtcomponent loodrecht op de stromingsrichting.
 \end{itemize}
 
+\subsection{Drukgradienten}
+
+Drukgradienten ontstaan door veranderingen in de stromingssnelheid rond een object, volgens Bernoulli's principe. Hogere snelheden leiden tot lagere drukken en vice versa. Dit resulteert in krachten op het object.
+Deze drukverschillen zijn de oorzaak van zowel lift als weerstand.
+
+Hieronder zijn voorbeelden van drukvelden rond een object weergegeven:
+
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{assets/slides/08_Boundary_layer_development_on_a_flat_plate.png}
-    \caption{Ontwikkeling van de grenslaag op een vlakke plaat.}
+    \textit{[Figuur: Drukvelden rond een object in stroming. Blauwe gebieden geven lage druk aan (hoge snelheid), rode gebieden hoge druk (lage snelheid).]}
+    \caption{Voorbeeld van drukvelden rond een object in stroming.}
+    \label{fig:pressure_field}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+    \textit{[Figuur: Stroomlijnen rond een bol in stroming. Let op de versnelde stroming aan de zijkanten en de vertraagde stroming aan de voorkant en achterkant.]}
+    \caption{Stroomlijnen rond een bol in stroming.}
+    \label{fig:streamlines_ball}
+\end{figure}
+
+Hoe abrupter de stroming verandert (bijv. bij stompe voorwerpen), hoe groter de drukverschillen en dus de krachten.
+
 
 \subsection{Weerstand (Drag)}
 De totale weerstandskracht wordt gegeven door:
@@ -1477,6 +1588,7 @@ De weerstand bestaat uit twee bijdragen:
     \caption{Weerstandscoëfficiënt van een bol als functie van het Reynoldsgetal. Merk de plotse daling op bij $Re \approx 3 \cdot 10^5$ (overgang naar turbulente grenslaag, waardoor loslating wordt uitgesteld).}
     \label{fig:drag_coeff}
 \end{figure}
+Als je vliegtuigen bouwt wil je dat $C_L$ zo groot mogelijk is en dat $C_D$ zo klein mogelijk is.
 
 \subsubsection*{Voorbeeldoefening: Weerstand op een auto}
 \textbf{Gegeven:} Een auto met frontaal oppervlak $A = 2.4 \, m^2$ en $C_D = 0.30$ rijdt met $108 \, km/u$ door lucht ($\rho = 1.2 \, kg/m^3$).\\
@@ -1500,7 +1612,7 @@ Hier is $A$ meestal het \textit{planform area} (bovenaanzicht oppervlak) bij vle
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{assets/Lift.png}
+    \includegraphics[width=0.6\textwidth]{assets/Lift.png} 
     \caption{Lift- en weerstandskrachten op een vleugelprofiel.}
 \end{figure}
 
