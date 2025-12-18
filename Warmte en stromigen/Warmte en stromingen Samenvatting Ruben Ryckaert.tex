@@ -238,13 +238,6 @@ De dichtheid $\rho$ van een fluïdum wordt gedefinieerd als de massa per volume-
 \]
 \symS{\rho}{dichtheid}{kg/m$^3$}
 \symS{m}{massa}{kg}
-Voor een continuum-benadering is er een minimum volume $V^*$ nodig waaronder de dichtheid constant blijft. Voor water geldt bijvoorbeeld dat $1 \, mm^3 \approx 3 \times 10^{16}$ moleculen bevat, waardoor de continuum-aanname gerechtvaardigd is.
-
-Een belangrijk criterium voor de geldigheid van deze hypothese is het \term{Knudsen-getal} ($Kn$), gedefinieerd als de verhouding tussen de gemiddelde vrije weglengte van de moleculen ($\lambda$) en de karakteristieke lengteschaal van de stroming ($L$):
-\[
-Kn = \frac{\lambda}{L}
-\]
-Wanneer $Kn < 0{,}01$, is de continuümhypothese geldig en kunnen de Navier-Stokes vergelijkingen veilig worden toegepast. Voor de macroscopische systemen in dit handboek (dammen, leidingen) is deze aanname altijd geldig.
 
 \section{Viscositeit}
 Viscositeit is een maat voor de interne wrijving van een fluïdum. Voor een Newtoniaans fluïdum geldt een lineair verband tussen de schuifspanning $\tau$ en de snelheidsgradiënt:
@@ -313,25 +306,6 @@ F = \tau \cdot A = 200 \, N/m^2 \cdot 0.5 \, m^2 = 100 \, N
     \end{tikzpicture}
     \caption{Couette-stroming: lineair snelheidsprofiel tussen een vaste en een bewegende plaat.}
 \end{figure}
-
-\subsection{Viscositeit in Roterende Systemen}
-In roterende systemen, zoals bij een koppeling (clutch) of viscometer, is de snelheid $V$ niet constant maar afhankelijk van de straal $r$ ($V=\omega r$). Hierdoor wordt de schuifspanning een functie van de positie:
-\[
-\tau(r) = \mu \frac{V(r)}{h} = \mu \frac{\omega r}{h}
-\]
-Het totale koppel $T$ wordt verkregen door integratie over het oppervlak. Voor een schijf met straal $R$:
-\[
-T = \int_A r \cdot \tau(r) \, dA = \int_0^R r \left( \mu \frac{\omega r}{h} \right) 2\pi r \, dr = \frac{2\pi\mu\omega}{h} \int_0^R r^3 \, dr = \frac{\pi\mu\omega R^4}{2h}
-\]
-Dit inzicht is essentieel voor oefeningen waarbij koppeloverdracht via een vloeistoffilm wordt berekend.
-
-\subsection{De Algemene Constitutieve Vergelijking}
-Voor multidimensionale stromingen is de schuifspanning niet enkel een afgeleide in één richting. De spanningstensor $\tau_{ij}$ voor een Newtoniaans fluïdum wordt gegeven door:
-\[
-\tau_{ij} = \mu \left( \frac{\partial u_i}{\partial x_j} + \frac{\partial u_j}{\partial x_i} \right)
-\]
-Dit formalisme verklaart waarom viskeuze krachten in alle richtingen werken, wat later terugkomt in de Navier-Stokes vergelijkingen.
-
 
 
 \chapter{Fluïdumstatica (Hydrostatica)}
@@ -1843,7 +1817,7 @@ Bereken: (a) De zijweerstandskracht; (b) Het benodigde vermogen om tegen deze wi
 
 \part{Warmte}
 
-\chapter{Fundamentele Concepten van de Thermodynamica}
+\chapter{Thermodynamica}
 
 \section{Systemen en Controle Volumes}
 
@@ -1950,7 +1924,9 @@ Q_{net, in} - W_{net, uit} = \Delta E_{systeem}
 Of in differentiële vorm: $\delta Q - \delta W = dE$. Hierbij is de conventie dat warmte toegevoerd aan het systeem positief is, en arbeid verricht door het systeem positief is.
 
 \section{Arbeid bij Grensverplaatsing (Moving Boundary Work)}
-Een van de belangrijkste vormen van arbeid in motoren en compressoren is de arbeid die verricht wordt door een gas dat uitzet of samengedrukt wordt in een zuiger-cilinder apparaat. Dit wordt grensverplaatsingsarbeid of $P dV$-arbeid genoemd. Omdat $F = P \cdot A$ en $ds = dV / A$, kunnen we schrijven $\delta W_b = F ds = P dV$.
+Een van de belangrijkste vormen van arbeid in motoren en compressoren is de arbeid die verricht wordt door een gas dat uitzet of samengedrukt wordt in een zuiger-cilinder apparaat.
+  Omdat $F = P \cdot A$ en $ds = dV / A$,
+   kunnen we schrijven $\delta W_b = F ds = P dV$.
 De totale arbeid tijdens een proces van toestand 1 naar 2 is:
 \[
 W_b = \int_{1}^{2} P \, dV
@@ -2010,13 +1986,17 @@ Dus $\boxed{W_b=30\,\mathrm{kJ}}$ (positief: arbeid geleverd door het gas).
     \includegraphics[width=0.4\textwidth]{assets/slides/14_Control_volume_with_mass_flow.png}
     \caption{Eerste Hoofdwet voor open systemen (controlevolume).}
 \end{figure}
-Bij open systemen stroomt massa de grenzen over. Massa draagt energie met zich mee (interne energie $u$, kinetische energie $V^2/2$ en potentiële energie $gz$). Daarnaast is er energie nodig om de massa in of uit het systeem te duwen tegen de heersende druk in. Deze mechanische energie noemen we stromingsarbeid of flow work ($W_{flow} = Pv$).
+Bij open systemen stroomt massa de grenzen over. 
+Massa draagt energie met zich mee 
+(interne energie $u$, kinetische energie $V^2/2$ en potentiële energie $gz$). (Zie bernoulli) 
+Daarnaast is er energie nodig om de massa in of uit het systeem te duwen tegen de heersende druk in. 
+Deze mechanische energie noemen we stromingsarbeid of flow work ($W_{flow} = Pv$).
 
 Om de thermodynamische analyse van open systemen te vereenvoudigen, combineren we de interne energie $u$ en de stromingsarbeid $Pv$ in een nieuwe eigenschap: enthalpie ($h$).
 \[
 h = u + Pv
 \]
-Enthalpie vertegenwoordigt dus de microscopische energie van een fluïdum plus de energie die nodig is om het fluïdum te laten stromen.
+Enthalpie is de interne energie van een fluïdum plus de energie die nodig is om het fluïdum te laten stromen.
 
 De energiebalans voor een algemeen stromingsproces is:
 \[
@@ -2024,11 +2004,20 @@ De energiebalans voor een algemeen stromingsproces is:
 \]
 Waarbij $\theta$ de totale energie per eenheid massa van de stromende vloeistof is: $\theta = h + \frac{V^2}{2} + gz$.
 
-Voor een stationair stromingsproces (steady-flow), waarbij de eigenschappen in het controlevolume niet veranderen met de tijd ($dE_{sys}/dt = 0$) en de in- en uitgaande massastromen gelijk zijn ($\dot{m}_{in} = \dot{m}_{uit} = \dot{m}$), vereenvoudigt dit tot:
+Voor een stationair stromingsproces (steady-flow), 
+waarbij de eigenschappen in het controlevolume niet veranderen met de tijd ($dE_{sys}/dt = 0$)
+ en de in- en uitgaande massastromen gelijk zijn
+  ($\dot{m}_{in} = \dot{m}_{uit} = \dot{m}$), vereenvoudigt dit tot:
 \[
 \dot{Q} - \dot{W} = \dot{m} \left[ (h_2 - h_1) + \frac{V_2^2 - V_1^2}{2} + g(z_2 - z_1) \right]
 \]
-Hierbij staat punt 1 voor de inlaat en punt 2 voor de uitlaat. In veel apparaten, zoals nozzles en diffusers, zijn warmte en arbeid verwaarloosbaar, en balanceert de verandering in enthalpie direct de verandering in kinetische energie.
+Hierbij staat punt 1 voor de inlaat en punt 2 voor de uitlaat. 
+In veel apparaten, zoals nozzles en diffusers, 
+zijn warmte en arbeid verwaarloosbaar, 
+en balanceert de verandering in enthalpie direct de verandering in kinetische energie.
+
+Dit loopt samen met bernoulli waarbij
+A1*V1=A2*V2
 
 \begin{figure}[H]
     \centering
@@ -3188,7 +3177,7 @@ Thermodynamica zegt \textit{hoeveel} warmte er tussen toestanden wordt uitgewiss
   Warmteoverdracht bestudeert de \textbf{snelheid} van energie-overdracht (warmtestroomdebiet $\dot{Q}$)
    als gevolg van een temperatuurverschil $\Delta T$.
 
-In de praktijk verlopen warmteprocessen via drie fundamentele mechanismen:
+   Er zijn drie manieren waarop warmte kan worden overgedragen:
 \begin{itemize}
     \item \textbf{Conductie (geleiding):} energie-overdracht door microscopische interacties in een materiaal.
     \item \textbf{Convectie:} energie-overdracht tussen een oppervlak en een stromend fluïdum via een grenslaag.
@@ -3201,24 +3190,40 @@ In de praktijk verlopen warmteprocessen via drie fundamentele mechanismen:
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-    	\textbf{Fourier (conductie, 1D)} &:& \dot{Q}=-kA\,\dfrac{dT}{dx}\\
-    	\textbf{Newton (convectie)} &:& \dot{Q}=hA\,(T_s-T_\infty)\\
-    	\textbf{Stefan--Boltzmann (straling)} &:& \dot{Q}=\varepsilon\sigma A\,(T_s^4-T_{sur}^4)\\
+    	\textbf{conductie, 1D} &:& \dot{Q}=-kA\,\dfrac{dT}{dx}\\
+    	\textbf{convectie} &:& \dot{Q}=hA\,(T_s-T_\infty)\\
+    	\textbf{ straling} &:& \dot{Q}=\varepsilon\sigma A\,(T_s^4-T_{sur}^4)\\
 \end{array}
 \]
 
 
-\[\text{met }\dot{Q}=\text{warmtestroomdebiet (W)},\quad k=\text{warmtegeleidingscoëfficiënt (W/(m·K))},\quad h=\text{convectiecoëfficiënt (W/(m²·K))},\quad \varepsilon=\text{emissiviteit (–)},\quad \sigma=5{,}67\times10^{-8}\,\mathrm{W/(m^2\cdot K^4)}\
-\endgroup
+\[\text{met }\dot{Q}=\text{warmtestroomdebiet (W)},
+\quad k=\text{warmtegeleidingscoëfficiënt (W/(m·K))},\quad
+ h=\text{convectiecoëfficiënt (W/(m²·K))},\quad \varepsilon=\text{emissiviteit (–)},
+ \quad \sigma=5{,}67\times10^{-8}\,\mathrm{W/(m^2\cdot K^4)}\
+\]
 
 \section{Conductie}
-	extbf{Conductie} is warmteoverdracht \textit{doorheen} een medium (vaste stof, stilstaande vloeistof of gas) door moleculaire interacties. De drijvende kracht is een temperatuurgradiënt. De materiaaleigenschap die conductie bepaalt is de \textbf{warmtegeleidingscoëfficiënt} $k$ (in $\mathrm{W/(m\cdot K)}$).
+	\textbf{Conductie} is warmteoverdracht \textit{doorheen} een medium 
+    (vaste stof, stilstaande vloeistof of gas) 
+    door moleculaire interacties. 
+    Verschillende materialen conducteren warmte met verschillende snelheden. 
+    Deze verschillen worden berekent met de warmtegeleidingscoëfficiënt $k$. 
+    \textbf{warmtegeleidingscoëfficiënt} $k$ (in $\mathrm{W/(m\cdot K)}$).
 
 De lokale (1D) wet van Fourier is:
 \[
 \dot{Q}=-kA\,\frac{dT}{dx}
 \]
-Het minteken geeft aan dat warmte spontaan stroomt van \textit{warm} naar \textit{koud}.
+Het minteken geeft aan dat warmte spontaan stroomt van \textit{warm} 
+naar \textit{koud}. Q is het warmtestroomdebiet c(W), A de dwarsdoorsnede (m²), 
+en $dT/dx$ de temperatuurgradiënt (K/m).
+
+\subsubsection*{Warmteweerstand}
+
+Een belangrijk concept bij conductie is de \textbf{warmteweerstand} $R_{cond}$. 
+Net zoals bij elektrische weerstand kunnen warmteweerstanden in serie en parallel worden gezet.
+Als je van lucht naar een muur en terug naar lucht gaat kun je alle warmteweerstanden optellen.
 
 \subsection*{Kernformules (conductie en warmteweerstand)}
 \begingroup
@@ -3228,8 +3233,8 @@ Het minteken geeft aan dat warmte spontaan stroomt van \textit{warm} naar \texti
 \begin{array}{@{}lcl@{}}
     	\textbf{Vlakke wand (stationair, 1D)} &:& \dot{Q}=kA\,\dfrac{T_1-T_2}{L}\\
     	\textbf{Warmteweerstand (vlak)} &:& R_{cond}=\dfrac{L}{kA}\\
-    	\textbf{Cilinderwand (stationair)} &:& R_{cond}=\dfrac{\ln(r_2/r_1)}{2\pi k L}\\
-    	\textbf{Weerstanden in serie} &:& R_{tot}=\sum_i R_i,\quad \dot{Q}=\dfrac{\Delta T}{R_{tot}}\\
+    	\textbf{Warmteweerstanden in serie} &:& R_{tot}=\sum_i R_i,\quad \dot{Q}=\dfrac{\Delta T}{R_{tot}}\\
+        \textbf{Warmteweerstanden in parallel} &:& \dfrac{1}{R_{tot}}=\sum_i \dfrac{1}{R_i}\\
 \end{array}
 \]
 \endgroup
@@ -3314,7 +3319,9 @@ T(t)=20+(120-20)e^{-600/1800}=20+100e^{-1/3}\approx 91{,}6^\circ\mathrm{C}
 \end{figure}
 
 \section{Straling}
-Straling is energie-overdracht via elektromagnetische golven (fotonen). In tegenstelling tot conductie en convectie, heeft straling geen medium nodig; het werkt het efficiëntst in een vacuüm. Alle materie boven het absolute nulpunt zendt thermische straling uit.
+Straling is energie-overdracht via elektromagnetische golven (fotonen). 
+In tegenstelling tot conductie en convectie, 
+heeft straling geen medium nodig.
 
 De \textbf{maximale} uitzendende straling hoort bij een \textit{zwart lichaam}:
 \[
@@ -3380,7 +3387,12 @@ Dus $\boxed{\dot{Q}_{net}\approx 364\,\mathrm{W}}$.
 
 \section{Combinatie van Convectie, Conductie en Straling}
 
-In praktische toepassingen werken de drie mechanismen van warmteoverdracht zelden afzonderlijk. Een oppervlak dat aan de lucht is blootgesteld verliest warmte door \textbf{zowel} convectie \textbf{als} straling tegelijk. Bovendien staat dit oppervlak vaak in contact met een geleidend medium (wanden, isolatie, etc.). Het is daarom essentieel te begrijpen hoe deze weerstanden kunnen worden gecombineerd.
+Deze drie mechanismes worden dan gecombineerd. Bijvoorbeeld:
+ Een oppervlak dat aan de lucht is blootgesteld verliest warmte 
+ door \textbf{zowel} convectie \textbf{als} straling tegelijk. 
+ Bovendien staat dit oppervlak vaak in contact met een geleidend 
+ medium (wanden, isolatie, etc.). 
+ Het is daarom belangrijk te begrijpen hoe deze mechanismes samen werken.
 
 \subsection*{Serie- en Parallelschakeling van Warmteweerstanden}
 
@@ -3421,9 +3433,9 @@ De totale warmteverlies is de som van beide componenten.
 \renewcommand{\arraystretch}{1.35}
 \[
 \begin{array}{@{}lcl@{}}
-            	extbf{Serie (algemeen)} &:& \dot{Q}=\dfrac{\Delta T}{\sum_i R_i}\\
-            	extbf{Vlakke wand + convectie (beide zijden)} &:& \dot{Q}=\dfrac{T_{\infty,1}-T_{\infty,2}}{\frac{1}{h_1A}+\frac{L}{kA}+\frac{1}{h_2A}}\\
-            	extbf{Convectie + straling (parallel)} &:& \dot{Q}_{tot}=hA(T_s-T_\infty)+\varepsilon\sigma A(T_s^4-T_{sur}^4)\\
+            	\textbf{Serie (algemeen)} &:& \dot{Q}=\dfrac{\Delta T}{\sum_i R_i}\\
+            	\term{Vlakke wand + convectie (beide zijden)} &:& \dot{Q}=\dfrac{T_{\infty,1}-T_{\infty,2}}{\frac{1}{h_1A}+\frac{L}{kA}+\frac{1}{h_2A}}\\
+            	\textbf{Convectie + straling (parallel)} &:& \dot{Q}_{tot}=hA(T_s-T_\infty)+\varepsilon\sigma A(T_s^4-T_{sur}^4)\\
 \end{array}
 \]
 \endgroup

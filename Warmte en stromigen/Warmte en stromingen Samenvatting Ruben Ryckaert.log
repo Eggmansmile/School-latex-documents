@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.1)  17 DEC 2025 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.1)  18 DEC 2025 12:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
+**"Warmte en stromingen Samenvatting Ruben Ryckaert"
 (./Warmte en stromingen Samenvatting Ruben Ryckaert.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
@@ -827,12 +827,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \tf@toc=\write5
 \openout5 = `"Warmte en stromingen Samenvatting Ruben Ryckaert.toc"'.
 
-<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=605, 597.55246pt x 845.07718pt>
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=595, 597.55246pt x 845.07718pt>
 File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
 <use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>
 Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf  used on input line 146.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=607, page=1, 597.55246pt x 845.07718pt>
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=597, page=1, 597.55246pt x 845.07718pt>
 File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
 <use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
 Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 146.
@@ -882,1076 +882,1039 @@ Package mdframed Info: mdframed works in twoside mode on input line 217.
 Chapter 1.
 Package mdframed Info: mdframed works in twoside mode on input line 239.
 Package mdframed Info: mdframed works in twoside mode on input line 240.
-Package mdframed Info: mdframed works in twoside mode on input line 254.
-Package mdframed Info: mdframed works in twoside mode on input line 255.
-Package mdframed Info: mdframed works in twoside mode on input line 266.
+Package mdframed Info: mdframed works in twoside mode on input line 247.
+Package mdframed Info: mdframed works in twoside mode on input line 248.
+Package mdframed Info: mdframed works in twoside mode on input line 259.
+Package mdframed Info: mdframed works in twoside mode on input line 264.
 [9]
-Package mdframed Info: mdframed works in twoside mode on input line 271.
-Package mdframed Info: mdframed works in twoside mode on input line 272.
-Package mdframed Info: mdframed works in twoside mode on input line 273.
-Package mdframed Info: mdframed works in twoside mode on input line 275.
- [10
+Package mdframed Info: mdframed works in twoside mode on input line 265.
+Package mdframed Info: mdframed works in twoside mode on input line 266.
+Package mdframed Info: mdframed works in twoside mode on input line 268.
+
+Chapter 2.
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.325 \]
         ]
-Chapter 2.
-Package mdframed Info: mdframed works in twoside mode on input line 373.
-[11]
-Package mdframed Info: Not enough space on this page on input line 373.
-Package mdframed Info: mdframed works in twoside mode on input line 385.
-<assets/krachtenOpStilstaandblok.png, id=703, 723.45282pt x 234.8775pt>
+Package mdframed Info: mdframed works in twoside mode on input line 347.
+Package mdframed Info: mdframed works in twoside mode on input line 359.
+<assets/krachtenOpStilstaandblok.png, id=689, 723.45282pt x 234.8775pt>
 File: assets/krachtenOpStilstaandblok.png Graphic file (type png)
 <use assets/krachtenOpStilstaandblok.png>
-Package pdftex.def Info: assets/krachtenOpStilstaandblok.png  used on input line 389.
+Package pdftex.def Info: assets/krachtenOpStilstaandblok.png  used on input line 363.
 (pdftex.def)             Requested size: 364.19667pt x 118.24126pt.
- [12
+ [11
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.430 \subsection{Integratie}
-                              <./assets/krachtenOpStilstaandblok.png>]
-Overfull \hbox (6.84586pt too wide) in paragraph at lines 453--456
+l.377 \]
+         <./assets/krachtenOpStilstaandblok.png>]
+Overfull \hbox (6.84586pt too wide) in paragraph at lines 427--430
 \T1/cmr/bx/n/10.95 Gegeven: \T1/cmr/m/n/10.95 Een duiker bevindt zich op $\OT1/cmr/m/n/10.95 20 \OML/cmm/m/it/10.95 m$ \T1/cmr/m/n/10.95 diepte in zeewater ($\OML/cmm/m/it/10.95 ^^Z \OT1/cmr/m/n/10.95 = 1025 \OML/cmm/m/it/10.95 kg=m[]$\T1/cmr/m/n/10.95 ). De atmosferische
  []
 
-<assets/hydrostatic_pressure.jpg, id=711, 353.82187pt x 318.43968pt>
+[12]
+<assets/hydrostatic_pressure.jpg, id=701, 353.82187pt x 318.43968pt>
 File: assets/hydrostatic_pressure.jpg Graphic file (type jpg)
 <use assets/hydrostatic_pressure.jpg>
-Package pdftex.def Info: assets/hydrostatic_pressure.jpg  used on input line 468.
+Package pdftex.def Info: assets/hydrostatic_pressure.jpg  used on input line 442.
 (pdftex.def)             Requested size: 182.09486pt x 163.88893pt.
-<assets/wikipedia/manometer_utube_pd_500.png, id=712, 501.875pt x 837.1275pt>
+<assets/wikipedia/manometer_utube_pd_500.png, id=702, 501.875pt x 837.1275pt>
 File: assets/wikipedia/manometer_utube_pd_500.png Graphic file (type png)
 <use assets/wikipedia/manometer_utube_pd_500.png>
-Package pdftex.def Info: assets/wikipedia/manometer_utube_pd_500.png  used on input line 475.
+Package pdftex.def Info: assets/wikipedia/manometer_utube_pd_500.png  used on input line 449.
 (pdftex.def)             Requested size: 136.57462pt x 227.80296pt.
-[13
+ [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.478 
-       <./assets/hydrostatic_pressure.jpg>]
-Overfull \hbox (2.44482pt too wide) in paragraph at lines 506--508
-[]\T1/cmr/bx/n/10.95 Aangrijpingspunt (Center of Pressure): \T1/cmr/m/n/10.95 Het moment van de drukkracht om de bovenkant
- []
-
-[14
+l.465     \item B
+                 reedte: $b$
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.517 ...er Hoek \texorpdfstring{$\theta$}{theta}}
-                                                   <./assets/wikipedia/manometer_utube_pd_500.png>]
-Overfull \hbox (20.19835pt too wide) in paragraph at lines 560--561
+l.465     \item B
+                 reedte: $b$ <./assets/hydrostatic_pressure.jpg> <./assets/wikipedia/manometer_utube_pd_500.png>]
+Overfull \hbox (2.44482pt too wide) in paragraph at lines 480--482
+[]\T1/cmr/bx/n/10.95 Aangrijpingspunt (Center of Pressure): \T1/cmr/m/n/10.95 Het moment van de drukkracht om de bovenkant
+ []
+
+[14]
+Overfull \hbox (20.19835pt too wide) in paragraph at lines 534--535
 \T1/cmr/m/n/10.95 Bij een externe overdruk $\OML/cmm/m/it/10.95 P[]$ \T1/cmr/m/n/10.95 (zoals in een drukvat) kan men werken met een equivalente vloeistofhoogte
  []
 
-<assets/submerged_plane.png, id=725, 691.821pt x 494.064pt>
+<assets/submerged_plane.png, id=716, 691.821pt x 494.064pt>
 File: assets/submerged_plane.png Graphic file (type png)
 <use assets/submerged_plane.png>
-Package pdftex.def Info: assets/submerged_plane.png  used on input line 577.
+Package pdftex.def Info: assets/submerged_plane.png  used on input line 551.
 (pdftex.def)             Requested size: 364.19667pt x 260.0886pt.
-[15]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 585.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 585.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 585.
+(hyperref)                removing `math shift' on input line 559.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 592.
+(hyperref)                removing `subscript' on input line 559.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 592.
+(hyperref)                removing `math shift' on input line 559.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 592.
+(hyperref)                removing `math shift' on input line 566.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 566.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 566.
+
+
+Overfull \hbox (11.94672pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 Het principe van Archimedes stelt dat een ondergedompeld lichaam een opwaartse kracht ondervindt
+ []
 
 [16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.605 
+l.589 
        <./assets/submerged_plane.png>]
-Overfull \hbox (11.94672pt too wide) in paragraph at lines 607--608
-\T1/cmr/m/n/10.95 Het principe van Archimedes stelt dat een ondergedompeld lichaam een opwaartse kracht ondervindt
- []
-
-<assets/wikipedia/buoyancy_cc_by_sa_960.png, id=737, 963.6pt x 1208.515pt>
+<assets/wikipedia/buoyancy_cc_by_sa_960.png, id=727, 963.6pt x 1208.515pt>
 File: assets/wikipedia/buoyancy_cc_by_sa_960.png Graphic file (type png)
 <use assets/wikipedia/buoyancy_cc_by_sa_960.png>
-Package pdftex.def Info: assets/wikipedia/buoyancy_cc_by_sa_960.png  used on input line 638.
+Package pdftex.def Info: assets/wikipedia/buoyancy_cc_by_sa_960.png  used on input line 612.
 (pdftex.def)             Requested size: 136.57462pt x 171.2747pt.
+
+Chapter 3.
 [17
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.647 \[
-         <./assets/wikipedia/buoyancy_cc_by_sa_960.png>]
-Chapter 3.
-Package mdframed Info: mdframed works in twoside mode on input line 659.
-Package mdframed Info: mdframed works in twoside mode on input line 660.
-[18
+l.630     \item \textbf
+                       {Euleriaanse beschrijving:} We beschrijven het snelhe... <./assets/wikipedia/buoyancy_cc_by_sa_960.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 633.
+Package mdframed Info: mdframed works in twoside mode on input line 634.
+ [18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.708 \]
+l.689 \]
         ]
 Chapter 4.
 
-Overfull \hbox (31.61453pt too wide) in paragraph at lines 723--723
+Overfull \hbox (31.61453pt too wide) in paragraph at lines 697--697
 |[]\T1/cmr/bx/n/20.74 Fluïdumdynamica: De Bewegingsvergelijkingen| 
  []
 
-<assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png, id=749, 560.0925pt x 356.83313pt>
+<assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png, id=739, 560.0925pt x 356.83313pt>
 File: assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png Graphic file (type png)
 <use assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png>
-Package pdftex.def Info: assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png  used on input line 743.
+Package pdftex.def Info: assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png  used on input line 717.
 (pdftex.def)             Requested size: 364.19667pt x 232.03677pt.
-
-Underfull \vbox (badness 2401) has occurred while \output is active []
-
- [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20
+[19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.807 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.807 
+l.747 
        <./assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png>]
-Overfull \hbox (4.29378pt too wide) in paragraph at lines 824--826
+Overfull \hbox (4.29378pt too wide) in paragraph at lines 798--800
 \T1/cmr/m/n/10.95 We vermenigvuldigen elke term van de Euler vergelijking scalair met een infinitesimale verplaatsing
  []
 
-[21
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.802 \]
+        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.843     \[
-             \rho \frac{1}{2}\nabla v^2 \cdot d\vec{s} = \rho d\left(\frac{1...] [22]
-<assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png, id=780, 479.54156pt x 588.69937pt>
+l.802 \]
+        ] [21]
+<assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png, id=761, 479.54156pt x 588.69937pt>
 File: assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png Graphic file (type png)
 <use assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png>
-Package pdftex.def Info: assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png  used on input line 901.
+Package pdftex.def Info: assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png  used on input line 875.
 (pdftex.def)             Requested size: 182.09486pt x 223.54639pt.
-<assets/wikipedia/venturi_pd.png, id=781, 610.9224pt x 299.6796pt>
+<assets/wikipedia/venturi_pd.png, id=762, 610.9224pt x 299.6796pt>
 File: assets/wikipedia/venturi_pd.png Graphic file (type png)
 <use assets/wikipedia/venturi_pd.png>
-Package pdftex.def Info: assets/wikipedia/venturi_pd.png  used on input line 908.
+Package pdftex.def Info: assets/wikipedia/venturi_pd.png  used on input line 882.
 (pdftex.def)             Requested size: 364.19667pt x 178.65222pt.
- [23
+ [22
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.918 \[
-        
+l.885 
+       <./assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png>]
+Chapter 5.
+<assets/Behoud van massa.png, id=773, 542.77782pt x 321.45094pt>
+File: assets/Behoud van massa.png Graphic file (type png)
+<use assets/Behoud van massa.png>
+Package pdftex.def Info: assets/Behoud van massa.png  used on input line 931.
+(pdftex.def)             Requested size: 273.14923pt x 161.77472pt.
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.918 \[
-         <./assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png> <./assets/wikipedia/venturi_pd.png>]
-Chapter 5.
-<assets/Behoud van massa.png, id=790, 542.77782pt x 321.45094pt>
-File: assets/Behoud van massa.png Graphic file (type png)
-<use assets/Behoud van massa.png>
-Package pdftex.def Info: assets/Behoud van massa.png  used on input line 957.
-(pdftex.def)             Requested size: 273.14923pt x 161.77472pt.
-[24]
-<assets/viscous vloeistof.png, id=795, 558.58687pt x 400.49625pt>
+l.933 \end{figure}
+                   <./assets/wikipedia/venturi_pd.png>]
+<assets/viscous vloeistof.png, id=781, 558.58687pt x 400.49625pt>
 File: assets/viscous vloeistof.png Graphic file (type png)
 <use assets/viscous vloeistof.png>
-Package pdftex.def Info: assets/viscous vloeistof.png  used on input line 973.
+Package pdftex.def Info: assets/viscous vloeistof.png  used on input line 947.
 (pdftex.def)             Requested size: 273.14923pt x 195.84766pt.
- [25
+ [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.993 \]
+l.956 \]
         
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.993 \]
+l.956 \]
          <./assets/Behoud van massa.png> <./assets/viscous vloeistof.png>]
-Overfull \hbox (8.95244pt too wide) in paragraph at lines 999--1000
+Overfull \hbox (8.95244pt too wide) in paragraph at lines 973--974
 []\T1/cmr/bx/n/10.95 Drukkrachten: \T1/cmr/m/n/10.95 Netto kracht door drukverschillen op de oppervlakken (normaalspanningen).
  []
 
 
-Overfull \hbox (10.0167pt too wide) in paragraph at lines 1004--1005
+Overfull \hbox (10.0167pt too wide) in paragraph at lines 978--979
 []\T1/cmr/m/n/10.95 De netto viskeuze kracht per volume-eenheid is de divergentie van de viskeuze spanningstensor.
  []
 
 
-Overfull \hbox (15.87315pt too wide) in paragraph at lines 1019--1022
+Overfull \hbox (15.87315pt too wide) in paragraph at lines 993--996
 \T1/cmr/m/n/10.95 Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. Samen met de continuïteitsvergelijking
  []
 
-<assets/control_volume.png, id=805, 1027.84pt x 553.06625pt>
+<assets/control_volume.png, id=790, 1027.84pt x 553.06625pt>
 File: assets/control_volume.png Graphic file (type png)
 <use assets/control_volume.png>
-Package pdftex.def Info: assets/control_volume.png  used on input line 1025.
+Package pdftex.def Info: assets/control_volume.png  used on input line 999.
 (pdftex.def)             Requested size: 273.14923pt x 146.97537pt.
-[26
+[25] [26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1039 \end{figure}
-                    <./assets/control_volume.png>] [27
+l.1059     \item B
+                  ij $y=a$: $u(a) = U_p$ (snelheid van bovenste plaat)
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1106 \]
-         ]
-Underfull \hbox (badness 1259) in paragraph at lines 1141--1141
+l.1059     \item B
+                  ij $y=a$: $u(a) = U_p$ (snelheid van bovenste plaat) <./assets/control_volume.png>]
+Underfull \hbox (badness 1259) in paragraph at lines 1115--1115
 []\T1/cmr/m/n/10.95 Figure 5.5: []Snelheidsprofiel voor Couette-Poiseuille stroming tussen vaste platen. De
  []
 
-
-Underfull \vbox (badness 3536) has occurred while \output is active []
-
- [28
+[27
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1192 
+l.1166 
        ]
-<assets/hagen_poiseuille.png, id=822, 602.25pt x 263.48438pt>
+<assets/hagen_poiseuille.png, id=808, 602.25pt x 263.48438pt>
 File: assets/hagen_poiseuille.png Graphic file (type png)
 <use assets/hagen_poiseuille.png>
-Package pdftex.def Info: assets/hagen_poiseuille.png  used on input line 1227.
+Package pdftex.def Info: assets/hagen_poiseuille.png  used on input line 1201.
 (pdftex.def)             Requested size: 318.66948pt x 139.4209pt.
-
-Underfull \vbox (badness 1748) has occurred while \output is active []
-
- [29
+ [28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1231 
+l.1205 
        ]
 Chapter 6.
 
-Overfull \hbox (26.80609pt too wide) in paragraph at lines 1235--1236
+Overfull \hbox (26.80609pt too wide) in paragraph at lines 1209--1210
 \T1/cmr/m/n/10.95 Het Reynolds getal is een dimensieloze parameter die de verhouding tussen traagheids of inertiekrachten
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 1248.
-Package mdframed Info: mdframed works in twoside mode on input line 1249.
-<assets/laminar_turbulent.png, id=828, 289.08pt x 408.77719pt>
+Package mdframed Info: mdframed works in twoside mode on input line 1222.
+Package mdframed Info: mdframed works in twoside mode on input line 1223.
+<assets/laminar_turbulent.png, id=814, 289.08pt x 408.77719pt>
 File: assets/laminar_turbulent.png Graphic file (type png)
 <use assets/laminar_turbulent.png>
-Package pdftex.def Info: assets/laminar_turbulent.png  used on input line 1261.
+Package pdftex.def Info: assets/laminar_turbulent.png  used on input line 1235.
 (pdftex.def)             Requested size: 273.14923pt x 386.27153pt.
-[30
+[29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1265 
-        <./assets/hagen_poiseuille.png>] [31
+l.1239 
+        <./assets/hagen_poiseuille.png>] [30
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1322 \]
+l.1296 \]
          
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1322 \]
+l.1296 \]
           <./assets/laminar_turbulent.png>]
-<assets/moody_diagram.png, id=844, 2569.6pt x 1589.94pt>
+<assets/moody_diagram.png, id=829, 2569.6pt x 1589.94pt>
 File: assets/moody_diagram.png Graphic file (type png)
 <use assets/moody_diagram.png>
-Package pdftex.def Info: assets/moody_diagram.png  used on input line 1372.
+Package pdftex.def Info: assets/moody_diagram.png  used on input line 1346.
 (pdftex.def)             Requested size: 364.19667pt x 225.33151pt.
- [32]
-Overfull \hbox (6.16469pt too wide) in paragraph at lines 1400--1401
+ [31]
+Overfull \hbox (6.16469pt too wide) in paragraph at lines 1374--1375
 \T1/cmr/m/n/10.95 In leidingsystemen wordt het totale energieverlies (head loss, $\OML/cmm/m/it/10.95 h[]$\T1/cmr/m/n/10.95 ) onderverdeeld in twee categorieën: 
  []
 
-[33
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1407 ...section{Minor Losses (Lokale Verliezen)}
+l.1381 ...section{Minor Losses (Lokale Verliezen)}
                                                    <./assets/moody_diagram.png>]
-Overfull \hbox (14.65169pt too wide) in paragraph at lines 1408--1409
+Overfull \hbox (14.65169pt too wide) in paragraph at lines 1382--1383
 \T1/cmr/m/n/10.95 Dit zijn verliezen die optreden bij componenten zoals bochten, afsluiters, vernauwingen, verwijdingen
  []
 
-[34
+[33
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1466 \end{itemize}
-                    ] [35
+l.1440 \end{itemize}
+                    ] [34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1525 ...qrt{15.95} \approx 3.99\,\mathrm{m/s} \]
+l.1499 ...qrt{15.95} \approx 3.99\,\mathrm{m/s} \]
                                                   ]
-Overfull \hbox (12.20459pt too wide) in paragraph at lines 1558--1559
+Overfull \hbox (12.20459pt too wide) in paragraph at lines 1532--1533
 []\T1/cmr/bx/n/10.95 Update $\OML/cmm/m/it/10.95 f$\T1/cmr/bx/n/10.95 : \T1/cmr/m/n/10.95 Gebruik het nieuwe Reynoldsgetal en het Moody-diagram (of Colebrook/Haaland)
  []
 
 
-Overfull \hbox (21.23796pt too wide) in paragraph at lines 1565--1566
+Overfull \hbox (21.23796pt too wide) in paragraph at lines 1539--1540
 []\T1/cmr/bx/n/10.95 Weerstand (Drag, $\OML/cmm/m/it/10.95 F[]$\T1/cmr/bx/n/10.95 ): \T1/cmr/m/n/10.95 De krachtcomponent evenwijdig aan de stromingsrichting (remmend). 
  []
 
-[36]
-Overfull \hbox (12.45607pt too wide) in paragraph at lines 1590--1591
+[35]
+Overfull \hbox (12.45607pt too wide) in paragraph at lines 1564--1565
 []\T1/cmr/m/n/10.95 Hoe abrupter de stroming verandert (bijv. bij stompe voorwerpen), hoe groter de drukverschillen
  []
 
-<assets/drag_coefficient.png, id=879, 912.40875pt x 563.85657pt>
+<assets/drag_coefficient.png, id=865, 912.40875pt x 563.85657pt>
 File: assets/drag_coefficient.png Graphic file (type png)
 <use assets/drag_coefficient.png>
-Package pdftex.def Info: assets/drag_coefficient.png  used on input line 1615.
+Package pdftex.def Info: assets/drag_coefficient.png  used on input line 1589.
 (pdftex.def)             Requested size: 227.62206pt x 140.66266pt.
 
 Underfull \vbox (badness 3108) has occurred while \output is active []
 
- [37
+ [36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1619 A
+l.1593 A
         ls je vliegtuigen bouwt wil je dat $C_L$ zo groot mogelijk is en dat...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1619 A
+l.1593 A
         ls je vliegtuigen bouwt wil je dat $C_L$ zo groot mogelijk is en dat...]
-<assets/Lift.png, id=889, 2569.6pt x 1230.5975pt>
+<assets/Lift.png, id=874, 2569.6pt x 1230.5975pt>
 File: assets/Lift.png Graphic file (type png)
 <use assets/Lift.png>
-Package pdftex.def Info: assets/Lift.png  used on input line 1643.
+Package pdftex.def Info: assets/Lift.png  used on input line 1617.
 (pdftex.def)             Requested size: 273.14923pt x 130.80324pt.
 
 Underfull \vbox (badness 1701) has occurred while \output is active []
 
- [38
+ [37
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1646 
+l.1620 
         <./assets/drag_coefficient.png>]
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
- [39
+ [38
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1710 
-        <./assets/Lift.png>] [40
+l.1684 
+        <./assets/Lift.png>] [39
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1753 \textbf{Oplossing:}
-                          ] [41]
-Overfull \hbox (4.93013pt too wide) in paragraph at lines 1821--1823
+l.1727 \textbf{Oplossing:}
+                          ] [40]
+Overfull \hbox (4.93013pt too wide) in paragraph at lines 1795--1797
 []\T1/cmr/bx/n/10.95 Weerstandskracht: \T1/cmr/m/n/10.95 Het frontaal oppervlak van een bol: $\OML/cmm/m/it/10.95 A \OT1/cmr/m/n/10.95 = [] = [] \OMS/cmsy/m/n/10.95 ^^Y \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 00332 \OML/cmm/m/it/10.95 m[]$ 
  []
 
-[42] [43] [44
+[41] [42] [43
 
 ]
 Chapter 7.
-
-Overfull \hbox (57.87433pt too wide) in paragraph at lines 1846--1846
-|[]\T1/cmr/bx/n/20.74 Fundamentele Concepten van de Thermodynamica| 
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 1857.
-Package mdframed Info: mdframed works in twoside mode on input line 1858.
-Package mdframed Info: mdframed works in twoside mode on input line 1859.
-Package mdframed Info: mdframed works in twoside mode on input line 1860.
-[45
+Package mdframed Info: mdframed works in twoside mode on input line 1831.
+Package mdframed Info: mdframed works in twoside mode on input line 1832.
+Package mdframed Info: mdframed works in twoside mode on input line 1833.
+Package mdframed Info: mdframed works in twoside mode on input line 1834.
+[44
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1891 B
+l.1865 B
         elangrijke concepten zijn ook de specifieke eigenschappen, die de ei...]
-Overfull \hbox (3.51353pt too wide) in paragraph at lines 1912--1913
+Overfull \hbox (3.51353pt too wide) in paragraph at lines 1886--1887
 []\T1/cmr/bx/n/10.95 Adiabatisch: \T1/cmr/m/n/10.95 Er is geen warmte-uitwisseling met de omgeving ($\OML/cmm/m/it/10.95 Q \OT1/cmr/m/n/10.95 = 0$\T1/cmr/m/n/10.95 ). Let op: adiabatisch
  []
 
 
-Overfull \hbox (14.28908pt too wide) in paragraph at lines 1914--1915
+Overfull \hbox (14.28908pt too wide) in paragraph at lines 1888--1889
 \T1/cmr/m/n/10.95 Een cyclus is een proces (of reeks processen) waarbij de eindtoestand identiek is aan de begintoestand.
  []
 
 Chapter 8.
 
-Overfull \hbox (9.622pt too wide) in paragraph at lines 1916--1916
+Overfull \hbox (9.622pt too wide) in paragraph at lines 1890--1890
 |[]\T1/cmr/bx/n/20.74 De Eerste Hoofdwet van de Thermodynamica:
  []
 
-<assets/slides/08_Closed_system_with_heat_and_work_transfer.png, id=947, 399.74344pt x 289.08pt>
+<assets/slides/08_Closed_system_with_heat_and_work_transfer.png, id=933, 399.74344pt x 289.08pt>
 File: assets/slides/08_Closed_system_with_heat_and_work_transfer.png Graphic file (type png)
 <use assets/slides/08_Closed_system_with_heat_and_work_transfer.png>
-Package pdftex.def Info: assets/slides/08_Closed_system_with_heat_and_work_transfer.png  used on input line 1919.
+Package pdftex.def Info: assets/slides/08_Closed_system_with_heat_and_work_transfer.png  used on input line 1893.
 (pdftex.def)             Requested size: 182.09486pt x 131.68597pt.
-[46
+[45
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1923 \[
+l.1897 \[
           <./assets/slides/08_Closed_system_with_heat_and_work_transfer.png>]
-Overfull \hbox (3.44118pt too wide) in paragraph at lines 1936--1937
+Overfull \hbox (3.44118pt too wide) in paragraph at lines 1910--1911
 []\T1/cmr/bx/n/10.95 Microscopische energie (Interne energie, $\OML/cmm/m/it/10.95 U$\T1/cmr/bx/n/10.95 ): \T1/cmr/m/n/10.95 Gerelateerd aan de moleculaire structuur
  []
 
 
-Overfull \hbox (38.46248pt too wide) in paragraph at lines 1943--1944
+Overfull \hbox (38.46248pt too wide) in paragraph at lines 1917--1918
 \T1/cmr/m/n/10.95 adiabatisch. De hoeveelheid warmteoverdracht per tijdseenheid noemen we het warmtestroomdebiet
  []
 
 
-Overfull \hbox (31.12677pt too wide) in paragraph at lines 1944--1945
+Overfull \hbox (31.12677pt too wide) in paragraph at lines 1918--1919
 \T1/cmr/m/n/10.95 zijn. Voorbeelden zijn een draaiende as (as-arbeid), een stijgende zuiger (grensverplaatsingsarbeid)
  []
 
-[47]
-<assets/slides/14_Control_volume_with_mass_flow.png, id=958, 279.29344pt x 329.73187pt>
+[46]
+<assets/slides/14_Control_volume_with_mass_flow.png, id=944, 279.29344pt x 329.73187pt>
 File: assets/slides/14_Control_volume_with_mass_flow.png Graphic file (type png)
 <use assets/slides/14_Control_volume_with_mass_flow.png>
-Package pdftex.def Info: assets/slides/14_Control_volume_with_mass_flow.png  used on input line 2010.
+Package pdftex.def Info: assets/slides/14_Control_volume_with_mass_flow.png  used on input line 1986.
 (pdftex.def)             Requested size: 182.09486pt x 214.98729pt.
 
-Underfull \vbox (badness 6001) has occurred while \output is active []
+Underfull \vbox (badness 7759) has occurred while \output is active []
 
- [48
+ [47
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2013 B
-        ij open systemen stroomt massa de grenzen over. Massa draagt energie...]
-Overfull \hbox (20.60373pt too wide) in paragraph at lines 2027--2028
+l.1989 B
+        ij open systemen stroomt massa de grenzen over.]
+Overfull \hbox (20.60373pt too wide) in paragraph at lines 2007--2011
 []\T1/cmr/m/n/10.95 Voor een stationair stromingsproces (steady-flow), waarbij de eigenschappen in het controlevolume
  []
 
-
-Underfull \vbox (badness 1584) has occurred while \output is active []
-
- [49
+[48
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2058 
+l.2047 
         <./assets/slides/14_Control_volume_with_mass_flow.png>]
 Chapter 9.
-[50
+[49
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2101 
+l.2090 
        ]
-Overfull \hbox (14.0129pt too wide) in paragraph at lines 2108--2109
+Overfull \hbox (14.0129pt too wide) in paragraph at lines 2097--2098
 []\T1/cmr/bx/n/10.95 Oververhitte damp (superheated vapor): \T1/cmr/m/n/10.95 Damp die niet op het punt staat te condenseren
  []
 
-<assets/slides/05_T-v_diagram_of_phase-change_processes.png, id=976, 835.62187pt x 453.94594pt>
+<assets/slides/05_T-v_diagram_of_phase-change_processes.png, id=962, 835.62187pt x 453.94594pt>
 File: assets/slides/05_T-v_diagram_of_phase-change_processes.png Graphic file (type png)
 <use assets/slides/05_T-v_diagram_of_phase-change_processes.png>
-Package pdftex.def Info: assets/slides/05_T-v_diagram_of_phase-change_processes.png  used on input line 2137.
+Package pdftex.def Info: assets/slides/05_T-v_diagram_of_phase-change_processes.png  used on input line 2126.
 (pdftex.def)             Requested size: 273.14923pt x 148.38957pt.
-[51]
-<assets/slides/06_T-v_diagram_of_a_pure_substance.png, id=981, 453.19313pt x 415.5525pt>
+[50]
+<assets/slides/06_T-v_diagram_of_a_pure_substance.png, id=967, 453.19313pt x 415.5525pt>
 File: assets/slides/06_T-v_diagram_of_a_pure_substance.png Graphic file (type png)
 <use assets/slides/06_T-v_diagram_of_a_pure_substance.png>
-Package pdftex.def Info: assets/slides/06_T-v_diagram_of_a_pure_substance.png  used on input line 2143.
+Package pdftex.def Info: assets/slides/06_T-v_diagram_of_a_pure_substance.png  used on input line 2132.
 (pdftex.def)             Requested size: 182.09486pt x 166.96626pt.
- [52
+ [51
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2171 \[
+l.2160 \[
          
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2171 \[
+l.2160 \[
           <./assets/slides/05_T-v_diagram_of_phase-change_processes.png> <./assets/slides/06_T-v_diagram_of_a_pure_substance.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 2174.
-Package mdframed Info: mdframed works in twoside mode on input line 2175.
+Package mdframed Info: mdframed works in twoside mode on input line 2163.
+Package mdframed Info: mdframed works in twoside mode on input line 2164.
 
-Overfull \hbox (1.76982pt too wide) in paragraph at lines 2176--2177
+Overfull \hbox (1.76982pt too wide) in paragraph at lines 2165--2166
 \T1/cmr/m/n/10.95 Hierin is $\OML/cmm/m/it/10.95 R$ \T1/cmr/m/n/10.95 de specifieke gasconstante, die verschilt per gas ($\OML/cmm/m/it/10.95 R \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 R[]=M$\T1/cmr/m/n/10.95 , met $\OML/cmm/m/it/10.95 R[] \OT1/cmr/m/n/10.95 = 8\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 314 \OML/cmm/m/it/10.95 kJ=kmol \OMS/cmsy/m/n/10.95 ^^A
  []
 
-Package mdframed Info: mdframed works in twoside mode on input line 2184.
-Package mdframed Info: mdframed works in twoside mode on input line 2185.
+Package mdframed Info: mdframed works in twoside mode on input line 2173.
+Package mdframed Info: mdframed works in twoside mode on input line 2174.
 Chapter 10.
 
-Overfull \hbox (7.66116pt too wide) in paragraph at lines 2200--2202
+Overfull \hbox (7.66116pt too wide) in paragraph at lines 2189--2191
 \T1/cmr/m/n/10.95 Irreversibiliteiten zoals wrijving, menging en warmteoverdracht over een eindig temperatuurverschil
  []
 
-[53]
-Package mdframed Info: mdframed works in twoside mode on input line 2217.
-<assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png, id=995, 292.09125pt x 258.21469pt>
+[52]
+Package mdframed Info: mdframed works in twoside mode on input line 2206.
+<assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png, id=980, 292.09125pt x 258.21469pt>
 File: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png Graphic file (type png)
 <use assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png>
-Package pdftex.def Info: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png  used on input line 2234.
+Package pdftex.def Info: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png  used on input line 2223.
 (pdftex.def)             Requested size: 182.09486pt x 160.98189pt.
- [54
+ [53
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2257         	\textbf{Gevraagd:}
+l.2246         	\textbf{Gevraagd:}
                                    Bepaal $\Delta S$ van het water.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2257         	\textbf{Gevraagd:}
+l.2246         	\textbf{Gevraagd:}
                                    Bepaal $\Delta S$ van het water. <./assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png>]
-Overfull \hbox (17.81618pt too wide) in paragraph at lines 2284--2285
+Overfull \hbox (17.81618pt too wide) in paragraph at lines 2273--2274
 \T1/cmr/m/n/10.95 Net als massa en energie, kan entropie een controle volume binnenkomen of verlaten via massastromen
  []
 
-<assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png, id=1003, 338.01282pt x 297.36093pt>
+<assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png, id=988, 338.01282pt x 297.36093pt>
 File: assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png Graphic file (type png)
 <use assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png>
-Package pdftex.def Info: assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png  used on input line 2313.
+Package pdftex.def Info: assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png  used on input line 2302.
 (pdftex.def)             Requested size: 182.09486pt x 160.20044pt.
-[55]
-Overfull \hbox (13.00893pt too wide) in paragraph at lines 2324--2325
+[54]
+Overfull \hbox (13.00893pt too wide) in paragraph at lines 2313--2314
 \T1/cmr/m/n/10.95 Een nozzle zet druk om in kinetische energie. Rendement: $\OML/cmm/m/it/10.95 ^^Q[] \OT1/cmr/m/n/10.95 = [] =
  []
 
 Chapter 11.
 
-Overfull \hbox (42.9902pt too wide) in paragraph at lines 2330--2334
+Overfull \hbox (42.9902pt too wide) in paragraph at lines 2319--2323
 \T1/cmr/m/n/10.95 oorspronkelijke toestand. Cycli worden in alle moderne machines (motoren, compressoren, warmtepompen,
  []
 
-<assets/slides/16_Heat_engine.png, id=1009, 188.20313pt x 277.035pt>
+<assets/slides/16_Heat_engine.png, id=994, 188.20313pt x 277.035pt>
 File: assets/slides/16_Heat_engine.png Graphic file (type png)
 <use assets/slides/16_Heat_engine.png>
-Package pdftex.def Info: assets/slides/16_Heat_engine.png  used on input line 2347.
+Package pdftex.def Info: assets/slides/16_Heat_engine.png  used on input line 2336.
 (pdftex.def)             Requested size: 136.57462pt x 201.05025pt.
 
-Underfull \hbox (badness 1087) in paragraph at lines 2348--2348
+Underfull \hbox (badness 1087) in paragraph at lines 2337--2337
 []\T1/cmr/m/n/10.95 Figure 11.1: []Schematische
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2337--2337
 \T1/cmr/m/n/10.95 weergave van een
  []
 
-<assets/slides/21_Thermal_efficiency_of_a_heat_engine.png, id=1010, 453.94594pt x 326.72063pt>
+<assets/slides/21_Thermal_efficiency_of_a_heat_engine.png, id=995, 453.94594pt x 326.72063pt>
 File: assets/slides/21_Thermal_efficiency_of_a_heat_engine.png Graphic file (type png)
 <use assets/slides/21_Thermal_efficiency_of_a_heat_engine.png>
-Package pdftex.def Info: assets/slides/21_Thermal_efficiency_of_a_heat_engine.png  used on input line 2354.
+Package pdftex.def Info: assets/slides/21_Thermal_efficiency_of_a_heat_engine.png  used on input line 2343.
 (pdftex.def)             Requested size: 136.57462pt x 98.29611pt.
-[56
+[55
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2357 \end{figure}
+l.2346 \end{figure}
                     <./assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png>]
-<assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png, id=1017, 806.26219pt x 310.15875pt>
+<assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png, id=1003, 806.26219pt x 310.15875pt>
 File: assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png Graphic file (type png)
 <use assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png>
-Package pdftex.def Info: assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png  used on input line 2365.
+Package pdftex.def Info: assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png  used on input line 2354.
 (pdftex.def)             Requested size: 227.62206pt x 87.56322pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57
+ [56
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2375 
+l.2364 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2375 
+l.2364 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2375 
+l.2364 
         <./assets/slides/16_Heat_engine.png> <./assets/slides/21_Thermal_efficiency_of_a_heat_engine.png> <./assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png>]
-<assets/slides/23_Carnot_cycle_processes.png, id=1028, 688.82344pt x 380.92313pt>
+<assets/slides/23_Carnot_cycle_processes.png, id=1014, 688.82344pt x 380.92313pt>
 File: assets/slides/23_Carnot_cycle_processes.png Graphic file (type png)
 <use assets/slides/23_Carnot_cycle_processes.png>
-Package pdftex.def Info: assets/slides/23_Carnot_cycle_processes.png  used on input line 2380.
+Package pdftex.def Info: assets/slides/23_Carnot_cycle_processes.png  used on input line 2369.
 (pdftex.def)             Requested size: 364.19667pt x 201.40004pt.
 
-Overfull \hbox (18.15062pt too wide) in paragraph at lines 2392--2397
+Overfull \hbox (18.15062pt too wide) in paragraph at lines 2381--2386
 []\T1/cmr/m/n/10.95 Het gas expandeert verder, maar nu zonder warmte-uitwisseling ($\OML/cmm/m/it/10.95 Q[] \OT1/cmr/m/n/10.95 = 0$\T1/cmr/m/n/10.95 ). De expansiearbeid
  []
 
-[58
+[57
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2423     \item H
+l.2412     \item H
                   et rendement hangt \textit{enkel} af van de absolute tempe... <./assets/slides/23_Carnot_cycle_processes.png>]
-<assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png, id=1039, 295.1025pt x 645.91313pt>
+<assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png, id=1025, 295.1025pt x 645.91313pt>
 File: assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png Graphic file (type png)
 <use assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png>
-Package pdftex.def Info: assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png  used on input line 2477.
+Package pdftex.def Info: assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png  used on input line 2466.
 (pdftex.def)             Requested size: 182.09486pt x 398.56969pt.
- [59]
-<assets/slides/31_Actual_four-stroke_spark-ignition_engine.png, id=1044, 838.63312pt x 287.57437pt>
+ [58]
+<assets/slides/31_Actual_four-stroke_spark-ignition_engine.png, id=1030, 838.63312pt x 287.57437pt>
 File: assets/slides/31_Actual_four-stroke_spark-ignition_engine.png Graphic file (type png)
 <use assets/slides/31_Actual_four-stroke_spark-ignition_engine.png>
-Package pdftex.def Info: assets/slides/31_Actual_four-stroke_spark-ignition_engine.png  used on input line 2508.
+Package pdftex.def Info: assets/slides/31_Actual_four-stroke_spark-ignition_engine.png  used on input line 2497.
 (pdftex.def)             Requested size: 364.19667pt x 124.88321pt.
- [60
+ [59
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2511 
+l.2500 
         <./assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png>]
-Overfull \hbox (2.15297pt too wide) in paragraph at lines 2517--2518
+Overfull \hbox (2.15297pt too wide) in paragraph at lines 2506--2507
 []\T1/cmr/bx/n/10.95 Ontsteking en Expansieslag (2$\OMS/cmsy/m/n/10.95 !$\T1/cmr/bx/n/10.95 3$\OMS/cmsy/m/n/10.95 !$\T1/cmr/bx/n/10.95 4): \T1/cmr/m/n/10.95 De brandstof ontsnapt (vonk). Aan dit moment
  []
 
 
-Overfull \hbox (2.23587pt too wide) in paragraph at lines 2519--2520
+Overfull \hbox (2.23587pt too wide) in paragraph at lines 2508--2509
 []\T1/cmr/bx/n/10.95 Uitlaatslag (4$\OMS/cmsy/m/n/10.95 !$\T1/cmr/bx/n/10.95 1): \T1/cmr/m/n/10.95 Uitlaatklep opent, verbrandingsgassen stromen uit bij vrijwel constant
  []
 
 
-Overfull \hbox (9.47655pt too wide) in paragraph at lines 2532--2533
+Overfull \hbox (9.47655pt too wide) in paragraph at lines 2521--2522
 []\T1/cmr/m/n/10.95 Het rendement hangt af van de \T1/cmr/bx/n/10.95 compressieratio $\OML/cmm/m/it/10.95 r \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 V[]=V[]$ \T1/cmr/m/n/10.95 en de soortelijke warmteverhouding
  []
 
-<assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png, id=1051, 304.88907pt x 578.16pt>
+<assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png, id=1037, 304.88907pt x 578.16pt>
 File: assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png Graphic file (type png)
 <use assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png>
-Package pdftex.def Info: assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png  used on input line 2546.
+Package pdftex.def Info: assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png  used on input line 2535.
 (pdftex.def)             Requested size: 182.09486pt x 345.31953pt.
-[61
+[60
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2549 
-        <./assets/slides/31_Actual_four-stroke_spark-ignition_engine.png>] [62
+l.2538 
+        <./assets/slides/31_Actual_four-stroke_spark-ignition_engine.png>] [61
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2587 
+l.2576 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2587 
+l.2576 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2587 
+l.2576 
         <./assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png>]
-Overfull \hbox (19.03911pt too wide) in paragraph at lines 2597--2598
+Overfull \hbox (19.03911pt too wide) in paragraph at lines 2586--2587
 []\T1/cmr/bx/n/10.95 Condensor (4$\OMS/cmsy/m/n/10.95 !$\T1/cmr/bx/n/10.95 1): \T1/cmr/m/n/10.95 De natte stoom wordt isobaar gecondenseerd in een groot warmtewisselaar
  []
 
-<assets/slides/20_Steam_power_plant_schematic.png, id=1075, 400.49625pt x 325.215pt>
+<assets/slides/20_Steam_power_plant_schematic.png, id=1061, 400.49625pt x 325.215pt>
 File: assets/slides/20_Steam_power_plant_schematic.png Graphic file (type png)
 <use assets/slides/20_Steam_power_plant_schematic.png>
-Package pdftex.def Info: assets/slides/20_Steam_power_plant_schematic.png  used on input line 2619.
+Package pdftex.def Info: assets/slides/20_Steam_power_plant_schematic.png  used on input line 2608.
 (pdftex.def)             Requested size: 386.96027pt x 314.24239pt.
 
 Underfull \vbox (badness 1590) has occurred while \output is active []
 
- [63] [64
+ [62] [63
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2674 
+l.2663 
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.11}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2674 
+l.2663 
         <./assets/slides/20_Steam_power_plant_schematic.png>]
-Overfull \hbox (4.59561pt too wide) in paragraph at lines 2701--2702
+Overfull \hbox (4.59561pt too wide) in paragraph at lines 2690--2691
 \T1/cmr/m/n/10.95 tegenwoordig meer vriendelijke stoffen als R-32, R-290). Het voordeel is dat deze stoffen ontworpen
  []
 
-<assets/slides/22_Refrigerator_basic_operation.png, id=1092, 280.79906pt x 395.97937pt>
+<assets/slides/22_Refrigerator_basic_operation.png, id=1078, 280.79906pt x 395.97937pt>
 File: assets/slides/22_Refrigerator_basic_operation.png Graphic file (type png)
 <use assets/slides/22_Refrigerator_basic_operation.png>
-Package pdftex.def Info: assets/slides/22_Refrigerator_basic_operation.png  used on input line 2707.
+Package pdftex.def Info: assets/slides/22_Refrigerator_basic_operation.png  used on input line 2696.
 (pdftex.def)             Requested size: 227.62206pt x 320.98926pt.
 
-Underfull \hbox (badness 1490) in paragraph at lines 2708--2708
+Underfull \hbox (badness 1490) in paragraph at lines 2697--2697
 []\T1/cmr/m/n/10.95 Figure 11.12: []Schematische weergave van een dampcompressie koelcyclus met de vier
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65] [66
+ [64] [65
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2734 
+l.2723 
         <./assets/slides/22_Refrigerator_basic_operation.png>]
-<assets/slides/28_Actual_vs_ideal_cycle.png, id=1111, 338.76563pt x 456.95718pt>
+<assets/slides/28_Actual_vs_ideal_cycle.png, id=1097, 338.76563pt x 456.95718pt>
 File: assets/slides/28_Actual_vs_ideal_cycle.png Graphic file (type png)
 <use assets/slides/28_Actual_vs_ideal_cycle.png>
-Package pdftex.def Info: assets/slides/28_Actual_vs_ideal_cycle.png  used on input line 2779.
+Package pdftex.def Info: assets/slides/28_Actual_vs_ideal_cycle.png  used on input line 2768.
 (pdftex.def)             Requested size: 182.09486pt x 245.6306pt.
- [67
+ [66
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2790     \item \textbf
+l.2779     \item \textbf
                         {Milieu:} Oudere koelmiddelen (CFC's, HCFC's) bescha...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2790     \item \textbf
+l.2779     \item \textbf
                         {Milieu:} Oudere koelmiddelen (CFC's, HCFC's) bescha... <./assets/slides/28_Actual_vs_ideal_cycle.png>]
 File: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png Graphic file (type png)
 <use assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png>
-Package pdftex.def Info: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png  used on input line 2823.
+Package pdftex.def Info: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png  used on input line 2812.
 (pdftex.def)             Requested size: 182.09486pt x 160.98189pt.
- [68
+ [67
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2834     \item \textbf
+l.2823     \item \textbf
                         {EfficiÃ«ntie:} $\eta_{turbine} = \frac{W_{real}}{W_...]
-<assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png, id=1131, 361.35pt x 295.1025pt>
+<assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png, id=1116, 361.35pt x 295.1025pt>
 File: assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png Graphic file (type png)
 <use assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png>
-Package pdftex.def Info: assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png  used on input line 2839.
+Package pdftex.def Info: assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png  used on input line 2828.
 (pdftex.def)             Requested size: 364.19667pt x 297.42975pt.
- [69
+ [68
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2885 
+l.2874 
         <./assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png>]
-Overfull \hbox (11.79527pt too wide) in paragraph at lines 2922--2923
+Overfull \hbox (11.79527pt too wide) in paragraph at lines 2911--2912
 []\T1/cmr/m/n/10.95 Dit geeft aan hoeveel percent van het ideale resultaat wordt bereikt ondanks onomkeerbaarheden. 
  []
 
-[70
+[69
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11.17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2936     \item $
-                  s_f = 0,649\,\mathrm{kJ/(kg \cdot K)}$, $s_g = 8,150\,\mat...] [71] [72] [73]
-Overfull \hbox (3.26753pt too wide) in paragraph at lines 3183--3184
+l.2925     \item $
+                  s_f = 0,649\,\mathrm{kJ/(kg \cdot K)}$, $s_g = 8,150\,\mat...] [70] [71] [72]
+Overfull \hbox (3.26753pt too wide) in paragraph at lines 3172--3173
 []\T1/cmr/m/n/10.95 Dit verlies moet worden gecompenseerd door een grotere massa-circulatie of hogere compressor-
  []
 
 Chapter 12.
 
-Overfull \hbox (39.45198pt too wide) in paragraph at lines 3186--3190
+Overfull \hbox (39.45198pt too wide) in paragraph at lines 3175--3179
 \T1/cmr/m/it/10.95 snel \T1/cmr/m/n/10.95 dat gebeurt. Warmteoverdracht bestudeert de \T1/cmr/bx/n/10.95 snelheid \T1/cmr/m/n/10.95 van energie-overdracht (warmtestroomdebiet
  []
 
 
-Overfull \hbox (8.41475pt too wide) in paragraph at lines 3193--3194
+Overfull \hbox (8.41475pt too wide) in paragraph at lines 3182--3183
 []\T1/cmr/bx/n/10.95 Conductie (geleiding): \T1/cmr/m/n/10.95 energie-overdracht door microscopische interacties in een materiaal. 
  []
 
-./Warmte en stromingen Samenvatting Ruben Ryckaert.tex:3212: Missing $ inserted.
-<inserted text> 
-                $
-l.3212 \endgroup
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
-./Warmte en stromingen Samenvatting Ruben Ryckaert.tex:3212: Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.3212 \endgroup
-                
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-Overfull \hbox (381.046pt too wide) detected at line 3212
+Overfull \hbox (381.046pt too wide) detected at line 3204
 [][] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ;  k \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ;  h \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ;  " \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ;  ^^[ \OT1/cmr/m/n/10.95 = 5[]67 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 10[] [] 
  []
 
 
-Overfull \hbox (20.21771pt too wide) in paragraph at lines 3215--3216
-\T1/cmr/m/n/10.95 door moleculaire interacties. De drijvende kracht is een temperatuurgradiënt. De materiaaleigenschap
+Overfull \hbox (80.90628pt too wide) in paragraph at lines 3207--3213
+\T1/cmr/m/n/10.95 snelheden. Deze verschillen worden berekent met de warmtegeleidingscoëfficiënt $\OML/cmm/m/it/10.95 k$\T1/cmr/m/n/10.95 . \T1/cmr/bx/n/10.95 warmtegeleidingscoëfficiënt
  []
 
-[74]
-<assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png, id=1174, 494.59781pt x 497.60907pt>
+
+Overfull \hbox (31.56764pt too wide) in paragraph at lines 3217--3221
+\T1/cmr/m/n/10.95 Het minteken geeft aan dat warmte spontaan stroomt van \T1/cmr/m/it/10.95 warm \T1/cmr/m/n/10.95 naar \T1/cmr/m/it/10.95 koud\T1/cmr/m/n/10.95 . Q is het warmtestroomdebiet
+ []
+
+[73]
+<assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png, id=1160, 494.59781pt x 497.60907pt>
 File: assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png Graphic file (type png)
 <use assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png>
-Package pdftex.def Info: assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png  used on input line 3250.
+Package pdftex.def Info: assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png  used on input line 3255.
 (pdftex.def)             Requested size: 182.09486pt x 183.20132pt.
 
-Overfull \hbox (6.83311pt too wide) in paragraph at lines 3260--3262
+Overfull \hbox (6.83311pt too wide) in paragraph at lines 3265--3267
 \T1/cmr/m/n/10.95 af van stromingsregime (laminair/turbulent), fluïdeigenschappen ($\OML/cmm/m/it/10.95 ^^Z; ^^V; k; c[]$\T1/cmr/m/n/10.95 ), karakteristieke lengte
  []
 
-[75
+[74
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3286 
-        <./assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png>]
-Overfull \hbox (12.77016pt too wide) in paragraph at lines 3317--3318
+l.3271     \item \textbf
+                        {Natuurlijke (vrije) convectie:} stroming door dicht... <./assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png>]
+Overfull \hbox (12.77016pt too wide) in paragraph at lines 3322--3325
 \T1/cmr/m/n/10.95 Straling is energie-overdracht via elektromagnetische golven (fotonen). In tegenstelling tot conductie
  []
 
-[76
+[75
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3354 \]
-         ]
-Overfull \hbox (0.50574pt too wide) in paragraph at lines 3383--3384
-\T1/cmr/m/n/10.95 In praktische toepassingen werken de drie mechanismen van warmteoverdracht zelden afzonderlijk.
- []
-
-[77
+l.3351 \]
+         ] [76
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3428 \]
-         ]
-Overfull \hbox (70.8021pt too wide) in paragraph at lines 3517--3523
+l.3415 \end{align}
+                  ] [77]
+Overfull \hbox (70.8021pt too wide) in paragraph at lines 3529--3535
 \T1/cmr/bx/n/10.95 Gegeven: \T1/cmr/m/n/10.95 Een verwarmde koppelenplaat in een werkplaats. Oppervlakte $\OML/cmm/m/it/10.95 A \OT1/cmr/m/n/10.95 = 0[]50 []$\T1/cmr/m/n/10.95 , oppervlaktetemperatuur
+ []
+
+
+Overfull \hbox (5.17862pt too wide) in paragraph at lines 3577--3578
+[]\T1/cmr/bx/n/10.95 Opmerking: \T1/cmr/m/n/10.95 Bij deze relatief lage temperatuurverschillen ($\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 T \OT1/cmr/m/n/10.95 = 80 K$\T1/cmr/m/n/10.95 ) is straling al dominant
  []
 
 [78
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3524 \textbf{Gevraagd:}
-                         ]
-Overfull \hbox (5.17862pt too wide) in paragraph at lines 3565--3566
-[]\T1/cmr/bx/n/10.95 Opmerking: \T1/cmr/m/n/10.95 Bij deze relatief lage temperatuurverschillen ($\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 T \OT1/cmr/m/n/10.95 = 80 K$\T1/cmr/m/n/10.95 ) is straling al dominant
- []
-
-[79
+l.3611     \item B
+                  innenoppervlak: convectie met $h_1=10\,\mathrm{W/(m^2\cdot...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3611 \underline{Weerstanden}
-                              ]
-<assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png, id=1209, 357.58594pt x 466.74374pt>
+l.3611     \item B
+                  innenoppervlak: convectie met $h_1=10\,\mathrm{W/(m^2\cdot...]
+<assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png, id=1194, 357.58594pt x 466.74374pt>
 File: assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png Graphic file (type png)
 <use assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png>
-Package pdftex.def Info: assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png  used on input line 3662.
+Package pdftex.def Info: assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png  used on input line 3674.
 (pdftex.def)             Requested size: 182.09486pt x 237.68005pt.
-
-Underfull \vbox (badness 1931) has occurred while \output is active []
-
- [80] [81
+ [79] [80
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3666 \part
-            {Oefeningen Warmte en Stromingen} <./assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png>] [82
+l.3678 \part
+            {Oefeningen Warmte en Stromingen} <./assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png>] [81
 
 ]
 Chapter 13.
-<assets/hydrostatica.png, id=1224, 529.98pt x 629.35126pt>
+<assets/hydrostatica.png, id=1210, 529.98pt x 629.35126pt>
 File: assets/hydrostatica.png Graphic file (type png)
 <use assets/hydrostatica.png>
-Package pdftex.def Info: assets/hydrostatica.png  used on input line 3695.
+Package pdftex.def Info: assets/hydrostatica.png  used on input line 3707.
 (pdftex.def)             Requested size: 182.09486pt x 216.23332pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83] [84
+ [82] [83
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3734 ...\frac{4,5}{15} = 2,5 + 0,3 = 2,8 \, m \]
-                                                   <./assets/hydrostatica.png>] [85
+l.3746 ...\frac{4,5}{15} = 2,5 + 0,3 = 2,8 \, m \]
+                                                   <./assets/hydrostatica.png>] [84
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3823 \[
-         ] [86] [87
+l.3835 \[
+         ] [85] [86
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.3985 
+l.3997 
        ]
-Overfull \hbox (2.68637pt too wide) in paragraph at lines 3986--3990
+Overfull \hbox (2.68637pt too wide) in paragraph at lines 3998--4002
 []\T1/cmr/bx/n/10.95 Oplossing: (a) Binnenlucht op $\OML/cmm/m/it/10.95 P[]$\T1/cmr/bx/n/10.95 : \T1/cmr/m/n/10.95 De netto druk is gelijk aan de (buiten) hydrostatische
  []
 
-[88
+[87
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4054 \]
+l.4066 \]
          
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4054 \]
+l.4066 \]
          ]
-Overfull \hbox (20.90547pt too wide) in paragraph at lines 4110--4112
+Overfull \hbox (20.90547pt too wide) in paragraph at lines 4122--4124
 []\T1/cmr/bx/n/10.95 Gevraagd: \T1/cmr/m/n/10.95 (a) Resulterende hydrostatische kracht; (b) Diepte van het drukpunt; (c) Verplaatsing
  []
 
-[89
+[88
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4120     \item V
+l.4132     \item V
                   erplaatsing: $\Delta y = \frac{3{,}976 \times 10^{-4}}{4 \...]
-Overfull \hbox (15.32599pt too wide) in paragraph at lines 4145--4145
+Overfull \hbox (15.32599pt too wide) in paragraph at lines 4157--4157
 |[]\T1/cmr/bx/n/14.4 Oefenzitting 3: Stromingsleer&Bernoulli en energievergelijking| 
  []
 
 
-Overfull \hbox (7.9423pt too wide) in paragraph at lines 4159--4161
+Overfull \hbox (7.9423pt too wide) in paragraph at lines 4171--4173
 []\T1/cmr/bx/n/10.95 Netto vermogen uit turbine (controlevolume): $[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^Q [] []$ 
  []
 
 
-Overfull \hbox (19.87326pt too wide) in paragraph at lines 4161--4163
+Overfull \hbox (19.87326pt too wide) in paragraph at lines 4173--4175
 \T1/cmr/m/n/10.95 De som van externe krachten op een controlevolume is gelijk aan de verandering in impulsstroom. 
  []
 
-[90]
-<assets/ex_12_34.png, id=1296, 251.43938pt x 310.15875pt>
+[89]
+<assets/ex_12_34.png, id=1282, 251.43938pt x 310.15875pt>
 File: assets/ex_12_34.png Graphic file (type png)
 <use assets/ex_12_34.png>
-Package pdftex.def Info: assets/ex_12_34.png  used on input line 4238.
+Package pdftex.def Info: assets/ex_12_34.png  used on input line 4250.
 (pdftex.def)             Requested size: 136.57462pt x 168.4676pt.
 
 Underfull \vbox (badness 1147) has occurred while \output is active []
 
- [91] [92
+ [90] [91
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4300 \]
+l.4312 \]
           <./assets/ex_12_34.png>]
-Overfull \hbox (7.18677pt too wide) in paragraph at lines 4330--4332
+Overfull \hbox (7.18677pt too wide) in paragraph at lines 4342--4344
 \T1/cmr/bx/n/10.95 Gegeven: \T1/cmr/m/n/10.95 Water door turbine: drukverschil $\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 P \OT1/cmr/m/n/10.95 = 1[]2 \OML/cmm/m/it/10.95 m Hg \OT1/cmr/m/n/10.95 = 160[]1 \OML/cmm/m/it/10.95 kPa$\T1/cmr/m/n/10.95 . Volumestroomsnelheid
  []
 
-[93] [94] [95]
-Overfull \hbox (13.06046pt too wide) in paragraph at lines 4472--4474
+[92] [93] [94]
+Overfull \hbox (13.06046pt too wide) in paragraph at lines 4484--4486
 []\T1/cmr/bx/n/10.95 Gevraagd: \T1/cmr/m/n/10.95 (a) Eindtemperatuur en toestand; (b) Benodigde enthalpie; (c) Elektrisch vermogen. 
  []
 
-[96]
-<assets/compressor_exercise.png, id=1375, 240.14719pt x 312.41719pt>
+[95]
+<assets/compressor_exercise.png, id=1360, 240.14719pt x 312.41719pt>
 File: assets/compressor_exercise.png Graphic file (type png)
 <use assets/compressor_exercise.png>
-Package pdftex.def Info: assets/compressor_exercise.png  used on input line 4509.
+Package pdftex.def Info: assets/compressor_exercise.png  used on input line 4521.
 (pdftex.def)             Requested size: 182.09486pt x 236.89607pt.
- [97
+ [96
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4531 ...n = \frac{60}{60} \, kg/s = 1 \, kg/s \]
+l.4543 ...n = \frac{60}{60} \, kg/s = 1 \, kg/s \]
                                                    <./assets/compressor_exercise.png>]
-<assets/Turbine_oefening.png, id=1384, 291.33844pt x 414.79968pt>
+<assets/Turbine_oefening.png, id=1369, 291.33844pt x 414.79968pt>
 File: assets/Turbine_oefening.png Graphic file (type png)
 <use assets/Turbine_oefening.png>
-Package pdftex.def Info: assets/Turbine_oefening.png  used on input line 4581.
+Package pdftex.def Info: assets/Turbine_oefening.png  used on input line 4593.
 (pdftex.def)             Requested size: 182.09486pt x 259.26816pt.
- [98]
-Overfull \hbox (2.50836pt too wide) in paragraph at lines 4594--4599
+ [97]
+Overfull \hbox (2.50836pt too wide) in paragraph at lines 4606--4611
 []\T1/cmr/bx/n/10.95 Oplossing: \T1/cmr/m/n/10.95 Uit superheated gas tabellen (of gegeven): $\OML/cmm/m/it/10.95 h[] \OT1/cmr/m/n/10.95 = 3658\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 8 \OML/cmm/m/it/10.95 kJ=kg$ $h[] \OT1/cmr/m/n/10.95 = 2855\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 8 \OML/cmm/m/it/10.95 kJ=kg$
  []
 
-[99
+[98
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.4617 \textbf{Oplossing:}
+l.4629 \textbf{Oplossing:}
                            <./assets/Turbine_oefening.png>]
-Overfull \hbox (21.47134pt too wide) in paragraph at lines 4617--4619
+Overfull \hbox (21.47134pt too wide) in paragraph at lines 4629--4631
 []\T1/cmr/bx/n/10.95 Oplossing: \T1/cmr/m/n/10.95 Voor een wurgproces (adiabatisch, geen arbeid, verwaarloosbare kinetische/potentiële
  []
 
-[100]
-Underfull \hbox (badness 10000) in paragraph at lines 4715--4716
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4728
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4716--4717
+Underfull \hbox (badness 10000) in paragraph at lines 4728--4729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4717--4718
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4718--4719
+Underfull \hbox (badness 10000) in paragraph at lines 4730--4731
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4719--4720
+Underfull \hbox (badness 10000) in paragraph at lines 4731--4732
 
  []
 
-[101] [102] [103]
-Overfull \hbox (1.94617pt too wide) in paragraph at lines 4828--4830
+[100] [101] [102]
+Overfull \hbox (1.94617pt too wide) in paragraph at lines 4840--4842
 []\T1/cmr/bx/n/10.95 Gevraagd: \T1/cmr/m/n/10.95 (a) Enthalpieën inlaat/uitgang; (b) Thermische vermogen; (c) COP warmtepomp. 
  []
 
 
-Overfull \hbox (4.87897pt too wide) in paragraph at lines 4839--4840
+Overfull \hbox (4.87897pt too wide) in paragraph at lines 4851--4852
 []\T1/cmr/m/n/10.95 Interpretatie: Per 1 kW elektriciteit levert 2,63 kW nuttige warmte (veel beter dan elektrische
  []
 
-[104]
-Overfull \hbox (6.4406pt too wide) in paragraph at lines 4913--4914
+[103]
+Overfull \hbox (6.4406pt too wide) in paragraph at lines 4925--4926
 []\T1/cmr/m/n/10.95 Voor een reversibel proces zou gelden: $\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 s[] \OT1/cmr/m/n/10.95 + ^^A\OML/cmm/m/it/10.95 s[] \OT1/cmr/m/n/10.95 = 0$ \T1/cmr/m/n/10.95 (isentroop voor adiabatisch
  []
 
 
-Overfull \hbox (37.83165pt too wide) detected at line 4931
+Overfull \hbox (37.83165pt too wide) detected at line 4943
 \OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 s[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 mc [] [] \OT1/cmr/m/n/10.95 = 2 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 45 \OMS/cmsy/m/n/10.95 ^^B [] [] \OT1/cmr/m/n/10.95 = 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 9 \OMS/cmsy/m/n/10.95 ^^B []\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 75) \OMS/cmsy/m/n/10.95 ^^Y \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 9 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 288) = \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 259 \OML/cmm/m/it/10.95 kJ=K
  []
 
-[105] [106]
-Overfull \hbox (7.02788pt too wide) in paragraph at lines 5009--5011
+[104] [105]
+Overfull \hbox (7.02788pt too wide) in paragraph at lines 5021--5023
 \T1/cmr/m/n/10.95 (20$[]$C). Het mengen van stromen met groot temperatuurverschil is inherent irreversibel en genereert
  []
 
-[107]
-Overfull \hbox (1.5344pt too wide) in paragraph at lines 5092--5095
+[106]
+Overfull \hbox (1.5344pt too wide) in paragraph at lines 5104--5107
 []\T1/cmr/m/n/10.95 Reactiewarmte (stookwaarde): $\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 H[] \OT1/cmr/m/n/10.95 = 44\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 000 \OML/cmm/m/it/10.95 kJ=kmol$ \T1/cmr/m/n/10.95 benzine. Ingang-temperatuur: $\OML/cmm/m/it/10.95 T[] \OT1/cmr/m/n/10.95 =
  []
 
-[108]
-Overfull \hbox (8.62428pt too wide) in paragraph at lines 5117--5117
+[107]
+Overfull \hbox (8.62428pt too wide) in paragraph at lines 5129--5129
 |\T1/cmr/bx/n/14.4 Oefenzitting 10: Warmteoverdracht (Geleiding, Convectie, Straling)| 
  []
 
@@ -1959,783 +1922,783 @@ Overfull \hbox (8.62428pt too wide) in paragraph at lines 5117--5117
 pdfTeX warning (ext4): destination with the same identifier (name{opgave.13.9.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5130 \opgave{Warmtegeleiding door een Wand}
+l.5142 \opgave{Warmtegeleiding door een Wand}
                                              
 pdfTeX warning (ext4): destination with the same identifier (name{opgave.13.9.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5151 \opgave{Convectie van een Verwarmde Plaat}
-                                                  [109]
+l.5163 \opgave{Convectie van een Verwarmde Plaat}
+                                                  [108]
 pdfTeX warning (ext4): destination with the same identifier (name{opgave.13.9.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5170 \opgave{Stralings-warmteoverdracht}
+l.5182 \opgave{Stralings-warmteoverdracht}
                                           
 pdfTeX warning (ext4): destination with the same identifier (name{opgave.13.9.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.5191 ...e Warmteoverdracht - Wand met Convectie}
-                                                   [110]
-Overfull \hbox (20.34476pt too wide) in paragraph at lines 5222--5224
+l.5203 ...e Warmteoverdracht - Wand met Convectie}
+                                                   [109]
+Overfull \hbox (20.34476pt too wide) in paragraph at lines 5234--5236
 []\T1/cmr/bx/n/10.95 Gevraagd: \T1/cmr/m/n/10.95 (a) Oppervlak draad; (b) Convectieve warmteoverdracht; (c) Oppervlak-temperatuur. 
  []
 
 
-Overfull \hbox (8.83629pt too wide) in paragraph at lines 5231--5232
+Overfull \hbox (8.83629pt too wide) in paragraph at lines 5243--5244
 []\T1/cmr/m/n/10.95 Fysische betekenis: Hoge temperatuur ontstaat omdat convectie zwak is. Hogere $\OML/cmm/m/it/10.95 h$ \T1/cmr/m/n/10.95 (ventilatie)
  []
 
 
-Overfull \hbox (66.54953pt too wide) in paragraph at lines 5257--5257
+Overfull \hbox (66.54953pt too wide) in paragraph at lines 5269--5269
 |[]\T1/cmr/bx/n/14.4 Oefenzitting 11: Navier-Stokes, Moody diagram, stromingsweerstand| 
  []
 
-[111] [112]
-Overfull \hbox (10.27884pt too wide) in paragraph at lines 5324--5325
+[110] [111]
+Overfull \hbox (10.27884pt too wide) in paragraph at lines 5336--5337
 []\T1/cmr/m/n/10.95 Dit geeft aan dat Colebrook zeer gevoelig is. Standaard berekening met simplere benaderingen
  []
 
 
-Overfull \hbox (7.89218pt too wide) in paragraph at lines 5348--5348
+Overfull \hbox (7.89218pt too wide) in paragraph at lines 5360--5360
 |[]\T1/cmr/bx/n/14.4 Oefenzitting 12: Turbulentie, leidingen, uitwendige stroming,
  []
 
-[113
+[112
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13.10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.5385 \[
-         ] [114] [115]
-Overfull \hbox (7.78096pt too wide) in paragraph at lines 5551--5552
+l.5397 \[
+         ] [113] [114]
+Overfull \hbox (7.78096pt too wide) in paragraph at lines 5563--5564
 \T1/cmr/m/n/10.95 reactiekrachten. Dit is cruciaal voor mechanische sterkte van leidingnetwerken, vooral in industriële
  []
 
 
-Overfull \hbox (3.65964pt too wide) in paragraph at lines 5554--5555
+Overfull \hbox (3.65964pt too wide) in paragraph at lines 5566--5567
 \T1/cmr/m/n/10.95 theorie en oefeningen bent u toegerust om thermische en fluïdumtechnische systemen te analyseren. 
  []
 
-[116]
+[115]
 Chapter 14.
-<Thermodynamic tables and properties.pdf, id=1615, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1601, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf  used on input line 5558.
+Package pdftex.def Info: Thermodynamic tables and properties.pdf  used on input line 5570.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Thermodynamic tables and properties.pdf, id=1617, page=1, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1603, page=1, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 1>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5558.
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5570.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 1>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5558.
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[117]
+[116]
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 1>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5558.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 1>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5558.
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 1>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5558.
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5570.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 1>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5570.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [117
+
+ <./Thermodynamic tables and properties.pdf>]
+<Thermodynamic tables and properties.pdf, id=1614, page=2, 614.295pt x 794.97pt>
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 2>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5570.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 2>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5570.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
+<use Thermodynamic tables and properties.pdf, page 2>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [118
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1628, page=2, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1619, page=3, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 2>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 3>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 2>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 3>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 2>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 3>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [119
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1633, page=3, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1624, page=4, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 3>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 4>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 3>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 4>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 3>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 4>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [120
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1638, page=4, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1629, page=5, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 4>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 5>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 4>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 5>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 4>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 5>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [121
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1644, page=5, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1635, page=6, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 5>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 6>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 5>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 6>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 5>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 6>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [122
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1649, page=6, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1640, page=7, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 6>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 7>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 6>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 7>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 6>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 7>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [123
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1654, page=7, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1645, page=8, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 7>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 8>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 7>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 8>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 7>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 8>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [124
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1659, page=8, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1650, page=9, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 8>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 9>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 8>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 9>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 8>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 9>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [125
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1664, page=9, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1655, page=10, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 9>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 10>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 9>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 10>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 9>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 10>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [126
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1669, page=10, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1660, page=11, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 10>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 11>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 10>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 11>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 10>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 11>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [127
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1675, page=11, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1666, page=12, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 11>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 12>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 11>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 12>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 11>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 12>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [128
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1680, page=12, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1671, page=13, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 12>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 13>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 12>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 13>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 12>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 13>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [129
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1685, page=13, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1676, page=14, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 13>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 14>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 13>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 14>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 13>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 14>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [130
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1690, page=14, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1681, page=15, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 14>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 15>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 14>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 15>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 14>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 15>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [131
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1695, page=15, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1686, page=16, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 15>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 16>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 15>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 16>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 15>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 16>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [132
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1700, page=16, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1691, page=17, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 16>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 17>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 16>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 17>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 16>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 17>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [133
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1706, page=17, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1697, page=18, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 17>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 18>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 17>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 18>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 17>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 18>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [134
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1711, page=18, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1702, page=19, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 18>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 19>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 18>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 19>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 18>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 19>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [135
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1716, page=19, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1707, page=20, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 19>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 20>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 19>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 20>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 19>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 20>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [136
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1721, page=20, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1712, page=21, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 20>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 21>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 20>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 21>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 20>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 21>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [137
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1726, page=21, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1717, page=22, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 21>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 22>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 21>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 22>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 21>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 22>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [138
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1731, page=22, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1722, page=23, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 22>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 23>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 22>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 23>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 22>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 23>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [139
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1737, page=23, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1728, page=24, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 23>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 24>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 23>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 24>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 23>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 24>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [140
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1742, page=24, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1733, page=25, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 24>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 25>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 24>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 25>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 24>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 25>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [141
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1748, page=25, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1738, page=26, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 25>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 26>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 25>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 26>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 25>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 26>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [142
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1753, page=26, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1743, page=27, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 26>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 27>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 26>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 27>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 26>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 27>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [143
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1758, page=27, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1749, page=28, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 27>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 28>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 27>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 28>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 27>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 28>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [144
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1763, page=28, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1754, page=29, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 28>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 29>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 28>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 29>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 28>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 29>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [145
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1769, page=29, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1760, page=30, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 29>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 30>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 29>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 30>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 29>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 30>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [146
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1774, page=30, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1765, page=31, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 30>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 31>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 30>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 31>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 30>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 31>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [147
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1779, page=31, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1770, page=32, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 31>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 32>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 31>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 32>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 31>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 32>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [148
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1784, page=32, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1775, page=33, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 32>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 33>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 32>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 33>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 32>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 33>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [149
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1789, page=33, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1780, page=34, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 33>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 34>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 33>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 34>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 33>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 34>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [150
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1794, page=34, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1785, page=35, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 34>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 35>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 34>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 35>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 34>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 35>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [151
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1800, page=35, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1791, page=36, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 35>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 36>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 35>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 36>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 35>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 36>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [152
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1805, page=36, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1796, page=37, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 36>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 37>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 36>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 37>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 36>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 37>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [153
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1810, page=37, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1801, page=38, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 37>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 38>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 37>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 38>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 37>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 38>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [154
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1815, page=38, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1806, page=39, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 38>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 39>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 38>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 39>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 38>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 39>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [155
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1820, page=39, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1811, page=40, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 39>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 40>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 39>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 40>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 39>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 40>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [156
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1825, page=40, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1816, page=41, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 40>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 41>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 40>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 41>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 40>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 41>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [157
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1831, page=41, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1822, page=42, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 41>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 42>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 41>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 42>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 41>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 42>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [158
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1836, page=42, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1827, page=43, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 42>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 43>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 42>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 43>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 42>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 43>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [159
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1841, page=43, 614.295pt x 794.97pt>
+<Thermodynamic tables and properties.pdf, id=1832, page=44, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 43>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 44>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 43>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 44>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 43>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5558.
+<use Thermodynamic tables and properties.pdf, page 44>
+Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [160
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1846, page=44, 614.295pt x 794.97pt>
-File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 44>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5558.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 44>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5558.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
-<use Thermodynamic tables and properties.pdf, page 44>
-Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5558.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [161
-
- <./Thermodynamic tables and properties.pdf>]
-Overfull \hbox (48.31981pt too wide) in paragraph at lines 5562--5570
+Overfull \hbox (48.31981pt too wide) in paragraph at lines 5574--5582
  [][] 
  []
 
@@ -2744,35 +2707,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (135.09206pt too wide) in paragraph at lines 5580--5581
+Overfull \hbox (135.09206pt too wide) in paragraph at lines 5592--5593
 []\T1/cmr/m/n/10.95 Meerkeuzevragen Thermo, [][]$\T1/cmtt/m/n/10.95 https : / / drive . google . com / open ? id = 1lxMZjQMHufqMOW5fe86Rk0IvT8AmGgEeLlQJ5k5YsNs$[][] 
  []
 
-[162] (./Warmte en stromingen Samenvatting Ruben Ryckaert.aux)
+[161] (./Warmte en stromingen Samenvatting Ruben Ryckaert.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `"Warmte en stromingen Samenvatting Ruben Ryckaert".out' has not changed.
-(rerunfilecheck)             Checksum: BB3B9326CED411B779F3806506F73FB1;25131.
+(rerunfilecheck)             Checksum: D5A9C3F0018C2402CDE30059CCCD5668;24470.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 3199 (\begingroup)
+### semi simple group (level 1) entered at line 3188 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 28948 strings out of 469519
- 542091 string characters out of 5467704
- 965515 words of memory out of 5000000
- 56464 multiletter control sequences out of 15000+600000
+ 28943 strings out of 469519
+ 542015 string characters out of 5467704
+ 965505 words of memory out of 5000000
+ 56462 multiletter control sequences out of 15000+600000
  654625 words of font info for 106 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,17n,94p,1047b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,94p,1043b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Warmte en stromingen Samenvatting Ruben Ryckaert.pdf" (162 pages, 41159693 bytes).
+Output written on "Warmte en stromingen Samenvatting Ruben Ryckaert.pdf" (161 pages, 41154173 bytes).
 PDF statistics:
- 2832 PDF objects out of 2984 (max. 8388607)
- 1782 compressed objects within 18 object streams
- 662 named destinations out of 1000 (max. 500000)
- 19293 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 2813 PDF objects out of 2984 (max. 8388607)
+ 1768 compressed objects within 18 object streams
+ 659 named destinations out of 1000 (max. 500000)
+ 19277 words of extra memory for PDF output out of 20736 (max. 10000000)
 
