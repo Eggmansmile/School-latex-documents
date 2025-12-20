@@ -43,6 +43,11 @@
       "env": {}
     }
   ],
+
+  // LaTeX Utilities: paste-image configuration
+  "latex-utilities.formattedPaste.image.template": "\\begin{figure}[ht]\\n  \\centering\\n  \\includegraphics[width=0.8\\textwidth]{${imageFilePath}}\\n  \\caption{${imageCaption}}\\n  \\label{fig:${imageFileName}}\\n\\end{figure}",
+  "latex-utilities.formattedPaste.image.path": "Productietechnologie/assets",
+  "latex-utilities.formattedPaste.enabled": true,
   "latex-workshop.latex.recipes": [
     {
       "name": "pdflatex × 2 (fast)",
@@ -64,7 +69,7 @@
       ]
     }
   ],
-  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.message.error.show": true,
   "latex-workshop.message.warning.show": true,

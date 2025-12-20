@@ -1,0 +1,472 @@
+% ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+% Simple layout template with helpers for chapters, a formularium, and an easy figure helper.
+
+\documentclass[a4paper,12pt,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage[T1]{fontenc}
+% Use default (Computer Modern) but ensure scalable fonts via Latin Modern, keep microtype
+\usepackage{lmodern}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,stretch=10,shrink=10]{microtype}
+% Ensure microtype uses the correct spacing model with nonfrenchspacing
+\microtypecontext{spacing=nonfrench}
+% Slightly increase line spacing for readability
+\usepackage{setspace}
+\setstretch{1.08}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{float}
+% Page geometry: reduce margins and make them consistent
+\usepackage[left=2.0cm,right=2.0cm,top=2.5cm,bottom=2.5cm]{geometry}
+% Configure hyperref to avoid duplicate destination names (see hyperref option `hypertexnames`)
+\usepackage[hidelinks,hypertexnames=false]{hyperref}
+% Use `bookmark` to make outline writing more robust and avoid "file has changed" rerun warnings
+\usepackage{bookmark}
+\usepackage{caption}
+\captionsetup{skip=3pt,aboveskip=3pt,belowskip=3pt} % reduce caption separation
+\usepackage{enumitem}% Shared project macros (\frm, formularium, \fig)
+\usepackage{./productie-macros}
+
+% Hyphenation & tolerance adjustments to reduce underfull boxes
+% Increase tolerance slightly and give TeX more emergency stretch so fewer
+% underfull \hbox warnings occur in compact technical text
+\tolerance=1000
+\hyphenpenalty=300
+\exhyphenpenalty=300
+\emergencystretch=2em
+% If you see a Babel warning about Dutch hyphenation patterns, install them
+% and rebuild your format (tlmgr or system package manager) to enable real
+% Dutch hyphenation and reduce badness further
+\AtBeginDocument{\PackageWarning{productie-macros}{If you see 'No hyphenation patterns were preloaded for the language "Dutch"', please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr).}}
+
+% Allow ragged bottom so LaTeX doesn't stretch pages to fill vertical space
+\raggedbottom
+% For customizing chapter styles and safely patching \chapter
+\usepackage{etoolbox}
+\usepackage{titlesec}
+% Prevent figures from floating past chapter boundaries and ensure floats don't appear before they are defined
+\usepackage{placeins}
+\usepackage{flafter}
+% Insert a FloatBarrier before every \chapter to keep floats in their chapter
+\preto\chapter{\FloatBarrier}
+
+% Make chapters keep number and title on the same line and avoid forcing a new page
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+% Slightly smaller chapter titles (keep them prominent but less tall)
+\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{0.5ex}{0.5ex} % tighten above/below spacing to reduce blank space between chapters and content
+% Ensure section and subsection align to same left margin and use sensible spacing
+% Slightly reduce section/subsection size so titles are less dominant
+\titleformat{\section}[hang]{\normalfont\large\bfseries\raggedright}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{1.5ex}{0.8ex}
+\titleformat{\subsection}[hang]{\normalfont\normalsize\bfseries\raggedright}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{1.0ex}{0.6ex}
+
+% Paragraph spacing and list defaults for consistent left alignment
+\setlength{\parindent}{0pt} % if you prefer paragraph indent restore this to 1em
+\setlength{\parskip}{0.35ex plus 0.1ex} % slightly larger parskip for better readability
+% Compact list indentation (smaller distance from page margin)
+% Aggressively tighten vertical spacing in lists
+\setlist[itemize,1]{leftmargin=1em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+\setlist[itemize,2]{leftmargin=1.4em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+\setlist[enumerate,1]{leftmargin=1em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+\setlist[enumerate,2]{leftmargin=1.4em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+% ------------------ Header / Footer ------------------
+% Avoid fancyhdr warning about small headheight
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\small\bfseries\thepage}
+\fancyhead[LO,RE]{\small\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{0.3pt}
+% Reduce vertical spacing around floats to avoid large gaps
+\setlength{\floatsep}{6pt plus 1pt minus 1pt}     % between floats
+\setlength{\textfloatsep}{8pt plus 1pt minus 1pt} % between floats and text
+\setlength{\intextsep}{6pt plus 1pt minus 1pt}    % for in-text floats (top/bottom of figure)
+
+% ------------------ Formularium helpers ------------------
+% Provided by `productie-macros.sty` (\frm, formularium, \fig helpers).  
+% You can override box colors using \setfrmcolors{<back>}{<frame>} after loading the package.
+
+% ------------------ Figure helper ------------------
+% Provided by `productie-macros.sty` via the \fig helper.
+
+% ------------------ Document metadata ------------------
+\title{Productietechnologie — Samenvatting}
+\author{Ruben Ryckaert}
+\date{\today}
+
+\begin{document}
+\maketitle
+\microtypesetup{protrusion=false}
+% Also disable protrusion for LoF and LoT so those lists use consistent spacing
+\pretocmd{\listoffigures}{\microtypesetup{protrusion=false}}{}{}
+\apptocmd{\listoffigures}{\microtypesetup{protrusion=true}}{}{}
+\pretocmd{\listoftables}{\microtypesetup{protrusion=false}}{}{}
+\apptocmd{\listoftables}{\microtypesetup{protrusion=true}}{}{}
+\tableofcontents
+\microtypesetup{protrusion=true}
+
+\begin{formularium}
+% Formularium entries can be added here if needed
+\end{formularium}
+
+
+\chapter{inleiding}
+\textbf{Wat is ProductieTechnologie?}
+\newline
+ProductieTechnologie gaat over het produceren van 
+goederen. Hier komt veel bij te pas.
+Niet alleen verschillende technieken en machines,
+maar ook kosten, snelheid, kwaliteit, ...
+\newline
+
+Deze samenvatting hoopt een overzicht te geven
+van de belangrijkste begrippen en technieken
+
+
+\textbf{Hieronder verschillende productietechnieken,}
+\begin{itemize}
+  \item Gieten
+    \begin{itemize}
+      \item Zandgieten
+      \item Spuitgieten
+    \end{itemize}
+  \item Frezen
+  \item Lassen
+    \begin{itemize}
+      \item CO2-lassen
+      \item MIG/MAG, TIG, ...
+    \end{itemize}
+  \item Vonkerosie
+  \item Waterstraalsnijden
+  \item Chemisch bewerken
+  \item 3D-printen
+  \item Draaien
+  \item Snijden
+  \item Ponsen
+  \item Stralen
+  \begin{figure}[ht]
+  \centering\includegraphics[width=0.5\textwidth]{straalbewerkingen.png}
+  \caption{Overzicht van bewerkingen met stralen, gebruikmakend van verschillende energiedragers}
+  \label{fig:stralen_overzicht}
+\end{figure}
+\end{itemize}
+
+\subsection{Keuzes bij productie}
+
+Bij produceren moet je afhankelijk van al deze technieken
+keuzes maken over welke technieken het beste is. Hoeveel producten
+moet ik produceren en wat kost dat? Het is allemaal afhankelijk 
+van de eisen die aan het product worden gesteld.
+
+\begin{itemize}
+  \item Kosten
+  \item snelheid
+  \item kwaliteit
+  \item milieu
+  \item veiligheid
+  \item functionaliteit
+  \item materiaal
+  \item tolerantie
+  \item oppervlaktekwaliteit
+  \item aantal
+  \item onderhoud
+\end{itemize}
+
+al deze factoren zijn belangrijk bij het kiezen van een productietechniek.
+
+
+\section{Passing}
+
+Passing is een maat voor hoe goed twee oppervlakken op
+ elkaar aansluiten.
+
+ \begin{itemize}
+    \item Losse Passing: Er is nog speling tussen de twee oppervlakken.
+    \item Nauw Passing: De twee oppervlakken sluiten goed op elkaar aan, er is
+      bijna geen speling meer.
+    \item PersPassing: De twee oppervlakken worden in elkaar gedrukt.
+ \end{itemize}
+
+ \section{Tolerantie}
+    Toleranties worden geklassificeerd via diagrammen 
+
+    \begin{itemize}
+        \item inwendige
+        \item uitwendige
+        \item passing 
+    \end{itemize}
+
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.32\textwidth]{image1.png}\hfill
+      \includegraphics[width=0.32\textwidth]{image2.png}\hfill
+      \includegraphics[width=0.32\textwidth]{image3.png}
+      \caption{Tolerantie diagrammen voor inwendige, uitwendige en passing}
+      \label{fig:tolerantie_diagrammen}
+    \end{figure}
+
+    Je moet kiezen welke tolerantie nodig is voor een product.
+    Precieze toleranties zijn duurder om te produceren.
+
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.5\textwidth]{image5.png}
+      \caption{Kosten vs Tolerantie}
+      \label{fig:kosten_vs_tolerantie}
+    \end{figure}
+
+    \section{Oppervlaktekwaliteit}
+    Oppervlaktekwaliteit moet ook gekozen worden bij het produceren van een product.
+    \begin{itemize}
+      \item Een ruw oppervlak is goedkoper om te produceren.
+      \item Een glad oppervlak is duurder om te produceren.
+      \item Soms is een glad oppervlak nodig voor de functionaliteit van het product.
+      \item Textuur kan ook functioneel zijn (antislip, esthetisch, \ldots). bv: een
+        handvat, keyboard, tafels, pennen, \ldots
+    \end{itemize}
+
+    Oppervlaktekwaliteit wordt uitgedrukt in ruwheid.
+    Ra, Rz, Rmax
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{image6.png}\hfill
+  \includegraphics[width=0.4\textwidth]{image7.png}
+  \caption{Voorbeelden van oppervlaktekwaliteiten}
+  \label{fig:oppervlaktekwaliteiten}
+\end{figure}
+
+  verschillende productietechnieken hebben verschillende oppervlaktekwaliteiten.
+
+
+
+  \chapter{Materialen}
+
+  Dit hoofdstuk gaat over de efecten van verschillende materialen
+  op productietechnieken.
+  Ook het effect van de productietechniek op het materiaal zelf.
+  \newline
+
+  \begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image9.png}
+  \caption{Effect van thermische process op materialen}
+  \label{fig:image9.png}
+\end{figure}
+
+  Er zijn verschillende soorten materialen die je kunt kiezen.
+  Allemaal hebben ze verschillende materiaaleigenschappen.
+  \begin{itemize}
+    \item Metalen
+    \item Kunststoffen
+    \item Keramiek
+    \item Composieten
+  \end{itemize}
+
+  \subsection{Vervorming}
+
+  Je hebt elastische en plastische vervormingen in een materiaal die gebeureren
+  tijden het bewerken van een materiaal.
+  \begin{itemize}
+    \item Elastische vervorming: Het materiaal keert terug naar zijn originele vorm
+      nadat de kracht is weggenomen.
+    \item Plastische vervorming: Het materiaal blijft vervormd nadat de kracht is
+      weggenomen.
+  \end{itemize}
+  Elastische vervorming gegeven door hooke's law:
+  \frm{Hooke's Law}{\sigma = E \cdot \varepsilon}{waarbij $\sigma$ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon$ de rek.}
+
+
+  \chapter{Verspanen:Algemeen}
+  Verspannen is het verwijderen van materiaal van een werkstuk.
+  Dit kan door Boren, Frezen, Draaien, Slijpen, \ldots
+  \newline
+  Je begint met een ruw werkstuk en je verwijdert materiaal tot je 
+  de gewenste vorm en afmetingen hebt.
+  \newline
+
+  \textbf{Voordelen}
+  \begin{itemize}
+    \item Hoge precisie
+    \item Goede tolerantie
+    \item Goede oppervlaktekwaliteit
+    \item Flexibiliteit in ontwerp
+  \end{itemize}
+
+  \textbf{Nadelen}
+  \begin{itemize}
+    \item Materiaalverlies
+    \item Hogere kosten bij grote aantallen
+    \item Langere productietijd
+    \item energieintensies
+    \item Vervuilend (spanen, koelvloeistof)
+  \end{itemize}
+
+  Bij verspannen kunnen verschillende tools gebruikt worden.
+  Deze tools hebben verschillende snijvlakken en geometrieën
+  die geschikt zijn voor verschillende materialen en bewerkingen.
+  \newline
+  \begin{itemize}
+    \item bijtel
+    \item frees
+    \item boor
+    \item slijpschijf
+    \item 
+  \end{itemize}
+
+  \section{bijtelbewerkingen}
+
+  Bij bijtelbewerkingen wordt materiaal verwijderd door een scherpe
+  bijtel over het werkstuk te bewegen.
+  \begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{image10.png}
+  \caption{Verwijdering van materiaal door een bijtel -> creert spanen}
+  \label{fig:image10.png}
+\end{figure}
+
+  Bij het verspannen met een bijtel ontstaan er spanen.
+  Spanen zijn kleine stukjes materiaal die worden verwijderd
+  van het werkstuk.
+  De grote van de spanen wordt bepaald door de snedediepte, de voeding, de spaanhoek, de wrijvingscoëfficiënt \ldots
+  \newline
+  Zometeen meer in detail hierover
+
+  Spanen is een plastische vervorming van de spanen
+  maar het oppervlak van het werkstuk ondergaat ook een elastische vervorming.
+  Dit kan leiden tot oppervlaktefouten zoals ruwheid, hardheid, \ldots
+  \newline
+
+
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{image11.png}
+  \caption{}
+  \label{fig:image11}
+\end{figure}
+
+\frm{Afschuifhoek}{\phi = 45^{\circ} + \dfrac{\gamma}{2} - \dfrac{\mu}{2}}{waarbij $\gamma$ de spaanhoek is en $\mu$ de wrijvingshoek tussen spaan en snijvlak.}
+
+De afschuifhoek bepaalt de richting waarin de spaan wordt afgesneden.
+Een grotere afschuifhoek leidt tot een betere spaanvorming en minder kracht
+
+\frm{afschuifvlak A}{A = \frac{b*h}{\sin(\phi)}}{waarbij $b$ de breedte, $h$ de hoogte en $\phi$ de afschuifhoek.}
+
+\frm{afschuifkracht}{F = A*\tau}{waarbij $A$ het afschuifvlak is en $\tau$ de schuifspanning van het materiaal.}
+
+Grotere spaanhoek -> kleiner afschuifvlak -> minder kracht nodig om spaan te vormen.
+
+\begin{itemize}
+  \item Spaanhoek -> groter -> minder kracht nodig. Tussen -10° en 30°
+  \item Wighoek -> groter -> meer kracht nodig. Zo groot mogelijk
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{image12.png}
+    \caption{Wighoek}
+    \label{fig:image12}
+  \end{figure}
+  \item Vrijloophoek -> groter -> minder wrijving tussen werkstuk en bijtel. Tussen 6° en 10°
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{image14.png}
+    \caption{Vrijloophoek}
+    \label{fig:image14}
+  \end{figure}
+  \item Snedediepte -> groter -> meer kracht nodig
+  \item Voeding -> groter -> meer kracht nodig
+\end{itemize}
+
+De spaanhoek is enorm belangrijk. Een grote spaanhoek snijdt makkelijk
+materialen zoals aluminium, koper, kunststof.
+Voor hardere materialen zoals staal is een kleinere spaanhoek nodig
+omdat het materiaal anders te hard is om te snijden en je moet veel te veel kracht zetten.
+Negatieve spaanhoeken worden gebruikt voor zeer harde materialen.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image15.png}
+  \caption{Verschillende spaanhoeken voor verschillende materialen}
+  \label{fig:image15.png}
+\end{figure}
+
+\subsection{Soorten spaanvorming}
+
+
+\section{Beweging, snelheden en voedingen, temperaturen, slijtage}
+
+Er zijn verschillende factoren die de kracht op je werkstuk bepalen
+\begin{itemize}
+  \item Snijsnelheid (v)
+  \item Voeding (f)
+  \item Snedediepte (a)
+  \item Snedebreedte (b)
+  \item Snededikte (h)
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{image16.png}
+  \caption{Snededoorsnede bij bijtelbewerking}
+  \label{fig:image16.png}
+\end{figure}
+
+\frm{Snededoorsnede}{A_d = a \cdot b}{waarbij $a$ de snedediepte is en $b$ de snedebreedte.}
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{image17.png}
+  \caption{}
+  \label{fig:image17.png}
+\end{figure}
+
+\subsection{Krachten}
+
+
+
+\frm{Snijsnelheid}{v = \pi \cdot d \cdot n}{waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut.}
+
+
+
+\section{factoren bij bijtelbewerking}
+- koelvloeistof
+- Build up edge
+- Warmte 
+- Slijtage
+
+\section{Snijmaterialen}
+
+
+  \chapter{Verspanen:Boren}
+
+
+
+  \chapter{Verspanen:Frezen}
+
+  \chapter{Verspanen:Hybridetechnieken}
+
+  \chapter{Verspanen:Slijpen}
+  \chapter{Fysische en Chemische  afnemende bewerkingen}
+
+  \chapter{Scheiden}
+  \chapter{Automatiseren \& machinekeuze}
+
+  \chapter{Productie werkvoorbereiding}
+
+
+  \chapter{productiegericht ontwerpen}
+
+
+
+
+
+\end{document}

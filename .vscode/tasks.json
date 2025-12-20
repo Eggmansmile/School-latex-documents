@@ -18,6 +18,35 @@
                 "isDefault": true
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Build main PDFs (latexmk)",
+            "type": "shell",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "math-systems/MATHSYS-Oefeningen-RubenRyckaert.tex"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Warmte PDF (latexmk)",
+            "type": "shell",
+            "command": "latexmk",
+            "args": [
+                "-pdf",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "Warmte en stromigen/Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
+            ],
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }

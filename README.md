@@ -92,3 +92,12 @@ Geplande toevoegingen voor komende versies:
 **Datum:** December 2025  
 **Status:** Compleet ✓
 
+---
+
+## Notes & Troubleshooting
+- If you see the warning "No hyphenation patterns were preloaded for the language 'Dutch'", install the Dutch hyphenation package and rebuild the TeX formats. For TeX Live / TinyTeX you can try:
+
+  - `tlmgr install hyphen-dutch` (or `hyphen-nl`) and then `fmtutil-sys --all` to rebuild formats.
+
+- The `formularium` feature writes an external file `<jobname>.fmr` at the end of each run and reads it when you place `\begin{formularium} ... \end{formularium}`. Run `pdflatex` twice after adding/removing formulas so the entries appear in place.
+

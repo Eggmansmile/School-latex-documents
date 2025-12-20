@@ -1,0 +1,14 @@
+\section*{Formularium}\begin{description}[leftmargin=3cm,labelsep=1em]
+\item [\textbf {Hooke's Law}] $\displaystyle \sigma = E \cdot \varepsilon $ --- waarbij $\sigma $ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon $ de rek. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Hooke's Law}] $\displaystyle \sigma = E \cdot \varepsilon $ --- waarbij $\sigma $ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon $ de rek. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Afschuifhoek}] $\displaystyle \phi = 45^{\circ } + \dfrac {\gamma }{2} - \dfrac {\mu }{2}$ --- waarbij $\gamma $ de spaanhoek is en $\mu $ de wrijvingshoek tussen spaan en snijvlak. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Afschuifhoek}] $\displaystyle \phi = 45^{\circ } + \dfrac {\gamma }{2} - \dfrac {\mu }{2}$ --- waarbij $\gamma $ de spaanhoek is en $\mu $ de wrijvingshoek tussen spaan en snijvlak. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {afschuifvlak A}] $\displaystyle A = \frac {b*h}{\sin (\phi )}$ --- waarbij $b$ de breedte, $h$ de hoogte en $\phi $ de afschuifhoek. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {afschuifvlak A}] $\displaystyle A = \frac {b*h}{\sin (\phi )}$ --- waarbij $b$ de breedte, $h$ de hoogte en $\phi $ de afschuifhoek. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {afschuifkracht}] $\displaystyle F = A*\tau $ --- waarbij $A$ het afschuifvlak is en $\tau $ de schuifspanning van het materiaal. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {afschuifkracht}] $\displaystyle F = A*\tau $ --- waarbij $A$ het afschuifvlak is en $\tau $ de schuifspanning van het materiaal. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Snededoorsnede}] $\displaystyle A_d = a \cdot b$ --- waarbij $a$ de snedediepte is en $b$ de snedebreedte. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Snededoorsnede}] $\displaystyle A_d = a \cdot b$ --- waarbij $a$ de snedediepte is en $b$ de snedebreedte. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Snijsnelheid}] $\displaystyle v = \pi \cdot d \cdot n$ --- waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\item [\textbf {Snijsnelheid}] $\displaystyle v = \pi \cdot d \cdot n$ --- waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut. \ \textnormal {\footnotesize (Hoofdstuk~\number \value {chapter})}\par 
+\end {description}

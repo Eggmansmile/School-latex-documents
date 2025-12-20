@@ -756,6 +756,52 @@ Fysisch representeren deze bijvoorbeeld:
 
 \wichtig{Opmerking:} Het is cruciaal om de constanten pas te bepalen nadat de volledige algemene oplossing is samengesteld, omdat de particuliere oplossing op \(t=0\) ook bijdraagt aan de beginwaarden.
 
+\subsection{Natuurlijk, Gedwongen, Nulinvoer- en Nultoestandrespons}
+
+\begin{definition}[Natuurlijke respons (Vrije respons)]
+De \textbf{natuurlijke respons} of \emph{vrije respons} is de oplossing van de homogene differentiaalvergelijking (\(x(t)=0\)) en beschrijft hoe het systeem ontspoort vanuit een gegeven begintoestand zonder externe aandrijving. Deze respons wordt volledig bepaald door de polen van de transferfunctie en de beginvoorwaarden.
+\end{definition}
+
+\begin{definition}[Gedwongen respons (Particuliere respons)]
+De \textbf{gedwongen respons} is de particuliere oplossing die ontstaat door een externe input \(x(t)\). Voor harmonische aandrijvingen leidt dit vaak tot een (steady-state) sinusoïdale respons met amplitude en fase bepaald door \(H(j\omega)\).
+\end{definition}
+
+\begin{definition}[Nulinvoerrespons (Zero-input response)]
+De \textbf{nulinvoerrespons} is identiek aan de natuurlijke respons: het is de respons wanneer de ingang \(x(t)\) nul is maar de beginsituatie (initiale toestanden) niet. In Laplace-termen correspondeert dit met het deel van \(Y(s)\) dat voortkomt uit de transform van de initiële condities.
+\end{definition}
+
+\begin{definition}[Nultoestandrespons (Zero-state response)]
+De \textbf{nultoestandrespons} is de respons wanneer alle beginvoorwaarden nul zijn (geen initiële energie), en de output alleen door de input \(x(t)\) wordt veroorzaakt. In de Laplace-domein is dit het product \(H(s)X(s)\).
+\end{definition}
+
+\paragraph{Relatie en interpretatie}
+De totale respons is de som van natuurlijke en gedwongen respons:
+\[
+ y(t) = y_h(t) + y_p(t)
+\]
+Waarbij:
+\begin{itemize}
+    \item \(y_h(t)\) de nulinvoerrespons (natuurlijke) voorstelt
+    \item \(y_p(t)\) de nultoestandrespons (gedwongen) voorstelt
+\end{itemize}
+
+\subsection{Systeemtypes: Laagdoorlaat, Hoogdoorlaat, Banddoorlaat, Bandstop en All-pass}
+
+\begin{itemize}
+    \item \textbf{Laagdoorlaatsysteem (Low-pass):} Laat lage frequenties goed door en verzwakt hoge frequenties. Kenmerk: amplitude van \(H(j\omega)\) is groot bij \(\omega\approx 0\) en neemt af bij hoge \(\omega\).
+    \item \textbf{Hoogdoorlaatsysteem (High-pass):} Laat hoge frequenties goed door en verzwakt lage frequenties. Kenmerk: amplitude is klein rond \(\omega\approx 0\) en groeit bij hogere frequenties.
+    \item \textbf{Banddoorlaatsysteem (Band-pass):} Laat alleen een bepaald frequentiegebied door en verzwakt frequenties daarbuiten. Wordt gekenmerkt door twee snijpunten (bandbreedte) rond een middenfrequentie.
+    \item \textbf{Bandstopsysteem (Band-stop / Notch):} Verzwakt een bepaald frequentiegebied, laat frequenties daarbuiten door. Een speciale case is de notch waarin slechts een smalle band wordt geëlimineerd.
+    \item \textbf{Fasedraaier (All-pass):} Laat alle frequenties even sterk door (\(|H(j\omega)|\) constant), maar verandert de fase afhankelijk van \(\omega\). Wordt gebruikt voor fasecorrectie zonder amplitudevervorming.
+\end{itemize}
+
+\paragraph{Voorbeelden en aanduidingen}
+\begin{itemize}
+    \item Een RC-low-pass heeft \(H(s)=\tfrac{1}{RCs+1}\).
+    \item Een eenvoudig RLC-bandpass kan worden gemodelleerd als \(H(s)=\tfrac{Ks}{s^2 + \tfrac{R}{L}s + \tfrac{1}{LC}}\).
+    \item Een all-pass tweede orde heeft typisch de vorm \(H(s)=\tfrac{as^2 + bs + 1}{s^2 + bs + a}\).
+\end{itemize}
+
 \section{Analyse van Systeemgedrag}
 
 \subsection{Oefening 2.1: Vrij Verval van een Eerste-Orde Systeem}
@@ -3762,9 +3808,10 @@ De reeks bevat alleen sinus-termen ($b_n$).
 
 \chapter{Lineaire Tijdsinvariante Continue (LTC) systemen}
 
-\section{Systeembeschrijving: De Heilige Drie-eenheid}
+\section{Systeembeschrijving}
 
-LTC-systemen vormen de ruggengraat van de regeltechniek en signaalverwerking. In dit hoofdstuk brengen we alles samen: differentiaalvergelijkingen, Laplace en convolutie. Om deze systemen echt te begrijpen, moeten we kijken naar drie fundamentele concepten: Eigenfuncties, Domeinen en Polen.
+LTC-systemen vormen de ruggengraat van de regeltechniek en signaalverwerking. In dit hoofdstuk brengen we alles samen: differentiaalvergelijkingen, Laplace en convolutie.
+ Om deze systemen echt te begrijpen, moeten we kijken naar drie fundamentele concepten: Eigenfuncties, Domeinen en Polen.
 
 \subsection{1. Eigenfuncties: De Link met Lineaire Algebra}
 In de lineaire algebra is een \textbf{eigenvector} $v$ van een matrix $A$ een vector die niet van richting verandert, maar enkel wordt geschaald: $Av = \lambda v$.

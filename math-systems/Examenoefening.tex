@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper,twoside]{book}
+
+
+\newcommand{\oefening}{}
+\newcommand{\oefeningheader}{\textbf{Oefening: \oefening }\vspace{0.3cm}\hrule\vspace{0.5cm}\newline}
+\begin{document}
+
+\section{LTC-systemenen}
+
+
+
+\renewcommand{\oefening}{1}
+\oefeningheader
+
+Geef voor de volgende systeemfuncties aan of het een laagdoorlaat-, hoogdoorlaat-
+, banddoorlaat- of bandstopsysteem is, of een fasedraaier (all-pass-systeem).
+Geef ook de orde, de versterking op DC en de versterking op oneindig.
+
+
+(a) H(s) =
+8s/
+s^2+8s +25
+
+neem het limiet naar nul en naar oneindig en vervang s met jw
+
+lim s->0 H(s) = 0 => hoogdoorlaat
+lim s->∞ H(s) = 0 => laagdoorlaat
+
+
+
+
+\renewcommand{\oefening}{2}
+\oefeningheader
+Om de systeemrespons $y(t)$ te bepalen voor de gegeven differentiaalvergelijking,
+ volgen we een stappenplan waarbij we de algemene oplossing opsplitsen
+ in een homogeen deel ($y_h$) en een particulier deel ($y_p$). De totale oplossing is dan $y(t) = y_h(t) + y_p(t)$.De gegeven vergelijking is:$$y''(t) + 2y'(t) + 10y = 0.52 \sin(2t)$$
+Met beginvoorwaarden: $y(0) = 0.02$ en $y'(0) = 0$.
+
+. De homogene oplossing ($y_h$)We lossen eerst 
+de homogene vergelijking $y'' + 2y' + 10y = 0$ op.
+ Hiervoor stellen we de karakteristieke vergelijking 
+op door $y = e^{\lambda t}$ in te vullen:$$\lambda^2 + 2\lambda + 10 = 0$$
+
+\renewcommand{\oefening}{3}
+\oefeningheader
+Geven de impulsrespons h(t) van een LTC-systeem. Bepaal de transferfunctie, de polen en nulpunten en de differentiaalvergelijking. Schets de
+amplitude- en faserespons en het poolnulpuntendiagram.
+a) h(t) = e^−tsin(2t)u(t)
+b) h(t) = t e−t u(t)
+c) h(t) = t sin(2t)u(t
+
+a) 
+laplacetransformatie van h(t):
+H(s) = L{e^−tsin(2t)u(t)} = 2/((s+1)^2 + 4)
+
+
+\oefening{4}
+Laten we kijken hoe we de respons van een systeem bepalen in het Laplacedomein.
+ In de kern draait dit om de formule:$$Y(s) = H(s) \cdot X(s)$$Hierbij is $Y(s)$ 
+ de output, $H(s)$
+ de transferfunctie van het systeem en $X(s)$ het getransformeerde inputsignaal.
+
+
+ Opgave 6: Systeemrespons bepalenGegeven is de transferfunctie $H(s) = \frac{2}{s+1}$.
+  Om de tijdrespons $y(t)$ te vinden,
+   volgen we drie stappen:Transformeer 
+   de input $x(t)$ naar $X(s)$.
+   Vermenigvuldig $H(s)$ met $X(s)$ om $Y(s)$ te krijgen.
+   Pas de inverse Laplace-transformatie toe om terug te gaan 
+   naar $y(t)$.
+   (a) Staprespons: $x(t) = u(t)$Input: 
+   $X(s) = \frac{1}{s}$Output in s-domein: $Y(s)
+    = \frac{2}{s+1} \cdot \frac{1}{s} = \frac{2}{s(s+1)}$Breuksplitsen: $\frac{2}{s(s+1)} = \frac{2}{s} - \frac{2}{s+1}$Tijdrespons: $y(t) = 2(1 - e^{-t})u(t)$µ
+(b) Sinusrespons: $x(t) = \sin(2t)u(t)$Input: $X(s) = \frac{2}{s^2+4}$Output in s-domein: $Y(s) = \frac{2}{s+1} \cdot \frac{2}{s^2+4} = \frac{4}{(s+1)(s^2+4)}$Na breuksplitsen en inverteren krijg je een combinatie van een uitstervende exponent (transiënt) en een constante sinus (stationaire toestand).
+(d) Exponentiële respons: $x(t) = e^{-t}u(t)$Input: $X(s) = \frac{1}{s+1}$Output in s-domein: $Y(s) = \frac{2}{s+1} \cdot \frac{1}{s+1} = \frac{2}{(s+1)^2}$Tijdrespons: Gebruik de eigenschap $\mathcal{L}\{t e^{-at}\} = \frac{1}{(s+a)^2}$.Dit geeft: $y(t) = 2t e^{-t} u(t)$.
+
+\section{Examenoefening}
+
+
+\end{document}

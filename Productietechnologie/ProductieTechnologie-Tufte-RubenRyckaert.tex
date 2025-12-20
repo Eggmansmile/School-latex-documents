@@ -1,0 +1,95 @@
+% ProductieTechnologie-Tufte-RubenRyckaert.tex
+% Tufte-style handout for compact annotated summaries (Dutch)
+% Requires the tufte-latex class (tufte-handout or tufte-book)
+% Compile: pdflatex (run twice) or latexmk -pdf
+% If tufte-latex is missing: tlmgr install tufte-latex (TeX Live) or install via MiKTeX
+
+\documentclass[11pt,a4paper]{tufte-handout}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{tcolorbox}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{bookmark}
+
+% Simple figure helper (keeps same call pattern as \fig)
+\newcommand{\figt}[4][0.9\textwidth]{%
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=#1]{#2}
+    \caption{#3}\label{#4}
+  \end{figure}
+}
+
+% Use shared macros for formularium and \frm
+\input{./productie-macros.sty}
+% Adjust appearance for Tufte style
+\setfrmcolors{blue!4}{blue!20}
+
+\title{Productietechnologie — Samenvatting (Tufte style)}
+\author{Ruben Ryckaert}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introductie}
+Dit is een compact, aantekeningen-gericht layout gebaseerd op de Tufte-classes. Gebruik \verb|\sidenote{...}| voor korte opmerkingen in de marge.
+
+De volgende regel toont een sidenote:\sidenote{Tufte-style aantekening in de marge — handig voor korte toelichtingen of bronnen.}
+
+\section{Voorbeeld afbeelding in marge}
+Een kleine illustratie kan in de marge geplaatst worden met \verb|\marginnote| of met \verb|\sidenote| en een afbeelding:\sidenote{\includegraphics[width=1.8cm]{../Productietechnologie/assets/straalbewerkingen.png}} De hoofdfoto kan in de tekst worden gezet als gebruikelijk.
+
+\figt[0.6\textwidth]{../Productietechnologie/assets/straalbewerkingen.png}{Overzicht — bewerkingen met stralen}{fig:tufte-straal}
+
+\section{Sidenote and full-width examples}
+Hier is een zin met extra toelichting\sidenote{Extra toelichting, bron of korte formule.} die in de marge verschijnt.
+
+Voor brede figuren (full width) gebruik je de environment \texttt{figure*} of de Tufte macro \texttt{\fullwidth}:
+\begin{fullwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{../Productietechnologie/assets/straalbewerkingen.png}
+  \captionof{figure}{Fullwidth voorbeeld}
+  \label{fig:full-straal}
+\end{fullwidth}
+
+\section{Formules en formularium}
+Een formule in de tekst: $F=ma$. Display:
+\[ E = \tfrac{1}{2} m v^2 \]
+
+Je kan formules registeren met \verb|\frmT{Label}{math}{note}| en afdrukken in het speciale formularium bovenaan of onderaan je document. Voorbeeld:
+\frmT{Bernoulli}{p + \tfrac{1}{2}\rho v^2 + \rho g h = \text{constant}}{Energiebehoud langs stroomlijn}
+
+\section{Formularium}
+\begin{formulariumtufte}
+% items are auto-collected via \frmT commands
+\end{formulariumtufte}
+
+\section{Tabelvoorbeeld in het Tufte-stijl}
+Tufte houdt tabellen compact en duidelijk:
+\begin{table}
+\centering
+\begin{tabular}{ll}
+\toprule
+Energiedrager & Bewerking \\
+\midrule
+kogelletjes van glas of metaal & kogelstralen \\
+korrels van metaal & staalstralen \\
+abrasief materiaal & abrasief stralen \\
+\bottomrule
+\end{tabular}
+\caption{Compacte tabel}
+\end{table}
+
+\section{Opmerkingen over compilatie}
+- Zorg dat de \texttt{tufte-latex} class geïnstalleerd is (TeX Live: \texttt{tlmgr install tufte-latex}).
+- Gebruik \texttt{latexmk -pdf} of meerdere \texttt{pdflatex} runs; sommige marginals en TOC entries hebben meerdere runs nodig.
+
+\end{document}

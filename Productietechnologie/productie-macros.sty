@@ -1,0 +1,71 @@
+% productie-macros.sty
+% Shared macros for Productietechnologie documents
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{productie-macros}[2025/12/20 Productie macros: frm, formularium, fig]
+
+% Load dependencies
+\RequirePackage{etoolbox}
+\RequirePackage{tcolorbox}
+\RequirePackage{caption}
+
+% Default box colors (redefinable by user)
+\newcommand{\frmBoxBack}{gray!6}
+\newcommand{\frmBoxFrame}{black!10}
+\newcommand{\frmBoxRule}{0.4pt}
+\newcommand{\frmBoxArc}{2pt}
+% Reduce default inner padding for more compact formula boxes
+\newcommand{\frmBoxSep}{1pt}
+
+% Accumulator for formularium entries
+\makeatletter
+\newcommand{\FormulariumEntries}{}
+
+% Main formula macro
+% Usage: \frm{Label}{math}{note}
+\newcommand{\frm}[3]{%
+  \begin{tcolorbox}[colback=\frmBoxBack,colframe=\frmBoxFrame,boxrule=\frmBoxRule,arc=\frmBoxArc,boxsep=\frmBoxSep,left=2pt,right=2pt,top=2pt,bottom=2pt]
+    \textbf{#1:} $\displaystyle #2$\par\vspace{1pt}{\footnotesize #3}
+  \end{tcolorbox}%
+  \g@addto@macro\FormulariumEntries{\item[\textbf{#1}] $\displaystyle #2$ --- #3\par}%
+}
+
+% Formularium helpers: print at end of document so formulas registered later are captured
+\newcommand{\formulariumprint}{%
+  \ifx\FormulariumEntries\@empty
+    \typeout{[FORMULARIUM] Geen formules geregistreerd.}
+    \section*{Formularium}
+    \noindent{\itshape Geen formules geregistreerd.}
+  \else
+    \typeout{[FORMULARIUM] Printen van formularium met geregistreerde entries.}
+    \section*{Formularium}
+    \begin{description}[leftmargin=3cm,labelsep=1em]
+      \FormulariumEntries
+    \end{description}
+    % clear for safety
+    \gdef\FormulariumEntries{}
+  \fi
+}
+% Convenience command: print the formularium immediately (use if you prefer it at a specific spot)
+\newcommand{\printformulariumnow}{\formulariumprint}
+% The environment is kept for backwards compatibility but defers actual output to \AtEndDocument
+\newenvironment{formularium}{%
+  % Schedule formularium to be printed at the end of the document. Use \printformulariumnow to force immediate output.
+  \AtEndDocument{\clearpage\formulariumprint}%
+}{%
+  % no-op at environment close
+}
+\makeatother
+
+% Figure helper (keep same signature as before)
+\newcommand{\fig}[4][0.8\linewidth]{%
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=#1]{#2}
+    \caption{#3}\label{#4}
+  \end{figure}
+}
+
+% Provide simple alias for tufte/classic to override box colors
+\newcommand{\setfrmcolors}[2]{\renewcommand{\frmBoxBack}{#1}\renewcommand{\frmBoxFrame}{#2}}
+
+% End of package
