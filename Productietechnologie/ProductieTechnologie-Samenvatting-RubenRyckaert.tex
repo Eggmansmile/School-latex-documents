@@ -12,7 +12,9 @@
 \microtypecontext{spacing=nonfrench}
 % Slightly increase line spacing for readability
 \usepackage{setspace}
-\setstretch{1.08}
+\setstretch{1.15} % slightly larger for better readability on A4
+% Make TeX less strict about individual line breaks to reduce underfull boxes
+\sloppy
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -40,7 +42,7 @@
 % If you see a Babel warning about Dutch hyphenation patterns, install them
 % and rebuild your format (tlmgr or system package manager) to enable real
 % Dutch hyphenation and reduce badness further
-\AtBeginDocument{\PackageWarning{productie-macros}{If you see 'No hyphenation patterns were preloaded for the language "Dutch"', please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr).}}
+\AtBeginDocument{\PackageWarning{productie-macros}{If you see ``No hyphenation patterns were preloaded for the language "Dutch"'' please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr).}}
 
 % Allow ragged bottom so LaTeX doesn't stretch pages to fill vertical space
 \raggedbottom
@@ -59,23 +61,24 @@
 \makeatother
 % Slightly smaller chapter titles (keep them prominent but less tall)
 \titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
-\titlespacing*{\chapter}{0pt}{0.5ex}{0.5ex} % tighten above/below spacing to reduce blank space between chapters and content
+\titlespacing*{\chapter}{0pt}{12pt}{6pt} % more breathing room before/after chapter titles
 % Ensure section and subsection align to same left margin and use sensible spacing
 % Slightly reduce section/subsection size so titles are less dominant
 \titleformat{\section}[hang]{\normalfont\large\bfseries\raggedright}{\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{1.5ex}{0.8ex}
+\titlespacing*{\section}{0pt}{10pt}{6pt} % increase space before/after section titles
 \titleformat{\subsection}[hang]{\normalfont\normalsize\bfseries\raggedright}{\thesubsection}{1em}{}
-\titlespacing*{\subsection}{0pt}{1.0ex}{0.6ex}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt} % increase space for subsections
 
 % Paragraph spacing and list defaults for consistent left alignment
 \setlength{\parindent}{0pt} % if you prefer paragraph indent restore this to 1em
-\setlength{\parskip}{0.35ex plus 0.1ex} % slightly larger parskip for better readability
+\setlength{\parskip}{0.6ex plus 0.15ex} % increase parskip slightly for better readability
 % Compact list indentation (smaller distance from page margin)
-% Aggressively tighten vertical spacing in lists
-\setlist[itemize,1]{leftmargin=1em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
-\setlist[itemize,2]{leftmargin=1.4em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
-\setlist[enumerate,1]{leftmargin=1em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
-\setlist[enumerate,2]{leftmargin=1.4em,itemsep=0pt,parsep=0pt,partopsep=0pt,topsep=0pt}
+% Increase vertical spacing and indent lists slightly for readability
+% Tweak: larger topsep/partopsep for space before/after list; small itemsep between items; larger left margins
+\setlist[itemize,1]{leftmargin=1.6em,itemsep=0.35ex,parsep=0.2ex,partopsep=0.4ex,topsep=0.6ex}
+\setlist[itemize,2]{leftmargin=2.2em,itemsep=0.25ex,parsep=0.15ex,partopsep=0.3ex,topsep=0.45ex}
+\setlist[enumerate,1]{leftmargin=1.6em,itemsep=0.35ex,parsep=0.2ex,partopsep=0.4ex,topsep=0.6ex}
+\setlist[enumerate,2]{leftmargin=2.2em,itemsep=0.25ex,parsep=0.15ex,partopsep=0.3ex,topsep=0.45ex}
 % ------------------ Header / Footer ------------------
 % Avoid fancyhdr warning about small headheight
 \setlength{\headheight}{14pt}
@@ -117,17 +120,12 @@
 \end{formularium}
 
 
-\chapter{inleiding}
+\chapter{Inleiding}
 \textbf{Wat is ProductieTechnologie?}
-\newline
-ProductieTechnologie gaat over het produceren van 
-goederen. Hier komt veel bij te pas.
-Niet alleen verschillende technieken en machines,
-maar ook kosten, snelheid, kwaliteit, ...
-\newline
 
-Deze samenvatting hoopt een overzicht te geven
-van de belangrijkste begrippen en technieken
+ProductieTechnologie gaat over het produceren van goederen. Hier komt veel bij te pas: niet alleen verschillende technieken en machines, maar ook kosten, snelheid en kwaliteit spelen een rol.
+
+Deze samenvatting geeft een overzicht van de belangrijkste begrippen en technieken.
 
 
 \textbf{Hieronder verschillende productietechnieken,}
@@ -141,7 +139,7 @@ van de belangrijkste begrippen en technieken
   \item Lassen
     \begin{itemize}
       \item CO2-lassen
-      \item MIG/MAG, TIG, ...
+      \item MIG/MAG, TIG, \ldots
     \end{itemize}
   \item Vonkerosie
   \item Waterstraalsnijden
@@ -249,16 +247,13 @@ Passing is een maat voor hoe goed twee oppervlakken op
 
   \chapter{Materialen}
 
-  Dit hoofdstuk gaat over de efecten van verschillende materialen
-  op productietechnieken.
-  Ook het effect van de productietechniek op het materiaal zelf.
-  \newline
+  Dit hoofdstuk gaat over de effecten van verschillende materialen op productietechnieken en over het effect van de gekozen productietechniek op het materiaal.
 
   \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{image9.png}
   \caption{Effect van thermische process op materialen}
-  \label{fig:image9.png}
+  \label{fig:image9}
 \end{figure}
 
   Er zijn verschillende soorten materialen die je kunt kiezen.
@@ -280,17 +275,16 @@ Passing is een maat voor hoe goed twee oppervlakken op
     \item Plastische vervorming: Het materiaal blijft vervormd nadat de kracht is
       weggenomen.
   \end{itemize}
-  Elastische vervorming gegeven door hooke's law:
-  \frm{Hooke's Law}{\sigma = E \cdot \varepsilon}{waarbij $\sigma$ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon$ de rek.}
+  Elastische vervorming gegeven door Hooke's law:
+  \frm{Hooke's law}{\sigma = E \cdot \varepsilon}{waarbij $\sigma$ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon$ de rek.}
 
 
-  \chapter{Verspanen:Algemeen}
-  Verspannen is het verwijderen van materiaal van een werkstuk.
-  Dit kan door Boren, Frezen, Draaien, Slijpen, \ldots
-  \newline
-  Je begint met een ruw werkstuk en je verwijdert materiaal tot je 
-  de gewenste vorm en afmetingen hebt.
-  \newline
+\chapter{Verspanen:Algemeen}
+\textbf{Dit hoofdstuk is de basis van verspannen en is relevant voor alle verspaningstechnieken.}
+
+  Verspannen is het verwijderen van materiaal van een werkstuk. Dit kan door boren, frezen, draaien of slijpen, \ldots Je begint met een ruw werkstuk en verwijdert materiaal totdat je de gewenste vorm en afmetingen hebt.
+
+
 
   \textbf{Voordelen}
   \begin{itemize}
@@ -312,13 +306,12 @@ Passing is een maat voor hoe goed twee oppervlakken op
   Bij verspannen kunnen verschillende tools gebruikt worden.
   Deze tools hebben verschillende snijvlakken en geometrieën
   die geschikt zijn voor verschillende materialen en bewerkingen.
-  \newline
+
   \begin{itemize}
     \item bijtel
     \item frees
     \item boor
     \item slijpschijf
-    \item 
   \end{itemize}
 
   \section{bijtelbewerkingen}
@@ -327,22 +320,19 @@ Passing is een maat voor hoe goed twee oppervlakken op
   bijtel over het werkstuk te bewegen.
   \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{image10.png}
-  \caption{Verwijdering van materiaal door een bijtel -> creert spanen}
-  \label{fig:image10.png}
+  \includegraphics[width=0.6\textwidth]{image10.png}
+  \caption{Verwijdering van materiaal door een bijtel $\to$ creëert spanen}
+  \label{fig:image10}
 \end{figure}
 
   Bij het verspannen met een bijtel ontstaan er spanen.
   Spanen zijn kleine stukjes materiaal die worden verwijderd
   van het werkstuk.
-  De grote van de spanen wordt bepaald door de snedediepte, de voeding, de spaanhoek, de wrijvingscoëfficiënt \ldots
-  \newline
-  Zometeen meer in detail hierover
+  De grootte van de spanen wordt bepaald door de snedediepte, de voeding, de spaanhoek en de wrijvingscoëfficiënt.\ldots Zometeen meer in detail hierover
 
   Spanen is een plastische vervorming van de spanen
   maar het oppervlak van het werkstuk ondergaat ook een elastische vervorming.
   Dit kan leiden tot oppervlaktefouten zoals ruwheid, hardheid, \ldots
-  \newline
 
 
 
@@ -359,31 +349,48 @@ Passing is een maat voor hoe goed twee oppervlakken op
 De afschuifhoek bepaalt de richting waarin de spaan wordt afgesneden.
 Een grotere afschuifhoek leidt tot een betere spaanvorming en minder kracht
 
-\frm{afschuifvlak A}{A = \frac{b*h}{\sin(\phi)}}{waarbij $b$ de breedte, $h$ de hoogte en $\phi$ de afschuifhoek.}
+\frm{afschuifvlak (shear zone) A}{A = \frac{b*h}{\sin(\phi)}}{waarbij $b$ de breedte, $h$ de hoogte en $\phi$ de afschuifhoek.}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{image20.png}
+  \caption{}
+  \label{fig:image20}
+\end{figure}
 
 \frm{afschuifkracht}{F = A*\tau}{waarbij $A$ het afschuifvlak is en $\tau$ de schuifspanning van het materiaal.}
 
-Grotere spaanhoek -> kleiner afschuifvlak -> minder kracht nodig om spaan te vormen.
+Grotere spaanhoek $\to$ kleiner afschuifvlak $\to$ minder kracht nodig om spaan te vormen.
+
+
+\subsection{Secundaire afschuifvlak(shear zone)}
+Spanen gaan verwijderd worden en daarbij treedt wrijving op tussen spaan en bijtel; dit is het secundaire afschuifvlak. Als je negatieve spaanhoeken $\gamma$ meet, dan is er veel meer wrijving tussen de spaan en de bijtel.
 
 \begin{itemize}
-  \item Spaanhoek -> groter -> minder kracht nodig. Tussen -10° en 30°
-  \item Wighoek -> groter -> meer kracht nodig. Zo groot mogelijk
+  \item Spaanhoek $\gamma$ $\to$ groter $\to$ minder kracht nodig. Tussen -10° en 30°
+  \item Wighoek $\beta$ $\to$ zo groot mogelijk maken.
+  \subitem Wighoeken bepalen de sterkte van de bijtel en de warmteafvoer. Grote wighoeken brengen de warmte sneller weg
+  en dus kun je grotere voedingsnelheden gebruiken.
+  \subitem Wighoek moet zo groot mogelijk zijn
     \begin{figure}[ht]
     \centering
     \includegraphics[width=0.4\textwidth]{image12.png}
     \caption{Wighoek}
     \label{fig:image12}
   \end{figure}
-  \item Vrijloophoek -> groter -> minder wrijving tussen werkstuk en bijtel. Tussen 6° en 10°
+  \item Vrijloophoek $\alpha$ $\to$ groter $\to$ minder wrijving tussen werkstuk en bijtel. Tussen 6° en 10°
+  \subitem Vrijloophoek moet er zijn zodat je bijtel niet begint te wrijven over het oppervlakte van je materiaal.
+  Zelfs rond 0° kan al zorgen voor veel wrijving.
     \begin{figure}[ht]
     \centering
     \includegraphics[width=0.4\textwidth]{image14.png}
     \caption{Vrijloophoek}
     \label{fig:image14}
   \end{figure}
-  \item Snedediepte -> groter -> meer kracht nodig
-  \item Voeding -> groter -> meer kracht nodig
+  \item Snedediepte $\to$ groter $\to$ meer kracht nodig
+  \item Voeding $\to$ groter $\to$ meer kracht nodig
 \end{itemize}
+
+Deze verschillende hoeken hebben effect op elkaar. Dit is dus een optimalisatieprobleem. Je moet afwegen wat de beste hoeken zijn voor jouw materiaal en bewerking.
 
 De spaanhoek is enorm belangrijk. Een grote spaanhoek snijdt makkelijk
 materialen zoals aluminium, koper, kunststof.
@@ -391,14 +398,21 @@ Voor hardere materialen zoals staal is een kleinere spaanhoek nodig
 omdat het materiaal anders te hard is om te snijden en je moet veel te veel kracht zetten.
 Negatieve spaanhoeken worden gebruikt voor zeer harde materialen.
 
+\subsubsection{Extra info}
+Deze bewerkingen zijn allemaal met ductiele materialen. 
+Brosse materialen gaan snel afbrokkelen en hebben dus niet veel elastische vervorming. Je kunt druk uitoefenen op brosse materialen tijdens bewerking; het materiaal gaat zich dan meer ductiel gedragen.
+ Hoe oefen je druk uit op materialen? Door een grote spaanhoek te gebruiken,
+  die veel spanning creëert.
+
+
+
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{image15.png}
   \caption{Verschillende spaanhoeken voor verschillende materialen}
-  \label{fig:image15.png}
+  \label{fig:image15}
 \end{figure}
 
-\subsection{Soorten spaanvorming}
 
 
 \section{Beweging, snelheden en voedingen, temperaturen, slijtage}
@@ -412,45 +426,305 @@ Er zijn verschillende factoren die de kracht op je werkstuk bepalen
   \item Snededikte (h)
 \end{itemize}
 
+\frm{Snijsnelheid}{v = \pi \cdot d \cdot n}{waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut.}
+
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.4\textwidth]{image16.png}
   \caption{Snededoorsnede bij bijtelbewerking}
-  \label{fig:image16.png}
+  \label{fig:image16}
 \end{figure}
 
 \frm{Snededoorsnede}{A_d = a \cdot b}{waarbij $a$ de snedediepte is en $b$ de snedebreedte.}
 
 
-\begin{figure}[ht]
+\subsection{Krachten}
+Tijdens het bewerken van materialen met een bijtel
+komen er verschillende krachten op het werkstuk en de bijtel te staan.
+
+\begin{itemize}
+  \item Snijkracht (Fc): Kracht die nodig is om de spaan te vormen.
+  \item Voedingskracht (Ff): Kracht die in de voedingsrichting werkt.
+  \item Terugdrukkracht (Fp): Kracht die nodig is om de bijtel in het werkstuk te duwen.
+  \begin{figure}[ht]
   \centering
   \includegraphics[width=0.4\textwidth]{image17.png}
   \caption{}
-  \label{fig:image17.png}
+  \label{fig:image17}
 \end{figure}
 
-\subsection{Krachten}
+\end{itemize}
+
+\textbf{Wat neem voeding op?}
+\begin{itemize}
+  \item Warmteontwikkeling
+  \item Werkstuk
+  \item Gereedschap
+  \item Spaanvorming
+  Afhankelijk van de snijsnelheid $v_c$ en de voeding $f$. is er een andere verdeling van de energie.
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{image21.png}
+    \caption{Voeding of snijsnelheid in functie van energieverdeling}
+\end{figure}
+\end{itemize}
+
+\section{Factoren bij bijtelbewerking}
+\begin{itemize}
+  \item \textbf{Opbouwlaag (build-up edge/BUE)}
+
+    Een dunne, hard geworden laag metaal die 
+        zich bij lage snijsnelheden aan het snijgereedschap 
+        opbouwt aan de punt van de bijtel. Zie video toledo.  
+        Deze stukken trekken mee aan het oppervlak van het werkstuk en nemen dus meer af dan nodig is.
+        Je krijgt dan een stappige oppervlakte.
+
+        \paragraph{Verbeteren / voorkomen:}
+        \begin{itemize}
+          \item Verhoog de snijsnelheid: bij hogere snelheden herstelt het materiaal sneller, waardoor BUE minder snel vormt.
+          \item Gebruik koeling of smering: vermindert hechten en verlaagt gereedschapstemperatuur.
+          \item Kies geschikte gereedschapsmaterialen en coatings (bv. TiN/AlTiN) en houd de snijkant scherp.
+          \item Pas voeding en snedediepte aan of gebruik onderbroken snedes (pecking) om opbouw te vermijden.
+          \item Controleer en vervang gereedschap regelmatig; verwijder opbouwranden veilig indien nodig.
+        \end{itemize}
+
+    
 
 
 
-\frm{Snijsnelheid}{v = \pi \cdot d \cdot n}{waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut.}
+  \item \textbf{Warmte}
+
+    Deze processen genereren veel warmte. Dit kan het materiaal aan de oppervlakte
+    vervormen, leiden tot veranderde hardheid en ruwheid en verhoogde slijtage.
+    Er zijn verschillende manieren om de warmte te verminderen:
+    \begin{itemize}
+      \item Koelen met koelvloeistof -> hoge nauwkeurigheid en lage ruwheid.
+      \item Smeren met olie -> hogere snijsnelheid mogelijk, hogere voeding.
+      \item Spaanafvoer optimaliseren -> vermijd ophoping van spanen die warmte vasthouden.
+      \item Werkstuk emulseren in water, koelvloeistof of olie.
+    \end{itemize}
+
+    Warmte wordt op het werkstuk op drie plaatsen gecreeerd:
+    1. Afschuifvlak (shear zone):
+    2. Secundaire afschuifvlak (tussen spaan en bijtel):
+    3. Vrijloopvlak (tussen werkstuk en bijtel): 
+
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.7\textwidth]{image18.png}
+      \caption{}
+    \end{figure}
+
+  \item \textbf{Spaanvorming}
+
+    Spanen kunnen het werkstuk beschadigen als ze niet goed worden afgevoerd.
+    Dit kan leiden tot krassen en ruwheid.
+    \begin{itemize}
+      \item Continue spaanvorming
+      \item Lamelsspaan
+      \item brokspaan
+    \end{itemize}
+
+  \item \textbf{Slijtage}
+
+    Tijdens het bewerken van materialen slijt het gereedschap.
+    Dit kan leiden tot een slechtere oppervlaktekwaliteit, hogere krachten,
+    hogere temperaturen, enz.
+    Slijtage kan veroorzaakt worden door:
+    \begin{itemize}
+      \item Vrijloopslijtage: door wrijving tussen gereedschap en werkstuk.
+      \item Thermische slijtage: door hoge temperaturen die het gereedschap verzwakken
+      \item Kerfslijtage: door herhaalde spanningsconcentraties bij het vrlijloopvlak.
+      \item Breuk: Afbreken van een stuk
+      \item Werkstukslijtage: Vlijloopvlak slijtage verhoogd met verbruik van de bijtel.
+      \item Neusslijtage: slijtage aan de punt van de bijtel door hoge krachten en temperaturen.
+    \end{itemize}
+
+    \autofig[0.5\textwidth]{image23.png}{}
+
+    Je kunt slijtage verminderen door:
+    \begin{itemize}
+      \item Gebruik van coatings op gereedschap (bv. TiN, AlTiN) om wrijving en hitte te verminderen.
+      \item Optimaliseren van snijsnelheid, voeding en snedediepte om overmatige hitte en krachten te vermijden.
+      \item Toepassen van koeling en smering om hitte af te voeren en wrijving te verminderen.
+      \item Tool met lood PB gebruiken
+        % use the \autofig helper to paste images safely; it auto-generates a sanitized label
+        \autofig[0.5\textwidth]{image22.png}{}
+        lood geeft minder slijtage omdat het smerende eigenschappen heeft -> minder wrijving.
+\end{itemize}
 
 
 
-\section{factoren bij bijtelbewerking}
-- koelvloeistof
-- Build up edge
-- Warmte 
-- Slijtage
+
+\end{itemize}
 
 \section{Snijmaterialen}
+Met welk materiaal ga je je bijtel maken?
+Je beitel moet ductiel zijn en taai zijn. Het perfecte gereedschap is goedkoop, ductiel en taai.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{image24.png}
+  \caption{Relatieve hardheid in functie van temperatuur voor verschillende snijmaterialen}
+\end{figure}
 
 
-  \chapter{Verspanen:Boren}
+\begin{enumerate}
+  \item \textbf{Snelstaal (HSS)( $v_c$ 6-12m/min).}
+  gehard staal; geschikt voor algemene toepassingen bij lage tot matige snijsnelheden.
+  Goedkoop om te maken.
+  \item \textbf{Hardmetaal (wolframcarbide, WC + Co)} 
+  hittebestendig; geschikt voor hogere snijsnelheden en hardere materialen dan HSS.
+  \item \textbf{Gecoate hardmetaal ($v_c$ 60--600 m/min)}
+    Dunne coatings (bv. TiN, AlTiN) verbeteren slijtvastheid en hittebestendigheid; de bovenste laag moet slijtage weerstaan terwijl binnenste lagen warmte afvoeren.
+    \textbf{Productie:} PVD (Physical Vapor Deposition) of CVD (Chemical Vapor Deposition).
+  
+  \item \textbf{Keramiek in metaalmatrix (hoge $v_c$)}
+    Zeer hard en hittebestendig; geschikt voor hoge snijsnelheden bij harde materialen. Keramische deeltjes zijn ingebed in een metaalmatrix (nitriden, oxiden of carbiden). Vermijd onderbroken sneden omdat keramiek bros is; houd de snijdedoorsnede klein.
+  \item \textbf{Diamant} — zeer hard; beperkt toepasbaar bij bewerking van staal omdat diamant
+   bij hoge temperaturen en in aanwezigheid van ijzer kan reageren en degraderen.
+\end{enumerate}
+Snelstaal is goedkoop, maar het wordt duurder naarmate je betere materialen gebruikt. Je moet dus bepalen hoe goed je gereedschap moet zijn voor jouw toepassing.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.6\textwidth]{image25.png}
+  \caption{Overzicht van snijmaterialen en hun toepassingsgebieden}
+\end{figure}
+Al deze snijmaterialen zijn gecreeerd door de jaren heen.
+Er wordt nog steeds onderzoek gedaan aan betere, goedkopere en duurzamere materialen. 
+
+
+\subsection{Classificatie van snijmaterialen}
+
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1\textwidth]{image26.png}
+  \caption{Classificatie van snijmaterialen}
+\end{figure}
+
+\textbf{belangrijk voor tijdens het examen. Hij kan een klasse gegeven
+zoals in de figuur en jij moet weten waar dat voor staat!}
+
+\section{Optimale snijsnelheid}
+
+Bij alle machines worden inserts gebruikt voor bijtels. 
+Als bijtels kapot gaan door slijtage, kan je die vervangen.
+Je moet dus de optimale snijsnelheid kiezen
+zodat je zo lang mogelijk met een insert kan werken
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image27.png}
+  \caption{Klemming van Inserts in een houder}
+\end{figure}
+
+Bij grotere snijsnelheden is er meer slijtage.
+
+\textbf{Je kunt de levensduur van een gereedschap voorspellen met de formule van Taylor:}
+\frm{formule van Taylor}{v_c\, T^n = C}{waarbij $C$ een constante is en $n$ een materiaalconstante, $T$ de gereedschaplevensduur in minuten en $v_c$ de snijsnelheid in m/min.}
+
+  Je kunt deze formule gebruiken om de optimale snijsnelheid te bepalen.
+
+Hier zijn $C$ en $n$ materiaalconstanten. Deze formule laat zien hoe veranderingen in snijsnelheid de levensduur beïnvloeden.
+
+Voorbeeld:
+
+Gegeven: $n = 0.125$. Verhoog de snijsnelheid met $50\%$: $v_2 = 1.5\,v_1$.
+
+Volgens Taylor: $v_1\,T_1^n = C$ en $v_2\,T_2^n = C$.
+Daarom
+\[
+\frac{v_2}{v_1} = \left(\frac{T_1}{T_2}\right)^n
+\]
+en dus
+\[
+\frac{T_2}{T_1} = \left(\frac{v_2}{v_1}\right)^{-1/n} = (1.5)^{-1/0.125} = (1.5)^{-8} \approx 0.039.
+\]
+Dus als je de snijsnelheid met $50\%$ verhoogt, wordt de gereedschaplevensduur ongeveer $0.039$ keer zo groot — oftewel ongeveer $25$ keer korter.
+
+De vraag is wat de optimale snijsnelheid is?
+    
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image28.png}
+    \caption{}
+\end{figure}
+
+
+\chapter{Verspanen: Draaien}
+  Draaien is een veelgebruikte verspaningstechniek waarbij een roterend werkstuk
+  wordt bewerkt met een bijtel om materiaal te verwijderen en de gewenste vorm te creëren.
+
+  Je kunt hier verschillende bewerkingen mee uitvoeren:
+  \begin{enumerate}
+    \item \textbf{Langsdraaien}: Het verwijderen van materiaal langs de lengteas van het werkstuk om de diameter te verkleinen.
+    \item \textbf{Vlakdraaien}: Het creëren van een vlak oppervlak aan het uiteinde van het werkstuk.
+    \item \textbf{Insteekdraaien}: Het snijden van een groef of het afkappen van een deel van het werkstuk.
+    \item \textbf{Schroefdraad Snijden}: Het creëren van schroefdraad op het oppervlak van het werkstuk.
+\end{enumerate}
+
+\textbf{Extra's:}
+
+\textbf{Kopsteken}: Het werkstuk wordt in de lengte doorgesneden.
+
+\textbf{Profiel draaien:} Een specifiek profiel van het werkstuk maken die dan gedraaid kan worden. Dit is specifiek en dus duur, maar als je veel van dit stuk moet maken kan dit het waard zijn.
+
+\textbf{In de industrie:} Vandaag de dag wordt er veel gebruikgemaakt van computergestuurde machines. CNC-draaien is een geautomatiseerd proces waarbij computergestuurde machines precies draaien volgens digitale ontwerpen. Veel conventionele machines en profieldraaien zijn vervangen door CNC-draaien.
+
+\section{Het Draaiproces}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.45\textwidth]{image29.png}
+  \includegraphics[width=0.45\textwidth]{image30.png}
+  \caption{Draaiproces}
+\end{figure}
+
+\textbf{Hellingshoek}
+Een hellingshoek is de extra hoek die gecreerd wordt door het
+dat je ronde dingen aan het verspanen bent. Je vrijloophoek $\alpha$
+wordt kleiner hierdoor. Je moet dus hiervoor compenseren door een grotere vrijloophoek te gebruiken.
+
+\section{Krachten bij Draaien}
+Zoals vermeld in het algemeen Verspannen heb je drie krachten op je werkstuk
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{image31.png}
+    \caption{Krachten bij Draaien}
+    \label{fig:image31}
+  \end{minipage}\hfill
+  \begin{minipage}{0.4\textwidth}
+    \begin{enumerate}[leftmargin=*]
+      \item De Hoofdsnijkracht (Fc)
+      \item De Voedingskracht (Ff)
+      \item De Terugdrukkracht (Fp)
+    \end{enumerate}
+
+    Afhankelijk van de voeding gaan die krachten anders verdeeld zijn.
+  \end{minipage}
+\end{figure}
+\FloatBarrier
+
+\vspace{0.5\baselineskip}
+
+De hoofdsnijkracht wordt berekent met de formule van Kienzle:
+\frm{Kienzle vergelijking Hoofdsnijkracht}{F_c = k_c \cdot A\cdot f^{(1-e)}}{waarbij $k_c$ de snijkrachtcoëfficiënt is,
+ $A$ het snijoppervlak, $f$ de voeding en e de snijkracht exponent.}
 
 
 
-  \chapter{Verspanen:Frezen}
+
+  \chapter{Verspanen: Boren}
+
+
+
+  \chapter{Verspanen: Frezen}
 
   \chapter{Verspanen:Hybridetechnieken}
 
@@ -463,7 +737,7 @@ Er zijn verschillende factoren die de kracht op je werkstuk bepalen
   \chapter{Productie werkvoorbereiding}
 
 
-  \chapter{productiegericht ontwerpen}
+  \chapter{Productiegericht ontwerpen}
 
 
 

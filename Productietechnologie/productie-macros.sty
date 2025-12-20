@@ -5,6 +5,7 @@
 
 % Load dependencies
 \RequirePackage{etoolbox}
+\RequirePackage{xstring} % string helpers for filename sanitation
 \RequirePackage{tcolorbox}
 \RequirePackage{caption}
 
@@ -19,18 +20,35 @@
 % Accumulator for formularium entries
 \makeatletter
 \newcommand{\FormulariumEntries}{}
+% Counter for individual formularium entries (used to capture chapter at definition time)
+\newcounter{FormulariumEntryCounter}
 
 % Main formula macro
 % Usage: \frm{Label}{math}{note}
 \newcommand{\frm}[3]{%
+  % assign a stable id for this formula and place a label where it is printed
+  \stepcounter{FormulariumEntryCounter}%
   \begin{tcolorbox}[colback=\frmBoxBack,colframe=\frmBoxFrame,boxrule=\frmBoxRule,arc=\frmBoxArc,boxsep=\frmBoxSep,left=2pt,right=2pt,top=2pt,bottom=2pt]
-    \textbf{#1:} $\displaystyle #2$\par\vspace{1pt}{\footnotesize #3}
+    \textbf{#1:} $\displaystyle #2$\par\vspace{1pt}{\footnotesize #3}\label{frm:\theFormulariumEntryCounter}%
   \end{tcolorbox}%
-  \g@addto@macro\FormulariumEntries{\item[\textbf{#1}] $\displaystyle #2$ --- #3\par}%
+  % Register the formularium entry with a clickable page reference to the label
+  % Build a fully-expanded addition so the label name is literal in the stored macro
+  \edef\@tmpadd{%
+    \noexpand\g@addto@macro\noexpand\FormulariumEntries{%
+      \noexpand\item[\noexpand\textbf{#1}] \noexpand$\displaystyle \unexpanded{#2}$ --- \unexpanded{#3} {\noexpand(\noexpand\hyperref[frm:\theFormulariumEntryCounter]{p.~\noexpand\pageref{frm:\theFormulariumEntryCounter}})}\noexpand\par%
+    }%
+  }%
+  \@tmpadd%
+}
+
+% Helper kept for backward-compatibility; not used for the new page-ref implementation
+\newcommand{\myformulariumentry}[4]{%
+  \item[\textbf{#1}] $\displaystyle #2$ --- #3 {\footnotesize (Hoofdstuk #4)}\par
 }
 
 % Formularium helpers: print at end of document so formulas registered later are captured
 \newcommand{\formulariumprint}{%
+  \typeout{[FORMULARIUM-CONTENT] \meaning\FormulariumEntries}
   \ifx\FormulariumEntries\@empty
     \typeout{[FORMULARIUM] Geen formules geregistreerd.}
     \section*{Formularium}
@@ -62,6 +80,29 @@
     \centering
     \includegraphics[width=#1]{#2}
     \caption{#3}\label{#4}
+  \end{figure}
+}
+
+% Auto-figure helper: sanitize filename and auto-create a label to avoid
+% accidental labels like {fig:image.png} and to prevent literal "\n" paste issues.
+% Usage: \autofig[<width>]{<path>}{<caption>} (width optional, default 0.8\linewidth)
+\newcommand{\autofig}[3][0.8\linewidth]{%
+  % Get candidate filename (handle both / and \\ separators safely)
+  \def\pmFullPath{#2}% full path or filename
+  \IfSubStr{\pmFullPath}{/}{\StrBehind{\pmFullPath}{/}[\pmFile]}{\def\pmFile{\pmFullPath}}%
+  \IfSubStr{\pmFile}{\\}{\StrBehind{\pmFile}{\\}[\pmFile]}{}%
+  % Remove extension if present, else keep whole name
+  \IfSubStr{\pmFile}{.}{\StrBefore{\pmFile}{.}[\pmBasename]}{\def\pmBasename{\pmFile}}%
+  % replace spaces and dots with underscores for safe label names
+  \StrSubstitute{\pmBasename}{ }{_}[\pmBasename]
+  \StrSubstitute{\pmBasename}{.}{_}[\pmBasename]
+  % If basename ended up empty, fall back to a unique name using the current
+  % figure counter so we never emit an empty label.
+  \IfStrEq{\pmBasename}{}{\edef\pmLabel{fig:unnamed-\the\value{figure}}}{\edef\pmLabel{fig:\pmBasename}}%
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=#1]{#2}
+    \caption{#3}\label{\pmLabel}
   \end{figure}
 }
 
