@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  21 DEC 2025 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  21 DEC 2025 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex"
-(c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+**Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+(./Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
 (c:/tools/TinyTeX/texmf-dist/tex/latex/base/report.cls
@@ -410,7 +410,17 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@expandcount=\count321
  (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen268
+\pgfarrowlength=\dimen269
+\pgfarrowwidth=\dimen270
+\pgfarrowlinewidth=\dimen271
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip55
 \f@nch@offset@elh=\skip56
@@ -447,7 +457,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \c@tcblayer=\count323
 \c@tcolorbox@number=\count324
 \l__tcobox_tmpa_box=\box71
-\l__tcobox_tmpa_dim=\dimen268
+\l__tcobox_tmpa_dim=\dimen272
 \tcb@temp=\box72
 \tcb@temp=\box73
 \tcb@temp=\box74
@@ -469,14 +479,14 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@cnth=\count326
 \Gm@cntv=\count327
 \c@Gm@tempcnt=\count328
-\Gm@bindingoffset=\dimen269
-\Gm@wd@mp=\dimen270
-\Gm@odd@mp=\dimen271
-\Gm@even@mp=\dimen272
-\Gm@layoutwidth=\dimen273
-\Gm@layoutheight=\dimen274
-\Gm@layouthoffset=\dimen275
-\Gm@layoutvoffset=\dimen276
+\Gm@bindingoffset=\dimen273
+\Gm@wd@mp=\dimen274
+\Gm@odd@mp=\dimen275
+\Gm@even@mp=\dimen276
+\Gm@layoutwidth=\dimen277
+\Gm@layoutheight=\dimen278
+\Gm@layouthoffset=\dimen279
+\Gm@layoutvoffset=\dimen280
 \Gm@dimlist=\toks44
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -511,7 +521,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen277
+\@linkdim=\dimen281
 \Hy@linkcounter=\count330
 \Hy@pagecounter=\count331
  (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -541,15 +551,15 @@ Package hyperref Info: Bookmarks ON on input line 4462.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen278
+\XeTeXLinkMargin=\dimen282
  (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count334
-\Field@Width=\dimen279
-\Fld@charsize=\dimen280
+\Field@Width=\dimen283
+\Fld@charsize=\dimen284
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -583,14 +593,14 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen281
-\captionmargin=\dimen282
-\caption@leftmargin=\dimen283
-\caption@rightmargin=\dimen284
-\caption@width=\dimen285
-\caption@indent=\dimen286
-\caption@parindent=\dimen287
-\caption@hangindent=\dimen288
+\caption@tempdima=\dimen285
+\captionmargin=\dimen286
+\caption@leftmargin=\dimen287
+\caption@rightmargin=\dimen288
+\caption@width=\dimen289
+\caption@indent=\dimen290
+\caption@parindent=\dimen291
+\caption@hangindent=\dimen292
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count341
@@ -600,7 +610,7 @@ Package caption Info: hyperref package is loaded.
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip70
-\enit@outerparindent=\dimen289
+\enit@outerparindent=\dimen293
 \enit@toks=\toks45
 \enit@inbox=\box78
 \enit@count@id=\count343
@@ -613,20 +623,20 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex:34: Emergency stop.
+./Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex:36: Emergency stop.
 <read *> 
          
-l.34 ^^M
+l.36 ^^M
         
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 27244 strings out of 469519
- 513511 string characters out of 5470279
- 933578 words of memory out of 5000000
- 55549 multiletter control sequences out of 15000+600000
+ 27665 strings out of 469519
+ 524507 string characters out of 5470279
+ 946530 words of memory out of 5000000
+ 55960 multiletter control sequences out of 15000+600000
  628783 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,0n,104p,544b,322s stack positions out of 10000i,1000n,20000p,200000b,200000s
-c:/Users/ruben/OneDrive/Documents/Latex document/School-latex-documents/Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex:34:  ==> Fatal error occurred, no output PDF file produced!
+ 84i,0n,104p,494b,322s stack positions out of 10000i,1000n,20000p,200000b,200000s
+./Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex:36:  ==> Fatal error occurred, no output PDF file produced!

@@ -19,7 +19,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 % TikZ libraries used by figures (calc for coordinate arithmetic, arrows.meta for arrow tips, positioning for nodes)
-\usetikzlibrary{calc,arrows.meta,positioning}
+\usetikzlibrary{calc,arrows.meta,positioning,patterns,angles,quotes,babel}
 \usepackage{fancyhdr}
 \usepackage{tcolorbox}
 \usepackage{float}
@@ -328,7 +328,7 @@ Passing is een maat voor hoe goed twee oppervlakken op
   \frm{Hooke's law}{\sigma = E \cdot \varepsilon}{waarbij $\sigma$ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon$ de rek.}
 
 
-\chapter{Verspanen:Algemeen}
+\chapter{Verspanen: Algemeen}
 \label{chap:Algemeen verspanen}
 \textbf{Dit hoofdstuk is de basis van verspannen en is relevant voor alle verspaningstechnieken.}
 
@@ -610,7 +610,7 @@ komen er verschillende krachten op het werkstuk en de bijtel te staan.
 
 \section{Snijmaterialen}
 Met welk materiaal ga je je bijtel maken?
-Je beitel moet ductiel zijn en taai zijn. Het perfecte gereedschap is goedkoop, ductiel en taai.
+Je beitel moet ductiel zijn en taai. Het perfecte gereedschap is goedkoop, ductiel en taai.
 
 \begin{figure}
   \centering
@@ -1046,36 +1046,59 @@ dezelfde toerental kunt behouden.
 
   \begin{figure}[ht]
     \centering
-    \begin{tikzpicture}[scale=1.2,>=stealth,inner sep=0pt]
-      \def\R{2.0}
-      % Styles
-      \tikzset{shaft/.style={thick},
-               shear/.style={->,>=stealth,red!75,very thick},
-               tangent/.style={->,>=stealth,orange!80!black,thick},
-               rho/.style={->,gray,thick,>=stealth}}
+\begin{tikzpicture}[
+    scale=1.5,
+    >=stealth,
+    % Styles
+    shaft/.style={line width=1.5pt, draw=black!80},
+    stress/.style={->, red!80!black, thick},
+    profileLine/.style={dashed, gray, thin},
+    dim/.style={<->, gray, thin}
+]
 
-      % shaft cross-section
-      \draw[shaft] (0,0) circle (\R);
-      \fill (0,0) circle (0.6pt) node[below left] {O};
+    % --- 1. DE AS (DOORSNEDE) ---
+    \def\R{1.8}
+    \draw[shaft, fill=gray!5] (0,0) circle (\R);
+    \fill (0,0) circle (1.5pt) node[below left] {O};
 
-      % sample radii with shear (tangent) arrows and rho arrows
-      \foreach \r/\ang in {0.6/120,1.2/30,1.8/-25}{%
-        % radius line
-        \draw[black!60] (0,0) -- (\ang:\r);
-        % small rho arrow (radial measure)
-        \draw[rho] (0,0) -- (\ang:{\r+0.06}) node[pos=0.6,above,black]{\small $\rho$};
-        % shear vector (tangent) and label
-        \draw[shear] (\ang:\r) -- ++({\ang+90}:{0.26*\r}) node[pos=1,right]{\small $\tau(\rho)$};
-        % extra thin tangent arrow for style
-        \draw[tangent] (\ang:\r) -- ++({\ang+90}:{0.28*\r});
-      }
+    % --- 2. DE LINEAIRE SPANNINGSVERDELING (PROFIEL) ---
+    % We tekenen de verdeling langs een horizontale as voor maximale duidelijkheid
+    \draw[dashed, black!40] (0,0) -- (\R,0) node[midway, below] {$\rho$};
+    
+    % De "envelop" van de spanning (de schuine lijn die de lineaire groei toont)
+    \draw[profileLine] (0,0) -- (\R, 1.0);
+    
+    % Reeks pijlen die de lineaire groei van tau tonen
+    \foreach \x in {0.3, 0.6, 0.9, 1.2, 1.5, 1.8} {
+        % Bereken de lengte van de pijl (lineair: lengte = constante * x)
+        \pgfmathsetmacro{\len}{\x * (1.0 / \R)}
+        \draw[stress] (\x, 0) -- (\x, \len);
+    }
+    
+    % Label voor de maximale spanning aan de rand
+    \node[anchor=south] at (\R, 1.0) {$\tau_{\text{max}}$};
 
-      % Formula box outside the cross-section (right side)
-      \node[anchor=west,align=left] at (2.2,0.4) {\small $\displaystyle \tau(\rho)=\dfrac{M_c\,\rho}{I_p}$\\[2pt] \tiny $I_p=\dfrac{\pi d^4}{32}$};
+    % --- 3. REPRESENTATIEVE PUNTEN (WILLEKEURIGE RADIUS) ---
+    % Om aan te tonen dat het overal geldt, voegen we één willekeurige straal toe
+    \def\ang{135}
+    \def\rhoVal{1.3}
+    \draw[gray, thin] (0,0) -- (\ang:\rhoVal) node[midway, below left, black] {$\rho$};
+    \draw[stress, blue!70!black] (\ang:\rhoVal) -- ++(\ang+90:0.6) node[pos=1, left] {$\tau(\rho)$};
 
-      % Small note below (placed explicitly below the circle)
-      \node at (0,-3) {\small $\tau(\rho)\propto\rho$ (lineair bij vaste $M_c,I_p$)};
-    \end{tikzpicture}
+    % --- 4. FORMULES IN EEN NET KADER ---
+    \node[draw=black!20, fill=white, rounded corners, anchor=west, align=left] at (2.2, 0.5) {
+        $\tau(\rho) = \dfrac{M_c \cdot \rho}{I_p}$ \\[8pt]
+        $\tau_{\text{max}} = \dfrac{M_c \cdot R}{I_p}$ \\[8pt]
+        \small $I_p = \dfrac{\pi d^4}{32}$ \\[4pt]
+        \small $d = 2R$
+    };
+
+    % --- 5. ONDERSCHRIFT ---
+    \node[below=3cm, align=center, font=\itshape] at (1,0) {
+        Spanningsverloop $\tau$ is lineair afhankelijk \\ van de afstand $\rho$ tot het centrum.
+    };
+
+\end{tikzpicture}
     \caption{Torsiediagram: schuifspanning $\tau$ neemt lineair toe met de straal $\rho$; relevante formule staat buiten de doorsnede.}
     \label{fig:torsie_cirkel}
   \end{figure}
@@ -1137,62 +1160,107 @@ De combinatie van deze formules:
 
   \begin{figure}[H]
     \centering
-    \begin{tikzpicture}[scale=1.15,>=stealth,inner sep=0pt,every node/.style={font=\small}]
-      % Styles
-      \tikzset{frame/.style={line width=2pt,rounded corners=1pt},
-               support/.style={line width=0.8pt,draw=black,fill=black!10},
-               spindle/.style={line width=1.2pt},
-               load/.style={->,ultra thick,red,>=stealth},
-               reaction/.style={->,thick,black},
-               moment/.style={<->,very thick,blue,>=stealth},
-               dim/.style={<->,thick,gray, >=stealth},
-               rotarc/.style={->,thick,orange!80!black,>=stealth}}
+    \begin{tikzpicture}[
+        scale=1.3,
+        >=stealth,
+        every node/.style={font=\small},
+        % Stijlen
+        machine/.style={fill=gray!20, draw=black!80, line width=1.5pt, rounded corners=3mm},
+        phantom/.style={draw=gray!40, line width=1.5pt, dashed, rounded corners=3mm},
+        force/.style={->, ultra thick, red},
+        dim/.style={<->, thin, gray!80, >=latex},
+        ground/.style={fill, pattern=north east lines, draw=none}
+    ]
 
-      % Coordinates (parameterised for easier tuning)
-      \coordinate (A) at (-1.2,-1.0);
-      \coordinate (B) at (-1.2,1.25);
-      \coordinate (C) at (0.95,1.25);
-      \coordinate (D) at (0.95,0.25);
-      \coordinate (E) at (-0.3,0.25);
+    % --- Parameters ---
+    \def\bedL{2.0}      % Lengte onderbed
+    \def\colW{0.8}      % Breedte kolom
+    \def\colH{4.0}      % Hoogte kolom
+    \def\armL{2.5}      % Lengte bovenarm (incl kolombreedte)
+    \def\armThick{0.8}  % Dikte arm/bed
+    \def\rotAngle{4}    % Rotatiehoek voor deformatie
 
-      % Frame (neutral position)
-      \draw[frame] (A) -- (B) -- (C) -- (D) -- (E);
+    % --- Coördinaten ---
+    \coordinate (BaseBL) at (0,0); % Linksonder
+    
+    % --- 1. GHOST (Oorspronkelijke staat) ---
+    % We tekenen de outline van de C-vorm in dashed grijs
+    % Vorm: L-shape onder + kolom + arm boven
+    \draw[phantom] 
+        (0,0) -- (\bedL, 0) -- (\bedL, \armThick) -- (\colW, \armThick) 
+        -- (\colW, \colH-\armThick) -- (\armL, \colH-\armThick) 
+        -- (\armL, \colH) -- (0, \colH) -- cycle;
+    
+    % Spindel ghost
+    \coordinate (SpindleTopGhost) at (\armL - 0.4, \colH-\armThick);
+    \draw[phantom, fill=none] (SpindleTopGhost) rectangle ++(0.3, -0.8);
 
-      % Base support (stylised)
-      \draw[support] ($(A)+(0,-0.15)$) rectangle ($(A)+(0.4,-0.05)$);
+    % --- 2. DEFORMATIE (Vervormde staat) ---
+    % Rotatiepunt: ergens in de "oksel" van de C
+    \coordinate (Pivot) at (\colW/2, \colH/2); 
 
-      % Workpiece / pivot (drawn as slightly larger disc)
-      \coordinate (wp) at (1.25,1.25);
-      \filldraw[fill=black!12,draw=black] (wp) circle (0.15cm) node[below right,xshift=1pt]{\small werkstuk (pivot)};
+    \begin{scope}[rotate around={\rotAngle:(Pivot)}]
+        % De "open gebogen" machine
+        % We simuleren de buiging door het hele bovenstuk iets te kantelen t.o.v. onderstuk? 
+        % Nee, bij C-frame buigt de 'rug' (kolom) naar achteren en de bek gaat open.
+        % Eenvoudige benadering: roteer de hele C-vorm om een punt laag in de rug.
+        
+        \draw[machine] 
+            (0,0) -- (\bedL, 0) -- (\bedL, \armThick) -- (\colW, \armThick) 
+            -- (\colW, \colH-\armThick) -- (\armL, \colH-\armThick) 
+            -- (\armL, \colH) -- (0, \colH) -- cycle;
 
-      % Rotated (deformed) frame: small rotation around 'wp' to show the machine tilting
-      \draw[frame,dashed,opacity=0.7,rotate around={-8:(wp)}] (A) -- (B) -- (C) -- (D) -- (E);
+        % Spindel (Vast aan arm)
+        \coordinate (SpindleTop) at (\armL - 0.4, \colH-\armThick);
+        \draw[fill=white, draw=black, line width=1pt] (SpindleTop) rectangle ++(0.3, -0.8) coordinate (SpindleTip);
+        \node[below, xshift=2mm] at (SpindleTip) {}; % dummy
+        
+        % Annotatie op frame
+        \node at (\colW/2, \colH/2) [rotate=\rotAngle, text=gray] {\textbf{C-Frame}};
+    \end{scope}
 
-      % Small rotation arc and label theta (moved slightly to avoid overlap)
-      \draw[rotarc] ($(wp)+(0.7,0.25)$) arc (22:-120:0.6) node[midway,left,yshift=2pt]{\small $\theta$};
-      \node[orange!70!black,right=8pt] at ($(wp)+(1.05,0.25)$){\small lichte rotatie};
+    % --- 3. FUNDERING ---
+    \draw[ground] (-0.5,-0.3) rectangle (\bedL+0.5, 0);
+    \draw[thick] (-0.5,0) -- (\bedL+0.5, 0);
+    \node[below, text=gray] at (\bedL/2, -0.3) {Fundering};
 
-      % Spindle / tool (fixed to the neutral frame)
-      \draw[spindle] (0.12,0.25) -- ++(0,0.8) node[above,black]{\footnotesize boor};
+    % --- 4. KRACHTEN & MOMENT ---
+    % F_f duwt de arm en bed uit elkaar. Hier tekenen we F_f op de spindel (werkstuk duwt terug)
+    % De positie is nu geroteerd.
+    % We nemen het midden van de onderkant van de spindel rect.
+    \coordinate (ForcePos) at ($ (SpindleTop) + (0.15, -0.8) $); 
+    \draw[force] ($(ForcePos) + (0, -0.8)$) -- (ForcePos) node[midway, right] {$F_f$};
 
-      % Feed force applied to the workpiece (axial, pointing downward towards the support)
-      \draw[load] (wp) -- ++(0,-0.9) node[below right=2pt]{$F_f$};
+    % Moment M: Buigend moment in de rug
+    % Pijl die "open buigen" aangeeft
+    \draw[->, ultra thick, orange!90!black] (-0.5, \colH/2 - 1) to[bend left=45] node[left] {$M$} (-0.5, \colH/2 + 1);
 
-      % Reaction arrow at the base (upward, offset to avoid overlap)
-      \draw[reaction] ($(A)+(0,0.2)$) -- ++(0,0.7) node[left=2pt,pos=1,black]{\footnotesize reactiekracht};
+    % --- 5. AFMETINGEN & LABELS ---
+    % Hoek theta (overdreven weergegeven)
+    % Vergelijking verticale lijn
+    \draw[dashed, gray] (0, \colH) -- (0, \colH + 1.0);
+    \draw[->, thick] (0, \colH + 0.8) arc (90:{90+\rotAngle}:0.8) node[midway, above] {$\theta$};
 
-      % Bending moment arc on the left with arrows both ends (shows moment due to Ff about pivot)
-      \draw[moment] ($(A)+(-1.5,0.25)$) arc (-150:150:0.7) node[midway,left,xshift=-4pt]{\small $M$};
+    % Arm lengte l (keel diepte)
+    % Vanaf binnenkant kolom tot spindel as
+    \draw[dim] (\colW, \colH + 0.3) -- (\armL - 0.25, \colH + 0.3) node[midway, fill=white] {$l$};
+    \draw[gray, thin] (\colW, \colH) -- (\colW, \colH + 0.5);
+    \draw[gray, thin] (\armL - 0.25, \colH) -- (\armL - 0.25, \colH + 0.5);
 
-      % Dimension (lever arm from left vertical to pivot)
-      \draw[dim] ($(wp)+(0,-0.02)$) -- ($(A)+(0.02,0.12)$) node[midway,right,black]{\small $l$};
+    % --- 6. TEKSTVAK ---
+    \node[align=left, anchor=north west, fill=white, inner sep=5pt, rounded corners] at (3.0, 3.5) {
+        \textbf{C-Frame Buiging}\\
+        Door $F_f$ buigt de kolom.\\
+        De bek "opent" zich.\\
+        \small $M = F_f \cdot l$
+    };
 
-      % Annotations (moved further down to avoid collision with text)
-      \node[below] at ($(C)+(0.6,-1.1)$) {\small ``C‑frame''};
     \end{tikzpicture}
-    \caption{C‑vormig frame: axiale voedingskracht $F_f$ op het werkstuk (pivot) veroorzaakt een lichte kanteling (\(\theta\)) rond het werkstuk; de gestippelde lijn toont de gedraaide positie van het frame.}
+    \caption{C\nobreak\-vormig frame: axiale voedingskracht $F_f$ op het werkstuk (pivot) veroorzaakt een lichte kanteling (\(\theta\)) rond het werkstuk; de gestippelde lijn toont de gedraaide positie van het frame.}
     \label{fig:Cframe_moment}
   \end{figure}
+
+
   \FloatBarrier
 
 
@@ -1219,14 +1287,57 @@ Hier zijn nog relevante type boren en hun toepassingen:
 \end{itemize}
 \begin{figure}[ht]
   \centering
-  \begin{tikzpicture}[scale=0.9]
-    % Simple drill icon
-    \draw[fill=gray!10] (-0.8,0) rectangle (0.8,-0.4);
-    \draw[thick] (0,0.6) -- (0,0) -- (0.3,-0.3);
-    \draw[thick] (0,0.6) -- (0.6,0.6) node[right]{\small boor};
-    \node at (0,-0.6){\small Boren: pilot, peck, koelmiddel en spaanafvoer belangrijk};
+  \begin{tikzpicture}[scale=1.2, >=stealth]
+    % Werkstuk (doorsnede)
+    \fill[gray!20] (-1.5, 0) rectangle (1.5, -2);
+    \draw[thick] (-1.5, 0) -- (-0.6, 0);
+    \draw[thick] (0.6, 0) -- (1.5, 0);
+    \draw[thick] (-1.5, -2) -- (1.5, -2);
+    \draw[thick] (-1.5, 0) -- (-1.5, -2);
+    \draw[thick] (1.5, 0) -- (1.5, -2);
+    
+    % Gat
+    \fill[white] (-0.6, 0) rectangle (0.6, -1.2);
+    \draw[thick] (-0.6, 0) -- (-0.6, -1.2);
+    \draw[thick] (0.6, 0) -- (0.6, -1.2);
+    % Conische bodem van het gat
+    \draw[thick] (-0.6, -1.2) -- (0, -1.5) -- (0.6, -1.2);
+    
+    % Boor (Twist Drill)
+    \begin{scope}[yshift=-0.2cm]
+        \def\drillW{1.2}
+        \def\drillH{2.5}
+        % Schacht
+        \fill[gray!40] (-\drillW/2, 0) rectangle (\drillW/2, \drillH);
+        \draw[thick] (-\drillW/2, 0) -- (-\drillW/2, \drillH);
+        \draw[thick] (\drillW/2, 0) -- (\drillW/2, \drillH);
+        \draw[thick] (-\drillW/2, \drillH) -- (\drillW/2, \drillH); % Top
+        
+        % Punt (118 graden punt)
+        \draw[thick] (-\drillW/2, 0) -- (0, -0.35) -- (\drillW/2, 0);
+        \draw[thin] (0, -0.35) -- (0, \drillH); % Aslijn
+        
+        % Spiralen (schematisch)
+        \draw[thin] (-\drillW/2, 0.5) .. controls (-0.2, 0.2) .. (\drillW/2, 0.8);
+        \draw[thin] (-\drillW/2, 1.3) .. controls (-0.2, 1.0) .. (\drillW/2, 1.6);
+        \draw[thin] (-\drillW/2, 2.1) .. controls (-0.2, 1.8) .. (\drillW/2, 2.4);
+    \end{scope}
+    
+    % Spanen (Chips)
+    \draw[thick, red] (-0.6, 0.1) .. controls (-0.8, 0.3) and (-0.5, 0.5) .. (-0.7, 0.7);
+    \draw[thick, red] (0.6, 0.1) .. controls (0.8, 0.3) and (0.5, 0.5) .. (0.7, 0.7);
+    
+    % Annotaties
+    \draw[->] (1.8, 1.5) node[right] {Boor} -- (0.6, 1.5);
+    \draw[->] (-1.8, -1.0) node[left] {Werkstuk} -- (-1.0, -1.0);
+    \draw[->, red] (0.8, 0.5) node[right] {Spanen} -- (0.7, 0.6);
+    
+    % Beweging
+    \draw[->, ultra thick, blue] (0, 2.8) -- (0, 2.0) node[midway, right] {$v_f$};
+    \draw[->, thick, blue] (0, 3.0) arc (90:30:0.3) node[right] {$n$};
+
   \end{tikzpicture}
-  \caption{Schematische weergave van een boor in een werkstuk}
+  \caption{Schematische weergave van een boorprocess: een spiraalboor dringt het materiaal binnen, vormt een gat en voert spanen af.}
 \end{figure}
 \paragraph{Type boren}
 \begin{itemize}
@@ -1269,13 +1380,53 @@ Ruimen is een afwerkingsbewerking om een bestaand gat op nauwkeurige maat en met
 Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktekwaliteit.
 \begin{figure}[ht]
   \centering
-  \begin{tikzpicture}[scale=0.9]
-    % reamer sketch
-    \draw[thick] (-0.8,0) rectangle (0.8,-0.6);
-    \draw[thick] (0,0.7) -- (0,0.1) -- (0.25,-0.2);
-    \node at (0,-0.8){\small Ruimen: lichte passing en scherpe gereedschapstips voor nauwkeurigheid};
+  \begin{tikzpicture}[scale=1.2, >=stealth]
+    % Werkstuk
+    \fill[gray!20] (-1.5, 0) rectangle (1.5, -2.5);
+    \draw[thick] (-1.5, 0) -- (1.5, 0);
+    \draw[thick] (-1.5, -2.5) -- (1.5, -2.5);
+    \draw[thick] (-1.5, 0) -- (-1.5, -2.5);
+    \draw[thick] (1.5, 0) -- (1.5, -2.5);
+
+    % Voorgeboord gat (iets kleiner dan de ruimer)
+    \def\holeW{1.0}
+    \fill[white] (-\holeW/2, 0) rectangle (\holeW/2, -2.5);
+    \draw[dashed] (-\holeW/2, 0) -- (-\holeW/2, -2.5);
+    \draw[dashed] (\holeW/2, 0) -- (\holeW/2, -2.5);
+
+    % Ruimer (Reamer)
+    \def\reamerW{1.2} % Iets breder dan het gat -> neemt materiaal af
+    \def\reamerH{2.0}
+    \begin{scope}[yshift=-1.0cm]
+        \fill[gray!50] (-\reamerW/2, 0) rectangle (\reamerW/2, \reamerH);
+        \draw[thick] (-\reamerW/2, 0) -- (-\reamerW/2, \reamerH);
+        \draw[thick] (\reamerW/2, 0) -- (\reamerW/2, \reamerH);
+        \draw[thick] (-\reamerW/2, \reamerH) -- (\reamerW/2, \reamerH);
+        
+        % Rechte tanden (Straight flutes)
+        \draw[thin] (-0.4, 0) -- (-0.4, \reamerH);
+        \draw[thin] (0, 0) -- (0, \reamerH);
+        \draw[thin] (0.4, 0) -- (0.4, \reamerH);
+        
+        % Afgeschuinde onderkant (Chamfer)
+        \draw[thick] (-\reamerW/2, 0) -- (-\reamerW/2 + 0.2, -0.2) -- (\reamerW/2 - 0.2, -0.2) -- (\reamerW/2, 0);
+    \end{scope}
+    
+    % Materiaalafname indicatie
+    \draw[red, thick] (-\reamerW/2, -1.0) -- (-\reamerW/2, 0);
+    \draw[red, thick] (\reamerW/2, -1.0) -- (\reamerW/2, 0);
+    \node[red, right] at (\reamerW/2, -0.5) {\small dunne laag};
+
+    % Beweging
+    \draw[->, ultra thick, blue] (0, 1.5) -- (0, 0.5) node[midway, right] {$v_f$};
+    \draw[->, thick, blue] (0, 1.8) arc (150:30:0.3) node[right] {$n$};
+
+    % Annotaties
+    \node[right] at (1.6, 0.5) {Ruimer};
+    \node[left] at (-1.6, -1.5) {Voorgeboord gat};
+
   \end{tikzpicture}
-  \caption{Schematische weergave van een reamer in een werkstuk}
+  \caption{Schematische weergave van ruimen: een ruimer verwijdert een dunne laag materiaal uit een voorgeboord gat voor hoge precisie en gladheid.}
 \end{figure}
 
 
@@ -1286,17 +1437,6 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
   Het proces omvat het bewegen van de frees langs het oppervlak van het werkstuk om de gewenste vorm of maat te bereiken.
 
   \textbf{- hoofdbeweging}
-  \newline
-  Je gereedschap de \textbf{frees} gaat roteren en het werkstuk kan ook roteren.
-  \newline
-  \textbf{- voedingsbeweging}
-  \newline
-  Het gereedschap of het werkstuk gaat bewegen om materiaal te verwijderen.
-  \newline
-
-  \section{Inleiding Frezen}
-
-    \textbf{- hoofdbeweging}
   \newline
   Je gereedschap de \textbf{frees} gaat roteren en het werkstuk kan ook roteren.
   \newline
@@ -1487,25 +1627,212 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
   \newline
   \textbf{Voedingsbeweging}: Dit is de beweging waarmee het gereedschap of het 
   werkstuk langzaam wordt verplaatst om het slijpproces voort te zetten.
-
+  \newline
+  \textbf{Kasterpatronen}: Bij honen worden vaak specifieke kasterpatronen gebruikt om een gelijkmatige slijpoppervlakte te verkrijgen.
   Honen helpt met het oppervalktekwaliteit tot en met (IT3)
 
   \subsection{Lange-slag Honen}
 
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.8\textwidth]{image56.png}
+      \caption{Lange-slag honen}
+      \label{fig:lange-slag-honen.png}
+  \end{figure}
+
+  Een hoonsteen wordt gebruikt om het oppervlakte van een cilinder te verbeteren.
+  De hoonsteen heeft een lange slag en beweegt heen en weer in de lengte van de cilinder.
+  Dit zorgt voor een betere oppervlaktekwaliteit en nauwkeurigheid van de cilinder.
+
+  Bij het honen ga je de toppen van de oppervalkteruwheid verwijderen.
+  Dit is anders bij het slijpen omdat die ook een licht oneven oppervlakte kan achterlaten.
+  \newline
+
+  % --- Illustratie: ruw oppervlak en resultaat na honen (scherpe toppen, geclipt) ---
+  \begin{figure}[ht]
+  \centering
+  \makebox[\textwidth][c]{%
+  \begin{tikzpicture}[x=0.85cm, y=2.2cm, >=Stealth, every node/.style={font=\small}]
+    % Parameters
+    \def\L{5.8} % totale lengte
+    \def\cut{0.45} % hoogte van de snijlijn (y-waarde)
+
+    % --- (a) Voorbehandeld oppervlak ---
+    \begin{scope}[shift={(0,0)}]
+        % Basislijn
+        \draw[black!40, thick] (0,0) -- (\L,0);
+        
+        % De toppen tekenen en de oranje delen inkleuren
+        % Formaat: x-positie / hoogte
+        \foreach \x/\h in {0.4/0.95, 1.2/1.05, 2.0/0.9, 2.8/1.1, 3.6/0.8, 4.4/1.0, 5.2/0.88} {
+            % Teken de driehoek (contour)
+            \draw[very thick, black] (\x-0.4, 0) -- (\x, \h) -- (\x+0.4, 0);
+            
+            % Bereken de snijpunten voor het oranje driehoekje (lineaire interpolatie)
+            % x_breedte_op_snijlijn = 0.4 * (1 - cut/h)
+            \pgfmathsetmacro{\xoffset}{0.4 * (1 - \cut/\h)}
+            \fill[orange, opacity=0.55] (\x-\xoffset, \cut) -- (\x, \h) -- (\x+\xoffset, \cut) -- cycle;
+        }
+        
+        % Snijlijn
+        \draw[very thick, red] (-0.2, \cut) -- (\L+0.2, \cut) node[right, black]{\textbf{snijlijn}};
+        
+        % Label
+        \node[below] at (\L/2, -0.2) {(a) Voorbehandeld oppervlak};
+    \end{scope}
+
+    % --- Hoonprocess pijl ---
+    \draw[->, very thick] (6.0, 1.0) -- (6.8, 1.0);
+    \node[above, font=\bfseries] at (6.4, 1.05) {HOONPROCESS};
+
+    % --- (b) Gehoond oppervlak (Trapezoïdes) ---
+    \begin{scope}[shift={(7.5,0)}]
+        \draw[black!40, thick] (0,0) -- (\L,0);
+        
+        \foreach \x/\h in {0.4/0.95, 1.2/1.05, 2.0/0.9, 2.8/1.1, 3.6/0.8, 4.4/1.0, 5.2/0.88} {
+            % Bereken de breedte van de platte top op de snijlijn
+            \pgfmathsetmacro{\xoffset}{0.4 * (1 - \cut/\h)}
+            
+            % Teken de trapezoïde (het restant onder de snijlijn)
+            \draw[very thick, black, fill=gray!15] 
+                (\x-0.4, 0) -- (\x-\xoffset, \cut) -- (\x+\xoffset, \cut) -- (\x+0.4, 0) -- cycle;
+        }
+        
+        % Snijlijn
+        \draw[very thick, red] (-0.2, \cut) -- (\L+0.2, \cut);
+        
+        % Label
+        \node[below] at (\L/2, -0.2) {(b) Gehoond oppervlak};
+    \end{scope}
+
+    % --- Legende ---
+    \begin{scope}[shift={(3.5, -1.0)}]
+        \draw[very thick, red] (0, 0.4) -- (0.8, 0.4) node[right=5pt, black] {Snijlijn};
+        \fill[orange, opacity=0.55] (0, 0) rectangle (0.8, 0.25);
+        \node[right=5pt] at (0.8, 0.125) {Te verwijderen toppen (gemarkeerd)};
+    \end{scope}
+
+\end{tikzpicture}
+  }
+
+  \caption{(a) Voorbehandeld, ruw oppervlak met scherpe toppen; (b) resultaat na honen waarbij de bovenste delen van de toppen zijn verwijderd.}
+  \label{fig:hoonprocess_schematic}
+\end{figure}
+
   \subsection{Korte-slag Honen}
+Het enige verschil met lange-slag honen is de kinematica van het systeem.
+Je werkstuk is opgespannen tussen twee tegenpunten die roteren. 
+Deze tegenpunten worden daan aangedreven met de hoonsteen op het oppervlakte.
+Je gaat hier de hoonsteen op een cilindrisch oppervlakte toepassen zoals bij het nabewerkgen van zuigerstangen.
+Je gaat sinusoïdale bewegingen maken met een korte slag.
+De oppervlakte kwaliteit is enorm fijn. 
+\newline 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image57.png}
+    \caption{Kortslag honen van een werkstuk}
+    \label{fig:kortslag-honen.png}
+\end{figure}
 
   \section{Leppen}
+Bij het leppen heb je enorm fijne korrels die in een paste, olie of gelei zitten.
+De werstukken zitten in een cilinder of vat waarbij de stukken bewogen worden.
 
-  \section{Hoge snelheid verspanen}
+\subsection{Met vloeistof}
+Het lepvloeistof beweegt tussen de stukken die het oppervlakte enorm fijn maken.
+Tot en met \textbf{Ra = 0,1 µm, IT1} is mogelijk.
 
-  \section {Laserondersteuning bij verspanen}
+\textbf{Toepassingen}:
+\newline
+Bepaalde stukken hebben dit nodig zoals kogellagers of klepzittingen
 
-  \section{Draadvonken en slijpen}
+\textit{Kijk zeker de video's op toledo om dit process beter ge begrijpen}
 
-  \section{ECM (Electro Chemical Machining) en slijpen}
+\subsection{Finisheren met pasta}
+Je drukt het werkstuk samen en pompt dan de gelei in het werkstuk om het oppervlakte te verbeteren.
+
+\section{Geadvaseerde verspaningstechnieken en hybride technieken}
+
+\subsection{hoge snelheid verspanen}
+Bij hoge snelheid verspanen ga je enorm hoge snijsnelheden gebruiken in vergelijking met 
+conventionaleel verspanen.
+\newline
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image58.png}
+    \caption{Hoge snelheid verspanen in vergelijking met conventioneel verspanen}
+    \label{fig:hoge_snelheid_verspanen.png}
+\end{figure}
+
+Deze spindles gaan tot 20,000 tot 30,000 RPM afhankelijk van het materiaal dat
+je verspaand.
+
+\subsection*{Extra}
+Herinner je bij algemeen verspanen~\ref{chap:Algemeen verspanen} dat bij heel hoge 
+snijsnelheden je een \textbf{Softening effect} had die het makkelijker maakte om te verspanen.
+Bij hoge snelheid verspanen zie je dit effect ook terugkomen. Alle warmte die ook gegenerateerd wordt gaan ook in 
+de spanen en gaan dus niet in het werkstuk defunderen en het oppervlakte aantasten.
+\newline 
+\textbf{Toepassignen}
+\newline 
+Je wilt enorm snel verspanningen doen. 
+Je moet dus je voeding $f$ en snijsnelheid $v_c$ enorm hoog zetten.
+Deze techniek wordt vooral gebruikt bij aluminium en lichte metalen.
+\newline
+De tools zijn van hardmetaal gemaakt die ductiel genoeg zijn om de krachten te weerstaan.
 
 
+\subsection{Hardverspanen}
+Hardverspanen is het verspanen van harde materialen zoals gehard staal, keramiek en andere harde legeringen.
+De ontwikkeling van hoge snelheidsfrezen en veel stevigere machines maakte dit mogelijk.
+\newline
+Je moet een negatieve spaanhoek gebruiken die meer kracht vraagt omdat de 
+afschuifhoek kleiner wordt. Als compensatie gebruik je kleine snededieptes om de krachten te beperken.
+\newline
+Nieuwe harde bijtels en stevige machines die de hevige drukken aankan zorgt ervoor dat
+hardverspannen niet eeuwig duurt.
 
+\section{Hybrideprocessen}
+hybride processen is een ruim domein waarbij je verschillende technieken toepast om 
+werkstukken te verspannen. 
+Je gaat dus twee technieken toepassen om bijvoorbeeld dingen makkelijker te verspannen
+of om betere oppervlaktekwaliteit te krijgen.
+\newline 
+Dit zijn vooral experimentele technieken die nog in ontwikkeling zijn.
+
+  \subsection {Laserondersteuning bij verspanen}
+  Je warmt het materiaal op met een laser. Het oppervlakte wordt warmer
+  en dus makkelijker om te verspanen. 
+  \newline
+  Het is energie efficient omdat het warmere materiaal minder kracht kost om te verspanen.
+
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.8\textwidth]{image59.png}
+      \caption{Laserondersteuning bij verspanen}
+      \label{fig:laserondersteuning-bij-verspanen.png}
+  \end{figure}
+
+  Het bepaal materiaal dat je moet gebruiken moet licht absorberen. Je wilt geen of zo weinig mogelijk reflectie of transmissie.
+  \newline
+  frm{Wat er gebeurt met licht die schijnt op een materiaal}{1 = $A+R+T$}{waarbij $A$ = absorptie, $R$ = reflectie en $T$ = transmissie}
+
+  \subsection{Draadvonken en slijpen}
+  \textit{(je ziet meer over draadvonken in een ander hoofdstuk)}
+  Het vonkprocess is een termische process. Je gaat eerst een stukje thermisch wegnemen. Bij normaal draadvonken
+  blijft een stuk gesmoleten materiaal achter op het oppervlakte maar door het slijpen ga je dit stuk wegnemen.
+  
+  \subsection{ECM (Electro Chemical Machining) en slijpen}
+  Bij ECM ga je materiaal wegnemen door elektrochemische reacties.
+  Je hebt een anode en kathode die in een elektrolyt zitten.
+  Dit chemisch proces laat een ruw oppervlakte achter en oxidelagen.
+  Door het slijpen ga je dit ruw oppervlakte verbeteren en die laag verwijderen.
+
+  \subsection{Combinatie van ECM en frezen}
+  Je gaat frezen combineren met ECM.
+  De chemische bewerkingen laten een oxidelaag achter die je met frezen gaat verwijderen.
+
+  \textit{(Deze technieken zijn niet super belangrijk om vanbuiten te kennen maar je moet zien dat je nadelen van een process kunt oplossen met een ander process)}
 
 
   \chapter{Verspanen:Slijpen}
@@ -1538,7 +1865,7 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
     Bij slijpen heb je een grote negatieve \textbf{Spaanhoek} wat het moeilijker maakt om te verspannen.
     De krachtwerking is dus veel hoger. Maar je \textbf{Snedediepte} is veel kleiner dus die combenseren elkaar.
 
-    Een slijpsteen kun je defineren als een frees met onbepaalde snijkanten.
+    Een slijpsteen kun je definieren als een frees met onbepaalde snijkanten.
     \newline
   
     \begin{figure}[ht]
@@ -1631,7 +1958,7 @@ Met al deze dingen kunnne een slijpsteen karateriseren.
 
 \section{temperaturen bij slijpen}
 
-$70 percent$ van de energie die je inbrengt bij het slijpen gaat verloren als warmte.
+$70{\%}$ van de energie die je inbrengt bij het slijpen gaat verloren als warmte.
 dit kan leiden tot thermische beschadiging van het werkstuk.
 Je moet oppassen voor 
 \begin{itemize}
@@ -1684,6 +2011,9 @@ Centerloos slijpen is een slijptechniek waarbij het werkstuk niet wordt vastgeho
 Zoals hiervoor gezegt. Je slijpt een bepaald profiel met een slijpsteen die dat profiel heeft.
 
   \chapter{Fysische en Chemische afnemende bewerkingen}
+
+  \section{Vonkerosie}
+  
 
   \chapter{Scheiden}
   \chapter{Automatiseren \& machinekeuze}
