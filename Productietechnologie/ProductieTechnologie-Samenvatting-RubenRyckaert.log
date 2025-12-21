@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  21 DEC 2025 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  21 DEC 2025 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -877,15 +877,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
- [2{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}])
+ [2{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported on input line 76.
+ [3])
 \tf@toc=\write4
 \openout4 = `ProductieTechnologie-Samenvatting-RubenRyckaert.toc'.
 
 
 Hoofdstuk 1.
-[3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 182.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+(c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
@@ -893,225 +895,221 @@ Package microtype Warning: I cannot find a spacing list for font
 (microtype)                `TS1/lmr/m/n/12' (context: `nonfrench'). Switching off
 (microtype)                spacing for this font on input line 182.
 
-<straalbewerkingen.png, id=129, 451.6875pt x 364.36125pt>
+<straalbewerkingen.png, id=155, 451.6875pt x 364.36125pt>
 File: straalbewerkingen.png Graphic file (type png)
 <use straalbewerkingen.png>
 Package pdftex.def Info: straalbewerkingen.png  used on input line 202.
 (pdftex.def)             Requested size: 241.84843pt x 195.09535pt.
-Package babel Info: 'dutch' activates 'dutch' shorthands.
-(babel)             Reported on input line 220.
-[4{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./straalbewerkingen.png>]
-<image1.png, id=140, 460.72125pt x 395.97937pt>
+[4{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+<image1.png, id=166, 460.72125pt x 395.97937pt>
 File: image1.png Graphic file (type png)
 <use image1.png>
 Package pdftex.def Info: image1.png  used on input line 255.
 (pdftex.def)             Requested size: 154.78653pt x 133.03003pt.
-<image2.png, id=141, 496.10344pt x 389.95688pt>
+<image2.png, id=167, 496.10344pt x 389.95688pt>
 File: image2.png Graphic file (type png)
 <use image2.png>
 Package pdftex.def Info: image2.png  used on input line 256.
 (pdftex.def)             Requested size: 154.78653pt x 121.66486pt.
-<image3.png, id=142, 763.35187pt x 395.22656pt>
+<image3.png, id=168, 763.35187pt x 395.22656pt>
 File: image3.png Graphic file (type png)
 <use image3.png>
 Package pdftex.def Info: image3.png  used on input line 257.
 (pdftex.def)             Requested size: 154.78653pt x 80.14148pt.
-<image5.png, id=143, 477.28313pt x 383.18156pt>
+ [5 <./straalbewerkingen.png>]
+<image5.png, id=175, 477.28313pt x 383.18156pt>
 File: image5.png Graphic file (type png)
 <use image5.png>
 Package pdftex.def Info: image5.png  used on input line 267.
 (pdftex.def)             Requested size: 241.84843pt x 194.16292pt.
- [5 <./image1.png> <./image2.png> <./image3.png>]
-<image6.png, id=152, 401.24907pt x 493.0922pt>
+<image6.png, id=176, 401.24907pt x 493.0922pt>
 File: image6.png Graphic file (type png)
 <use image6.png>
 Package pdftex.def Info: image6.png  used on input line 287.
 (pdftex.def)             Requested size: 193.47578pt x 237.76501pt.
-<image7.png, id=153, 322.20375pt x 402.00188pt>
+<image7.png, id=177, 322.20375pt x 402.00188pt>
 File: image7.png Graphic file (type png)
 <use image7.png>
 Package pdftex.def Info: image7.png  used on input line 288.
 (pdftex.def)             Requested size: 193.47578pt x 241.39926pt.
-
+ [6 <./image1.png> <./image2.png> <./image3.png> <./image5.png>]
 Hoofdstuk 2.
-<image9.png, id=154, 380.17032pt x 239.39438pt>
+<image9.png, id=188, 380.17032pt x 239.39438pt>
 File: image9.png Graphic file (type png)
 <use image9.png>
 Package pdftex.def Info: image9.png  used on input line 303.
 (pdftex.def)             Requested size: 241.84843pt x 152.295pt.
-[6 <./image5.png> <./image6.png> <./image7.png>]
+[7 <./image6.png> <./image7.png> <./image9.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 328.
 
 Hoofdstuk 3.
-[7{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./image9.png>]
-<image10.png, id=174, 636.87938pt x 335.00156pt>
+<image10.png, id=200, 636.87938pt x 335.00156pt>
 File: image10.png Graphic file (type png)
 <use image10.png>
 Package pdftex.def Info: image10.png  used on input line 373.
 (pdftex.def)             Requested size: 290.22107pt x 152.65596pt.
- [8 <./image10.png>]
-<image11.png, id=181, 967.36406pt x 426.84468pt>
+[8{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+<image11.png, id=208, 967.36406pt x 426.84468pt>
 File: image11.png Graphic file (type png)
 <use image11.png>
 Package pdftex.def Info: image11.png  used on input line 392.
 (pdftex.def)             Requested size: 386.95897pt x 170.74136pt.
-<image20.png, id=182, 328.22626pt x 189.70876pt>
+<image20.png, id=209, 328.22626pt x 189.70876pt>
 File: image20.png Graphic file (type png)
 <use image20.png>
 Package pdftex.def Info: image20.png  used on input line 405.
 (pdftex.def)             Requested size: 193.47578pt x 111.82587pt.
- [9 <./image11.png> <./image20.png>]
-<image12.png, id=193, 377.15906pt x 332.74312pt>
+ [9 <./image10.png> <./image11.png>]
+<image12.png, id=219, 377.15906pt x 332.74312pt>
 File: image12.png Graphic file (type png)
 <use image12.png>
 Package pdftex.def Info: image12.png  used on input line 426.
 (pdftex.def)             Requested size: 193.47578pt x 170.69188pt.
-<image14.png, id=194, 440.39531pt x 171.64125pt>
+<image14.png, id=220, 440.39531pt x 171.64125pt>
 File: image14.png Graphic file (type png)
 <use image14.png>
 Package pdftex.def Info: image14.png  used on input line 435.
 (pdftex.def)             Requested size: 193.47578pt x 75.40451pt.
- [10 <./image12.png> <./image14.png>]
-<image15.png, id=203, 490.83376pt x 349.305pt>
+ [10 <./image20.png> <./image12.png>]
+<image15.png, id=229, 490.83376pt x 349.305pt>
 File: image15.png Graphic file (type png)
 <use image15.png>
 Package pdftex.def Info: image15.png  used on input line 461.
 (pdftex.def)             Requested size: 241.84843pt x 172.10966pt.
-<image16.png, id=204, 366.61969pt x 419.31656pt>
+ [11 <./image14.png> <./image15.png>]
+<image16.png, id=238, 366.61969pt x 419.31656pt>
 File: image16.png Graphic file (type png)
 <use image16.png>
 Package pdftex.def Info: image16.png  used on input line 483.
 (pdftex.def)             Requested size: 193.47578pt x 221.28976pt.
- [11 <./image15.png> <./image16.png>]
-<image17.png, id=213, 402.75468pt x 346.29375pt>
+<image17.png, id=239, 402.75468pt x 346.29375pt>
 File: image17.png Graphic file (type png)
 <use image17.png>
 Package pdftex.def Info: image17.png  used on input line 501.
 (pdftex.def)             Requested size: 193.47578pt x 166.3512pt.
-<image21.png, id=214, 445.665pt x 327.47343pt>
+ [12 <./image16.png> <./image17.png>]
+<image21.png, id=249, 445.665pt x 327.47343pt>
 File: image21.png Graphic file (type png)
 <use image21.png>
 Package pdftex.def Info: image21.png  used on input line 517.
 (pdftex.def)             Requested size: 193.47578pt x 142.16498pt.
- [12 <./image17.png> <./image21.png>]
-<image18.png, id=224, 657.95813pt x 188.95593pt>
+ [13 <./image21.png>]
+<image18.png, id=257, 657.95813pt x 188.95593pt>
 File: image18.png Graphic file (type png)
 <use image18.png>
 Package pdftex.def Info: image18.png  used on input line 564.
 (pdftex.def)             Requested size: 338.58632pt x 97.23697pt.
- [13 <./image18.png>]
-<image23.png, id=232, 481.8pt x 411.78844pt>
+<image23.png, id=258, 481.8pt x 411.78844pt>
 File: image23.png Graphic file (type png)
 <use image23.png>
 Package pdftex.def Info: image23.png  used on input line 593.
 (pdftex.def)             Requested size: 241.84843pt x 206.70425pt.
-<image22.png, id=233, 593.96906pt x 356.0803pt>
+<image22.png, id=259, 593.96906pt x 356.0803pt>
 File: image22.png Graphic file (type png)
 <use image22.png>
 Package pdftex.def Info: image22.png  used on input line 602.
 (pdftex.def)             Requested size: 241.84843pt x 144.9887pt.
-<image24.png, id=234, 382.42876pt x 335.00156pt>
+<image24.png, id=260, 382.42876pt x 335.00156pt>
 File: image24.png Graphic file (type png)
 <use image24.png>
 Package pdftex.def Info: image24.png  used on input line 617.
 (pdftex.def)             Requested size: 241.84843pt x 211.85463pt.
- [14 <./image23.png>]
-<image25.png, id=242, 525.46312pt x 368.87813pt>
+ [14 <./image18.png>] [15 <./image23.png> <./image22.png>]
+<image25.png, id=280, 525.46312pt x 368.87813pt>
 File: image25.png Graphic file (type png)
 <use image25.png>
 Package pdftex.def Info: image25.png  used on input line 641.
 (pdftex.def)             Requested size: 290.22107pt x 203.74477pt.
- [15 <./image22.png> <./image24.png>]
-<image26.png, id=255, 953.81343pt x 426.09187pt>
+<image26.png, id=281, 953.81343pt x 426.09187pt>
 File: image26.png Graphic file (type png)
 <use image26.png>
 Package pdftex.def Info: image26.png  used on input line 653.
 (pdftex.def)             Requested size: 483.69687pt x 216.08167pt.
-<image27.png, id=256, 450.18187pt x 201.00093pt>
+ [16 <./image24.png> <./image25.png>]
+<image27.png, id=290, 450.18187pt x 201.00093pt>
 File: image27.png Graphic file (type png)
 <use image27.png>
 Package pdftex.def Info: image27.png  used on input line 669.
 (pdftex.def)             Requested size: 241.84843pt x 107.98375pt.
- [16 <./image25.png> <./image26.png>]
-<image28.png, id=265, 814.54312pt x 380.92313pt>
+ [17 <./image26.png> <./image27.png>]
+<image28.png, id=301, 814.54312pt x 380.92313pt>
 File: image28.png Graphic file (type png)
 <use image28.png>
 Package pdftex.def Info: image28.png  used on input line 702.
 (pdftex.def)             Requested size: 386.95897pt x 180.96361pt.
 
 Hoofdstuk 4.
-[17{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./image27.png> <./image28.png>]
-<image29.png, id=277, 364.36125pt x 307.1475pt>
+[18{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./image28.png>]
+<image29.png, id=313, 364.36125pt x 307.1475pt>
 File: image29.png Graphic file (type png)
 <use image29.png>
 Package pdftex.def Info: image29.png  used on input line 731.
 (pdftex.def)             Requested size: 217.66211pt x 183.48381pt.
-<image30.png, id=278, 317.68687pt x 365.11406pt>
+<image30.png, id=314, 317.68687pt x 365.11406pt>
 File: image30.png Graphic file (type png)
 <use image30.png>
 Package pdftex.def Info: image30.png  used on input line 732.
 (pdftex.def)             Requested size: 217.66211pt x 250.1629pt.
- [18 <./image29.png> <./image30.png>]
-<image31.png, id=290, 294.34969pt x 375.65344pt>
+<image31.png, id=315, 294.34969pt x 375.65344pt>
 File: image31.png Graphic file (type png)
 <use image31.png>
 Package pdftex.def Info: image31.png  used on input line 748.
 (pdftex.def)             Requested size: 193.47578pt x 246.91747pt.
- [19 <./image31.png>]
-<image32.png, id=302, 568.37344pt x 396.7322pt>
+ [19 <./image29.png> <./image30.png>] [20 <./image31.png>]
+<image32.png, id=334, 568.37344pt x 396.7322pt>
 File: image32.png Graphic file (type png)
 <use image32.png>
 Package pdftex.def Info: image32.png  used on input line 817.
 (pdftex.def)             Requested size: 386.95897pt x 270.11331pt.
- [20]
-<image33.png, id=307, 735.49782pt x 361.35pt>
+ [21]
+<image33.png, id=339, 735.49782pt x 361.35pt>
 File: image33.png Graphic file (type png)
 <use image33.png>
 Package pdftex.def Info: image33.png  used on input line 839.
 (pdftex.def)             Requested size: 483.69687pt x 237.64813pt.
- [21 <./image32.png>]
+ [22 <./image32.png>]
 Underfull \hbox (badness 1895) in paragraph at lines 849--850
 []\T1/lmr/bx/n/12 (+10) Snedediepte $\OML/lmm/m/it/12 a$\T1/lmr/m/n/12 (+10) : Een grotere snedediepte ver-g-root door-gaans $\OML/lmm/m/it/12 b$ \T1/lmr/m/n/12 (+10) en ver-hoogt de
  []
 
-[22 <./image33.png>]
-<image34.png, id=324, 548.80031pt x 301.8778pt>
+[23 <./image33.png>]
+<image34.png, id=357, 548.80031pt x 301.8778pt>
 File: image34.png Graphic file (type png)
 <use image34.png>
 Package pdftex.def Info: image34.png  used on input line 870.
 (pdftex.def)             Requested size: 217.66211pt x 119.72638pt.
-<image35.png, id=325, 448.67625pt x 319.94531pt>
+<image35.png, id=358, 448.67625pt x 319.94531pt>
 File: image35.png Graphic file (type png)
 <use image35.png>
 Package pdftex.def Info: image35.png  used on input line 871.
 (pdftex.def)             Requested size: 217.66211pt x 155.21234pt.
-<image36.png, id=326, 936.49875pt x 414.04688pt>
+<image36.png, id=359, 936.49875pt x 414.04688pt>
 File: image36.png Graphic file (type png)
 <use image36.png>
 Package pdftex.def Info: image36.png  used on input line 882.
 (pdftex.def)             Requested size: 241.84843pt x 106.9231pt.
-<image37.png, id=327, 438.13687pt x 234.8775pt>
+<image37.png, id=360, 438.13687pt x 234.8775pt>
 File: image37.png Graphic file (type png)
 <use image37.png>
 Package pdftex.def Info: image37.png  used on input line 892.
 (pdftex.def)             Requested size: 217.66211pt x 116.68582pt.
-<image38.png, id=328, 295.1025pt x 203.25937pt>
+<image38.png, id=361, 295.1025pt x 203.25937pt>
 File: image38.png Graphic file (type png)
 <use image38.png>
 Package pdftex.def Info: image38.png  used on input line 893.
 (pdftex.def)             Requested size: 217.66211pt x 149.92264pt.
- [23 <./image34.png> <./image35.png> <./image36.png>]
+ [24 <./image34.png> <./image35.png> <./image36.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 935--938
 
  []
 
-<image39.png, id=338, 429.85594pt x 294.34969pt>
+<image39.png, id=371, 429.85594pt x 294.34969pt>
 File: image39.png Graphic file (type png)
 <use image39.png>
 Package pdftex.def Info: image39.png  used on input line 941.
 (pdftex.def)             Requested size: 386.95897pt x 264.97963pt.
-<image40.png, id=339, 712.91344pt x 289.08pt>
+<image40.png, id=372, 712.91344pt x 289.08pt>
 File: image40.png Graphic file (type png)
 <use image40.png>
 Package pdftex.def Info: image40.png  used on input line 952.
@@ -1121,72 +1119,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 956--959
 
  []
 
-[24 <./image37.png> <./image38.png>]
+[25 <./image37.png> <./image38.png>]
 Hoofdstuk 5.
-[25 <./image39.png> <./image40.png>]
-<image41.png, id=361, 475.7775pt x 492.33937pt>
+[26 <./image39.png> <./image40.png>]
+<image41.png, id=393, 475.7775pt x 492.33937pt>
 File: image41.png Graphic file (type png)
 <use image41.png>
 Package pdftex.def Info: image41.png  used on input line 981.
 (pdftex.def)             Requested size: 217.66211pt x 225.23929pt.
-<image42.png, id=362, 576.65437pt x 447.17062pt>
+<image42.png, id=394, 576.65437pt x 447.17062pt>
 File: image42.png Graphic file (type png)
 <use image42.png>
 Package pdftex.def Info: image42.png  used on input line 982.
 (pdftex.def)             Requested size: 217.66211pt x 168.78711pt.
-<image43.png, id=364, 267.24844pt x 439.6425pt>
+<image43.png, id=396, 267.24844pt x 439.6425pt>
 File: image43.png Graphic file (type png)
 <use image43.png>
 Package pdftex.def Info: image43.png  used on input line 1008.
 (pdftex.def)             Requested size: 217.66211pt x 358.08745pt.
- [26 <./image41.png> <./image42.png>] [27 <./image43.png>]
+ [27 <./image41.png> <./image42.png>] [28 <./image43.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 1071.
- [28]
+ [29]
 Underfull \hbox (badness 10000) in paragraph at lines 1201--1206
 
  []
 
-[29]
-<image44.png, id=395, 864.22874pt x 405.01312pt>
+[30]
+<image44.png, id=427, 864.22874pt x 405.01312pt>
 File: image44.png Graphic file (type png)
 <use image44.png>
 Package pdftex.def Info: image44.png  used on input line 1241.
 (pdftex.def)             Requested size: 386.95897pt x 181.34575pt.
- [30]
+ [31]
 Hoofdstuk 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1288--1296
 
  []
 
-[31 <./image44.png>]
+[32 <./image44.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1299--1307
 
  []
 
-<image45.png, id=412, 427.5975pt x 189.70876pt>
+<image45.png, id=444, 427.5975pt x 189.70876pt>
 File: image45.png Graphic file (type png)
 <use image45.png>
 Package pdftex.def Info: image45.png  used on input line 1329.
 (pdftex.def)             Requested size: 290.22107pt x 128.75998pt.
-<image46.png, id=413, 298.11375pt x 202.50656pt>
+<image46.png, id=445, 298.11375pt x 202.50656pt>
 File: image46.png Graphic file (type png)
 <use image46.png>
 Package pdftex.def Info: image46.png  used on input line 1342.
 (pdftex.def)             Requested size: 290.22107pt x 202.7794pt.
-[32 <./image45.png>]
+[33 <./image45.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1378--1383
 
  []
 
-[33 <./image46.png>]
-<47.png, id=428, 346.29375pt x 207.02344pt>
+[34 <./image46.png>]
+<47.png, id=460, 346.29375pt x 207.02344pt>
 File: 47.png Graphic file (type png)
 <use 47.png>
 Package pdftex.def Info: 47.png  used on input line 1398.
 (pdftex.def)             Requested size: 241.84843pt x 144.58688pt.
-<image48.png, id=429, 602.25pt x 201.75375pt>
+<image48.png, id=461, 602.25pt x 201.75375pt>
 File: image48.png Graphic file (type png)
 <use image48.png>
 Package pdftex.def Info: image48.png  used on input line 1412.
@@ -1206,8 +1204,8 @@ Overfull \hbox (16.65536pt too wide) in paragraph at lines 1422--1443
  [][] 
  []
 
-[34 <./47.png>] [35 <./image48.png>]
-<image49.png, id=444, 470.50781pt x 149.05687pt>
+[35 <./47.png>] [36 <./image48.png>]
+<image49.png, id=476, 470.50781pt x 149.05687pt>
 File: image49.png Graphic file (type png)
 <use image49.png>
 Package pdftex.def Info: image49.png  used on input line 1476.
@@ -1215,36 +1213,103 @@ Package pdftex.def Info: image49.png  used on input line 1476.
 
 Hoofdstuk 7.
 Hoofdstuk 8.
+[37 <./image49.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1531
+
+ []
+
+<image50.png, id=484, 324.46219pt x 163.3603pt>
+File: image50.png Graphic file (type png)
+<use image50.png>
+Package pdftex.def Info: image50.png  used on input line 1534.
+(pdftex.def)             Requested size: 386.95897pt x 194.83987pt.
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1542
+
+ []
+
+
+Package microtype Warning: I cannot find a spacing list for font
+(microtype)                `TS1/lmr/bx/n/12' (context: `nonfrench'). Switching off
+(microtype)                spacing for this font on input line 1546.
+
+[39 <./image50.png>]
+<image51.png, id=505, 287.57437pt x 146.79843pt>
+File: image51.png Graphic file (type png)
+<use image51.png>
+Package pdftex.def Info: image51.png  used on input line 1572.
+(pdftex.def)             Requested size: 386.95897pt x 197.53764pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1577--1581
+
+ []
+
+
+Overfull \hbox (536.34938pt too wide) in paragraph at lines 1597--1601
+[] 
+ []
+
+[40 <./image51.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1608
+
+ []
+
+<image52.png, id=513, 512.66531pt x 301.125pt>
+File: image52.png Graphic file (type png)
+<use image52.png>
+Package pdftex.def Info: image52.png  used on input line 1615.
+(pdftex.def)             Requested size: 386.95897pt x 227.29054pt.
+<image53.png, id=514, 277.035pt x 146.79843pt>
+File: image53.png Graphic file (type png)
+<use image53.png>
+Package pdftex.def Info: image53.png  used on input line 1636.
+(pdftex.def)             Requested size: 386.95897pt x 205.04823pt.
+<image54.png, id=515, 536.75531pt x 274.02374pt>
+File: image54.png Graphic file (type png)
+<use image54.png>
+Package pdftex.def Info: image54.png  used on input line 1645.
+(pdftex.def)             Requested size: 386.95897pt x 197.54782pt.
+[41 <./image52.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1653
+
+ []
+
+<image55.png, id=522, 319.1925pt x 137.01187pt>
+File: image55.png Graphic file (type png)
+<use image55.png>
+Package pdftex.def Info: image55.png  used on input line 1666.
+(pdftex.def)             Requested size: 386.95897pt x 166.10056pt.
+[42 <./image53.png> <./image54.png>]
 Hoofdstuk 9.
 Hoofdstuk 10.
 Hoofdstuk 11.
 Hoofdstuk 12.
 Hoofdstuk 13.
-[36 <./image49.png>] [37]
+[43 <./image55.png>]
 [FORMULARIUM-CONTENT] macro:->\item [\textbf {Hooke's law}] $\displaystyle \sigma = E \cdot \varepsilon $ --- waarbij $\sigma $ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon $ de rek. {(\hyperref [frm:1]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:1}})}\par \item [\textbf {Afschuifhoek}] $\displaystyle \phi = 45^{\circ } + \dfrac {\gamma }{2} - \dfrac {\mu }{2}$ --- waarbij $\gamma $ de spaanhoek is en $\mu $ de wrijvingshoek tussen spaan en snijvlak. {(\hyperref [frm:2]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:2}})}\par \item [\textbf {afschuifvlak (shear zone) A}] $\displaystyle A = \frac {b*h}{\sin (\phi )}$ --- waarbij $b$ de breedte, $h$ de hoogte en $\phi $ de afschuifhoek. {(\hyperref [frm:3]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:3}})}\par \item [\textbf {afschuifkracht}] $\displaystyle F = A*\tau $ --- waarbij $A$ het afschuifvlak is en $\tau $ de schuifspanning van het materiaal. {(\hyperref [frm:4]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:4}})}\par \item [\textbf {Snijsnelheid}] $\displaystyle v = \pi \cdot d \cdot n$ --- waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut. {(\hyperref [frm:5]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:5}})}\par \item [\textbf {Snededoorsnede}] $\displaystyle A_d = a \cdot b$ --- waarbij $a$ de snedediepte is en $b$ de snedebreedte. {(\hyperref [frm:6]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:6}})}\par \item [\textbf {formule van Taylor}] $\displaystyle v_c\, T^n = C$ --- waarbij $C$ een constante is en $n$ een materiaalconstante, $T$ de gereedschaplevensduur in minuten en $v_c$ de snijsnelheid in m/min. {(\hyperref [frm:7]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:7}})}\par \item [\textbf {Kienzle vergelijking Hoofdsnijkracht}] $\displaystyle F_c = k_c \cdot a\cdot f^{(1-e)}$ --- waarbij $k_c$ (N/mm$^2$ of Pa) de snijkrachtcoëfficiënt is, $a$ de snedediepte, $f$ de voeding en $e$ de snijkrachtexponent. {(\hyperref [frm:8]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:8}})}\par \item [\textbf {b: snedebreedte bij draaien}] $\displaystyle b = \frac {a}{\sin x}$ --- met $a$ de snedediepte en $x$ de instelhoek (zie figuur). {(\hyperref [frm:9]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:9}})}\par \item [\textbf {h: snededikte bij draaien}] $\displaystyle h = f \cdot \sin x$ --- met $f$ de voeding en $x$ de instelhoek (zie figuur). {(\hyperref [frm:10]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:10}})}\par \item [\textbf {Optimale snijsnelheid bij draaien}] $\displaystyle v_{c,\mathrm {opt}} = v_c(k_c)\cdot f^{-u}$ --- waarbij $d$ de diameter is in mm en $n$ het toerental in omwentelingen per minuut. {(\hyperref [frm:11]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:11}})}\par \item [\textbf {Spaanslankheid bij Draaien}] $\displaystyle \dfrac {b}{h} = \dfrac {a}{f \cdot \sin \kappa _r}$ --- waarbij $b$ de snedebreedte is, $h$ de snededikte, $a$ de snedediepte, $f$ de voeding en $\kappa _r$ de instelhoek. {(\hyperref [frm:12]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:12}})}\par \item [\textbf {gemiddelde ruwheid bij Draaien}] $\displaystyle R_a = \dfrac {f^2}{32 \cdot r_\epsilon }$ --- waarbij $f$ de voeding is en $r_\epsilon $ de neusradius van de bijtel. {(\hyperref [frm:13]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:13}})}\par \item [\textbf {totale ruwheid bij Draaien}] $\displaystyle R_t = \dfrac {f^2}{8 \cdot r_\epsilon }$ --- waarbij $f$ de voeding is en $r_\epsilon $ de neusradius van de bijtel. {(\hyperref [frm:14]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:14}})}\par \item [\textbf {Voedingskracht}] $\displaystyle F_f = k_f \cdot a \cdot f^{(1-e)}$ --- waarbij $k_f$ de voedingskrachtcoëfficiënt is, $a$ de snedediepte, $f$ de voeding en $e$ de voedingskrachtsexponent. {(\hyperref [frm:15]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:15}})}\par \item [\textbf {Verspanningsmoment}] $\displaystyle M_c = C_m \cdot d^{x_M} \cdot f^{y_M}$ --- waarbij $C_m$ de momentcoëfficiënt is, $d$ de diameter, $f$ de voeding en $x_M$, $y_M$ de momentexponenten. {(\hyperref [frm:16]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:16}})}\par \item [\textbf {Vermogen bij boren}] $\displaystyle P_c = M_c\,\omega = M_c \cdot 2\pi n$ --- waarbij $M_c$ het verspaningsmoment is en $\omega $ de hoeksnelheid. het verspaningsmoment is en $\omega $ de hoeksnelheid. {(\hyperref [frm:17]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:17}})}\par \item [\textbf {Torsie bij Boren}] $\displaystyle \tau = \dfrac {M_c\,\rho }{I_p}$ --- waarbij $M_c$ het verspaningsmoment is, $\rho $ de afstand van het centrum tot het beschouwde punt en $I_p$ het polair traagheidsmoment. {(\hyperref [frm:18]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:18}})}\par \item [\textbf {Maximale schuifspanning bij Draaien}] $\displaystyle M_d = C_b \cdot d^{x_w}$ --- waarbij \ensuremath {C_b} de schuifspanningcoëfficiënt is, \ensuremath {d} de diameter, \ensuremath {x_w} de schuifspanningsexponent. {(\hyperref [frm:19]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:19}})}\par \item [\textbf {Maximale verspanningsmoment}] $\displaystyle M_c = a\cdot M_b$ --- waarbij \ensuremath {M_c} het verspaningsmoment is en \ensuremath {M_b} het maximale verspanningsmoment. {(\hyperref [frm:20]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:20}})}\par \item [\textbf {Maximale voeding bij boren}] $\displaystyle f_{max} = C \cdot d$ --- waarbij $C$ een constante is, $d$ de diameter en $f_{max}$ de maximale voeding. {(\hyperref [frm:21]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:21}})}\par \item [\textbf {Kracht $F_f$ is de kracht recht naar boven bij een boormachine}] $\displaystyle F_f = C_f \cdot d^{X_f} \cdot f^{y_f}$ --- waarbij $C_f$ de voedingskrachtcoëfficiënt is, $d$ de diameter, $f$ de voeding en $X_f$ en $y_f$ de voedingskrachtsexponenten. {(\hyperref [frm:22]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:22}})}\par \item [\textbf {Snijkracht bij Frezen}] $\displaystyle \ensuremath {F_c = k_c \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}$ --- waarbij $k_c$ de snijkrachtcoëfficiënt is, $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de snijkrachtsexponent. {(\hyperref [frm:23]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:23}})}\par \item [\textbf {Snijmoment bij Frezen}] $\displaystyle \ensuremath {M_c = C_m \cdot d^{x_M} \cdot f_z^{y_M} \cdot z_i}$ --- waarbij $C_m$ de momentcoëfficiënt is, $d$ de diameter, $f_z$ de voeding per tand, $z_i$ het aantal tanden en $x_M$, $y_M$ de momentexponenten. {(\hyperref [frm:24]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:24}})}\par \item [\textbf {Voedingskracht bij Frezen}] $\displaystyle \ensuremath {F_f = k_f \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}$ --- waarbij $k_f$ de voedingskrachtcoëfficiënt is, $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de voedingskrachtsexponent. {(\hyperref [frm:25]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:25}})}\par 
 [FORMULARIUM] Printen van formularium met geregistreerde entries.
-[38
+[44
 
 
-] [39] (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
+] [45] (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35293 strings out of 469519
- 711568 string characters out of 5470279
- 1122523 words of memory out of 5000000
- 63152 multiletter control sequences out of 15000+600000
- 702731 words of font info for 171 fonts, out of 8000000 for 9000
+ 35416 strings out of 469519
+ 713428 string characters out of 5470279
+ 1121523 words of memory out of 5000000
+ 63225 multiletter control sequences out of 15000+600000
+ 706708 words of font info for 180 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,13n,104p,1040b,1332s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,104p,1040b,1327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on ProductieTechnologie-Samenvatting-RubenRyckaert.pdf (39 pages, 5616829 bytes).
+Output written on ProductieTechnologie-Samenvatting-RubenRyckaert.pdf (45 pages, 6164449 bytes).
 PDF statistics:
- 804 PDF objects out of 1000 (max. 8388607)
- 621 compressed objects within 7 object streams
- 158 named destinations out of 1000 (max. 500000)
- 43673 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 734 compressed objects within 8 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 47911 words of extra memory for PDF output out of 51595 (max. 10000000)
 

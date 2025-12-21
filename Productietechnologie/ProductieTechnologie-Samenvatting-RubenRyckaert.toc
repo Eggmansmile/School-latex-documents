@@ -1,60 +1,79 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {chapter}{\numberline {1}Inleiding}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {1}Inleiding}{4}{chapter.2}%
 \contentsline {subsection}{\numberline {1.0.1}Keuzes bij productie}{4}{subsection.4}%
 \contentsline {section}{\numberline {1.1}Passing}{5}{section.5}%
 \contentsline {section}{\numberline {1.2}Tolerantie}{5}{section.6}%
-\contentsline {section}{\numberline {1.3}Oppervlaktekwaliteit}{5}{section.9}%
+\contentsline {section}{\numberline {1.3}Oppervlaktekwaliteit}{6}{section.9}%
 \contentsline {chapter}{\numberline {2}Materialen}{7}{chapter.11}%
-\contentsline {subsection}{\numberline {2.0.1}Vervorming}{7}{subsection.13}%
-\contentsline {chapter}{\numberline {3}Verspanen:Algemeen}{7}{chapter.14}%
-\contentsline {section}{\numberline {3.1}bijtelbewerkingen}{8}{section.15}%
-\contentsline {subsection}{\numberline {3.1.1}Secundaire afschuifvlak(shear zone)}{9}{subsection.19}%
-\contentsline {subsubsection}{Extra info}{10}{figure.caption.21}%
+\contentsline {subsection}{\numberline {2.0.1}Vervorming}{8}{subsection.13}%
+\contentsline {chapter}{\numberline {3}Verspanen:Algemeen}{8}{chapter.14}%
+\contentsline {section}{\numberline {3.1}bijtelbewerkingen}{9}{section.15}%
+\contentsline {subsection}{\numberline {3.1.1}Secundaire afschuifvlak(shear zone)}{10}{subsection.19}%
+\contentsline {subsubsection}{Extra info}{11}{figure.caption.21}%
 \contentsline {section}{\numberline {3.2}Beweging, snelheden en voedingen, temperaturen, slijtage}{11}{section.23}%
 \contentsline {subsection}{\numberline {3.2.1}Krachten}{12}{subsection.25}%
 \contentsline {section}{\numberline {3.3}Factoren bij bijtelbewerking}{13}{section.28}%
 \contentsline {paragraph}{Verbeteren / voorkomen:}{13}{section.28}%
-\contentsline {section}{\numberline {3.4}Snijmaterialen}{14}{section.32}%
+\contentsline {section}{\numberline {3.4}Snijmaterialen}{15}{section.32}%
 \contentsline {subsection}{\numberline {3.4.1}Classificatie van snijmaterialen}{16}{subsection.40}%
-\contentsline {section}{\numberline {3.5}Optimale snijsnelheid}{16}{section.42}%
+\contentsline {section}{\numberline {3.5}Optimale snijsnelheid}{17}{section.42}%
 \contentsline {chapter}{\numberline {4}Verspanen: Draaien}{18}{chapter.45}%
-\contentsline {section}{\numberline {4.1}Het Draaiproces}{18}{section.50}%
+\contentsline {section}{\numberline {4.1}Het Draaiproces}{19}{section.50}%
 \contentsline {section}{\numberline {4.2}Krachten bij Draaien}{19}{section.52}%
-\contentsline {section}{\numberline {4.3}Invloeden voeding $f$ en snedediepte $a$ op de kracht en snijsnelheid}{21}{section.58}%
-\contentsline {section}{\numberline {4.4}Spaanvorming bij Draaien}{22}{section.64}%
-\contentsline {section}{\numberline {4.5}Oppervlakteruwheid bij Draaien}{23}{section.67}%
-\contentsline {section}{\numberline {4.6}De Draaioperatie}{24}{section.69}%
-\contentsline {chapter}{\numberline {5}Verspanen: Boren, Fabricage en ronde gaten}{25}{chapter.72}%
-\contentsline {section}{\numberline {5.1}Inleiding Boren}{25}{section.73}%
-\contentsline {subsection}{\numberline {5.1.1}Boorgeometrie}{26}{subsection.78}%
-\contentsline {section}{\numberline {5.2}Optredende krachten}{26}{section.80}%
-\contentsline {subsection}{\numberline {5.2.1}gevolgen van onevenwichtige krachten}{27}{subsection.82}%
-\contentsline {section}{\numberline {5.3}Keuze van voeding}{28}{section.83}%
-\contentsline {subsection}{\numberline {5.3.1}Torsie bij Boren}{28}{subsection.84}%
-\contentsline {paragraph}{1) Via het schuifspanningscriterium}{29}{figure.caption.85}%
-\contentsline {paragraph}{2) Via een momentlimiet}{29}{figure.caption.85}%
-\contentsline {paragraph}{Speciale geval -- lineair}{29}{figure.caption.85}%
-\contentsline {section}{\numberline {5.4}Boormachines en booroperaties in de industrie.}{30}{section.87}%
-\contentsline {subsection}{\numberline {5.4.1}NC-gestuurde boormachines}{30}{subsection.88}%
-\contentsline {subsection}{\numberline {5.4.2}Boren}{30}{subsection.89}%
-\contentsline {paragraph}{Type boren}{30}{figure.caption.90}%
-\contentsline {subsection}{\numberline {5.4.3}Kotteren}{30}{subsection.92}%
-\contentsline {subsection}{\numberline {5.4.4}Draadtappen}{31}{subsection.93}%
-\contentsline {subsection}{\numberline {5.4.5}Ruimen}{31}{subsection.95}%
-\contentsline {chapter}{\numberline {6}Verspanen: Frezen}{31}{chapter.97}%
-\contentsline {section}{\numberline {6.1}Inleiding Frezen}{32}{section.98}%
-\contentsline {subsection}{\numberline {6.1.1}Soorten frezen}{32}{subsection.99}%
-\contentsline {subsection}{\numberline {6.1.2}Geometrie van de frees}{32}{subsection.100}%
-\contentsline {section}{\numberline {6.2}krachtwerking bij frezen}{32}{section.102}%
-\contentsline {section}{\numberline {6.3}Richting van frezen}{34}{section.105}%
-\contentsline {subsection}{\numberline {6.3.1}Wanneer kiezen: meelopend vs tegenlopend}{35}{subsection.108}%
-\contentsline {paragraph}{Effecten op oppervlakte en snedediepte}{35}{subsection.108}%
-\contentsline {section}{\numberline {6.4}Soorten frezen}{36}{section.109}%
-\contentsline {section}{\numberline {6.5}De Freesmachine}{36}{section.110}%
-\contentsline {chapter}{\numberline {7}Verspanen:Hybridetechnieken}{37}{chapter.112}%
-\contentsline {chapter}{\numberline {8}Verspanen:Slijpen}{37}{chapter.113}%
-\contentsline {chapter}{\numberline {9}Fysische en Chemische afnemende bewerkingen}{37}{chapter.114}%
-\contentsline {chapter}{\numberline {10}Scheiden}{37}{chapter.115}%
-\contentsline {chapter}{\numberline {11}Automatiseren \& machinekeuze}{37}{chapter.116}%
-\contentsline {chapter}{\numberline {12}Productie werkvoorbereiding}{37}{chapter.117}%
-\contentsline {chapter}{\numberline {13}Productiegericht ontwerpen}{37}{chapter.118}%
+\contentsline {section}{\numberline {4.3}Invloeden voeding $f$ en snedediepte $a$ op de kracht en snijsnelheid}{22}{section.58}%
+\contentsline {section}{\numberline {4.4}Spaanvorming bij Draaien}{23}{section.64}%
+\contentsline {section}{\numberline {4.5}Oppervlakteruwheid bij Draaien}{24}{section.67}%
+\contentsline {section}{\numberline {4.6}De Draaioperatie}{25}{section.69}%
+\contentsline {chapter}{\numberline {5}Verspanen: Boren, Fabricage en ronde gaten}{26}{chapter.72}%
+\contentsline {section}{\numberline {5.1}Inleiding Boren}{26}{section.73}%
+\contentsline {subsection}{\numberline {5.1.1}Boorgeometrie}{27}{subsection.78}%
+\contentsline {section}{\numberline {5.2}Optredende krachten}{27}{section.80}%
+\contentsline {subsection}{\numberline {5.2.1}gevolgen van onevenwichtige krachten}{28}{subsection.82}%
+\contentsline {section}{\numberline {5.3}Keuze van voeding}{29}{section.83}%
+\contentsline {subsection}{\numberline {5.3.1}Torsie bij Boren}{29}{subsection.84}%
+\contentsline {paragraph}{1) Via het schuifspanningscriterium}{30}{figure.caption.85}%
+\contentsline {paragraph}{2) Via een momentlimiet}{30}{figure.caption.85}%
+\contentsline {paragraph}{Speciale geval -- lineair}{30}{figure.caption.85}%
+\contentsline {section}{\numberline {5.4}Boormachines en booroperaties in de industrie.}{31}{section.87}%
+\contentsline {subsection}{\numberline {5.4.1}NC-gestuurde boormachines}{31}{subsection.88}%
+\contentsline {subsection}{\numberline {5.4.2}Boren}{31}{subsection.89}%
+\contentsline {paragraph}{Type boren}{31}{figure.caption.90}%
+\contentsline {subsection}{\numberline {5.4.3}Kotteren}{31}{subsection.92}%
+\contentsline {subsection}{\numberline {5.4.4}Draadtappen}{32}{subsection.93}%
+\contentsline {subsection}{\numberline {5.4.5}Ruimen}{32}{subsection.95}%
+\contentsline {chapter}{\numberline {6}Verspanen: Frezen}{32}{chapter.97}%
+\contentsline {section}{\numberline {6.1}Inleiding Frezen}{33}{section.98}%
+\contentsline {subsection}{\numberline {6.1.1}Soorten frezen}{33}{subsection.99}%
+\contentsline {subsection}{\numberline {6.1.2}Geometrie van de frees}{33}{subsection.100}%
+\contentsline {section}{\numberline {6.2}krachtwerking bij frezen}{33}{section.102}%
+\contentsline {section}{\numberline {6.3}Richting van frezen}{35}{section.105}%
+\contentsline {subsection}{\numberline {6.3.1}Wanneer kiezen: meelopend vs tegenlopend}{36}{subsection.108}%
+\contentsline {paragraph}{Effecten op oppervlakte en snedediepte}{36}{subsection.108}%
+\contentsline {section}{\numberline {6.4}Soorten frezen}{37}{section.109}%
+\contentsline {section}{\numberline {6.5}De Freesmachine}{37}{section.110}%
+\contentsline {chapter}{\numberline {7}Verspanen:Hybridetechnieken}{38}{chapter.112}%
+\contentsline {section}{\numberline {7.1}Honen}{38}{section.113}%
+\contentsline {section}{\numberline {7.2}Leppen}{38}{section.114}%
+\contentsline {section}{\numberline {7.3}Hoge snelheid verspanen}{38}{section.115}%
+\contentsline {section}{\numberline {7.4}Laserondersteuning bij verspanen}{38}{section.116}%
+\contentsline {section}{\numberline {7.5}Draadvonken en slijpen}{38}{section.117}%
+\contentsline {section}{\numberline {7.6}ECM (Electro Chemical Machining) en slijpen}{38}{section.118}%
+\contentsline {chapter}{\numberline {8}Verspanen:Slijpen}{38}{chapter.119}%
+\contentsline {subsection}{\numberline {8.0.1}Frezen met onbepaalde snijkanten}{38}{subsection.120}%
+\contentsline {subsection}{\numberline {8.0.2}Eigenschappen van slijpen}{39}{subsection.122}%
+\contentsline {subsection}{\numberline {8.0.3}Parameters slijpsteen}{39}{subsection.131}%
+\contentsline {subsubsection}{Korrelmateriaal}{40}{figure.caption.132}%
+\contentsline {subsubsection}{Korrelgroot}{40}{figure.caption.132}%
+\contentsline {subsubsection}{Hardheid van de slijpsteen}{40}{figure.caption.132}%
+\contentsline {subsubsection}{Bindmiddel}{41}{figure.caption.132}%
+\contentsline {subsubsection}{Structuur}{41}{figure.caption.132}%
+\contentsline {section}{\numberline {8.1}temperaturen bij slijpen}{41}{section.134}%
+\contentsline {section}{\numberline {8.2}Slijptechnieken}{42}{section.136}%
+\contentsline {section}{\numberline {8.3}De slijpmachine}{42}{section.138}%
+\contentsline {subsection}{\numberline {8.3.1}Centerloos slijpen}{43}{subsection.139}%
+\contentsline {subsection}{\numberline {8.3.2}Profielslijpen}{43}{subsection.141}%
+\contentsline {chapter}{\numberline {9}Fysische en Chemische afnemende bewerkingen}{43}{chapter.142}%
+\contentsline {chapter}{\numberline {10}Scheiden}{43}{chapter.143}%
+\contentsline {chapter}{\numberline {11}Automatiseren \& machinekeuze}{43}{chapter.144}%
+\contentsline {chapter}{\numberline {12}Productie werkvoorbereiding}{43}{chapter.145}%
+\contentsline {chapter}{\numberline {13}Productiegericht ontwerpen}{43}{chapter.146}%
