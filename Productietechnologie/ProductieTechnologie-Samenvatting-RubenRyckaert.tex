@@ -18,6 +18,8 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{tikz}
+% TikZ libraries used by figures (calc for coordinate arithmetic, arrows.meta for arrow tips, positioning for nodes)
+\usetikzlibrary{calc,arrows.meta,positioning}
 \usepackage{fancyhdr}
 \usepackage{tcolorbox}
 \usepackage{float}
@@ -31,6 +33,43 @@
 \captionsetup{skip=3pt,aboveskip=3pt,belowskip=3pt} % reduce caption separation
 \usepackage{enumitem}% Shared project macros (\frm, formularium, \fig)
 \usepackage{./productie-macros}
+
+% --- Practical packages & macros to improve writing and consistency ---
+% Units & numbers (guarded: compiles even if siunitx is not installed)
+\IfFileExists{siunitx.sty}{%
+  \usepackage{siunitx}%
+  \sisetup{per-mode=symbol,detect-all=true}%
+}{%
+  \PackageWarning{productie-macros}{Package `siunitx' not found; install it to enable \string\SI and unit formatting (tlmgr install siunitx)}%
+}
+% Better tables
+\usepackage{booktabs}
+% Sub-figures
+\usepackage{subcaption}
+% Smart cross-references (load after hyperref) — guarded so missing package doesn't break build
+\IfFileExists{cleveref.sty}{%
+  \usepackage[capitalise]{cleveref}%
+  % Localised names (Dutch)
+  \crefname{figure}{figuur}{figuren}
+  \Crefname{figure}{Figuur}{Figuur}
+  \crefname{table}{tabel}{tabellen}
+  \Crefname{table}{Tabel}{Tabel}
+}{%
+  \PackageWarning{productie-macros}{Package `cleveref' not found; use standard \ref for cross-references}%
+}
+
+% Handy short macros for frequently used symbols
+\newcommand{\Fc}{\ensuremath{F_c}}
+\newcommand{\vc}{\ensuremath{v_c}}
+\newcommand{\Pc}{\ensuremath{P_c}}
+
+% Small helper for quick theory/exercise inline boxes (uses tcolorbox loaded earlier)
+\newtcbox{\theoriebox}{on line,boxrule=0.4pt,arc=2pt,boxsep=3pt,top=2pt,bottom=2pt,colback=gray!6,colframe=gray!40}
+
+% Quick usage notes:
+% - Use \SI{120}{\milli\metre\per\minute} for units (siunitx)
+% - Use \cref{fig:label} for cross-references (cleveref)
+% - Use \toprule/\midrule/\bottomrule for nicer tables (booktabs)
 
 % Hyphenation & tolerance adjustments to reduce underfull boxes
 % Increase tolerance slightly and give TeX more emergency stretch so fewer
@@ -98,6 +137,16 @@
 
 % ------------------ Figure helper ------------------
 % Provided by `productie-macros.sty` via the \fig helper.
+% Provide a small, non-invasive fallback for \autofig (used in some places).
+% This uses \providecommand so it will only define \autofig when it isn't
+% already defined by `productie-macros.sty`.
+\providecommand{\autofig}[3][]{%
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[#1]{#2}
+    \caption{#3}
+  \end{figure}
+}
 
 % ------------------ Document metadata ------------------
 \title{Productietechnologie — Samenvatting}
@@ -280,6 +329,7 @@ Passing is een maat voor hoe goed twee oppervlakken op
 
 
 \chapter{Verspanen:Algemeen}
+\label{chap:Algemeen verspanen}
 \textbf{Dit hoofdstuk is de basis van verspannen en is relevant voor alle verspaningstechnieken.}
 
   Verspannen is het verwijderen van materiaal van een werkstuk. Dit kan door boren, frezen, draaien of slijpen, \ldots Je begint met een ruw werkstuk en verwijdert materiaal totdat je de gewenste vorm en afmetingen hebt.
@@ -707,26 +757,730 @@ Zoals vermeld in het algemeen Verspannen heb je drie krachten op je werkstuk
     \end{enumerate}
 
     Afhankelijk van de voeding gaan die krachten anders verdeeld zijn.
+    De figuur toont een steekproef van metingen van de krachten bij verschillende voedingen.
   \end{minipage}
 \end{figure}
 \FloatBarrier
 
 \vspace{0.5\baselineskip}
 
+\textbf{Zorg dat je de volgende formules kent en kunt uitleggen:}
+
 De hoofdsnijkracht wordt berekent met de formule van Kienzle:
-\frm{Kienzle vergelijking Hoofdsnijkracht}{F_c = k_c \cdot A\cdot f^{(1-e)}}{waarbij $k_c$ de snijkrachtcoëfficiënt is,
- $A$ het snijoppervlak, $f$ de voeding en e de snijkracht exponent.}
+\frm{Kienzle vergelijking Hoofdsnijkracht}{F_c = k_c \cdot a\cdot f^{(1-e)}}{waarbij $k_c$ (N/mm$^2$ of Pa) de snijkrachtcoëfficiënt is, 
+$a$ de snedediepte, $f$ de voeding en $e$ de snijkrachtexponent.}
+
+$k_c$ zijn materiaalconstanten die dan ook nog je optimale snijsnelheid gaan bepalen.
+
+\frm{b: snedebreedte bij draaien}{b = \frac{a}{\sin x}}{met $a$ de snedediepte en $x$ de instelhoek (zie figuur).}
+
+\frm{h: snededikte bij draaien}{h = f \cdot \sin x}{met $f$ de voeding en $x$ de instelhoek (zie figuur).}
+
+De optimale snijsnelheid bij draaien is afhankelijk van $k_c$ 
+\frm{Optimale snijsnelheid bij draaien}{v_{c,\mathrm{opt}} = v_c(k_c)\cdot f^{-u}}{waarbij $d$ de diameter is in mm en $n$ het toerental in omwentelingen per minuut.}
+
+
+\textbf{Aanvullende formules (zonder frm):}
+\[
+\begin{aligned}
+P_c &= F_c\,v_c\\
+P_m &= \dfrac{P_c}{\eta}\\
+v_c &= \pi\,d\,n\\
+v_f &= f\,n\\
+Q &= a\,f\,v_f\\
+M_c &= F_c\,\dfrac{d}{2}
+\end{aligned}
+\]
+
+Als $n$ in rev/min en $d$ in mm: $v_c\ ([\mathrm{m/min}]) = \pi\,\dfrac{d\,[\mathrm{mm}]}{1000}\;n\,[\mathrm{rev/min}]$. 
+
+\noindent
+Korte uitleg en eenheden:
+\begin{itemize}
+  \item $P_c = F_c\,v_c$: vermogen is kracht maal snelheid (N·m/s = W). Als $v_c$ in m/min gegeven is, deel door 60 om naar m/s te gaan.
+  \item $P_m = P_c/\eta$: rekening houden met mechanische/elektrische efficiëntie $\eta$ (dimensieloos); motorvermogen is altijd groter dan of gelijk aan het snijvermogen.
+  \item $v_c = \pi d n$: op één omwenteling legt een punt op de omtrek een afstand $\pi d$ af; keer het aantal omwentelingen per tijd geeft lineaire snelheid. Let op eenheden (mm vs m, rev/min vs rev/s).
+  \item $v_f = f n$: voedingssnelheid is voeding per omwenteling maal het aantal omwentelingen per tijd; gebruik mm/rev × rev/min = mm/min.
+  \item $Q = a f v_f$: materiaalafname (volume/tijd) is snedediepte × voeding per omwenteling × voedsnelheid; zorgt voor $\mathrm{mm}^3/\mathrm{min}$ bij consequente eenheden.
+  \item $M_c = F_c (d/2)$: koppel is kracht maal arm (halve diameter als hefboom) → N·m.
+\end{itemize}
+
+
+Al deze formules zijn belangrijk om te begrijpen hoe de verschillende parameters bij draaien met elkaar in verband staan.
+Als hij vraag op het examen. Met deze parameters en deze voeding. Wat is de maximale snijsnelheid die ik kan gebruiken?
+Je kunt deze logarithmisch plotten zoals de figuur hieronder om te zien welke snijsnelheid je maximaal kunt gebruiken
+\newline
+\textbf{Zie dat alle formules in verband staan met de voeding.}
+
+\begin{figure}[H] 
+  \centering
+  \includegraphics[width=0.8\textwidth]{image32.png}
+  \caption{Bepaling krachten, voeding of moment op werkstuk}
+\end{figure}
+
+Zo zie je hoe instelparameters zoals voeding, snijsnelheid en snedediepte in de industrie,
+bepaald worden.
+
+\section{Invloeden voeding \texorpdfstring{$f$}{f} en snedediepte \texorpdfstring{$a$}{a} op de kracht en snijsnelheid}
+
+
+\textbf{BELANGRIJK, HIJ KAN LEGE FIGUREN GEVEN OP HET EXAMEN EN JIJ MOET EFFECTEN KUNNEN UITLEGGEN}
+
+
+\begin{enumerate}
+  \item \textbf{Softening effect (verzachting)}: Bij hogere voeding ontstaat meer warmte in het snijgebied. Die warmte maakt het oppervlak lokaal zachter, waardoor voor dezelfde snijsnelheid de snijkracht en voedingskracht doorgaans afnemen.
+  \item \textbf{Build‑up edge (BUE)}: Bij lage snijsnelheden en bepaalde voedingen kan materiaal aan de snijkant aanhechten (BUE). Dit veroorzaakt tijdelijke pieken in de krachten en kan de oppervlaktekwaliteit verslechteren; bij hogere voeding of snelheid neemt dit effect vaak af.
+  \item \textbf{Snijkanthoek $\kappa_r$}: Het veranderen van de hoek van het snijvlak verschuift de richting en verdeling van de krachten; sommige componenten (bijv. $F_c$) kunnen toenemen terwijl andere (bijv. $F_f$ of $F_p$) afnemen, waardoor de krachten anders verdeeld zijn.
+  \item \textbf{Snedediepte $a_p$}: Een grotere snedediepte vergroot het verwijderde volume per omwenteling en verhoogt daardoor alle resulterende krachtcomponenten (snijkracht, voedingskracht, terugdrukkracht).
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{image33.png}
+  \caption{}
+ \end{figure}
+
+ \section{Spaanvorming bij Draaien}
+
+ Er zijn verschillende parameters die spaanvorming beïnvloeden
+  \begin{itemize}
+    \item \textbf{Instelhoek $\kappa_r$}: De spaanslankheid $\dfrac{b}{h}$ hangt mede af van de instelhoek (met $b$ de snedebreedte en $h$ de snededikte).
+    \item \textbf{Hellingshoek $\lambda$}: Een grotere hellingshoek kan de effectieve snedebreedte $b$ vergroten en daarmee de spaanslankheid beïnvloeden.
+    \item \textbf{Snedediepte $a$}: Een grotere snedediepte vergroot doorgaans $b$ en verhoogt de spaanslankheid.
+    \item \textbf{Voeding $f$}: Grotere voeding verhoogt de snededikte $h$, wat resulteert in dikkere spanen die moeilijker breken.
+    \item \textbf{Materiaal}: Ductiele materialen veroorzaken vaak lange, samenhangende spanen; brosse materialen geven korte, brokkelige spanen.
+    \item \textbf{Spaanhoek $\gamma$}: Een grotere afschuifhoek maakt spaanvorming gemakkelijker en vermindert de kans op gebroken spanen.
+  \end{itemize}
+
+  \frm{Spaanslankheid bij Draaien}{\dfrac{b}{h} = \dfrac{a}{f \cdot \sin \kappa_r}}{waarbij $b$ de snedebreedte is, $h$ de snededikte, $a$ de snedediepte, $f$ de voeding en $\kappa_r$ de instelhoek.}
+  
+\theoriebox{\textbf{$h = f \cdot \sin\kappa_r$}}
+
+De snededikte $h$ bij draaien wordt bepaald door de voeding $f$ en de instelhoek $\kappa_r$. Een grotere voeding of een kleinere instelhoek resulteert 
+in een dikkere spaan, wat de spaanvorming beïnvloedt.
+
+\theoriebox{\textbf{$b = \dfrac{a}{\sin\kappa_r}$}}
+\newline
+{De snedebreedte $b$ bij draaien wordt bepaald door de snedediepte $a$ 
+en de instelhoek $\kappa_r$. Een grotere snedediepte of een grotere instelhoek resulteert in
+ een bredere spaan, wat de spaanvorming beïnvloedt.}
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{image34.png}
+    \includegraphics[width=0.45\textwidth]{image35.png}
+    \caption{Verschillende types spaanvorming bij draaien en welke goed zijn en welke parameters invloed hebben.}
+  \end{figure}
+
+
+  Om grote spannen te worden spaanbrekers gebruikt.
+  Spaanbrekers zijn inkepingen in de bijtel die de spaan
+  breken in kleinere stukken.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{image36.png}
+    \caption{Spaanbrekers in bijtels}
+  \end{figure}
+
+  \section{Oppervlakteruwheid bij Draaien}
+De oppervakteruwheid wordt gecreerd door de bijtel. De bijtel is niet perfect scherp en is dus licht bol, dit is de neusradius *$r_\epsilon$.
+Deze bol zal kleine inkepingen maken in het oppervlakte. De ruwheid wordt dus bepaald door de neusradius en de voeding.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{image37.png}
+    \includegraphics[width=0.45\textwidth]{image38.png}
+    \caption{}
+  \end{figure}
+De oppervlakte ruwheid wordt bepaalde door de voeding en de neusradius.
+\begin {itemize}
+\item \textbf{$R_t $ is de totale hoogte van de ruwheid}
+\item \textbf{$R_a $ is de gemiddelde hoogte van de ruwheid}
+\end{itemize}
+
+\textbf{Kinematische ruwheid of drawsruwhheidbij draaien:}
+\newline
+Kinematsche ruwheid is puur door de geometrie van het systeem.
+\newline
+\textbf{De processruwheid}
+\newline
+De processruwheid is de ruwheid die ontstaat door trillingen en andere onvolkomenheden in het systeem.
+Het is de ruwheid door de opbouwsnijkant (Build -up edge BUE) en andere factoren.
+\newline
+\textbf{Totale ruwheid}
+\newline
+De totale ruwheid wordt bepaald door de kinematische ruwheid en de processruwheid
+
+
+\frm{gemiddelde ruwheid bij Draaien}{R_a = \dfrac{f^2}{32 \cdot r_\epsilon}}{waarbij $f$ de voeding is en $r_\epsilon$ de neusradius van de bijtel.}
+\frm{totale ruwheid bij Draaien}{R_t = \dfrac{f^2}{8 \cdot r_\epsilon}}{waarbij $f$ de voeding is en $r_\epsilon$ de neusradius van de bijtel.}
+
+\medskip
+\noindent\textbf{Afleiding (oppervlakteruwheid).} Stel dat de neus van de bijtel lokaal een cirkelboog met straal $r_\epsilon$ vormt en dat de voeding per
+ omwenteling $f$ de koorde van die boog is. De booghoogte (sagitta) is
+\[
+  s \;=\; r_\epsilon - \sqrt{r_\epsilon^2 - \left(\tfrac{f}{2}\right)^2}
+  \;\approx\; \dfrac{f^2}{8\,r_\epsilon},
+\]
+waarbij in de laatste stap de binomiale benadering wordt gebruikt (geldt voor $f\ll r_\epsilon$). Dit geeft de peak‑to‑valley ruwheid
+\(R_t \approx s = \dfrac{f^2}{8\,r_\epsilon}\). Voor een periodieke boogvorm is de gemiddelde ruwheid ongeveer $R_a\approx R_t/4$, dus
+\(R_a \approx \dfrac{f^2}{32\,r_\epsilon}\).
+
+\noindent\textit{Eenheden en geldigheid:} als $f$ en $r_\epsilon$ in mm zijn, dan zijn $R_t$ en $R_a$ ook in mm. De benaderingen zijn geldig wanneer $f\ll r_\epsilon$.
+
+
+\section{De Draaioperatie}
+
+Draaien wordt met \textbf{verschillende beitels} gedaan die verschillende bewerkingen kunnen uitvoeren.
+De punten van de bijtels noemen we \textbf{inserts}.
+\newline 
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{image39.png}
+  \caption{}
+\end{figure}
+
+De componenten worden in een draaimachine gestoken die deze beitels kan bewegen langs verschillende assen en het werkstuk
+kan laten roteren.
+Ze kunnen bewegen door AC (asynchrone) motoren of servomotoren die de bewegingen zeer precies kunnen uitvoeren.
+De snelheid van de motoren wordt gecontrolleerd door een tandwielkast. 
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image40.png}
+  \caption{Tandwielkast voor draaimachine}
+\end{figure}
+
+Motoren gaan vooral werken rond de stijle curve. Dit is interresant omdat je met verschillende lasten
+dezelfde toerental kunt behouden.
+\newline 
+
+
+  \chapter{Verspanen: Boren, Fabricage en ronde gaten}
+  \section{Inleiding Boren}
+  Boren is een verspaningstechniek die wordt gebruikt om ronde gaten in materialen te maken. 
+  Het proces omvat het gebruik van een roterend boorgereedschap, 
+  meestal een boor, dat in het materiaal wordt gedrukt om materiaal te verwijderen en een gat te creëren.
+
+  Belangrijke booroperaties zijn:
+  \begin{enumerate}
+    \item \textbf{Boren}: Het primaire proces waarbij een boor wordt gebruikt om een rond gat te maken in het materiaal.
+    \item \textbf{Kotteren}: Een nabewerkingsproces waarbij een kotter wordt gebruikt om de diameter van een bestaand 
+    gat te vergroten en de oppervlakteafwerking te verbeteren.
+    \item \textbf{Ruimen}: Een proces waarbij een ruimer wordt gebruikt om de diameter van een bestaand gat te vergroten en de nauwkeurigheid en oppervlaktekwaliteit te verbeteren.
+    Je kunt niet met normaal boren een accuraatheid van H7 bereiken. Hiervoor moet je ruimen gebruiken.
+    \item \textbf{Tappen}: Het proces van het snijden van interne schroefdraad in een gat met behulp van een tap.
+  \end{enumerate}
+
+  \subsection{Boorgeometrie}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{image41.png}
+    \includegraphics[width=0.45\textwidth]{image42.png}
+    \caption{Hoe de geometrie van een boor het werkstuk snijdt}
+    \label{fig:boorgeometrie}
+  \end{figure}
+  \FloatBarrier
+  
+  Negatieve spaanhoeken geeft enorm veel krachten en is moeilijker te bewerken omdat de afschuifhoek kleiner is.
+  Op een boor heb je belangrijke geometrie die andere functies hebben:
+  \begin{itemize}
+    \item \textbf{Hoofdsnijvlak}: het primaire snijvlak dat het materiaal losmaakt; draagt de meeste snijkracht en beïnvloedt oppervlaktekwaliteit en snijvermogen.
+    \item \textbf{Hulpsnijvlak}: een secundair snijvlak nabij de punt dat afwerking en stabiliteit verbetert; draagt bij aan de lokale lastverdeling.
+    \item \textbf{Spaanvlak}: het vlak waarlangs de spaan stroomt; bepaalt spaanvorming, spaanafvoer en warmteontwikkeling (kolkslijtage kan optreden).
+    \item \textbf{Vrijloopvlak}: het vlak dat niet in contact mag komen met het bewerkte oppervlak; met voldoende vrijloophoek voorkomt het wrijving en slijtage en behoudt maatnauwkeurigheid.
+  \end{itemize}
+
+  De boor beweegt naar beneden en maakt een spiraal. De vrijloophoek maakt een spiraal naar beneden. Hoe sneller je beweegt hoe schuiner dat je spiraal ligt.
+  De vrijloophoek is dus kleiner dan de vrijslijphoek. De voeding gaat ook afhankelijk zijn van deze hoek.
+
+
+
+  \section{Optredende krachten}
+  Net zoals bij draaien zijn er verschillende krachten die op het werkstuk
+  en de boor werken tijdens het boren. Deze worden met de theorie van Kienzle berekend. \ref{frm:10}
+
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.45\linewidth]{image43.png}
+      \caption{Krachten op een boor}
+      \label{fig:boren_krachten}
+  \end{figure}
+
+        Boren hebben een grote voedingskracht en een relatief klein snijmoment.
+       De axiale voeding is groot omdat de boor in het materiaal moet doordringen,
+        terwijl het snijmoment klein is door de geringe diameter.
+         Als de krachten niet in evenwicht zijn, ontstaat excentriciteit en scheef boren,
+          wat leidt tot slechte oppervlaktekwaliteit en onnauwkeurige gaten.
+      \begin{itemize}
+        \item Grote axiale (voedings) kracht nodig om te penetreren.
+        \item Klein snijmoment door kleine snijcirkel.
+        \item Onevenwicht → scheef boren, variërende diameter en slechte afwerking.
+      \end{itemize}
+
+  \subsection{gevolgen van onevenwichtige krachten}
+  Als de krachten niet in evenwicht zijn, gaan de gaten van je boorn groter zijn en niet 
+  gelijk over heel het gat. 
+
+
+  Net zoals bij draaien worden de krachten, vermogens en momenten berekent met het theorema van Kienzle~\ref{frm:10}.
+
+  \textbf{Belangrijke krachten, vermogens en momenten bij boren:}
+  \frm{Voedingskracht}{F_f = k_f \cdot a \cdot f^{(1-e)}}{waarbij $k_f$ de voedingskrachtcoëfficiënt is,
+  $a$ de snedediepte, $f$ de voeding en $e$ de voedingskrachtsexponent.}
+  \frm{Verspanningsmoment}{M_c = C_m \cdot d^{x_M} \cdot f^{y_M}}{waarbij $C_m$ de momentcoëfficiënt is,
+  $d$ de diameter, $f$ de voeding en $x_M$, $y_M$ de momentexponenten.}
+  \frm{Vermogen bij boren}{P_c = M_c\,\omega = M_c \cdot 2\pi n}{waarbij $M_c$ het verspaningsmoment is en $\omega$ de hoeksnelheid.
+  het verspaningsmoment is en $\omega$ de hoeksnelheid.}
+
+  \section{Keuze van voeding}
+
+  Het belangrijkse van de keuze van de voeding is de sterkte van de boor.
+  De Torsie kant berekent worden en hieruit de maximale voeding bepaald worden.
+
+  \subsection{Torsie bij Boren}
+  \frm{Torsie bij Boren}{\tau = \dfrac{M_c\,\rho}{I_p}}{waarbij $M_c$ het verspaningsmoment is, $\rho$ de afstand van het centrum tot het beschouwde punt en $I_p$ het polair traagheidsmoment.}
+
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[scale=1.2,>=stealth,inner sep=0pt]
+      \def\R{2.0}
+      % Styles
+      \tikzset{shaft/.style={thick},
+               shear/.style={->,>=stealth,red!75,very thick},
+               tangent/.style={->,>=stealth,orange!80!black,thick},
+               rho/.style={->,gray,thick,>=stealth}}
+
+      % shaft cross-section
+      \draw[shaft] (0,0) circle (\R);
+      \fill (0,0) circle (0.6pt) node[below left] {O};
+
+      % sample radii with shear (tangent) arrows and rho arrows
+      \foreach \r/\ang in {0.6/120,1.2/30,1.8/-25}{%
+        % radius line
+        \draw[black!60] (0,0) -- (\ang:\r);
+        % small rho arrow (radial measure)
+        \draw[rho] (0,0) -- (\ang:{\r+0.06}) node[pos=0.6,above,black]{\small $\rho$};
+        % shear vector (tangent) and label
+        \draw[shear] (\ang:\r) -- ++({\ang+90}:{0.26*\r}) node[pos=1,right]{\small $\tau(\rho)$};
+        % extra thin tangent arrow for style
+        \draw[tangent] (\ang:\r) -- ++({\ang+90}:{0.28*\r});
+      }
+
+      % Formula box outside the cross-section (right side)
+      \node[anchor=west,align=left] at (2.2,0.4) {\small $\displaystyle \tau(\rho)=\dfrac{M_c\,\rho}{I_p}$\\[2pt] \tiny $I_p=\dfrac{\pi d^4}{32}$};
+
+      % Small note below (placed explicitly below the circle)
+      \node at (0,-3) {\small $\tau(\rho)\propto\rho$ (lineair bij vaste $M_c,I_p$)};
+    \end{tikzpicture}
+    \caption{Torsiediagram: schuifspanning $\tau$ neemt lineair toe met de straal $\rho$; relevante formule staat buiten de doorsnede.}
+    \label{fig:torsie_cirkel}
+  \end{figure}
+  Met het traagheidsmoment berekent als volgt (zie statica):
+  \newline
+\theoriebox{\textbf{Polair traagheidsmoment voor een cirkelvormige doorsnede:} $I_p = \frac{\pi d^4}{32}$}
+
+De combinatie van deze formules:
+
+\frm{Maximale schuifspanning bij Draaien}{M_d = C_b \cdot d^{x_w}}{waarbij \ensuremath{C_b} de schuifspanningcoëfficiënt is,
+\ensuremath{d} de diameter, \ensuremath{x_w} de schuifspanningsexponent.}
+
+
+\frm{Maximale verspanningsmoment}{M_c = a\cdot M_b}{waarbij \ensuremath{M_c} het verspaningsmoment is en \ensuremath{M_b} het maximale verspanningsmoment.}
+
+
+  Samen met het verspanningsmoment:
+
+  \medskip
+  \noindent\textbf{Afleiding van de maximale voeding $f_{\max}$ (twee methodes)}
+
+  \paragraph{1) Via het schuifspanningscriterium}
+  De maximale schuifspanning in de buitenvezel van een ronde doorsnede is
+  \[
+  \tau_{\max}=\dfrac{16\,M_c}{\pi\,d^3}.
+  \]
+  Eis \(\tau_{\max}\le\tau_{\mathrm{allow}}\):
+  \[
+  M_c \le \dfrac{\tau_{\mathrm{allow}}\,\pi\,d^3}{16}.
+  \]
+  Met \(M_c = C_m\,d^{x_M}\,f^{y_M}\) volgt
+  \[
+  f_{\max} = \left(\dfrac{\tau_{\mathrm{allow}}\,\pi}{16\,C_m}\right)^{1/y_M} d^{(3-x_M)/y_M}.
+  \]
+
+  \paragraph{2) Via een momentlimiet}
+  Als \(M_c\le M_d=C_b\,d^{x_w}\) dan volgt
+  \[
+  f_{\max} = \left(\dfrac{C_b}{C_m}\right)^{1/y_M} d^{(x_w-x_M)/y_M}.
+  \]
+
+  \paragraph{Speciale geval -- lineair}\hfill\\
+  Wanneer \(y_M=1\) en \(x_w-x_M=1\) volgt
+  \[
+  f_{\max} = \dfrac{C_b}{C_m}\; d,
+  \]
+  wat overeenkomt met de eenvoudige vorm \(f_{\max}=C\cdot d\).
 
 
 
 
-  \chapter{Verspanen: Boren}
+  \frm{Maximale voeding bij boren}{f_{max} = C \cdot d}{waarbij $C$ een constante is, $d$ de diameter en $f_{max}$ de maximale voeding.}
 
+
+  \frm{Kracht $F_f$ is de kracht recht naar boven bij een boormachine}{F_f = C_f \cdot d^{X_f} \cdot f^{y_f}}{waarbij $C_f$ de voedingskrachtcoëfficiënt is, $d$ de diameter, $f$ de voeding en $X_f$ en $y_f$ de voedingskrachtsexponenten.}
+
+  Deze kracht zal een moment creeëren op de machine die hem kan buigen. 
+  Dit is vooral bij C vormige structuren.
+
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1.15,>=stealth,inner sep=0pt,every node/.style={font=\small}]
+      % Styles
+      \tikzset{frame/.style={line width=2pt,rounded corners=1pt},
+               support/.style={line width=0.8pt,draw=black,fill=black!10},
+               spindle/.style={line width=1.2pt},
+               load/.style={->,ultra thick,red,>=stealth},
+               reaction/.style={->,thick,black},
+               moment/.style={<->,very thick,blue,>=stealth},
+               dim/.style={<->,thick,gray, >=stealth},
+               rotarc/.style={->,thick,orange!80!black,>=stealth}}
+
+      % Coordinates (parameterised for easier tuning)
+      \coordinate (A) at (-1.2,-1.0);
+      \coordinate (B) at (-1.2,1.25);
+      \coordinate (C) at (0.95,1.25);
+      \coordinate (D) at (0.95,0.25);
+      \coordinate (E) at (-0.3,0.25);
+
+      % Frame (neutral position)
+      \draw[frame] (A) -- (B) -- (C) -- (D) -- (E);
+
+      % Base support (stylised)
+      \draw[support] ($(A)+(0,-0.15)$) rectangle ($(A)+(0.4,-0.05)$);
+
+      % Workpiece / pivot (drawn as slightly larger disc)
+      \coordinate (wp) at (1.25,1.25);
+      \filldraw[fill=black!12,draw=black] (wp) circle (0.15cm) node[below right,xshift=1pt]{\small werkstuk (pivot)};
+
+      % Rotated (deformed) frame: small rotation around 'wp' to show the machine tilting
+      \draw[frame,dashed,opacity=0.7,rotate around={-8:(wp)}] (A) -- (B) -- (C) -- (D) -- (E);
+
+      % Small rotation arc and label theta (moved slightly to avoid overlap)
+      \draw[rotarc] ($(wp)+(0.7,0.25)$) arc (22:-120:0.6) node[midway,left,yshift=2pt]{\small $\theta$};
+      \node[orange!70!black,right=8pt] at ($(wp)+(1.05,0.25)$){\small lichte rotatie};
+
+      % Spindle / tool (fixed to the neutral frame)
+      \draw[spindle] (0.12,0.25) -- ++(0,0.8) node[above,black]{\footnotesize boor};
+
+      % Feed force applied to the workpiece (axial, pointing downward towards the support)
+      \draw[load] (wp) -- ++(0,-0.9) node[below right=2pt]{$F_f$};
+
+      % Reaction arrow at the base (upward, offset to avoid overlap)
+      \draw[reaction] ($(A)+(0,0.2)$) -- ++(0,0.7) node[left=2pt,pos=1,black]{\footnotesize reactiekracht};
+
+      % Bending moment arc on the left with arrows both ends (shows moment due to Ff about pivot)
+      \draw[moment] ($(A)+(-1.5,0.25)$) arc (-150:150:0.7) node[midway,left,xshift=-4pt]{\small $M$};
+
+      % Dimension (lever arm from left vertical to pivot)
+      \draw[dim] ($(wp)+(0,-0.02)$) -- ($(A)+(0.02,0.12)$) node[midway,right,black]{\small $l$};
+
+      % Annotations (moved further down to avoid collision with text)
+      \node[below] at ($(C)+(0.6,-1.1)$) {\small ``C‑frame''};
+    \end{tikzpicture}
+    \caption{C‑vormig frame: axiale voedingskracht $F_f$ op het werkstuk (pivot) veroorzaakt een lichte kanteling (\(\theta\)) rond het werkstuk; de gestippelde lijn toont de gedraaide positie van het frame.}
+    \label{fig:Cframe_moment}
+  \end{figure}
+  \FloatBarrier
+
+
+  \section{Boormachines en booroperaties in de industrie.}
+\subsection{NC-gestuurde boormachines}
+NC-gestuurde boormachines (Numerical Control) zijn computergestuurde machines die worden gebruikt voor het boren van gaten in materialen met 
+hoge precisie en herhaalbaarheid.
+ Deze machines maken gebruik van vooraf geprogrammeerde instructies 
+ om de bewegingen van de boor en het werkstuk te regelen.
+\newline
+
+\subsection{Boren}
+Hier zijn nog relevante type boren en hun toepassingen:
+\begin{itemize}
+  \item \textbf{Toepassingen:} verspanen van gaten voor bevestigingsmiddelen, passingen en nabewerkingen (ruimen, kotteren); wordt ook gebruikt als pilot voor grotere bewerkingen.
+  \item \textbf{Belangrijke parameters:} snijsnelheid $v_c$, voeding $f$, snedediepte $a$, koelmiddel en spanenvorm.
+  \item \textbf{Veelvoorkomende borentypes:}
+    \begin{itemize}
+      \item \textbf{Centerboor / positioneerboor:} korte, stijve boor om een startpunt te maken (voorkomt uitlopen van de boor).
+      \item \textbf{Steekboor (jobber / stub):} standaard boor voor algemene gaten; lengte en spiraaltype kiezen afhankelijk van diepte en spanenafvoer.
+      \item \textbf{Verzinkingsboor (countersink):} maakt een conische uitsparing voor schroefkoppen of voor ontbraamwerk.
+      \item \textbf{Split‑point / conische punt boren:} verbetert centrering en vermindert wander bij start.
+    \end{itemize}
+\end{itemize}
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[scale=0.9]
+    % Simple drill icon
+    \draw[fill=gray!10] (-0.8,0) rectangle (0.8,-0.4);
+    \draw[thick] (0,0.6) -- (0,0) -- (0.3,-0.3);
+    \draw[thick] (0,0.6) -- (0.6,0.6) node[right]{\small boor};
+    \node at (0,-0.6){\small Boren: pilot, peck, koelmiddel en spaanafvoer belangrijk};
+  \end{tikzpicture}
+  \caption{Schematische weergave van een boor in een werkstuk}
+\end{figure}
+\paragraph{Type boren}
+\begin{itemize}
+\item \textbf{Verzinkingsboor}: Wordt gebruikt om een conische uitsparing te maken aan het begin van een gat, zodat schroefkoppen gelijk met het 
+oppervlak kunnen liggen.
+\item \textbf{Centerboor}: Wordt gebruikt om een startpunt te creëren.
+\item \textbf{Steekboor}: Wordt gebruikt voor het boren van algemene gaten.
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{image44.png}
+  \caption{Verschillende soorten boren}
+\end{figure}
+
+\subsection{Kotteren}
+Als je een groot gat hebt en je kunt niet met een boor zo'n groot gat maken, dan kun je kotteren gebruiken.
+Je kunt ook eventueel frezen maar dat zie je in het volgende hoofdstuk \ref{chap:Verspanen_Frezen}
+Bij kotteren ga je de boor ook nog laten draaien waardoor je een groter oppervlak gaat verspannen.
+
+\subsection{Draadtappen}
+Draadtappen is het snijden van interne schroefdraad in een voorgeboord gat.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Schroefdraad & Pitch (mm) & Aanbevolen tap‑boring (mm) \\
+    \midrule
+    M5~$\times$~0.8 & 0.8 & 4.2 \\
+    M6~$\times$~1.0 & 1.0 & 5.0 \\
+    M8~$\times$~1.25 & 1.25 & 6.75 \\
+    M10~$\times$~1.5 & 1.5 & 8.5 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Veelvoorkomende metrische tap‑boringen}
+\end{table}
+\subsection{Ruimen}
+Ruimen is een afwerkingsbewerking om een bestaand gat op nauwkeurige maat en met goede oppervlaktekwaliteit te brengen
+Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktekwaliteit.
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[scale=0.9]
+    % reamer sketch
+    \draw[thick] (-0.8,0) rectangle (0.8,-0.6);
+    \draw[thick] (0,0.7) -- (0,0.1) -- (0.25,-0.2);
+    \node at (0,-0.8){\small Ruimen: lichte passing en scherpe gereedschapstips voor nauwkeurigheid};
+  \end{tikzpicture}
+  \caption{Schematische weergave van een reamer in een werkstuk}
+\end{figure}
 
 
   \chapter{Verspanen: Frezen}
+  \label{chap:Verspanen_Frezen}
+
+  Frezen is een verspaningstechniek waarbij een roterend snijgereedschap, de frees, wordt gebruikt om materiaal van een werkstuk te verwijderen.
+  Het proces omvat het bewegen van de frees langs het oppervlak van het werkstuk om de gewenste vorm of maat te bereiken.
+
+  \textbf{- hoofdbeweging}
+  \newline
+  Je gereedschap de \textbf{frees} gaat roteren en het werkstuk kan ook roteren.
+  \newline
+  \textbf{- voedingsbeweging}
+  \newline
+  Het gereedschap of het werkstuk gaat bewegen om materiaal te verwijderen.
+  \newline
+
+  \section{Inleiding Frezen}
+
+    \textbf{- hoofdbeweging}
+  \newline
+  Je gereedschap de \textbf{frees} gaat roteren en het werkstuk kan ook roteren.
+  \newline
+  \textbf{- voedingsbeweging}
+  \newline
+  Het gereedschap of het werkstuk gaat bewegen om materiaal te verwijderen.
+  \newline
+
+  \subsection{Soorten frezen}
+  Als je gaat frezen via met de as-richting van de frees in de lengteas van de frees, noem je dit \textbf{mantelfrezen}.
+  \newline
+  Als je met de punt van de frees gaat frezen noem je dit \textbf{kopfrezen}.
+
+  \subsection{Geometrie van de frees}
+
+  Net zoals bij draaien en boren zijn er verschillende vlakken op de frees die verschillende functies hebben.
+  \begin{itemize}
+  \item \textbf{Spaangroef}
+  \item \textbf{Vrijloophoek}
+  \item \textbf{Snijkant}
+  \item \textbf{Snijvlak}
+  \item \textbf{wighoek}
+   \end{itemize}
+
+   Deze hebben dezelfde eigenschappen als bij boren en draaien.
+    Je kunt meer info vinden bij Algemeen verspannen~\ref{chap:Algemeen verspanen}.
+
+   \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{image45.png}
+    \caption{Geometrie van een mantelfrees}
+    \end{figure}
+
+
+    \section{krachtwerking bij frezen}
+
+    Net zoals bij draaien en boren zijn er verschillende krachten die op het werkstuk
+    en de frees werken tijdens het frezen.
+    Ze worden met de theorie van Kienzle berekend.
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=0.60\textwidth,trim=20 8 14 10,clip]{image46.png}
+      \caption{Krachten op een frees}
+      \label{fig:frees_krachten}
+    \end{figure}
+    \FloatBarrier
+
+    {\small
+    De krachten op de frees zijn voornamelijk de snijkracht $F_c$ en de voedingskracht $F_f$; de terugdrukkracht $F_p$ is meestal kleiner en minder kritisch. Een goed begrip van deze krachten is essentieel voor het optimaliseren van snijparameters en het waarborgen van gereedschapslevensduur.
+    }
+    \begin{itemize}
+      \item Snijkracht $F_c$: hoofdkracht die het snijproces aandrijft.
+      \item Voedingskracht $F_f$: kracht die de voeding van de frees aandrijft.
+      \item Terugdrukkracht $F_p$: kracht loodrecht op $F_c$ en $F_f$, meestal kleiner.
+    \end{itemize}
+
+    De snededikte is niet constant omdat je frees ronddraait. Voor berekeningen wordt de gemiddelde snededikte gebruikt.
+    \newline
+    \textbf{BELANGRIJK VOOR EXAMEN}\\
+    Je krachten op je frees zijn dus niet constant; zorg dat je dit weet voor het examen. Daarom nemen we het gemiddelde snededikte $h_{gem}$ zodat we toch een berekening hebben voor de kracht.
+
+    \theoriebox{\textbf{Gemiddelde snededikte bij Frezen:} $h_{gem} = f_z \cdot \sqrt{\dfrac{a}{d}}$\\\small}
+    \newline
+    waarbij $f_z$ de voeding per tand is, $a$ de snedediepte en $d$ de diameter van de frees.
+
+    \theoriebox{\textbf{Voeding per tand bij Frezen:} $f_z = \dfrac{f}{z_i}$\\\small}
+    \newline
+    waarbij $f$ de voeding is en $z_i$ het aantal tanden van de frees.
+
+    \theoriebox{\textbf{Snijsnelheid bij Frezen:} $v_c = \pi \cdot d \cdot n$\\\small}
+    \newline
+    waarbij $d$ de diameter van de frees is en $n$ het toerental.
+
+    \theoriebox{\textbf{Ingrijpingshoek bij Frezen:} $\displaystyle \phi = \arccos\!\left(1 - \dfrac{2a}{d}\right) \;\Rightarrow\; \cos\phi = \dfrac{2/d \cdot a}{d}$.\\\small}
+    \newline
+      waarbij $a$ de snedediepte is en $d$ de diameter van de frees.
+
+    \theoriebox{\textbf{Tanden per ingrijping}{$z_i = \frac{Q}{360}\cdot z$}}
+    \newline
+     waarbij $z_i$ het aantal tanden per ingrijping is,
+    $Q$ de ingrijpingshoek in graden en $z$ het totaal aantal tanden van de frees.
+    \newline
+
+  \frm{Snijkracht bij Frezen}{\ensuremath{F_c = k_c \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}}{waarbij $k_c$ de snijkrachtcoëfficiënt is,
+  $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de snijkrachtsexponent.}
+
+  \frm{Snijmoment bij Frezen}{\ensuremath{M_c = C_m \cdot d^{x_M} \cdot f_z^{y_M} \cdot z_i}}{waarbij $C_m$ de momentcoëfficiënt is,
+  $d$ de diameter, $f_z$ de voeding per tand, $z_i$ het aantal tanden en $x_M$, $y_M$ de momentexponenten.}
+
+  \frm{Voedingskracht bij Frezen}{\ensuremath{F_f = k_f \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}}{waarbij $k_f$ de voedingskrachtcoëfficiënt is,
+  $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de voedingskrachtsexponent.}
+
+  Bij frezen zijn de krachten op je freez niet constant.
+  De kracht op één tant per draaing is parabolisch en als je de invloed van alle tanden samentelt krijg je een heuvelachtige 
+  krachtcurve.
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{47.png}
+    \caption{Krachtcurve bij frezen}
+    \end{figure}
+
+    \section{Richting van frezen}
+    Er zijn twee richtingen van frezen:
+    \begin{itemize}
+      \item \textbf{Meelopend frezen}: De frees draait in dezelfde richting als de voeding. Dit zorgt voor een betere oppervlaktekwaliteit en minder gereedschapsbelasting.
+      \item \textbf{Tegenlopend frezen}: De frees draait in de tegenovergestelde richting van de voeding. Dit kan leiden tot een ruwer oppervlak en hogere gereedschapsbelasting.
+    \end{itemize}
+
+    
+    \begin{figure}[ht] 
+      \centering
+      \includegraphics[width=0.8\textwidth]{image48.png}
+      \caption{Tegenlopend en meelopend frezen en de krachten die ze creeëren}
+      \label{fig:image48.png}
+\end{figure}
+
+    \begin{table}[ht]
+      \centering
+      \caption{Vergelijking: Tegenlopend vs Meelopend frezen}
+      \label{tab:meelopend_vs_tegenlopend}
+      \small
+      \begin{tabular}{p{0.24\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth}}
+        \toprule
+        \textbf{Kenmerk} & \textbf{Tegenlopend frezen} & \textbf{Meelopend frezen} \\
+        \midrule
+        \textbf{Aandrijving / voeding} & $F_h$ drukt werkstuk weg van frees. & $F_h$ trekt werkstuk naar frees toe. \\
+        \addlinespace
+        \textbf{Spelingscompensatie} & Geen compensatie nodig; veiliger bij backlash. & Spelingcompensatie onmisbaar (gevoelig voor backlash). \\
+        \addlinespace
+        \textbf{Spaanvorming} & Dun $\rightarrow$ dik (chip groeit tijdens snede). & Dik $\rightarrow$ dun (chip neemt af richting einde). \\
+        \addlinespace
+        \textbf{Snijkracht} & Stijgt geleidelijk tijdens ingreep. & Stijgt sneller; hogere piekbelasting bij ingang. \\
+        \addlinespace
+        \textbf{Snijgedrag} & Eerst wrijving, later snijden (meer smearing). & Meteen snijden (scherpere insnijding). \\
+        \addlinespace
+        \textbf{Oppervlaktekwaliteit} & Meestal matig. & Meestal beter (glad). \\
+        \addlinespace
+        \textbf{Opspanning / stabiliteit} & Neiging tot beurtelende krachten → klapperen / chatter. & Werkstuk wordt 'in klem' getrokken; minder klapperen maar vereist stevige klemmen. \\
+        \addlinespace
+        \textbf{Nauwkeurigheid} & Kan leiden tot teveel materiaal verwijderd / minder voorspelbaar. & Neiging tot kleinere snij-inhouden (kan preciezer zijn bij goede controle). \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+    \FloatBarrier
+
+    \subsection{Wanneer kiezen: meelopend vs tegenlopend}
+    \textbf{Praktische richtlijnen:}
+    \begin{itemize}
+      \item \textbf{Meelopend (climb milling)} -- kies dit bij een stijve machine en goede opspanning, vooral voor afwerking. De chipdikte neemt af tijdens de ingreep (dik $\rightarrow$ dun), er is minder wrijving bij de instap en doorgaans een betere oppervlaktekwaliteit en langere gereedschapslevensduur; vereist minimale backlash in de aandrijving.
+      \item \textbf{Tegenlopend (conventional milling)} -- kies dit bij oudere of minder stijve machines, bij ruwe bewerkingen of wanneer er speling is. De chipdikte neemt toe tijdens de ingreep (dun $\rightarrow$ dik); bij de instap is er meer wrijving en kans op BUE, maar de methode is vaak veiliger voor onstabiele opstellingen of dunwandige onderdelen.
+    \end{itemize}
+
+    \paragraph{Effecten op oppervlakte en snedediepte}
+    \begin{itemize}
+      \item \textbf{Oppervlaktekwaliteit:} Meelopend geeft doorgaans een gladdere afwerking; tegenlopend geeft meer wrijving bij instap en vaak een ruwere afwerking.
+      \item \textbf{Snedediepte/productiviteit:} In een stijve opstelling maakt meelopend vaak hogere snededieptes en hogere voedingen mogelijk zonder kwaliteitsverlies; tegenlopend wordt vaak gebruikt voor grove, hoge‑volume snedes of wanneer de machine/opstelling de voorkeur geeft aan een voorzichtige instap.
+    \end{itemize}
+
+    \section{Soorten frezen}
+    \begin{itemize}
+      \item \textbf{Mantelfrezen}: Hierbij wordt de zijkant van de frees gebruikt om materiaal te verwijderen. Dit is geschikt voor het maken van vlakke oppervlakken en contouren.
+      \item \textbf{Kopfrezen}: Hierbij wordt de bovenkant van de frees gebruikt om materiaal te verwijderen. Dit is geschikt voor het maken van gaten, sleuven en andere complexe vormen.
+      \item \textbf{Bolfrezen}: Hierbij wordt een frees met een bolvormige snijkant gebruikt, geschikt voor het maken van gebogen oppervlakken en complexe 3D-vormen.
+      \item \textbf{Vormfrezen}: Hierbij wordt een frees met een specifieke vorm gebruikt om profielen en vormen in het materiaal te frezen.
+      \item \textbf{Circulair frezen}: Hierbij wordt een cirkelvormige beweging gebruikt om gaten of cirkelvormige uitsparingen te maken.
+      \item \textbf{Trekfrezen of Brootsen}: Hierbij wordt een speciaal gereedschap gebruikt om nauwkeurige vormen en profielen te maken door het materiaal te trekken.
+    \end{itemize}
+
+    \section{De Freesmachine}
+    Een freezmachine heeft een bank waar je werkstuk wordt op geklemt. Hierop steek je de mantel of kopfreez.
+    De freez gaat roteren en de bank gaat bewegen in de x,y en z-richting.
+
+
+    \begin{figure}[ht] 
+      \centering  
+      \includegraphics[width=0.8\textwidth]{image49.png}
+      \caption{Weergave van een freesmachine}
+    \end{figure}
+
 
   \chapter{Verspanen:Hybridetechnieken}
+
+
 
   \chapter{Verspanen:Slijpen}
   \chapter{Fysische en Chemische  afnemende bewerkingen}

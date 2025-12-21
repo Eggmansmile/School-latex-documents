@@ -1,0 +1,191 @@
+% Template: Practical LaTeX examples for ProductieTechnologie
+% Demonstrates: siunitx, cleveref, booktabs, subcaption, tcolorbox, enumitem, and small macros
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{tcolorbox}
+% load helpful tcolorbox libraries where available
+\IfFileExists{tcolorbox.sty}{% 
+  \tcbuselibrary{theorems,listing}
+}{}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\sisetup{per-mode=symbol,detect-all=true}
+\usepackage{cleveref}
+\crefname{figure}{figuur}{figuren}
+\Crefname{figure}{Figuur}{Figuur}
+\crefname{table}{tabel}{tabellen}
+\Crefname{table}{Tabel}{Tabel}
+
+% Extra packages for examples (guarded where external tools are required)
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usepackage{listings}
+\usepackage{multicol}
+% Glossaries (guarded)
+\IfFileExists{glossaries.sty}{%
+  \usepackage[acronym]{glossaries}
+  \makeglossaries
+  \newglossaryentry{Ra}{name={\ensuremath{R_a}},description={gemiddelde ruwheid}}
+}{% fallback: glossaries not installed
+}
+% biblatex (guarded)
+\IfFileExists{biblatex.sty}{%
+  \usepackage[backend=biber,style=authoryear]{biblatex}
+  \addbibresource{template_examples.bib}
+}{% fallback: biblatex not installed
+}
+
+% Small macros
+\newcommand{\Fc}{\ensuremath{F_c}}
+\newcommand{\vc}{\ensuremath{v_c}}
+\newcommand{\Pc}{\ensuremath{P_c}}
+
+% Nice inline theory box
+\newtcbox{\theoriebox}{on line,boxrule=0.4pt,arc=2pt,boxsep=3pt,top=2pt,bottom=2pt,colback=gray!6,colframe=gray!40}
+
+\begin{document}
+\section*{LaTeX voorbeelden — kort overzicht}
+
+\subsection*{Eenheden met siunitx}
+Gebruik \verb|\SI{120}{\milli\metre\per\minute}|: \SI{120}{\milli\metre\per\minute}.
+Voor wetenschappelijke notatie gebruik \verb|\num{1.5e3}|: \num{1.5e3}.
+
+\subsection*{FIGURE: subfigures voorbeeld}
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{image32.png}
+    \caption{Voorbeeld A}
+  \end{subfigure}\hfill
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{image33.png}
+    \caption{Voorbeeld B}
+  \end{subfigure}
+  \caption{Subfigure voorbeeld (gebruik \texttt{subcaption})}
+  \label{fig:subexample}
+\end{figure}
+
+Referentie voorbeeld: zie \cref{fig:subexample}.
+
+\subsection*{Tabellen met booktabs}
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{l S[table-format=3.0] S[table-format=3.1]}
+    \toprule
+    Parameter & {Waarde} & {Eenheid} \\
+    \midrule
+    Snijsnelheid & 125 & {m/min} \\
+    Voeding & 0.25 & {mm/rev} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Voorbeeldtabel (gebruik \texttt{booktabs} en \texttt{siunitx})}
+\end{table}
+
+\subsection*{Opsommingen (enumitem)}
+\begin{enumerate}[leftmargin=*,label=\textbf{\arabic*.}]
+  \item Belangrijk punt
+  \item Nog een punt met subopsomming
+    \begin{itemize}[leftmargin=*]
+      \item subA
+      \item subB
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Inline theorievoorbeeld}
+Gebruik de lichtgrijze box: \theoriebox{Definitie: snedediepte $a$ is de diepte van de snede.}
+
+\subsection*{Formule en eenheidstips}
+\[ \Pc = \Fc\,\vc \qquad (\text{vermogen in }\si{W})\]
+
+\subsection*{Snel checklist}
+\begin{itemize}
+  \item Gebruik \verb|siunitx| voor consistente eenheden
+  \item Gebruik \verb|cleveref| voor nette cross-references
+  \item Gebruik \verb|booktabs| voor professionele tabellen
+  \item Gebruik \verb|latexmk -pdf| in je workflow
+\end{itemize}
+
+\subsection*{PGFPlots: eenvoudige grafiek}
+\begin{tikzpicture}
+  \begin{axis}[title={Voorbeeld plot},xlabel={$x$},ylabel={$y$},grid=major]
+    \addplot[smooth,thick] {sin(deg(x))};
+  \end{axis}
+\end{tikzpicture}
+
+\subsection*{PGFPlots: meerdere subplots (groupplots)}
+\begin{tikzpicture}
+  \begin{groupplot}[group style={group size=2 by 1,horizontal sep=1.5cm},height=4cm,width=6cm]
+    \nextgroupplot[title={kwadratisch}]
+      \addplot {x^2};
+    \nextgroupplot[title={sinus}]
+      \addplot {sin(deg(x))};
+  \end{groupplot}
+\end{tikzpicture}
+
+\subsection*{tcolorbox: theorema-box}
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40,title=Stelling]
+  \textbf{Stelling.} Als $f$ continu is op $[a,b]$ dan heeft $f$ een maximum en minimum op $[a,b]$.
+\end{tcolorbox}
+
+\subsection*{Code listings (listings)}
+\begin{lstlisting}[language=Python,caption={Voorbeeld Python code},label={lst:py1}]
+def mean(xs):
+    return sum(xs)/len(xs)
+\end{lstlisting}
+
+% Optional: minted (requires \texttt{--shell-escape})
+% \begin{minted}[fontsize=\small]{python}
+% def mean(xs):
+%     return sum(xs)/len(xs)
+% \end{minted}
+
+\subsection*{Glossaries (definities)}
+\IfFileExists{glossaries.sty}{%
+  \usepackage[acronym]{glossaries}
+  \makeglossaries
+  \newglossaryentry{Ra}{name={\ensuremath{R_a}},description={gemiddelde ruwheid}}
+}{% fallback
+  % glossaries package not available
+}
+
+\IfFileExists{glossaries.sty}{%
+  \noindent Voorbeeld: \gls{Ra} (gebruik \verb|glossaries| om een glossarium te maken).
+}{%
+  \noindent Voorbeeld: Ra (installeer het pakket \texttt{glossaries} om een glossarium te gebruiken).
+}
+
+\subsection*{Bibliografie (biblatex)}
+\IfFileExists{biblatex.sty}{%
+  Aanhaling voorbeeld: \parencite{Lamport1994}.
+  \printbibliography[heading=subbibliography]
+}{%
+  \noindent Bibliografie voorbeeld vereist \texttt{biblatex} (installeer via \texttt{tlmgr install biblatex}).
+}
+
+\subsection*{Cheat‑sheet stijl (multicol)}
+\IfFileExists{multicol.sty}{%
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item Kort item 1
+      \item Kort item 2
+      \item Kort item 3
+    \end{itemize}
+  \end{multicols}
+}{%
+  % multicol niet beschikbaar
+}
+
+\vspace{1em}
+\noindent --- Einde template ---
+\end{document}

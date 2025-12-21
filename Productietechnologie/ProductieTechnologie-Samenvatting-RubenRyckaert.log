@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.20)  20 DEC 2025 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  21 DEC 2025 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -29,15 +29,15 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 ) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
 \U@D=\dimen149
 \l@unhyphenated=\language3
  (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
@@ -45,7 +45,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
 \bbl@dirlevel=\count285
  (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex)
 Package babel Info: Importing font and identification data for dutch
-(babel)             from babel-nl.ini. Reported on input line 4298.
+(babel)             from babel-nl.ini. Reported on input line 4320.
  (c:/tools/TinyTeX/texmf-dist/tex/generic/babel-dutch/dutch.ldf
 Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
 
@@ -410,7 +410,17 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@expandcount=\count321
  (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen268
+\pgfarrowlength=\dimen269
+\pgfarrowwidth=\dimen270
+\pgfarrowlinewidth=\dimen271
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip55
 \f@nch@offset@elh=\skip56
@@ -447,7 +457,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \c@tcblayer=\count323
 \c@tcolorbox@number=\count324
 \l__tcobox_tmpa_box=\box71
-\l__tcobox_tmpa_dim=\dimen268
+\l__tcobox_tmpa_dim=\dimen272
 \tcb@temp=\box72
 \tcb@temp=\box73
 \tcb@temp=\box74
@@ -469,14 +479,14 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@cnth=\count326
 \Gm@cntv=\count327
 \c@Gm@tempcnt=\count328
-\Gm@bindingoffset=\dimen269
-\Gm@wd@mp=\dimen270
-\Gm@odd@mp=\dimen271
-\Gm@even@mp=\dimen272
-\Gm@layoutwidth=\dimen273
-\Gm@layoutheight=\dimen274
-\Gm@layouthoffset=\dimen275
-\Gm@layoutvoffset=\dimen276
+\Gm@bindingoffset=\dimen273
+\Gm@wd@mp=\dimen274
+\Gm@odd@mp=\dimen275
+\Gm@even@mp=\dimen276
+\Gm@layoutwidth=\dimen277
+\Gm@layoutheight=\dimen278
+\Gm@layouthoffset=\dimen279
+\Gm@layoutvoffset=\dimen280
 \Gm@dimlist=\toks44
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
@@ -511,7 +521,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen277
+\@linkdim=\dimen281
 \Hy@linkcounter=\count330
 \Hy@pagecounter=\count331
  (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -541,15 +551,15 @@ Package hyperref Info: Bookmarks ON on input line 4462.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen278
+\XeTeXLinkMargin=\dimen282
  (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count334
-\Field@Width=\dimen279
-\Fld@charsize=\dimen280
+\Field@Width=\dimen283
+\Fld@charsize=\dimen284
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -583,14 +593,14 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen281
-\captionmargin=\dimen282
-\caption@leftmargin=\dimen283
-\caption@rightmargin=\dimen284
-\caption@width=\dimen285
-\caption@indent=\dimen286
-\caption@parindent=\dimen287
-\caption@hangindent=\dimen288
+\caption@tempdima=\dimen285
+\captionmargin=\dimen286
+\caption@leftmargin=\dimen287
+\caption@rightmargin=\dimen288
+\caption@width=\dimen289
+\caption@indent=\dimen290
+\caption@parindent=\dimen291
+\caption@hangindent=\dimen292
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count341
@@ -600,7 +610,7 @@ Package caption Info: hyperref package is loaded.
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip70
-\enit@outerparindent=\dimen289
+\enit@outerparindent=\dimen293
 \enit@toks=\toks45
 \enit@inbox=\box78
 \enit@count@id=\count343
@@ -618,17 +628,107 @@ Package: productie-macros 2025/12/20 Productie macros: frm, formularium, fig
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 \c@FormulariumEntryCounter=\count347
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count348
+\l__siunitx_number_exponent_fixed_int=\count349
+\l__siunitx_number_min_decimal_int=\count350
+\l__siunitx_number_min_integer_int=\count351
+\l__siunitx_number_round_precision_int=\count352
+\l__siunitx_number_lower_threshold_int=\count353
+\l__siunitx_number_upper_threshold_int=\count354
+\l__siunitx_number_group_first_int=\count355
+\l__siunitx_number_group_size_int=\count356
+\l__siunitx_number_group_minimum_int=\count357
+\l__siunitx_angle_tmp_dim=\dimen294
+\l__siunitx_angle_marker_box=\box79
+\l__siunitx_angle_unit_box=\box80
+\l__siunitx_compound_count_int=\count358
+\l__siunitx_table_tmp_box=\box81
+\l__siunitx_table_tmp_dim=\dimen295
+\l__siunitx_table_column_width_dim=\dimen296
+\l__siunitx_table_integer_box=\box82
+\l__siunitx_table_decimal_box=\box83
+\l__siunitx_table_uncert_box=\box84
+\l__siunitx_table_before_box=\box85
+\l__siunitx_table_after_box=\box86
+\l__siunitx_table_before_dim=\dimen297
+\l__siunitx_table_carry_dim=\dimen298
+\l__siunitx_unit_tmp_int=\count359
+\l__siunitx_unit_position_int=\count360
+\l__siunitx_unit_total_int=\count361
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen299
+\ar@mcellbox=\box87
+\extrarowheight=\dimen300
+\NC@list=\toks46
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box88
+))
+
+Package siunitx Info: Option "detect-all" has been deprecated in this release.
+(siunitx)             
+(siunitx)             Use "mode = match, propagate-math-font = true,
+(siunitx)             reset-math-version = false, reset-text-family = false,
+(siunitx)             reset-text-series = false, reset-text-shape = false,
+(siunitx)             text-family-to-math = true, text-series-to-math = true"
+(siunitx)             as a replacement.
+
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen301
+\lightrulewidth=\dimen302
+\cmidrulewidth=\dimen303
+\belowrulesep=\dimen304
+\belowbottomsep=\dimen305
+\aboverulesep=\dimen306
+\abovetopsep=\dimen307
+\cmidrulesep=\dimen308
+\cmidrulekern=\dimen309
+\defaultaddspace=\dimen310
+\@cmidla=\count362
+\@cmidlb=\count363
+\@aboverulesep=\dimen311
+\@belowrulesep=\dimen312
+\@thisruleclass=\count364
+\@lastruleclass=\count365
+\@thisrulewidth=\dimen313
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count366
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count367
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: always capitalise cross-reference names on input line 7825.
+Package cleveref Info: always capitalise cross-reference names on input line 7852.
+)
+==> First Aid for cleveref.sty applied!
+(c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box79
-\beforetitleunit=\skip71
-\aftertitleunit=\skip72
-\ttl@plus=\dimen290
-\ttl@minus=\dimen291
-\ttl@toksa=\toks46
-\titlewidth=\dimen292
-\titlewidthlast=\dimen293
-\titlewidthfirst=\dimen294
+\ttl@box=\box89
+\beforetitleunit=\skip73
+\aftertitleunit=\skip74
+\ttl@plus=\dimen314
+\ttl@minus=\dimen315
+\ttl@toksa=\toks47
+\titlewidth=\dimen316
+\titlewidthlast=\dimen317
+\titlewidthfirst=\dimen318
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/flafter.sty
@@ -637,43 +737,43 @@ Applying: [2025/06/01] float order in 2-column on input line 49.
 Already applied: [2015/01/01] float order in 2-column on input line 152.
 Already applied: [0000/00/00] float order in 2-column on input line 254.
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 107.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 156.
  (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count348
+\l__color_backend_stack_int=\count368
 ) (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux
 Package babel Info: 'dutch' activates 'dutch' shorthands.
 (babel)             Reported on input line 9.
 )
 \openout1 = `ProductieTechnologie-Samenvatting-RubenRyckaert.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Info: Redefining \microtypecontext on input line 107.
-Package microtype Info: Applying patch `item' on input line 107.
-Package microtype Info: Applying patch `toc' on input line 107.
-Package microtype Info: Applying patch `eqnum' on input line 107.
-Package microtype Info: Applying patch `footnote' on input line 107.
-Package microtype Info: Applying patch `verbatim' on input line 107.
-LaTeX Info: Redefining \microtypesetup on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Info: Redefining \microtypecontext on input line 156.
+Package microtype Info: Applying patch `item' on input line 156.
+Package microtype Info: Applying patch `toc' on input line 156.
+Package microtype Info: Applying patch `eqnum' on input line 156.
+Package microtype Info: Applying patch `footnote' on input line 156.
+Package microtype Info: Applying patch `verbatim' on input line 156.
+LaTeX Info: Redefining \microtypesetup on input line 156.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -729,41 +829,41 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 107.
+Package hyperref Info: Link coloring OFF on input line 156.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Package productie-macros Warning: If you see ``No hyphenation patterns were preloaded for the language "Dutch"'' please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr). on input line 107.
+Package productie-macros Warning: If you see ``No hyphenation patterns were preloaded for the language "Dutch"'' please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr). on input line 156.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 109.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 158.
 (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 109.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 158.
  (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 109.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 158.
  (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 109.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 158.
  (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 109.
+(Font)              <14.4> on input line 158.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 109.
+(Font)              <10> on input line 158.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 109.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 109.
+(Font)              <7> on input line 158.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 158.
  (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 109.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 158.
  (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -777,75 +877,374 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
- [2])
+ [2{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}])
 \tf@toc=\write4
 \openout4 = `ProductieTechnologie-Samenvatting-RubenRyckaert.toc'.
 
 
 Hoofdstuk 1.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 133.
-(c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+[3]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 182.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 Package microtype Warning: I cannot find a spacing list for font
 (microtype)                `TS1/lmr/m/n/12' (context: `nonfrench'). Switching off
-(microtype)                spacing for this font on input line 133.
+(microtype)                spacing for this font on input line 182.
 
-<straalbewerkingen.png, id=73, 451.6875pt x 364.36125pt>
+<straalbewerkingen.png, id=129, 451.6875pt x 364.36125pt>
 File: straalbewerkingen.png Graphic file (type png)
 <use straalbewerkingen.png>
-Package pdftex.def Info: straalbewerkingen.png  used on input line 153.
+Package pdftex.def Info: straalbewerkingen.png  used on input line 202.
 (pdftex.def)             Requested size: 241.84843pt x 195.09535pt.
-[3{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<image1.png, id=83, 460.72125pt x 395.97937pt>
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported on input line 220.
+[4{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./straalbewerkingen.png>]
+<image1.png, id=140, 460.72125pt x 395.97937pt>
 File: image1.png Graphic file (type png)
 <use image1.png>
-Package pdftex.def Info: image1.png  used on input line 206.
+Package pdftex.def Info: image1.png  used on input line 255.
 (pdftex.def)             Requested size: 154.78653pt x 133.03003pt.
-<image2.png, id=84, 496.10344pt x 389.95688pt>
+<image2.png, id=141, 496.10344pt x 389.95688pt>
 File: image2.png Graphic file (type png)
 <use image2.png>
-Package pdftex.def Info: image2.png  used on input line 207.
+Package pdftex.def Info: image2.png  used on input line 256.
 (pdftex.def)             Requested size: 154.78653pt x 121.66486pt.
-<image3.png, id=85, 763.35187pt x 395.22656pt>
+<image3.png, id=142, 763.35187pt x 395.22656pt>
 File: image3.png Graphic file (type png)
 <use image3.png>
-Package pdftex.def Info: image3.png  used on input line 208.
+Package pdftex.def Info: image3.png  used on input line 257.
 (pdftex.def)             Requested size: 154.78653pt x 80.14148pt.
-<image5.png, id=86, 477.28313pt x 383.18156pt>
+<image5.png, id=143, 477.28313pt x 383.18156pt>
 File: image5.png Graphic file (type png)
 <use image5.png>
-Package pdftex.def Info: image5.png  used on input line 218.
+Package pdftex.def Info: image5.png  used on input line 267.
 (pdftex.def)             Requested size: 241.84843pt x 194.16292pt.
-Package babel Info: 'dutch' activates 'dutch' shorthands.
-(babel)             Reported on input line 221.
- [4 <./straalbewerkingen.png>]
-<image6.png, id=95, 401.24907pt x 493.0922pt>
+ [5 <./image1.png> <./image2.png> <./image3.png>]
+<image6.png, id=152, 401.24907pt x 493.0922pt>
 File: image6.png Graphic file (type png)
 <use image6.png>
-Package pdftex.def Info: image6.png  used on input line 238.
+Package pdftex.def Info: image6.png  used on input line 287.
 (pdftex.def)             Requested size: 193.47578pt x 237.76501pt.
-<image7.png, id=96, 322.20375pt x 402.00188pt>
+<image7.png, id=153, 322.20375pt x 402.00188pt>
 File: image7.png Graphic file (type png)
 <use image7.png>
-Package pdftex.def Info: image7.png  used on input line 239.
+Package pdftex.def Info: image7.png  used on input line 288.
 (pdftex.def)             Requested size: 193.47578pt x 241.39926pt.
- [5 <./image1.png> <./image2.png> <./image3.png> <./image5.png>]
+
 Hoofdstuk 2.
-<image9.png, id=107, 380.17032pt x 239.39438pt>
+<image9.png, id=154, 380.17032pt x 239.39438pt>
 File: image9.png Graphic file (type png)
 <use image9.png>
-Package pdftex.def Info: image9.png  used on input line 254.
+Package pdftex.def Info: image9.png  used on input line 303.
 (pdftex.def)             Requested size: 241.84843pt x 152.295pt.
-[6 <./image6.png> <./image7.png> <./image9.png>]
+[6 <./image5.png> <./image6.png> <./image7.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 279.
+(Font)              <5> on input line 328.
 
 Hoofdstuk 3.
-<image10.png, id=117, 636.87938pt x 335.00156pt>
+[7{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./image9.png>]
+<image10.png, id=174, 636.87938pt x 335.00156pt>
 File: image10.png Graphic file (type png)
 <use image10.png>
-Package pdftex.def Info: image10.png  used on input line 323.
+Package pdftex.def Info: image10.png  used on input line 373.
 (pdftex.def)             Requested size: 290.22107pt x 152.65596pt.
-[7{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/f
+ [8 <./image10.png>]
+<image11.png, id=181, 967.36406pt x 426.84468pt>
+File: image11.png Graphic file (type png)
+<use image11.png>
+Package pdftex.def Info: image11.png  used on input line 392.
+(pdftex.def)             Requested size: 386.95897pt x 170.74136pt.
+<image20.png, id=182, 328.22626pt x 189.70876pt>
+File: image20.png Graphic file (type png)
+<use image20.png>
+Package pdftex.def Info: image20.png  used on input line 405.
+(pdftex.def)             Requested size: 193.47578pt x 111.82587pt.
+ [9 <./image11.png> <./image20.png>]
+<image12.png, id=193, 377.15906pt x 332.74312pt>
+File: image12.png Graphic file (type png)
+<use image12.png>
+Package pdftex.def Info: image12.png  used on input line 426.
+(pdftex.def)             Requested size: 193.47578pt x 170.69188pt.
+<image14.png, id=194, 440.39531pt x 171.64125pt>
+File: image14.png Graphic file (type png)
+<use image14.png>
+Package pdftex.def Info: image14.png  used on input line 435.
+(pdftex.def)             Requested size: 193.47578pt x 75.40451pt.
+ [10 <./image12.png> <./image14.png>]
+<image15.png, id=203, 490.83376pt x 349.305pt>
+File: image15.png Graphic file (type png)
+<use image15.png>
+Package pdftex.def Info: image15.png  used on input line 461.
+(pdftex.def)             Requested size: 241.84843pt x 172.10966pt.
+<image16.png, id=204, 366.61969pt x 419.31656pt>
+File: image16.png Graphic file (type png)
+<use image16.png>
+Package pdftex.def Info: image16.png  used on input line 483.
+(pdftex.def)             Requested size: 193.47578pt x 221.28976pt.
+ [11 <./image15.png> <./image16.png>]
+<image17.png, id=213, 402.75468pt x 346.29375pt>
+File: image17.png Graphic file (type png)
+<use image17.png>
+Package pdftex.def Info: image17.png  used on input line 501.
+(pdftex.def)             Requested size: 193.47578pt x 166.3512pt.
+<image21.png, id=214, 445.665pt x 327.47343pt>
+File: image21.png Graphic file (type png)
+<use image21.png>
+Package pdftex.def Info: image21.png  used on input line 517.
+(pdftex.def)             Requested size: 193.47578pt x 142.16498pt.
+ [12 <./image17.png> <./image21.png>]
+<image18.png, id=224, 657.95813pt x 188.95593pt>
+File: image18.png Graphic file (type png)
+<use image18.png>
+Package pdftex.def Info: image18.png  used on input line 564.
+(pdftex.def)             Requested size: 338.58632pt x 97.23697pt.
+ [13 <./image18.png>]
+<image23.png, id=232, 481.8pt x 411.78844pt>
+File: image23.png Graphic file (type png)
+<use image23.png>
+Package pdftex.def Info: image23.png  used on input line 593.
+(pdftex.def)             Requested size: 241.84843pt x 206.70425pt.
+<image22.png, id=233, 593.96906pt x 356.0803pt>
+File: image22.png Graphic file (type png)
+<use image22.png>
+Package pdftex.def Info: image22.png  used on input line 602.
+(pdftex.def)             Requested size: 241.84843pt x 144.9887pt.
+<image24.png, id=234, 382.42876pt x 335.00156pt>
+File: image24.png Graphic file (type png)
+<use image24.png>
+Package pdftex.def Info: image24.png  used on input line 617.
+(pdftex.def)             Requested size: 241.84843pt x 211.85463pt.
+ [14 <./image23.png>]
+<image25.png, id=242, 525.46312pt x 368.87813pt>
+File: image25.png Graphic file (type png)
+<use image25.png>
+Package pdftex.def Info: image25.png  used on input line 641.
+(pdftex.def)             Requested size: 290.22107pt x 203.74477pt.
+ [15 <./image22.png> <./image24.png>]
+<image26.png, id=255, 953.81343pt x 426.09187pt>
+File: image26.png Graphic file (type png)
+<use image26.png>
+Package pdftex.def Info: image26.png  used on input line 653.
+(pdftex.def)             Requested size: 483.69687pt x 216.08167pt.
+<image27.png, id=256, 450.18187pt x 201.00093pt>
+File: image27.png Graphic file (type png)
+<use image27.png>
+Package pdftex.def Info: image27.png  used on input line 669.
+(pdftex.def)             Requested size: 241.84843pt x 107.98375pt.
+ [16 <./image25.png> <./image26.png>]
+<image28.png, id=265, 814.54312pt x 380.92313pt>
+File: image28.png Graphic file (type png)
+<use image28.png>
+Package pdftex.def Info: image28.png  used on input line 702.
+(pdftex.def)             Requested size: 386.95897pt x 180.96361pt.
+
+Hoofdstuk 4.
+[17{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./image27.png> <./image28.png>]
+<image29.png, id=277, 364.36125pt x 307.1475pt>
+File: image29.png Graphic file (type png)
+<use image29.png>
+Package pdftex.def Info: image29.png  used on input line 731.
+(pdftex.def)             Requested size: 217.66211pt x 183.48381pt.
+<image30.png, id=278, 317.68687pt x 365.11406pt>
+File: image30.png Graphic file (type png)
+<use image30.png>
+Package pdftex.def Info: image30.png  used on input line 732.
+(pdftex.def)             Requested size: 217.66211pt x 250.1629pt.
+ [18 <./image29.png> <./image30.png>]
+<image31.png, id=290, 294.34969pt x 375.65344pt>
+File: image31.png Graphic file (type png)
+<use image31.png>
+Package pdftex.def Info: image31.png  used on input line 748.
+(pdftex.def)             Requested size: 193.47578pt x 246.91747pt.
+ [19 <./image31.png>]
+<image32.png, id=302, 568.37344pt x 396.7322pt>
+File: image32.png Graphic file (type png)
+<use image32.png>
+Package pdftex.def Info: image32.png  used on input line 817.
+(pdftex.def)             Requested size: 386.95897pt x 270.11331pt.
+ [20]
+<image33.png, id=307, 735.49782pt x 361.35pt>
+File: image33.png Graphic file (type png)
+<use image33.png>
+Package pdftex.def Info: image33.png  used on input line 839.
+(pdftex.def)             Requested size: 483.69687pt x 237.64813pt.
+ [21 <./image32.png>]
+Underfull \hbox (badness 1895) in paragraph at lines 849--850
+[]\T1/lmr/bx/n/12 (+10) Snedediepte $\OML/lmm/m/it/12 a$\T1/lmr/m/n/12 (+10) : Een grotere snedediepte ver-g-root door-gaans $\OML/lmm/m/it/12 b$ \T1/lmr/m/n/12 (+10) en ver-hoogt de
+ []
+
+[22 <./image33.png>]
+<image34.png, id=324, 548.80031pt x 301.8778pt>
+File: image34.png Graphic file (type png)
+<use image34.png>
+Package pdftex.def Info: image34.png  used on input line 870.
+(pdftex.def)             Requested size: 217.66211pt x 119.72638pt.
+<image35.png, id=325, 448.67625pt x 319.94531pt>
+File: image35.png Graphic file (type png)
+<use image35.png>
+Package pdftex.def Info: image35.png  used on input line 871.
+(pdftex.def)             Requested size: 217.66211pt x 155.21234pt.
+<image36.png, id=326, 936.49875pt x 414.04688pt>
+File: image36.png Graphic file (type png)
+<use image36.png>
+Package pdftex.def Info: image36.png  used on input line 882.
+(pdftex.def)             Requested size: 241.84843pt x 106.9231pt.
+<image37.png, id=327, 438.13687pt x 234.8775pt>
+File: image37.png Graphic file (type png)
+<use image37.png>
+Package pdftex.def Info: image37.png  used on input line 892.
+(pdftex.def)             Requested size: 217.66211pt x 116.68582pt.
+<image38.png, id=328, 295.1025pt x 203.25937pt>
+File: image38.png Graphic file (type png)
+<use image38.png>
+Package pdftex.def Info: image38.png  used on input line 893.
+(pdftex.def)             Requested size: 217.66211pt x 149.92264pt.
+ [23 <./image34.png> <./image35.png> <./image36.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 935--938
+
+ []
+
+<image39.png, id=338, 429.85594pt x 294.34969pt>
+File: image39.png Graphic file (type png)
+<use image39.png>
+Package pdftex.def Info: image39.png  used on input line 941.
+(pdftex.def)             Requested size: 386.95897pt x 264.97963pt.
+<image40.png, id=339, 712.91344pt x 289.08pt>
+File: image40.png Graphic file (type png)
+<use image40.png>
+Package pdftex.def Info: image40.png  used on input line 952.
+(pdftex.def)             Requested size: 241.84843pt x 98.06534pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 956--959
+
+ []
+
+[24 <./image37.png> <./image38.png>]
+Hoofdstuk 5.
+[25 <./image39.png> <./image40.png>]
+<image41.png, id=361, 475.7775pt x 492.33937pt>
+File: image41.png Graphic file (type png)
+<use image41.png>
+Package pdftex.def Info: image41.png  used on input line 981.
+(pdftex.def)             Requested size: 217.66211pt x 225.23929pt.
+<image42.png, id=362, 576.65437pt x 447.17062pt>
+File: image42.png Graphic file (type png)
+<use image42.png>
+Package pdftex.def Info: image42.png  used on input line 982.
+(pdftex.def)             Requested size: 217.66211pt x 168.78711pt.
+<image43.png, id=364, 267.24844pt x 439.6425pt>
+File: image43.png Graphic file (type png)
+<use image43.png>
+Package pdftex.def Info: image43.png  used on input line 1008.
+(pdftex.def)             Requested size: 217.66211pt x 358.08745pt.
+ [26 <./image41.png> <./image42.png>] [27 <./image43.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 1071.
+ [28]
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1206
+
+ []
+
+[29]
+<image44.png, id=395, 864.22874pt x 405.01312pt>
+File: image44.png Graphic file (type png)
+<use image44.png>
+Package pdftex.def Info: image44.png  used on input line 1241.
+(pdftex.def)             Requested size: 386.95897pt x 181.34575pt.
+ [30]
+Hoofdstuk 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1296
+
+ []
+
+[31 <./image44.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1299--1307
+
+ []
+
+<image45.png, id=412, 427.5975pt x 189.70876pt>
+File: image45.png Graphic file (type png)
+<use image45.png>
+Package pdftex.def Info: image45.png  used on input line 1329.
+(pdftex.def)             Requested size: 290.22107pt x 128.75998pt.
+<image46.png, id=413, 298.11375pt x 202.50656pt>
+File: image46.png Graphic file (type png)
+<use image46.png>
+Package pdftex.def Info: image46.png  used on input line 1342.
+(pdftex.def)             Requested size: 290.22107pt x 202.7794pt.
+[32 <./image45.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1378--1383
+
+ []
+
+[33 <./image46.png>]
+<47.png, id=428, 346.29375pt x 207.02344pt>
+File: 47.png Graphic file (type png)
+<use 47.png>
+Package pdftex.def Info: 47.png  used on input line 1398.
+(pdftex.def)             Requested size: 241.84843pt x 144.58688pt.
+<image48.png, id=429, 602.25pt x 201.75375pt>
+File: image48.png Graphic file (type png)
+<use image48.png>
+Package pdftex.def Info: image48.png  used on input line 1412.
+(pdftex.def)             Requested size: 386.95897pt x 129.63606pt.
+
+Underfull \hbox (badness 6725) in paragraph at lines 1438--1438
+[]|\T1/lmr/bx/n/10.95 (+10) Opspanning / sta-
+ []
+
+
+Package microtype Warning: I cannot find a spacing list for font
+(microtype)                `TS1/lmr/m/n/10.95' (context: `nonfrench'). Switching off
+(microtype)                spacing for this font on input line 1438.
+
+
+Overfull \hbox (16.65536pt too wide) in paragraph at lines 1422--1443
+ [][] 
+ []
+
+[34 <./47.png>] [35 <./image48.png>]
+<image49.png, id=444, 470.50781pt x 149.05687pt>
+File: image49.png Graphic file (type png)
+<use image49.png>
+Package pdftex.def Info: image49.png  used on input line 1476.
+(pdftex.def)             Requested size: 386.95897pt x 122.58905pt.
+
+Hoofdstuk 7.
+Hoofdstuk 8.
+Hoofdstuk 9.
+Hoofdstuk 10.
+Hoofdstuk 11.
+Hoofdstuk 12.
+Hoofdstuk 13.
+[36 <./image49.png>] [37]
+[FORMULARIUM-CONTENT] macro:->\item [\textbf {Hooke's law}] $\displaystyle \sigma = E \cdot \varepsilon $ --- waarbij $\sigma $ de spanning is, $E$ de elasticiteitsmodulus en $\varepsilon $ de rek. {(\hyperref [frm:1]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:1}})}\par \item [\textbf {Afschuifhoek}] $\displaystyle \phi = 45^{\circ } + \dfrac {\gamma }{2} - \dfrac {\mu }{2}$ --- waarbij $\gamma $ de spaanhoek is en $\mu $ de wrijvingshoek tussen spaan en snijvlak. {(\hyperref [frm:2]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:2}})}\par \item [\textbf {afschuifvlak (shear zone) A}] $\displaystyle A = \frac {b*h}{\sin (\phi )}$ --- waarbij $b$ de breedte, $h$ de hoogte en $\phi $ de afschuifhoek. {(\hyperref [frm:3]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:3}})}\par \item [\textbf {afschuifkracht}] $\displaystyle F = A*\tau $ --- waarbij $A$ het afschuifvlak is en $\tau $ de schuifspanning van het materiaal. {(\hyperref [frm:4]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:4}})}\par \item [\textbf {Snijsnelheid}] $\displaystyle v = \pi \cdot d \cdot n$ --- waarbij $d$ de diameter is en $n$ het toerental in omwentelingen per minuut. {(\hyperref [frm:5]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:5}})}\par \item [\textbf {Snededoorsnede}] $\displaystyle A_d = a \cdot b$ --- waarbij $a$ de snedediepte is en $b$ de snedebreedte. {(\hyperref [frm:6]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:6}})}\par \item [\textbf {formule van Taylor}] $\displaystyle v_c\, T^n = C$ --- waarbij $C$ een constante is en $n$ een materiaalconstante, $T$ de gereedschaplevensduur in minuten en $v_c$ de snijsnelheid in m/min. {(\hyperref [frm:7]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:7}})}\par \item [\textbf {Kienzle vergelijking Hoofdsnijkracht}] $\displaystyle F_c = k_c \cdot a\cdot f^{(1-e)}$ --- waarbij $k_c$ (N/mm$^2$ of Pa) de snijkrachtcoëfficiënt is, $a$ de snedediepte, $f$ de voeding en $e$ de snijkrachtexponent. {(\hyperref [frm:8]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:8}})}\par \item [\textbf {b: snedebreedte bij draaien}] $\displaystyle b = \frac {a}{\sin x}$ --- met $a$ de snedediepte en $x$ de instelhoek (zie figuur). {(\hyperref [frm:9]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:9}})}\par \item [\textbf {h: snededikte bij draaien}] $\displaystyle h = f \cdot \sin x$ --- met $f$ de voeding en $x$ de instelhoek (zie figuur). {(\hyperref [frm:10]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:10}})}\par \item [\textbf {Optimale snijsnelheid bij draaien}] $\displaystyle v_{c,\mathrm {opt}} = v_c(k_c)\cdot f^{-u}$ --- waarbij $d$ de diameter is in mm en $n$ het toerental in omwentelingen per minuut. {(\hyperref [frm:11]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:11}})}\par \item [\textbf {Spaanslankheid bij Draaien}] $\displaystyle \dfrac {b}{h} = \dfrac {a}{f \cdot \sin \kappa _r}$ --- waarbij $b$ de snedebreedte is, $h$ de snededikte, $a$ de snedediepte, $f$ de voeding en $\kappa _r$ de instelhoek. {(\hyperref [frm:12]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:12}})}\par \item [\textbf {gemiddelde ruwheid bij Draaien}] $\displaystyle R_a = \dfrac {f^2}{32 \cdot r_\epsilon }$ --- waarbij $f$ de voeding is en $r_\epsilon $ de neusradius van de bijtel. {(\hyperref [frm:13]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:13}})}\par \item [\textbf {totale ruwheid bij Draaien}] $\displaystyle R_t = \dfrac {f^2}{8 \cdot r_\epsilon }$ --- waarbij $f$ de voeding is en $r_\epsilon $ de neusradius van de bijtel. {(\hyperref [frm:14]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:14}})}\par \item [\textbf {Voedingskracht}] $\displaystyle F_f = k_f \cdot a \cdot f^{(1-e)}$ --- waarbij $k_f$ de voedingskrachtcoëfficiënt is, $a$ de snedediepte, $f$ de voeding en $e$ de voedingskrachtsexponent. {(\hyperref [frm:15]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:15}})}\par \item [\textbf {Verspanningsmoment}] $\displaystyle M_c = C_m \cdot d^{x_M} \cdot f^{y_M}$ --- waarbij $C_m$ de momentcoëfficiënt is, $d$ de diameter, $f$ de voeding en $x_M$, $y_M$ de momentexponenten. {(\hyperref [frm:16]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:16}})}\par \item [\textbf {Vermogen bij boren}] $\displaystyle P_c = M_c\,\omega = M_c \cdot 2\pi n$ --- waarbij $M_c$ het verspaningsmoment is en $\omega $ de hoeksnelheid. het verspaningsmoment is en $\omega $ de hoeksnelheid. {(\hyperref [frm:17]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:17}})}\par \item [\textbf {Torsie bij Boren}] $\displaystyle \tau = \dfrac {M_c\,\rho }{I_p}$ --- waarbij $M_c$ het verspaningsmoment is, $\rho $ de afstand van het centrum tot het beschouwde punt en $I_p$ het polair traagheidsmoment. {(\hyperref [frm:18]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:18}})}\par \item [\textbf {Maximale schuifspanning bij Draaien}] $\displaystyle M_d = C_b \cdot d^{x_w}$ --- waarbij \ensuremath {C_b} de schuifspanningcoëfficiënt is, \ensuremath {d} de diameter, \ensuremath {x_w} de schuifspanningsexponent. {(\hyperref [frm:19]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:19}})}\par \item [\textbf {Maximale verspanningsmoment}] $\displaystyle M_c = a\cdot M_b$ --- waarbij \ensuremath {M_c} het verspaningsmoment is en \ensuremath {M_b} het maximale verspanningsmoment. {(\hyperref [frm:20]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:20}})}\par \item [\textbf {Maximale voeding bij boren}] $\displaystyle f_{max} = C \cdot d$ --- waarbij $C$ een constante is, $d$ de diameter en $f_{max}$ de maximale voeding. {(\hyperref [frm:21]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:21}})}\par \item [\textbf {Kracht $F_f$ is de kracht recht naar boven bij een boormachine}] $\displaystyle F_f = C_f \cdot d^{X_f} \cdot f^{y_f}$ --- waarbij $C_f$ de voedingskrachtcoëfficiënt is, $d$ de diameter, $f$ de voeding en $X_f$ en $y_f$ de voedingskrachtsexponenten. {(\hyperref [frm:22]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:22}})}\par \item [\textbf {Snijkracht bij Frezen}] $\displaystyle \ensuremath {F_c = k_c \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}$ --- waarbij $k_c$ de snijkrachtcoëfficiënt is, $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de snijkrachtsexponent. {(\hyperref [frm:23]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:23}})}\par \item [\textbf {Snijmoment bij Frezen}] $\displaystyle \ensuremath {M_c = C_m \cdot d^{x_M} \cdot f_z^{y_M} \cdot z_i}$ --- waarbij $C_m$ de momentcoëfficiënt is, $d$ de diameter, $f_z$ de voeding per tand, $z_i$ het aantal tanden en $x_M$, $y_M$ de momentexponenten. {(\hyperref [frm:24]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:24}})}\par \item [\textbf {Voedingskracht bij Frezen}] $\displaystyle \ensuremath {F_f = k_f \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}$ --- waarbij $k_f$ de voedingskrachtcoëfficiënt is, $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de voedingskrachtsexponent. {(\hyperref [frm:25]{p.\unhbox \voidb@x \protect \penalty \@M \ \pageref {frm:25}})}\par 
+[FORMULARIUM] Printen van formularium met geregistreerde entries.
+[38
+
+
+] [39] (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 35293 strings out of 469519
+ 711568 string characters out of 5470279
+ 1122523 words of memory out of 5000000
+ 63152 multiletter control sequences out of 15000+600000
+ 702731 words of font info for 171 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 84i,13n,104p,1040b,1332s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi5.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr5.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on ProductieTechnologie-Samenvatting-RubenRyckaert.pdf (39 pages, 5616829 bytes).
+PDF statistics:
+ 804 PDF objects out of 1000 (max. 8388607)
+ 621 compressed objects within 7 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 43673 words of extra memory for PDF output out of 51595 (max. 10000000)
+
