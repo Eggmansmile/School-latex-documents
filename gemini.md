@@ -12,7 +12,7 @@ Quick start (what to run)
 Where to look first (entry points)
 - Main pieces:
   - `math-systems/MATHSYS-Oefeningen-RubenRyckaert.tex` — large, canonical source for the math exercises (contains macros and style).
-  - `Warmte en stromigen/Warmte en stromingen Samenvatting Ruben Ryckaert.tex` — thermal/fluid summary that uses `assets/` heavily and demonstrates symbol registration macros.
+  - `Warmte en stromingen/Warmte en stromingen Samenvatting Ruben Ryckaert.tex` — thermal/fluid summary that uses `assets/` heavily and demonstrates symbol registration macros.
   - `Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.tex` — placeholder file (empty) for production-technology notes.
 - `README.md` contains high-level description and lists required packages (tikz, amsmath, amssymb, geometry, enumitem, hyperref, etc.).
 
@@ -22,11 +22,11 @@ Key repository conventions & patterns (do not change without verifying)
 - Custom styling macros:
   - Exercise and theory boxes: `\newtcolorbox{theorieblok}{...}`, `\newtcolorbox{oefenblok}{...}` — use these for consistent visual style.
   - Emphasis macros: `\concept{}`, `\belangrijk{}`, `\important{}` are used throughout; prefer these rather than ad-hoc formatting.
-- Symbol registration (important pattern in `Warmte en stromigen`):
+- Symbol registration (important pattern in `Warmte en stromingen`):
   - Use `\symS{<symbol>}{<name>}{<unit/notes>}` or `\symW{...}` to introduce symbols. This both shows an explanation and writes an entry to the `.aux` to build the formularium.
   - Avoid duplicating symbol entries; the helpers ensure first-time display only.
 - Asset management:
-  - All images/figures referenced relatively under `Warmte en stromigen/assets/` (subfolders: `slides/`, `wikipedia/`). Use the same path conventions and filenames; filenames may contain spaces — always quote paths in shell commands and escape properly in scripts.
+  - All images/figures referenced relatively under `Warmte en stromingen/assets/` (subfolders: `slides/`, `wikipedia/`). Use the same path conventions and filenames; filenames may contain spaces — always quote paths in shell commands and escape properly in scripts.
   - Some PDFs are included (`\includepdf{...}` or `\includepdf[pages=...]{...}`); treat these as binary assets and do not attempt to edit them in-text.
 - Filenames & spacing:
   - Several files include spaces and diacritics in names (`Warmte en stromingen Samenvatting Ruben Ryckaert.tex`). When scripting or writing commands, quote these paths.

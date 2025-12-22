@@ -1,0 +1,33 @@
+INFO:  ANSI Code Page: 1252
+INFO:  latexindent.exe version 3.24.7, 2025-08-15, a script to indent .tex files
+       latexindent.exe lives here: C:/tools/TinyTeX/bin/windows/
+       Mon Dec 22 21:47:18 2025
+       Filename: C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.tex
+INFO:  Processing switches:
+       -s|--silent: Silent mode active (you have used either -s or --silent)
+       -w|--overwrite: Overwrite mode active, will make a back up before overwriting
+INFO:  Directory for backup files and log file indent.log:
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from C:/tools/TinyTeX/bin/windows/defaultSettings.yaml
+       Reading defaultSettings.yaml (2nd attempt) from C:/tools/TinyTeX/bin/windows/../../texmf-dist/scripts/latexindent/defaultSettings.yaml
+       and then, if necessary, C:/tools/TinyTeX/bin/windows/LatexIndent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is C:\Users\ruben
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  Backup procedure (-w flag active):
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.bak0 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.bak1 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.bak2 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       Backing up C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.tex to C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.bak3...
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.tex will be overwritten after indentation
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  Output routine:
+       Overwriting file C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\latex_templates\template_examples.tex
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl

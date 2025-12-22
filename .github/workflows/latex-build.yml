@@ -30,7 +30,7 @@ jobs:
           latexmk -pdf -interaction=nonstopmode -file-line-error "MATHSYS-Oefeningen-RubenRyckaert.tex"
 
       - name: Build `Warmte en stromingen` (latexmk)
-        working-directory: ./Warmte en stromingen
+        working-directory: "Warmte en stromingen"
         run: |
           latexmk -pdf -interaction=nonstopmode -file-line-error "Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
 

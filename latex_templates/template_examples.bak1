@@ -1,0 +1,372 @@
+% Template: Practical LaTeX examples for ProductieTechnologie
+% Demonstrates: siunitx, cleveref, booktabs, subcaption, tcolorbox, enumitem, and small macros
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage{tcolorbox}
+% load helpful tcolorbox libraries where available
+\IfFileExists{tcolorbox.sty}{% 
+  \tcbuselibrary{theorems}
+}{}
+\usepackage{xcolor}
+
+% Standard colors for the project
+\definecolor{hoofdkleur}{RGB}{0,51,102}  % Professional Dark Blue
+\definecolor{accentkleur}{RGB}{204,0,0}   % Deep Red
+\definecolor{azure}{rgb}{0.94, 1.0, 1.0}  % Light Blue
+
+% Emphasis macros
+\newcommand{\concept}[1]{\textbf{\textcolor{hoofdkleur}{#1}}}
+\newcommand{\belangrijk}[1]{\textbf{\textcolor{accentkleur}{#1}}}
+\newcommand{\important}[1]{\textbf{\textcolor{accentkleur}{#1}}}
+
+\usepackage{enumitem}
+\usepackage{siunitx}
+\sisetup{per-mode=symbol,detect-all=true}
+% Hyperref (load near last)
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=hoofdkleur]{hyperref}
+\usepackage{cleveref}
+\crefname{figure}{figuur}{figuren}
+\Crefname{figure}{Figuur}{Figuur}
+\crefname{table}{tabel}{tabellen}
+\Crefname{table}{Tabel}{Tabel}
+
+% Extra packages for examples (guarded where external tools are required)
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{shapes.geometric, arrows, positioning, calc}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage[version=4]{mhchem} % For chemical notation
+\usepackage{ntheorem} % For qed symbol
+\newtheorem{proposition}{Propositie}
+
+% Glossaries (guarded)
+\IfFileExists{glossaries.sty}{%
+  \usepackage[acronym]{glossaries}
+  \makeglossaries
+  \newglossaryentry{Ra}{name={\ensuremath{R_a}},description={gemiddelde ruwheid}}
+}{% fallback: glossaries not installed
+}
+% biblatex (guarded)
+\IfFileExists{biblatex.sty}{%
+  \usepackage[backend=biber,style=authoryear]{biblatex}
+  \addbibresource{template_examples.bib}
+}{% fallback: biblatex not installed
+}
+
+% Small macros
+\newcommand{\Fc}{\ensuremath{F_c}}
+\newcommand{\vc}{\ensuremath{v_c}}
+\newcommand{\Pc}{\ensuremath{P_c}}
+
+% Nice inline theory box
+\newtcbox{\theoriebox}{on line,boxrule=0.4pt,arc=2pt,boxsep=3pt,top=2pt,bottom=2pt,colback=gray!6,colframe=gray!40}
+
+\begin{document}
+\section*{LaTeX voorbeelden — kort overzicht}
+
+\subsection*{Kleuren en Nadruk}
+Dit template bevat standaard kleuren en macro's voor consistentie:
+\begin{itemize}
+  \item \verb|\concept{term}|: \concept{Belangrijk concept} (in \texttt{hoofdkleur})
+  \item \verb|\belangrijk{term}|: \belangrijk{Belangrijke opmerking} (in \texttt{accentkleur})
+  \item \verb|\important{term}|: \important{Synoniem voor belangrijk}
+\end{itemize}
+
+\subsection*{Eenheden met siunitx}
+Gebruik \verb|\SI{120}{\milli\metre\per\minute}|: \SI{120}{\milli\metre\per\minute}.
+Voor wetenschappelijke notatie gebruik \verb|\num{1.5e3}|: \num{1.5e3}.
+
+\subsection*{FIGURE: subfigures voorbeeld}
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{../Productietechnologie/image32.png}
+    \caption{Voorbeeld A}
+  \end{subfigure}\hfill
+  \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{../Productietechnologie/image33.png}
+    \caption{Voorbeeld B}
+  \end{subfigure}
+  \caption{Subfigure voorbeeld (gebruik \texttt{subcaption})}
+  \label{fig:subexample}
+\end{figure}
+
+Referentie voorbeeld: zie \cref{fig:subexample}.
+
+\subsection*{Tabellen met booktabs}
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{l S[table-format=3.0] S[table-format=3.1]}
+    \toprule
+    Parameter & {Waarde} & {Eenheid} \\
+    \midrule
+    Snijsnelheid & 125 & {m/min} \\
+    Voeding & 0.25 & {mm/rev} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Voorbeeldtabel (gebruik \texttt{booktabs} en \texttt{siunitx})}
+\end{table}
+
+\subsection*{Opsommingen (enumitem)}
+\begin{enumerate}[leftmargin=*,label=\textbf{\arabic*.}]
+  \item Belangrijk punt
+  \item Nog een punt met subopsomming
+    \begin{itemize}[leftmargin=*]
+      \item subA
+      \item subB
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{Inline theorievoorbeeld}
+Gebruik de lichtgrijze box: \theoriebox{Definitie: snedediepte $a$ is de diepte van de snede.}
+
+\subsection*{Formule en eenheidstips}
+\[ \Pc = \Fc\,\vc \qquad (\text{vermogen in }\si{W})\]
+
+\subsection*{Snel checklist}
+\begin{itemize}
+  \item Gebruik \verb|siunitx| voor consistente eenheden
+  \item Gebruik \verb|cleveref| voor nette cross-references
+  \item Gebruik \verb|booktabs| voor professionele tabellen
+  \item Gebruik \verb|latexmk -pdf| in je workflow
+\end{itemize}
+
+\subsection*{PGFPlots: eenvoudige grafiek}
+\begin{tikzpicture}
+  \begin{axis}[title={Voorbeeld plot},xlabel={$x$},ylabel={$y$},grid=major]
+    \addplot[smooth,thick] {sin(deg(x))};
+  \end{axis}
+\end{tikzpicture}
+
+\subsection*{PGFPlots: meerdere subplots (groupplots)}
+\begin{tikzpicture}
+  \begin{groupplot}[group style={group size=2 by 1,horizontal sep=1.5cm},height=4cm,width=6cm]
+    \nextgroupplot[title={kwadratisch}]
+      \addplot {x^2};
+    \nextgroupplot[title={sinus}]
+      \addplot {sin(deg(x))};
+  \end{groupplot}
+\end{tikzpicture}
+
+\subsection*{tcolorbox: theorema-box}
+\begin{tcolorbox}[colback=blue!5,colframe=blue!40,title=Stelling]
+  \textbf{Stelling.} Als $f$ continu is op $[a,b]$ dan heeft $f$ een maximum en minimum op $[a,b]$.
+\end{tcolorbox}
+
+\subsection*{Code listings (listings)}
+\begin{lstlisting}[language=Python,caption={Voorbeeld Python code},label={lst:py1}]
+def mean(xs):
+    return sum(xs)/len(xs)
+\end{lstlisting}
+
+% Optional: minted (requires \texttt{--shell-escape})
+% \begin{minted}[fontsize=\small]{python}
+% def mean(xs):
+%     return sum(xs)/len(xs)
+% \end{minted}
+
+\subsection*{Glossaries (definities)}
+\IfFileExists{glossaries.sty}{%
+  \noindent Voorbeeld: \gls{Ra} (gebruik \verb|glossaries| om een glossarium te maken).
+}{%
+  \noindent Voorbeeld: Ra (installeer het pakket \texttt{glossaries} om een glossarium te gebruiken).
+}
+
+\subsection*{Bibliografie (biblatex)}
+\IfFileExists{biblatex.sty}{%
+  Aanhaling voorbeeld: \parencite{Lamport1994}.
+  \printbibliography[heading=subbibliography]
+}{%
+  \noindent Bibliografie voorbeeld vereist \texttt{biblatex} (installeer via \texttt{tlmgr install biblatex}).
+}
+
+\subsection*{Cheat-sheet stijl (multicol)}
+\IfFileExists{multicol.sty}{%
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item Kort item 1
+      \item Kort item 2
+      \item Kort item 3
+    \end{itemize}
+  \end{multicols}
+}{%
+  % multicol niet beschikbaar
+}
+
+\subsection*{Wiskunde: Aligned Equations}
+Gebruik de \texttt{align*} omgeving voor het uitlijnen van berekeningen:
+\begin{align*}
+  F_c &= k_c \cdot a \cdot f \\
+      &= \num{2500} \cdot \num{2.5} \cdot \num{0.2} \\
+      &= \SI{1250}{\newton}
+\end{align*}
+
+\subsection*{Chemische notatie (mhchem)}
+Gebruik \verb|\ce{...}| voor chemische formules: \ce{H2O}, \ce{Fe2O3}, of reacties:
+\begin{center}
+  \ce{2H2 + O2 -> 2H2O}
+\end{center}
+
+\subsection*{Hyperlinks}
+\begin{itemize}
+  \item Klikbare URL: \url{https://www.latex-project.org/}
+  \item Link met tekst: \href{https://en.wikibooks.org/wiki/LaTeX}{LaTeX Wikibook}
+\end{itemize}
+
+\subsection*{TikZ: Flowchart (Productieproces)}
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    startstop/.style={rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30},
+    process/.style={rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30},
+    decision/.style={diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30},
+    arrow/.style={thick,->,>=stealth}
+]
+    \node (start) [startstop] {Start Ontwerp};
+    \node (pro1) [process, below of=start] {Materiaalkeuze};
+    \node (dec1) [decision, below of=pro1, yshift=-0.5cm] {Voorraad?};
+    \node (pro2a) [process, below of=dec1, yshift=-0.5cm] {Productie};
+    \node (pro2b) [process, right of=dec1, xshift=3cm] {Bestellen};
+    \node (stop) [startstop, below of=pro2a] {Klaar};
+
+    \draw [arrow] (start) -- (pro1);
+    \draw [arrow] (pro1) -- (dec1);
+    \draw [arrow] (dec1) -- node[anchor=east] {ja} (pro2a);
+    \draw [arrow] (dec1) -- node[anchor=south] {nee} (pro2b);
+    \draw [arrow] (pro2b) |- (pro1);
+    \draw [arrow] (pro2a) -- (stop);
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Nieuwe toevoegingen}
+\subsubsection*{Tabularx voor gelijke kolombreedtes}
+\begin{table}[ht]
+  \centering
+  \begin{tabularx}{\linewidth}{X X S[table-format=3.2]}
+    \toprule
+    \textbf{Component} & \textbf{Beschrijving} & \textbf{Waarde} \\
+    \midrule
+    Motor & Elektrische aandrijving & 2.45 \\
+    Sensor & Temperatuurmeting & 0.12 \\
+    Controller & PLC systeem & 1.89 \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Tabularx voorbeeld met auto-uitvullende kolommen}
+\end{table}
+
+\subsubsection*{Cirkeldiagram met TikZ}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \def\angle{0}
+  \def\radius{2}
+  \foreach \percent/\color/\label in {40/blue!60/Productie,35/red!60/Onderhoud,20/green!60/Logistiek,5/orange!60/Overig} {
+    \draw[fill=\color] (0,0) -- (\angle:\radius)
+      arc (\angle:\angle+\percent*3.6:\radius) -- cycle;
+    \node at (\angle+\percent*1.8:1.3) {\percent\%};
+    \pgfmathsetmacro{\angle}{\angle+\percent*3.6}
+  }
+  \node[draw,circle,fill=white] at (0,0) {\textbf{100\%}};
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Matrix en arrays}
+\[
+\begin{bmatrix}
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+  x_1 \\ x_2 \\ x_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+  b_1 \\ b_2 \\ b_3
+\end{bmatrix}
+\]
+
+\subsubsection*{Integraal en afgeleide notatie}
+\begin{align}
+  \frac{d^2x}{dt^2} + 2\zeta\omega_n\frac{dx}{dt} + \omega_n^2 x &= 0 \\
+  \int_0^T f(t)\,dt &= F(T) - F(0) \\
+  \nabla^2 \phi &= \frac{\partial^2\phi}{\partial x^2} + \frac{\partial^2\phi}{\partial y^2}
+\end{align}
+
+\subsubsection*{Tekstvakken met frames}
+\begin{tcolorbox}[colback=yellow!10,colframe=orange!75,title=Waarschuwing]
+  Dit is een waarschuwingsvak dat kan worden gebruikt voor veiligheidsinformatie of belangrijke aandachtspunten.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=green!5,colframe=green!50,title=Tip]
+  Nuttige tips of best practices kunnen hier worden geplaatst. Het frame maakt het visueel duidelijk onderscheid.
+\end{tcolorbox}
+
+\subsubsection*{Eenheidconversie tabel}
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{l S[table-format=2.1] S[table-format=3.2]}
+    \toprule
+    \textbf{Grootheid} & \textbf{Van (mm)} & \textbf{Naar (inch)} \\
+    \midrule
+    Diameter 1 & 25.4 & 1.00 \\
+    Diameter 2 & 50.8 & 2.00 \\
+    Diameter 3 & 12.7 & 0.50 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Conversie tussen metrische en imperiale eenheden}
+\end{table}
+
+\subsubsection*{Lijst van vergelijkingen}
+\begin{enumerate}[label=\textbf{Vergelijking \arabic*:}]
+  \item Continuïteitsvergelijking: $\displaystyle \nabla \cdot \mathbf{v} = 0$
+  \item Navier-Stokes: $\displaystyle \rho\frac{D\mathbf{v}}{Dt} = -\nabla p + \mu\nabla^2\mathbf{v}$
+  \item Energievergelijking: $\displaystyle \rho c_p\frac{DT}{Dt} = k\nabla^2T + \Phi$
+\end{enumerate}
+
+\subsubsection*{Specificaties tabel}
+\begin{table}[ht]
+  \centering
+  \small
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Specificatie} & \textbf{Waarde} \\
+    \midrule
+    Machine type & CNC Freesmachine \\
+    Maximaal vermogen & \SI{15}{\kilo\watt} \\
+    Werkgebied & \SI{1200}{\milli\metre} × \SI{800}{\milli\metre} \\
+    Positieprecisie & \SI{0.01}{\milli\metre} \\
+    Spil & \SI{24000}{\per\minute} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Technische specificaties}
+\end{table}
+
+\subsubsection*{Error handling met cases}
+\[
+\text{Signaal}(t) = 
+\begin{cases}
+  A\sin(\omega t) & \text{als } t \geq 0 \\
+  0 & \text{als } t < 0
+\end{cases}
+\]
+
+\subsubsection*{QED symbol}
+Een bewijs eindigt met: \hfill$\blacksquare$
+
+\vspace{1em}
+\noindent --- Einde template ---
+\end{document}
