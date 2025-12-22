@@ -15,6 +15,18 @@
 \IfFileExists{tcolorbox.sty}{% 
   \tcbuselibrary{theorems,listing}
 }{}
+\usepackage{xcolor}
+
+% Standard colors for the project
+\definecolor{hoofdkleur}{RGB}{0,51,102}  % Professional Dark Blue
+\definecolor{accentkleur}{RGB}{204,0,0}   % Deep Red
+\definecolor{azure}{rgb}{0.94, 1.0, 1.0}  % Light Blue
+
+% Emphasis macros
+\newcommand{\concept}[1]{\textbf{\textcolor{hoofdkleur}{#1}}}
+\newcommand{\belangrijk}[1]{\textbf{\textcolor{accentkleur}{#1}}}
+\newcommand{\important}[1]{\textbf{\textcolor{accentkleur}{#1}}}
+
 \usepackage{enumitem}
 \usepackage{siunitx}
 \sisetup{per-mode=symbol,detect-all=true}
@@ -28,8 +40,13 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usepgfplotslibrary{groupplots}
+\usetikzlibrary{shapes.geometric, arrows, positioning, calc}
 \usepackage{listings}
 \usepackage{multicol}
+\usepackage[version=4]{mhchem} % For chemical notation
+% \usepackage{url} is not needed because hyperref provides \url; avoid loading it after hyperref
+% Hyperref (load near last)
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=hoofdkleur]{hyperref}
 % Glossaries (guarded)
 \IfFileExists{glossaries.sty}{%
   \usepackage[acronym]{glossaries}
@@ -55,6 +72,14 @@
 \begin{document}
 \section*{LaTeX voorbeelden — kort overzicht}
 
+\subsection*{Kleuren en Nadruk}
+Dit template bevat standaard kleuren en macro's voor consistentie:
+\begin{itemize}
+  \item \verb|\concept{term}|: \concept{Belangrijk concept} (in \texttt{hoofdkleur})
+  \item \verb|\belangrijk{term}|: \belangrijk{Belangrijke opmerking} (in \texttt{accentkleur})
+  \item \verb|\important{term}|: \important{Synoniem voor belangrijk}
+\end{itemize}
+
 \subsection*{Eenheden met siunitx}
 Gebruik \verb|\SI{120}{\milli\metre\per\minute}|: \SI{120}{\milli\metre\per\minute}.
 Voor wetenschappelijke notatie gebruik \verb|\num{1.5e3}|: \num{1.5e3}.
@@ -64,12 +89,12 @@ Voor wetenschappelijke notatie gebruik \verb|\num{1.5e3}|: \num{1.5e3}.
   \centering
   \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{image32.png}
+    \includegraphics[width=\linewidth]{../Productietechnologie/image32.png}
     \caption{Voorbeeld A}
   \end{subfigure}\hfill
   \begin{subfigure}{0.45\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{image33.png}
+    \includegraphics[width=\linewidth]{../Productietechnologie/image33.png}
     \caption{Voorbeeld B}
   \end{subfigure}
   \caption{Subfigure voorbeeld (gebruik \texttt{subcaption})}
@@ -152,14 +177,6 @@ def mean(xs):
 
 \subsection*{Glossaries (definities)}
 \IfFileExists{glossaries.sty}{%
-  \usepackage[acronym]{glossaries}
-  \makeglossaries
-  \newglossaryentry{Ra}{name={\ensuremath{R_a}},description={gemiddelde ruwheid}}
-}{% fallback
-  % glossaries package not available
-}
-
-\IfFileExists{glossaries.sty}{%
   \noindent Voorbeeld: \gls{Ra} (gebruik \verb|glossaries| om een glossarium te maken).
 }{%
   \noindent Voorbeeld: Ra (installeer het pakket \texttt{glossaries} om een glossarium te gebruiken).
@@ -185,6 +202,51 @@ def mean(xs):
 }{%
   % multicol niet beschikbaar
 }
+
+\subsection*{Wiskunde: Aligned Equations}
+Gebruik de \texttt{align*} omgeving voor het uitlijnen van berekeningen:
+\begin{align*}
+  F_c &= k_c \cdot a \cdot f \\
+      &= \num{2500} \cdot \num{2.5} \cdot \num{0.2} \\
+      &= \SI{1250}{\newton}
+\end{align*}
+
+\subsection*{Chemische notatie (mhchem)}
+Gebruik \verb|\ce{...}| voor chemische formules: \ce{H2O}, \ce{Fe2O3}, of reacties:
+\begin{center}
+  \ce{2H2 + O2 -> 2H2O}
+\end{center}
+
+\subsection*{Hyperlinks}
+\begin{itemize}
+  \item Klikbare URL: \url{https://www.latex-project.org/}
+  \item Link met tekst: \href{https://en.wikibooks.org/wiki/LaTeX}{LaTeX Wikibook}
+\end{itemize}
+
+\subsection*{TikZ: Flowchart (Productieproces)}
+\begin{center}
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    startstop/.style={rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30},
+    process/.style={rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30},
+    decision/.style={diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30},
+    arrow/.style={thick,->,>=stealth}
+]
+    \node (start) [startstop] {Start Ontwerp};
+    \node (pro1) [process, below of=start] {Materiaalkeuze};
+    \node (dec1) [decision, below of=pro1, yshift=-0.5cm] {Voorraad?};
+    \node (pro2a) [process, below of=dec1, yshift=-0.5cm] {Productie};
+    \node (pro2b) [process, right of=dec1, xshift=3cm] {Bestellen};
+    \node (stop) [startstop, below of=pro2a] {Klaar};
+
+    \draw [arrow] (start) -- (pro1);
+    \draw [arrow] (pro1) -- (dec1);
+    \draw [arrow] (dec1) -- node[anchor=east] {ja} (pro2a);
+    \draw [arrow] (dec1) -- node[anchor=south] {nee} (pro2b);
+    \draw [arrow] (pro2b) |- (pro1);
+    \draw [arrow] (pro2a) -- (stop);
+\end{tikzpicture}
+\end{center}
 
 \vspace{1em}
 \noindent --- Einde template ---

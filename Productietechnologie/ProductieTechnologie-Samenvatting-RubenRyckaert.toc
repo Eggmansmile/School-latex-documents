@@ -1,87 +1,118 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {chapter}{\numberline {1}Inleiding}{4}{chapter.2}%
-\contentsline {subsection}{\numberline {1.0.1}Keuzes bij productie}{5}{subsection.4}%
-\contentsline {section}{\numberline {1.1}Passing}{5}{section.5}%
-\contentsline {section}{\numberline {1.2}Tolerantie}{6}{section.6}%
-\contentsline {section}{\numberline {1.3}Oppervlaktekwaliteit}{6}{section.9}%
-\contentsline {chapter}{\numberline {2}Materialen}{7}{chapter.11}%
-\contentsline {subsection}{\numberline {2.0.1}Vervorming}{8}{subsection.13}%
-\contentsline {chapter}{\numberline {3}Verspanen: Algemeen}{8}{chapter.14}%
-\contentsline {section}{\numberline {3.1}bijtelbewerkingen}{9}{section.15}%
-\contentsline {subsection}{\numberline {3.1.1}Secundaire afschuifvlak(shear zone)}{10}{subsection.19}%
-\contentsline {subsubsection}{Extra info}{11}{figure.caption.21}%
-\contentsline {section}{\numberline {3.2}Beweging, snelheden en voedingen, temperaturen, slijtage}{11}{section.23}%
-\contentsline {subsection}{\numberline {3.2.1}Krachten}{12}{subsection.25}%
-\contentsline {section}{\numberline {3.3}Factoren bij bijtelbewerking}{13}{section.28}%
-\contentsline {paragraph}{Verbeteren / voorkomen:}{13}{section.28}%
-\contentsline {section}{\numberline {3.4}Snijmaterialen}{15}{section.32}%
-\contentsline {subsection}{\numberline {3.4.1}Classificatie van snijmaterialen}{16}{subsection.40}%
-\contentsline {section}{\numberline {3.5}Optimale snijsnelheid}{17}{section.42}%
-\contentsline {chapter}{\numberline {4}Verspanen: Draaien}{18}{chapter.45}%
-\contentsline {section}{\numberline {4.1}Het Draaiproces}{19}{section.50}%
-\contentsline {section}{\numberline {4.2}Krachten bij Draaien}{19}{section.52}%
-\contentsline {section}{\numberline {4.3}Invloeden voeding $f$ en snedediepte $a$ op de kracht en snijsnelheid}{22}{section.58}%
-\contentsline {section}{\numberline {4.4}Spaanvorming bij Draaien}{23}{section.64}%
-\contentsline {section}{\numberline {4.5}Oppervlakteruwheid bij Draaien}{24}{section.67}%
-\contentsline {section}{\numberline {4.6}De Draaioperatie}{25}{section.69}%
-\contentsline {chapter}{\numberline {5}Verspanen: Boren, Fabricage en ronde gaten}{26}{chapter.72}%
-\contentsline {section}{\numberline {5.1}Inleiding Boren}{26}{section.73}%
-\contentsline {subsection}{\numberline {5.1.1}Boorgeometrie}{27}{subsection.78}%
-\contentsline {section}{\numberline {5.2}Optredende krachten}{27}{section.80}%
-\contentsline {subsection}{\numberline {5.2.1}gevolgen van onevenwichtige krachten}{28}{subsection.82}%
-\contentsline {section}{\numberline {5.3}Keuze van voeding}{29}{section.83}%
-\contentsline {subsection}{\numberline {5.3.1}Torsie bij Boren}{29}{subsection.84}%
-\contentsline {paragraph}{1) Via het schuifspanningscriterium}{30}{figure.caption.85}%
-\contentsline {paragraph}{2) Via een momentlimiet}{30}{figure.caption.85}%
-\contentsline {paragraph}{Speciale geval -- lineair}{30}{figure.caption.85}%
-\contentsline {section}{\numberline {5.4}Boormachines en booroperaties in de industrie.}{31}{section.87}%
-\contentsline {subsection}{\numberline {5.4.1}NC-gestuurde boormachines}{31}{subsection.88}%
-\contentsline {subsection}{\numberline {5.4.2}Boren}{31}{subsection.89}%
-\contentsline {paragraph}{Type boren}{32}{figure.caption.90}%
-\contentsline {subsection}{\numberline {5.4.3}Kotteren}{32}{subsection.92}%
-\contentsline {subsection}{\numberline {5.4.4}Draadtappen}{32}{subsection.93}%
-\contentsline {subsection}{\numberline {5.4.5}Ruimen}{33}{subsection.95}%
-\contentsline {chapter}{\numberline {6}Verspanen: Frezen}{33}{chapter.97}%
-\contentsline {subsection}{\numberline {6.0.1}Soorten frezen}{33}{subsection.98}%
-\contentsline {subsection}{\numberline {6.0.2}Geometrie van de frees}{34}{subsection.99}%
-\contentsline {section}{\numberline {6.1}krachtwerking bij frezen}{34}{section.101}%
-\contentsline {section}{\numberline {6.2}Richting van frezen}{36}{section.104}%
-\contentsline {subsection}{\numberline {6.2.1}Wanneer kiezen: meelopend vs tegenlopend}{37}{subsection.107}%
-\contentsline {paragraph}{Effecten op oppervlakte en snedediepte}{37}{subsection.107}%
-\contentsline {section}{\numberline {6.3}Soorten frezen}{38}{section.108}%
-\contentsline {section}{\numberline {6.4}De Freesmachine}{38}{section.109}%
-\contentsline {chapter}{\numberline {7}Verspanen:Hybridetechnieken}{38}{chapter.111}%
-\contentsline {section}{\numberline {7.1}Honen}{38}{section.112}%
-\contentsline {subsection}{\numberline {7.1.1}Lange-slag Honen}{39}{subsection.113}%
-\contentsline {subsection}{\numberline {7.1.2}Korte-slag Honen}{39}{subsection.116}%
-\contentsline {section}{\numberline {7.2}Leppen}{40}{section.118}%
-\contentsline {subsection}{\numberline {7.2.1}Met vloeistof}{40}{subsection.119}%
-\contentsline {subsection}{\numberline {7.2.2}Finisheren met pasta}{40}{subsection.120}%
-\contentsline {section}{\numberline {7.3}Geadvaseerde verspaningstechnieken en hybride technieken}{40}{section.121}%
-\contentsline {subsection}{\numberline {7.3.1}hoge snelheid verspanen}{40}{subsection.122}%
-\contentsline {subsection}{\numberline {7.3.2}Hardverspanen}{41}{subsection.124}%
-\contentsline {section}{\numberline {7.4}Hybrideprocessen}{41}{section.125}%
-\contentsline {subsection}{\numberline {7.4.1}Laserondersteuning bij verspanen}{42}{subsection.126}%
-\contentsline {subsection}{\numberline {7.4.2}Draadvonken en slijpen}{42}{subsection.128}%
-\contentsline {subsection}{\numberline {7.4.3}ECM (Electro Chemical Machining) en slijpen}{42}{subsection.129}%
-\contentsline {subsection}{\numberline {7.4.4}Combinatie van ECM en frezen}{42}{subsection.130}%
-\contentsline {chapter}{\numberline {8}Verspanen:Slijpen}{43}{chapter.131}%
-\contentsline {subsection}{\numberline {8.0.1}Frezen met onbepaalde snijkanten}{43}{subsection.132}%
-\contentsline {subsection}{\numberline {8.0.2}Eigenschappen van slijpen}{44}{subsection.134}%
-\contentsline {subsection}{\numberline {8.0.3}Parameters slijpsteen}{44}{subsection.143}%
-\contentsline {subsubsection}{Korrelmateriaal}{44}{figure.caption.144}%
-\contentsline {subsubsection}{Korrelgroot}{45}{figure.caption.144}%
-\contentsline {subsubsection}{Hardheid van de slijpsteen}{45}{figure.caption.144}%
-\contentsline {subsubsection}{Bindmiddel}{45}{figure.caption.144}%
-\contentsline {subsubsection}{Structuur}{45}{figure.caption.144}%
-\contentsline {section}{\numberline {8.1}temperaturen bij slijpen}{46}{section.146}%
-\contentsline {section}{\numberline {8.2}Slijptechnieken}{47}{section.148}%
-\contentsline {section}{\numberline {8.3}De slijpmachine}{47}{section.150}%
-\contentsline {subsection}{\numberline {8.3.1}Centerloos slijpen}{47}{subsection.151}%
-\contentsline {subsection}{\numberline {8.3.2}Profielslijpen}{48}{subsection.153}%
-\contentsline {chapter}{\numberline {9}Fysische en Chemische afnemende bewerkingen}{48}{chapter.154}%
-\contentsline {section}{\numberline {9.1}Vonkerosie}{48}{section.155}%
-\contentsline {chapter}{\numberline {10}Scheiden}{48}{chapter.156}%
-\contentsline {chapter}{\numberline {11}Automatiseren \& machinekeuze}{48}{chapter.157}%
-\contentsline {chapter}{\numberline {12}Productie werkvoorbereiding}{48}{chapter.158}%
-\contentsline {chapter}{\numberline {13}Productiegericht ontwerpen}{48}{chapter.159}%
+\contentsline {chapter}{\numberline {1}Inleiding}{7}{chapter.3}%
+\contentsline {subsection}{\numberline {1.0.1}Keuzes bij productie}{8}{subsection.5}%
+\contentsline {section}{\numberline {1.1}Passing}{8}{section.6}%
+\contentsline {section}{\numberline {1.2}Tolerantie}{9}{section.7}%
+\contentsline {section}{\numberline {1.3}Oppervlaktekwaliteit}{9}{section.10}%
+\contentsline {chapter}{\numberline {2}Materialen}{10}{chapter.12}%
+\contentsline {subsection}{\numberline {2.0.1}Vervorming}{11}{subsection.14}%
+\contentsline {chapter}{\numberline {3}Verspanen: Algemeen}{11}{chapter.15}%
+\contentsline {section}{\numberline {3.1}beitelbewerkingen}{12}{section.16}%
+\contentsline {subsection}{\numberline {3.1.1}Secundaire afschuifvlak(shear zone)}{13}{subsection.20}%
+\contentsline {subsubsection}{Extra info}{14}{figure.caption.22}%
+\contentsline {section}{\numberline {3.2}Beweging, snelheden en voedingen, temperaturen, slijtage}{14}{section.24}%
+\contentsline {subsection}{\numberline {3.2.1}Krachten}{16}{subsection.26}%
+\contentsline {section}{\numberline {3.3}Factoren bij beitelbewerking}{16}{section.29}%
+\contentsline {paragraph}{Verbeteren / voorkomen:}{16}{section.29}%
+\contentsline {section}{\numberline {3.4}Snijmaterialen}{19}{section.33}%
+\contentsline {subsection}{\numberline {3.4.1}Classificatie van snijmaterialen}{19}{subsection.41}%
+\contentsline {section}{\numberline {3.5}Optimale snijsnelheid}{20}{section.43}%
+\contentsline {chapter}{\numberline {4}Verspanen: Draaien}{22}{chapter.46}%
+\contentsline {section}{\numberline {4.1}Het Draaiproces}{22}{section.51}%
+\contentsline {section}{\numberline {4.2}Krachten bij Draaien}{23}{section.53}%
+\contentsline {section}{\numberline {4.3}Invloeden voeding $f$ en snedediepte $a$ op de kracht en snijsnelheid}{25}{section.59}%
+\contentsline {section}{\numberline {4.4}Spaanvorming bij Draaien}{26}{section.65}%
+\contentsline {section}{\numberline {4.5}Oppervlakteruwheid bij Draaien}{28}{section.68}%
+\contentsline {section}{\numberline {4.6}De Draaioperatie}{29}{section.70}%
+\contentsline {chapter}{\numberline {5}Verspanen: Boren, Fabricage en ronde gaten}{30}{chapter.73}%
+\contentsline {section}{\numberline {5.1}Inleiding Boren}{30}{section.74}%
+\contentsline {subsection}{\numberline {5.1.1}Boorgeometrie}{31}{subsection.79}%
+\contentsline {section}{\numberline {5.2}Optredende krachten}{31}{section.81}%
+\contentsline {subsection}{\numberline {5.2.1}gevolgen van onevenwichtige krachten}{32}{subsection.83}%
+\contentsline {section}{\numberline {5.3}Keuze van voeding}{33}{section.84}%
+\contentsline {subsection}{\numberline {5.3.1}Torsie bij Boren}{33}{subsection.85}%
+\contentsline {paragraph}{1) Via het schuifspanningscriterium}{34}{figure.caption.86}%
+\contentsline {paragraph}{2) Via een momentlimiet}{34}{figure.caption.86}%
+\contentsline {paragraph}{Speciale geval -- lineair}{34}{figure.caption.86}%
+\contentsline {section}{\numberline {5.4}Boormachines en booroperaties in de industrie.}{35}{section.88}%
+\contentsline {subsection}{\numberline {5.4.1}NC-gestuurde boormachines}{35}{subsection.89}%
+\contentsline {subsection}{\numberline {5.4.2}Boren}{35}{subsection.90}%
+\contentsline {paragraph}{Type boren}{36}{figure.caption.91}%
+\contentsline {subsection}{\numberline {5.4.3}Kotteren}{36}{subsection.93}%
+\contentsline {subsection}{\numberline {5.4.4}Draadtappen}{36}{subsection.94}%
+\contentsline {subsection}{\numberline {5.4.5}Ruimen}{37}{subsection.96}%
+\contentsline {chapter}{\numberline {6}Verspanen: Frezen}{37}{chapter.98}%
+\contentsline {subsection}{\numberline {6.0.1}Soorten frezen}{38}{subsection.99}%
+\contentsline {subsection}{\numberline {6.0.2}Geometrie van de frees}{38}{subsection.100}%
+\contentsline {section}{\numberline {6.1}krachtwerking bij frezen}{38}{section.102}%
+\contentsline {section}{\numberline {6.2}Richting van frezen}{40}{section.105}%
+\contentsline {subsection}{\numberline {6.2.1}Wanneer kiezen: meelopend vs tegenlopend}{41}{subsection.108}%
+\contentsline {paragraph}{Effecten op oppervlakte en snedediepte}{41}{subsection.108}%
+\contentsline {section}{\numberline {6.3}Soorten frezen}{42}{section.109}%
+\contentsline {section}{\numberline {6.4}De Freesmachine}{42}{section.110}%
+\contentsline {chapter}{\numberline {7}Verspanen:Hybridetechnieken}{42}{chapter.112}%
+\contentsline {section}{\numberline {7.1}Honen}{42}{section.113}%
+\contentsline {subsection}{\numberline {7.1.1}Lange-slag Honen}{43}{subsection.114}%
+\contentsline {subsection}{\numberline {7.1.2}Korte-slag Honen}{43}{subsection.117}%
+\contentsline {section}{\numberline {7.2}Leppen}{44}{section.119}%
+\contentsline {subsection}{\numberline {7.2.1}Met vloeistof}{44}{subsection.120}%
+\contentsline {subsection}{\numberline {7.2.2}Finisheren met pasta}{44}{subsection.121}%
+\contentsline {section}{\numberline {7.3}Geadvaseerde verspaningstechnieken en hybride technieken}{44}{section.122}%
+\contentsline {subsection}{\numberline {7.3.1}hoge snelheid verspanen}{44}{subsection.123}%
+\contentsline {subsection}{\numberline {7.3.2}Hardverspanen}{45}{subsection.125}%
+\contentsline {section}{\numberline {7.4}Hybrideprocessen}{45}{section.126}%
+\contentsline {subsection}{\numberline {7.4.1}Laserondersteuning bij verspanen}{46}{subsection.127}%
+\contentsline {subsection}{\numberline {7.4.2}Draadvonken en slijpen}{46}{subsection.129}%
+\contentsline {subsection}{\numberline {7.4.3}ECM (Electro Chemical Machining) en slijpen}{46}{subsection.130}%
+\contentsline {subsection}{\numberline {7.4.4}Combinatie van ECM en frezen}{46}{subsection.131}%
+\contentsline {chapter}{\numberline {8}Verspanen:Slijpen}{47}{chapter.132}%
+\contentsline {subsection}{\numberline {8.0.1}Frezen met onbepaalde snijkanten}{47}{subsection.133}%
+\contentsline {subsection}{\numberline {8.0.2}Eigenschappen van slijpen}{47}{subsection.135}%
+\contentsline {subsection}{\numberline {8.0.3}Parameters slijpsteen}{48}{subsection.144}%
+\contentsline {subsubsection}{Korrelmateriaal}{48}{figure.caption.145}%
+\contentsline {subsubsection}{Korrelgroot}{49}{figure.caption.145}%
+\contentsline {subsubsection}{Hardheid van de slijpsteen}{49}{figure.caption.145}%
+\contentsline {subsubsection}{Bindmiddel}{49}{figure.caption.145}%
+\contentsline {subsubsection}{Structuur}{49}{figure.caption.145}%
+\contentsline {section}{\numberline {8.1}temperaturen bij slijpen}{50}{section.147}%
+\contentsline {section}{\numberline {8.2}Slijptechnieken}{51}{section.149}%
+\contentsline {section}{\numberline {8.3}De slijpmachine}{51}{section.151}%
+\contentsline {subsection}{\numberline {8.3.1}Centerloos slijpen}{51}{subsection.152}%
+\contentsline {subsection}{\numberline {8.3.2}Profielslijpen}{52}{subsection.154}%
+\contentsline {chapter}{\numberline {9}Fysische, Chemische afnemende bewerkingen}{52}{chapter.155}%
+\contentsline {section}{\numberline {9.1}Vonkerosie}{52}{section.156}%
+\contentsline {subsection}{\numberline {9.1.1}Componenten van een EDM-systeem}{52}{subsection.159}%
+\contentsline {section}{\numberline {9.2}Performance van EDM}{55}{section.167}%
+\contentsline {section}{\numberline {9.3}Spleetregeling}{55}{section.169}%
+\contentsline {subsection}{\numberline {9.3.1}Electodemateriaal}{55}{subsection.170}%
+\contentsline {section}{\numberline {9.4}Effecten van pulsduur en stroomsterkte}{56}{section.172}%
+\contentsline {subsection}{\numberline {9.4.1}Toepassingen}{56}{subsection.174}%
+\contentsline {subsection}{\numberline {9.4.2}Types}{57}{subsection.175}%
+\contentsline {subsubsection}{Zinkvonkerosie}{57}{figure.caption.176}%
+\contentsline {subsubsection}{Draadvonkerosie}{57}{figure.caption.177}%
+\contentsline {subsubsection}{Vonkerosie Milling}{58}{figure.caption.177}%
+\contentsline {subsubsection}{WEDG}{58}{figure.caption.177}%
+\contentsline {subsubsection}{Die sinking EDM}{58}{figure.caption.177}%
+\contentsline {subsubsection}{Milling EDM}{58}{figure.caption.177}%
+\contentsline {subsubsection}{Planteair Vonken}{58}{figure.caption.177}%
+\contentsline {subsubsection}{Contour Vonken}{58}{figure.caption.177}%
+\contentsline {section}{\numberline {9.5}Elektrochemische bewerkingen}{59}{section.180}%
+\contentsline {subsection}{\numberline {9.5.1}Eigenschappen van elektrochemisch bewerken}{60}{subsection.182}%
+\contentsline {subsection}{\numberline {9.5.2}Afnamen bij ECM}{61}{subsection.184}%
+\contentsline {subsection}{\numberline {9.5.3}Toepassingen van ECM}{61}{subsection.185}%
+\contentsline {section}{\numberline {9.6}Ultrasoon bewerken (Ultrasonic Machining)}{63}{section.188}%
+\contentsline {section}{\numberline {9.7}Straalbewerkingen}{64}{section.191}%
+\contentsline {subsection}{\numberline {9.7.1}Shotpeening}{64}{subsection.193}%
+\contentsline {subsection}{\numberline {9.7.2}abrasief stralen}{64}{subsection.194}%
+\contentsline {subsection}{\numberline {9.7.3}Waterstraalsnijden}{65}{subsection.195}%
+\contentsline {subsection}{\numberline {9.7.4}Laserstraalbewerking (LBM)}{65}{subsection.197}%
+\contentsline {subsubsection}{Hoe werk een laser?}{65}{subsection.197}%
+\contentsline {subsubsection}{kwaliteit van de laserstraal}{67}{figure.caption.202}%
+\contentsline {subsubsection}{Toepassingen}{69}{figure.caption.205}%
+\contentsline {subsubsection}{machine gestuurde Lasers, NC lasers}{70}{figure.caption.205}%
+\contentsline {subsubsection}{Toepassingen}{70}{figure.caption.206}%
+\contentsline {subsubsection}{Nadelen}{71}{figure.caption.207}%
+\contentsline {chapter}{\numberline {10}Scheiden}{72}{chapter.208}%
+\contentsline {chapter}{\numberline {11}Automatiseren \& machinekeuze}{72}{chapter.209}%
+\contentsline {chapter}{\numberline {12}Productie werkvoorbereiding}{72}{chapter.210}%
+\contentsline {chapter}{\numberline {13}Productiegericht ontwerpen}{72}{chapter.212}%

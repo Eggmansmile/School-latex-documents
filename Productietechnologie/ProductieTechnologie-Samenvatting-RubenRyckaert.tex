@@ -19,7 +19,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 % TikZ libraries used by figures (calc for coordinate arithmetic, arrows.meta for arrow tips, positioning for nodes)
-\usetikzlibrary{calc,arrows.meta,positioning,patterns,angles,quotes,babel}
+\usetikzlibrary{calc,arrows.meta,positioning,patterns,angles,quotes,babel,decorations.pathmorphing,shapes.geometric,shapes.misc}
 \usepackage{fancyhdr}
 \usepackage{tcolorbox}
 \usepackage{float}
@@ -32,6 +32,7 @@
 \usepackage{caption}
 \captionsetup{skip=3pt,aboveskip=3pt,belowskip=3pt} % reduce caption separation
 \usepackage{enumitem}% Shared project macros (\frm, formularium, \fig)
+\usepackage[version=4]{mhchem}
 \usepackage{./productie-macros}
 
 % --- Practical packages & macros to improve writing and consistency ---
@@ -44,6 +45,10 @@
 }
 % Better tables
 \usepackage{booktabs}
+\usepackage{tabularx}
+% Set column separation for better readability
+\setlength{\tabcolsep}{15pt}
+\renewcommand{\arraystretch}{1.3} % More vertical space
 % Sub-figures
 \usepackage{subcaption}
 % Smart cross-references (load after hyperref) — guarded so missing package doesn't break build
@@ -99,11 +104,11 @@
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
 % Slightly smaller chapter titles (keep them prominent but less tall)
-\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titleformat{\chapter}[hang]{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}[\titlerule]
 \titlespacing*{\chapter}{0pt}{12pt}{6pt} % more breathing room before/after chapter titles
 % Ensure section and subsection align to same left margin and use sensible spacing
 % Slightly reduce section/subsection size so titles are less dominant
-\titleformat{\section}[hang]{\normalfont\large\bfseries\raggedright}{\thesection}{1em}{}
+\titleformat{\section}[hang]{\normalfont\large\bfseries\raggedright}{\thesection}{1em}{}[\titlerule]
 \titlespacing*{\section}{0pt}{10pt}{6pt} % increase space before/after section titles
 \titleformat{\subsection}[hang]{\normalfont\normalsize\bfseries\raggedright}{\thesubsection}{1em}{}
 \titlespacing*{\subsection}{0pt}{8pt}{4pt} % increase space for subsections
@@ -114,10 +119,10 @@
 % Compact list indentation (smaller distance from page margin)
 % Increase vertical spacing and indent lists slightly for readability
 % Tweak: larger topsep/partopsep for space before/after list; small itemsep between items; larger left margins
-\setlist[itemize,1]{leftmargin=1.6em,itemsep=0.35ex,parsep=0.2ex,partopsep=0.4ex,topsep=0.6ex}
-\setlist[itemize,2]{leftmargin=2.2em,itemsep=0.25ex,parsep=0.15ex,partopsep=0.3ex,topsep=0.45ex}
-\setlist[enumerate,1]{leftmargin=1.6em,itemsep=0.35ex,parsep=0.2ex,partopsep=0.4ex,topsep=0.6ex}
-\setlist[enumerate,2]{leftmargin=2.2em,itemsep=0.25ex,parsep=0.15ex,partopsep=0.3ex,topsep=0.45ex}
+\setlist[itemize,1]{leftmargin=2em,itemsep=0.5ex,parsep=0.3ex,partopsep=0.5ex,topsep=0.8ex}
+\setlist[itemize,2]{leftmargin=2.5em,itemsep=0.35ex,parsep=0.2ex,partopsep=0.4ex,topsep=0.6ex}
+\setlist[enumerate,1]{leftmargin=2em,itemsep=0.5ex,parsep=0.3ex,partopsep=0.5ex,topsep=0.8ex}
+\setlist[enumerate,2]{leftmargin=2.5em,itemsep=0.35ex,parsep=0.2ex,partopsep=0.4ex,topsep=0.6ex}
 % ------------------ Header / Footer ------------------
 % Avoid fancyhdr warning about small headheight
 \setlength{\headheight}{14pt}
@@ -301,7 +306,7 @@ Passing is een maat voor hoe goed twee oppervlakken op
   \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{image9.png}
-  \caption{Effect van thermische process op materialen}
+  \caption{Effect van thermisch proces op materialen}
   \label{fig:image9}
 \end{figure}
 
@@ -317,7 +322,7 @@ Passing is een maat voor hoe goed twee oppervlakken op
   \subsection{Vervorming}
 
   Je hebt elastische en plastische vervormingen in een materiaal die gebeureren
-  tijden het bewerken van een materiaal.
+  tijdens het bewerken van een materiaal.
   \begin{itemize}
     \item Elastische vervorming: Het materiaal keert terug naar zijn originele vorm
       nadat de kracht is weggenomen.
@@ -330,7 +335,7 @@ Passing is een maat voor hoe goed twee oppervlakken op
 
 \chapter{Verspanen: Algemeen}
 \label{chap:Algemeen verspanen}
-\textbf{Dit hoofdstuk is de basis van verspannen en is relevant voor alle verspaningstechnieken.}
+\textbf{Dit hoofdstuk is de basis van verspanen en is relevant voor alle verspaningstechnieken.}
 
   Verspannen is het verwijderen van materiaal van een werkstuk. Dit kan door boren, frezen, draaien of slijpen, \ldots Je begint met een ruw werkstuk en verwijdert materiaal totdat je de gewenste vorm en afmetingen hebt.
 
@@ -353,29 +358,29 @@ Passing is een maat voor hoe goed twee oppervlakken op
     \item Vervuilend (spanen, koelvloeistof)
   \end{itemize}
 
-  Bij verspannen kunnen verschillende tools gebruikt worden.
+  Bij verspanen kunnen verschillende tools gebruikt worden.
   Deze tools hebben verschillende snijvlakken en geometrieën
   die geschikt zijn voor verschillende materialen en bewerkingen.
 
   \begin{itemize}
-    \item bijtel
+    \item beitel
     \item frees
     \item boor
     \item slijpschijf
   \end{itemize}
 
-  \section{bijtelbewerkingen}
+  \section{beitelbewerkingen}
 
-  Bij bijtelbewerkingen wordt materiaal verwijderd door een scherpe
-  bijtel over het werkstuk te bewegen.
+  Bij beitelbewerkingen wordt materiaal verwijderd door een scherpe
+  beitel over het werkstuk te bewegen.
   \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{image10.png}
-  \caption{Verwijdering van materiaal door een bijtel $\to$ creëert spanen}
+  \caption{Verwijdering van materiaal door een beitel $\to$ creëert spanen}
   \label{fig:image10}
 \end{figure}
 
-  Bij het verspannen met een bijtel ontstaan er spanen.
+  Bij het verspanen met een beitel ontstaan er spanen.
   Spanen zijn kleine stukjes materiaal die worden verwijderd
   van het werkstuk.
   De grootte van de spanen wordt bepaald door de snedediepte, de voeding, de spaanhoek en de wrijvingscoëfficiënt.\ldots Zometeen meer in detail hierover
@@ -413,12 +418,12 @@ Grotere spaanhoek $\to$ kleiner afschuifvlak $\to$ minder kracht nodig om spaan 
 
 
 \subsection{Secundaire afschuifvlak(shear zone)}
-Spanen gaan verwijderd worden en daarbij treedt wrijving op tussen spaan en bijtel; dit is het secundaire afschuifvlak. Als je negatieve spaanhoeken $\gamma$ meet, dan is er veel meer wrijving tussen de spaan en de bijtel.
+Spanen gaan verwijderd worden en daarbij treedt wrijving op tussen spaan en beitel; dit is het secundaire afschuifvlak. Als je negatieve spaanhoeken $\gamma$ meet, dan is er veel meer wrijving tussen de spaan en de beitel.
 
 \begin{itemize}
   \item Spaanhoek $\gamma$ $\to$ groter $\to$ minder kracht nodig. Tussen -10° en 30°
   \item Wighoek $\beta$ $\to$ zo groot mogelijk maken.
-  \subitem Wighoeken bepalen de sterkte van de bijtel en de warmteafvoer. Grote wighoeken brengen de warmte sneller weg
+  \subitem Wighoeken bepalen de sterkte van de beitel en de warmteafvoer. Grote wighoeken brengen de warmte sneller weg
   en dus kun je grotere voedingsnelheden gebruiken.
   \subitem Wighoek moet zo groot mogelijk zijn
     \begin{figure}[ht]
@@ -427,8 +432,8 @@ Spanen gaan verwijderd worden en daarbij treedt wrijving op tussen spaan en bijt
     \caption{Wighoek}
     \label{fig:image12}
   \end{figure}
-  \item Vrijloophoek $\alpha$ $\to$ groter $\to$ minder wrijving tussen werkstuk en bijtel. Tussen 6° en 10°
-  \subitem Vrijloophoek moet er zijn zodat je bijtel niet begint te wrijven over het oppervlakte van je materiaal.
+  \item Vrijloophoek $\alpha$ $\to$ groter $\to$ minder wrijving tussen werkstuk en beitel. Tussen 6° en 10°
+  \subitem Vrijloophoek moet er zijn zodat je beitel niet begint te wrijven over het oppervlakte van je materiaal.
   Zelfs rond 0° kan al zorgen voor veel wrijving.
     \begin{figure}[ht]
     \centering
@@ -481,7 +486,7 @@ Er zijn verschillende factoren die de kracht op je werkstuk bepalen
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.4\textwidth]{image16.png}
-  \caption{Snededoorsnede bij bijtelbewerking}
+  \caption{Snededoorsnede bij beitelbewerking}
   \label{fig:image16}
 \end{figure}
 
@@ -489,13 +494,13 @@ Er zijn verschillende factoren die de kracht op je werkstuk bepalen
 
 
 \subsection{Krachten}
-Tijdens het bewerken van materialen met een bijtel
-komen er verschillende krachten op het werkstuk en de bijtel te staan.
+Tijdens het bewerken van materialen met een beitel
+komen er verschillende krachten op het werkstuk en de beitel te staan.
 
 \begin{itemize}
   \item Snijkracht (Fc): Kracht die nodig is om de spaan te vormen.
   \item Voedingskracht (Ff): Kracht die in de voedingsrichting werkt.
-  \item Terugdrukkracht (Fp): Kracht die nodig is om de bijtel in het werkstuk te duwen.
+  \item Terugdrukkracht (Fp): Kracht die nodig is om de beitel in het werkstuk te duwen.
   \begin{figure}[ht]
   \centering
   \includegraphics[width=0.4\textwidth]{image17.png}
@@ -519,13 +524,13 @@ komen er verschillende krachten op het werkstuk en de bijtel te staan.
 \end{figure}
 \end{itemize}
 
-\section{Factoren bij bijtelbewerking}
+\section{Factoren bij beitelbewerking}
 \begin{itemize}
   \item \textbf{Opbouwlaag (build-up edge/BUE)}
 
     Een dunne, hard geworden laag metaal die 
         zich bij lage snijsnelheden aan het snijgereedschap 
-        opbouwt aan de punt van de bijtel. Zie video toledo.  
+        opbouwt aan de punt van de beitel. Zie video toledo.  
         Deze stukken trekken mee aan het oppervlak van het werkstuk en nemen dus meer af dan nodig is.
         Je krijgt dan een stappige oppervlakte.
 
@@ -554,10 +559,10 @@ komen er verschillende krachten op het werkstuk en de bijtel te staan.
       \item Werkstuk emulseren in water, koelvloeistof of olie.
     \end{itemize}
 
-    Warmte wordt op het werkstuk op drie plaatsen gecreeerd:
+    Warmte wordt op het werkstuk op drie plaatsen gecreëerd:
     1. Afschuifvlak (shear zone):
-    2. Secundaire afschuifvlak (tussen spaan en bijtel):
-    3. Vrijloopvlak (tussen werkstuk en bijtel): 
+    2. Secundaire afschuifvlak (tussen spaan en beitel):
+    3. Vrijloopvlak (tussen werkstuk en beitel): 
 
     \begin{figure}[ht]
       \centering
@@ -586,8 +591,8 @@ komen er verschillende krachten op het werkstuk en de bijtel te staan.
       \item Thermische slijtage: door hoge temperaturen die het gereedschap verzwakken
       \item Kerfslijtage: door herhaalde spanningsconcentraties bij het vrlijloopvlak.
       \item Breuk: Afbreken van een stuk
-      \item Werkstukslijtage: Vlijloopvlak slijtage verhoogd met verbruik van de bijtel.
-      \item Neusslijtage: slijtage aan de punt van de bijtel door hoge krachten en temperaturen.
+      \item Werkstukslijtage: Vlijloopvlak slijtage verhoogd met verbruik van de beitel.
+      \item Neusslijtage: slijtage aan de punt van de beitel door hoge krachten en temperaturen.
     \end{itemize}
 
     \autofig[0.5\textwidth]{image23.png}{}
@@ -609,7 +614,7 @@ komen er verschillende krachten op het werkstuk en de bijtel te staan.
 \end{itemize}
 
 \section{Snijmaterialen}
-Met welk materiaal ga je je bijtel maken?
+Met welk materiaal ga je je beitel maken?
 Je beitel moet ductiel zijn en taai. Het perfecte gereedschap is goedkoop, ductiel en taai.
 
 \begin{figure}
@@ -641,7 +646,7 @@ Snelstaal is goedkoop, maar het wordt duurder naarmate je betere materialen gebr
   \includegraphics[width=0.6\textwidth]{image25.png}
   \caption{Overzicht van snijmaterialen en hun toepassingsgebieden}
 \end{figure}
-Al deze snijmaterialen zijn gecreeerd door de jaren heen.
+Al deze snijmaterialen zijn gecreëerd door de jaren heen.
 Er wordt nog steeds onderzoek gedaan aan betere, goedkopere en duurzamere materialen. 
 
 
@@ -659,8 +664,8 @@ zoals in de figuur en jij moet weten waar dat voor staat!}
 
 \section{Optimale snijsnelheid}
 
-Bij alle machines worden inserts gebruikt voor bijtels. 
-Als bijtels kapot gaan door slijtage, kan je die vervangen.
+Bij alle machines worden inserts gebruikt voor beitels. 
+Als beitels kapot gaan door slijtage, kan je die vervangen.
 Je moet dus de optimale snijsnelheid kiezen
 zodat je zo lang mogelijk met een insert kan werken
 
@@ -706,7 +711,7 @@ De vraag is wat de optimale snijsnelheid is?
 
 \chapter{Verspanen: Draaien}
   Draaien is een veelgebruikte verspaningstechniek waarbij een roterend werkstuk
-  wordt bewerkt met een bijtel om materiaal te verwijderen en de gewenste vorm te creëren.
+  wordt bewerkt met een beitel om materiaal te verwijderen en de gewenste vorm te creëren.
 
   Je kunt hier verschillende bewerkingen mee uitvoeren:
   \begin{enumerate}
@@ -766,9 +771,8 @@ Zoals vermeld in het algemeen Verspannen heb je drie krachten op je werkstuk
 
 \textbf{Zorg dat je de volgende formules kent en kunt uitleggen:}
 
-De hoofdsnijkracht wordt berekent met de formule van Kienzle:
-\frm{Kienzle vergelijking Hoofdsnijkracht}{F_c = k_c \cdot a\cdot f^{(1-e)}}{waarbij $k_c$ (N/mm$^2$ of Pa) de snijkrachtcoëfficiënt is, 
-$a$ de snedediepte, $f$ de voeding en $e$ de snijkrachtexponent.}
+De hoofdsnijkracht wordt berekend met de formule van Kienzle:
+\frm{Kienzle vergelijking Hoofdsnijkracht}{F_c = k_c \cdot a\cdot f^{(1-e)}}{waarbij $k_c$ (\si{N/mm^2} of \si{Pa}) de snijkrachtcoëfficiënt is, $a$ de snedediepte, $f$ de voeding en $e$ de snijkrachtexponent.}
 
 $k_c$ zijn materiaalconstanten die dan ook nog je optimale snijsnelheid gaan bepalen.
 
@@ -874,17 +878,17 @@ en de instelhoek $\kappa_r$. Een grotere snedediepte of een grotere instelhoek r
 
 
   Om grote spannen te worden spaanbrekers gebruikt.
-  Spaanbrekers zijn inkepingen in de bijtel die de spaan
+  Spaanbrekers zijn inkepingen in de beitel die de spaan
   breken in kleinere stukken.
 
   \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{image36.png}
-    \caption{Spaanbrekers in bijtels}
+    \caption{Spaanbrekers in beitels}
   \end{figure}
 
   \section{Oppervlakteruwheid bij Draaien}
-De oppervakteruwheid wordt gecreerd door de bijtel. De bijtel is niet perfect scherp en is dus licht bol, dit is de neusradius *$r_\epsilon$.
+De oppervakteruwheid wordt gecreerd door de beitel. De beitel is niet perfect scherp en is dus licht bol, dit is de neusradius *$r_\epsilon$.
 Deze bol zal kleine inkepingen maken in het oppervlakte. De ruwheid wordt dus bepaald door de neusradius en de voeding.
 
   \begin{figure}[ht]
@@ -913,11 +917,11 @@ Het is de ruwheid door de opbouwsnijkant (Build -up edge BUE) en andere factoren
 De totale ruwheid wordt bepaald door de kinematische ruwheid en de processruwheid
 
 
-\frm{gemiddelde ruwheid bij Draaien}{R_a = \dfrac{f^2}{32 \cdot r_\epsilon}}{waarbij $f$ de voeding is en $r_\epsilon$ de neusradius van de bijtel.}
-\frm{totale ruwheid bij Draaien}{R_t = \dfrac{f^2}{8 \cdot r_\epsilon}}{waarbij $f$ de voeding is en $r_\epsilon$ de neusradius van de bijtel.}
+\frm{gemiddelde ruwheid bij Draaien}{R_a = \dfrac{f^2}{32 \cdot r_\epsilon}}{waarbij $f$ de voeding is en $r_\varepsilon$ de neusradius van de beitel.}
+\frm{totale ruwheid bij Draaien}{R_t = \dfrac{f^2}{8 \cdot r_\epsilon}}{waarbij $f$ de voeding is en $r_\varepsilon$ de neusradius van de beitel.}
 
 \medskip
-\noindent\textbf{Afleiding (oppervlakteruwheid).} Stel dat de neus van de bijtel lokaal een cirkelboog met straal $r_\epsilon$ vormt en dat de voeding per
+\noindent\textbf{Afleiding (oppervlakteruwheid).} Stel dat de neus van de beitel lokaal een cirkelboog met straal $r_\epsilon$ vormt en dat de voeding per
  omwenteling $f$ de koorde van die boog is. De booghoogte (sagitta) is
 \[
   s \;=\; r_\epsilon - \sqrt{r_\epsilon^2 - \left(\tfrac{f}{2}\right)^2}
@@ -933,7 +937,7 @@ waarbij in de laatste stap de binomiale benadering wordt gebruikt (geldt voor $f
 \section{De Draaioperatie}
 
 Draaien wordt met \textbf{verschillende beitels} gedaan die verschillende bewerkingen kunnen uitvoeren.
-De punten van de bijtels noemen we \textbf{inserts}.
+De punten van de beitels noemen we \textbf{inserts}.
 \newline 
 
 \begin{figure}[ht]
@@ -1029,12 +1033,9 @@ dezelfde toerental kunt behouden.
   Net zoals bij draaien worden de krachten, vermogens en momenten berekent met het theorema van Kienzle~\ref{frm:10}.
 
   \textbf{Belangrijke krachten, vermogens en momenten bij boren:}
-  \frm{Voedingskracht}{F_f = k_f \cdot a \cdot f^{(1-e)}}{waarbij $k_f$ de voedingskrachtcoëfficiënt is,
-  $a$ de snedediepte, $f$ de voeding en $e$ de voedingskrachtsexponent.}
-  \frm{Verspanningsmoment}{M_c = C_m \cdot d^{x_M} \cdot f^{y_M}}{waarbij $C_m$ de momentcoëfficiënt is,
-  $d$ de diameter, $f$ de voeding en $x_M$, $y_M$ de momentexponenten.}
-  \frm{Vermogen bij boren}{P_c = M_c\,\omega = M_c \cdot 2\pi n}{waarbij $M_c$ het verspaningsmoment is en $\omega$ de hoeksnelheid.
-  het verspaningsmoment is en $\omega$ de hoeksnelheid.}
+  \frm{Voedingskracht}{F_f = k_f \cdot a \cdot f^{(1-e)}}{waarbij $k_f$ de voedingskrachtcoëfficiënt is, $a$ de snedediepte, $f$ de voeding en $e$ de voedingskrachtsexponent.}
+  \frm{Verspanningsmoment}{M_c = C_m \cdot d^{x_M} \cdot f^{y_M}}{waarbij $C_m$ de momentcoëfficiënt is, $d$ de diameter, $f$ de voeding en $x_M$, $y_M$ de momentexponenten.}
+  \frm{Vermogen bij boren}{P_c = M_c\,\omega = M_c \cdot 2\pi n}{waarbij $M_c$ het verspaningsmoment is en $\omega$ de hoeksnelheid.}
 
   \section{Keuze van voeding}
 
@@ -1337,7 +1338,7 @@ Hier zijn nog relevante type boren en hun toepassingen:
     \draw[->, thick, blue] (0, 3.0) arc (90:30:0.3) node[right] {$n$};
 
   \end{tikzpicture}
-  \caption{Schematische weergave van een boorprocess: een spiraalboor dringt het materiaal binnen, vormt een gat en voert spanen af.}
+  \caption{Schematische weergave van een boorproces: een spiraalboor dringt het materiaal binnen, vormt een gat en voert spanen af.}
 \end{figure}
 \paragraph{Type boren}
 \begin{itemize}
@@ -1356,23 +1357,26 @@ oppervlak kunnen liggen.
 \subsection{Kotteren}
 Als je een groot gat hebt en je kunt niet met een boor zo'n groot gat maken, dan kun je kotteren gebruiken.
 Je kunt ook eventueel frezen maar dat zie je in het volgende hoofdstuk \ref{chap:Verspanen_Frezen}
-Bij kotteren ga je de boor ook nog laten draaien waardoor je een groter oppervlak gaat verspannen.
+Bij kotteren ga je de boor ook nog laten draaien waardoor je een groter oppervlak gaat verspanen.
 
 \subsection{Draadtappen}
 Draadtappen is het snijden van interne schroefdraad in een voorgeboord gat.
 
 \begin{table}[ht]
   \centering
-  \begin{tabular}{lcc}
-    \toprule
-    Schroefdraad & Pitch (mm) & Aanbevolen tap‑boring (mm) \\
-    \midrule
+  \begin{tabularx}{0.8\textwidth}{|l|X|X|}
+    \hline
+    \textbf{Schroefdraad} & \textbf{Pitch (mm)} & \textbf{Tap‑boring (mm)} \\
+    \hline
     M5~$\times$~0.8 & 0.8 & 4.2 \\
+    \hline
     M6~$\times$~1.0 & 1.0 & 5.0 \\
+    \hline
     M8~$\times$~1.25 & 1.25 & 6.75 \\
+    \hline
     M10~$\times$~1.5 & 1.5 & 8.5 \\
-    \bottomrule
-  \end{tabular}
+    \hline
+  \end{tabularx}
   \caption{Veelvoorkomende metrische tap‑boringen}
 \end{table}
 \subsection{Ruimen}
@@ -1462,7 +1466,7 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
    \end{itemize}
 
    Deze hebben dezelfde eigenschappen als bij boren en draaien.
-    Je kunt meer info vinden bij Algemeen verspannen~\ref{chap:Algemeen verspanen}.
+    Je kunt meer info vinden bij Algemeen verspanen~\ref{chap:Algemeen verspanen}.
 
    \begin{figure}[ht]
     \centering
@@ -1511,9 +1515,9 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
     \newline
     waarbij $d$ de diameter van de frees is en $n$ het toerental.
 
-    \theoriebox{\textbf{Ingrijpingshoek bij Frezen:} $\displaystyle \phi = \arccos\!\left(1 - \dfrac{2a}{d}\right) \;\Rightarrow\; \cos\phi = \dfrac{2/d \cdot a}{d}$.\\\small}
-    \newline
-      waarbij $a$ de snedediepte is en $d$ de diameter van de frees.
+    \theoriebox{\textbf{Ingrijpingshoek bij Frezen:} $\displaystyle \phi = \arccos\!\left(1 - \dfrac{2a}{d}\right) \;\Rightarrow\; \cos\phi = 1 - \dfrac{2a}{d}$.\\\small}
+      \newline
+        waarbij $a$ de snedediepte is en $d$ de diameter van de frees.
 
     \theoriebox{\textbf{Tanden per ingrijping}{$z_i = \frac{Q}{360}\cdot z$}}
     \newline
@@ -1521,14 +1525,11 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
     $Q$ de ingrijpingshoek in graden en $z$ het totaal aantal tanden van de frees.
     \newline
 
-  \frm{Snijkracht bij Frezen}{\ensuremath{F_c = k_c \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}}{waarbij $k_c$ de snijkrachtcoëfficiënt is,
-  $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de snijkrachtsexponent.}
+  \frm{Snijkracht bij Frezen}{F_c = k_c \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}{waarbij $k_c$ de snijkrachtcoëfficiënt is, $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de snijkrachtsexponent.}
 
-  \frm{Snijmoment bij Frezen}{\ensuremath{M_c = C_m \cdot d^{x_M} \cdot f_z^{y_M} \cdot z_i}}{waarbij $C_m$ de momentcoëfficiënt is,
-  $d$ de diameter, $f_z$ de voeding per tand, $z_i$ het aantal tanden en $x_M$, $y_M$ de momentexponenten.}
+  \frm{Snijmoment bij Frezen}{M_c = C_m \cdot d^{x_M} \cdot f_z^{y_M} \cdot z_i}{waarbij $C_m$ de momentcoëfficiënt is, $d$ de diameter, $f_z$ de voeding per tand, $z_i$ het aantal tanden en $x_M$, $y_M$ de momentexponenten.}
 
-  \frm{Voedingskracht bij Frezen}{\ensuremath{F_f = k_f \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}}{waarbij $k_f$ de voedingskrachtcoëfficiënt is,
-  $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de voedingskrachtsexponent.}
+  \frm{Voedingskracht bij Frezen}{F_f = k_f \cdot b \cdot h_{gem}^{(1-e)} \cdot z_i}{waarbij $k_f$ de voedingskrachtcoëfficiënt is, $b$ de snedebreedte, $h_{gem}$ de gemiddelde snededikte, $z_i$ het aantal tanden en $e$ de voedingskrachtsexponent.}
 
   Bij frezen zijn de krachten op je freez niet constant.
   De kracht op één tant per draaing is parabolisch en als je de invloed van alle tanden samentelt krijg je een heuvelachtige 
@@ -1558,28 +1559,27 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
       \centering
       \caption{Vergelijking: Tegenlopend vs Meelopend frezen}
       \label{tab:meelopend_vs_tegenlopend}
-      \small
-      \begin{tabular}{p{0.24\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth} >{\raggedright\arraybackslash}p{0.36\textwidth}}
-        \toprule
-        \textbf{Kenmerk} & \textbf{Tegenlopend frezen} & \textbf{Meelopend frezen} \\
-        \midrule
-        \textbf{Aandrijving / voeding} & $F_h$ drukt werkstuk weg van frees. & $F_h$ trekt werkstuk naar frees toe. \\
-        \addlinespace
-        \textbf{Spelingscompensatie} & Geen compensatie nodig; veiliger bij backlash. & Spelingcompensatie onmisbaar (gevoelig voor backlash). \\
-        \addlinespace
+      \begin{tabularx}{\textwidth}{|l|X|X|}
+        \hline
+        \textbf{Kenmerk} & \textbf{Tegenlopend} & \textbf{Meelopend} \\
+        \hline
+        \textbf{Aandrijving} & $F_h$ drukt werkstuk weg van frees. & $F_h$ trekt werkstuk naar frees toe. \\
+        \hline
+        \textbf{Speling} & Geen compensatie nodig; veiliger bij backlash. & Spelingcompensatie onmisbaar. \\
+        \hline
         \textbf{Spaanvorming} & Dun $\rightarrow$ dik (chip groeit tijdens snede). & Dik $\rightarrow$ dun (chip neemt af richting einde). \\
-        \addlinespace
-        \textbf{Snijkracht} & Stijgt geleidelijk tijdens ingreep. & Stijgt sneller; hogere piekbelasting bij ingang. \\
-        \addlinespace
+        \hline
+        \textbf{Snijkracht} & Stijgt geleidelijk tijdens ingreep. & Stijgt sneller; hogere piekbelasting. \\
+        \hline
         \textbf{Snijgedrag} & Eerst wrijving, later snijden (meer smearing). & Meteen snijden (scherpere insnijding). \\
-        \addlinespace
-        \textbf{Oppervlaktekwaliteit} & Meestal matig. & Meestal beter (glad). \\
-        \addlinespace
-        \textbf{Opspanning / stabiliteit} & Neiging tot beurtelende krachten → klapperen / chatter. & Werkstuk wordt 'in klem' getrokken; minder klapperen maar vereist stevige klemmen. \\
-        \addlinespace
-        \textbf{Nauwkeurigheid} & Kan leiden tot teveel materiaal verwijderd / minder voorspelbaar. & Neiging tot kleinere snij-inhouden (kan preciezer zijn bij goede controle). \\
-        \bottomrule
-      \end{tabular}
+        \hline
+        \textbf{Oppervlakte} & Meestal matig. & Meestal beter (glad). \\
+        \hline
+        \textbf{Stabiliteit} & Neiging tot klapperen / chatter. & Werkstuk wordt 'in klem' getrokken. \\
+        \hline
+        \textbf{Precisie} & Minder voorspelbaar. & Kan preciezer zijn. \\
+        \hline
+      \end{tabularx}
     \end{table}
     \FloatBarrier
 
@@ -1683,7 +1683,7 @@ Het zorgt ervoor dat je heel precies gaten kunt maken met een goede oppervlaktek
 
     % --- Hoonprocess pijl ---
     \draw[->, very thick] (6.0, 1.0) -- (6.8, 1.0);
-    \node[above, font=\bfseries] at (6.4, 1.05) {HOONPROCESS};
+    \node[above, font=\bfseries] at (6.4, 1.05) {HOONPROCES};
 
     % --- (b) Gehoond oppervlak (Trapezoïdes) ---
     \begin{scope}[shift={(7.5,0)}]
@@ -1746,7 +1746,7 @@ Tot en met \textbf{Ra = 0,1 µm, IT1} is mogelijk.
 \newline
 Bepaalde stukken hebben dit nodig zoals kogellagers of klepzittingen
 
-\textit{Kijk zeker de video's op toledo om dit process beter ge begrijpen}
+\textit{Kijk zeker de video's op toledo om dit proces beter ge begrijpen}
 
 \subsection{Finisheren met pasta}
 Je drukt het werkstuk samen en pompt dan de gelei in het werkstuk om het oppervlakte te verbeteren.
@@ -1789,13 +1789,13 @@ De ontwikkeling van hoge snelheidsfrezen en veel stevigere machines maakte dit m
 Je moet een negatieve spaanhoek gebruiken die meer kracht vraagt omdat de 
 afschuifhoek kleiner wordt. Als compensatie gebruik je kleine snededieptes om de krachten te beperken.
 \newline
-Nieuwe harde bijtels en stevige machines die de hevige drukken aankan zorgt ervoor dat
-hardverspannen niet eeuwig duurt.
+Nieuwe harde beitels en stevige machines die de hevige drukken aankan zorgt ervoor dat
+hardverspanen niet eeuwig duurt.
 
 \section{Hybrideprocessen}
 hybride processen is een ruim domein waarbij je verschillende technieken toepast om 
-werkstukken te verspannen. 
-Je gaat dus twee technieken toepassen om bijvoorbeeld dingen makkelijker te verspannen
+werkstukken te verspanen. 
+Je gaat dus twee technieken toepassen om bijvoorbeeld dingen makkelijker te verspanen
 of om betere oppervlaktekwaliteit te krijgen.
 \newline 
 Dit zijn vooral experimentele technieken die nog in ontwikkeling zijn.
@@ -1819,7 +1819,7 @@ Dit zijn vooral experimentele technieken die nog in ontwikkeling zijn.
 
   \subsection{Draadvonken en slijpen}
   \textit{(je ziet meer over draadvonken in een ander hoofdstuk)}
-  Het vonkprocess is een termische process. Je gaat eerst een stukje thermisch wegnemen. Bij normaal draadvonken
+  Het vonkproces is een thermisch proces. Je gaat eerst een stukje thermisch wegnemen. Bij normaal draadvonken
   blijft een stuk gesmoleten materiaal achter op het oppervlakte maar door het slijpen ga je dit stuk wegnemen.
   
   \subsection{ECM (Electro Chemical Machining) en slijpen}
@@ -1832,7 +1832,7 @@ Dit zijn vooral experimentele technieken die nog in ontwikkeling zijn.
   Je gaat frezen combineren met ECM.
   De chemische bewerkingen laten een oxidelaag achter die je met frezen gaat verwijderen.
 
-  \textit{(Deze technieken zijn niet super belangrijk om vanbuiten te kennen maar je moet zien dat je nadelen van een process kunt oplossen met een ander process)}
+  \textit{(Deze technieken zijn niet super belangrijk om vanbuiten te kennen maar je moet zien dat je nadelen van een proces kunt oplossen met een ander proces)}
 
 
   \chapter{Verspanen:Slijpen}
@@ -1862,7 +1862,7 @@ Dit zijn vooral experimentele technieken die nog in ontwikkeling zijn.
 
 
     \subsection{Frezen met onbepaalde snijkanten}
-    Bij slijpen heb je een grote negatieve \textbf{Spaanhoek} wat het moeilijker maakt om te verspannen.
+    Bij slijpen heb je een grote negatieve \textbf{Spaanhoek} wat het moeilijker maakt om te verspanen.
     De krachtwerking is dus veel hoger. Maar je \textbf{Snedediepte} is veel kleiner dus die combenseren elkaar.
 
     Een slijpsteen kun je definieren als een frees met onbepaalde snijkanten.
@@ -1972,7 +1972,7 @@ Je moet oppassen voor
 Je moet dus voldoende koelen of nog een laatste warmtebehandeling doen na het slijpen.
 \begin{figure}[ht]
    \centering
-   \includegraphics[width=0.8\textwidth]{image53.png}
+   \includegraphics[width=0.6\textwidth]{image53.png}
    \caption{Warmte bij Slijpen}
    \label{fig:warmte_bij_slijpen.png}
 \end{figure}
@@ -1981,7 +1981,7 @@ Je moet dus voldoende koelen of nog een laatste warmtebehandeling doen na het sl
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.8\textwidth]{image54.png}
+  \includegraphics[width=0.6\textwidth]{image54.png}
   \caption{Alle soorten slijptechnieken}
   \label{fig:Slijptechnieken.png}
 \end{figure}
@@ -2008,20 +2008,943 @@ Centerloos slijpen is een slijptechniek waarbij het werkstuk niet wordt vastgeho
 \end{figure}
 
 \subsection{Profielslijpen}
-Zoals hiervoor gezegt. Je slijpt een bepaald profiel met een slijpsteen die dat profiel heeft.
+Zoals hiervoor gezegd. Je slijpt een bepaald profiel met een slijpsteen die dat profiel heeft.
 
-  \chapter{Fysische en Chemische afnemende bewerkingen}
+  \chapter{Fysische, Chemische afnemende bewerkingen}
 
   \section{Vonkerosie}
+  \textbf{EDM (Electro Discharge Machining)} of \textbf{vonkerosie} is een \textbf{verspaningstechniek} waarbij materiaal wordt 
+  verwijderd door middel van \textbf{elektrische vonken}.
+  Je hebt een \textbf{elektrode} en een \textbf{werkstuk} die in een \textbf{vloeistof} (die als \textbf{isolator} fungeert zoals bijvoorbeeld gedestilleerd water) zitten.
+  Wanneer er een \textbf{hoge spanning} wordt aangelegd tussen de elektrode en het werkstuk, ontstaat
+  een elektrische vonk die het materiaal op het werkstuk smelt en wegneemt.
+  \newline
+  Je kunt geen normaal water gebruiken omdat er mineralen in zitten die wel geleiden.
+
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.5\textwidth]{image60.png}
+      \caption{Vonkerosie proces}
+      \label{fig:vonkerosie_proces.png}
+  \end{figure}
   
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+      \tikzset{
+        elec/.style={fill=gray!30, draw=black, thick},
+        work/.style={fill=gray!10, draw=black, thick, pattern=north east lines},
+        spark/.style={decoration={zigzag, segment length=1mm, amplitude=0.5mm}, decorate, draw=orange, very thick},
+        rough/.style={decorate, decoration={random steps, segment length=0.4mm, amplitude=0.2mm}}
+      }
+
+      % LEFT: BEFORE
+      \begin{scope}[local bounding box=before]
+        % Electrode (Top +)
+        \draw[elec] (-0.5, 2.5) -- (-0.5, 1.5) -- (0, 0.5) -- (0.5, 1.5) -- (0.5, 2.5) -- cycle;
+        \node at (0, 2) {$+$};
+        
+        % Workpiece (Bottom -)
+        \draw[work] (-1.5, 0) rectangle (1.5, -1);
+        \node[fill=white, inner sep=1pt] at (0, -0.5) {$-$};
+        
+        % Spark
+        \draw[spark] (0, 0.5) -- (0, 0);
+        % Text moved to the right with a pointer to the spark
+        \node[right, font=\footnotesize, align=left] (lbl) at (0.6, 0.25) {\textbf{Warmtegeneratie}\\(vonk)};
+        \draw[->, thin] (lbl.west) -- (0.1, 0.25);
+        
+        \node[below=0.2cm] at (0, -1) {\textbf{Voor}};
+      \end{scope}
+
+      % RIGHT: AFTER
+      \begin{scope}[xshift=7cm, local bounding box=after]
+        % Electrode (Top +)
+        \draw[elec] (-0.5, 2.5) -- (-0.5, 1.5) -- (0, 0.5) -- (0.5, 1.5) -- (0.5, 2.5) -- cycle;
+        \node at (0, 2) {$+$};
+        
+        % Workpiece (Bottom -) with ROUGH crater
+        % Replaced smooth arc with a decorated path for roughness
+        \draw[work] (-1.5, 0) -- (-0.4, 0) 
+          decorate[rough] { arc[start angle=180, end angle=360, radius=0.4] } 
+          -- (1.5, 0) -- (1.5, -1) -- (-1.5, -1) -- cycle;
+          
+        \node[fill=white, inner sep=1pt] at (0, -0.6) {$-$};
+        
+        \node[below=0.2cm] at (0, -1) {\textbf{Na}};
+      \end{scope}
+
+    \end{tikzpicture}
+    \caption{Principe van vonkerosie: warmtegeneratie door elektrische ontlading zorgt voor materiaalafname (ruw oppervlak).}
+    \label{fig:vonkerosie_principe}
+  \end{figure}
+
+  \subsection{Componenten van een EDM-systeem}
+  Bij een vonkerosie-opstelling (zoals in \cref{fig:vonkerosie_proces.png}) zijn de volgende componenten cruciaal:
+  \begin{itemize}
+      \item \textbf{Pulsgenerator}: De energiebron die hoogfrequente DC-pulsen levert. Hij regelt de aan-tijd ($t_{on}$) en uit-tijd ($t_{off}$), wat de ruwheid en snelheid bepaalt.
+      \item \textbf{Diëlektricum}: De isolerende vloeistof. Het zorgt voor isolatie tot de doorslagspanning wordt bereikt, koelt het proces en spoelt de deeltjes weg.
+      \item \textbf{Pomp \& Filtersysteem}: De vloeistof wordt rondgepompt. Het filter is essentieel om de verwijderde metaaldeeltjes (swarf) uit het diëlektricum te halen. Vervuild diëlektricum leidt tot instabiele vonken of kortsluiting (arc-ing).
+      \item \textbf{Servosysteem}: Handhaaft een constante, zeer kleine afstand (gap) tussen elektrode en werkstuk.
+  \end{itemize}
+
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[node distance=1.6cm, auto,
+        procstep/.style={rectangle, draw=black, thick, fill=blue!5, text width=4cm, align=center, rounded corners, minimum height=1cm},
+        arrow/.style={thick, ->, >=stealth}
+    ]
+        \node (start) [procstep] {1. Spanningsopbouw \\ (Ioniseren van kanaal)};
+        \node (spark) [procstep, below of=start] {2. Ontlading (Vonk) \\ (Stroom vloeit)};
+        \node (heat)  [procstep, below of=spark] {3. Smelten \& Verdampen \\ (Materiaalverhitting)};
+        \node (off)   [procstep, below of=heat] {4. Pauze ($t_{off}$) \\ (Spanning valt weg)};
+        \node (flush) [procstep, below of=off] {5. Implosie \& Spoelen \\ (Deeltjesafvoer)};
+        
+        \draw [arrow] (start) -- (spark);
+        \draw [arrow] (spark) -- (heat);
+        \draw [arrow] (heat) -- (off);
+        \draw [arrow] (off) -- (flush);
+        \draw [arrow] (flush.east) -- ++(1,0) |- node[anchor=west, yshift=-2cm] {Herhaling (Hz)} (start.east);
+        
+    \end{tikzpicture}
+    \caption{Cyclus van één EDM-puls: van spanningsopbouw tot spoelen.}
+    \label{fig:edm_puls_flow}
+  \end{figure}
+
+  Je benedenplaat wordt \textbf{negatief geladen} en de elektrode \textbf{positief}.
+  Er is dan een puls van \textbf{discharge} die een stukje materiaal wegneemt.
+  \textbf{Pulsen} hebben een \textbf{frequentie} tussen de 100khz tot 1Mhz.
+  Je genereert dan veel discharges die opbouwen zodat je lijnen stap per stap kunt wegnemen.
+  \newline
+  De afstand tussen de elektrode en het werkstuk is enorm klein maar enorm belangrijk.
+  Moest de elektrode op het werkstuk komen, dan zou er een \textbf{kortsluiting} zijn.
+  \newline
+  De \textbf{spaanvorming} is bolvormig.
+  \newline
+  De pulsenergie wordt gegeven door de formule
+  \frm{Pulsenergie tijdens vonkfrezen}{W_e = \int_0^{t_e} U_e I_e \, dt}{waarbij $U_e$ de doorslagspanning is, $I_e$ de stroom en $t_e$ de pulstijd.}
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.45\textwidth]{image61.png}
+      \includegraphics[width=0.45\textwidth]{image62.png}
+      \caption{Stapsgewijs een puls en de bijbehorende spannings- en stroomcurves en tabel van alle parameters.}
+      \label{fig:edm_elektrode_vormen.png}
+  \end{figure}
+
+  Het vonkproces verloopt in drie cyclische fases die zich duizenden keren per seconde herhalen:
+
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[scale=0.9,
+      elec/.style={fill=gray!30, draw=black, thick},
+      work/.style={fill=gray!10, draw=black, thick, pattern=north east lines},
+      gas/.style={circle, draw=blue!50, fill=blue!10, dashed, minimum size=1.5cm},
+      spark/.style={decoration={zigzag, segment length=1mm, amplitude=0.5mm}, decorate, draw=orange, very thick}
+    ]
+      % Phase 1: Initiation
+      \begin{scope}[local bounding box=p1]
+        \node at (0, 3) {\textbf{1. Initiatie}};
+        \draw[elec] (-1, 2.5) -- (-1, 1.5) -- (0, 0.5) -- (1, 1.5) -- (1, 2.5) -- cycle;
+        \draw[work] (-1.5, -1) rectangle (1.5, 0);
+        
+        % Ions
+        \foreach \x in {-0.5, -0.2, 0.2, 0.5} \node[circle, fill=red, inner sep=1pt] at (\x, 0.2) {\tiny $+$};
+        \foreach \x in {-0.6, 0, 0.6} \node[circle, fill=blue, inner sep=1pt] at (\x, -0.2) {\tiny $-$};
+        \node[font=\footnotesize, align=center] at (0, -1.5) {Veldopbouw \& \\ Ionisatie};
+      \end{scope}
+
+      % Phase 2: Discharge
+      \begin{scope}[xshift=4.5cm, local bounding box=p2]
+        \node at (0, 3) {\textbf{2. Discharge}};
+        \draw[elec] (-1, 2.5) -- (-1, 1.5) -- (0, 0.5) -- (1, 1.5) -- (1, 2.5) -- cycle;
+        \draw[work] (-1.5, -1) rectangle (1.5, 0);
+        
+        % Gas bubble & Spark
+        \node[gas] at (0, 0.25) {};
+        \draw[spark] (0, 0.5) -- (0, 0);
+        
+        \node[font=\footnotesize, align=center] at (0, -1.5) {Plasmakanaal \& \\ Smelten};
+      \end{scope}
+
+      % Phase 3: Ejection
+      \begin{scope}[xshift=9cm, local bounding box=p3]
+        \node at (0, 3) {\textbf{3. Uitstoot}};
+        \draw[elec] (-1, 2.5) -- (-1, 1.5) -- (0, 0.5) -- (1, 1.5) -- (1, 2.5) -- cycle;
+        % Crater
+        \draw[work] (-1.5, 0) -- (-0.3, 0) arc(180:360:0.3) -- (1.5, 0) -- (1.5, -1) -- (-1.5, -1) -- cycle;
+        
+        % Debris
+        \foreach \r in {0.1, 0.3, 0.5} \fill[black] (\r, 0.5) circle (1pt);
+        \foreach \r in {-0.2, 0.2} \fill[black] (\r, 0.8) circle (1pt);
+        
+        \node[font=\footnotesize, align=center] at (0, -1.5) {Implosie \& \\ Materiaalafname};
+      \end{scope}
+    \end{tikzpicture}
+    \caption{De drie fases van een EDM-puls.}
+    \label{fig:edm_phases}
+  \end{figure}
+
+  \begin{enumerate}
+    \item \textbf{De initiatiefase (Ontsteking):}
+      Er wordt een spanning aangelegd tussen elektrode en werkstuk. Het elektrisch veld zorgt ervoor dat 
+      vrije elektronen en ionen in het diëlektricum versnellen en botsen. 
+      Dit creëert een \emph{sneeuwbaleffect} (lawine-ionisatie), waardoor er een geleidend ionisatiekanaal ontstaat.
+    
+    \item \textbf{De dischargefase (Ontlading):}
+      Zodra het kanaal geleidend is, volgt de hoofdontlading (de vonk). 
+      De stroomsterkte piekt en er ontstaat een \textbf{gasbel} van plasma rondom de vonk.
+       De ionen botsen met hoge kinetische energie op het werkstuk, wat wordt omgezet in extreme hitte ($8000\text{--}12000\,^\circ\text{C}$). 
+       Hierdoor smelt en verdampt een klein deel van het werkstuk (en in mindere mate de elektrode).
+    
+    \item \textbf{De uitstootfase (Implosie):}
+      De stroom wordt plotseling onderbroken (shutdown). 
+      De temperatuur daalt en de gasbel implodeert krachtig. 
+      Door deze implosie wordt het gesmolten materiaal uit de krater weggeschoten in het diëlektricum, 
+      waar het stolt tot kleine bolletjes (swarf). Het diëlektricum spoelt de opening schoon voor de volgende puls.
+  \end{enumerate}
+
+  \begin{figure}[ht]
+     \centering
+     \includegraphics[width=0.6\textwidth]{image63.png}
+     \caption{Een vonk in vergelijking met meerdere vonken}
+     \label{fig:1vonkenmeerderevonken.png}
+  \end{figure}
+
+  \section{Performance van EDM}
+
+  De materiaal afnamen (material removal rate) gaat over quibice centermeter per minuut.
+  Deze materiaalafname is veel lager dan bij spanen.
+  \newline
+  Gereedsschap slijtage is ook een probleem bij EDM. Ratio 
+  \frm{Gereedschapslijtage bij EDM}{v = \frac{\text{Volume gereedschap versleten}}{\text{Volume werkstuk verspaand}}}{Deze is typisch tussen $1\%$ en $5\%$.}
+  De oppervlaktekwaliteit $R_a$ is afhankelijk van je settings. Je kunt afhankelijk van de stroom die je gebruikt andere oppervlaktekwaliteit krijgen.
+  \newline 
+  \textbf{Hoge energie -> hoge materiaalafname maar slechte oppervlaktekwaliteit.}
+  \textbf{Lage energie -> lage materiaalafname maar goede oppervlaktekwaliteit.}
+  \newline
+  Je kunt ook een \textbf{harde warmte aangetaste zone} krijgen aan het oppervlakte.
+  Dit is een zone die thermisch veranderd is door de hitte van de vonk.
+
+  \begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.5\textwidth]{image64.png}
+      \caption{TAZ, thermisch aangetaste zone bij EDM}
+      \label{fig:taz_edm.png}
+  \end{figure}
+  -> deze zone warmt op en stolt dan terug. Het oppervlakte krijgt hierdoor microscheuren.
+  Dit is enorm slecht voor het oppervlakte. Deze moeten weggewerkt worden door te slijpen of frezen. Zie hybrideprocessen.
+
+  \section{Spleetregeling}
+  De grootte van de spleet hangt af van de tijd van de opbouw td. 
+  Hoe langer hoe groter de spleet. 
+  Als deze te lang is en je gasbel blijft groeien betekent dat je afstand te groot is.
+  Als deze te klein is krijg je kortsluiting.
+  Je moet dus een goede regeling hebben die de afstand tussen elektrode en werkstuk regelt.
+  \newline 
+  Door $t_d$ te meten kun je de afstand regelen.
+  \newline
+  Vroeger werd dat handmatig gedaan maar nu gebeurt dat automatisch met computers.
+  \subsection{Electodemateriaal}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image65.png}
+    \caption{Elektrode materialen voor EDM}
+    \label{fig:image65.png}
+\end{figure}
+
+  Je wilt een materiaal die Erosievast is zodat je elektrode minder snel slijt. Gegeven met deze formule:
+  \frm{Erosievastheid van elektrode (schematische benadering)}{E = \lambda \cdot \rho \cdot c \cdot T_m}{waarbij \(\lambda\) de warmtegeleidingscoëfficiënt is, \(\rho\) de massadichtheid, \(c\) de soortelijke warmte en \(T_m\) de smelttemperatuur.}
+
+  \section{Effecten van pulsduur en stroomsterkte}
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.8\textwidth]{image66.png}
+      \caption{Effecten van pulsduur en stroomsterkte bij EDM}
+      \label{fig:Effecten_pulsduur_stroomsterkte.png}
+  \end{figure}
+
+  Dikkere lijnen zijn grotere elektrodeslijtage. Bij kortere pulsen heb je grotere slijtage. 
+  Dit komt omdat je de elektronen nog in het diëlektricum zitten terwijl de vonk gebeurt. Er zijn dus meer negatieve 
+  ionen die op de elektrode botsen en materiaal wegnemen. 
+
+
+  \subsection{Toepassingen}
+  \begin{itemize}
+  \item   Vonkerosie laat bewerken van harde materialen toe.
+  \item Je kunt complexe vormen maken die met andere processen moeilijk te maken zijn. Je kunt profielen maken
+  met hoge nauwkeurigheid die dan caviteiten maken.
+  \item Slanke gereedschappen en dunne wanden zijn mogelijk omdat er geen mechanische krachten optreden tijdens het bewerken.
+  \end{itemize}
+
+  \subsection{Types}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image67.png}
+    \caption{Verschillende types vonkerosie}
+      \label{fig:verschillende_types_vonkerosie.png}
+\end{figure}
+\subsubsection{Zinkvonkerosie}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.3\textwidth]{image68.png}
+    \includegraphics[width=0.3\textwidth]{image69.png}
+    \caption{Zinkvonkenrosie proces}
+    \label{fig:Zinkvonkenrosie.png}
+\end{figure}
+
+Zinkvonken gebeurt een geleidend profiel die in het werstuk verzonken wordt. 
+Je moet de spanen uit het diëlektricum spoelen zodat het diëlektricum niet begint te geleiden.
+Je kunt dus het inverse profiel maken van de elektrode in het werkstuk.
+\newline
+Je kunt ook enorm kleine delen maken rond de 6 micrometer. Zolang dat de elektrode ook die grote heeft kan je dat maken.
+
+Zinkvonken is 
+\newline
+\subsubsection{Draadvonkerosie}
+Je moet eerst via een gat maken in het werkstuk via zinkvonken of een ander process. Je kunt dan je draad door dat gat steken.
+Je kunt dan op het oppervlakte zagen met die draad.
+\newline
+Draadvonken mag geen lange pulsen hebben omdat de draad zo klein is, anders zou je elektrode smelten. Dus je moet werken met korte pulsen in de megahertz range.
+Maar kortere pulsen eroderen de elektrode sneller, zie de figuur hierboven. 
+Wat je kunt doen is de polariteit omdraaien
+zodat je alleen met elektronen erodeerd en niet met ionen.
+Zo beschadig je de draad minder.
+\newline
+\subsubsection{Vonkerosie Milling}
+Je hebt een ronde elektrode die ronddraait en zo materiaal weghaalt.
+\newline
+
+\subsubsection{WEDG}
+\textbf{Wire Electro Discharge Grinding} is een proces waarbij een draad als elektrode wordt gebruikt om zeer nauwkeurige en fijne bewerkingen uit te voeren op harde materialen.
+
+\subsubsection{Die sinking EDM}
+Je hebt een elektrode die de vorm heeft van wat je wilt maken.
+\newline
+Je laat die elektrode naar beneden zakken en zo maak je een caviteit in het werkstuk.
+\subsubsection{Milling EDM}
+Je hebt een ronde elektrode die ronddraait en zo materiaal weghaalt.
+\subsubsection{Planteair Vonken}
+Je gaat je elektrode laten ronddraaien en zo grotere caviteiten maken als de elektrode zelf is.
+\subsubsection{Contour Vonken}
+Via NC sturing kan je heel kleine dingen maken zoals matrijzen voor kleine tandwielen. 
+Enorm veel microbewerkignen kunnen zo gemaakt worden.
+
+\textbf{Belangrijk}
+\newline 
+Vonkerosie zet geen enkele kracht op het werkstuk. 
+De materialen waar je mee moet werken moeten wel elektrisch geleidend zijn. Lager dan <100$\Omega$cm.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.3\textwidth]{image70.png}
+    \caption{}
+    \label{fig:image70.png}
+\end{figure}
+
+Keramieken zijn van nature isolerend en 
+kunnen daarom normaal niet met EDM worden bewerkt. 
+Om ze toch bewerkbaar te maken, 
+worden ze geleidend gemaakt door toevoeging van geleidende deeltjes
+ (zoals siliciumcarbide of titaannitride). 
+ Tijdens het \textbf{sinteren} wordt dit mengsel van poeders 
+ onder hoge temperatuur en druk samengeperst tot een solide massa. 
+ Door dit proces ontstaat een intern netwerk van geleidende paden, 
+ waardoor de elektrische weerstand voldoende daalt (typisch < $100\,\Omega\text{cm}$) om het vonkproces mogelijk te maken.
+\newline
+Wat kan gebeuren als je dit gaat vonkfrezen is dat je scheuren gaat krijgen in het oppervlakte van het 
+keramiek. Keramieken zijn bros en dus die hitte kan ervoor zorgen dat er scheuren ontstaan.
+Als er nog eens op gevonkt wordt kunnen er stukken afbreken. We noemen dit \textbf{Spoling}.
+  \newline
+  In de industrie zagen ze dat als ze probeerde keramieken accurater te maken met EDM dat ze enorm veel spoiling hadden.
+  Je oppervlakte bij het proberen om het nauwkeuriger te maken werd alleen maar slechter.
+  \newline
+
+  \begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.3\textwidth]{image71.png}
+      \caption{Ruw oppervlak met scheuren door spoiling bij keramieken}
+      \label{fig:vonken_keramieken.png}
+  \end{figure}
+
+  \section{Elektrochemische bewerkingen}
+  Je neemt een werkstuk en een elektrode. Je gaat dat dompelenen in een elektrolytische vloeistof.
+  Je laat het werkstuk en de elektrode contact hebben en laat dan een stroom lopen. Deze stromen zijn in orde 
+  50--1000A/cm$^2$.
+  Het werkstuk is de anode en de elektrode is de kathode.
+  Je beweegt het werkstuk stap voor stap naar beneden om materiaal chemisch te verwijderen.
+  \newline
+  -> Je krijgt een \textbf{Electrolyse} reactie tussen de twee.
+  \newline
+  \begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.45\textwidth]{.png}
+        \includegraphics[width=0.45\textwidth]{image72.png}
+      \label{fig:.png}
+  \end{figure} 
+  De anode (het werkstuk) lost op in de elektrolyt door oxidatie.
+  De kathode (de elektrode) blijft intact door reductie.
+  \newline
+  Voorbeeld bij anode van ijzer in een zoutoplossing \ce{NaCl}, \ce{H2O} als elektrolyt:
+  \begin{itemize}
+      \item \textbf{Anode (Werkstuk) - Oxidatie:}
+      \[ \ce{Fe -> Fe^{2+} + 2 e-} \]
+      Het ijzer gaat in oplossing als positieve ionen.
+      \item \textbf{Kathode (Gereedschap) - Reductie:}
+      \[ \ce{2 H2O + 2 e- -> H2 ^ + 2 OH-} \]
+      Waterstofgas ontsnapt en hydroxylionen worden gevormd.
+      \item \textbf{Totaalreactie in elektrolyt:}
+      \[ \ce{Fe^{2+} + 2 OH- -> Fe(OH)2 v} \]
+      Je krijgt een neerslag van ijzerhydroxide, deze moet worden weggepompt.
+  \end{itemize}
+
+      Het verschil met vonkerosie is dat je bij vonkerosie een 
+      isolerend diëlektricum hebt en bij elektrochemisch bewerken 
+      een geleidend elektrolyt. Je hebt dus geen 
+      slijtage van de elektrode bij elektrochemisch bewerken.
+      \newline
+
+      \subsection{Eigenschappen van elektrochemisch bewerken}
+      \begin{itemize}
+        \item Heel goede oppervlaktekwaliteit (laag $R_a$)
+        \item Geen gereedschapslijtage
+        \item geen beinvloede zone (geen TAZ), je oppervlakte is niet aangetast door iets
+        \item Niet super nauwkeurig door dat het elektrode meer afneemt dan de vorm van de elektrode (typisch rond $\pm (1.0 - 0.1) mm$)
+        \item Niet goed voor het milieu
+      \end{itemize}
+    
+      Het naadeel is dat je meer materiaal gaat afnemen dan je de vorm van je werkstuk.
+      \begin{figure}[ht]
+        \centering
+        \begin{tikzpicture}
+            % Styles
+            \tikzset{
+                tool/.style={fill=gray!60, draw=black, thick},
+                workpiece/.style={fill=gray!30, draw=black, thick},
+                electrolyte/.style={fill=cyan!20},
+                dim/.style={draw=red, <->, >=latex, font=\footnotesize}
+            }
+
+            % Tool Coordinates (Rough bottom)
+            \coordinate (T1) at (-2.0, 1.0);
+            \coordinate (T2) at (-1.2, 0.4);
+            \coordinate (T3) at (-0.4, 1.1);
+            \coordinate (T4) at (0.4, 0.5);
+            \coordinate (T5) at (1.2, 0.9);
+            \coordinate (T6) at (2.0, 0.6);
+
+            % Draw Electrolyte (Background in gap)
+            \fill[electrolyte] (-3, -1) rectangle (3, 2.2);
+
+            % Draw Tool
+            \draw[tool] (-2, 3) -- (2, 3) -- (2.0, 0.6) -- (1.2, 0.9) -- (0.4, 0.5) -- (-0.4, 1.1) -- (-1.2, 0.4) -- (-2.0, 1.0) -- cycle;
+            \node at (0, 2) {\textbf{Elektrode (Kathode)}};
+            \node at (0, 1.6) {\small (Geruwd oppervlak)};
+
+            % Draw Workpiece
+            \draw[workpiece] (-3.5, 2.0) -- (-2.4, 2.0) -- (-2.4, 0.4) -- (-1.2, -0.2) -- (-0.4, 0.5) -- (0.4, -0.1) -- (1.2, 0.3) -- (2.4, 0.0) -- (2.4, 2.0) -- (3.5, 2.0) -- (3.5, -1.5) -- (-3.5, -1.5) -- cycle;
+            \node at (0, -1) {\textbf{Werkstuk (Anode)}};
+
+            % Dimensions / Annotations
+            % Side Overcut
+            \draw[dim] (-2.4, 1.2) -- (-2.0, 1.2) node[midway, above] {Overcut};
+            % Bottom Gap
+            \draw[dim] (0.4, -0.1) -- (0.4, 0.5) node[midway, right] {Gap};
+            
+            % Electrolyte flow
+            \draw[->, blue, thick] (-3, 0.8) -- (-2.5, 0.8);
+            \draw[->, blue, thick] (3, 0.8) -- (2.5, 0.8);
+            \node[blue] at (-3, 0.5) {Elektrolyt};
+
+        \end{tikzpicture}
+        \caption{Schematische weergave van elektrochemisch bewerken (ECM) met een ruwe elektrode. De ontstane caviteit in het werkstuk is groter dan de elektrode door de "overcut" en de chemische werking.}
+        \label{fig:ecm_overcut}
+      \end{figure}
+
+      Dit kan dus wel handig zijn bij zinkvonken. Het oppervlakte van vonkeroderen is een geharde laag door de opwarming en dan afkoeling van het materiaal. 
+      EMC kan dit wegnemen en een goede oppervlaktekwaliteit geven. 
+      Typische overcut-waarden bij ECM liggen tussen ongeveer 0,13 en 1,0 mm; 
+      bij micro-ECM zijn waardes rond 0,02 mm mogelijk.
+      \newline
+
+      \subsection{Afnamen bij ECM}
+      \frm{Afnamesnelheid bij ECM}{M_{\mathrm{ECM}} = \dfrac{I \cdot A}{F \cdot V}\cdot \eta}{waarbij MMR(Material Removal Rate) is de snelheid van afname, \(I\) de stroomsterkte (A), \(A\) de atoommassa van het materiaal (g/mol), \(V\) de valentie (aantal elektronen), \(F\) de Faraday-constante (\(96485\,\mathrm{C/mol}\)) en \(\eta\) de efficiëntie.}
+Voorbeeld bij Titaan:
+A = 48A, V = 3, I = 2000A en \(\eta = 0.9\)
+\[M_{ECM} = \dfrac{2000 \cdot 48}{96485 \cdot 3} \cdot 0.9 = 0.297 g/s\]
+Omrekenen naar cm$^3$/min:
+\[ \text{Dichtheid Titaan} = 4.51 g/cm^3 \]
+\[ M_{ECM} = \dfrac{0.297 g/s}{4.51 g/cm^3} \cdot 60 s/min = 3.95 cm^3/min \]
+
+
+\subsection{Toepassingen van ECM}
+Je kunt ECM gebruiken voor:
+\begin{itemize}
+    \item Het bewerken van harde materialen zoals titanium en superlegeringen.
+    \item Het maken van complexe vormen en fijne details die moeilijk te bereiken zijn met conventionele methoden.
+    \item Het produceren van onderdelen met hoge oppervlaktekwaliteit zonder thermische of mechanische schade.
+    \item Is gebruikt voor het maken van turbinebladen, raketonderdelen, medische implantaten, en micro-elektronische componenten.
+\end{itemize}
+
+
+\textbf{Afname zonder Stroom}
+Je zet een masker op het werkstuk zodat alleen de delen die je wilt bewerken blootgesteld zijn aan de elektrolyt.
+met je \textbf{Etsvloeistof} ga je de delen die dan geen masker hebben worden weggeërodeerd.
+Je gaat iets meer wegnemen dan wat je wilt langs de binnenkant. Dit noemt \textbf{ondersnijding}.
+\begin{figure}[ht]
+   \centering
+    \includegraphics[width=0.3\textwidth]{image75.png}
+    \caption{Wegeroderen van materiaal zonder stroom met etsvloeistof}
+    \label{fig:eroderen_etsvloeistof.png}
+\end{figure}
+
+De etstijd gaat bepalen hoeveel materiaal je wegneemt en de grote van de ondersnijding.
+\newline
+
+\textbf{Fotoetsen} is een gelijkaardig proces. Dit wordt vooral toegepast op 
+hele kleine delen. Je maskeert ook de oppervlakte met een laklaag.
+Je legt dan nog een deel van transparante en niet transparante laag op.
+UV-licht zal door de transparante laag gaan en de lak verwijderen.
+Je kunt deze patronen dan etsen met een etsvloeistof.
+Deze patronen kunnen enorm klein zijn, rond de micrometer.
+Dit wordt toepast in micro-elektronica.
+\newline
+Net zoals bij normaal etsen krijg je ook ondersnijding waar je rekening mee moet houden.
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.3\textwidth]{image73.png}
+    \caption{Fotoetsen van een complex onderdeel met ECM}
+    \label{fig:foto_etsen_ecm.png}
+\end{figure}
+
+
+\section{Ultrasoon bewerken (Ultrasonic Machining)}
+Ultrasoon bewerken is een bewerkingsproces waarbij hoge-frequentie trillingen worden gebruikt om materiaal van een werkstuk te verwijderen.
+ Het proces maakt gebruik van een sonotrode die ultrasone trillingen (typisch tussen 20 kHz en 40 kHz) met een heel kleine amplitude genereert.
+ De trillingen creeëren kleine scheurtjes op het materiaaloppervlak en dan wordt dat materiaal uitgebroken.
+ Deze techniek werkt goed voor harde en bros materialen zoals keramiek, glas, en harde metalen omdat die niet 
+ goed tegen scheurtjes kunnen. Je hammert dus als het ware op het materiaal met die ultrasone trillingen.
+
+ \begin{figure}[ht] 
+  \centering 
+  \includegraphics[width=0.4\textwidth]{image74.png} 
+  \caption{Principe van ultrasoon bewerken} 
+  \label{fig:principe_ultrasoon_bewerken.png}
+ \end{figure}
+
+ Ductiele materialen zoals metalen zijn ook bewerkbaar: 
+ Door de enorm grote trillingen krijg je een \textbf{vermoeiingsproces} in het materiaal waardoor je ook materiaal kunt wegnemen.
+ 
+ \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[scale=0.8]
+        % Axes
+        \draw[thick,->,>=stealth] (0,0) -- (6,0) node[below] {Cycli ($N$)};
+        \draw[thick,->,>=stealth] (0,0) -- (0,4) node[left] {Spanning ($\sigma$)};
+        
+        % Curve
+        \draw[blue, thick] (0.5,3.5) .. controls (1.5,1.5) and (3,0.8) .. (5.5,0.8);
+        
+        % Annotations
+        \node[blue, font=\scriptsize, anchor=west] at (1.5,2.5) {Breuk door vermoeiïng};
+        \draw[dashed] (0,0.8) -- (5.5,0.8) node[right, font=\scriptsize] {Vermoeiingsgrens};
+        
+        % Labels
+        \node[font=\tiny] at (3,-0.5) {Logaritmische schaal};
+    \end{tikzpicture}
+    \caption{S-N curve (Wöhler-curve) die het vermoeiingsproces bij metalen weergeeft.}
+    \label{fig:vermoeiing_sn}
+ \end{figure}
+ \FloatBarrier
+ 
+Het gegreedschap is gemaakt van harde materialen zodat het niet snel slijt.
+\newline
+Het wordt vooral toegepast op harde materialen die moeilijk te bewerken zijn met conventionele methoden.
+\newline
+Je kunt ook een profiel maken van het gereedschap en dan dat profiel in het werkstuk maken.
+\newline
+
+
+\section{Straalbewerkingen}
+Straalbewerkingen zijn processen waarbij een geconcentreerde straal van energie of materiaal wordt gebruikt om materiaal van een werkstuk te verwijderen of te bewerken.
+
+
+  \begin{table}[ht]
+    \centering
+    \caption{Overzicht van verschillende straalbewerkingen.}
+    \label{tab:straalbewerkingen}
+    \begin{tabularx}{\textwidth}{|l|X|X|}
+        \hline
+        \textbf{Energiedrager} & \textbf{Bewerkingen} & \textbf{Toepassingen} \\
+        \hline
+        Vloeistof (Water) & Waterstraalsnijden (WJM) & Snijden van zachte materialen (plastic, textiel, voedsel). \\
+        \hline
+        Vloeistof + Abrasief & Abrasief waterstraalsnijden (AWJM) & Snijden van harde materialen (metaal, glas, steen). \\
+        \hline
+        Licht (Fotonen) & Laserstraalbewerking (LBM) & Snijden, lassen en boren van bijna alle materialen. \\
+        \hline
+        Elektronen & Elektronenstraalbewerking (EBM) & Zeer nauwkeurig boren en snijden (in vacuüm). \\
+        \hline
+        Ionen & Ionenstraalbewerking (IBM) & Etsen op nanoschaal en oppervlaktebewerking. \\
+        \hline
+        Gas / Plasma & Plasmastralen (PAM) & Ruw snijden van dikke metaalplaten. \\
+        \hline
+    \end{tabularx}
+  \end{table}
+
+  \subsection{Shotpeening}
+  Korrels worden met hoge snelheid op het oppervlak van een werkstuk geschoten.
+  Dit veroorzaakt plastische vervorming aan het oppervlak, wat leidt tot een verhoogde vermoeiingssterkte 
+  door de inwendige spanningen die worden geïnduceerd.
+  \subsection{abrasief stralen}
+  Je gebruikt een straal van abrasieve deeltjes (zoals zand) 
+  die met hoge snelheid op het oppervlak van een werkstuk worden gespoten.
+  Dit wordt vaak gebruikt voor het \textbf{reinigen, ontroesten of matten} van oppervlakken.
+  Het process werkt door de wet van bernoulli. (zie stromingen)
+  \theoriebox{Wet van Bernoulli}{
+    In een stromend fluïdum is de som van de drukenergie, kinetische energie en potentiële energie per eenheid volume constant langs een stroomlijn:
+    \[
+    P + \frac{1}{2} \rho v^2 + \rho gh = \text{constant}
+    \]
+    waarbij \(P\) de druk is, \(\rho\) de dichtheid van het fluïdum, \(v\) de stroomsnelheid, \(g\) de zwaartekrachtversnelling en \(h\) de hoogte boven een referentieniveau.
+  }
+
+  Je deeltjes moeten hun kinetische energie kwijt kunnen op het oppervlakte.
+  Ze nemen dus materiaal weg.
+  \subsection{Waterstraalsnijden}
+  water wordt bij \textbf{4000 bar} door een kleine opening gepompt.
+  Deze kracht is om materiaal te snijden. 
+  Je kunt hier dikke stukken materiaal mee wegsnijden.
+  \newline 
+  Je hebt geen beinvloede zone, geen hitte dus geen TAZ.
+  Het is ook bruikbaar op andere industrieën zoals voedselindustrie.
+
+  \begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.5\textwidth]{image76.png}
+      \caption{Waterstraal snijden proces}
+      \label{fig:image76.png}
+  \end{figure}
+
+  Een extra mogelijk is het gebruik van ijsbollejes om opervlakte te reinigen inplaats van zand.
+  Het ijs smelt gewoon weg en je moet geen zand opruimen.
+
+  \subsection{Laserstraalbewerking (LBM)}
+  \subsubsection{Hoe werk een laser?}
+  Een Laser is een geconcentreerde lichtbron die op één specifieke golflengte licht uitzendt met hoge intensiteit en coherentie.
+  \newline
+  \frm{Laser}{\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation}{is een apparaat dat licht versterkt door gestimuleerde emissie van straling.}
+  Voor een laser te maken wordt materiaal hun atomen naar een hogere energietoestand gebracht door energie toe te voeren (pompproces).
+  Wanneer deze atomen terugvallen naar hun lagere energietoestand, zenden ze fotonen uit.
+  Dit process noemt \textbf{spontane emissie}.
+  \newline
+  Als deze fotonen andere aangeslagen atomen treffen,
+   kunnen ze deze atomen stimuleren om ook fotonen uit te zenden 
+   die identiek zijn aan de oorspronkelijke fotonen (zelfde frequentie, fase en richting).
+  Dit process noemt \textbf{gestimuleerde emissie}.
+  \newline
+  Het resultaat is een coherente en monochromatische lichtstraal met hoge intensiteit.
+  \newline
+  \textbf{Workflow: Hoe een laser wordt gecreëerd}
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[
+      node distance=0.6cm and 2cm,
+      block/.style={rectangle, draw, fill=blue!10, text width=10cm, text centered, rounded corners, minimum height=0.8cm, thick, font=\small},
+      line/.style={draw, thick, ->, >=stealth}
+    ]
+      % Nodes using relative positioning to avoid overlap
+      \node (pumping) [block] {\textbf{1. Pompproces (Pumping)}: Toevoeren van energie om atomen naar hogere toestand te brengen.};
+      
+      \node (spontaneous) [block, below=of pumping] {\textbf{2. Spontane Emissie}: Atomen vallen terug en zenden ongeordende fotonen uit.};
+      
+      \node (stimulated) [block, below=of spontaneous] {\textbf{3. Gestimuleerde Emissie}: Fotonen treffen aangeslagen atomen $\to$ identieke fotonen.};
+      
+      \node (amplification) [block, below=of stimulated] {\textbf{4. Versterking}: Licht kaatst tussen spiegels en stimuleert meer emissies.};
+      
+      \node (output) [block, below=of amplification] {\textbf{5. Coherente Lichtstraal}: Een monochromatische straal verlaat de laser.};
+
+      % Lines
+      \draw [line] (pumping) -- (spontaneous);
+      \draw [line] (spontaneous) -- (stimulated);
+      \draw [line] (stimulated) -- (amplification);
+      \draw [line] (amplification) -- (output);
+    \end{tikzpicture}
+    \caption{Stapsgewijze workflow van de werking van een laser.}
+    \label{fig:laser_workflow_improved}
+  \end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{image77.png}
+    \caption{Creeren van een laserstraal door gestimuleerde emissie.}
+    \label{fig:creeren_laserstraal.png}
+\end{figure}
+
+De laserstraal heeft een paar problemen
+\newline
+Er wordt veel energie omgezet in warmte en de lichtkwaliteit moet je in 
+rekening houden.
+\newline
+Classificatie van lasers:
+\begin{itemize}
+  \item \textbf{Lasermedium:}
+  gas, vast, vloeistof, halfgeleider
+  \item \textbf{Golfengte:}
+  infrarood, zichtbaar, ultraviolet
+  \item \textbf{Aard van uitgaande straal:}
+  continue, gepulst
+  \item \textbf{Het vermogen:}
+  van lasers in miliwat tot multi-kilowatt
+  \item \textbf{Vorm lasercaviteit:}
+  langwerpig, rond, ringvormig, fiber en disklasers
+
+  \item \textbf{De pompmethode:}
+  elektrisch, optisch
+\end{itemize}
+
+Lasers kunnen getransporteerd worden via lucht, glasvezel of spiegels.
+Glasvezels kunnen ook lasers exiteren in de kabel.
+Wanneer men spreekt over een fibrelaser betekent dat gewoon het medium die de laser doorbrengt.
+\newline
+\textbf{De golflengte $\lambda$} gaat je laser bepalen. 
+Kleinere golflengtes zijn preciezer maar zijn ook duurder te maken.
+Vele lasertechnologie zijn recente ontwikkelingen (het jaar 2000).
+Een yag laser is recent en door de korte golflengte kan je preciezer werken.
+\newline
+Hieronder zijn alle relevante type lasers voor het bewerken van materialen:
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Type_lasers.png}
+    \caption{}
+    \label{fig:Type_lasers.png}
+\end{figure}
+
+\textbf{absorbtie van laserlicht}
+\newline
+Je wilt zoveel mogelijk van de laserenergie laten absorberen door het werkstuk.
+$R+T+A=1$ met R = reflectie, T = transmissie en A = absorptie.
+Je wilt dus een hoge A hebben.
+\newline
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Reflecteren in functie van de golflengte.png}
+    \caption{}
+    \label{fig:Reflecteren in functie van de golflengte.png}
+\end{figure}
+\FloatBarrier
+
+In de figuur zie je dat bij staal dat 90 $\%$ van de CO2 laser wordt gereflecteerd. Niet zoals een YAG laser die maar 50 $\%$ reflecteert.
+Hoe ze dit vroeger oploste was de CO2 laser met enorm grote vermogens gebruiken zodat er toch genoeg energie werd geabsorbeerd.
+\newline
+
+Deze verschillen in absorptie komt door de kristalstructuur/moleculaire structuur van het materiaal.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Absorptie van polycarbonaat.png}
+    \caption{}
+    \label{fig:Absorptie van polycarbonaat.png}
+\end{figure}
+
+Bij kunststoffen is zoals polycarbonaat zie je dat bij een CO2 laser bijna alles wordt geabsorbeerd maar enorm veel gereflecteerd bij een YAG laser.
+Bij deze toepassing wil je dus liever een CO2 laser gebruiken.
+
+\subsubsection{kwaliteit van de laserstraal}
+De BBP (Beam Parameter Product) is een maat voor de kwaliteit van een laserstraal.
+\frm{BBP = Beam Parameter Product}{BBP = \omega_0 \cdot \dfrac{\theta}{2}}{waarbij \(\omega_0\) de halve diameter van het focuspunt is en \(\theta\) de divergerende hoek van de straal.}
+Hoe kleiner $\theta$ is, hoe beter de kwaliteit van de laserstraal.
+
+Je moet dus je laser focussen als je materiaal wilt bewerken.
+Deze afstand moet precies zijn of je krijgt een groter focuspunt en dus minder intensiteit.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Kwaliteit laserstraal.png}
+    \caption{}
+    \label{fig:Kwaliteit laserstraal.png}
+\end{figure}
+
+\textbf{Het intensiteitsprofiel van een laserstraal}
+Een perfecte laser zou een perfecte cilinder zijn.
+In de praktijk is dat niet zo. De laserintensiteit gaat een gaussiaans profiel hebben. -> Je intensiteitprofliel ziet er als volgt uit:
+
+de intensiteit wordt gegeven door:
+\[I = \frac{I_0}{e^{2}}\]
+met I0 de maximale intensiteit in het midden van de bundel.
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[scale=1.2]
+    % Assen
+    \draw[thick,->,>=stealth] (-3,0) -- (3,0) node[right] {$r$ (radius)};
+    \draw[thick,->,>=stealth] (0,0) -- (0,3.5) node[above] {$I(r)$ (intensiteit)};
+    
+    % Gaussiaanse curve (parabolische vorm nabij de top)
+    \draw[ultra thick, blue, domain=-2.5:2.5, samples=100] plot (\x, {3*exp(-\x*\x/1.2)});
+    
+    % Annotaties
+    \node[anchor=south west, blue] at (0,3) {$I_0$};
+    
+    % Bundelstraal w0 aanduiding
+    % Bij x = 1.1 is de waarde ongeveer I0/e^2
+    \draw[dashed, red] (-1.1, 0) -- (-1.1, {3*exp(-1.1*1.1/1.2)}) node[below, pos=0, font=\small] {$-w_0$};
+    \draw[dashed, red] (1.1, 0) -- (1.1, {3*exp(-1.1*1.1/1.2)}) node[below, pos=0, font=\small] {$w_0$};
+    \draw[<->, red, >=latex] (-1.1, 0.5) -- (1.1, 0.5) node[midway, fill=white, font=\scriptsize] {$D = 2w_0$};
+    
+    % Niveau I0/e^2
+    \draw[dashed, gray] (-1.1, {3*exp(-1.1*1.1/1.2)}) -- (1.1, {3*exp(-1.1*1.1/1.2)}) node[right, font=\scriptsize] {$I = I_0/e^2$};
+
+  \end{tikzpicture}
+  \caption{Parabolische/Gaussiaanse intensiteitsverdeling van een laserbundel op het focuspunt.}
+  \label{fig:laser_focus_intensity}
+\end{figure}
+
+voor een guassiaans profiel is het BBP:
+\[BBP = \frac{\lambda}{\pi}\]
+met $\lambda$ de golflengte van de laser.
+
+Een kleinere golflengte $\lambda$ geeft dus een betere bundelkwaliteit van de laserstraal.
+
+Om de bundel te focussen gebruik je een lens met een focuslengte \(f\).
+De straal wordt dan gefocusseerd tot een straal met een straal \(w_0\) gegeven door:
+\[w_0 = \frac{4 \lambda f}{\pi D}\]
+Kleine verschillen in hoogte kan dus een groot verschil maken in de grootte van het focuspunt.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Laserfocussen.png}
+  \caption{Laserfocussen met verschillende focusafstanden \(f\).}
+  \label{fig:Laserfocussen.png}
+\end{figure}7
+
+De $w_0$ kun je meten met warmtecamera's die de warmte van de laser opneemt. Hieruit kan je dan de BBP berekenen.
+
+\subsubsection{Toepassingen}
+\begin{itemize}
+  \item \textbf{Snijden}: Het materiaal wordt lokaal gesmolten of verdampt door de hoge energiedichtheid, vaak ondersteund door een snijgas om de smelt te verwijderen.
+  \item \textbf{Lassen}: Het verbinden van twee delen door ze op het contactvlak te smelten, wat resulteert in een smalle, diepe lasnaad met minimale thermische vervorming.
+  \item \textbf{Boren}: Gebruik van korte laserpulsen met zeer hoge intensiteit om materiaal te verdampen en zo nauwkeurige gaten te creëren.
+  \item \textbf{Oppervlaktebehandeling}: Aanpassen van de textuur of chemie van de toplaag, zoals het reinigen van oppervlakken of het creëren van specifieke ruwheidspatronen.
+  \item \textbf{Harden}: Het lokaal verhitten van staal boven de kritische temperatuur, 
+  gevolgd door zelf-afschrikking door de omringende koude massa, om de slijtvastheid te verhogen. Je kunt de randen van tandwielen harden zodat de punten sterker zijn. 
+  Harden met een laser kreeg je minder deformatie als het harden in een oven.
+  \item \textbf{Cladding}: Een laag van een ander materiaal (poeder of draad) op het werkstuk smelten om eigenschappen zoals corrosiebestendigheid of hardheid te verbeteren.
+  \item \textbf{Solderen}: Het smelten van een toevoegmateriaal met de laser om een verbinding te maken, waarbij het basismateriaal zelf niet smelt (soldeerverbinding).
+\end{itemize}
+
+Afhankelijk van de toepassing met je de BBP en het vermogen aanpassen.
+
+\subsubsection{machine gestuurde Lasers, NC lasers}
+\begin{figure}[ht]
+   \centering
+    \includegraphics[width=0.6\textwidth]{NC-lasers.png}
+    \caption{NC laser snijmachine}
+    \label{fig:NC-lasers.png}
+
+\end{figure}
+
+\textbf{Belangrijke parameters bij laser snijden}
+\newline 
+\textbf{Lasersmeltsnijden}: Snijgas (stikstof, argon) wordt tijdens het lasersnijden zodat de bewerking sneller afkloelt en dat er geen oxidatie optreedt en kans op brand verminderd.
+De laser in een interte atmosfeer brengen zoals argon of stikstof kan ervoor zorgen dat je geen enkele oxidatie hebt. 
+
+\textbf{Laserbrandsnijden}: Je kunt ook het omgekeerde doen en zuurstof toevoegen om het snijproces te versnellen.
+
+In beide gevallen is het belangrijk om het verwijderde materiaal (smelt) weg te blazen met het snijgas.
+
+\subsubsection{Toepassingen}
+Lasersnijden is snel en nauwkeurig en kan enorm kleine dingen maken.
+\begin{figure}[ht]
+   \centering
+    \includegraphics[width=0.6\textwidth]{Kleinefiguurdoorlasersnijden.png}
+    \caption{Toepassingen van lasersnijden in verschillende industrieën}
+    \label{fig:Laser_toepassingen.png}
+\end{figure}
+\FloatBarrier
+grote platen kun je ook snijden met lasers.
+
+\subsubsection{Nadelen}
+\begin{itemize}
+  \item \textbf{Dross}: Tijdens het snijden kan er een ophoping van gesmolten materiaal aan de onderkant van het snijvlak ontstaan, wat resulteert in een ruwe afwerking die vaak nabewerking vereist.
+  \item \textbf{burning defecten}: Bij het snijden van bepaalde materialen bij een te lage snijsnelheid, zoals bij kunststoffen, kan overmatige hitte leiden tot verbranding of verkoling langs de snijranden, wat de kwaliteit van het eindproduct vermindert.
+  \item \textbf{Loss of full penetration}: Bij het snijden van dikkere materialen kan het voorkomen dat de laserstraal niet volledig door het materiaal heen dringt, wat resulteert in onvolledige sneden die opnieuw bewerkt moeten worden.
+  \item \textbf{Aanhechting van gesmolten materiaal}: Bij brandsnijden aan hoge snijsnelheden kan gesmolten materiaal aan de snijkant blijven plakken, wat leidt tot onregelmatige randen en mogelijke structurele zwaktes in het gesneden onderdeel.
+\end{itemize}
+
 
   \chapter{Scheiden}
+  
   \chapter{Automatiseren \& machinekeuze}
 
   \chapter{Productie werkvoorbereiding}
 
+  Werkvoorbereiding is de brug tussen ontwerp en productie. Het zorgt ervoor dat het juiste product, op het juiste moment, met de juiste kwaliteit en tegen de laagste kosten wordt gemaakt.
+
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[
+      node distance=1.8cm,
+      every node/.style={font=\small},
+      startstop/.style={rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!10, thick},
+      process/.style={rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!10, thick},
+      decision/.style={diamond, aspect=2, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!10, thick},
+      arrow/.style={thick,->,>=stealth}
+    ]
+
+      \node (cad) [startstop] {Productontwerp (CAD)};
+      \node (check) [decision, below of=cad, yshift=-0.5cm] {Maakbaar?};
+      \node (plan) [process, below of=check, yshift=-0.5cm] {Procesplanning (Routing)};
+      \node (res) [process, below of=plan] {Middelen (Tools/CNC)};
+      \node (sched) [process, below of=res] {Productieplanning};
+      \node (make) [startstop, below of=sched] {Start Productie};
+
+      \draw [arrow] (cad) -- (check);
+      \draw [arrow] (check) -- node[anchor=east] {Ja} (plan);
+      \draw [arrow] (check.east) -- ++(1.5,0) |- node[anchor=south, xshift=-0.5cm] {Nee (Redesign)} (cad.east);
+      \draw [arrow] (plan) -- (res);
+      \draw [arrow] (res) -- (sched);
+      \draw [arrow] (sched) -- (make);
+
+    \end{tikzpicture}
+    \caption{Flowchart van het werkvoorbereidingsproces.}\label{fig:werkvoorbereiding_flow}
+  \end{figure}
+
 
   \chapter{Productiegericht ontwerpen}
+
+  Productiegericht ontwerpen (Design for Manufacturing) betekent dat je al in de ontwerpfase rekening houdt met de beperkingen en mogelijkheden van het productieproces.
+
+  \begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[
+      node distance=2cm,
+      every node/.style={font=\small},
+      block/.style={rectangle, rounded corners, minimum width=2.5cm, minimum height=1cm, text centered, draw=black, fill=blue!10, thick},
+      decision/.style={diamond, aspect=2, minimum width=2.5cm, minimum height=1cm, text centered, draw=black, fill=yellow!10, thick},
+      line/.style={draw, thick, ->, >=stealth}
+    ]
+
+      \node (eisen) [block] {Eisen \& Functies};
+      \node (ontwerp) [block, below of=eisen] {Concept Ontwerp};
+      \node (dfm) [decision, below of=ontwerp, yshift=-0.5cm] {Maakbaar?};
+      \node (proto) [block, below of=dfm, yshift=-0.5cm] {Prototype};
+      \node (test) [decision, below of=proto, yshift=-0.5cm] {Test OK?};
+      \node (final) [block, below of=test, yshift=-0.5cm] {Definitief Ontwerp};
+
+      \draw [line] (eisen) -- (ontwerp);
+      \draw [line] (ontwerp) -- (dfm);
+      \draw [line] (dfm) -- node[anchor=east] {Ja} (proto);
+      \draw [line] (dfm.east) -- ++(2,0) |- node[anchor=south, xshift=-0.5cm] {Nee (Aanpassen)} (ontwerp.east);
+      \draw [line] (proto) -- (test);
+      \draw [line] (test) -- node[anchor=east] {Ja} (final);
+      \draw [line] (test.west) -- ++(-2,0) |- node[anchor=south, xshift=0.5cm] {Nee (Foutanalyse)} (ontwerp.west);
+
+    \end{tikzpicture}
+    \caption{Iteratief ontwerpproces met terugkoppeling voor maakbaarheid (DFM).}\label{fig:design_cycle}
+  \end{figure}
 
 
 
