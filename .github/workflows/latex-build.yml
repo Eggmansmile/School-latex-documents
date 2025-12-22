@@ -1,0 +1,41 @@
+name: Build LaTeX
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live (minimal set)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-recommended texlive-latex-extra texlive-xetex \
+            texlive-fonts-recommended texlive-fonts-extra texlive-pictures \
+            texlive-science latexmk poppler-utils
+
+      - name: Build `MATHSYS` (latexmk)
+        working-directory: ./math-systems
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "MATHSYS-Oefeningen-RubenRyckaert.tex"
+
+      - name: Build `Warmte en stromingen` (latexmk)
+        working-directory: ./"Warmte en stromigen"
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
+
+      - name: Upload built PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: built-pdfs
+          path: |
+            math-systems/MATHSYS-Oefeningen-RubenRyckaert.pdf
+            "Warmte en stromigen/Warmte en stromingen Samenvatting Ruben Ryckaert.pdf"

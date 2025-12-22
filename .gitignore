@@ -1,5 +1,4 @@
 .vscode
 .venv
-.github
 __pycache__/
 *.pyc
