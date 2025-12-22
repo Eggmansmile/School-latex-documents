@@ -2,9 +2,10 @@ name: Build LaTeX
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, MAIN ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, MAIN ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,7 +21,8 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             texlive-latex-recommended texlive-latex-extra texlive-xetex \
             texlive-fonts-recommended texlive-fonts-extra texlive-pictures \
-            texlive-science latexmk poppler-utils
+            texlive-science texlive-bibtex-extra biber texlive-lang-european \
+            latexmk poppler-utils
 
       - name: Build `MATHSYS` (latexmk)
         working-directory: ./math-systems
@@ -32,10 +34,28 @@ jobs:
         run: |
           latexmk -pdf -interaction=nonstopmode -file-line-error "Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
 
+      - name: Build `Productietechnologie` (latexmk)
+        working-directory: ./Productietechnologie
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "ProductieTechnologie-Samenvatting-RubenRyckaert.tex"
+
+      - name: Build `Examenoefening` (latexmk)
+        working-directory: ./math-systems
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "Examenoefening.tex"
+
+      - name: Build `template_examples` (latexmk)
+        working-directory: ./latex_templates
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "template_examples.tex"
+
       - name: Upload built PDFs
         uses: actions/upload-artifact@v4
         with:
           name: built-pdfs
           path: |
             math-systems/MATHSYS-Oefeningen-RubenRyckaert.pdf
+            math-systems/Examenoefening.pdf
             "Warmte en stromigen/Warmte en stromingen Samenvatting Ruben Ryckaert.pdf"
+            Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.pdf
+            latex_templates/template_examples.pdf
