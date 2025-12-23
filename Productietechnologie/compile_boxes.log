@@ -1,0 +1,2909 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/tools/TinyTeX/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(c:/tools/TinyTeX/texmf-dist/tex/latex/base/size12.clo)) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/babel.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Dutch' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 49.
+
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg)) (c:/tools/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex))) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/environ/environ.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/float/float.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (c:/tools/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (c:/tools/TinyTeX/texmf-dist/tex/latex/url/url.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (c:/tools/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-pdftex.def)) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/mhchem/mhchem.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)) (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(c:/tools/TinyTeX/texmf-dist/tex/latex/tools/calc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/chemgreek/chemgreek.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty))) (./productie-macros.sty
+
+LaTeX Warning: You have requested package `./productie-macros',
+               but the package provides `productie-macros'.
+
+
+LaTeX Warning: You have requested package `./productie-macros',
+               but the package provides `productie-macros'.
+
+(c:/tools/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex))) (c:/tools/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/array.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/cleveref/cleveref.sty)
+==> First Aid for cleveref.sty applied!
+(c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/flafter.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd) (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+Package productie-macros Warning: If you see ``No hyphenation patterns were preloaded for the language "Dutch"'' please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr). on input line 162.
+
+(c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg) [1{c:/tools/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] (./ProductieTechnologie-Samenvatting-RubenRyckaert.toc) [2{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+Hoofdstuk 1.
+(c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd)
+
+Package microtype Warning: I cannot find a spacing list for font
+(microtype)                `TS1/lmr/m/n/12' (context: `nonfrench'). Switching off
+(microtype)                spacing for this font on input line 188.
+
+[3{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [4 <./straalbewerkingen.png>] [5 <./image1.png> <./image2.png> <./image3.png> <./image5.png>]
+Hoofdstuk 2.
+[6 <./image6.png> <./image7.png> <./image9.png>]
+Hoofdstuk 3.
+[7] [8 <./image10.png> <./image11.png>]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 431.
+
+[9 <./image20.png>] [10 <./image12.png> <./image14.png>] [11 <./image15.png> <./image16.png>] [12 <./image17.png>] [13 <./image21.png>]
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.648 	\centering
+                 
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.648 	\centering
+                 
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.648 	\centering
+                 
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.671 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.671 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.671 \begin{figure}[ht]
+                        
+
+LaTeX Warning: Reference `fig:snijmaterialen_overzicht' on page 14 undefined on input line 679.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.689 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.689 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.689 \begin{figure}[ht]
+                        
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.709 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.709 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.709 \begin{figure}[ht]
+                        
+
+LaTeX Warning: Reference `chap:Verspanen_Draaien' on page 14 undefined on input line 746.
+
+
+LaTeX Warning: Reference `chap:Verspanen_Frezen' on page 14 undefined on input line 746.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.749 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.749 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.749 \begin{figure}[ht]
+                        
+Hoofdstuk 4.
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.779 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.779 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.779 \begin{figure}[ht]
+                        
+
+LaTeX Warning: Reference `fig:invloed_voeding_draaien' on page 14 undefined on input line 884.
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 911--912
+[]\T1/lmr/bx/n/12 (+10) Spaanhoek $\OML/lmm/m/it/12 ^^M$\T1/lmr/m/n/12 (+10) : Een grotere af-schuifhoek maakt spaan-vorm-ing
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.927 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.927 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.927 \begin{figure}[ht]
+                        
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.939 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.939 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.939 \begin{figure}[ht]
+                        
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.949 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.949 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.949 \begin{figure}[ht]
+                        
+
+Underfull \hbox (badness 1168) in paragraph at lines 995--998
+\T1/lmr/m/n/12 (+10) Draaien wordt met \T1/lmr/bx/n/12 (+10) ver-schil-lende bei-t-els \T1/lmr/m/n/12 (+10) gedaan die ver-schil-lende
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--998
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.999 \begin{figure}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.999 \begin{figure}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.999 \begin{figure}[ht]
+                        
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1011 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1011 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1011 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1020
+
+Hoofdstuk 5.
+
+LaTeX Warning: Reference `frm:10' on page 14 undefined on input line 1072.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1074 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1074 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1074 \begin{figure}[ht]
+                         
+
+LaTeX Warning: Reference `frm:10' on page 14 undefined on input line 1101.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1116 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1116 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1116 \begin{figure}[ht]
+                         
+
+Overfull \hbox (151.6533pt too wide) in paragraph at lines 1174--1177
+[] 
+
+Overfull \hbox (15.8241pt too wide) in paragraph at lines 1327--1328
+ [][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1343
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 1347--1348
+\T1/lmr/m/n/12 (+10) tig-ingsmid-de-len, passin-gen en nabe-w-erkin-gen
+
+Underfull \hbox (badness 1092) in paragraph at lines 1351--1352
+[]\T1/lmr/bx/n/12 (+10) Centerboor / po-si-tion-eer-boor: \T1/lmr/m/n/12 (+10) ko-rte,
+
+Underfull \hbox (badness 1270) in paragraph at lines 1351--1352
+\T1/lmr/m/n/12 (+10) sti-jve boor om een start-punt te maken
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1357 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1357 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1357 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1419 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1419 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1419 \begin{figure}[ht]
+                         
+
+LaTeX Warning: Reference `chap:Verspanen_Frezen' on page 14 undefined on input line 1427.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1433 \begin{table}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1433 \begin{table}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1433 \begin{table}[ht]
+                        
+
+Overfull \hbox (4.1738pt too wide) in paragraph at lines 1447--1447
+[]|\T1/lmr/bx/n/12 (-10) Pitch
+
+Overfull \hbox (4.23451pt too wide) in paragraph at lines 1447--1447
+\T1/lmr/bx/n/12 (-10) (mm)| 
+
+Overfull \hbox (37.49736pt too wide) in paragraph at lines 1447--1447
+[]|\T1/lmr/bx/n/12 (-10) Tap[]boring
+
+Overfull \hbox (4.23451pt too wide) in paragraph at lines 1447--1447
+\T1/lmr/bx/n/12 (-10) (mm)| 
+Hoofdstuk 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1513--1521
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1546 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1546 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1546 \begin{figure}[ht]
+                         
+
+Overfull \hbox (70.38905pt too wide) in paragraph at lines 1581--1584
+[][] 
+
+Underfull \hbox (badness 2189) in paragraph at lines 1581--1584
+\T1/lmr/m/n/12 (+10) waarbij $\OML/lmm/m/it/12 f[]$ \T1/lmr/m/n/12 (+10) de voed-ing per tand is, $\OML/lmm/m/it/12 a$ \T1/lmr/m/n/12 (+10) de
+
+Overfull \hbox (155.77644pt too wide) in paragraph at lines 1593--1596
+[][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1602
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 1621--1622
+[]\T1/lmr/m/n/12 (+10) EXAMEN: Ken het ver-schil tussen
+
+Underfull \hbox (badness 2245) in paragraph at lines 1621--1622
+\T1/lmr/bx/n/12 (+10) lopend[] \T1/lmr/m/n/12 (+10) (con-ven-tional milling) frezen.
+
+Underfull \hbox (badness 1221) in paragraph at lines 1621--1622
+\T1/lmr/m/n/12 (+10) Let op: chipdikte toont vs afneemt,
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1631 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1631 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1631 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1638 \begin{table}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1638 \begin{table}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1638 \begin{table}[ht]
+                        
+
+Underfull \hbox (badness 3635) in paragraph at lines 1640--1640
+[]\T1/lmr/m/n/12 (+10) Tabel 6.1: |Vergeli-jk-ing: Tegen-lopend vs
+
+Overfull \hbox (39.30562pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/bx/n/12 (-10) Tegenlopend| 
+
+Overfull \hbox (29.70592pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/bx/n/12 (-10) Meelopend| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|$\OML/lmm/m/it/12 F[]$
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) drukt
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) werk-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) stuk
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) weg
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) van
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|$\OML/lmm/m/it/12 F[]$
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) trekt
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) werk-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) stuk
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) naar
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) frees
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (+10) Geen
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) com-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) pen-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) satie
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) nodig;
+
+Overfull \hbox (1.34566pt too wide) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (-10) veiliger
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) bij
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) back-
+
+Overfull \hbox (65.28206pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Spelingcompensatie
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) on-mis-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (+10) Dun
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) (chip
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) groeit
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) ti-j-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) dens
+
+Overfull \hbox (1.29611pt too wide) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (-10) snede).| 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) dun
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) (chip
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) neemt
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) af
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) richt-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) ing
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (+10) Stijgt
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) gelei-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) delijk
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) ti-j-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) dens
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) in-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (+10) Stijgt
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (-1) sneller;
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) hogere
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) piek-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) be-last-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (+10) Eerst
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) wrijv-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) ing,
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) later
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) sni-j-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) den
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) (meer
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) smear-
+
+Overfull \hbox (2.84282pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Meteen
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) sni-j-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) den
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) (scher-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) pere
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) in-sni-
+
+Overfull \hbox (4.84627pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Meestal
+
+Overfull \hbox (4.84627pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Meestal
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) beter
+
+Overfull \hbox (4.13542pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Neiging
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) tot
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) klap-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) peren
+
+Overfull \hbox (13.90154pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Werkstuk
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) wordt
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) 'in
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) klem'
+
+Overfull \hbox (18.35378pt too wide) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (-10) getrokken.| 
+
+Overfull \hbox (1.97409pt too wide) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (-10) Minder
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) voor-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) spel-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+[]|\T1/lmr/m/n/12 (+10) Kan
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) pre-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1662--1662
+\T1/lmr/m/n/12 (+10) ciezer
+
+Underfull \hbox (badness 2393) in paragraph at lines 1676--1677
+\T1/lmr/m/n/12 (+10) vaak ge-bruikt voor grove, hoge[]volume
+
+Underfull \hbox (badness 3078) in paragraph at lines 1685--1686
+[]\T1/lmr/bx/n/12 (+10) Circulair frezen\T1/lmr/m/n/12 (+10) : Hi-er-bij wordt een
+
+Underfull \hbox (badness 5359) in paragraph at lines 1686--1687
+\T1/lmr/m/n/12 (+10) een spe-ci-aal gereed-schap ge-bruikt om
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1694 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1694 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1694 \begin{figure}[ht]
+                         
+Hoofdstuk 7.
+
+Overfull \hbox (91.39297pt too wide) in paragraph at lines 1701--1701
+|[]\T1/lmr/bx/n/20.74 (-10) Verspanen:Hybridetechnieken| 
+
+Underfull \hbox (badness 3612) in paragraph at lines 1704--1713
+\T1/lmr/bx/n/12 (+10) Voedingsbeweging\T1/lmr/m/n/12 (+10) : Dit is de be-weg-ing
+
+Underfull \hbox (badness 4084) in paragraph at lines 1704--1713
+\T1/lmr/m/n/12 (+10) waarmee het gereed-schap of het werk-stuk
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1716 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1716 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1716 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 3547) in paragraph at lines 1727--1730
+[]\T1/lmr/m/n/12 (+10) Bij het ho-nen ga je de top-pen van de
+
+Underfull \hbox (badness 10000) in paragraph at lines 1727--1730
+\T1/lmr/m/n/12 (+10) op-per-valk-teruwheid ver-wi-jderen. Dit is
+
+Underfull \hbox (badness 10000) in paragraph at lines 1727--1730
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1732 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1732 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1732 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 1163) in paragraph at lines 1803--1816
+\T1/lmr/m/n/12 (+10) kine-mat-ica van het sys-teem. Je werk-stuk
+
+Package microtype Warning: I cannot find a spacing list for font
+(microtype)                `TS1/lmr/bx/n/12' (context: `nonfrench'). Switching off
+(microtype)                spacing for this font on input line 1823.
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1889 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1889 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1889 \begin{figure}[ht]
+                         
+Hoofdstuk 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
+[]\T1/lmr/m/n/12 (+10) Slijpen genereert tot $\OT1/lmr/m/n/12 (+10) 900[]$\T1/lmr/m/n/12 (+10) C
+
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
+\T1/lmr/m/n/12 (+10) koel-ing ontstaan ther-mis-che
+
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
+\T1/lmr/m/n/12 (+10) beschadig-ing: hard-hei-dsveran-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
+\T1/lmr/m/n/12 (+10) der-ing, trekspan-nin-gen, of
+
+Underfull \hbox (badness 1199) in paragraph at lines 1924--1933
+\T1/lmr/m/n/12 (+10) ge-bruikt om ma-te-ri-aal van een
+
+Underfull \hbox (badness 1688) in paragraph at lines 1934--1935
+\T1/lmr/m/n/12 (+10) om vuil of roest te ver-wi-
+
+Underfull \hbox (badness 10000) in paragraph at lines 1943--1944
+[]\T1/lmr/bx/n/12 (+10) Schuurpapier\T1/lmr/m/n/12 (+10) : ko-r-rels
+
+Underfull \hbox (badness 2435) in paragraph at lines 1944--1945
+[]\T1/lmr/bx/n/12 (+10) Honen\T1/lmr/m/n/12 (+10) : ko-r-rels gebon-den
+
+Underfull \hbox (badness 1590) in paragraph at lines 1944--1945
+\T1/lmr/m/n/12 (+10) in een zachte ma-trix voor
+
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1945
+\T1/lmr/m/n/12 (+10) het ver-beteren van de
+
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1945
+\T1/lmr/m/n/12 (+10) op-per-vlak-teafw-erk-ing en
+
+Underfull \hbox (badness 5217) in paragraph at lines 1949--1951
+\T1/lmr/m/n/12 (+10) Bij sli-jpen heb je een grote
+
+Underfull \hbox (badness 2582) in paragraph at lines 1949--1951
+\T1/lmr/m/n/12 (+10) negatieve \T1/lmr/bx/n/12 (+10) Spaan-hoek \T1/lmr/m/n/12 (+10) wat het
+
+Underfull \hbox (badness 3536) in paragraph at lines 1949--1951
+\T1/lmr/m/n/12 (+10) Maar je \T1/lmr/bx/n/12 (+10) Snedediepte \T1/lmr/m/n/12 (+10) is veel
+
+Underfull \hbox (badness 4765) in paragraph at lines 1952--1954
+\T1/lmr/m/n/12 (+10) als een frees met on-bepaalde
+
+Underfull \hbox (badness 10000) in paragraph at lines 1952--1954
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1955 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1955 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1955 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1965
+\T1/lmr/m/n/12 (+10) negatieve spaan-hoek. De
+
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1965
+\T1/lmr/m/n/12 (+10) spaan-vorm-ing is enorm klein
+
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1965
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+[]\T1/lmr/bx/n/12 (+10) Warmteontwikkeling\T1/lmr/m/n/12 (+10) :
+
+Underfull \hbox (badness 4805) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) Veel en-ergie gaat ver-loren
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) als warmte, sli-jpen kan
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) aan het op-per-vlakte een
+
+Underfull \hbox (badness 3668) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) tem-per-atuur van \T1/lmr/bx/n/12 (+10) 800 tot
+
+Underfull \hbox (badness 3525) in paragraph at lines 1969--1972
+\T1/lmr/bx/n/12 (+10) 900\TS1/lmr/bx/n/12 (+10) °\T1/lmr/bx/n/12 (+10) C \T1/lmr/m/n/12 (+10) veroorza-ken. Dit
+
+Underfull \hbox (badness 4378) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) kan lei-den tot ther-mis-che
+
+Underfull \hbox (badness 10000) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) beschadig-ing van het
+
+Underfull \hbox (badness 6110) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) werk-stuk. Je hebt dus
+
+Underfull \hbox (badness 6236) in paragraph at lines 1969--1972
+\T1/lmr/m/n/12 (+10) ma-te-ri-aalveran-derin-gen aan
+
+Underfull \hbox (badness 1127) in paragraph at lines 1972--1973
+\T1/lmr/m/n/12 (+10) snededieptes, typ-isch in de
+
+Underfull \hbox (badness 2478) in paragraph at lines 1977--1979
+[]\T1/lmr/bx/n/12 (+10) Nauwkeurigheid\T1/lmr/m/n/12 (+10) : Sli-jpen
+
+Underfull \hbox (badness 3449) in paragraph at lines 1985--1987
+\T1/lmr/m/n/12 (+10) r-rels ver-wi-jderen ma-te-ri-aal
+
+Underfull \hbox (badness 3965) in paragraph at lines 1985--1987
+\T1/lmr/m/n/12 (+10) afw-erk-ing; kleinere ko-r-rels
+
+Underfull \hbox (badness 2486) in paragraph at lines 1988--1989
+[]\T1/lmr/bx/n/12 (+10) Bindmiddel\T1/lmr/m/n/12 (+10) : Het ma-te-ri-
+
+Underfull \hbox (badness 2310) in paragraph at lines 1988--1989
+\T1/lmr/m/n/12 (+10) houdt, beïn-vloedt de sli-jp-
+
+Underfull \hbox (badness 1173) in paragraph at lines 1989--1990
+[]\T1/lmr/m/n/12 (+10) Hardheid van de sli-jp-steen:
+
+Underfull \hbox (badness 3343) in paragraph at lines 1989--1990
+\T1/lmr/m/n/12 (+10) urza-mer maar kun-nen ook
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1993 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1993 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1993 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2000--2004
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 2005--2010
+\T1/lmr/m/n/12 (+10) Korrelgrootte wordt aangegeven
+
+Underfull \hbox (badness 1210) in paragraph at lines 2012--2019
+\T1/lmr/m/n/12 (+10) ko-r-rels. De sli-jpver-houd-ing $\OML/lmm/m/it/12 G$
+
+Underfull \hbox (badness 3439) in paragraph at lines 2020--2024
+\T1/lmr/m/n/12 (+10) zijn keramisch klei, min-eralen,
+
+Overfull \hbox (844.70897pt too wide) in paragraph at lines 2020--2024
+[] 
+
+Underfull \hbox (badness 7722) in paragraph at lines 2026--2031
+\T1/lmr/m/n/12 (+10) De grote van de porien in
+
+Underfull \hbox (badness 10000) in paragraph at lines 2026--2031
+
+
+LaTeX Warning: Reference `fig:slijpsteen_karakterisering' on page 14 undefined on input line 2033.
+
+
+Underfull \hbox (badness 6032) in paragraph at lines 2033--2034
+[]\T1/lmr/m/n/12 (+10) EXAMEN: Ken de 5
+
+Underfull \hbox (badness 1521) in paragraph at lines 2033--2034
+\T1/lmr/m/n/12 (+10) pa-ram-e-ters die een sli-jp-
+
+Underfull \hbox (badness 3635) in paragraph at lines 2033--2034
+\T1/lmr/bx/n/12 (+10) r-rel-ma-te-ri-aal\T1/lmr/m/n/12 (+10) , []\T1/lmr/bx/n/12 (+10) Ko-r-rel-g-
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2040 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2040 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2040 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2070 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2070 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2070 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2077--2080
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 2085--2088
+\T1/lmr/m/n/12 (+10) Slijpmachines zijn enorm sti-jve
+
+Underfull \hbox (badness 5908) in paragraph at lines 2085--2088
+\T1/lmr/m/n/12 (+10) ma-chines om-dat je enorm je
+
+Underfull \hbox (badness 1803) in paragraph at lines 2090--2097
+\T1/lmr/m/n/12 (+10) niek waar-bij het werk-stuk niet
+Hoofdstuk 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2101--2101
+|[]\T1/lmr/bx/n/20.74 (+10) Fysische,
+
+Underfull \hbox (badness 10000) in paragraph at lines 2101--2101
+\T1/lmr/bx/n/20.74 (+10) Chemis-che
+
+Underfull \hbox (badness 10000) in paragraph at lines 2101--2101
+\T1/lmr/bx/n/20.74 (+10) afne-mende
+
+Underfull \hbox (badness 10000) in paragraph at lines 2104--2111
+\T1/lmr/bx/n/12 (+10) EDM (Elec-tro Dis-charge
+
+Underfull \hbox (badness 10000) in paragraph at lines 2104--2111
+\T1/lmr/bx/n/12 (+10) verspan-ing-stech-niek \T1/lmr/m/n/12 (+10) waar-bij
+
+Underfull \hbox (badness 1616) in paragraph at lines 2104--2111
+\T1/lmr/m/n/12 (+10) bi-jvoor-beeld gedes-tilleerd wa-ter)
+
+Underfull \hbox (badness 1342) in paragraph at lines 2104--2111
+\T1/lmr/m/n/12 (+10) zit-ten. Wan-neer er een \T1/lmr/bx/n/12 (+10) hoge
+
+Underfull \hbox (badness 3128) in paragraph at lines 2104--2111
+\T1/lmr/m/n/12 (+10) de elek-trode en het werk-stuk,
+
+Underfull \hbox (badness 2582) in paragraph at lines 2104--2111
+\T1/lmr/m/n/12 (+10) het ma-te-ri-aal op het werk-stuk
+
+Underfull \hbox (badness 10000) in paragraph at lines 2104--2111
+\T1/lmr/m/n/12 (+10) Je kunt geen nor-maal wa-ter
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2112 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2112 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2112 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2119 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2119 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2119 \begin{figure}[ht]
+                         
+
+Overfull \hbox (109.9902pt too wide) in paragraph at lines 2165--2166
+ [][] 
+
+Underfull \hbox (badness 1286) in paragraph at lines 2166--2166
+[]\T1/lmr/m/n/12 (+10) Figuur 9.2: |Principe van von-
+
+LaTeX Warning: Reference `fig:vonkerosie_proces.png' on page 1 undefined on input line 2171.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2173--2174
+[]\T1/lmr/bx/n/12 (+10) Pulsgenerator\T1/lmr/m/n/12 (+10) : De
+
+Underfull \hbox (badness 2635) in paragraph at lines 2173--2174
+\T1/lmr/m/n/12 (+10) ($\OML/lmm/m/it/12 t[]$\T1/lmr/m/n/12 (+10) ), wat de ruwheid en
+
+Underfull \hbox (badness 3536) in paragraph at lines 2175--2176
+\T1/lmr/m/n/12 (+10) Het fil-ter is es-sen-tieel om
+
+Underfull \hbox (badness 1132) in paragraph at lines 2176--2177
+[]\T1/lmr/bx/n/12 (+10) Servosysteem\T1/lmr/m/n/12 (+10) : Hand-haaft
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2179 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2179 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2179 \begin{figure}[ht]
+                         
+
+Overfull \hbox (60.80968pt too wide) in paragraph at lines 2197--2198
+ [][] 
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2214 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2214 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2214 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2224 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2224 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2224 \begin{figure}[ht]
+                         
+
+Overfull \hbox (134.53616pt too wide) in paragraph at lines 2270--2271
+ [][] 
+
+LaTeX Warning: Reference `fig:edm_phases' on page 14 undefined on input line 2276.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
+[]\T1/lmr/m/n/12 (+10) EXAMEN: Von-kerosie
+
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
+\T1/lmr/m/n/12 (+10) (EDM) ver-loopt in 3
+
+Underfull \hbox (badness 1354) in paragraph at lines 2276--2277
+\T1/lmr/m/n/12 (+10) fases: \T1/lmr/bx/n/12 (+10) 1. Ontstek-ing
+
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
+\T1/lmr/m/n/12 (+10) (ion-isatiekanaal), \T1/lmr/bx/n/12 (+10) 2.
+
+Underfull \hbox (badness 1466) in paragraph at lines 2276--2277
+\T1/lmr/m/n/12 (+10) smelten), \T1/lmr/bx/n/12 (+10) 3. Uit-stoot
+
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
+\T1/lmr/m/n/12 (+10) (im-plosie, ma-te-ri-aalver-
+
+Underfull \hbox (badness 5302) in paragraph at lines 2276--2277
+\T1/lmr/m/n/12 (+10) wi-jder-ing). Zie figuur
+
+Underfull \hbox (badness 3635) in paragraph at lines 2285--2290
+\T1/lmr/m/n/12 (+10) wordt omgezet in ex-treme
+
+Underfull \hbox (badness 1158) in paragraph at lines 2291--2296
+\T1/lmr/m/n/12 (+10) weggeschoten in het diëlek-
+
+Underfull \hbox (badness 2158) in paragraph at lines 2291--2296
+\T1/lmr/m/n/12 (+10) tricum, waar het stolt tot
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2298 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2298 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2298 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2311--2311
+[]\T1/lmr/bx/n/12 (+10) Gereedschapslijtage bij
+
+Overfull \hbox (33.6214pt too wide) in paragraph at lines 2311--2311
+ []$ 
+
+Underfull \hbox (badness 6001) in paragraph at lines 2312--2319
+[]\T1/lmr/m/n/12 (+10) De op-per-vlak-tek-waliteit $\OML/lmm/m/it/12 R[]$ \T1/lmr/m/n/12 (+10) is
+
+Underfull \hbox (badness 1122) in paragraph at lines 2312--2319
+\T1/lmr/m/n/12 (+10) ther-misch ve-ran-derd is door de
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2320 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2320 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2320 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 1681) in paragraph at lines 2330--2339
+\T1/lmr/m/n/12 (+10) een goede regeling hebben die
+
+Underfull \hbox (badness 1371) in paragraph at lines 2330--2339
+\T1/lmr/m/n/12 (+10) de af-s-tand tussen elek-trode en
+
+Underfull \hbox (badness 10000) in paragraph at lines 2330--2339
+\T1/lmr/m/n/12 (+10) Vroeger werd dat hand-matig
+
+Underfull \hbox (badness 6348) in paragraph at lines 2330--2339
+\T1/lmr/m/n/12 (+10) gedaan maar nu gebeurt dat
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2340 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2340 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2340 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 1755) in paragraph at lines 2348--2348
+[]\T1/lmr/bx/n/12 (+10) Erosievastheid van elek-
+
+Underfull \hbox (badness 2096) in paragraph at lines 2348--2348
+\T1/lmr/bx/n/12 (+10) trode (schema-tis-che be-
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2351 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2351 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2351 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 4303) in paragraph at lines 2366--2368
+[]\T1/lmr/m/n/12 (+10) Je kunt com-plexe vor-men
+
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2369
+[]\T1/lmr/m/n/12 (+10) Slanke gereed-schap-pen en
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2372 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2372 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2372 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2380 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2380 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2380 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 2409) in paragraph at lines 2388--2393
+\T1/lmr/m/n/12 (+10) Je kunt ook enorm kleine de-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2394--2396
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 2397--2406
+\T1/lmr/m/n/12 (+10) Draadvonken mag geen lange
+
+Underfull \hbox (badness 1394) in paragraph at lines 2397--2406
+\T1/lmr/m/n/12 (+10) elek-trode sneller, zie de figuur
+
+Underfull \hbox (badness 10000) in paragraph at lines 2397--2406
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 2407--2409
+\T1/lmr/m/n/12 (+10) Je hebt een ronde elek-trode
+
+Underfull \hbox (badness 1337) in paragraph at lines 2407--2409
+\T1/lmr/m/n/12 (+10) die rond-draait en zo ma-te-ri-aal
+
+Underfull \hbox (badness 10000) in paragraph at lines 2407--2409
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 2418--2419
+\T1/lmr/m/n/12 (+10) Je hebt een ronde elek-trode
+
+Underfull \hbox (badness 1337) in paragraph at lines 2418--2419
+\T1/lmr/m/n/12 (+10) die rond-draait en zo ma-te-ri-aal
+
+Underfull \hbox (badness 4416) in paragraph at lines 2422--2424
+\T1/lmr/m/n/12 (+10) din-gen maken zoals ma-tri-jzen
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2430 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2430 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2430 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+[]\T1/lmr/m/n/12 (+10) Keramieken zijn van na-ture
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) isol-erend en kun-nen daarom
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) gemaakt door to-evoeg-ing van
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) gelei-dende deelt-jes (zoals
+
+Underfull \hbox (badness 2158) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) sili-ci-um-car-bide of titaan-ni-tride).
+
+Underfull \hbox (badness 2134) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) elek-trische weer-stand vol-doende
+
+Underfull \hbox (badness 3009) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) In de in-dus-trie za-gen ze dat
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+\T1/lmr/m/n/12 (+10) als ze probeerde keramieken
+
+Underfull \hbox (badness 10000) in paragraph at lines 2438--2455
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2456 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2456 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2456 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 5504) in paragraph at lines 2459--2459
+[]\T1/lmr/m/n/12 (+10) Figuur 9.13: |Ruw op-per-vlak
+
+Underfull \hbox (badness 1867) in paragraph at lines 2459--2459
+\T1/lmr/m/n/12 (+10) met scheuren door spoil-ing bij
+
+Overfull \hbox (3.87785pt too wide) detected at line 2487
+[][][]\OT1/lmr/m/n/12 2 H[][]O[] + [][][]2 e[][][] [] [][]H[][][] [] [][] + [][][]2 [][][]
+
+Underfull \hbox (badness 10000) in paragraph at lines 2489--2490
+[]\T1/lmr/bx/n/12 (+10) Totaalreactie in elek-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2499
+[]\T1/lmr/m/n/12 (+10) Het ver-schil met von-kerosie
+
+Underfull \hbox (badness 6380) in paragraph at lines 2494--2499
+\T1/lmr/m/n/12 (+10) is dat je bij von-kerosie een
+
+Underfull \hbox (badness 4739) in paragraph at lines 2494--2499
+\T1/lmr/m/n/12 (+10) isol-erend diëlek-tricum hebt en
+
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2499
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2502--2503
+[]\T1/lmr/m/n/12 (+10) Heel goede op-per-vlak-tek-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2505--2506
+\T1/lmr/m/n/12 (+10) dat het elek-trode meer
+
+Underfull \hbox (badness 1735) in paragraph at lines 2505--2506
+\T1/lmr/m/n/12 (+10) afneemt dan de vorm van
+
+Underfull \hbox (badness 2351) in paragraph at lines 2505--2506
+\T1/lmr/m/n/12 (+10) de elek-trode (typ-isch rond
+
+Overfull \hbox (39.78696pt too wide) in paragraph at lines 2552--2553
+ [][] 
+
+Underfull \hbox (badness 3989) in paragraph at lines 2557--2562
+\T1/lmr/m/n/12 (+10) zinkvonken. Het op-per-vlakte
+
+Underfull \hbox (badness 10000) in paragraph at lines 2557--2562
+\T1/lmr/m/n/12 (+10) afkoel-ing van het ma-te-ri-aal.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2557--2562
+\T1/lmr/m/n/12 (+10) Typ-is-che overcut-waarden bij
+
+Underfull \hbox (badness 10000) in paragraph at lines 2557--2562
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 2564--2564
+[]\T1/lmr/m/it/10 (+10) waarbij MMR(Material Re-moval
+
+Underfull \hbox (badness 2790) in paragraph at lines 2564--2564
+\OML/lmm/m/it/10 I$ \T1/lmr/m/it/10 (+10) de stroom-sterkte (A), $\OML/lmm/m/it/10 A$ \T1/lmr/m/it/10 (+10) de
+
+Underfull \hbox (badness 6758) in paragraph at lines 2564--2564
+\T1/lmr/m/it/10 (+10) atoom-massa van het ma-te-ri-aal
+
+Overfull \hbox (61.70393pt too wide) detected at line 2570
+\OML/lmm/m/it/12 M[] \OT1/lmr/m/n/12 = [] \OMS/lmsy/m/n/12 ^^A \OT1/lmr/m/n/12 60\OML/lmm/m/it/12 s=min \OT1/lmr/m/n/12 = 3\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 95\OML/lmm/m/it/12 cm[]=min
+
+Underfull \hbox (badness 1033) in paragraph at lines 2578--2579
+\T1/lmr/m/n/12 (+10) len met hoge op-per-vlak-tek-
+
+Underfull \hbox (badness 1127) in paragraph at lines 2579--2580
+\T1/lmr/m/n/12 (+10) van tur-binebladen, rake-ton-
+
+Underfull \hbox (badness 2582) in paragraph at lines 2579--2580
+\T1/lmr/m/n/12 (+10) derde-len, medis-che im-plan-
+
+Underfull \hbox (badness 1178) in paragraph at lines 2590--2590
+[]\T1/lmr/m/n/12 (+10) Figuur 9.15: |Wegeroderen van
+
+Underfull \hbox (badness 10000) in paragraph at lines 2590--2590
+\T1/lmr/m/n/12 (+10) ma-te-ri-aal zon-der stroom met
+
+Underfull \hbox (badness 10000) in paragraph at lines 2594--2596
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2608 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2608 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2608 \begin{figure}[ht]
+                         
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2623 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2623 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2623 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 1199) in paragraph at lines 2630--2632
+\T1/lmr/m/n/12 (+10) zijn ook be-w-erk-baar: Door de
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2633 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2633 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2633 \begin{figure}[ht]
+                         
+
+Overfull \hbox (98.49834pt too wide) in paragraph at lines 2649--2650
+ [][] 
+
+Underfull \hbox (badness 2050) in paragraph at lines 2655--2661
+\T1/lmr/m/n/12 (+10) Het wordt vooral toegepast op
+
+Underfull \hbox (badness 10000) in paragraph at lines 2655--2661
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2667 \begin{table}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2667 \begin{table}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2667 \begin{table}[ht]
+                        
+
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 2687.
+
+
+Overfull \hbox (63.11479pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/bx/n/12 (-10) Bewerkingen| 
+
+Overfull \hbox (65.41821pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/bx/n/12 (-10) Toepassingen| 
+
+Overfull \hbox (83.68692pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Waterstraalsnijden
+
+Overfull \hbox (24.50894pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (WJM)| 
+
+Overfull \hbox (26.05646pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Snijden
+
+Overfull \hbox (5.7103pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) van
+
+Overfull \hbox (19.90926pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) zachte
+
+Overfull \hbox (5.67578pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) ma-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 te-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) ri-
+
+Overfull \hbox (8.93024pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) alen
+
+Overfull \hbox (13.413pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (plas-
+
+Overfull \hbox (2.77306pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) tic,
+
+Overfull \hbox (5.99835pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) tex-
+
+Overfull \hbox (6.00441pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) tiel,
+
+Overfull \hbox (13.44815pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) voed-
+
+Overfull \hbox (8.99461pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) sel).| 
+
+Overfull \hbox (30.31647pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Abrasief
+
+Overfull \hbox (3.63342pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) wa-
+
+Overfull \hbox (4.38249pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) ter-
+
+Overfull \hbox (18.66489pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) straal-
+
+Overfull \hbox (4.44785pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) sni-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) j-
+
+Overfull \hbox (6.34535pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) den
+
+Overfull \hbox (31.92326pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (AWJM)| 
+
+Overfull \hbox (26.05646pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Snijden
+
+Overfull \hbox (5.7103pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) van
+
+Overfull \hbox (16.68523pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) harde
+
+Overfull \hbox (5.67578pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) ma-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 te-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) ri-
+
+Overfull \hbox (8.93024pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) alen
+
+Overfull \hbox (27.24854pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (metaal,
+
+Overfull \hbox (9.30046pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) glas,
+
+Overfull \hbox (21.91937pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) steen).| 
+
+Overfull \hbox (95.49246pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Laserstraalbewerking
+
+Overfull \hbox (22.08794pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (LBM)| 
+
+Overfull \hbox (27.65459pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Snijden,
+
+Overfull \hbox (18.1069pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) lassen
+
+Overfull \hbox (17.01161pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) boren
+
+Overfull \hbox (5.7103pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) van
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 bi-
+
+Overfull \hbox (4.08345pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) jna
+
+Overfull \hbox (5.69888pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) alle
+
+Overfull \hbox (5.67578pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) ma-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 te-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) ri-
+
+Overfull \hbox (12.16159pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) alen.| 
+
+Overfull \hbox (123.54027pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Elektronenstraalbewerking
+
+Overfull \hbox (22.7344pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (EBM)| 
+
+Overfull \hbox (9.99876pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Zeer
+
+Overfull \hbox (46.08334pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) nauwkeurig
+
+Overfull \hbox (17.01161pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) boren
+
+Overfull \hbox (4.44785pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) sni-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) j-
+
+Overfull \hbox (6.34535pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) den
+
+Overfull \hbox (1.09314pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (in
+
+Overfull \hbox (6.33264pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) vac-
+
+Overfull \hbox (18.62466pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) uüm).| 
+
+Overfull \hbox (96.2344pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Ionenstraalbewerking
+
+Overfull \hbox (19.01643pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (IBM)| 
+
+Overfull \hbox (16.90918pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Etsen
+
+Overfull \hbox (0.52911pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) op
+
+Overfull \hbox (43.5663pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) nanoschaal
+
+Overfull \hbox (2.4444pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) op-
+
+Overfull \hbox (6.64795pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) per-
+
+Overfull \hbox (11.18654pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) vlak-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 te-
+
+Overfull \hbox (2.12431pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) be-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) w-
+
+Overfull \hbox (5.99835pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) erk-
+
+Overfull \hbox (6.99182pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) ing.| 
+
+Overfull \hbox (59.62666pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Plasmastralen
+
+Overfull \hbox (22.23738pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) (PAM)| 
+
+Overfull \hbox (10.59874pt too wide) in paragraph at lines 2687--2687
+[]|\T1/lmr/m/n/12 (-10) Ruw
+
+Overfull \hbox (4.44785pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) sni-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (+10) j-
+
+Overfull \hbox (6.34535pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) den
+
+Overfull \hbox (5.7103pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) van
+
+Overfull \hbox (15.06659pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) dikke
+
+Overfull \hbox (57.39926pt too wide) in paragraph at lines 2687--2687
+\T1/lmr/m/n/12 (-10) metaalplaten.| 
+
+Overfull \hbox (44.65437pt too wide) in alignment at lines 2687--2687
+[][][] 
+
+Underfull \hbox (badness 1337) in paragraph at lines 2691--2694
+\T1/lmr/m/n/12 (+10) per-vlak, wat leidt tot een ver-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2695--2701
+\T1/lmr/m/n/12 (+10) Je ge-bruikt een straal van
+
+Underfull \hbox (badness 5050) in paragraph at lines 2695--2701
+\T1/lmr/m/n/12 (+10) Dit wordt vaak ge-bruikt voor
+
+Underfull \hbox (badness 2941) in paragraph at lines 2695--2701
+\T1/lmr/m/n/12 (+10) het \T1/lmr/bx/n/12 (+10) reini-gen, on-troesten of
+
+Underfull \hbox (badness 10000) in paragraph at lines 2695--2701
+\T1/lmr/m/n/12 (+10) bernoulli. (zie stro-min-gen)
+
+Underfull \hbox (badness 6859) in paragraph at lines 2695--2701
+[] \T1/lmr/m/n/12 (+10) In een
+
+Underfull \hbox (badness 7326) in paragraph at lines 2695--2701
+\T1/lmr/m/n/12 (+10) stromend fluï-dum is de som
+
+Underfull \hbox (badness 2846) in paragraph at lines 2695--2701
+\T1/lmr/m/n/12 (+10) van de druken-ergie, kinetis-che
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2717 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2717 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2717 \begin{figure}[ht]
+                         
+
+Overfull \hbox (199.98357pt too wide) in paragraph at lines 2731--2731
+ []$[]\OML/lmm/m/it/14.4 ight[]mplificationby[]timulated[]missionof[]adiation$ 
+
+Underfull \hbox (badness 5985) in paragraph at lines 2731--2731
+[]\T1/lmr/m/it/10 (+10) is een ap-pa-raat dat licht ver-
+
+Underfull \hbox (badness 1708) in paragraph at lines 2729--2731
+\T1/lmr/m/n/12 (+10) licht-bron die op één spec-i-fieke
+
+Underfull \hbox (badness 10000) in paragraph at lines 2729--2731
+
+
+Overfull \hbox (117.82263pt too wide) in paragraph at lines 2767--2768
+ [][] 
+
+Underfull \hbox (badness 3364) in paragraph at lines 2732--2771
+\T1/lmr/bx/n/12 (+10) Workflow: Hoe een laser
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2772 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2772 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2772 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 6775) in paragraph at lines 2786--2788
+[]\T1/lmr/bx/n/12 (+10) Lasermedium: \T1/lmr/m/n/12 (+10) gas, vast,
+
+Underfull \hbox (badness 5189) in paragraph at lines 2797--2799
+[]\T1/lmr/bx/n/12 (+10) De pomp-meth-ode: \T1/lmr/m/n/12 (+10) elek-
+
+Underfull \hbox (badness 5771) in paragraph at lines 2801--2818
+[]\T1/lmr/m/n/12 (+10) Lasers kun-nen ge-trans-porteerd
+
+Underfull \hbox (badness 2617) in paragraph at lines 2801--2818
+\T1/lmr/m/n/12 (+10) wor-den via lucht, glasvezel of
+
+Underfull \hbox (badness 10000) in paragraph at lines 2819--2821
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 2823--2824
+[]\T1/lmr/m/n/12 (+10) Bij laser-be-w-erk-ing is []\T1/lmr/bx/n/12 (+10) ab-
+
+Underfull \hbox (badness 4940) in paragraph at lines 2823--2824
+\T1/lmr/m/n/12 (+10) goed wordt geab-sorbeerd
+
+Underfull \hbox (badness 1515) in paragraph at lines 2827--2828
+\T1/lmr/m/n/12 (+10) gevaar-lijk zijn! Ge-bruik
+
+Underfull \hbox (badness 10000) in paragraph at lines 2827--2828
+\T1/lmr/m/n/12 (+10) al-tijd vei-lighei-ds-bril en
+
+Underfull \hbox (badness 10000) in paragraph at lines 2827--2828
+\T1/lmr/m/n/12 (+10) laserveilige be-huiz-ing.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2827--2828
+\T1/lmr/m/n/12 (+10) Re-flecterende ma-te-ri-alen
+
+Underfull \hbox (badness 1337) in paragraph at lines 2830--2834
+[]\T1/lmr/m/n/12 (+10) Je wilt zoveel mo-gelijk van de
+
+Underfull \hbox (badness 10000) in paragraph at lines 2830--2834
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2835 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2835 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2835 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2844--2847
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2848--2849
+[]\T1/lmr/m/n/12 (+10) Deze ver-schillen in ab-sorp-tie
+
+Underfull \hbox (badness 10000) in paragraph at lines 2848--2849
+\T1/lmr/m/n/12 (+10) komt door de kristal-struc-
+
+Underfull \hbox (badness 7649) in paragraph at lines 2848--2849
+\T1/lmr/m/n/12 (+10) tuur/moleculaire struc-tuur van
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2850 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2850 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2850 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 3189) in paragraph at lines 2857--2859
+\T1/lmr/m/n/12 (+10) bi-jna alles wordt geab-sorbeerd
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2868 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2868 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2868 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 1584) in paragraph at lines 2871--2871
+[]\T1/lmr/m/n/12 (+10) Figuur 9.25: |Beam Pa-ram-e-ter
+
+Underfull \hbox (badness 2221) in paragraph at lines 2871--2871
+\T1/lmr/m/n/12 (+10) Prod-uct (BBP): kwaliteit van
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2883 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2883 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2883 \begin{figure}[ht]
+                         
+
+Overfull \hbox (88.23001pt too wide) in paragraph at lines 2905--2906
+ [][] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 2906--2906
+[]\T1/lmr/m/n/12 (+10) Figuur 9.26: |Parabolis-
+
+Underfull \hbox (badness 10000) in paragraph at lines 2934--2935
+[]\T1/lmr/bx/n/12 (+10) Oppervlaktebehandeling\T1/lmr/m/n/12 (+10) :
+
+Underfull \hbox (badness 2310) in paragraph at lines 2938--2939
+[]\T1/lmr/bx/n/12 (+10) Cladding\T1/lmr/m/n/12 (+10) : Een laag van
+
+Underfull \hbox (badness 1540) in paragraph at lines 2938--2939
+\T1/lmr/m/n/12 (+10) of draad) op het werk-stuk
+
+Underfull \hbox (badness 4531) in paragraph at lines 2938--2939
+\T1/lmr/m/n/12 (+10) smelten om eigen-schap-pen
+
+Underfull \hbox (badness 2221) in paragraph at lines 2939--2940
+\T1/lmr/m/n/12 (+10) te-ri-aal zelf niet smelt (sol-
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2945 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2945 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2945 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 5446) in paragraph at lines 2953--2957
+\T1/lmr/bx/n/12 (+10) Belangrijke pa-ram-e-ters bij
+
+Underfull \hbox (badness 10000) in paragraph at lines 2953--2957
+\T1/lmr/bx/n/12 (+10) Lasersmeltsnijden\T1/lmr/m/n/12 (+10) : Sni-j-gas
+
+Underfull \hbox (badness 2181) in paragraph at lines 2953--2957
+\T1/lmr/m/n/12 (+10) sneller afk-loelt en dat er geen
+
+Underfull \hbox (badness 4792) in paragraph at lines 2953--2957
+\T1/lmr/m/n/12 (+10) ox-i-datie op-treedt en kans op
+
+Underfull \hbox (badness 1681) in paragraph at lines 2953--2957
+\T1/lmr/m/n/12 (+10) in-terte at-mos-feer bren-gen zoals
+
+Underfull \hbox (badness 1178) in paragraph at lines 2960--2961
+[]\T1/lmr/m/n/12 (+10) In beide gevallen is het be-lan-
+
+Underfull \hbox (badness 3679) in paragraph at lines 2975--2976
+\T1/lmr/m/n/12 (+10) kan er een ophop-ing van
+
+Underfull \hbox (badness 1845) in paragraph at lines 2975--2976
+\T1/lmr/m/n/12 (+10) on-derkant van het sni-jvlak
+
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2978
+\T1/lmr/m/n/12 (+10) door het ma-te-ri-aal heen
+
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2978
+\T1/lmr/m/n/12 (+10) dringt, wat re-sul-teert in
+
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2978
+\T1/lmr/m/n/12 (+10) on-volledige sne-den die
+
+Underfull \hbox (badness 10000) in paragraph at lines 2977--2978
+\T1/lmr/m/n/12 (+10) op-nieuw be-w-erkt moeten
+
+Underfull \hbox (badness 10000) in paragraph at lines 2978--2979
+[]\T1/lmr/bx/n/12 (+10) Aanhechting van
+
+Underfull \hbox (badness 10000) in paragraph at lines 2978--2979
+\T1/lmr/bx/n/12 (+10) ges-molten ma-te-ri-aal\T1/lmr/m/n/12 (+10) :
+
+Underfull \hbox (badness 1694) in paragraph at lines 2978--2979
+\T1/lmr/m/n/12 (+10) Bij brand-sni-j-den aan hoge
+
+Underfull \hbox (badness 4595) in paragraph at lines 2978--2979
+\T1/lmr/m/n/12 (+10) ma-te-ri-aal aan de sni-jkant
+
+Underfull \hbox (badness 3965) in paragraph at lines 2978--2979
+\T1/lmr/m/n/12 (+10) bli-jven plakken, wat leidt
+Hoofdstuk 10.
+
+Underfull \hbox (badness 1286) in paragraph at lines 2983--2987
+\T1/lmr/m/n/12 (+10) Bij Schei-den ga je knip-pen of
+
+Underfull \hbox (badness 2452) in paragraph at lines 2983--2987
+\T1/lmr/m/n/12 (+10) pon-sen. Hi-er-bij heb je geen
+
+Underfull \hbox (badness 3049) in paragraph at lines 2983--2987
+\T1/lmr/m/n/12 (+10) spanen. Je kunt alle vorige
+
+Underfull \hbox (badness 10000) in paragraph at lines 2983--2987
+\T1/lmr/m/n/12 (+10) tech-nieken ge-bruiken om te
+
+Underfull \hbox (badness 10000) in paragraph at lines 2983--2987
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2988--2992
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2992--2997
+
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3001 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3001 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3001 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 3010--3014
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3017--3018
+[]\T1/lmr/bx/n/12 (+10) Elastische ver-vorm-ing\T1/lmr/m/n/12 (+10) :
+
+Underfull \hbox (badness 10000) in paragraph at lines 3017--3018
+\T1/lmr/m/n/12 (+10) Het ma-te-ri-aal on-der-gaat
+
+Underfull \hbox (badness 10000) in paragraph at lines 3018--3019
+[]\T1/lmr/bx/n/12 (+10) Plastische ver-vorm-ing\T1/lmr/m/n/12 (+10) :
+
+Underfull \hbox (badness 10000) in paragraph at lines 3018--3019
+\T1/lmr/m/n/12 (+10) Het ma-te-ri-aal be-gint
+
+Underfull \hbox (badness 10000) in paragraph at lines 3018--3019
+\T1/lmr/m/n/12 (+10) per-ma-nent te ver-vor-men
+
+Underfull \hbox (badness 10000) in paragraph at lines 3018--3019
+\T1/lmr/m/n/12 (+10) zo-dra de vloei-grens is
+
+Underfull \hbox (badness 1014) in paragraph at lines 3019--3020
+\T1/lmr/m/n/12 (+10) delijk bereikt het ma-te-ri-aal
+
+Underfull \hbox (badness 1546) in paragraph at lines 3026--3026
+[]\T1/lmr/m/n/12 (+10) Figuur 10.2: |Af-schuiv-ing door
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3043 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3043 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3043 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 4872) in paragraph at lines 3050--3052
+[]\T1/lmr/m/n/12 (+10) Nog voor-beelden van knip-ma-
+
+Underfull \hbox (badness 10000) in paragraph at lines 3052--3053
+[]\T1/lmr/bx/n/12 (+10) strokenschaar \T1/lmr/m/n/12 (+10) - Een
+
+Underfull \hbox (badness 10000) in paragraph at lines 3052--3053
+\T1/lmr/m/n/12 (+10) knip-ma-chine spe-ci-aal
+
+Underfull \hbox (badness 10000) in paragraph at lines 3052--3053
+\T1/lmr/m/n/12 (+10) van lang-w-er-pige stro-ken
+
+Underfull \hbox (badness 4995) in paragraph at lines 3054--3055
+[]\T1/lmr/bx/n/12 (+10) rolschaar \T1/lmr/m/n/12 (+10) - Een knip-ma-
+
+Underfull \hbox (badness 3199) in paragraph at lines 3054--3055
+\T1/lmr/m/n/12 (+10) chine die werkt met twee
+
+Underfull \hbox (badness 4492) in paragraph at lines 3054--3055
+\T1/lmr/m/n/12 (+10) tegen-over elkaar geplaat-ste,
+
+Underfull \hbox (badness 3364) in paragraph at lines 3054--3055
+\T1/lmr/m/n/12 (+10) er-door wordt een con-tinue
+
+Underfull \hbox (badness 4739) in paragraph at lines 3054--3055
+\T1/lmr/m/n/12 (+10) knipvorm-ing gecreëerd wat
+
+Underfull \hbox (badness 6978) in paragraph at lines 3054--3055
+\T1/lmr/m/n/12 (+10) bi-j-zon-der geschikt is voor
+
+Underfull \hbox (badness 4872) in paragraph at lines 3054--3055
+\T1/lmr/m/n/12 (+10) het pro-duc-eren van lange
+
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3057
+[]\T1/lmr/bx/n/12 (+10) figuurschaar \T1/lmr/m/n/12 (+10) - Een
+
+Underfull \hbox (badness 1107) in paragraph at lines 3056--3057
+\T1/lmr/m/n/12 (+10) staat om com-plexe vor-men
+
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3057
+\T1/lmr/m/n/12 (+10) en con-touren te sni-j-den.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3057
+\T1/lmr/m/n/12 (+10) CNC-gestuurd en kun-nen
+
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3057
+\T1/lmr/m/n/12 (+10) zowel rechte als gebo-gen
+
+Underfull \hbox (badness 1596) in paragraph at lines 3056--3057
+\T1/lmr/m/n/12 (+10) sne-den maken, ideaal voor
+
+Underfull \hbox (badness 10000) in paragraph at lines 3056--3057
+\T1/lmr/m/n/12 (+10) gemaakte on-derde-len en
+
+Underfull \hbox (badness 10000) in paragraph at lines 3064--3064
+[]\T1/lmr/bx/n/12 (+10) Eerste for-mule
+
+Underfull \hbox (badness 1259) in paragraph at lines 3066--3068
+\T1/lmr/m/n/12 (+10) bouw. Je hebt di-rect een in-
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3069 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3069 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3069 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 3080--3080
+[]\T1/lmr/bx/n/12 (+10) Tweede for-mule
+
+Underfull \hbox (badness 2409) in paragraph at lines 3116--3125
+\T1/lmr/m/n/12 (+10) op een lange plaat alu-minium
+
+Underfull \hbox (badness 3168) in paragraph at lines 3126--3132
+\T1/lmr/m/n/12 (+10) Met draad-vonken kun je heel
+
+Underfull \hbox (badness 10000) in paragraph at lines 3150--3152
+\T1/lmr/m/n/12 (+10) ver-schil-lende vor-men: cirkel,
+
+Underfull \hbox (badness 10000) in paragraph at lines 3150--3152
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 3161--3162
+[]\T1/lmr/bx/n/12 (+10) Polijsten\T1/lmr/m/n/12 (+10) : Fi-jnere afw-erk-
+
+Underfull \hbox (badness 1859) in paragraph at lines 3170--3174
+\T1/lmr/m/n/12 (+10) Het ma-te-ri-aal wordt ver-hit
+
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3176
+[]\T1/lmr/bx/n/12 (+10) Stralen\T1/lmr/m/n/12 (+10) : Ge-bruik van
+
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3176
+\T1/lmr/m/n/12 (+10) abrasieve deelt-jes om
+
+Underfull \hbox (badness 10000) in paragraph at lines 3175--3176
+\T1/lmr/m/n/12 (+10) ma-te-ri-aal te ver-wi-jderen
+
+Underfull \hbox (badness 7203) in paragraph at lines 3176--3177
+[]\T1/lmr/bx/n/12 (+10) Laser sni-j-den\T1/lmr/m/n/12 (+10) : Ge-bruik
+
+Underfull \hbox (badness 5771) in paragraph at lines 3177--3178
+[]\T1/lmr/bx/n/12 (+10) Waterstraalsnijden\T1/lmr/m/n/12 (+10) : Ge-
+
+Underfull \hbox (badness 7133) in paragraph at lines 3178--3180
+[]\T1/lmr/bx/n/12 (+10) Plasmasnijden\T1/lmr/m/n/12 (+10) : Ge-bruik
+
+Underfull \hbox (badness 10000) in paragraph at lines 3178--3180
+\T1/lmr/m/n/12 (+10) van een plas-ma-boog om
+
+Underfull \hbox (badness 1024) in paragraph at lines 3178--3180
+\T1/lmr/m/n/12 (+10) metaal te sni-j-den door het
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3182 \begin{table}[ht]
+                        
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3182 \begin{table}[ht]
+                        
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3182 \begin{table}[ht]
+                        
+
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 3218.
+
+
+Overfull \hbox (37.77824pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/bx/n/8 (-10) Toepassing|  
+
+Overfull \hbox (13.56868pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/bx/n/8 (-10) Voor- 
+
+Overfull \hbox (1.33417pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/bx/n/8 (-10) en 
+
+Overfull \hbox (13.038pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/bx/n/8 (-10) nade- 
+
+Overfull \hbox (4.02919pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/bx/n/8 (-10) len|  
+
+Overfull \hbox (11.01837pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat 
+
+Overfull \hbox (5.18507pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 0,2-- 
+
+Overfull \hbox (13.51534pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 10mm|  
+
+Overfull \hbox (10.20721pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) grote 
+
+Overfull \hbox (18.14833pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) lengten  
+
+Overfull \hbox (5.04749pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bra- 
+
+Overfull \hbox (6.928pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) men|  
+
+Overfull \hbox (11.01837pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat 
+
+Overfull \hbox (5.18507pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 0,2-- 
+
+Overfull \hbox (13.51534pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 10mm|  
+
+Overfull \hbox (13.56662pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) massa  
+
+Overfull \hbox (5.04749pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bra- 
+
+Overfull \hbox (6.928pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) men|  
+
+Overfull \hbox (11.01837pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat 
+
+Overfull \hbox (5.18507pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 0,2-- 
+
+Overfull \hbox (13.51534pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 10mm|  
+
+Overfull \hbox (25.24136pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) massa/kl. 
+
+Overfull \hbox (10.91077pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) prod.  
+
+Overfull \hbox (5.50833pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) con- 
+
+Overfull \hbox (15.34993pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) touren  
+
+Overfull \hbox (5.04749pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bra- 
+
+Overfull \hbox (24.93149pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) men/ruw|  
+
+Overfull \hbox (11.01837pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat 
+
+Overfull \hbox (5.18507pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 0,2-- 
+
+Overfull \hbox (9.52034pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 3mm|  
+
+Overfull \hbox (13.56662pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) massa  
+
+Overfull \hbox (12.77179pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) kleine 
+
+Overfull \hbox (10.91077pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) prod.|  
+
+Overfull \hbox (48.041pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat/buis/staf 
+
+Overfull \hbox (9.30783pt too wide) in paragraph at lines 3218--3218
+\OT1/lmr/m/n/8 (-10) 1$\T1/lmr/m/n/8 (-10) mm|  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (26.70377pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./massa  
+
+Overfull \hbox (5.04749pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bra- 
+
+Overfull \hbox (6.928pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) men|  
+
+Overfull \hbox (13.70554pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Harde 
+
+Overfull \hbox (6.68134pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) mat. 
+
+Overfull \hbox (4.30133pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) (tot 
+
+Overfull \hbox (17.21295pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 90mm)|  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (26.70377pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./massa  
+
+Overfull \hbox (5.04749pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bra- 
+
+Overfull \hbox (6.928pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) men|  
+
+Overfull \hbox (15.4557pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Platen 
+
+Overfull \hbox (4.30133pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) (tot 
+
+Overfull \hbox (16.78795pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 12mm)|  
+
+Overfull \hbox (6.92767pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) glad 
+
+Overfull \hbox (5.50833pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) con- 
+
+Overfull \hbox (6.9346pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) tour  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (10.5278pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) stuks|  
+
+Overfull \hbox (48.041pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat/buis/staf 
+
+Overfull \hbox (9.30783pt too wide) in paragraph at lines 3218--3218
+\OT1/lmr/m/n/8 (-10) 1$\T1/lmr/m/n/8 (-10) mm|  
+
+Overfull \hbox (5.74196pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) flex- 
+
+Overfull \hbox (23.05956pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bel/geen 
+
+Overfull \hbox (10.80661pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) WBZ  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (24.37346pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./series  
+
+Overfull \hbox (14.40302pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) lawaai|  
+
+Overfull \hbox (10.20029pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Staal 
+
+Overfull \hbox (19.3039pt too wide) in paragraph at lines 3218--3218
+\OT1/lmr/m/n/8 (-10) 500$\T1/lmr/m/n/8 (-10) mm, 
+
+Overfull \hbox (6.50725pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) buis|  
+
+Overfull \hbox (5.74196pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) flex- 
+
+Overfull \hbox (2.489pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bel  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (24.37346pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./series  
+
+Overfull \hbox (38.35063pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) lawaai/WBZ|  
+
+Overfull \hbox (31.76263pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Geleidende 
+
+Overfull \hbox (6.68134pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) mat. 
+
+Overfull \hbox (13.51534pt too wide) in paragraph at lines 3218--3218
+\OT1/lmr/m/n/8 (-10) 10$\T1/lmr/m/n/8 (-10) mm|  
+
+Overfull \hbox (5.74196pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) flex- 
+
+Overfull \hbox (2.489pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bel  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (24.37346pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./series  
+
+Overfull \hbox (10.80661pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) WBZ|  
+
+Overfull \hbox (50.09195pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Plaat/buis/prof. 
+
+Overfull \hbox (9.73283pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) 5mm|  
+
+Overfull \hbox (5.74196pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) flex- 
+
+Overfull \hbox (38.48476pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bel/kwaliteit  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (24.37346pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./series  
+
+Overfull \hbox (12.77179pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) kleine 
+
+Overfull \hbox (10.80661pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) WBZ|  
+
+Overfull \hbox (13.70554pt too wide) in paragraph at lines 3218--3218
+[]|\T1/lmr/m/n/8 (-10) Harde 
+
+Overfull \hbox (9.24855pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) gelei- 
+
+Overfull \hbox (13.00577pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) dende 
+
+Overfull \hbox (8.33034pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) mat.|  
+
+Overfull \hbox (5.74196pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) flex- 
+
+Overfull \hbox (2.489pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) bel  
+
+Overfull \hbox (5.04501pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) enk. 
+
+Overfull \hbox (24.37346pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) st./series  
+
+Overfull \hbox (23.28825pt too wide) in paragraph at lines 3218--3218
+\T1/lmr/m/n/8 (-10) kwaliteit|  
+
+Overfull \hbox (30.57701pt too wide) in alignment at lines 3218--3218
+[][][][][][] 
+
+Underfull \hbox (badness 1147) in paragraph at lines 3221--3223
+[]\T1/lmr/m/n/12 (+10) Deze tabel is enorm be-lan-grijk
+
+Underfull \hbox (badness 5696) in paragraph at lines 3224--3226
+[]\T1/lmr/m/n/12 (+10) Je ziet dat enorm veel tech-
+Hoofdstuk 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3227--3227
+|[]\T1/lmr/bx/n/20.74 (+10) Oervormen
+
+Underfull \hbox (badness 1448) in paragraph at lines 3227--3227
+\T1/lmr/bx/n/20.74 (+10) (Gi-eten van
+Hoofdstuk 12.
+
+Overfull \hbox (19.82399pt too wide) in paragraph at lines 3232--3232
+|[]\T1/lmr/bx/n/20.74 (-10) Automatiseren
+
+Underfull \hbox (badness 10000) in paragraph at lines 3232--3232
+\T1/lmr/bx/n/20.74 (+10) & ma-
+Hoofdstuk 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3234--3234
+|[]\T1/lmr/bx/n/20.74 (+10) Productie
+
+Underfull \hbox (badness 10000) in paragraph at lines 3234--3234
+\T1/lmr/bx/n/20.74 (+10) werkvoor-
+
+Underfull \hbox (badness 5756) in paragraph at lines 3236--3237
+\T1/lmr/m/n/12 (+10) Werkvoorbereiding is de brug
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3238 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3238 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3238 \begin{figure}[ht]
+                         
+
+Overfull \hbox (5.91519pt too wide) in paragraph at lines 3263--3264
+ [][] 
+Hoofdstuk 14.
+
+Overfull \hbox (38.70769pt too wide) in paragraph at lines 3268--3268
+|[]\T1/lmr/bx/n/20.74 (-10) Productiegericht
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3272 \begin{figure}[ht]
+                         
+! Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3272 \begin{figure}[ht]
+                         
+! Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3272 \begin{figure}[ht]
+                         
+
+Overfull \hbox (91.1316pt too wide) in paragraph at lines 3297--3298
+ [][] 
+
+! LaTeX Error: \begin{tcb@savebox} on input line 1922 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3305 \end{document}
+                     
+(./ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+! You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.3305 \end{document}
+                     
+
+! LaTeX Error: \begin{tcb@savebox} on input line 1922 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3305 \end{document}
+                     
+)
+! Emergency stop.
+<*> ...eTechnologie-Samenvatting-RubenRyckaert.tex
+                                                  
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on ProductieTechnologie-Samenvatting-RubenRyckaert.log.

@@ -1,0 +1,1525 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/tools/TinyTeX/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(c:/tools/TinyTeX/texmf-dist/tex/latex/base/size12.clo)) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/babel.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Dutch' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 49.
+
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg)) (c:/tools/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex))) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/environ/environ.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/float/float.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty))) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def) (c:/tools/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def) (c:/tools/TinyTeX/texmf-dist/tex/latex/url/url.sty) (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def (c:/tools/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty))) (c:/tools/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-pdftex.def)) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/mhchem/mhchem.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)) (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(c:/tools/TinyTeX/texmf-dist/tex/latex/tools/calc.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/chemgreek/chemgreek.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty))) (./productie-macros.sty
+
+LaTeX Warning: You have requested package `./productie-macros',
+               but the package provides `productie-macros'.
+
+
+LaTeX Warning: You have requested package `./productie-macros',
+               but the package provides `productie-macros'.
+
+(c:/tools/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex))) (c:/tools/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/array.sty)) (c:/tools/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/cleveref/cleveref.sty)
+==> First Aid for cleveref.sty applied!
+(c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/flafter.sty) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd) (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+Package productie-macros Warning: If you see ``No hyphenation patterns were preloaded for the language "Dutch"'' please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr). on input line 162.
+
+(c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg) [1{c:/tools/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] (./ProductieTechnologie-Samenvatting-RubenRyckaert.toc)
+Hoofdstuk 1.
+[2{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd)
+
+Package microtype Warning: I cannot find a spacing list for font
+(microtype)                `TS1/lmr/m/n/12' (context: `nonfrench'). Switching off
+(microtype)                spacing for this font on input line 188.
+
+[3{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./straalbewerkingen.png>] [4] [5 <./image1.png> <./image2.png> <./image3.png> <./image5.png>]
+Hoofdstuk 2.
+[6 <./image6.png> <./image7.png> <./image9.png>]
+Hoofdstuk 3.
+[7] [8 <./image10.png> <./image11.png>]
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:429: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.429 	E
+        XAMEN: Ken de drie belangrijkste hoeken ($\gamma$, $\beta$, $\alpha$...
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:429: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.429 	E
+        XAMEN: Ken de drie belangrijkste hoeken ($\gamma$, $\beta$, $\alpha$...
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 429.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:473: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.473 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:473: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.473 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:473: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.473 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:495: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.495 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:495: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.495 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:495: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.495 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:559: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.559 		      E
+               XAMEN: BUE is een veelvoorkomende vraag. Ken de 3 preventiema...
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:559: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.559 		      E
+               XAMEN: BUE is een veelvoorkomende vraag. Ken de 3 preventiema...
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:569: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569 		      V
+               erspanen genereert veel warmte (tot 800--900°C). Zonder koel...
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:569: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.569 		      V
+               erspanen genereert veel warmte (tot 800--900°C). Zonder koel...
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:587: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.587 	      \begin{figure}[ht]
+                               
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:587: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.587 	      \begin{figure}[ht]
+                               
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:587: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.587 	      \begin{figure}[ht]
+                               
+
+Underfull \hbox (badness 1783) in paragraph at lines 612--613
+[]\T1/lmr/m/n/12 (+10) Kerfslijtage: door her-haalde span-ningscon-cen-traties bij het vr-li-
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:618: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.618 ...   \autofig[0.5\textwidth]{image23.png}{}
+                                                  
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:618: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.618 ...   \autofig[0.5\textwidth]{image23.png}{}
+                                                  
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:618: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.618 ...   \autofig[0.5\textwidth]{image23.png}{}
+                                                  
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:634: LaTeX Error: \begin{tcb@savebox} on input line 540 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.634 \end{itemize}
+                   
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:641: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.641 	\centering
+                 
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:641: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.641 	\centering
+                 
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:641: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.641 	\centering
+                 
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:664: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.664 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:664: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.664 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:664: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.664 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:676: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.676 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:676: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.676 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:676: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.676 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:692: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.692 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:692: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.692 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:692: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.692 \begin{figure}[ht]
+                        
+
+LaTeX Warning: Reference `chap:Verspanen_Draaien' on page 9 undefined on input line 723.
+
+
+LaTeX Warning: Reference `chap:Verspanen_Frezen' on page 9 undefined on input line 723.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:726: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.726 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:726: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.726 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:726: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.726 \begin{figure}[ht]
+                        
+Hoofdstuk 4.
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:756: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.756 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:756: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.756 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:756: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.756 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:855: LaTeX Error: Unicode character ⚠ (U+26A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.855 	B
+        ELANGRIJK: Hij kan lege figuren geven op het examen en jij moet effe...
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:855: LaTeX Error: Unicode character ️ (U+FE0F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.855 	B
+        ELANGRIJK: Hij kan lege figuren geven op het examen en jij moet effe...
+
+LaTeX Warning: Reference `fig:invloed_voeding_draaien' on page 9 undefined on input line 855.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:898: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.898 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:898: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.898 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:898: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.898 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:910: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.910 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:910: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.910 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:910: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.910 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:920: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.920 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:920: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.920 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:920: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.920 \begin{figure}[ht]
+                        
+
+Underfull \hbox (badness 10000) in paragraph at lines 966--969
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:970: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.970 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:970: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.970 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:970: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.970 \begin{figure}[ht]
+                        
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:982: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.982 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:982: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.982 \begin{figure}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:982: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.982 \begin{figure}[ht]
+                        
+
+Underfull \hbox (badness 10000) in paragraph at lines 988--991
+
+Hoofdstuk 5.
+
+LaTeX Warning: Reference `frm:10' on page 9 undefined on input line 1036.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1038: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1038 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1038: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1038 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1038: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1038 \begin{figure}[ht]
+                         
+
+LaTeX Warning: Reference `frm:10' on page 9 undefined on input line 1061.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1076: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1076 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1076: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1076 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1076: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1076 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1317: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1317 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1317: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1317 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1317: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1317 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1379: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1379 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1379: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1379 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1379: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1379 \begin{figure}[ht]
+                         
+
+LaTeX Warning: Reference `chap:Verspanen_Frezen' on page 9 undefined on input line 1387.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1393: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1393 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1393: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1393 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1393: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1393 \begin{table}[ht]
+                        
+
+Underfull \hbox (badness 10000) in paragraph at lines 1407--1407
+[]|\T1/lmr/bx/n/12 (+10) Tap[]boring
+Hoofdstuk 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1479
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1499: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1499 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1499: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1499 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1499: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1499 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1550--1555
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1579: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1579 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1579: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1579 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1579: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1579 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1586: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1586 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1586: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1586 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1586: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1586 \begin{table}[ht]
+                        
+
+Underfull \hbox (badness 4072) in paragraph at lines 1610--1610
+[]|$\OML/lmm/m/it/12 F[]$ \T1/lmr/m/n/12 (+10) trekt werk-stuk naar
+
+Underfull \hbox (badness 1048) in paragraph at lines 1610--1610
+[]|\T1/lmr/m/n/12 (+10) Geen com-pen-satie nodig;
+
+Underfull \hbox (badness 2359) in paragraph at lines 1610--1610
+[]|\T1/lmr/m/n/12 (+10) Neiging tot klap-peren /
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1642: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1642 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1642: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1642 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1642: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1642 \begin{figure}[ht]
+                         
+Hoofdstuk 7.
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1664: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1664 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1664: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1664 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1664: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1664 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1678
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1680: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1680 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1680: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1680 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1680: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1680 \begin{figure}[ht]
+                         
+
+Package microtype Warning: I cannot find a spacing list for font
+(microtype)                `TS1/lmr/bx/n/12' (context: `nonfrench'). Switching off
+(microtype)                spacing for this font on input line 1771.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1837: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1837 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1837: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1837 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1837: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1837 \begin{figure}[ht]
+                         
+Hoofdstuk 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1896--1898
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1899: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1899 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1899: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1899 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1899: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1899 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1906--1909
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 1920--1921
+[]\T1/lmr/bx/n/12 (+10) Oppervlaktekwaliteit\T1/lmr/m/n/12 (+10) : Sli-jpen kan zeer fi-jne op-per-vlak-teafw-erkin-gen
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1937: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1937 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1937: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1937 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1937: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1937 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1948
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1956--1963
+\T1/lmr/m/n/12 (+10) De hard-heid is de sterkte van de ko-r-rels. De sli-jpver-houd-ing $\OML/lmm/m/it/12 G$ \T1/lmr/m/n/12 (+10) =
+
+Overfull \hbox (570.61156pt too wide) in paragraph at lines 1964--1968
+[] 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1970--1975
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1980: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1980 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1980: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.1980 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:1980: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.1980 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2011: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2011 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2011: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2011 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2011: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2011 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2018--2021
+
+Hoofdstuk 9.
+
+Underfull \hbox (badness 2134) in paragraph at lines 2042--2042
+|[]\T1/lmr/bx/n/20.74 (+10) Fysische, Chemis-che afne-mende be-w-
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2053: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2053 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2053: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2053 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2053: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2053 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2060: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2060 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2060: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2060 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2060: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2060 \begin{figure}[ht]
+                         
+
+LaTeX Warning: Reference `fig:vonkerosie_proces.png' on page 1 undefined on input line 2112.
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2120: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2120 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2120: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2120 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2120: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2120 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2155: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2155 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2155: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2155 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2155: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2155 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2165: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2165 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2165: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2165 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2165: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2165 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2235: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2235 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2235: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2235 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2235: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2235 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2257: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2257 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2257: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2257 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2257: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2257 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2277: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2277 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2277: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2277 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2277: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2277 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2288: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2288 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2288: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2288 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2288: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2288 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2309: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2309 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2309: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2309 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2309: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2309 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2317: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2317 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2317: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2317 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2317: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2317 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2331--2333
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2334--2343
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2344--2346
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2367: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2367 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2367: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2367 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2367: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2367 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2375--2392
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2393: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2393 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2393: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2393 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2393: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2393 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2431--2436
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2499
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2531--2533
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2545: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2545 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2545: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2545 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2545: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2545 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2560: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2560 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2560: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2560 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2560: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2560 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2570: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2570 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2570: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2570 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2570: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2570 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2592--2598
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2604: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2604 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2604: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2604 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2604: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2604 \begin{table}[ht]
+                        
+
+Underfull \hbox (badness 10000) in paragraph at lines 2624--2624
+[]|\T1/lmr/m/n/12 (+10) Waterstraalsnijden
+
+Underfull \hbox (badness 3965) in paragraph at lines 2624--2624
+\T1/lmr/m/n/12 (+10) te-ri-alen (metaal, glas,
+
+Underfull \hbox (badness 10000) in paragraph at lines 2624--2624
+[]|\T1/lmr/m/n/12 (+10) Laserstraalbewerking
+
+Overfull \hbox (8.81874pt too wide) in paragraph at lines 2624--2624
+[]|\T1/lmr/m/n/12 (-10) Elektronenstraalbewerking
+
+Underfull \hbox (badness 1320) in paragraph at lines 2624--2624
+[]|\T1/lmr/m/n/12 (+10) Zeer nauwkeurig boren
+
+Underfull \hbox (badness 10000) in paragraph at lines 2624--2624
+[]|\T1/lmr/m/n/12 (+10) Ionenstraalbewerking
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2654: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2654 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2654: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2654 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2654: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2654 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2666--2668
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2709: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2709 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2709: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2709 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2709: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2709 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2756--2762
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2763: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2763 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2763: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2763 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2763: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2763 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2772--2775
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2778: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2778 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2778: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2778 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2778: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2778 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2796: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2796 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2796: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2796 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2796: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2796 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2811: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2811 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2811: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2811 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2811: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2811 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2873: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2873 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2873: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2873 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2873: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2873 \begin{figure}[ht]
+                         
+Hoofdstuk 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2911--2915
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2916--2920
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2920--2925
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2929: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2929 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2929: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2929 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2929: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2929 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 2938--2942
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2971: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2971 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2971: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2971 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2971: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2971 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2997: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2997 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2997: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.2997 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:2997: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.2997 \begin{figure}[ht]
+                         
+
+Underfull \hbox (badness 10000) in paragraph at lines 3078--3080
+
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3110: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3110 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3110: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3110 \begin{table}[ht]
+                        
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3110: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3110 \begin{table}[ht]
+                        
+Hoofdstuk 11.
+Hoofdstuk 12.
+Hoofdstuk 13.
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3166: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3166 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3166: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3166 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3166: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3166 \begin{figure}[ht]
+                         
+Hoofdstuk 14.
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3200: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3200 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3200: Undefined control sequence.
+\latex@xfloat ...vf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+l.3200 \begin{figure}[ht]
+                         
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3200: Missing number, treated as zero.
+<to be read again> 
+                   \vbox 
+l.3200 \begin{figure}[ht]
+                         
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3233: LaTeX Error: \begin{tcb@savebox} on input line 540 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3233 \end{document}
+                     
+(./ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3233: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.3233 \end{document}
+                     
+
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3233: LaTeX Error: \begin{tcb@savebox} on input line 540 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3233 \end{document}
+                     
+./ProductieTechnologie-Samenvatting-RubenRyckaert.tex:3233: Missing } inserted.
+<inserted text> 
+                }
+l.3233 \end{document}
+                     
+)
+! Emergency stop.
+<*> ...eTechnologie-Samenvatting-RubenRyckaert.tex
+                                                  
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on ProductieTechnologie-Samenvatting-RubenRyckaert.log.

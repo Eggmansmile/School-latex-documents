@@ -1,7 +1,7 @@
 INFO:  ANSI Code Page: 1252
 INFO:  latexindent.exe version 3.24.7, 2025-08-15, a script to indent .tex files
        latexindent.exe lives here: C:/tools/TinyTeX/bin/windows/
-       Mon Dec 22 22:22:31 2025
+       Tue Dec 23 01:16:48 2025
        Filename: C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.tex
 INFO:  Processing switches:
        -s|--silent: Silent mode active (you have used either -s or --silent)
@@ -21,7 +21,58 @@ INFO:  Backup procedure (-w flag active):
        C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak1 already exists, incrementing by 1 (see maxNumberOfBackUps)
        C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak2 already exists, incrementing by 1 (see maxNumberOfBackUps)
        C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak3 already exists, incrementing by 1 (see maxNumberOfBackUps)
-       Backing up C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.tex to C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak4...
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak4 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak5 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak6 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak7 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak8 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak9 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak10 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak11 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak12 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak13 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak14 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak15 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak16 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak17 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak18 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak19 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak20 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak21 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak22 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak23 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak24 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak25 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak26 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak27 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak28 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak29 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak30 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak31 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak32 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak33 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak34 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak35 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak36 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak37 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak38 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak39 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak40 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak41 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak42 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak43 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak44 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak45 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak46 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak47 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak48 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak49 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak50 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak51 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak52 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak53 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak54 already exists, incrementing by 1 (see maxNumberOfBackUps)
+       Backing up C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.tex to C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.bak55...
        C:\Users\ruben\OneDrive\Documents\Latex document\School-latex-documents\Productietechnologie\ProductieTechnologie-Samenvatting-RubenRyckaert.tex will be overwritten after indentation
 INFO:  Phase 1: searching for objects
 INFO:  Phase 2: finding surrounding indentation

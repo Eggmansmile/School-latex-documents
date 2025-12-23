@@ -147,6 +147,59 @@
 % Provide simple alias for tufte/classic to override box colors
 \newcommand{\setfrmcolors}[2]{\renewcommand{\frmBoxBack}{#1}\renewcommand{\frmBoxFrame}{#2}}
 
+% ==================== EMPHASIS BOXES ====================
+
+% Exam tip - compact version
+\newenvironment{examenbox}[1][]{%
+  \par\vspace{0.5\baselineskip}
+  \noindent\keyterm{EXAMENTIP:} \itshape
+}{%
+  \par\vspace{0.5\baselineskip}
+}
+
+% Concept definition box - for key terminology
+\newtcolorbox{conceptbox}[1][]{%
+  colback=gray!5,
+  colframe=blue!40!black,
+  boxrule=0.2pt, % Very thin frame
+  leftrule=3pt,  % Colored accent on the left
+  arc=1pt,
+  boxsep=4pt,
+  fonttitle=\bfseries,
+  coltitle=white, % Changed from blue!40!black to white for visibility
+  #1
+}
+
+% Process step box - for sequential procedures
+\newtcolorbox{procesbox}[1][]{%
+  colback=blue!5,
+  colframe=blue!50!black,
+  boxrule=0.5pt,
+  leftrule=3pt,
+  arc=2pt,
+  boxsep=4pt,
+  fonttitle=\bfseries,
+  coltitle=white, % Ensure visibility
+  #1
+}
+
+% Inline highlight for key terms
+\newcommand{\keyterm}[1]{\textbf{\color{blue!70!black}#1}}
+
+% Warning box for important warnings
+\newtcolorbox{warningbox}[1][]{%
+  colback=red!5,
+  colframe=red!60!black,
+  boxrule=0.5pt,
+  leftrule=3pt,
+  arc=2pt,
+  boxsep=4pt,
+  fonttitle=\bfseries,
+  coltitle=white, % Ensure visibility
+  title={BELANGRIJK},
+  #1
+}
+
 % End of package
 
 
