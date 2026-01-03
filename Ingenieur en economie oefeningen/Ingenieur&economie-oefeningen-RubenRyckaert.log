@@ -1,0 +1,1570 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  3 JAN 2026 22:21
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Ingenieur&economie-oefeningen-RubenRyckaert
+(./Ingenieur&economie-oefeningen-RubenRyckaert.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+(c:/tools/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/tools/TinyTeX/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (./school-macros.sty
+Package: school-macros 2026/01/02 Unified School Macros
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count283
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+\U@D=\dimen149
+\l@unhyphenated=\language3
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count284
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex)
+Package babel Info: Importing font and identification data for dutch
+(babel)             from babel-nl.ini. Reported on input line 4320.
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
+
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Dutch' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 49.
+
+Package babel Info: Hyphen rules for 'dutch' set to \l@english
+(babel)             (\language0). Reported on input line 51.
+Package babel Info: Making " an active character on input line 127.
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen150
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count285
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count286
+\leftroot@=\count287
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count288
+\DOTSCASE@=\count289
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count290
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count291
+\dotsspace@=\muskip17
+\c@parentequation=\count292
+\dspbrk@lvl=\count293
+\tag@help=\toks20
+\row@=\count294
+\column@=\count295
+\maxfields@=\count296
+\andhelp@=\toks21
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks29
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count297
+)
+\MT@toks=\toks31
+\MT@tempbox=\box55
+\MT@count=\count298
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks32
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen159
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count299
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip57
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen162
+\ar@mcellbox=\box56
+\extrarowheight=\dimen163
+\NC@list=\toks33
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box57
+)
+\TX@col@width=\dimen164
+\TX@old@table=\dimen165
+\TX@old@col=\dimen166
+\TX@target=\dimen167
+\TX@delta=\dimen168
+\TX@cols=\count300
+\TX@ftn=\toks34
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen169
+\pgfutil@tempdimb=\dimen170
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box58
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen171
+\pgf@y=\dimen172
+\pgf@xa=\dimen173
+\pgf@ya=\dimen174
+\pgf@xb=\dimen175
+\pgf@yb=\dimen176
+\pgf@xc=\dimen177
+\pgf@yc=\dimen178
+\pgf@xd=\dimen179
+\pgf@yd=\dimen180
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count301
+\c@pgf@countb=\count302
+\c@pgf@countc=\count303
+\c@pgf@countd=\count304
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count305
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count306
+\pgfsyssoftpath@bigbuffer@items=\count307
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen181
+\pgfmath@count=\count308
+\pgfmath@box=\box59
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count309
+)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen182
+\pgf@picmaxx=\dimen183
+\pgf@picminy=\dimen184
+\pgf@picmaxy=\dimen185
+\pgf@pathminx=\dimen186
+\pgf@pathmaxx=\dimen187
+\pgf@pathminy=\dimen188
+\pgf@pathmaxy=\dimen189
+\pgf@xx=\dimen190
+\pgf@xy=\dimen191
+\pgf@yx=\dimen192
+\pgf@yy=\dimen193
+\pgf@zx=\dimen194
+\pgf@zy=\dimen195
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen196
+\pgf@path@lasty=\dimen197
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen198
+\pgf@shorten@start@additional=\dimen199
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count310
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen256
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen257
+\pgf@pt@y=\dimen258
+\pgf@pt@temp=\dimen259
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen260
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen261
+\pgf@sys@shading@range@num=\count311
+\pgf@shadingcount=\count312
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box63
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box64
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen262
+\pgf@nodesepend=\dimen263
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen264
+\pgffor@skip=\dimen265
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count313
+\pgfplotmarksize=\dimen266
+)
+\tikz@lastx=\dimen267
+\tikz@lasty=\dimen268
+\tikz@lastxsaved=\dimen269
+\tikz@lastysaved=\dimen270
+\tikz@lastmovetox=\dimen271
+\tikz@lastmovetoy=\dimen272
+\tikzleveldistance=\dimen273
+\tikzsiblingdistance=\dimen274
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count314
+\tikznumberofchildren=\count315
+\tikznumberofcurrentchild=\count316
+\tikz@fig@count=\count317
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count318
+\pgfmatrixcurrentcolumn=\count319
+\pgf@matrix@numberofcolumns=\count320
+)
+\tikz@expandcount=\count321
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks47
+\verbatim@line=\toks48
+\verbatim@in@stream=\read4
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box69
+\tcb@upperbox=\box70
+\tcb@lowerbox=\box71
+\tcb@phantombox=\box72
+\c@tcbbreakpart=\count322
+\c@tcblayer=\count323
+\c@tcolorbox@number=\count324
+\l__tcobox_tmpa_box=\box73
+\l__tcobox_tmpa_dim=\dimen275
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen276
+\captionmargin=\dimen277
+\caption@leftmargin=\dimen278
+\caption@rightmargin=\dimen279
+\caption@width=\dimen280
+\caption@indent=\dimen281
+\caption@parindent=\dimen282
+\caption@hangindent=\dimen283
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count325
+\c@continuedfloat=\count326
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count327
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count328
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen284
+\lightrulewidth=\dimen285
+\cmidrulewidth=\dimen286
+\belowrulesep=\dimen287
+\belowbottomsep=\dimen288
+\aboverulesep=\dimen289
+\abovetopsep=\dimen290
+\cmidrulesep=\dimen291
+\cmidrulekern=\dimen292
+\defaultaddspace=\dimen293
+\@cmidla=\count329
+\@cmidlb=\count330
+\@aboverulesep=\dimen294
+\@belowrulesep=\dimen295
+\@thisruleclass=\count331
+\@lastruleclass=\count332
+\@thisrulewidth=\dimen296
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip60
+\enit@outerparindent=\dimen297
+\enit@toks=\toks49
+\enit@inbox=\box78
+\enit@count@id=\count333
+\enitdp@description=\count334
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count335
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen298
+\Hy@linkcounter=\count336
+\Hy@pagecounter=\count337
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count338
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count339
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen299
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count340
+\Field@Width=\dimen300
+\Fld@charsize=\dimen301
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count341
+\c@Item=\count342
+\c@Hfootnote=\count343
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count344
+\c@bookmark@seq@number=\count345
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip61
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip62
+\f@nch@offset@elh=\skip63
+\f@nch@offset@erh=\skip64
+\f@nch@offset@olh=\skip65
+\f@nch@offset@orh=\skip66
+\f@nch@offset@elf=\skip67
+\f@nch@offset@erf=\skip68
+\f@nch@offset@olf=\skip69
+\f@nch@offset@orf=\skip70
+\f@nch@height=\skip71
+\f@nch@footalignment=\skip72
+\f@nch@widthL=\skip73
+\f@nch@widthC=\skip74
+\f@nch@widthR=\skip75
+\@temptokenb=\toks50
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count346
+\Gm@cntv=\count347
+\c@Gm@tempcnt=\count348
+\Gm@bindingoffset=\dimen302
+\Gm@wd@mp=\dimen303
+\Gm@odd@mp=\dimen304
+\Gm@even@mp=\dimen305
+\Gm@layoutwidth=\dimen306
+\Gm@layoutheight=\dimen307
+\Gm@layouthoffset=\dimen308
+\Gm@layoutvoffset=\dimen309
+\Gm@dimlist=\toks51
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box79
+\beforetitleunit=\skip76
+\aftertitleunit=\skip77
+\ttl@plus=\dimen310
+\ttl@minus=\dimen311
+\ttl@toksa=\toks52
+\titlewidth=\dimen312
+\titlewidthlast=\dimen313
+\titlewidthfirst=\dimen314
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count349
+\float@exts=\toks53
+\float@box=\box80
+\@float@everytoks=\toks54
+\@floatcapt=\box81
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count350
+\lst@gtempboxa=\box82
+\lst@token=\toks55
+\lst@length=\count351
+\lst@currlwidth=\dimen315
+\lst@column=\count352
+\lst@pos=\count353
+\lst@lostspace=\dimen316
+\lst@width=\dimen317
+\lst@newlines=\count354
+\lst@lineno=\count355
+\lst@maxwidth=\dimen318
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count356
+\lst@skipnumbers=\count357
+\lst@framebox=\box83
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(c:/tools/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count358
+\mult@box=\box84
+\multicol@leftmargin=\dimen319
+\c@unbalance=\count359
+\c@collectmore=\count360
+\doublecol@number=\count361
+\multicoltolerance=\count362
+\multicolpretolerance=\count363
+\full@width=\dimen320
+\page@free=\dimen321
+\premulticols=\dimen322
+\postmulticols=\dimen323
+\multicolsep=\skip78
+\multicolbaselineskip=\skip79
+\partial@page=\box85
+\last@line=\box86
+\mc@boxedresult=\box87
+\maxbalancingoverflow=\dimen324
+\mult@rightbox=\box88
+\mult@grightbox=\box89
+\mult@firstbox=\box90
+\mult@gfirstbox=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\c@minrows=\count364
+\c@columnbadness=\count365
+\c@finalcolumnbadness=\count366
+\last@try=\dimen325
+\multicolovershoot=\dimen326
+\multicolundershoot=\dimen327
+\mult@nat@firstbox=\box128
+\colbreak@box=\box129
+\mc@col@check@num=\count367
+\g__mc_curr_col_int=\count368
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-11-14 L3 programming layer (loader) 
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count369
+)) (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count370
+\calc@Bcount=\count371
+\calc@Adimen=\dimen328
+\calc@Bdimen=\dimen329
+\calc@Askip=\skip80
+\calc@Bskip=\skip81
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count372
+\calc@Cskip=\skip82
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/chemgreek/chemgreek.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
+\l__chemgreek_tmpa_int=\count373
+\g__chemgreek_tmpa_int=\count374
+)
+\l__mhchem_ce_distanceFromLastComma_int=\count375
+\__mhchem_arrow_extPgfLength_skip=\skip83
+\mhchem@minispace@tmp=\skip84
+\mhchem@minibackspace@tmp=\skip85
+\mhchem@bondwidth=\skip86
+\mhchem@bondheight=\skip87
+\mhchem@smallbondwidth@tmpA=\skip88
+\mhchem@smallbondwidth@tmpB=\skip89
+\mhchem@smallbondwidth=\skip90
+\mhchem@bondtmp@minussidebearingleft=\skip91
+\mhchem@bondtmp@minussidebearingright=\skip92
+\l__mhchem_option_version_int=\count376
+\mhchem@option@minusmathsidebearingleft=\dimen330
+\mhchem@option@minusmathsidebearingright=\dimen331
+\mhchem@option@minustextsidebearingleft=\dimen332
+\mhchem@option@minustextsidebearingright=\dimen333
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgfplots/pgfplots.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks56
+\t@pgfplots@tokb=\toks57
+\t@pgfplots@tokc=\toks58
+\pgfplots@tmpa=\dimen334
+\c@pgfplots@coordindex=\count377
+\c@pgfplots@scanlineindex=\count378
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count379
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count380
+\t@pgfplotstable@a=\toks59
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count381
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen335
+\pgfdecoratedremainingdistance=\dimen336
+\pgfdecoratedinputsegmentcompleteddistance=\dimen337
+\pgfdecoratedinputsegmentremainingdistance=\dimen338
+\pgf@decorate@distancetomove=\dimen339
+\pgf@decorate@repeatstate=\count382
+\pgfdecorationsegmentamplitude=\dimen340
+\pgfdecorationsegmentlength=\dimen341
+)
+\tikz@lib@dec@box=\box130
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count383
+\pgfplots@xmin@reg=\dimen342
+\pgfplots@xmax@reg=\dimen343
+\pgfplots@ymin@reg=\dimen344
+\pgfplots@ymax@reg=\dimen345
+\pgfplots@zmin@reg=\dimen346
+\pgfplots@zmax@reg=\dimen347
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowinset=\dimen348
+\pgfarrowlength=\dimen349
+\pgfarrowwidth=\dimen350
+\pgfarrowlinewidth=\dimen351
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+\c@FormulariumEntryCounter=\count384
+\c@stelling=\count385
+\c@definitie=\count386
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count387
+\l__siunitx_number_exponent_fixed_int=\count388
+\l__siunitx_number_min_decimal_int=\count389
+\l__siunitx_number_min_integer_int=\count390
+\l__siunitx_number_round_precision_int=\count391
+\l__siunitx_number_lower_threshold_int=\count392
+\l__siunitx_number_upper_threshold_int=\count393
+\l__siunitx_number_group_first_int=\count394
+\l__siunitx_number_group_size_int=\count395
+\l__siunitx_number_group_minimum_int=\count396
+\l__siunitx_angle_tmp_dim=\dimen352
+\l__siunitx_angle_marker_box=\box131
+\l__siunitx_angle_unit_box=\box132
+\l__siunitx_compound_count_int=\count397
+\l__siunitx_table_tmp_box=\box133
+\l__siunitx_table_tmp_dim=\dimen353
+\l__siunitx_table_column_width_dim=\dimen354
+\l__siunitx_table_integer_box=\box134
+\l__siunitx_table_decimal_box=\box135
+\l__siunitx_table_uncert_box=\box136
+\l__siunitx_table_before_box=\box137
+\l__siunitx_table_after_box=\box138
+\l__siunitx_table_before_dim=\dimen355
+\l__siunitx_table_carry_dim=\dimen356
+\l__siunitx_unit_tmp_int=\count398
+\l__siunitx_unit_position_int=\count399
+\l__siunitx_unit_total_int=\count400
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen357
+\ESO@tempdimb=\dimen358
+)
+\AM@pagewidth=\dimen359
+\AM@pageheight=\dimen360
+\AM@fboxrule=\dimen361
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count401
+\AM@pagebox=\box139
+\AM@global@opts=\toks60
+\AM@pagecnt=\count402
+\AM@toc@title=\toks61
+\AM@lof@heading=\toks62
+\c@AM@survey=\count403
+\AM@templatesizebox=\box140
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 15.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./Ingenieur&economie-oefeningen-RubenRyckaert.aux
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported on input line 8.
+
+
+LaTeX Warning: Label `fig:breakeven' multiply defined.
+
+)
+\openout1 = `Ingenieur&economie-oefeningen-RubenRyckaert.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \microtypecontext on input line 15.
+Package microtype Info: Applying patch `item' on input line 15.
+Package microtype Info: Applying patch `toc' on input line 15.
+Package microtype Info: Applying patch `eqnum' on input line 15.
+Package microtype Info: Applying patch `footnote' on input line 15.
+Package microtype Info: Applying patch `verbatim' on input line 15.
+LaTeX Info: Redefining \microtypesetup on input line 15.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 15.
+ (./Ingenieur&economie-oefeningen-RubenRyckaert.out) (./Ingenieur&economie-oefeningen-RubenRyckaert.out)
+\@outlinefile=\write4
+\openout4 = `Ingenieur&economie-oefeningen-RubenRyckaert.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count404
+
+Package chemgreek Info: Activating mapping `default' on line 15.
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(c:/tools/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 18.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 18.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 18.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 18.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 18.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) (./Ingenieur&economie-oefeningen-RubenRyckaert.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 3.
+ [1
+
+{c:/tools/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}])
+\tf@toc=\write5
+\openout5 = `Ingenieur&economie-oefeningen-RubenRyckaert.toc'.
+
+<Formularium Ingenieur en Economie.pdf, id=263, 597.55246pt x 845.07718pt>
+File: Formularium Ingenieur en Economie.pdf Graphic file (type pdf)
+<use Formularium Ingenieur en Economie.pdf>
+Package pdftex.def Info: Formularium Ingenieur en Economie.pdf  used on input line 19.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<Formularium Ingenieur en Economie.pdf, id=265, page=1, 597.55246pt x 845.07718pt>
+File: Formularium Ingenieur en Economie.pdf Graphic file (type pdf)
+<use Formularium Ingenieur en Economie.pdf, page 1>
+Package pdftex.def Info: Formularium Ingenieur en Economie.pdf , page1 used on input line 19.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: Formularium Ingenieur en Economie.pdf Graphic file (type pdf)
+<use Formularium Ingenieur en Economie.pdf, page 1>
+Package pdftex.def Info: Formularium Ingenieur en Economie.pdf , page1 used on input line 19.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+Package babel Info: 'dutch' activates 'dutch' shorthands.
+(babel)             Reported on input line 19.
+ [2]
+File: Formularium Ingenieur en Economie.pdf Graphic file (type pdf)
+<use Formularium Ingenieur en Economie.pdf, page 1>
+Package pdftex.def Info: Formularium Ingenieur en Economie.pdf , page1 used on input line 19.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Formularium Ingenieur en Economie.pdf Graphic file (type pdf)
+<use Formularium Ingenieur en Economie.pdf, page 1>
+Package pdftex.def Info: Formularium Ingenieur en Economie.pdf , page1 used on input line 19.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: Formularium Ingenieur en Economie.pdf Graphic file (type pdf)
+<use Formularium Ingenieur en Economie.pdf, page 1>
+Package pdftex.def Info: Formularium Ingenieur en Economie.pdf , page1 used on input line 19.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [3
+
+ <./Formularium Ingenieur en Economie.pdf>]
+Overfull \hbox (4.3604pt too wide) in paragraph at lines 21--21
+[]$\OML/lmm/m/it/10.95 HW \OT1/lmr/m/n/10.95 (-20) = [] [] = [] []$ \T1/lmr/m/n/10.95 (-20) --- met $\OML/lmm/m/it/10.95 HW$ \T1/lmr/m/n/10.95 (-20) de huidige
+ []
+
+[4{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Overfull \hbox (78.20717pt too wide) in paragraph at lines 21--21
+[]$\OML/lmm/m/it/10.95 Operationelekassstroomversusschuld \OT1/lmr/m/n/10.95 (-20) = []$
+ []
+
+
+Overfull \hbox (66.97133pt too wide) in paragraph at lines 21--21
+[]$\OML/lmm/m/it/10.95 Rentabiliteitvanheteigenvermogen \OT1/lmr/m/n/10.95 (-20) = []$
+ []
+
+[5]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 34.
+ (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<ondernemingscyclus.png, id=379, 678.28406pt x 388.45125pt>
+File: ondernemingscyclus.png Graphic file (type png)
+<use ondernemingscyclus.png>
+Package pdftex.def Info: ondernemingscyclus.png  used on input line 45.
+(pdftex.def)             Requested size: 318.66948pt x 182.50098pt.
+ [6{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./ondernemingscyclus.png>] [7] [8]
+<Clusters.png, id=404, 441.90094pt x 283.0575pt>
+File: Clusters.png Graphic file (type png)
+<use Clusters.png>
+Package pdftex.def Info: Clusters.png  used on input line 169.
+(pdftex.def)             Requested size: 227.62206pt x 145.8043pt.
+
+Underfull \hbox (badness 1033) in paragraph at lines 187--188
+[]\T1/lmr/m/n/10.95 (+20) Groei: Snelle verkoop-sti-jging,
+ []
+
+<overlappendePLC's.png, id=406, 699.36281pt x 322.20375pt>
+File: overlappendePLC's.png Graphic file (type png)
+<use overlappendePLC's.png>
+Package pdftex.def Info: overlappendePLC's.png  used on input line 195.
+(pdftex.def)             Requested size: 327.77823pt x 151.01297pt.
+
+Overfull \hbox (54.629pt too wide) in paragraph at lines 195--196
+[][] 
+ []
+
+
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 183--199
+[]$[]$  $[]$ 
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 214--215
+[]\T1/lmr/m/n/10.95 (+20) Een ti-jdeli-jke pe-ri-ode van
+ []
+
+[9 <./Clusters.png> <./overlappendePLC's.png>]
+<internefactoren.png, id=416, 617.30624pt x 348.55219pt>
+File: internefactoren.png Graphic file (type png)
+<use internefactoren.png>
+Package pdftex.def Info: internefactoren.png  used on input line 252.
+(pdftex.def)             Requested size: 318.66948pt x 179.93451pt.
+ [10 <./internefactoren.png>]
+Underfull \hbox (badness 1024) in paragraph at lines 285--286
+[]\T1/lmr/bx/n/10.95 (+20) Acceptabel: \T1/lmr/m/n/10.95 (+20) De zone hi-er-tussen
+ []
+
+<externe factoren.png, id=426, 622.57594pt x 349.305pt>
+File: externe factoren.png Graphic file (type png)
+<use externe factoren.png>
+Package pdftex.def Info: externe factoren.png  used on input line 331.
+(pdftex.def)             Requested size: 318.66948pt x 178.79344pt.
+[11 <./externe factoren.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 391.
+
+Underfull \hbox (badness 3449) in paragraph at lines 449--450
+[]\T1/lmr/m/n/10.95 (+20) Dit is het ver-schil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+[]\T1/lmr/m/n/10.95 (+20) Het aan-tal
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 452--453
+[]\T1/lmr/m/n/10.95 (+20) De omzet
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 454--455
+\T1/lmr/m/n/10.95 (+20) dalen vo-or-dat er ver-lies wordt
+ []
+
+[12] [13]
+Underfull \hbox (badness 2285) in paragraph at lines 541--542
+[]\T1/lmr/m/n/10.95 (+20) Het punt in het
+ []
+
+[14] [15]
+<inflatie.png, id=471, 597.73312pt x 247.67531pt>
+File: inflatie.png Graphic file (type png)
+<use inflatie.png>
+Package pdftex.def Info: inflatie.png  used on input line 688.
+(pdftex.def)             Requested size: 318.66948pt x 132.04579pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 699.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 699.
+ [16 <./inflatie.png>]
+<Kasstroom.png, id=479, 467.49657pt x 224.33812pt>
+File: Kasstroom.png Graphic file (type png)
+<use Kasstroom.png>
+Package pdftex.def Info: Kasstroom.png  used on input line 732.
+(pdftex.def)             Requested size: 318.66948pt x 152.92786pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 738--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--753
+
+ []
+
+[17 <./Kasstroom.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 754--759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 764--767
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 827--830
+
+ []
+
+<image1.png, id=490, 426.09187pt x 219.82124pt>
+File: image1.png Graphic file (type png)
+<use image1.png>
+Package pdftex.def Info: image1.png  used on input line 833.
+(pdftex.def)             Requested size: 318.66948pt x 164.41269pt.
+<image2.png, id=491, 366.61969pt x 172.39406pt>
+File: image2.png Graphic file (type png)
+<use image2.png>
+Package pdftex.def Info: image2.png  used on input line 846.
+(pdftex.def)             Requested size: 318.66948pt x 149.85535pt.
+[19 <./image1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 876--879
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--884
+
+ []
+
+[20 <./image2.png>]
+Overfull \hbox (6.87686pt too wide) detected at line 901
+\OT1/lmr/m/n/10.95 500 = \OML/lmm/m/it/10.95 A [] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 A [] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 A [] \OT1/lmr/m/n/10.95 = \OML/lmm/m/it/10.95 A \OMS/lmsy/m/n/10.95 ^^B \OT1/lmr/m/n/10.95 6\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 1446\OML/lmm/m/it/10.95 A \OT1/lmr/m/n/10.95 = [] \OMS/lmsy/m/n/10.95 ^^Y \OT1/lmr/m/n/10.95 81\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/10.95 34 []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--906
+
+ []
+
+
+Overfull \hbox (25.62679pt too wide) in paragraph at lines 911--926
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--933
+
+ []
+
+<Paypackperiode.png, id=505, 348.55219pt x 289.08pt>
+File: Paypackperiode.png Graphic file (type png)
+<use Paypackperiode.png>
+Package pdftex.def Info: Paypackperiode.png  used on input line 951.
+(pdftex.def)             Requested size: 182.09486pt x 151.0238pt.
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 978--980
+
+ []
+
+[22 <./Paypackperiode.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 988--991
+
+ []
+
+<rateofreturn.png, id=518, 356.83313pt x 238.64156pt>
+File: rateofreturn.png Graphic file (type png)
+<use rateofreturn.png>
+Package pdftex.def Info: rateofreturn.png  used on input line 1005.
+(pdftex.def)             Requested size: 227.62206pt x 152.22755pt.
+[23 <./rateofreturn.png>] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1090
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1127
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1134
+
+ []
+
+<vastekosten.png, id=529, 499.11469pt x 362.85562pt>
+File: vastekosten.png Graphic file (type png)
+<use vastekosten.png>
+Package pdftex.def Info: vastekosten.png  used on input line 1140.
+(pdftex.def)             Requested size: 204.85846pt x 148.93233pt.
+<image3.png, id=530, 730.98094pt x 402.75468pt>
+File: image3.png Graphic file (type png)
+<use image3.png>
+Package pdftex.def Info: image3.png  used on input line 1141.
+(pdftex.def)             Requested size: 204.85846pt x 112.86887pt.
+[25] [26 <./vastekosten.png> <./image3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1219
+
+ []
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1222.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1222.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1222.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1222.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1224
+
+ []
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1243.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1243.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1243.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1243.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1245
+
+ []
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1264.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1264.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1264.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 1264.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1288
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1299--1307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1308--1312
+
+ []
+
+<VerschillendeMethodes.png, id=553, 725.71124pt x 389.20406pt>
+File: VerschillendeMethodes.png Graphic file (type png)
+<use VerschillendeMethodes.png>
+Package pdftex.def Info: VerschillendeMethodes.png  used on input line 1321.
+(pdftex.def)             Requested size: 364.19667pt x 195.32608pt.
+<dekkingkosten.png, id=554, 747.54282pt x 307.1475pt>
+File: dekkingkosten.png Graphic file (type png)
+<use dekkingkosten.png>
+Package pdftex.def Info: dekkingkosten.png  used on input line 1337.
+(pdftex.def)             Requested size: 364.19667pt x 149.64124pt.
+[28 <./VerschillendeMethodes.png>]
+Underfull \hbox (badness 3449) in paragraph at lines 1371--1372
+[]\T1/lmr/m/n/10.95 (+20) Dit is het ver-schil
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1372--1373
+[]\T1/lmr/m/n/10.95 (+20) Het aan-tal
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 1374--1375
+[]\T1/lmr/m/n/10.95 (+20) De omzet
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 1376--1377
+\T1/lmr/m/n/10.95 (+20) dalen vo-or-dat er ver-lies wordt
+ []
+
+<breakevenrealistisch.png, id=563, 720.44156pt x 427.5975pt>
+File: breakevenrealistisch.png Graphic file (type png)
+<use breakevenrealistisch.png>
+Package pdftex.def Info: breakevenrealistisch.png  used on input line 1419.
+(pdftex.def)             Requested size: 318.66948pt x 189.13521pt.
+[29 <./dekkingkosten.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1443
+
+ []
+
+[30 <./breakevenrealistisch.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1488.
+
+<balans1.png, id=577, 431.36156pt x 241.65282pt>
+File: balans1.png Graphic file (type png)
+<use balans1.png>
+Package pdftex.def Info: balans1.png  used on input line 1521.
+(pdftex.def)             Requested size: 204.85846pt x 114.76047pt.
+<balans2.png, id=578, 583.42969pt x 236.38312pt>
+File: balans2.png Graphic file (type png)
+<use balans2.png>
+Package pdftex.def Info: balans2.png  used on input line 1522.
+(pdftex.def)             Requested size: 204.85846pt x 82.99863pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1528--1532
+
+ []
+
+[31 <./balans1.png> <./balans2.png>]
+<JaarrekeningPoximus.png, id=588, 642.90187pt x 348.55219pt>
+File: JaarrekeningPoximus.png Graphic file (type png)
+<use JaarrekeningPoximus.png>
+Package pdftex.def Info: JaarrekeningPoximus.png  used on input line 1539.
+(pdftex.def)             Requested size: 455.24411pt x 246.8196pt.
+ [32 <./JaarrekeningPoximus.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1585
+
+ []
+
+<verschillengaap met IFRS.png, id=595, 465.99094pt x 206.27063pt>
+File: verschillengaap met IFRS.png Graphic file (type png)
+<use verschillengaap met IFRS.png>
+Package pdftex.def Info: verschillengaap met IFRS.png  used on input line 1599.
+(pdftex.def)             Requested size: 364.19667pt x 161.21776pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1620--1625
+
+ []
+
+[33 <./verschillengaap met IFRS.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1640--1642
+
+ []
+
+<activapassiveanalyse.png, id=602, 472.76625pt x 138.5175pt>
+File: activapassiveanalyse.png Graphic file (type png)
+<use activapassiveanalyse.png>
+Package pdftex.def Info: activapassiveanalyse.png  used on input line 1691.
+(pdftex.def)             Requested size: 204.85846pt x 60.02213pt.
+<omzetanaluse.png, id=603, 293.59688pt x 198.7425pt>
+File: omzetanaluse.png Graphic file (type png)
+<use omzetanaluse.png>
+Package pdftex.def Info: omzetanaluse.png  used on input line 1692.
+(pdftex.def)             Requested size: 204.85846pt x 138.673pt.
+[34]
+<hor+vert.png, id=609, 594.72188pt x 294.34969pt>
+File: hor+vert.png Graphic file (type png)
+<use hor+vert.png>
+Package pdftex.def Info: hor+vert.png  used on input line 1701.
+(pdftex.def)             Requested size: 455.24411pt x 225.316pt.
+ [35 <./activapassiveanalyse.png> <./omzetanaluse.png> <./hor+vert.png>]
+<NettoWerkKapitaal.png, id=619, 591.71063pt x 284.56313pt>
+File: NettoWerkKapitaal.png Graphic file (type png)
+<use NettoWerkKapitaal.png>
+Package pdftex.def Info: NettoWerkKapitaal.png  used on input line 1750.
+(pdftex.def)             Requested size: 364.19667pt x 175.15074pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1758--1764
+
+ []
+
+[36 <./NettoWerkKapitaal.png>]
+<werkkapitaalcyclus.png, id=626, 480.29437pt x 323.70938pt>
+File: werkkapitaalcyclus.png Graphic file (type png)
+<use werkkapitaalcyclus.png>
+Package pdftex.def Info: werkkapitaalcyclus.png  used on input line 1782.
+(pdftex.def)             Requested size: 273.14923pt x 184.10135pt.
+ [37 <./werkkapitaalcyclus.png>] [38] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 1931--1934
+
+ []
+
+<fitometer.png, id=641, 519.44063pt x 244.66406pt>
+File: fitometer.png Graphic file (type png)
+<use fitometer.png>
+Package pdftex.def Info: fitometer.png  used on input line 1939.
+(pdftex.def)             Requested size: 364.19667pt x 171.53992pt.
+[40 <./fitometer.png>] [41] (./Ingenieur&economie-oefeningen-RubenRyckaert.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-14>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Ingenieur&economie-oefeningen-RubenRyckaert.out' has not changed.
+(rerunfilecheck)             Checksum: FDFC214FD3F53CDBB305CE85439C0C65;8066.
+ ) 
+Here is how much of TeX's memory you used:
+ 47100 strings out of 469519
+ 1079557 string characters out of 5470279
+ 1617925 words of memory out of 5000000
+ 74581 multiletter control sequences out of 15000+600000
+ 763744 words of font info for 279 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 113i,17n,122p,1228b,1303s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Ingenieur&economie-oefeningen-RubenRyckaert.pdf (41 pages, 1625126 bytes).
+PDF statistics:
+ 803 PDF objects out of 1000 (max. 8388607)
+ 637 compressed objects within 7 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 80422 words of extra memory for PDF output out of 89155 (max. 10000000)
+

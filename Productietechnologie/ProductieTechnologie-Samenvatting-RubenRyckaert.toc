@@ -91,7 +91,7 @@
 \contentsline {subsubsection}{Zinkvonkerosie}{62}{figure.caption.175}%
 \contentsline {subsubsection}{Draadvonkerosie}{63}{figure.caption.176}%
 \contentsline {subsubsection}{Vonkerosie Milling}{63}{figure.caption.176}%
-\contentsline {subsubsection}{WEDG}{64}{figure.caption.176}%
+\contentsline {subsubsection}{WEDG}{63}{figure.caption.176}%
 \contentsline {subsubsection}{Die sinking EDM}{64}{figure.caption.176}%
 \contentsline {subsubsection}{Milling EDM}{64}{figure.caption.176}%
 \contentsline {subsubsection}{Planteair Vonken}{64}{figure.caption.176}%
@@ -100,17 +100,17 @@
 \contentsline {subsection}{\numberline {9.5.1}Eigenschappen van elektrochemisch bewerken}{66}{subsection.181}%
 \contentsline {subsection}{\numberline {9.5.2}Afnamen bij ECM}{67}{subsection.183}%
 \contentsline {subsection}{\numberline {9.5.3}Toepassingen van ECM}{67}{subsection.184}%
-\contentsline {section}{\numberline {9.6}Ultrasoon bewerken (Ultrasonic Machining)}{69}{section.187}%
-\contentsline {section}{\numberline {9.7}Straalbewerkingen}{70}{section.190}%
-\contentsline {subsection}{\numberline {9.7.1}Shotpeening}{70}{subsection.192}%
+\contentsline {section}{\numberline {9.6}Ultrasoon bewerken (Ultrasonic Machining)}{68}{section.187}%
+\contentsline {section}{\numberline {9.7}Straalbewerkingen}{69}{section.190}%
+\contentsline {subsection}{\numberline {9.7.1}Shotpeening}{69}{subsection.192}%
 \contentsline {subsection}{\numberline {9.7.2}abrasief stralen}{70}{subsection.193}%
-\contentsline {subsection}{\numberline {9.7.3}Waterstraalsnijden}{71}{subsection.194}%
+\contentsline {subsection}{\numberline {9.7.3}Waterstraalsnijden}{70}{subsection.194}%
 \contentsline {subsection}{\numberline {9.7.4}Laserstraalbewerking (LBM)}{71}{subsection.196}%
 \contentsline {subsubsection}{Hoe werk een laser?}{71}{subsection.196}%
-\contentsline {subsubsection}{kwaliteit van de laserstraal}{73}{figure.caption.201}%
-\contentsline {subsubsection}{Toepassingen}{76}{figure.caption.204}%
+\contentsline {subsubsection}{kwaliteit van de laserstraal}{74}{figure.caption.201}%
+\contentsline {subsubsection}{Toepassingen}{75}{figure.caption.204}%
 \contentsline {subsubsection}{machine gestuurde Lasers, NC lasers}{76}{figure.caption.204}%
-\contentsline {subsubsection}{Toepassingen}{77}{figure.caption.205}%
+\contentsline {subsubsection}{Toepassingen}{76}{figure.caption.205}%
 \contentsline {subsubsection}{Nadelen}{77}{figure.caption.206}%
 \contentsline {chapter}{\numberline {10}Scheiden}{78}{chapter.207}%
 \contentsline {section}{\numberline {10.1}Ponsen en knippen}{78}{section.208}%

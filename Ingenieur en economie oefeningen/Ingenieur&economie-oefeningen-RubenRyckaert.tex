@@ -1,0 +1,1973 @@
+% new_document_template.tex
+% Clean starting point for school documents
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{school-macros}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{siunitx}
+\usepackage{pdfpages}
+
+\title{Ingenieur en Economie — Samenvatting \& Oefeningen}
+\author{Ruben Ryckaert}
+\date{\today}
+
+\begin{document}
+\microtypecontext{spacing=nonfrench}
+\maketitle
+\tableofcontents
+\includepdf{Formularium Ingenieur en Economie.pdf}
+\section{formularium}
+\printformularium
+
+\subsection{Introductie}
+Het vak Ingenieur en Economie gaat over marketing,
+investeringen, kostenanalyse, prijsbepaling, inflatie en
+lineair programmeren. Deze samenvatting bevat de belangrijkste
+theorie en oefeningen per module.
+
+\section{Module  1: Marketing}
+\subsection{Marketing}
+
+Een markt wordt gedefineerd met de 4 P's met nog 2 extra P's die er bij komen.
+\begin{itemize}
+    \item Product: Wat wordt er verkocht?
+    \item Prijs: Welke prijs wordt er gevraagd?
+    \item Plaats: Waar wordt het product verkocht?
+    \item Promotie: Hoe wordt het product gepromoot?
+    \item People: Wie zijn de klanten?
+    \item Positioning: Hoe wordt het product gepositioneerd in de markt?
+\end{itemize}
+
+
+\begin{figure}[ht]
+      \centering
+      \includegraphics[width=0.7\textwidth]{ondernemingscyclus.png}
+      \caption{}
+      \label{fig:ondernemingscyclus.png}
+\end{figure}
+
+\subsection{Marketingcyclus}
+
+De marketingcyclus beschrijft de continue interactie tussen de maatschappij en de markt. Dit proces kan als volgt worden samengevat:
+
+\begin{enumerate}
+    \item \concept{Behoeften, Wensen en Vraag}: Het vertrekpunt is de \textbf{maatschappij}, die bestaat uit mensen met fundamentele behoeften (fysiek, sociaal, individueel). Wanneer deze behoeften gevormd worden door cultuur en persoonlijkheid, spreken we van \textbf{wensen}. Als deze wensen gesteund worden door koopkracht, ontstaat er een concrete \textbf{vraag}.
+    \item \concept{Producten}: Om aan deze vraag te voldoen, bieden bedrijven \textbf{producten} aan. Dit begrip is breed en omvat fysieke goederen, diensten, ervaringen, personen, plaatsen, organisaties en ideeën.
+    \item \concept{Waarde en Tevredenheid}: De consument maakt een keuze op basis van de verwachte waarde. De \textbf{tevredenheid} achteraf hangt af van de waargenomen prestaties ten opzichte van de verwachtingen. Kwaliteit speelt hierin een sleutelrol.
+    \item \concept{Ruil, Transactie en Relaties}: Een \textbf{ruil} is de kern van marketing: het verkrijgen van een gewenst object door iets terug te geven (meestal geld). Een \textbf{transactie} is een ruil met meetbare waarden. Succesvolle transacties bouwen langdurige \textbf{relaties} op met klanten.
+    \item \concept{Markt}: De verzameling van alle werkelijke en potentiële kopers van een product vormt de \textbf{markt}. Deze markt beïnvloedt op zijn beurt weer de maatschappij, waardoor de cyclus rond is.
+\end{enumerate}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}[
+        node distance=2cm,
+        every node/.style={
+            draw=schoolBlue, 
+            thick,
+            rounded corners, 
+            align=center, 
+            font=\small\bfseries,
+            fill=schoolBlue!5,
+            minimum height=0.8cm,
+            inner sep=6pt
+        },
+        arrow/.style={->, >=latex, thick, schoolBlue}
+    ]
+        % Nodes arranged in a circle
+        \node (maatschappij) at (0, 4) {Maatschappij};
+        \node (behoeften) at (3.5, 3) {Behoeften};
+        \node (wensen) at (4.5, 0.5) {Wensen};
+        \node (vraag) at (3.5, -2) {Vraag};
+        \node (product) at (0, -3) {Product};
+        \node (ruil) at (-3.5, -2) {Ruil \&\\Transactie};
+        \node (relatie) at (-4.5, 0.5) {Relaties};
+        \node (markt) at (-3.5, 3) {Markt};
+
+        % Arrows
+        \draw[arrow] (maatschappij) -- (behoeften);
+        \draw[arrow] (behoeften) -- (wensen);
+        \draw[arrow] (wensen) -- (vraag);
+        \draw[arrow] (vraag) -- (product);
+        \draw[arrow] (product) -- (ruil);
+        \draw[arrow] (ruil) -- (relatie);
+        \draw[arrow] (relatie) -- (markt);
+        \draw[arrow] (markt) -- (maatschappij);
+        
+        % Central text
+        \node[draw=none, fill=none] at (0,0.5) {\textcolor{schoolGray}{\textit{Marketingcyclus}}};
+    \end{tikzpicture}
+    \caption{Schematische weergave van de marketingcyclus}
+    \label{fig:marketingcyclus}
+    \end{figure}
+    \FloatBarrier % requires \usepackage{placeins} in the preamble
+
+\begin{examenbox}
+    Deze cyclus kan exact gevraagd worden op het examen. Ken de stappen goed!
+\end{examenbox}
+
+\subsection{Marktmanagement}
+Er zijn vijf alternatieve concepten die organisaties gebruiken om hun marketingstrategie vorm te geven. Hieronder staan ze uitgewerkt met vaste criteria.
+
+\begin{tcolorbox}[schoolstyle, title=1. Productieconcept, colframe=schoolBlue!80!black, colback=white]
+    \textbf{Uitgangspunt:} Consumenten geven de voorkeur aan producten die beschikbaar en goedkoop zijn. \\
+    \textbf{Focus:} Hoge productie-efficiëntie en brede distributie. \\
+    \textbf{Wanneer:} Als de vraag groter is dan het aanbod of de productiekost omlaag moet. \\
+    \textbf{Gevaar:} Marketing myopia: te veel focus op het proces, te weinig op wat de klant echt nodig heeft. \\
+    \textbf{Voorbeeld:} Ford Model T ("Elke kleur, zolang het maar zwart is"), goedkope elektronica.
+\end{tcolorbox}
+
+\begin{tcolorbox}[schoolstyle, title=2. Productconcept, colframe=schoolBlue!80!black, colback=white]
+    \textbf{Uitgangspunt:} Consumenten willen de beste kwaliteit, prestaties en innovatie. \\
+    \textbf{Focus:} Continue productverbetering en technische perfectie. \\
+    \textbf{Wanneer:} In markten waar klanten kwaliteit belangrijker vinden dan prijs. \\
+    \textbf{Gevaar:} De klant zoekt een oplossing (gat in de muur), geen specifiek product (de boormachine zelf). \\
+    \textbf{Voorbeeld:} Apple (design/kwaliteit), high-end audioapparatuur.
+\end{tcolorbox}
+
+\begin{tcolorbox}[schoolstyle, title=3. Verkoopconcept, colframe=schoolBlue!80!black, colback=white]
+    \textbf{Uitgangspunt:} Consumenten kopen niet genoeg tenzij het bedrijf ze actief overhaalt. \\
+    \textbf{Focus:} Grootschalige verkoop- en promotie-inspanningen (Inside-Out). \\
+    \textbf{Wanneer:} Bij overcapaciteit of "unsought goods" (waar mensen niet uit zichzelf aan denken). \\
+    \textbf{Gevaar:} Focus op transacties in plaats van langdurige klantrelaties; ontevreden klanten na de koop. \\
+    \textbf{Voorbeeld:} Verzekeringen, bloeddonatie, agressieve telemarketing.
+\end{tcolorbox}
+
+\begin{tcolorbox}[schoolstyle, title=4. Marketingconcept, colframe=schoolBlue!80!black, colback=white]
+    \textbf{Uitgangspunt:} Doelen bereiken door de behoeften van de doelgroep beter te vervullen dan de concurrent. \\
+    \textbf{Focus:} De klant centraal stellen (Outside-In) en waarde creëren. \\
+    \textbf{Wanneer:} In competitieve markten waar de klant keuze heeft (kopersmarkt). \\
+    \textbf{Gevaar:} Te veel focus op kleine klantwensen kan innovatie op lange termijn remmen. \\
+    \textbf{Voorbeeld:} Coolblue, Amazon, Ikea.
+\end{tcolorbox}
+
+\begin{tcolorbox}[schoolstyle, title=5. Maatschappelijk Marketingconcept, colframe=schoolBlue!80!black, colback=white]
+    \textbf{Uitgangspunt:} Marketing moet rekening houden met consumentenbehoeften én het welzijn van de samenleving. \\
+    \textbf{Focus:} Balans tussen bedrijfswinst, klantwensen en maatschappelijk belang. \\
+    \textbf{Wanneer:} Bij groeiend bewustzijn over duurzaamheid, ethiek en gezondheid. \\
+    \textbf{Gevaar:} Hogere kosten op korte termijn en complexere besluitvorming. \\
+    \textbf{Voorbeeld:} Patagonia, The Body Shop, Fairphone.
+\end{tcolorbox}
+
+\begin{examenbox}
+    Zorg dat je al deze concepten goed kent en weet wanneer ze toegepast worden en de 
+    voor- en nadelen van elk concept.
+\end{examenbox}
+
+\subsection{Segmentatie}
+Je kunt natuurlijk niet iedereen aanspreken met je product. Daarom ga je je markt opdelen in segmenten.
+Je kunt groepen opspliten op basis van:
+\begin{itemize}
+    \item Geografisch: Land, regio, stad
+    \item Demografisch: Leeftijd, geslacht, inkomen, opleiding
+    \item Psychografisch: Levensstijl, persoonlijkheid, waarden
+    \item Gedragsmatig: Koopgedrag, merkentrouw, gebruiksfrequentie
+    \end{itemize}
+\begin{figure}[ht]
+     \centering
+       \includegraphics[width=0.5\textwidth]{Clusters.png}
+  \caption{}
+  \label{fig:Clusters.png}
+\end{figure}
+
+Je krijgt dan clusters zoals in figuur \ref{fig:Clusters.png}. Waarnaar je heel 
+gericht kan adverteren.
+\subsection{Product Life Cycle}
+
+\begin{examenbox}
+Je moet alle fases kennen en de cyclus kunnen tekenen. De verkoop en de winst.
+\end{examenbox}
+\begin{figure}[ht]
+    \begin{minipage}
+        {0.4\textwidth}
+        Alle fases zijn:
+\begin{itemize}
+    \item Introductie: Lage verkoop, hoge kosten, geen winst
+    \item Groei: Snelle verkoopstijging, dalende kosten, winst begint te komen
+    \item Volwassenheid: Verkoop piekt, kosten laag, winst hoog maar begint te dalen
+    \item Neergang: Verkoop daalt, kosten stijgen, winst daalt
+\end{itemize} 
+    \end{minipage}
+    \hfill
+    \begin{minipage}
+        {0.6\textwidth}
+    \includegraphics[width=1.2\textwidth]{overlappendePLC's.png}
+  \caption{}
+  \label{fig:overlappendePLC's.png}
+    \end{minipage}
+\end{figure}
+In figuur \ref{fig:overlappendePLC's.png} zie je de verschillende fases van de product life cycle. en overlappende 
+cycli. 
+
+In de figuur zie je ook dat er overlappende PLC's zijn. Je gaat je 
+nieuw product lanceren op het einde van de volwassenheidsfase van je vorige product.
+Je krijgt dan een positieve winslijn.
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \textbf{Varianten op de Levenscyclus}
+        \begin{description}
+            \item[\textcolor{schoolBlue}{Stijl}] Een basis- en onderscheidende wijze van expressie. Gaat generaties mee en golft op en neer in populariteit (bv. formele kleding, koloniale huizen).
+            \item[\textcolor{schoolOrange}{Mode}] Een momenteel geaccepteerde of populaire stijl. Groeit langzaam, blijft een tijd populair en daalt dan langzaam (bv. business casual).
+            \item[\textcolor{schoolRed}{Rage (Fad)}] Een tijdelijke periode van ongewoon hoge verkoop gedreven door direct consumentenenthousiasme. Stijgt extreem snel, piekt kort, en stort in (bv. Fidget Spinner).
+        \end{description}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.9, >=stealth]
+            % Axes
+            \draw[->, thick] (0,0) -- (6.5,0) node[right] {\footnotesize Tijd};
+            \draw[->, thick] (0,0) -- (0,4.5) node[above] {\footnotesize Verkoop};
+
+            % Stijl (Blue, wavy, long term)
+            \draw[schoolBlue, very thick, smooth] plot coordinates {(0,1.5) (1.5,2) (3,1.5) (4.5,2) (6,1.5)};
+            \node[schoolBlue, font=\footnotesize, right] at (6,1.5) {Stijl};
+
+            % Mode (Orange, bell curve)
+            \draw[schoolOrange, very thick] (0.5,0.5) .. controls (2.5,0.5) and (2.5,3.5) .. (3.5,3.5) .. controls (4.5,3.5) and (4.5,0.5) .. (6,0.5);
+            \node[schoolOrange, font=\footnotesize] at (3.5, 3.8) {Mode};
+
+            % Rage (Red, spike)
+            \draw[schoolRed, very thick] (0.5,0) -- (1,0) -- (1.5, 4) -- (2,0) -- (6,0);
+            \node[schoolRed, font=\footnotesize] at (1.5, 4.3) {Rage};
+        \end{tikzpicture}
+        \caption{Visueel verloop van PLC varianten}
+        \label{fig:plc_types}
+    \end{minipage}
+\end{figure}
+
+
+\subsection{Prijszetting}
+De juiste prijs bepalen is een evenwichtsoefening. De prijs ligt ergens tussen 
+de productiekosten (de ondergrens) en de waarde die de klant eraan hecht (de bovengrens).
+
+\subsubsection{Interne factoren}
+De prijszetting wordt beïnvloed door vier belangrijke interne factoren:
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.7\textwidth]{internefactoren.png}
+      \caption{Interne factoren die de prijszetting beïnvloeden}
+      \label{fig:internefactoren.png}
+\end{figure}
+
+\begin{description}
+    \item[Marketingdoelstellingen] Voordat de prijs wordt bepaald, moet het bedrijf zijn strategie kiezen:
+    \begin{itemize}
+        \item \textit{Overleven:} Bij overcapaciteit of hevige concurrentie; lage prijzen om de productie draaiende te houden.
+        \item \textit{Winstmaximalisatie:} Prijzen zo kiezen dat de huidige winst maximaal is (korte termijn focus).
+        \item \textit{Marktaandeel leiderschap:} Zo laag mogelijke prijzen om snel een groot marktaandeel te veroveren.
+        \item \textit{Kwaliteitsleiderschap:} Hoge prijzen om R\&D en hoge kwaliteit te dekken.
+    \end{itemize}
+
+    \item[Marketingmix strategie] De prijs is slechts één van de marketinginstrumenten.
+    De prijs moet gecoördineerd zijn met het \textbf{product}ontwerp, de \textbf{distributie} 
+    en de \textbf{promotie} om een consistent en effectief marketingprogramma te vormen.
+
+    \item[Kosten] De kosten bepalen de \textbf{bodemprijs} (vloer). Het bedrijf moet een prijs vragen die de vaste en variabele kosten dekt en een eerlijk rendement oplevert.
+    \begin{itemize}
+        \item \textit{Vaste kosten:} Kosten die niet variëren met productie (huur, rente, salarissen).
+        \item \textit{Variabele kosten:} Kosten die direct variëren met het productieniveau.
+        \item \textit{Totale kosten:} $ \rightarrow TCK = VK + VARK $
+    \end{itemize}
+
+    \begin{figure}[ht]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \textbf{De Prijsvork: Klantperceptie}\\
+            De prijsvork wordt bepaald door de perceptie van de klant. Er is een range van aanvaardbare prijzen:
+            \begin{itemize}
+                \item \textbf{Te laag:} De klant vertrouwt de kwaliteit niet.
+                \item \textbf{Te hoog:} De klant vindt het product het geld niet waard.
+                \item \textbf{Acceptabel:} De zone hiertussen waar de aankoopwaarschijnlijkheid het grootst is.
+            \end{itemize}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}{0.55\textwidth}
+            \centering
+            \begin{tikzpicture}[scale=0.85, >=stealth]
+                % Axis
+                \draw[->, thick] (0,0) -- (8,0) node[right] {Prijs (€)};
+                
+                % Zones
+                % Te Goedkoop
+                \fill[schoolRed!30] (0,0.2) rectangle (2.5,1.2);
+                \node[font=\scriptsize, align=center] at (1.25, 0.7) {Te\\Goedkoop};
+                
+                % Acceptabel
+                \fill[schoolBlue!30] (2.5,0.2) rectangle (5.5,1.2);
+                \node[font=\footnotesize, align=center, font=\bfseries] at (4, 0.7) {Aanvaardbare\\Prijsrange};
+                
+                % Te Duur
+                \fill[schoolRed!30] (5.5,0.2) rectangle (8,1.2);
+                \node[font=\scriptsize, align=center] at (6.75, 0.7) {Te\\Duur};
+                
+                % Inputs markers (boven de balken)
+                \draw[thick, schoolBlue] (2.5,1.2) -- (2.5,1.8) node[above, font=\tiny, align=center] {Min. grens\\(Kwaliteit)};
+                \draw[thick, schoolBlue] (5.5,1.2) -- (5.5,1.8) node[above, font=\tiny, align=center] {Max. grens\\(Budget)};
+                
+                % Customers (dots representing input) onder de as
+                \foreach \x in {2.7, 3, 3.5, 4, 4.5, 5, 5.3}
+                    \fill[schoolGray] (\x, -0.3) circle (1.5pt);
+                \node[right, font=\tiny, schoolGray] at (5.5, -0.3) {Klant input};
+
+            \end{tikzpicture}
+        \end{minipage}
+    \end{figure}
+
+    \item[Verantwoordelijkheid binnen de organisatie]
+     Wat voor soort bedrijf ben je. Non-profit of winstgericht?µ
+     Wat is belangrijke voor mangement en aandeelhouders?
+     Daarbij is er ook een maatschappelijke verantwoordelijkheid.
+\end{description}
+
+\subsubsection{Externe factoren}
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.7\textwidth]{externe factoren.png}
+      \caption{Externe factoren die de prijszetting beïnvloeden}
+      \label{fig:externfactoren.png}
+\end{figure}
+
+\begin{description}
+    \item[De Markt en Concurrentie] 
+    In welke markt opereer je? De vrijheid om je prijs te zetten (pricing power) hangt sterk af van de concurrentievorm. In een zeer competitieve markt bepaalt de markt de prijs, terwijl je in een monopolie zelf de prijs kunt zetten.
+
+    \begin{figure}[ht]
+        \centering
+        \begin{tikzpicture}[scale=0.85, >=stealth]
+            % Main Arrow
+            \draw[->, ultra thick, schoolGray] (0,0) -- (13,0) node[right, align=left, font=\footnotesize] {\textbf{Pricing Power}\\\textit{(Invloed op prijs)}};
+            
+            % Nodes (Boxes)
+            % 1. Volledige Mededinging
+            \node[fill=schoolBlue!10, draw=schoolBlue, rounded corners, minimum width=2.8cm, minimum height=1cm, align=center, font=\footnotesize] (vol) at (1.5, 1.5) {\textbf{Volledige}\\\textbf{Mededinging}};
+            \draw[-, thick, schoolBlue] (1.5, 0.1) -- (1.5, 1);
+            \node[below, font=\scriptsize, align=center, text width=2.5cm] at (1.5, -0.2) {Veel aanbieders\\Homogeen product\\\textit{Vb: Graan, Melk}};
+
+            % 2. Monopolistische Concurrentie
+            \node[fill=schoolBlue!20, draw=schoolBlue, rounded corners, minimum width=2.8cm, minimum height=1cm, align=center, font=\footnotesize] (moncon) at (4.7, 1.5) {\textbf{Monopolistische}\\\textbf{Concurrentie}};
+            \draw[-, thick, schoolBlue] (4.7, 0.1) -- (4.7, 1);
+            \node[below, font=\scriptsize, align=center, text width=2.5cm] at (4.7, -0.2) {Veel aanbieders\\Gedifferentieerd\\\textit{Vb: Kleding, Horeca}};
+
+            % 3. Oligopolie
+            \node[fill=schoolOrange!20, draw=schoolOrange, rounded corners, minimum width=2.8cm, minimum height=1cm, align=center, font=\footnotesize] (oli) at (7.9, 1.5) {\textbf{Oligopolie}};
+            \draw[-, thick, schoolOrange] (7.9, 0.1) -- (7.9, 1);
+            \node[below, font=\scriptsize, align=center, text width=2.5cm] at (7.9, -0.2) {Weinig aanbieders\\Hoge drempels\\\textit{Vb: Telecom, Banken}};
+
+            % 4. Monopolie
+            \node[fill=schoolRed!20, draw=schoolRed, rounded corners, minimum width=2.8cm, minimum height=1cm, align=center, font=\footnotesize] (mon) at (11.1, 1.5) {\textbf{Monopolie}};
+            \draw[-, thick, schoolRed] (11.1, 0.1) -- (11.1, 1);
+            \node[below, font=\scriptsize, align=center, text width=2.5cm] at (11.1, -0.2) {Eén aanbieder\\Uniek product\\\textit{Vb: Waterbedrijf}};
+            
+        \end{tikzpicture}
+        \caption{Het spectrum van marktconcurrentie: van prijsnemer naar prijszetter}
+        \label{fig:market_spectrum}
+    \end{figure}
+
+    \item[Consumentenperceptie van waarde]
+    Uiteindelijk bepaalt de consument of de prijs gerechtvaardigd is.
+     Een belangrijk concept hierbij is de \textbf{prijselasticiteit}: hoe sterk reageert de vraag op een prijsverandering?
+     met $\%\Delta Q$ de verandering in hoeveelheid vraag en $\%\Delta P$ de verandering in prijs.
+
+    \begin{figure}[ht]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \begin{tikzpicture}[scale=0.7, >=stealth]
+                \draw[->, thick] (0,0) -- (4,0) node[right] {Q};
+                \draw[->, thick] (0,0) -- (0,4) node[above] {P};
+                \draw[thick, schoolBlue] (1,3.5) -- (2.5,0.5) node[midway, right] {D};
+                \node[align=center, font=\bfseries\small] at (2,4) {Inelastisch};
+                
+                % Change
+                \draw[dashed] (0,3) -- (1.2,3) -- (1.2,0);
+                \draw[dashed] (0,1.5) -- (2,1.5) -- (2,0);
+                
+                \draw[<->, schoolRed] (0.2,1.5) -- (0.2,3) node[midway, left, font=\tiny] {$\Delta P$};
+                \draw[<->, schoolRed] (1.2,0.2) -- (2,0.2) node[midway, below, font=\tiny] {$\Delta Q$};
+            \end{tikzpicture}
+            \caption*{Steile curve: $\Delta P > \Delta Q$}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \begin{tikzpicture}[scale=0.7, >=stealth]
+                \draw[->, thick] (0,0) -- (4,0) node[right] {Q};
+                \draw[->, thick] (0,0) -- (0,4) node[above] {P};
+                \draw[thick, schoolBlue] (0.5,3) -- (3.5,1) node[midway, above right] {D};
+                \node[align=center, font=\bfseries\small] at (2,4) {Elastisch};
+
+                % Change
+                \draw[dashed] (0,2.5) -- (1.2,2.5) -- (1.2,0);
+                \draw[dashed] (0,1.8) -- (2.3,1.8) -- (2.3,0);
+                
+                \draw[<->, schoolRed] (0.2,1.8) -- (0.2,2.5) node[midway, left, font=\tiny] {$\Delta P$};
+                \draw[<->, schoolRed] (1.2,0.2) -- (2.3,0.2) node[midway, below, font=\tiny] {$\Delta Q$};
+            \end{tikzpicture}
+            \caption*{Vlakke curve: $\Delta P < \Delta Q$}
+        \end{minipage}
+        \caption{Prijselasticiteit van de vraag}
+        \label{fig:elasticity}
+    \end{figure}
+    
+
+    \item[Andere externe factoren]
+    \begin{itemize}
+        \item Economische omstandigheden: Inflatie, recessie, koopkracht.
+        \item Sociale en culturele factoren: Trends, normen, waarden.
+        \item Wet- en regelgeving: Prijscontroles, belastingen, handelsbeperkingen.
+        \item Herverkopers en distributiekanalen zoals groothandels en winkels vb bol.com of amazon.
+    \end{itemize}
+\end{description}
+
+\begin{examenbox}
+Leg niet teveel druk om deze exacte factoren te onthouden. 
+Begrijp wel hoe interne en externe factoren de prijszetting beïnvloeden.
+\end{examenbox}
+    
+
+\subsection{Prijszettingsmethodes}
+
+
+
+
+
+
+\subsubsection{Break-Even Analyse}
+De break-even analyse bepaalt het punt waarop een bedrijf geen winst of verlies maakt. Dit is het moment waarop de \textbf{Totale Opbrengst (TO)} gelijk is aan de \textbf{Totale Kosten (TK)}.
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \textbf{Kernbegrippen:}
+        \begin{description}
+            \item[\concept{Dekkingsbijdrage}] Dit is het verschil tussen de verkoopprijs en de variabele kosten ($P - VCK$). Dit bedrag per verkocht stuk draagt bij aan het dekken van de vaste kosten.
+            \item[\concept{Break-Even Afzet ($Q_{BE}$)}] Het aantal stuks dat verkocht moet worden:
+            \[ Q_{BE} = \frac{TCK}{P - VCK} \]
+            \item[\concept{Break-Even Omzet ($TO_{BE}$)}] De omzet in euro's waarbij winst nul is:
+            \[ TO_{BE} = P \times Q_{BE} \]
+            \item[\concept{Veiligheidsmarge}] Hoeveel de afzet mag dalen voordat er verlies wordt gemaakt (vaak uitgedrukt in \% van de huidige afzet).
+        \end{description}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.8, >=stealth]
+            % Axes
+            \draw[->, thick] (0,0) -- (6,0) node[right] {Q (Aantal)};
+            \draw[->, thick] (0,0) -- (0,5) node[above] {€};
+
+            % TCK (Fixed Costs)
+            \draw[thick, schoolBlue] (0,1.5) -- (5.5,1.5) node[right, font=\tiny] {TCK};
+
+            % TK (Total Costs)
+            \draw[thick, schoolOrange] (0,1.5) -- (5.5,4.25) node[right, font=\tiny] {TK};
+
+            % TO (Revenue)
+            \draw[thick, teal!80!black] (0,0) -- (5,5) node[right, font=\tiny] {TO};
+
+            % BEP
+            \fill[black] (3,3) circle (2pt);
+            \node[above left, font=\bfseries\scriptsize] at (3,3) {BEP};
+            
+            \fill[schoolRed, opacity=0.15] (0,0) -- (3,3) -- (0,1.5) -- cycle;
+            \node[schoolRed, font=\tiny] at (1, 1.8) {Verlies};
+
+            \fill[teal, opacity=0.15] (3,3) -- (5,5) -- (5,4) -- cycle;
+            \node[teal!80!black, font=\tiny] at (4.5, 3.8) {Winst};
+
+            \draw[dashed] (3,3) -- (3,0) node[below, font=\scriptsize] {$Q_{BE}$};
+        \end{tikzpicture}
+        \caption{Visualisatie van de Break-Even Analyse}
+        \label{fig:breakeven}
+    \end{minipage}
+\end{figure}
+
+\subsubsection{Nieuwe producten}
+
+\textbf{Afroomstrategie:} Je zet een hoge prijs 
+in het begin en verlaagt die dan geleidelijk. 
+Dit werkt goed als je al een gevestigde reputatie hebt en je product
+uniek is. Early adopters zijn bereid meer te betalen voor het nieuwste product.
+\textbf{Penetratiestrategie:} Je zet een lage prijs om snel marktaandeel te veroveren.
+Daarna verhoog je de prijs.
+Dit werkt goed in een competitieve markt. 
+
+
+\subsubsection{assortiment producten}
+Dit zijn producten in groep of deals die je aanbiedt.
+
+\begin{itemize}
+    \item \textbf{Productlijn-prijszetting:} Je zet prijs stappen tussen verschillende producten in een lijn. \textls{laptops, smartphones}.
+    \item \textbf{Optie-prijszetting:} Accesoires of extra's worden apart geprijsd. \textls{auto's met extra opties}.
+    \item \textbf{Captive-prijszetting:} Je verkoopt een basisproduct tegen een lage prijs, maar de bijbehorende 
+    verbruiksartikelen zijn duur \textls{Scheermesjes en cartridges}.
+    \item \textbf{By-product-prijszetting:} Je verkoopt bijproducten
+     om de kosten van het hoofdproduct te compenseren. \textls{vlees en leer}.
+     \item \textbf{Productbundel-prijszetting:} Je verkoopt meerdere producten
+      samen tegen een lagere prijs dan
+\end{itemize}
+
+
+\subsubsection{Prijsaanpasstrategieën}
+Prijzen zijn natuurlijk niet altijd hetzelfde. Er zijn kortingen, deals, seizoensprijzen etc.
+Of prijzen wordt aangepast om het als een betere deal te laten lijken (€9,99 in plaats van €10).
+\begin{itemize}
+    \item \textbf{Korting en bonussen:} Prijsverlagingen voor vroege betalingen, grote bestellingen of seizoensgebonden aankopen.
+    \item \textbf{Segmentatie-prijszetting:} Verschillende prijzen voor verschillende klantsegmenten (studenten, senioren).
+    \item \textbf{Psychologische prijszetting:} Prijzen die psychologisch aantrekkelijk zijn (bijv. €9,99 in plaats van €10).
+    \item \textbf{Promotionele prijszetting:} Tijdelijke prijsverlagingen om de verkoop te stimuleren (kortingen, coupons).
+    \item \textbf{Geografische prijszetting:} Prijzen variëren op basis van locatie (exportprijzen, lokale marktomstandigheden).
+\end{itemize}
+
+
+\section{Module 2: Lineair Programmeren}
+
+Lineair programmeren (LP) is een wiskundige methode om de beste uitkomst (zoals maximale winst of laagste kosten) te bepalen in een model waarvan de vereisten worden weergegeven door lineaire relaties.
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \textbf{Kernbegrippen van LP}
+        \begin{description}
+            \item[\concept{Doelfunctie}] De formule die je wilt maximaliseren (winst) of minimaliseren (kosten). Bijvoorbeeld: $Z = 3x_1 + 5x_2$.
+            \item[\concept{Beperkingen}] De limieten waarbinnen je moet werken (tijd, budget, grondstoffen). Deze vormen lijnen in de grafiek.
+            \item[\concept{Toegelaten Gebied}] De zone die aan \textit{alle} beperkingen voldoet. De oplossing ligt altijd in dit gebied.
+            \item[\concept{Optimale Oplossing}] Het punt in het toegelaten gebied waar de doelfunctie maximaal is. Dit is altijd een hoekpunt.
+        \end{description}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.85, >=stealth]
+            % Grid
+            \draw[help lines, color=gray!20] (0,0) grid (7,6);
+            
+            % Assen
+            \draw[->, thick] (0,0) -- (7,0) node[right] {$x_1$};
+            \draw[->, thick] (0,0) -- (0,6.5) node[above] {$x_2$};
+
+            % Beperking 1: (0,5) naar (5,0) -> x + y <= 5
+            \draw[thick, schoolRed!80] (0,5) -- (5.5, -0.5);
+            \node[schoolRed!80, font=\footnotesize, right] at (0.2, 5) {Beperking 1};
+
+            % Beperking 2: (0,3) naar (6,0) -> x + 2y <= 6
+            \draw[thick, schoolOrange!80] (0,3) -- (6.5, -0.25);
+            \node[schoolOrange!80, font=\footnotesize, right] at (0.2, 3.2) {Beperking 2};
+
+            % Toegelaten gebied (polygon)
+            \fill[schoolBlue, opacity=0.15] (0,0) -- (5,0) -- (4,1) -- (0,3) -- cycle;
+            \node[schoolBlue!80!black, font=\bfseries\small, align=center] at (2, 1.2) {Toegelaten\\Gebied};
+
+            % Optimale oplossing (snijpunt 4,1)
+            \fill[schoolBlue] (4,1) circle (3pt);
+            
+            % Pijl naar optimum (in vrije ruimte)
+            \draw[<-, thick, schoolBlue] (4.1, 1.1) -- (5.5, 3.5) node[right, align=left] {\textbf{Optimum}\\(Max Winst)};
+            
+            % Winstlijn (stippellijn) Z = x + y (loodrecht op vector (1,1))
+            % Door punt (4,1): x+y=5. Lijn (2,3) tot (5,0)
+            \draw[dashed, thick, schoolGray] (2,3) -- (6, -1);
+            \node[schoolGray, font=\footnotesize, rotate=-45] at (3, 2.2) {Winstlijn};
+
+        \end{tikzpicture}
+        \caption{Grafische oplossing van een LP-probleem}
+        \label{fig:lp_graph}
+    \end{minipage}
+\end{figure}
+
+Als je moet bepalen hoe je het meeste winst maakt afhankelijk van verschillende producten en beperkingen, dan gebruik je lineair programmeren. De grafische methode werkt goed voor 2 variabelen; voor meer variabelen gebruik je de Simplex-methode (via software).
+
+\subsection{Simplex Methode: Voorbeeld}
+Stel we produceren twee producten ($x_1$ en $x_2$). Elk product vereist een bepaalde tijd voor assemblage en elektronica. We willen de winst ($P$) maximaliseren.
+
+\textbf{Gegevens:}
+\begin{itemize}
+    \item \textbf{Doelfunctie:} Max $P = 7x_1 + 5x_2$
+    \item \textbf{Beperkingen:}
+    \begin{itemize}
+        \item Assemblage tijd: $4x_1 + 3x_2 \leq 240$
+        \item Elektronica tijd: $2x_1 + 1x_2 \leq 100$
+    \end{itemize}
+\end{itemize}
+
+\textbf{Stap 1: Slack Variabelen toevoegen} \\
+Om de ongelijkheden ($\leq$) op te lossen met een matrix, moeten we ze omzetten naar vergelijkingen ($=$). Hiervoor introduceren we **slack variabelen** ($S_1$ en $S_2$).
+\begin{itemize}
+    \item $S_1$: De ongebruikte tijd in de assemblage-afdeling. Als $S_1 > 0$, hebben we tijd over.
+    \item $S_2$: De ongebruikte tijd in de elektronica-afdeling.
+\end{itemize}
+De vergelijkingen worden dan:
+\begin{align*}
+    4x_1 + 3x_2 + 1S_1 + 0S_2 &= 240 \\
+    2x_1 + 1x_2 + 0S_1 + 1S_2 &= 100 \\
+    P - 7x_1 - 5x_2 - 0S_1 - 0S_2 &= 0
+\end{align*}
+
+\textbf{Stap 2: Initiële Simplex Tabel} \\
+We zetten dit in een matrix. De onderste rij is de doelfunctie.
+
+\begin{table}[H]
+    \centering
+    \caption{Initiële Simplex Tableau}
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Basis} & $\mathbf{P}$ & $\mathbf{x_1}$ & $\mathbf{x_2}$ & $\mathbf{S_1}$ & $\mathbf{S_2}$ & \textbf{Oplossing} \\
+        \midrule
+        $S_1$ & 0 & \textbf{4} & 3 & 1 & 0 & 240 \\
+        $S_2$ & 0 & 2 & 1 & 0 & 1 & 100 \\
+        \midrule
+        $P$ & 1 & -7 & -5 & 0 & 0 & 0 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\textbf{Stap 3: Oplossen (Rij-operaties)} \\
+We voeren rij-operaties (vegen) uit totdat er geen negatieve getallen meer staan in de onderste rij.
+\begin{enumerate}
+    \item \textbf{Pivot Kolom:} Meest negatieve waarde in rij $P$ is $-7$ (dus variabele $x_1$ moet de basis in).
+    \item \textbf{Pivot Rij:} We delen de oplossing door de pivot-kolom: $240/4 = 60$ en $100/2 = 50$. De kleinste waarde is 50, dus rij $S_2$ is de pivot rij.
+    \item \textbf{Vegen:} We maken van de pivot (positie $S_2, x_1$) een 1 en zorgen dat de andere waarden in die kolom 0 worden.
+\end{enumerate}
+Na het uitvoeren van alle iteraties krijgen we de eindtabel:
+
+\begin{table}[H]
+    \centering
+    \caption{Simplex Tableau: Oplossing}
+    \begin{tabular}{lcccccc}
+        \toprule
+        \textbf{Basis} & $\mathbf{P}$ & $\mathbf{x_1}$ & $\mathbf{x_2}$ & $\mathbf{S_1}$ & $\mathbf{S_2}$ & \textbf{Oplossing} \\
+        \midrule
+        $x_2$ & 0 & 0 & 1 & 1 & -2 & 40 \\
+        $x_1$ & 0 & 1 & 0 & -0.5 & 1.5 & 30 \\
+        \midrule
+        $P$ & 1 & 0 & 0 & 1.5 & 0.5 & \textbf{410} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\textbf{Conclusie en Interpretatie:} \\
+In de kolom "Oplossing" lezen we de optimale waarden af voor de **basisvariabelen** ($x_1, x_2, P$). Variabelen die **niet** in de kolom `Basis' staan (hier $S_1$ en $S_2$), zijn **niet-basisvariabelen** en hebben per definitie de waarde **0**.
+
+\begin{itemize}
+    \item $\mathbf{x_1 = 30}$: We produceren 30 eenheden van product 1.
+    \item $\mathbf{x_2 = 40}$: We produceren 40 eenheden van product 2.
+    \item $\mathbf{P = 410}$: De maximale winst is 410.
+    \item $S_1 = 0$ en $S_2 = 0$: Dit betekent dat er geen ongebruikte tijd is.
+    \begin{itemize}
+        \item Assemblage: $4(30) + 3(40) = 120 + 120 = 240$ uur gebruikt (van de 240).
+        \item Elektronica: $2(30) + 1(40) = 60 + 40 = 100$ uur gebruikt (van de 100).
+    \end{itemize}
+    Beide afdelingen draaien dus op volle capaciteit (bottlenecks).
+\end{itemize}
+
+\section{Module 3: Investering}
+Deze module stelt de vraag, Wat is een goede investering?
+Een investering is een uitgave nu met de verwachting van toekomstige opbrengsten.
+Dit kan gaan om geld of productiviteit zoals het kopen van machines of opleidingen voor personeel.
+\textbf{Cashflow} is het geld dat binnenkomt en uitgaat over een bepaalde periode.
+
+Maar waarom zou je investering nu doen in plaats van later?
+Je moet investeren omdat inflatie de waarde van geld vermindert over tijd.
+\subsection{Inflatie}
+Inflatie is de stijging van het algemene prijsniveau over tijd.
+De koopkracht van je geld neemt dus af. Dit leidt tot een lagere
+\textbf{NHW (Netto Huidige Waarde)} van toekomstige cashflows.
+Inflatie van 2\% tot 3\% is gezond omdat het 
+een balans creert tussen sparen en uitgeven.
+Te hoge inflatie (hyperinflatie) kan leiden tot economische instabiliteit.
+terwijl deflatie (dalende prijzen) kan leiden tot stagnatie. Je gaat niet investeren als 
+je verwacht dat prijzen blijven dalen.
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.7\textwidth]{inflatie.png}
+        \caption{Effect van inflatie op koopkracht}
+        \label{fig:inflatie}
+\end{figure}
+\FloatBarrier
+
+Inflatie wordt berekent met de formule:
+\frm{Inflatie formule}{
+    K = k(1 + i)^n
+}
+{met $K$ de toekomstige waarde, $k$ de huidige waarde, 
+$i$ het inflatiepercentage en $n$ de hoeveelheid periodes.}
+
+\begin{oefenblok}[title={Voorbeeldoefening: Koopkracht over tijd}]
+Stel dat je vandaag \text{€}1.000 op je spaarrekening hebt. De gemiddelde inflatie over de komende 5 jaar wordt geschat op 3\% per jaar. Hoeveel moet dat bedrag over 5 jaar zijn om nog exact dezelfde hoeveelheid goederen te kunnen kopen?
+
+\textbf{Oplossing:}
+\begin{itemize}
+    \item \textbf{Gegeven:} $k = \text{€}1.000$, $i = 0,03$ (3\%), $n = 5$ jaar.
+    \item \textbf{Berekening:}
+    \[ K = 1000 \times (1 + 0,03)^5 \]
+    \[ K = 1000 \times (1,03)^5 \approx 1000 \times 1,159 \]
+    \item \textbf{Resultaat:} $K = \mathbf{\text{€}1.159,27}$
+\end{itemize}
+\textit{Betekenis:} Door de inflatie heb je over 5 jaar \text{€}1.159,27 nodig om hetzelfde te kunnen kopen als wat je vandaag voor \text{€}1.000 koopt. Je geld is dus minder waard geworden.
+\end{oefenblok}
+
+
+\subsection{Basisgegevens investeringsevaluatie}
+Een paar belangrijke begrippen bij investeringsevaluatie:
+\begin{description}
+    \item[Horizont] De periode waarin je de investering bekijkt (bijv. 5 jaar).
+    \begin{itemize}
+        \item fysieke levensduur: Hoe lang gaat de investering mee?
+        \item economische levensduur: Hoe lang levert de investering waarde op?
+        \item Fiscale levensduur: Hoe lang mag je de investering afschrijven volgens de belastingdienst?
+        \item Product levensduur: Hoe lang blijft het product relevant op de markt? zie module 1.
+    \end{itemize}
+    \item[Uitgavepatroon] Wanneer worden de kosten gemaakt?
+    \item[Inkomstenpatroon] Wanneer worden de opbrengsten gegenereerd?
+    \end{description}
+
+    \begin{figure}[ht]
+          \centering
+            \includegraphics[width=0.7\textwidth]{Kasstroom.png}
+            \caption{Uitgave- en inkomstenpatroon van een investering}
+            \label{fig:investeerpatroon}
+    \end{figure}
+
+\subsection{Afschrijvingen}
+Een \concept{afschrijving} is een manier om de kosten van een investering te verdelen over de
+meerdere periodes. Dit is belangrijk voor de belastingen.
+Je kunt namelijk belastingen vermijden door afschrijvingen te gebruiken.
+\newline
+
+Stel je hebt 6500 inkomsten. Je hebt 500 euro uitgaven. 
+De brute cashflow is dan 6000 euro. Je gaat nu een investering doen.
+Een fiets van 5000 euro. Je hebt nog niets gekocht maar je gaat dit verdelen
+over 5 jaar. Elk jaar schrijf je dan 1000 euro af. 
+De bruto cashflow is dan 6000 - 1000 = 5000 euro.
+De belastingen zijn 20\% dus je betaald 1000 euro belasting.
+Je netto cashflow is dan 4000 euro.
+Je telt dan weer de afschrijving erbij omdat dit geen echte uitgave is.
+Je hebt dan een netto cashflow van 5000 euro. 
+\newline
+
+Hoe dit eruit ziet. Je koopt een fiets uit je portomanee. 
+Je gaat dan bij een afschrijving per periode een \% aan de kant leggen in een andere pot maar dat 
+geld is niet weg.
+Dit is een afschrijving. Hiermee omzijl je de belastingen.
+\newline
+
+Een afschrijving mag niet altijd. Je mag niet zomaar 100\% van je belastingen afschrijven.
+Je moet dus afhankelijk van je product een lengte en een methode van afschrijving kiezen.
+\newline
+
+\belangrijk{De fiscus} is de belastingdienst die belastingen heft.
+Zij bepalen dus hoe lang en op welke manier je mag afschrijven.
+\newline
+
+Je hebt verschillende manieren van afschrijven:
+\begin{description}
+    \item [Lineaire afschrijving:] Elk jaar hetzelfde bedrag zoals het voorbeeld hierboven.
+    \begin{itemize}
+        \item \textbf{Voordelen:} Wordt aanvaard door de fiscus en is eenvoudig te berekenen.
+        \item \textbf{Nadelen:} Je schrijft altijd een vast bedrag af, ongeacht het gebruik of de waarde van het actief.
+    \end{itemize}
+    \item [Degressieve afschrijving:] Meer afschrijven in het begin en minder later.
+    \begin{itemize}
+        \item \textbf{Voordelen:} Je gaat meer afschrijven in het begin waardoor je minder belasting betaald.
+        \item \textbf{Nadelen:} Soms niet aanvaard door de fiscus.
+    \end{itemize}
+    \item [Vertraagde afschrijving:] Minder afschrijven in het begin en meer later.
+    \begin{itemize}
+        \item \textbf{Voordelen:} De fiscus gaat dit altijd aanvaarden.
+        \item \textbf{Nadelen:} Het is fiscaal niet interestand omdat je in het begin meer belasting betaald.
+    \end{itemize}
+    \item [Reele waarde afschrijving:] Hoe gaat afschrijven afhankelijk van het gebruik \textls{Hoeveel heb je een vrachtwagen gebruikt?}
+    \begin{itemize}
+        \item \textbf{Voordelen:} Je schrijft af afhankelijk van het gebruik.
+        \item \textbf{Nadelen:} Moeilijk te berekenen maar klopt met de realiteit.
+    \end{itemize}
+\end{description}
+
+In het begin meer afschrijven is fiscaal voordeliger omdat je dan minder belasting betaald
+maar de fiscus laat dit niet altijd toe.
+
+\begin{examenbox}
+    Zorg dat je weet wat afschrijvingen zijn en de verschillende soorten afschrijvingen kent en de Voordelen
+    en Nadelen ervan.
+\end{examenbox}
+
+ \subsection{Samengestelde interest, actualisatie, en annuïteiten}
+
+
+ \begin{description}
+    \item[Compound interest] Interest die wordt verdiend op zowel het oorspronkelijke 
+    bedrag als op de eerder verdiende interest. Je krijgt dus een "rente op rente" effect.
+    Dit leidt tot exponentiële groei van investeringen over tijd.
+    \item[Opportunity cost] De potentiële opbrengst die je misloopt door te
+     kiezen voor een bepaalde investering in plaats van de beste alternatieve investering.
+     Deze is te berekenen met de formule van inflatie, maar dan met een positief rentepercentage.
+ \end{description}
+
+ \subsection{actualisatie en annuïteiten}
+
+ Hoe kunnen we nu weten wat de waarde is van toekomstige cashflows in het heden?
+ Of als we iets afbetalen in termijnen, wat is dan de waarde van die betalingen nu?
+
+ Laten we eerst een simpel voorbeeld bekijken.
+ \frm{Formule toekomstige waarde}{
+    P = F / (1 + i)^n
+ }
+    {met $P$ de huidige waarde, $F$ de toekomstige waarde, i de rentevoet, en $n$ de hoeveelheid periodes.}
+    
+    Stel ik wil over 5 jaar 1000 euro ontvangen. De rentevoet is 5\%.
+    Wat moet ik investeren nu om dat bedrag te krijgen?
+    \[
+    P = 1000 / (1 + 0.05)^5 = 783.53 euro
+    \]
+    Dus als ik nu 783.53 euro investeer tegen 5\% rente, dan heb ik over 5 jaar 1000 euro.
+    \newline
+
+    \begin{figure}[ht]
+          \centering
+            \includegraphics[width=0.7\textwidth]{image1.png}
+            \caption{Toekomstige waarde van een investering}
+            \label{fig:toekomstigewaarde}
+    \end{figure}
+    \FloatBarrier
+    Dit is natuurlijk simpel. Het gaat over 1 bedrag in de toekomst.
+    Wat als we nu een reeks van bedragen hebben?
+
+
+ \belangrijk{Actualisatie} is het proces van het omzetten van toekomstige cashflows naar hun huidige waarde.
+    Je hebt dus meerdere bedragen die je in de toekomst ontvangt of betaalt.
+    \begin{figure}[ht]
+          \centering
+            \includegraphics[width=0.7\textwidth]{image2.png}
+            \caption{Actualisatie van toekomstige cashflows}
+            \label{fig:actualisatie}
+    \end{figure}
+    \FloatBarrier
+
+    De formule voor actualisatie is:
+
+    \frm{Formule actualisatie}{
+        P = \frac{A_1}{(1 + i)^1} + \frac{A_2}{(1 + i)^2} + \cdots + \frac{A_n}{(1 + i)^n} = \sum_{k=1}^{n} \frac{A_n}{(1 + i)^k}
+    }
+    {met $P$ de huidige waarde, $A_n$ de cashflow in periode $n$, $i$ de rentevoet, en $n$ de hoeveelheid periodes.}
+
+    Laten we een voorbeeld bekijken.
+    Stel je hebt de volgende cashflows over 3 jaar:
+    \begin{itemize}
+        \item Jaar 1: 1000 euro
+        \item Jaar 2: 1500 euro
+        \item Jaar 3: 2000 euro
+        \item Rentevoet i = 5\%
+    \end{itemize}
+    De huidige waarde van deze cashflows is:
+    \[
+    \begin{aligned}
+    P &= \frac{1000}{(1 + 0.05)^1} + \frac{1500}{(1 + 0.05)^2} + \frac{2000}{(1 + 0.05)^3} \\
+        &= \frac{1000}{1.05} + \frac{1500}{1.1025} + \frac{2000}{1.157625} \\
+        &\approx 952.38 + 1360.54 + 1728.99 = 4041.91~\text{€}
+    \end{aligned}
+    \]
+
+    Dit zijn alleen cashflows die je ontvangt. Wat als je een lening hebt die je moet afbetalen in termijnen?
+    Dit noemen we een annuïteit.
+    \newline
+
+    \belangrijk{Annuïteit} is een reeks gelijke betalingen die op regelmatige tijdstippen worden gedaan. 
+    Als je een lening aangaat bij de bank, dan betaal je meestal in maandelijkse termijnen.
+    Je terugbetaling A is dan constant. Hoe bereken je die A?
+    \newline
+
+    De formule voor de huidige waarde van een annuïteit is:
+    \frm{Formule annuïteit}{
+        P = A \sum_{k=1}^{n} \frac{1}{(1 + i)^k} = A \left( \frac{1 - (1 + i)^{-n}}{i} \right) = A \times a_n
+    }
+    {met $P$ de huidige waarde, $A$ de annuïteit (termijnbetaling), $i$ de rentevoet, $a_n$ de annuïteitsfactor, en $n$ de hoeveelheid periodes.}
+    Laten we een voorbeeld bekijken.
+    Stel je leent 500 euro bij de bank tegen een rentevoet van 10\% per jaar.
+    Je wilt dit terugbetalen in 10 jaarlijkse termijnen. Wat is de jaarlijkse betaling A?
+    Weet dat A hoger zal zijn want je moet ook rente betalen.
+    \[
+    500 = A \left( \frac{1 - (1 + 0.10)^{-10}}{0.10} \right)
+    \]
+    \[
+    500 = A \left( \frac{1 - (1.10)^{-10}}{0.10} \right) = 
+    A \left( \frac{1 - 0.38554}{0.10} \right) = A \left( \frac{0.61446}{0.10} \right) = A \times 6.1446
+    A = \frac{500}{6.1446} \approx 81.34~\text{€}
+    \]
+
+    6.1446 is de annuïteitsfactor moet je opzoeken in een tabel. Je zoekt dan 10 jaar en 10\% op.
+    Dus je moet elk jaar 81.34 euro betalen om de lening van 500 euro terug te betalen in 10 jaar.
+    \newline
+
+    Laten we dit opstelling in een tabel zodat je duidelijk ziet wat je afbetaald elke jaar.
+    \begin{table}[H]
+        \centering
+        \caption{Afbetalingsschema van de lening}
+        \begin{tabular}{r r r r r r}
+            \toprule
+            Periode & Beginbalans (€) & Rente (10\%) & Betaling (€) & Aflossing (€) & Eindbalans (€) \\ 
+            \midrule
+            1  & €500.00 & €500 * 0.10 = €50.00 & €81.34 & €31.34 & €468.66 \\
+            2  & €468.66 & €46.87 & €81.34 & €34.47 & €434.19 \\
+            3  & €434.19 & €43.42 & €81.34 & €37.92 & €396.27 \\
+            4  & €396.27 & €39.63 & €81.34 & €41.71 & €354.56 \\
+            5  & €354.56 & €35.46 & €81.34 & €45.88 & €308.68 \\
+            6  & €308.68 & €30.87 & €81.34 & €50.47 & €258.21 \\
+            7  & €258.21 & €25.82 & €81.34 & €55.52 & €202.69 \\
+            8  & €202.69 & €20.27 & €81.34 & €61.07 & €141.62 \\
+            9  & €141.62 & €14.16 & €81.34 & €67.18 & €74.44 \\
+            10 & €74.44  & €7.44  & €81.88 & €74.44 & €0.00 \\
+        \end{tabular}
+    \end{table}
+
+    Opmerking: vaste periodieke betaling berekend als A
+     $\approx$ €81.34; de laatste betaling is hier licht aangepast (€81.88) om afrondingsverschillen volledig uit te wissen.
+
+    Je betaald dus langzaam minder interest omdat je schuld afneemt.
+    \newline
+    
+
+\subsection{Investeringsevaluatie methodes}
+ Hoe weten we nu of een investering goed is of niet?
+ Deze formules geven ons een manier om dat te bepalen.
+ We gaan hier twee methodes bekijken.
+
+    \subsubsection{Payback-methode}
+
+\noindent
+\begin{minipage}{0.55\textwidth}
+    De payback-methode kijkt naar hoe snel je je investering terugverdient.
+    Dit is een simpele methode die niet kijkt naar de tijdswaarde van geld.
+    Je berekent gewoon hoeveel tijd het duurt om je initiële investering terug te krijgen.
+    Het is mogelijk dat je hierdoor winst mist omdat je niet kijkt naar de cashflows na de payback-periode.
+\end{minipage}\hfill
+\begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{Paypackperiode.png}\\[4pt]
+    {\small\textbf{Payback-periode illustratie}\label{fig:Paypackperiode}}
+\end{minipage}
+
+\begin{itemize}
+    \item \textbf{Voordelen:} Eenvoudig te begrijpen en toe te passen. Handig voor snelle beslissingen.
+    \item \textbf{Nadelen:} Negeert de tijdswaarde van geld en cashflows na de payback-periode.
+    \item \textbf{Toepassing:} Geschikt voor kleine investeringen of wanneer liquiditeit belangrijk is.
+\end{itemize}
+
+ \subsubsection{Discounted cashflow}
+    De discounted cashflow (DCF) methode houdt rekening met de tijdswaarde van geld. 
+    Als het over lange termijn investeringen gaat, is dit de beste methode.
+
+    \frm{Formule Huidige Waarde (HW)}
+    {
+        HW = \sum_{k=0}^{n} \frac{R_k-E_k}{(1 + i)^k} = \sum_{k=0}^{n} \frac{CF_k}{(1 + i)^k}
+    }
+    {met $HW$ de huidige waarde, $R_k$ de inkomsten in periode $k$, $E_k$ de uitgaven in periode $k$, $i$ de discontovoet, $CF_k$ de cashflow in periode $k$, en $n$ de hoeveelheid periodes.}
+    De netto huidige waarde (NHW) is dan:
+    \frm{Formule Netto Huidige Waarde (NHW)}
+    {
+        NHW = HW - I_0 = \sum_{k=0}^{n} \frac{CF_k}{(1 + i)^k} - I_0
+    }
+    {met $NHW$ de netto huidige waarde, $HW$ de huidige waarde, $I_0$ de initiële investering, $CF_k$ de cashflow in periode 
+    $k$, $i$ de discontovoet, en $n$ de hoeveelheid periodes.}
+
+    Als NHW > 0, is de investering rendabel.
+    \newline
+
+    Met dit kunen we de Profitability Index (PI) berekenen:
+    \frm{Formule Profitability Index (PI)}
+    {
+        PI_2 = \frac{NHW}{I_0} => PI_1 = \frac{HW}{I_0} => PI_2 = PI_1 + -1
+    }
+    {met $PI$ de profitability index, $NHW$ de netto huidige waarde, $HW$ de huidige waarde, $I_0$ de initiële investering.}
+
+    Je hebt dus gewoon een factor om te zien hoe goed de investering is.
+    Als $PI_2$ $> 0$, is de investering goed.
+    \newline
+
+    Als laatste hebben we de Internal Rate of Return (IRR).
+    In de formule \ref{frm:6} van NHW, stel je NHW = 0.
+    Je lost dan op voor i. Dit is de IRR. 
+    Dit toont hoeveel rendement je krijgt op je investering.
+    \frm{Formule Internal Rate of Return (IRR)}
+    {
+        0 = \sum_{k=0}^{n} \frac{CF_k}{(1 + IRR)^k} - I_0
+    }
+    {met $IRR$ de internal rate of return, 
+    $CF_k$ de cashflow in periode $k$, $I_0$ de initiële investering, en $n$ de hoeveelheid periodes.}
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.5\textwidth]{rateofreturn.png}
+      \caption{Grafische weergave van de IRR (snijpunt met de x-as)}
+      \label{fig:rateofreturn.png}
+\end{figure}
+\FloatBarrier
+
+\begin{examenbox}
+    De formules zijn gegeven maar weet wat ze betekenen en hoe je ze gebruikt.
+    Zorg ook dat je de voordelen en nadelen van de twee methodes kent.
+    Je hebt twee methodes: Payback en Discounted Cashflow.
+    Payback is simpel maar kijkt niet naar de tijdswaarde van geld.
+    Discounted Cashflow is complexer maar geeft een beter beeld van de investering over tijd.
+\end{examenbox}
+
+
+
+\begin{oefenblok}[title={Oefening: Discounted Cashflow — HW, NHW, IRR, PI}]
+Gegeven: initiële investering $I_0=\text{€}5.000$. Verwachte cashflows:
+\[
+CF_1=\text{€}1.500,\quad CF_2=\text{€}2.000,\quad CF_3=\text{€}2.500.
+\]
+Discontovoet $i=8\%$.
+
+\textbf{1. Huidige Waarde (HW)}\\
+    $HW=\sum_{k=1}^{n}\frac{CF_k}{(1+i)^k}$
+Berekening:
+\[
+\begin{aligned}
+HW &= \frac{1500}{1{,}08}+\frac{2000}{1{,}08^2}+\frac{2500}{1{,}08^3} \\
+&\approx 1388{,}89 + 1715{,}98 + 1986{,}77 = \mathbf{5091{,}64\ \text{€}}.
+\end{aligned}
+\]
+
+\textbf{2. Netto Huidige Waarde (NHW)}\\
+    $NHW = HW - I_0$
+\[
+NHW = 5091{,}64 - 5000 = \mathbf{91{,}64\ \text{€}} \quad (\text{>0} \Rightarrow \text{rendabel bij }8\%).
+\]
+
+\textbf{3. Profitability Index (PI)}\\
+    $PI = \frac{HW}{I_0}$
+\[
+PI = \frac{5091{,}64}{5000} \approx \mathbf{1{,}0183}.
+\]
+\textbf{4. Internal Rate of Return (IRR)}\\
+IRR is de koers $r$ waarvoor
+\[
+0 = \left(\sum_{k=1}^{3}\frac{CF_k}{(1+r)^k}\right) - I_0.
+\]
+We zoeken r door iteratie. NPV bij $r=8\%$ is $+91{,}64$, bij $r=9\%$ is ongeveer $-9{,}99$. Lineaire interpolatie geeft:
+\[
+r \approx 0{,}08 + \frac{0-91{,}64}{-9{,}99-91{,}64}\times(0{,}09-0{,}08)
+\approx \mathbf{8{,}90\%}.
+\]
+\textbf{Conclusie:} HW = €5091,64, NHW = €91,64 (>0), PI $\approx$ 1,018, IRR $\approx$ 8,90\%. Project is rendabel bij discontovoet 8\%.
+\end{oefenblok}
+
+ \begin{examenbox}
+    Een vraag kan zijn: \textls{Hoe voer je een ‘Investeringsanalyse’ uit? Leg uit aan de hand van een schema.}
+    Je legt uit welke waarden je allemaal nodig hebt en hoe je die berekent (cashflow, intrest, investeringperiode, het investeringsbedrag, etc).
+    Daarna leg je uit welke methodes er zijn (NHW, IRR \dots) en hoe je die berekent.
+    Leg dan wanneer het een goede of slechte investering is voor welke voorwaarden. 
+ \end{examenbox}
+
+ \begin{examenbox}
+     \textls{Stel je wilt een investering gaan analyseren die een ‘effect’ zou hebben over een periode van 10 jaar.
+Welke beoordelingscriteria zou je gaan gebruiken, en waarom? Motiveer duidelijk je antwoord.}
+Je gaat zoiezo discounted cashflow gebruiken omdat je met een periode van 10 jaar werkt. Voor kleinere 
+investeringen kan je payback gebruiken.
+ \end{examenbox}
+
+ \begin{examenbox}
+    \textls{Investeringen en subsidies. Hoe kunnen subsidies bepalend zijn bij een investeringsevaluatie? Leg uit}
+    Als je investing gesubsideerd wordt, dan verlaagt dit het initiële investeringsbedrag. $I_0$.
+    Bij de formule van NHW en IRR heeft dit een positief effect op de uitkomst.
+ \end{examenbox}
+
+
+\section{Module 4: Kostprijs calculatie}
+
+Dit deel gaat over kostprijs calculatie. Je gaat dus berekenen wat de kost is van een product.
+Dit is niet hetzelfde als de prijszetting. Hierbij bekijk je puur wat het kost om een product te maken.
+We willen dus weten wat de kost is van grondstoffen, arbeid, overhead, etc.
+Daarna kan je met deze factoren de prijs bepalen.
+\newline 
+
+We nemen een pizzeria als voorbeeld.
+Die hebben kosten aan ingrediënten, De kok, huur, elektriciteit
+, mangement etc. 
+
+\subsection{Kostprijs elementen}
+
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{c|c|c}
+        \textbf{Kostentype} & \textbf{Variabele Kosten} & \textbf{Vaste Kosten} \\
+        \hline
+        \textbf{Directe Kosten} & 
+        \begin{tabular}[t]{@{}l@{}}Grondstof per eenheid \\ Arbeid per eenheid \\ Directe materiaal\end{tabular} &
+        \begin{tabular}[t]{@{}l@{}}Vaste arbeid \\ Gespecialiseerde machines \\ Licenties specifiek product\end{tabular} \\
+        \hline
+        \textbf{Indirecte Kosten} &
+        \begin{tabular}[t]{@{}l@{}}Energie voor productie \\ Distributie per eenheid \\ Verpakking per eenheid\end{tabular} &
+        \begin{tabular}[t]{@{}l@{}}Administratie \\ Huur fabriek \\ Verzekeringen \\ Onderhoud machines\end{tabular} \\
+        \hline
+    \end{tabular}
+    \caption{Kostenmatrix: Categorisering naar Directheid en Variabiliteit}
+    \label{tab:kostenmatrix}
+\end{table}
+
+\textbf{Toelichting:}
+\begin{itemize}
+    \item \textbf{Variabele kosten:} Veranderen met de hoeveelheid geproduceerde eenheden. \textls{ingrediënten per pizza}.
+    \item \textbf{Vaste kosten:} Blijven hetzelfde onafhankelijk van de productie. \textls{(bijv. huur, salarissen administratie)}.
+    \item \textbf{Directe kosten:} Rechtstreeks toewijsbaar aan een product of dienst. \textls{(Deeg per pizza)}.
+    \item \textbf{Indirecte kosten:} Kosten zoals het gebouw, huur, elektriciteit. \textls{(Elektriciteit van de pizzeria)}.
+\end{itemize}
+
+Deze kosten zijn niet altijd op een product of dienst gezet maar ze zijn wel een deel
+van de kostprijs.
+\newline
+
+Voorbeelden:
+Het deeg is een variable directe kost. Ze zijn gelinkt aan het product en veranderen met de productie.
+De huur is een vaste indirecte kost. Ze zijn niet gelinkt aan een product en veranderen niet met de productie.
+Elektriciteit is een variable indirecte kost. Ze zijn niet gelinkt aan een product maar veranderen wel met de productie.
+De kok is een vaste directe kost. Ze zijn gelinkt aan het product maar veranderen niet met de productie.
+\newline
+
+
+Vaste kosten zijn dus een recht lijn op een grafiek. Variable kosten zijn een stijgende lijn.
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.45\textwidth]{vastekosten.png}
+        \includegraphics[width=0.45\textwidth]{image3.png}
+        \caption{Vaste en Variable kosten grafiek}
+        \label{fig:vastevariablekosten}
+\end{figure}
+\FloatBarrier
+
+
+\subsubsection{Fifo en Libo}
+
+Hoe kun je nu de waarde van je voorraad bepalen?
+Er zijn twee methodes: FIFO en LIFO:
+
+\textbf{FIFO} is First In First Out.
+\textbf{LIFO} is Last In First Out.
+\newline
+Stel je hebt 100 eenheden gekocht voor 10 euro per stuk
+en 50 voor 12 euro per stuk.
+Dan heb je 1000 euro uitgegeven.
+Je verkoopt er 60.
+\newline 
+\textbf{FIFO:}
+Je verkoopt de eerste 60 eenheden die je gekocht hebt.
+Dus 60 * 10 = 600 euro.
+Je hebt dan nog 40 eenheden over van 10 euro per stuk en 50 eenheden van 12 euro per stuk.
+\newline
+\textbf{LIFO:}
+Je verkoopt de laatste 60 eenheden die je gekocht hebt.
+Dus 50 * 12 = 720 euro + 10 * 10 = 100 euro => 820 euro.
+Je hebt dan nog 40 eenheden over van 10 euro per stuk.
+
+
+\subsubsection{Primitieve Toeslag methodes}
+\textbf{Primitieve toeslagmethode:} 
+Je neemt je indirect kosten en verdeelt die over je producten.
+
+\textbf{Directe kosten, indirect kosten en toeslagmethode}
+
+De ingredienten kosten 5000 euro.
+De cola's kosten 5000 euro.
+De kok kost 3000 euro.
+De ober kost 2000 euro.
+
+We verkopen 1000 pizza's.
+We verkopen 2000 cola's
+
+Direct variable kost per pizza = 5000/1000 = 5 euro.
+Direct variable kost per cola = 5000/2000 = 2.5 euro.
+
+De kok is een arbeidskost. Dit is een vaste directe kost.
+De kok kost 3000/1000 = 3 euro per pizza.
+De ober kost 2000/2000 = 1 euro per cola. 
+
+\textbf{Tabel 1: Directe Kosten}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|r|r|}
+        \hline
+        \textbf{Kostentype} & \textbf{Pizza P} & \textbf{Cola C} \\
+        \hline
+        Ingrediënten (per eenheid) & €5,00 & €2,50 \\
+        Arbeid (per eenheid) & €3,00 & €1,00 \\
+        \hline
+        \textbf{Totale directe kost} & \textbf{€8,00} & \textbf{€3,50} \\
+        \hline
+    \end{tabular}
+    \caption{Directe Kosten per Product}
+\end{table}
+
+\textbf{Indirecte kosten}
+Er zijn indirect kosten van 2000 euro.
+Hoe gaan we die nu toewijzen want sommige producten zijn duurder
+dan andere.
+
+Dit noemt \belangrijk{toeslag}.
+
+$Toeslag = \frac{Indirecte Kosten}{Directe Kosten}$
+\newline
+
+\textbf{Tabel 2: Toeslag op basis van ALLE directe kosten}
+
+$Toeslag alle directe kosten = \frac{€2000}{€15000} = 13.33\%$
+\newline
+
+\begin{center}
+    \begin{tabular}{|l|r|r|}
+        \hline
+        \textbf{Kostentype} & \textbf{Pizza P} & \textbf{Cola C} \\
+        \hline
+        Directe kosten ingrediënten & €5,00 & €2,50 \\
+        Direct kosten arbeid & €3,00 & €1,00 \\
+        Toeslag (13.33\%) & €1,07 & €0,47 \\
+        \hline
+        \textbf{Totale kostprijs} & \textbf{€9,07} & \textbf{€3,97} \\
+        \hline
+    \end{tabular}
+\end{center}
+\phantomsection\label{tab:toeslag_alle_directe_kosten}
+\begin{center}\small\emph{Tabel: Kostprijs met Toeslag op Alle Directe Kosten}\end{center}
+
+\textbf{Tabel 3: Toeslag op basis van INGREDIËNTEN}
+
+$Toeslag ingredienten = \frac{€2000}{€10000} = 20\%$
+\newline
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|r|r|}
+        \hline
+        \textbf{Kostentype} & \textbf{Pizza P} & \textbf{Cola C} \\
+        \hline
+        Ingrediënten & €5,00 & €2,50 \\
+        Toeslag ingrediënten  & €1,00 & €0,50 \\
+        Arbeid & €3,00 & €1,00 \\
+        \hline
+        \textbf{Totale kostprijs} & \textbf{€9,00} & \textbf{€4,00} \\
+        \hline
+    \end{tabular}
+    \caption{Kostprijs met Toeslag op Ingrediënten}
+\end{table}
+
+\textbf{Tabel 4: Toeslag op basis van ARBEID}
+
+$Toeslag arbeid = \frac{€2000}{€5000} = 40\%$
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|r|r|}
+        \hline
+        \textbf{Kostentype} & \textbf{Pizza P} & \textbf{Cola C} \\
+        \hline
+        Ingrediënten & €5,00 & €2,50 \\
+        Arbeid & €3,00 & €1,00 \\
+        Toeslag arbeid  & €1,20 & €0,40 \\
+        \hline
+        \textbf{Totale kostprijs} & \textbf{€9,20} & \textbf{€2,40} \\
+        \hline
+    \end{tabular}
+    \caption{Kostprijs met Toeslag op Arbeid}
+\end{table}
+
+\subsubsection{Verfijnde toeslagmethode}
+Hierbij ga je de verdeelsleutels verfijnen.
+Je indirecte kosten ga je meer opdelen in verschillende kostenplaatsen.
+Je indirect ingredienten, indirect arbeid, indirect machine gebruik etc.
+Je gaat dus verschillende toeslagen gebruiken voor verschillende kostenplaatsen.
+\newline 
+
+Zie het boek of de slides voor een voorbeeld.
+
+
+\subsubsection{Kostenplaatsmethode}
+Hier ga je de indirecte kosten toewijzen aan verschillende kostenplaatsen.
+De huur van de pizzaria is 500 euro.
+Je deelt dan die 500 euro op in verschillende kostenplaatsen.
+De pizza keuken, de bar, de administratie etc.
+Je gaat dan per kostenplaats de indirecte kosten toewijzen.
+
+Pizzakeuken is 60\% van de oppervlakte.
+Bar is 30\% van de oppervlakte.
+Administratie is 10\% van de oppervlakte.
+\newline
+Dus de huur van de pizzakeuken is 500 * 0.6 = 300 euro.
+De huur van de bar is 500 * 0.3 = 150 euro.
+De huur van de administratie is 500 * 0.1 = 50 euro.
+\newline
+
+Je kunt nog meer verdelen zoals verzekering van de machines met de waarde 
+van de machines.
+Of elektriciteit met het verbruik van de machines.
+\newline
+
+
+\subsection{Kostprijsberekening methodes}
+Je hebt meerdere methodes om de kostprijs te berekenen.
+
+
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.8\textwidth]{VerschillendeMethodes.png}
+      \caption{}
+      \label{fig:VerschillendeMethodes.png}
+\end{figure}
+\FloatBarrier
+
+\begin{description}
+    \item[Klassieke kostprijsberekening:] Dit is de methode die we 
+    tot nu toe gebruikt hebben. Je verdeelt alle kosten over de producten.
+    De winst die je maakt noem je \belangrijk{Commerciële winst}.
+    \item[Historische kostprijsberekening:] Hierbij kijk je naar de kosten die je gemaakt hebt.
+    Je kijkt dus naar de verleden tijd. Je kijkt naar de kosten van vorig jaar.
+    Gevaar is dat je kosten veranderd zijn. Je moet soms verkopen 
+    met verlies zodat je nog een deel van de kosten dekt.
+    \begin{figure}[ht]
+          \centering
+            \includegraphics[width=0.8\textwidth]{dekkingkosten.png}
+          \caption{Dekking van kosten bij historische kostprijsberekening}
+          \label{fig:dekkingkosten.png}
+    \end{figure}
+    \item[Industriële kostprijsberekening:] Hierbij kijk je naar de pizza industrie.
+    De kosten worden verdeeld op basis van de productieprocessen.
+    De pizza heeft een deeg proces, een beleg proces, een bak proces etc.
+    Je gaat per proces de kosten toewijzen. Elk process verrijkt de pizza.
+    Dit noemt \belangrijk{Exploitatiewinst}.
+    \item[Evenredige kostprijsberekening:] Dit is gewoon de grondstoffen en lonen. 
+    Het verschil met de verkoopprijs is de \belangrijk{Marge}.
+\end{description}
+
+
+
+\begin{examenbox}
+    Zorg dat je alle methodes kent en wat ze inhouden. 
+    Daarbij ook de voordelen en nadelen en de hoe de winst noemt.
+    kijk naar de figuur \ref{fig:VerschillendeMethodes.png}
+    \begin{itemize}
+        \item Exploitatiewinst
+        \item Commerciele winst
+        \item Marge
+    \end{itemize}
+\end{examenbox}
+
+\subsubsection{Break-Even Analyse}
+De break-even analyse bepaalt het punt waarop een bedrijf geen winst of verlies maakt. Dit is het moment waarop de \textbf{Totale Opbrengst (TO)} gelijk is aan de \textbf{Totale Kosten (TK)}.
+
+\begin{figure}[ht]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \textbf{Kernbegrippen:}
+        \begin{description}
+            \item[\concept{Dekkingsbijdrage}] Dit is het verschil tussen de verkoopprijs en de variabele kosten ($P - VCK$). Dit bedrag per verkocht stuk draagt bij aan het dekken van de vaste kosten.
+            \item[\concept{Break-Even Afzet ($Q_{BE}$)}] Het aantal stuks dat verkocht moet worden:
+            \[ Q_{BE} = \frac{TCK}{P - VCK} \]
+            \item[\concept{Break-Even Omzet ($TO_{BE}$)}] De omzet in euro's waarbij winst nul is:
+            \[ TO_{BE} = P \times Q_{BE} \]
+            \item[\concept{Veiligheidsmarge}] Hoeveel de afzet mag dalen voordat er verlies wordt gemaakt (vaak uitgedrukt in \% van de huidige afzet).
+        \end{description}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tikzpicture}[scale=0.8, >=stealth]
+            % Axes
+            \draw[->, thick] (0,0) -- (6,0) node[right] {Q (Aantal)};
+            \draw[->, thick] (0,0) -- (0,5) node[above] {€};
+
+            % TCK (Fixed Costs)
+            \draw[thick, schoolBlue] (0,1.5) -- (5.5,1.5) node[right, font=\tiny] {TCK};
+
+            % TK (Total Costs)
+            \draw[thick, schoolOrange] (0,1.5) -- (5.5,4.25) node[right, font=\tiny] {TK};
+
+            % TO (Revenue)
+            \draw[thick, teal!80!black] (0,0) -- (5,5) node[right, font=\tiny] {TO};
+
+            % BEP
+            \fill[black] (3,3) circle (2pt);
+            \node[above left, font=\bfseries\scriptsize] at (3,3) {BEP};
+            
+            \fill[schoolRed, opacity=0.15] (0,0) -- (3,3) -- (0,1.5) -- cycle;
+            \node[schoolRed, font=\tiny] at (1, 1.8) {Verlies};
+
+            \fill[teal, opacity=0.15] (3,3) -- (5,5) -- (5,4) -- cycle;
+            \node[teal!80!black, font=\tiny] at (4.5, 3.8) {Winst};
+
+            \draw[dashed] (3,3) -- (3,0) node[below, font=\scriptsize] {$Q_{BE}$};
+        \end{tikzpicture}
+        \caption{Visualisatie van de Break-Even Analyse}
+        \label{fig:breakeven}
+    \end{minipage}
+\end{figure}
+\FloatBarrier
+
+In de realiteit zijn deze grafiekn niet lineair omdat de variable kosten kunnen veranderen met de
+ productie \ref{fig:vastevariablekosten}.
+
+ \begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.7\textwidth]{breakevenrealistisch.png}
+        \caption{Realistische Break-Even Analyse}
+        \label{fig:breakevenrealistisch.png}
+\end{figure}
+\FloatBarrier
+
+Je gaat dan het verschil met de marginale kost en de marginale opbrengst bekijken en dan de winst maximaliseren.
+
+
+\begin{examenbox}
+    Zorg dat je deze grafieken goed kunt uitleggen
+\end{examenbox}
+
+
+
+\subsection{Activity Based Costing (ABC)}
+Al deze Kostprijsberekeningen geven je nu wel geen inzicht
+in wat de kost is van specifieke producten.
+Stel je hebt twee producten die andere processen hebben.
+In de vorige methodes zou je de kosten gelijk verdelen 
+zonder enige inzicht in de kost per product.
+ABC ga je per product de kosten toewijzen. 
+Dit is veel realistischer. Het is wel moeilijker te implementeren.
+\newline 
+
+Bekijk de slides of het boek voor een voorbeeld van ABC.
+
+
+\subsection{Target based costing}
+
+Bij traditionele kostprijsberekening maak je je product en kijk je daarna wat de kost is.
+Bij target based costing ga je eerst kijken wat de marktprijs is.
+Je kijkt dus wat de klant wil betalen voor een product.
+Daarna ga je je product maken binnen die kostprijs.
+Dit is dus een omgekeerde manier van denken.
+
+
+
+\section{Module  5: Analyse van een jaarrekening}
+
+Een paar belangrijke termen om te kennen:
+\begin{itemize}
+    \item Balans: Een momentopname van de financiële 
+    situatie van een bedrijf op een bepaald tijdstip.
+     Dit is een foto van de activa en passiva.
+    \item Resultatenrekening: Een overzicht van de inkomsten en uitgaven over een bepaalde periode.
+    Dit is een video van de winst en verlies.
+    \item Toelichting: wordt later besproken.
+    \item Sociale balans: Een overzicht van de sociale aspecten van een bedrijf, 
+    zoals arbeidsomstandigheden en personeelsbeleid.
+    \item Niet-financiële informatie: Informatie die niet direct in geld kan worden uitgedrukt,
+    zoals milieubeleid en maatschappelijke verantwoordelijkheid.
+\end{itemize}
+
+
+Boekhouding heeft principes, je moet dezelfde kosten elk jaar op dezelfde manier boeken.
+Dit helpt om ratio's tussen de jaren te vergelijken.
+
+\begin{examenbox}
+   Een vraag uit een examen kan zijn: \textls{ Waarom worden ‘Ratio-analyses’ gebruikt binnen het Financieel Management? Wat zijn de
+beperkingen? Leg uit.}
+\end{examenbox}
+
+
+Activa is wat een bedrijf bezit.
+Passiva is hoe dat gefinancierd is.
+Je zet passiva in (het doet niks het is passief) en zet het in op activa (het doet iets het is actief).
+
+
+\subsubsection{Activa (Wat bezit het bedrijf?)}
+
+\begin{itemize}
+    \item \textbf{Vaste activa:} Lange termijn investeringen
+    \begin{itemize}
+        \item Gebouwen, machines, voertuigen
+        \item Immateriële activa (patenten, licenties)
+    \end{itemize}
+    \item \textbf{Vlottende activa:} Korte termijn bezittingen
+    \begin{itemize}
+        \item Voorraden (grondstoffen, halffabricaten, eindproducten)
+        \item Vorderingen (geld dat klanten nog schuldig zijn)
+        \item Bankrekening en contanten
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Passiva (Waar komt het geld vandaan?)}
+
+\begin{itemize}
+    \item \textbf{Eigen Vermogen:} Geld van eigenaren/aandeelhouders
+    \begin{itemize}
+        \item Inbreng van oprichters
+        \item Gerealiseerde winsten (ingehouden winst)
+    \end{itemize}
+    \item \textbf{Vreemd Vermogen:} Geld van externe financiers
+    \begin{itemize}
+        \item Langetermijnleningen (bank)
+        \item Korttermijnschulden (leveranciers, belastingen)
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.45\textwidth]{balans1.png}
+            \includegraphics[width=0.45\textwidth]{balans2.png}
+      \caption{Voorbeeld van een Balans}
+      \label{fig:balans.png}
+\end{figure}
+\FloatBarrier
+
+Hoe meer is liquidit is hoe makkelijker je eraan kunt komen.
+Lange termijnvorderingen zijn moeilijker om aan te komen 
+als korte termijnvorderingen.
+\newline 
+
+Hoe meer open openbaar het is hoe meer mensen er aan kunnen komen.
+
+
+
+\begin{figure}[ht]
+      \centering
+       \includegraphics[width=1\textwidth]{JaarrekeningPoximus.png}
+      \caption{Voorbeeld van een jaarrekening van Proximus}
+      \label{fig:JaarrekeningPoximus.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{De balans}
+
+De balans is een \textbf{momentopname} van de financiële positie van een bedrijf op een specifiek moment (meestal aan het einde van een jaar).
+
+\textbf{Balansformule:}
+$$\textbf{Activa} = \textbf{Passiva}$$
+
+Dit betekent: Wat een bedrijf bezit (activa) is gelijk aan waar het geld vandaan komt (passiva).
+
+
+\textbf{Voorbeeld transacties:}
+\begin{itemize}
+    \item \textbf{Je neemt een lening van €10.000:} Bankrekening (activa) +€10.000 / Schuld (passiva) +€10.000
+    \item \textbf{Je koopt een machine voor €5.000:} Machine (activa) +€5.000 / Bankrekening (activa) -€5.000 (balans blijft gelijk)
+    \item \textbf{Je maakt €2.000 winst:} Bankrekening (activa) +€2.000 / Eigen vermogen (passiva) +€2.000
+\end{itemize}
+
+\subsection{Resultatenrekening}
+De resultatenrekening is een film. Je neemt op tussen twee periodes. Meestal een jaar.
+Je kijkt naar alle inkomsten en uitgaven tussendoor
+en je bekijkt het verschil. Je \belangrijk{startkapitaal} maakt dan winst of 
+verlies.
+
+De resultaat rekening wordt opgedeeld in 3 delen:
+\begin{itemize}
+    \item \textbf{Bedrijfsresultaat:} Dit is de winst of verlies uit de kernactiviteiten van het bedrijf.
+    \item \textbf{Financieel resultaat:} Dit omvat rente-inkomsten en -kosten, evenals andere financiële opbrengsten en lasten.
+    \item \textbf{Uitzonderlijk resultaat:} Dit zijn eenmalige gebeurtenissen zoals
+    een ongeluk of brand die elk jaar gebeuren. 
+\end{itemize}
+
+Als je wilt kijken naar hoe het bedrijf het doet. 
+Kijk je naar het \textbf{Bedrijfsresultaat}.
+
+\textbf{Toelichting}
+Toelichtingen zijn extra notities bij de balans en resultatenrekening.
+Ze geven meer details over specifieke posten, zoals waarderingsmethoden, 
+risico's, en andere relevante informatie die niet direct in de cijfers zichtbaar is.
+Bijvoorbeeld een grondstof contract die een bedrijf elke 4 jaar betaald.
+\newline 
+
+\textbf{Types jaarrekeningen:}
+Jaarrekeningen zijn verplicht voor bedrijven en organisaties om 
+hun financiële prestaties en positie te rapporteren.
+\begin{itemize}
+    \item enkelvoudige jaarrekening: Dit is voor kleine bedrijven.
+    \item geconsolideerde jaarrekening: Dit is voor grote bedrijven met meerdere dochterondernemingen.
+\end{itemize}
+
+Elk land heeft een eigen standaard voor jaarrekeningen. De BE GAAP is de Belgische standaard.
+Internationaal is er IFRS (International Financial Reporting Standards).
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.8\textwidth]{verschillengaap met IFRS.png}
+      \caption{Structuur van een jaarrekening}
+      \label{fig:jaarrekeningstructuur.png}
+\end{figure}
+\FloatBarrier
+
+\textbf{Jaarverslag}: 
+Een verslag over de onderneming met commentaar over de jaarrekening. 
+Risico, continuiteit, toekomstplannen etc.
+Als een bedrijf op de beurs staat 
+moet die nog een beursgenoteerde ondermingverslag maken.
+Dit heeft nog meer informatie, meer niet-financiële informatie.
+
+
+\textbf{Commissarisverslag}:
+Als een auditor gaat zijn opinie geven over de jaarrekening.
+Ze controlleren de jaarrekening of dit weldegelijk klopt met het bedrijft.
+Bedrijven kunnen liegen waarbij ze inkomsten gaan vergroten of kosten verlagen.
+De auditor gaat dit controleren en een verslag maken. Dat is de \belangrijk{commissarisverslag}.
+
+\subsection{Analyse van de jaarrekening}
+Jaarrekeningen worden opgesteld volgens de boekhoudkundige principes
+zoals eerder vermeld. 
+Een bedrijf wordt nooit verkockt aan de boekhoudende waarde.
+Meestal zijn dit veel hogere waarden.
+\newline 
+
+Dit komt omdat bedrijven verkocht worden 
+op basis van hun winstgevendheid en groeipotentieel,
+opinie en reputatie\dots
+Een jaarrekening geef alleen zicht op het verleden
+\newline
+Om de jaarrekeningen te analyseren ga je een financiële analyse doen.
+
+Types van financiele analyse:
+\begin{itemize}
+    \item Horizontale analyse: Vergelijkt cijfers over meerdere jaren om trends te identificeren.
+    \item Verticale analyse: Analyseert de verhouding van elk item ten opzichte van een basispost binnen hetzelfde jaar.
+    \item Ratio-analyse: Berekenen van financiële ratio's om de prestaties en gezondheid van het bedrijf te beoordelen.
+\end{itemize}
+
+Er zijn er meer maar in de cursus zien we deze drie
+\newline 
+
+Een ratio opzich heeft geen waarde. Je moet zien waar
+je de ratio mee vergelijkt.
+
+\subsection{Horizontale analyse}
+Je maakt een vergelijking van twee periodes.
+Je kunt dit doen in percentages (groei van omzet)
+of in absolute waarden (verschil in winst).
+
+\textbf{Voorbeeld: Horizontale analyse van balansposten}
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|r|r|r|r|}
+        \hline
+        \textbf{Balanspost} & \textbf{Jaar 1} & \textbf{Jaar 2} & \textbf{Absolute Wijziging} & \textbf{Percentage \%} \\
+        \hline
+        Vaste activa & €100.000 & €120.000 & +€20.000 & +20\% \\
+        Voorraden & €50.000 & €55.000 & +€5.000 & +10\% \\
+        Vorderingen & €30.000 & €42.000 & +€12.000 & +40\% \\
+        Bankrekening & €20.000 & €18.000 & -€2.000 & -10\% \\
+        \hline
+        \textbf{TOTAAL ACTIVA} & \textbf{€200.000} & \textbf{€235.000} & \textbf{+€35.000} & \textbf{+17.5\%} \\
+        \hline
+    \end{tabular}
+    \caption{Voorbeeld Horizontale Analyse}
+\end{table}
+
+\textbf{Formules:}
+\begin{itemize}
+    \item \textbf{Absolute wijziging:} Jaar 2 - Jaar 1
+    \item \textbf{Percentage wijziging:} $\frac{\text{Jaar 2} - \text{Jaar 1}}{\text{Jaar 1}} \times 100\%$
+\end{itemize}
+
+\textbf{Interpretatie:}
+\begin{itemize}
+    \item Vaste activa zijn met 20\% gestegen → bedrijf investeert in uitbreiding
+    \item Vorderingen zijn met 40\% gestegen → klanten betalen trager (voorzichtig zijn!)
+    \item Bankrekening daalt → contante middelen nemen af (liquiditeit risico)
+    \item Totale activa groeit met 17.5\% → bedrijf groeit
+\end{itemize}
+
+
+\subsection{Verticale analyse}
+Je gaat verschillende delen opdelen in zijn verschillende delen zoals
+de activa, de passiva, de omzet\dots
+
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=0.45\textwidth]{activapassiveanalyse.png}
+        \includegraphics[width=0.45\textwidth]{omzetanaluse.png}
+      \caption{Voorbeeld van een verticale analyse}
+      \label{fig:verticaleanalyse.png}
+\end{figure}
+\FloatBarrier
+
+Je kunt dan deze analyses combineren 
+\begin{figure}[ht]
+      \centering
+        \includegraphics[width=1\textwidth]{hor+vert.png}
+        \caption{Combinatie van horizontale en verticale analyse}
+        \label{fig:hor+vert.png}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{Ratio-analyse}
+Door Ratio analyse te doen over meerdere jaarrekeningen 
+kun je de gezondheid van een bedrijf beoordelen.
+
+\begin{description}
+    \item[Financiele ratio's:]
+    \begin{itemize}
+    \item \textbf{Liquiditeit:} Je gaat kijken naar je het geld. Hoeveel geld heeft 
+    het bedrijf.
+    \item \textbf{Solvabiliteit:} Je gaat kijken naar de schulden. Hoeveel schulden heeft het bedrijf en de mogelijkheid
+    om die terug te betalen.
+    \item \textbf{Rotatie:} De efficiëntie van de activa.
+    \end{itemize}
+
+    \item[Liquiditeitsratio's:] Deze ratio toont
+    hoe goed de korte termijn schulden kunnen worden betaald door korte termijn activa (Cash, kash door korte termijn vorderingen).
+
+    \frm{liquiditeit current ratio}{\frac{Korte termijn activa + Cash, voorrade}{Korte termijn schulden}}
+    {Als de ratio groter is dan 1 kan het bedrijf zijn korte termijn schulden betalen.}
+
+    De acid test neemt de voorraden niet mee. Het is dus een strengere test.
+    \frm{liquiditeit acid test}{\frac{Korte termijn activa + Cash}{Korte termijn schulden}}
+    {Als de ratio groter is dan 1 kan het bedrijf zijn korte termijn schulden betalen zonder voorraden te verkopen.}
+
+    \textbf{Netto werkkapitaal:} 
+    Netto werkkapitaal is een andere manier om te zien of het liquide goed zit in een bedrijft.
+    \frm{Netto werkkapitaal}{Netto werkkapitaal = Vlottende activa - Kortlopende schulden}
+    {Het netto werkkapitaal geeft aan hoeveel liquide middelen een bedrijf heeft om zijn dagelijkse
+    activiteiten te financieren. Een positief netto werkkapitaal betekent dat het bedrijf voldoende
+    middelen heeft om aan zijn kortlopende verplichtingen te voldoen, 
+    terwijl een negatief netto werkkapitaal
+    kan wijzen op mogelijke liquiditeitsproblemen.}
+
+    \begin{theorieblok}
+        \textbf{Vlottende activa:} Dit zijn activa die binnen een jaar in cash kunnen worden omgezet.
+        Dit omvat kasgeld, voorraden, en vorderingen.
+        \newline
+        \textbf{Kortlopende schulden:} Dit zijn schulden die in minder dan een jaar moeten worden terugbetaald.
+    \end{theorieblok}
+
+    \begin{figure}[ht]
+          \centering
+            \includegraphics[width=0.8\textwidth]{NettoWerkKapitaal.png}
+          \caption{Netto werkkapitaal illustratie}
+          \label{fig:NettoWerkKapitaal.png}
+    \end{figure}
+
+    Een positief netto werkkapitaal is het eerste teken 
+    van een gezond bedrijf.
+
+    \textbf{Behoefte aan werkkapitaal}:
+    \newline
+    Dit is een cyclus. Je koopt grondstoffen -> je produceert
+    -> je verkoopt producten -> je krijgt geld van klanten.
+    -> Je koopt weer grondstoffen.
+    \newline
+    
+    Deze cyclus kan meerdere maanden duren omdat je niet direct grondstoffen
+    kunt kopen, produceren en verkopen.
+    Cash out is wanneer je grondstoffen koopt.
+    Cash in is wanneer je geld krijgt van klanten.
+    \newline
+    Je moet dus genoeg Netto werkkapitaal hebben
+    zodat je niet moet zitten wachten op klanten om geld te krijgen.
+    \newline
+     \textbf{Nettokapitaal > Behoefte aan werkkapitaal}
+     Je kunt dan met het extra kapitaal investeren.
+     Kaskortingen opnemen, vooruitbetalen aan leveranciers etc.
+     \textbf{Nettokapitaal < Behoefte aan werkkapitaal}
+     Je gaat leningen moet aangaan om het finanicieel tekort
+        te dekken.
+
+    \begin{figure}[ht]
+          \centering
+            \includegraphics[width=0.6\textwidth]{werkkapitaalcyclus.png}
+          \caption{Werkkapitaalcyclus}
+          \label{fig:werkkapitaalcyclus.png}
+    \end{figure}
+
+
+    \item[efficiëntieratio's:] 
+    Hoe snel roteren mijn voorraden, handelsvoorraden, handelsschulden \dots
+
+    Zo kun je een zo groot mogelijk rendement halen uit je middelen.
+
+    \frm{Voorraadrotatie}{Voorraadrotatie in dagen =
+    \frac{Gemiddelde inventaris}{Kosten van aankopen}  \cdot 365}
+    {Hoe sneller je voorraden roteren hoe beter. Je hebt minder opslagkosten.}
+    
+    \frm{Klantenrotatie}{Klantenrotatie in dagen =
+    \frac{handelsvorderingen}{Omzet}  \cdot 365}
+    {Hoe sneller je klanten betalen hoe beter. Je krijgt sneller je 
+    cash binnen die je terug kunt gebruiken}
+
+    \frm{Leveranciersrotatie}{Leveranciersrotatie in dagen =
+    \frac{Handelsschulden}{Kosten van aankopen}  \cdot 365}
+    {Hoe langer je kunt wachten met betalen hoe beter. Je houdt langer
+    je cash.}
+
+
+    \item[solvabiliteitratio's:]
+    \belangrijk{Solvabiliteit}:
+
+    Je hebt verschillende soorten vermogens
+    \begin{itemize}
+        \item \textbf{Eigen vermogen:} Geld van eigenaren/aandeelhouders
+        \item \textbf{Vreemd vermogen:} Geld van externe financiers zoals banken, kan door
+        leningen of obligaties.
+        \item \textbf{Totaal vermogen:} Eigen vermogen + Vreemd vermogen
+    \end{itemize}
+
+    De solvabiliteit ratio is hoeveel de onderneming zijn schuld kan
+    terugbetalen met zijn eigen vermogen.
+
+
+    \begin{itemize}
+        \item \textbf{Dekkingsratio's}
+        \frm{Interstdekkingsratio}{interestdekkingsratio = \frac{Operationeel resultaat}{interestkosten}}
+        {Operationeel resultaat is de winst voor interest en belastingen (EBIT).
+        Deze ratio meet hoe goed een bedrijf zijn rentelasten kan betalen met zijn operationele winst.
+        Je wilt dat deze zo hoog mogelijk is. Een ratio lager dan 1 (dit betekend dat je winst lager is dan de intrest op je
+        schulden) is niet altijd slecht omdat afschrijvingen en niet-kaskosten de winst kunnen verlagen.}
+
+        \frm{Operationele kassstroom versus schuld}{Operationele kassstroom versus schuld = \frac{Operationele resultaat}{Totale schuld}}{
+        Deze ratio meet hoe goed een bedrijf zijn totale schulden kan aflossen met zijn operationele kasstroom.
+        Je wilt dat deze zo hoog mogelijk is. Deze is meestal lager dan 1 omdat schulden vaak groter zijn dan de jaarlijkse kasstroom.
+        Een heel lage ratio kan wijzen op mogelijke problemen bij het aflossen van schulden.
+        }
+
+
+        \item \textbf{Schuld en solvabiliteitsratio's}
+        Deze ratio toont hoe veel van het bedrijf gefinancierd is µ
+        met schulden versus eigen vermogen.
+        
+        \frm{Schuldratio}{Schuldratio = \frac{Totale schuld}{Totale activa} = \frac{Totale schuld}{Ttotale schuld + Eigen vermogen}}
+        {Deze ratio meet het aandeel van vreemd vermogen 
+        in de totale financiering van een bedrijf. Hoe lager hoe beter
+         omdat het bedrijf dan minder afhankelijk is van schulden.
+        Grotere waarden zijn een groter risico.
+        }
+
+        Je kunt deze fractie ook maken met het vermogen. Dit is zeer vergelijkbaar
+         Het verschil is dat je dan kijkt naar het totaal eigen vermogen in plaats van totale activa.
+        Hoe hoger hoe meer risico.
+
+        $Schuld/eigenvermogen ratio = \frac{Schuld}{Eigen vermogen}$
+
+        \item \textbf{Gearing ratio}: 
+        dit gaat nog reking houden met de cash postitie.
+        Dit is het meest relevante. Hoe hoger de ratio
+        hoe meer risico.
+        \frm{Gearing ratio}{Gearing ratio = \frac{Totale Schuld - Liquide middelen (Cash)}{Eigen vermogen}}
+        {Hoeveel van de finaniele activeiten worden gefinancierd met schulden.
+        Hoe hoger hoe meer risico.}
+        
+    \end{itemize}
+    
+
+    \item[Rentabiliteitsratio's:]
+    Als laatste is de rendabiliteitsratio.
+    Dit is hoe winstgevend een bedrijf is.
+
+    \begin{itemize}
+        \item \textbf{Bruto winstmarge}
+        \frm{Bruto winstmarge}{Bruto winstmarge = \frac{Bedrijfsresultaat(geen kaskosten)}{Operationele kosten}}
+        {Het bedrijfsresultaat is je winst uit operaties. Niet uit financiele 
+        opbrengensten. Belegginen, afschrijven tellen niet mee. De operationele kosten is gewoon de omzet.
+        Hoe hoger hoe meer winst uit de kernoperaties komt.}
+
+        \item \textbf{Nettowinstmarge}
+        \frm{Nettowinstmarge}{Nettowinstmarge = \frac{Resulaat van het boekjaar = Winst}{Omzet}}
+        {Het resultaat van het boekjaar zijn alle opbrengsten. Hier heb je wel de afschrijvingen, belegginen wel in rekening genomen. Het is 
+        daarom minder interessant.}
+
+        \item \textbf{Rentabiliteit van het eigenvermogen (ROE)}
+        
+        \frm{Rentabiliteit van het eigenvermogen}{Rentabiliteit van het eigenvermogen = \frac{Resultaat van het boekjaar}{Eigen vermogen}}
+        {Het heeft het rendement van een investering weer. Hoe presteren je investeringen?
+        Hoeveel \% van mijn investering krijg ik extra terug.}
+
+        \item \textbf{Rentabiliteit van het totaal vermogen (ROA)}
+        \frm{Rentabiliteit van de activa}{Rentabiliteit van de activa = \frac{Resultaat van het boekjaar}{Totaal activa}}
+        {Dit is net zoals de ratio hierboven maar nu met de activa. Dus hoeveel winst
+        maak ik afhankelijk van de machines, gebouwen etc. Die ik bezit.
+        Hoe hoger hoe beter}
+
+        \item \textbf{Winst per aandeel (EPS)}
+        
+        \frm{Winst per aandeel}{Winst per aandeel = \frac{Resultaat van het boekjaar}{Gemiddeld aantal uitstaande aandelen}}
+        {Hoeveel winst krijg ik uit mijn aandelen. Dit is belangrijk voor investeerders.}
+
+        \item \textbf{Koers-winstratio}:
+        
+        \frm{Koers-winstratio}{Koers-winstratio = \frac{Marktprijs per aandeel}{Winst per aandeel}}
+        {Dit is hoe de markt mijn aandelen waardeert.
+        Een hoge ratio betekent dat beleggers verwachten dat het bedrijf in de toekomst zal groeien.
+        Een lage ratio kan wijzen op een ondergewaardeerd aandeel of zorgen over de toekomst van het bedrijf.}
+    \end{itemize}
+
+    \begin{examenbox}
+        Deze ratio's moet je NIET allemaal uit je hoofd kennen.
+        Deze staan op het formularium. Zorg wel dat je al deze ratio's kent
+        en weet wat ze inhouden.
+    \end{examenbox}
+
+    \begin{examenbox}
+        Op het examen kun je een casestudy krijgen.
+        Jij moet dan argumentere waarom je een bepaalde ratio krijgt
+        Er is geen één juist antwoord maar je moet
+        je antwoord goed kunnen argumenteren.
+    \end{examenbox}
+
+\end{description}
+
+\textbf{Bruto toegevoegde waarde (BTV):}
+Dit is de toevoeging die wordt gedaan door de onderneming zelf.
+Je gaat uiteindelijk je productn verkopen aan een hogere prijs dan je grondstof
+. Dit is de Bruto toegevoegde waarde.
+
+$$\frac{BTV}{omzet}$$
+Dit zegt dus hoeveel doen we? Hoeveel geld voegen we 
+bij met ons werk. Als deze laag is, is de productiviteit laag.
+
+$$\frac{BTV}{werknemer}$$
+Hoe productief is elke werknemer. Hoe hoger hoe productieve de werknemers zijn.
+\newline 
+
+\textbf{Fit-O-meter:}
+
+\begin{figure}[ht]
+     \centering
+       \includegraphics[width=0.8\textwidth]{fitometer.png}
+       \caption{}
+       \label{fig:fitometer.png}
+\end{figure}
+\FloatBarrier
+
+\subsection{Conclusie}
+Het is belangrijk om 
+meerdere ratio's te gebruiken om een volledig beeld te krijgen van de 
+financiële gezondheid van een bedrijf.
+
+
+\section{Examenoefeningen}
+
+
+
+\section{Examentips}
+
+\begin{examenbox}
+    \begin{itemize}
+        \item Maak veel oefenexamens. Zorg echt dat je duidelijk bent en tekeningen kunt maken. 
+        \item Maak simplex oefeningen en zorg dat je de stappen kent.
+        \item Wees echt breed bij uitleggen. Wat heeft invloed op wat, zijn er cyclussen, etc.
+        \item Zorg dat je de verschillende kostprijsberekeningen kent.
+        \item Afschrijvigen gaat hij zoiezo vragen
+        \item Zorg dat je makkelijk annuïteiten en actualisatie kunt berekenen.
+    \end{itemize}
+\end{examenbox}
+
+Als je veel last hebt met dit vak. Geen zorgen ik ook. 
+Probeer gewoon veel oefeningen te maken en de theorie te begrijpen.
+Veel succes!
+
+
+\end{document}

@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.1)  18 DEC 2025 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.16)  26 DEC 2025 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Warmte en stromingen Samenvatting Ruben Ryckaert"
-(./Warmte en stromingen Samenvatting Ruben Ryckaert.tex
+**"./Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
+(Warmte en stromingen Samenvatting Ruben Ryckaert.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-14>
-(c:/tools/TinyTeX/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2025-11-06>
+(C:\Program Files\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(c:/tools/TinyTeX/texmf-dist/tex/latex/base/size11.clo
+(C:\Program Files\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -24,8 +24,8 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/11/23 v25.16 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+) (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
@@ -35,40 +35,50 @@ LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) o
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
 \U@D=\dimen149
-\l@unhyphenated=\language3
- (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+\l@unhyphenated=\language79
+ (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count285
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4175.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+)
 Package babel Info: You haven't specified a language as a class or package
 (babel)             option. I'll load 'nil'. Reported on input line 4233.
 Package babel Info: Importing font and identification data for nil
 (babel)             from babel-und-x-nil.ini. Reported on input line 4298.
- (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/nil.ldf
-Language: nil 2025/11/23 v25.16 Nil language
-\l@nil=\language4
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+ (C:\Program Files\MiKTeX\tex/generic/babel\nil.ldf
+Language: nil 2025/11/09 v25.15 Nil language
+\l@nil=\language80
+)) (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
    defining Unicode char U+00B0 (decimal 176)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen150
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen151
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count286
@@ -118,38 +128,38 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count298
@@ -164,54 +174,54 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen167
 \Gm@layoutvoffset=\dimen168
 \Gm@dimlist=\toks25
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (c:/tools/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (c:/tools/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count301
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count302
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen169
 \Hy@linkcounter=\count303
 \Hy@pagecounter=\count304
- (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count305
- (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -225,15 +235,15 @@ Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count306
- (c:/tools/TinyTeX/texmf-dist/tex/latex/url/url.sty
+ (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen170
- (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count307
@@ -251,19 +261,19 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count310
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count311
 \c@bookmark@seq@number=\count312
- (c:/tools/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip54
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen173
 \lightrulewidth=\dimen174
@@ -282,7 +292,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count315
 \@lastruleclass=\count316
 \@thisrulewidth=\dimen185
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip55
 \enit@outerparindent=\dimen186
@@ -290,18 +300,18 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box55
 \enit@count@id=\count317
 \enitdp@description=\count318
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/float/float.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count319
 \float@exts=\toks27
 \float@box=\box56
 \@float@everytoks=\toks28
 \@floatcapt=\box57
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+ (C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+) (C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count320
 \calc@Bcount=\count321
@@ -313,17 +323,17 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count322
 \calc@Cskip=\skip58
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen189
 \ESO@tempdimb=\dimen190
- (c:/tools/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+ (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -337,7 +347,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 \AM@pagewidth=\dimen191
 \AM@pageheight=\dimen192
 \AM@fboxrule=\dimen193
- (c:/tools/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.def
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count323
@@ -348,22 +358,22 @@ File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks31
 \c@AM@survey=\count325
 \AM@templatesizebox=\box59
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen194
 \pgfutil@tempdimb=\dimen195
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box60
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+ (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks33
 \pgfkeys@temptoks=\toks34
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen196
@@ -386,32 +396,32 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
 \pgf@sys@id@count=\count330
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count331
 \pgfsyssoftpath@bigbuffer@items=\count332
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen262
 \pgfmath@count=\count333
 \pgfmath@box=\box61
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count334
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen263
 \pgf@picmaxx=\dimen264
@@ -427,75 +437,75 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen274
 \pgf@zx=\dimen275
 \pgf@zy=\dimen276
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen277
 \pgf@path@lasty=\dimen278
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen279
 \pgf@shorten@start@additional=\dimen280
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
 \pgf@picture@serial@count=\count335
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen281
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen282
 \pgf@pt@y=\dimen283
 \pgf@pt@temp=\dimen284
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen285
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen286
 \pgf@sys@shading@range@num=\count336
 \pgf@shadingcount=\count337
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box65
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box66
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen287
 \pgf@nodesepend=\dimen288
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen289
 \pgffor@skip=\dimen290
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count338
 \pgfplotmarksize=\dimen291
@@ -516,16 +526,16 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofchildren=\count340
 \tikznumberofcurrentchild=\count341
 \tikz@fig@count=\count342
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count343
 \pgfmatrixcurrentcolumn=\count344
 \pgf@matrix@numberofcolumns=\count345
 )
 \tikz@expandcount=\count346
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+))) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip59
 \f@nch@offset@elh=\skip60
@@ -542,7 +552,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip71
 \f@nch@widthR=\skip72
 \@temptokenb=\toks44
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
 \MT@toks=\toks45
 \MT@tempbox=\box71
@@ -556,20 +566,20 @@ LaTeX Info: Redefining \textls on input line 1449.
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count348
- (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip73
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/soul/soul.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/soul\soul.sty
 Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/soul\soul-ori.sty
 Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@word=\toks47
 \SOUL@lasttoken=\toks48
@@ -591,22 +601,22 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen307
 \SOUL@uldp=\dimen308
 \SOUL@ulht=\dimen309
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/mdframed/mdframed.sty
+)) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
- (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-11-14 L3 programming layer (loader) 
- (c:/tools/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-11-06 L3 programming layer (loader) 
+ (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count353
 ))
 Package: xparse 2025-10-09 L3 Experimental document command parser
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/zref/zref-abspage.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/zref/zref-base.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/zref\zref-base.sty
 Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 767.
@@ -615,7 +625,7 @@ Package zref Info: New property: page on input line 769.
 )
 \c@abspage=\count354
 Package zref Info: New property: abspage on input line 67.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip75
@@ -659,7 +669,7 @@ Package: needspace 2025/03/13 v1.3e reserve vertical space
 \mdf@subsubtitlebelowskip@length=\skip112
 \mdf@subsubtitleinneraboveskip@length=\skip113
 \mdf@subsubtitleinnerbelowskip@length=\skip114
- (c:/tools/TinyTeX/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/mdframed\md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
 \mdf@frametitlebox=\box72
@@ -705,7 +715,7 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@env@ii=\count359
 \c@mdf@zref@counter=\count360
 Package zref Info: New property: mdf@pagevalue on input line 895.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box77
 \beforetitleunit=\skip142
@@ -718,7 +728,7 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthfirst=\dimen314
 )
 \c@opgave=\count361
- (./Warmte en stromingen Samenvatting Ruben Ryckaert.aux)
+ (Warmte en stromingen Samenvatting Ruben Ryckaert.aux)
 \openout1 = `"Warmte en stromingen Samenvatting Ruben Ryckaert.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
@@ -739,11 +749,24 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
 LaTeX Font Info:    ... okay on input line 135.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
 LaTeX Font Info:    ... okay on input line 135.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+ (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count362
+\scratchdimen=\dimen315
+\scratchbox=\box78
+\nofMPsegments=\count363
+\nofMParguments=\count364
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count365
+\MPscratchDim=\dimen316
+\MPnumerator=\count366
+\makeMPintoPDFobject=\count367
+\everyMPtoPDFconversion=\toks55
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -780,15 +803,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 135.
-(./Warmte en stromingen Samenvatting Ruben Ryckaert.out) (./Warmte en stromingen Samenvatting Ruben Ryckaert.out)
+(Warmte en stromingen Samenvatting Ruben Ryckaert.out) (Warmte en stromingen Samenvatting Ruben Ryckaert.out)
 \@outlinefile=\write4
 \openout4 = `"Warmte en stromingen Samenvatting Ruben Ryckaert.out"'.
 
- (c:/tools/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
- (c:/tools/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -807,32 +830,41 @@ Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 137.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 137.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (./Warmte en stromingen Samenvatting Ruben Ryckaert.toc [1
+) (Warmte en stromingen Samenvatting Ruben Ryckaert.toc [1
 
-{c:/tools/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
+{C:/Users/ruben/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2])
 \tf@toc=\write5
 \openout5 = `"Warmte en stromingen Samenvatting Ruben Ryckaert.toc"'.
 
-<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=595, 597.55246pt x 845.07718pt>
+
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=591, 597.55246pt x 845.07718pt>
 File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
 <use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf>
 Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf  used on input line 146.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=597, page=1, 597.55246pt x 845.07718pt>
+
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, id=593, page=1, 597.55246pt x 845.07718pt>
 File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
 <use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
 Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 146.
@@ -841,7 +873,7 @@ File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (ty
 <use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
 Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 146.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [3]
+[3]
 File: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf Graphic file (type pdf)
 <use Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf, page 1>
 Package pdftex.def Info: Warmte en stroming_Thermal-Fluid Sciences Formularium.pdf , page1 used on input line 146.
@@ -900,7 +932,7 @@ l.325 \]
         ]
 Package mdframed Info: mdframed works in twoside mode on input line 347.
 Package mdframed Info: mdframed works in twoside mode on input line 359.
-<assets/krachtenOpStilstaandblok.png, id=689, 723.45282pt x 234.8775pt>
+<assets/krachtenOpStilstaandblok.png, id=684, 723.45282pt x 234.8775pt>
 File: assets/krachtenOpStilstaandblok.png Graphic file (type png)
 <use assets/krachtenOpStilstaandblok.png>
 Package pdftex.def Info: assets/krachtenOpStilstaandblok.png  used on input line 363.
@@ -916,12 +948,12 @@ Overfull \hbox (6.84586pt too wide) in paragraph at lines 427--430
  []
 
 [12]
-<assets/hydrostatic_pressure.jpg, id=701, 353.82187pt x 318.43968pt>
+<assets/hydrostatic_pressure.jpg, id=696, 353.82187pt x 318.43968pt>
 File: assets/hydrostatic_pressure.jpg Graphic file (type jpg)
 <use assets/hydrostatic_pressure.jpg>
 Package pdftex.def Info: assets/hydrostatic_pressure.jpg  used on input line 442.
 (pdftex.def)             Requested size: 182.09486pt x 163.88893pt.
-<assets/wikipedia/manometer_utube_pd_500.png, id=702, 501.875pt x 837.1275pt>
+<assets/wikipedia/manometer_utube_pd_500.png, id=697, 501.875pt x 837.1275pt>
 File: assets/wikipedia/manometer_utube_pd_500.png Graphic file (type png)
 <use assets/wikipedia/manometer_utube_pd_500.png>
 Package pdftex.def Info: assets/wikipedia/manometer_utube_pd_500.png  used on input line 449.
@@ -946,7 +978,7 @@ Overfull \hbox (20.19835pt too wide) in paragraph at lines 534--535
 \T1/cmr/m/n/10.95 Bij een externe overdruk $\OML/cmm/m/it/10.95 P[]$ \T1/cmr/m/n/10.95 (zoals in een drukvat) kan men werken met een equivalente vloeistofhoogte
  []
 
-<assets/submerged_plane.png, id=716, 691.821pt x 494.064pt>
+<assets/submerged_plane.png, id=711, 691.821pt x 494.064pt>
 File: assets/submerged_plane.png Graphic file (type png)
 <use assets/submerged_plane.png>
 Package pdftex.def Info: assets/submerged_plane.png  used on input line 551.
@@ -990,7 +1022,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) h
                                                   \__shipout_drop_firstpage_...
 l.589 
        <./assets/submerged_plane.png>]
-<assets/wikipedia/buoyancy_cc_by_sa_960.png, id=727, 963.6pt x 1208.515pt>
+<assets/wikipedia/buoyancy_cc_by_sa_960.png, id=722, 963.6pt x 1208.515pt>
 File: assets/wikipedia/buoyancy_cc_by_sa_960.png Graphic file (type png)
 <use assets/wikipedia/buoyancy_cc_by_sa_960.png>
 Package pdftex.def Info: assets/wikipedia/buoyancy_cc_by_sa_960.png  used on input line 612.
@@ -1017,7 +1049,7 @@ Overfull \hbox (31.61453pt too wide) in paragraph at lines 697--697
 |[]\T1/cmr/bx/n/20.74 Fluïdumdynamica: De Bewegingsvergelijkingen| 
  []
 
-<assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png, id=739, 560.0925pt x 356.83313pt>
+<assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png, id=734, 560.0925pt x 356.83313pt>
 File: assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png Graphic file (type png)
 <use assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png>
 Package pdftex.def Info: assets/slides/01_Continuity_and_Momentum_equations_no_gravity.png  used on input line 717.
@@ -1043,12 +1075,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) h
                                                   \__shipout_drop_firstpage_...
 l.802 \]
         ] [21]
-<assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png, id=761, 479.54156pt x 588.69937pt>
+<assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png, id=756, 479.54156pt x 588.69937pt>
 File: assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png Graphic file (type png)
 <use assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png>
 Package pdftex.def Info: assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png  used on input line 875.
 (pdftex.def)             Requested size: 182.09486pt x 223.54639pt.
-<assets/wikipedia/venturi_pd.png, id=762, 610.9224pt x 299.6796pt>
+<assets/wikipedia/venturi_pd.png, id=757, 610.9224pt x 299.6796pt>
 File: assets/wikipedia/venturi_pd.png Graphic file (type png)
 <use assets/wikipedia/venturi_pd.png>
 Package pdftex.def Info: assets/wikipedia/venturi_pd.png  used on input line 882.
@@ -1060,7 +1092,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) h
 l.885 
        <./assets/slides/03_Pressure_drop_measurement_with_differential_manometer.png>]
 Chapter 5.
-<assets/Behoud van massa.png, id=773, 542.77782pt x 321.45094pt>
+<assets/Behoud van massa.png, id=768, 542.77782pt x 321.45094pt>
 File: assets/Behoud van massa.png Graphic file (type png)
 <use assets/Behoud van massa.png>
 Package pdftex.def Info: assets/Behoud van massa.png  used on input line 931.
@@ -1071,7 +1103,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) h
                                                   \__shipout_drop_firstpage_...
 l.933 \end{figure}
                    <./assets/wikipedia/venturi_pd.png>]
-<assets/viscous vloeistof.png, id=781, 558.58687pt x 400.49625pt>
+<assets/viscous vloeistof.png, id=775, 558.58687pt x 400.49625pt>
 File: assets/viscous vloeistof.png Graphic file (type png)
 <use assets/viscous vloeistof.png>
 Package pdftex.def Info: assets/viscous vloeistof.png  used on input line 947.
@@ -1101,7 +1133,7 @@ Overfull \hbox (15.87315pt too wide) in paragraph at lines 993--996
 \T1/cmr/m/n/10.95 Vergelijkbare vergelijkingen gelden voor de y- en z-richtingen. Samen met de continuïteitsvergelijking
  []
 
-<assets/control_volume.png, id=790, 1027.84pt x 553.06625pt>
+<assets/control_volume.png, id=784, 1027.84pt x 553.06625pt>
 File: assets/control_volume.png Graphic file (type png)
 <use assets/control_volume.png>
 Package pdftex.def Info: assets/control_volume.png  used on input line 999.
@@ -1127,7 +1159,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) h
                                                   \__shipout_drop_firstpage_...
 l.1166 
        ]
-<assets/hagen_poiseuille.png, id=808, 602.25pt x 263.48438pt>
+<assets/hagen_poiseuille.png, id=802, 602.25pt x 263.48438pt>
 File: assets/hagen_poiseuille.png Graphic file (type png)
 <use assets/hagen_poiseuille.png>
 Package pdftex.def Info: assets/hagen_poiseuille.png  used on input line 1201.
@@ -1146,7 +1178,7 @@ Overfull \hbox (26.80609pt too wide) in paragraph at lines 1209--1210
 
 Package mdframed Info: mdframed works in twoside mode on input line 1222.
 Package mdframed Info: mdframed works in twoside mode on input line 1223.
-<assets/laminar_turbulent.png, id=814, 289.08pt x 408.77719pt>
+<assets/laminar_turbulent.png, id=808, 289.08pt x 408.77719pt>
 File: assets/laminar_turbulent.png Graphic file (type png)
 <use assets/laminar_turbulent.png>
 Package pdftex.def Info: assets/laminar_turbulent.png  used on input line 1235.
@@ -1167,7 +1199,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.2}) h
                                                   \__shipout_drop_firstpage_...
 l.1296 \]
           <./assets/laminar_turbulent.png>]
-<assets/moody_diagram.png, id=829, 2569.6pt x 1589.94pt>
+<assets/moody_diagram.png, id=823, 2569.6pt x 1589.94pt>
 File: assets/moody_diagram.png Graphic file (type png)
 <use assets/moody_diagram.png>
 Package pdftex.def Info: assets/moody_diagram.png  used on input line 1346.
@@ -1212,7 +1244,7 @@ Overfull \hbox (12.45607pt too wide) in paragraph at lines 1564--1565
 []\T1/cmr/m/n/10.95 Hoe abrupter de stroming verandert (bijv. bij stompe voorwerpen), hoe groter de drukverschillen
  []
 
-<assets/drag_coefficient.png, id=865, 912.40875pt x 563.85657pt>
+<assets/drag_coefficient.png, id=859, 912.40875pt x 563.85657pt>
 File: assets/drag_coefficient.png Graphic file (type png)
 <use assets/drag_coefficient.png>
 Package pdftex.def Info: assets/drag_coefficient.png  used on input line 1589.
@@ -1231,7 +1263,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.7}) h
                                                   \__shipout_drop_firstpage_...
 l.1593 A
         ls je vliegtuigen bouwt wil je dat $C_L$ zo groot mogelijk is en dat...]
-<assets/Lift.png, id=874, 2569.6pt x 1230.5975pt>
+<assets/Lift.png, id=868, 2569.6pt x 1230.5975pt>
 File: assets/Lift.png Graphic file (type png)
 <use assets/Lift.png>
 Package pdftex.def Info: assets/Lift.png  used on input line 1617.
@@ -1291,7 +1323,7 @@ Overfull \hbox (9.622pt too wide) in paragraph at lines 1890--1890
 |[]\T1/cmr/bx/n/20.74 De Eerste Hoofdwet van de Thermodynamica:
  []
 
-<assets/slides/08_Closed_system_with_heat_and_work_transfer.png, id=933, 399.74344pt x 289.08pt>
+<assets/slides/08_Closed_system_with_heat_and_work_transfer.png, id=926, 399.74344pt x 289.08pt>
 File: assets/slides/08_Closed_system_with_heat_and_work_transfer.png Graphic file (type png)
 <use assets/slides/08_Closed_system_with_heat_and_work_transfer.png>
 Package pdftex.def Info: assets/slides/08_Closed_system_with_heat_and_work_transfer.png  used on input line 1893.
@@ -1317,7 +1349,7 @@ Overfull \hbox (31.12677pt too wide) in paragraph at lines 1918--1919
  []
 
 [46]
-<assets/slides/14_Control_volume_with_mass_flow.png, id=944, 279.29344pt x 329.73187pt>
+<assets/slides/14_Control_volume_with_mass_flow.png, id=937, 279.29344pt x 329.73187pt>
 File: assets/slides/14_Control_volume_with_mass_flow.png Graphic file (type png)
 <use assets/slides/14_Control_volume_with_mass_flow.png>
 Package pdftex.def Info: assets/slides/14_Control_volume_with_mass_flow.png  used on input line 1986.
@@ -1352,13 +1384,13 @@ Overfull \hbox (14.0129pt too wide) in paragraph at lines 2097--2098
 []\T1/cmr/bx/n/10.95 Oververhitte damp (superheated vapor): \T1/cmr/m/n/10.95 Damp die niet op het punt staat te condenseren
  []
 
-<assets/slides/05_T-v_diagram_of_phase-change_processes.png, id=962, 835.62187pt x 453.94594pt>
+<assets/slides/05_T-v_diagram_of_phase-change_processes.png, id=955, 835.62187pt x 453.94594pt>
 File: assets/slides/05_T-v_diagram_of_phase-change_processes.png Graphic file (type png)
 <use assets/slides/05_T-v_diagram_of_phase-change_processes.png>
 Package pdftex.def Info: assets/slides/05_T-v_diagram_of_phase-change_processes.png  used on input line 2126.
 (pdftex.def)             Requested size: 273.14923pt x 148.38957pt.
 [50]
-<assets/slides/06_T-v_diagram_of_a_pure_substance.png, id=967, 453.19313pt x 415.5525pt>
+<assets/slides/06_T-v_diagram_of_a_pure_substance.png, id=960, 453.19313pt x 415.5525pt>
 File: assets/slides/06_T-v_diagram_of_a_pure_substance.png Graphic file (type png)
 <use assets/slides/06_T-v_diagram_of_a_pure_substance.png>
 Package pdftex.def Info: assets/slides/06_T-v_diagram_of_a_pure_substance.png  used on input line 2132.
@@ -1391,7 +1423,7 @@ Overfull \hbox (7.66116pt too wide) in paragraph at lines 2189--2191
 
 [52]
 Package mdframed Info: mdframed works in twoside mode on input line 2206.
-<assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png, id=980, 292.09125pt x 258.21469pt>
+<assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png, id=973, 292.09125pt x 258.21469pt>
 File: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png Graphic file (type png)
 <use assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png>
 Package pdftex.def Info: assets/slides/25_Reversible_vs_irreversible_process_on_T-S_diagram.png  used on input line 2223.
@@ -1411,7 +1443,7 @@ Overfull \hbox (17.81618pt too wide) in paragraph at lines 2273--2274
 \T1/cmr/m/n/10.95 Net als massa en energie, kan entropie een controle volume binnenkomen of verlaten via massastromen
  []
 
-<assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png, id=988, 338.01282pt x 297.36093pt>
+<assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png, id=981, 338.01282pt x 297.36093pt>
 File: assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png Graphic file (type png)
 <use assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png>
 Package pdftex.def Info: assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png  used on input line 2302.
@@ -1427,7 +1459,7 @@ Overfull \hbox (42.9902pt too wide) in paragraph at lines 2319--2323
 \T1/cmr/m/n/10.95 oorspronkelijke toestand. Cycli worden in alle moderne machines (motoren, compressoren, warmtepompen,
  []
 
-<assets/slides/16_Heat_engine.png, id=994, 188.20313pt x 277.035pt>
+<assets/slides/16_Heat_engine.png, id=986, 188.20313pt x 277.035pt>
 File: assets/slides/16_Heat_engine.png Graphic file (type png)
 <use assets/slides/16_Heat_engine.png>
 Package pdftex.def Info: assets/slides/16_Heat_engine.png  used on input line 2336.
@@ -1442,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2337--2337
 \T1/cmr/m/n/10.95 weergave van een
  []
 
-<assets/slides/21_Thermal_efficiency_of_a_heat_engine.png, id=995, 453.94594pt x 326.72063pt>
+<assets/slides/21_Thermal_efficiency_of_a_heat_engine.png, id=987, 453.94594pt x 326.72063pt>
 File: assets/slides/21_Thermal_efficiency_of_a_heat_engine.png Graphic file (type png)
 <use assets/slides/21_Thermal_efficiency_of_a_heat_engine.png>
 Package pdftex.def Info: assets/slides/21_Thermal_efficiency_of_a_heat_engine.png  used on input line 2343.
@@ -1453,7 +1485,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.10.3}) 
                                                   \__shipout_drop_firstpage_...
 l.2346 \end{figure}
                     <./assets/slides/26_h-s_diagram_for_actual_and_isentropic_process_of_a_turbine.png>]
-<assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png, id=1003, 806.26219pt x 310.15875pt>
+<assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png, id=995, 806.26219pt x 310.15875pt>
 File: assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png Graphic file (type png)
 <use assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png>
 Package pdftex.def Info: assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png  used on input line 2354.
@@ -1477,7 +1509,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.3}) 
                                                   \__shipout_drop_firstpage_...
 l.2364 
         <./assets/slides/16_Heat_engine.png> <./assets/slides/21_Thermal_efficiency_of_a_heat_engine.png> <./assets/slides/24_P-V_diagrams_for_reversed_and_regular_Carnot_cycle.png>]
-<assets/slides/23_Carnot_cycle_processes.png, id=1014, 688.82344pt x 380.92313pt>
+<assets/slides/23_Carnot_cycle_processes.png, id=1006, 688.82344pt x 380.92313pt>
 File: assets/slides/23_Carnot_cycle_processes.png Graphic file (type png)
 <use assets/slides/23_Carnot_cycle_processes.png>
 Package pdftex.def Info: assets/slides/23_Carnot_cycle_processes.png  used on input line 2369.
@@ -1493,13 +1525,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.4}) 
                                                   \__shipout_drop_firstpage_...
 l.2412     \item H
                   et rendement hangt \textit{enkel} af van de absolute tempe... <./assets/slides/23_Carnot_cycle_processes.png>]
-<assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png, id=1025, 295.1025pt x 645.91313pt>
+<assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png, id=1017, 295.1025pt x 645.91313pt>
 File: assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png Graphic file (type png)
 <use assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png>
 Package pdftex.def Info: assets/slides/29_P-v_and_T-s_diagrams_of_a_Carnot_cycle.png  used on input line 2466.
 (pdftex.def)             Requested size: 182.09486pt x 398.56969pt.
  [58]
-<assets/slides/31_Actual_four-stroke_spark-ignition_engine.png, id=1030, 838.63312pt x 287.57437pt>
+<assets/slides/31_Actual_four-stroke_spark-ignition_engine.png, id=1022, 838.63312pt x 287.57437pt>
 File: assets/slides/31_Actual_four-stroke_spark-ignition_engine.png Graphic file (type png)
 <use assets/slides/31_Actual_four-stroke_spark-ignition_engine.png>
 Package pdftex.def Info: assets/slides/31_Actual_four-stroke_spark-ignition_engine.png  used on input line 2497.
@@ -1524,7 +1556,7 @@ Overfull \hbox (9.47655pt too wide) in paragraph at lines 2521--2522
 []\T1/cmr/m/n/10.95 Het rendement hangt af van de \T1/cmr/bx/n/10.95 compressieratio $\OML/cmm/m/it/10.95 r \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 V[]=V[]$ \T1/cmr/m/n/10.95 en de soortelijke warmteverhouding
  []
 
-<assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png, id=1037, 304.88907pt x 578.16pt>
+<assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png, id=1029, 304.88907pt x 578.16pt>
 File: assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png Graphic file (type png)
 <use assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png>
 Package pdftex.def Info: assets/slides/34_T-s_diagram_of_the_ideal_Otto_cycle.png  used on input line 2535.
@@ -1554,7 +1586,7 @@ Overfull \hbox (19.03911pt too wide) in paragraph at lines 2586--2587
 []\T1/cmr/bx/n/10.95 Condensor (4$\OMS/cmsy/m/n/10.95 !$\T1/cmr/bx/n/10.95 1): \T1/cmr/m/n/10.95 De natte stoom wordt isobaar gecondenseerd in een groot warmtewisselaar
  []
 
-<assets/slides/20_Steam_power_plant_schematic.png, id=1061, 400.49625pt x 325.215pt>
+<assets/slides/20_Steam_power_plant_schematic.png, id=1053, 400.49625pt x 325.215pt>
 File: assets/slides/20_Steam_power_plant_schematic.png Graphic file (type png)
 <use assets/slides/20_Steam_power_plant_schematic.png>
 Package pdftex.def Info: assets/slides/20_Steam_power_plant_schematic.png  used on input line 2608.
@@ -1577,7 +1609,7 @@ Overfull \hbox (4.59561pt too wide) in paragraph at lines 2690--2691
 \T1/cmr/m/n/10.95 tegenwoordig meer vriendelijke stoffen als R-32, R-290). Het voordeel is dat deze stoffen ontworpen
  []
 
-<assets/slides/22_Refrigerator_basic_operation.png, id=1078, 280.79906pt x 395.97937pt>
+<assets/slides/22_Refrigerator_basic_operation.png, id=1070, 280.79906pt x 395.97937pt>
 File: assets/slides/22_Refrigerator_basic_operation.png Graphic file (type png)
 <use assets/slides/22_Refrigerator_basic_operation.png>
 Package pdftex.def Info: assets/slides/22_Refrigerator_basic_operation.png  used on input line 2696.
@@ -1596,7 +1628,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.12})
                                                   \__shipout_drop_firstpage_...
 l.2723 
         <./assets/slides/22_Refrigerator_basic_operation.png>]
-<assets/slides/28_Actual_vs_ideal_cycle.png, id=1097, 338.76563pt x 456.95718pt>
+<assets/slides/28_Actual_vs_ideal_cycle.png, id=1089, 338.76563pt x 456.95718pt>
 File: assets/slides/28_Actual_vs_ideal_cycle.png Graphic file (type png)
 <use assets/slides/28_Actual_vs_ideal_cycle.png>
 Package pdftex.def Info: assets/slides/28_Actual_vs_ideal_cycle.png  used on input line 2768.
@@ -1622,7 +1654,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11.15})
                                                   \__shipout_drop_firstpage_...
 l.2823     \item \textbf
                         {EfficiÃ«ntie:} $\eta_{turbine} = \frac{W_{real}}{W_...]
-<assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png, id=1116, 361.35pt x 295.1025pt>
+<assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png, id=1108, 361.35pt x 295.1025pt>
 File: assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png Graphic file (type png)
 <use assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png>
 Package pdftex.def Info: assets/slides/27_h-s_diagram_for_actual_and_isentropic_process_of_a_compressor.png  used on input line 2828.
@@ -1674,7 +1706,7 @@ Overfull \hbox (31.56764pt too wide) in paragraph at lines 3217--3221
  []
 
 [73]
-<assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png, id=1160, 494.59781pt x 497.60907pt>
+<assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png, id=1151, 494.59781pt x 497.60907pt>
 File: assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png Graphic file (type png)
 <use assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png>
 Package pdftex.def Info: assets/slides/35_Heat_transfer_through_a_plane_wall_and_thermal_resistance_network.png  used on input line 3255.
@@ -1725,7 +1757,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.12.5}) 
                                                   \__shipout_drop_firstpage_...
 l.3611     \item B
                   innenoppervlak: convectie met $h_1=10\,\mathrm{W/(m^2\cdot...]
-<assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png, id=1194, 357.58594pt x 466.74374pt>
+<assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png, id=1185, 357.58594pt x 466.74374pt>
 File: assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png Graphic file (type png)
 <use assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png>
 Package pdftex.def Info: assets/slides/36_Heat_transfer_through_a_multilayer_plane_wall_and_thermal_resistance_network.png  used on input line 3674.
@@ -1739,7 +1771,7 @@ l.3678 \part
 
 ]
 Chapter 13.
-<assets/hydrostatica.png, id=1210, 529.98pt x 629.35126pt>
+<assets/hydrostatica.png, id=1201, 529.98pt x 629.35126pt>
 File: assets/hydrostatica.png Graphic file (type png)
 <use assets/hydrostatica.png>
 Package pdftex.def Info: assets/hydrostatica.png  used on input line 3707.
@@ -1803,7 +1835,7 @@ Overfull \hbox (19.87326pt too wide) in paragraph at lines 4173--4175
  []
 
 [89]
-<assets/ex_12_34.png, id=1282, 251.43938pt x 310.15875pt>
+<assets/ex_12_34.png, id=1272, 251.43938pt x 310.15875pt>
 File: assets/ex_12_34.png Graphic file (type png)
 <use assets/ex_12_34.png>
 Package pdftex.def Info: assets/ex_12_34.png  used on input line 4250.
@@ -1827,7 +1859,7 @@ Overfull \hbox (13.06046pt too wide) in paragraph at lines 4484--4486
  []
 
 [95]
-<assets/compressor_exercise.png, id=1360, 240.14719pt x 312.41719pt>
+<assets/compressor_exercise.png, id=1350, 240.14719pt x 312.41719pt>
 File: assets/compressor_exercise.png Graphic file (type png)
 <use assets/compressor_exercise.png>
 Package pdftex.def Info: assets/compressor_exercise.png  used on input line 4521.
@@ -1838,7 +1870,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13.8}) 
                                                   \__shipout_drop_firstpage_...
 l.4543 ...n = \frac{60}{60} \, kg/s = 1 \, kg/s \]
                                                    <./assets/compressor_exercise.png>]
-<assets/Turbine_oefening.png, id=1369, 291.33844pt x 414.79968pt>
+<assets/Turbine_oefening.png, id=1358, 291.33844pt x 414.79968pt>
 File: assets/Turbine_oefening.png Graphic file (type png)
 <use assets/Turbine_oefening.png>
 Package pdftex.def Info: assets/Turbine_oefening.png  used on input line 4593.
@@ -1980,12 +2012,21 @@ Overfull \hbox (3.65964pt too wide) in paragraph at lines 5566--5567
 
 [115]
 Chapter 14.
-<Thermodynamic tables and properties.pdf, id=1601, 614.295pt x 794.97pt>
+
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1588, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf  used on input line 5570.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Thermodynamic tables and properties.pdf, id=1603, page=1, 614.295pt x 794.97pt>
+
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1590, page=1, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 1>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on input line 5570.
@@ -2010,7 +2051,9 @@ Package pdftex.def Info: Thermodynamic tables and properties.pdf , page1 used on
  [117
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1614, page=2, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1601, page=2, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 2>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5570.
@@ -2023,10 +2066,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 2>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page2 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [118
+[118
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1619, page=3, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1606, page=3, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 3>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5570.
@@ -2039,10 +2084,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 3>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page3 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [119
+[119
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1624, page=4, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1611, page=4, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 4>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5570.
@@ -2055,10 +2102,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 4>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page4 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [120
+[120
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1629, page=5, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1616, page=5, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 5>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5570.
@@ -2071,10 +2120,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 5>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page5 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [121
+[121
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1635, page=6, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1622, page=6, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 6>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5570.
@@ -2087,10 +2138,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 6>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page6 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [122
+[122
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1640, page=7, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1627, page=7, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 7>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5570.
@@ -2103,10 +2156,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 7>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page7 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [123
+[123
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1645, page=8, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1632, page=8, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 8>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5570.
@@ -2119,10 +2174,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 8>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page8 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [124
+[124
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1650, page=9, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1637, page=9, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 9>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5570.
@@ -2135,10 +2192,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 9>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page9 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [125
+[125
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1655, page=10, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1642, page=10, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 10>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5570.
@@ -2151,10 +2210,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 10>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page10 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [126
+[126
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1660, page=11, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1647, page=11, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 11>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5570.
@@ -2167,10 +2228,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 11>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page11 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [127
+[127
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1666, page=12, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1653, page=12, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 12>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5570.
@@ -2183,10 +2246,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 12>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page12 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [128
+[128
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1671, page=13, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1658, page=13, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 13>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5570.
@@ -2199,10 +2264,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 13>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page13 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [129
+[129
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1676, page=14, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1663, page=14, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 14>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5570.
@@ -2215,10 +2282,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 14>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page14 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [130
+[130
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1681, page=15, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1668, page=15, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 15>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5570.
@@ -2231,10 +2300,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 15>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page15 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [131
+[131
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1686, page=16, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1673, page=16, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 16>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5570.
@@ -2247,10 +2318,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 16>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page16 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [132
+[132
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1691, page=17, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1678, page=17, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 17>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5570.
@@ -2263,10 +2336,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 17>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page17 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [133
+[133
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1697, page=18, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1684, page=18, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 18>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5570.
@@ -2279,10 +2354,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 18>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page18 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [134
+[134
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1702, page=19, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1689, page=19, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 19>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5570.
@@ -2295,10 +2372,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 19>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page19 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [135
+[135
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1707, page=20, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1694, page=20, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 20>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5570.
@@ -2311,10 +2390,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 20>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page20 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [136
+[136
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1712, page=21, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1699, page=21, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 21>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5570.
@@ -2327,10 +2408,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 21>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page21 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [137
+[137
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1717, page=22, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1704, page=22, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 22>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5570.
@@ -2343,10 +2426,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 22>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page22 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [138
+[138
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1722, page=23, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1709, page=23, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 23>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5570.
@@ -2359,10 +2444,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 23>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page23 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [139
+[139
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1728, page=24, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1715, page=24, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 24>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5570.
@@ -2375,10 +2462,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 24>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page24 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [140
+[140
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1733, page=25, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1720, page=25, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 25>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5570.
@@ -2391,10 +2480,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 25>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page25 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [141
+[141
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1738, page=26, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1725, page=26, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 26>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5570.
@@ -2407,10 +2498,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 26>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page26 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [142
+[142
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1743, page=27, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1730, page=27, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 27>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5570.
@@ -2423,10 +2516,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 27>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page27 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [143
+[143
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1749, page=28, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1735, page=28, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 28>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5570.
@@ -2439,10 +2534,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 28>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page28 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [144
+[144
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1754, page=29, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1740, page=29, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 29>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5570.
@@ -2455,10 +2552,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 29>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page29 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [145
+[145
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1760, page=30, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1746, page=30, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 30>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5570.
@@ -2471,10 +2570,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 30>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page30 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [146
+[146
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1765, page=31, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1751, page=31, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 31>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5570.
@@ -2487,10 +2588,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 31>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page31 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [147
+[147
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1770, page=32, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1756, page=32, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 32>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5570.
@@ -2503,10 +2606,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 32>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page32 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [148
+[148
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1775, page=33, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1761, page=33, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 33>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5570.
@@ -2519,10 +2624,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 33>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page33 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [149
+[149
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1780, page=34, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1766, page=34, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 34>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5570.
@@ -2535,10 +2642,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 34>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page34 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [150
+[150
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1785, page=35, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1771, page=35, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 35>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5570.
@@ -2551,10 +2660,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 35>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page35 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [151
+[151
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1791, page=36, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1777, page=36, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 36>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5570.
@@ -2567,10 +2678,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 36>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page36 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [152
+[152
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1796, page=37, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1782, page=37, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 37>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5570.
@@ -2583,10 +2696,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 37>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page37 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [153
+[153
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1801, page=38, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1787, page=38, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 38>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5570.
@@ -2599,10 +2714,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 38>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page38 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [154
+[154
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1806, page=39, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1792, page=39, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 39>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5570.
@@ -2615,10 +2732,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 39>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page39 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [155
+[155
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1811, page=40, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1797, page=40, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 40>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5570.
@@ -2631,10 +2750,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 40>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page40 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [156
+[156
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1816, page=41, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1802, page=41, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 41>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5570.
@@ -2647,10 +2768,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 41>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page41 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [157
+[157
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1822, page=42, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1808, page=42, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 42>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5570.
@@ -2663,10 +2786,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 42>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page42 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [158
+[158
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1827, page=43, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1813, page=43, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 43>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5570.
@@ -2679,10 +2804,12 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 43>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page43 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [159
+[159
 
  <./Thermodynamic tables and properties.pdf>]
-<Thermodynamic tables and properties.pdf, id=1832, page=44, 614.295pt x 794.97pt>
+
+pdfTeX warning: pdflatex (file ./Thermodynamic tables and properties.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Thermodynamic tables and properties.pdf, id=1818, page=44, 614.295pt x 794.97pt>
 File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 44>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5570.
@@ -2695,7 +2822,7 @@ File: Thermodynamic tables and properties.pdf Graphic file (type pdf)
 <use Thermodynamic tables and properties.pdf, page 44>
 Package pdftex.def Info: Thermodynamic tables and properties.pdf , page44 used on input line 5570.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [160
+[160
 
  <./Thermodynamic tables and properties.pdf>]
 Overfull \hbox (48.31981pt too wide) in paragraph at lines 5574--5582
@@ -2711,10 +2838,10 @@ Overfull \hbox (135.09206pt too wide) in paragraph at lines 5592--5593
 []\T1/cmr/m/n/10.95 Meerkeuzevragen Thermo, [][]$\T1/cmtt/m/n/10.95 https : / / drive . google . com / open ? id = 1lxMZjQMHufqMOW5fe86Rk0IvT8AmGgEeLlQJ5k5YsNs$[][] 
  []
 
-[161] (./Warmte en stromingen Samenvatting Ruben Ryckaert.aux)
+[161] (Warmte en stromingen Samenvatting Ruben Ryckaert.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-14>
+L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `"Warmte en stromingen Samenvatting Ruben Ryckaert".out' has not changed.
 (rerunfilecheck)             Checksum: D5A9C3F0018C2402CDE30059CCCD5668;24470.
@@ -2724,18 +2851,17 @@ Package rerunfilecheck Info: File `"Warmte en stromingen Samenvatting Ruben Ryck
 ### semi simple group (level 1) entered at line 3188 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 28943 strings out of 469519
- 542015 string characters out of 5467704
- 965505 words of memory out of 5000000
- 56462 multiletter control sequences out of 15000+600000
+ 29249 strings out of 467871
+ 547048 string characters out of 5428442
+ 974053 words of memory out of 5000000
+ 56991 multiletter control sequences out of 15000+600000
  654625 words of font info for 106 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 84i,17n,94p,1043b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0800.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> <c:/tools/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Warmte en stromingen Samenvatting Ruben Ryckaert.pdf" (161 pages, 41154173 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 84i,17n,94p,1049b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0800.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ruben\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Warmte en stromingen Samenvatting Ruben Ryckaert.pdf" (161 pages, 41396687 bytes).
 PDF statistics:
- 2813 PDF objects out of 2984 (max. 8388607)
- 1768 compressed objects within 18 object streams
+ 2793 PDF objects out of 2984 (max. 8388607)
  659 named destinations out of 1000 (max. 500000)
  19277 words of extra memory for PDF output out of 20736 (max. 10000000)
 

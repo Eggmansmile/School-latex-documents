@@ -1,0 +1,349 @@
+% school-macros.sty
+% Unified macros for school LaTeX documents
+% Optimized for compatibility and readability.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{school-macros}[2026/01/02 Unified School Macros]
+
+% ==================== PACKAGES ====================
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[dutch]{babel}
+\RequirePackage{amsmath,amssymb,amsthm}
+\RequirePackage{lmodern} 
+\RequirePackage{microtype}
+\RequirePackage{parskip} 
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage{etoolbox}
+\RequirePackage{tabularx} 
+\RequirePackage{tcolorbox}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{booktabs}
+\RequirePackage{enumitem}
+\RequirePackage{hyperref}
+\RequirePackage{fancyhdr}
+\RequirePackage{geometry}
+\RequirePackage{titlesec}
+\RequirePackage{float}
+\RequirePackage{listings}   
+\RequirePackage{multicol}   
+\RequirePackage[version=4]{mhchem}
+\RequirePackage{placeins}
+
+
+% --- Graphics & Plots ---
+\RequirePackage{tikz}
+\RequirePackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta, positioning, calc, patterns, shapes.geometric}
+
+% ==================== COLORS ====================
+\definecolor{schoolBlue}{RGB}{41,98,155}
+\definecolor{schoolRed}{RGB}{180,40,40}
+\definecolor{schoolOrange}{RGB}{230,126,34}
+\definecolor{schoolGray}{RGB}{100,100,100}
+
+% ==================== PAGE LAYOUT ====================
+\geometry{left=2.5cm,right=2.5cm,top=3cm,bottom=3cm} 
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.2pt}
+
+% Section styling
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries\color{black}}{\thechapter}{1em}{}[\titlerule]
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titleformat{\section}[hang]{\normalfont\Large\bfseries\color{black}}{\thesection}{1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{15pt}{10pt}
+\titleformat{\subsection}[hang]{\normalfont\large\bfseries\color{black}}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{10pt}{5pt}
+
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}
+\makeatother
+
+% ==================== EMPHASIS ====================
+\newcommand{\concept}[1]{\textcolor{schoolBlue}{\textbf{#1}}}
+\newcommand{\belangrijk}[1]{\textcolor{schoolRed}{\textbf{#1}}}
+
+% ==================== SIMPLE BOXES ====================
+\tcbset{
+    schoolstyle/.style={
+        arc=0pt,
+        outer arc=0pt,
+        boxrule=0.5pt,
+        boxsep=2pt,
+        left=6pt,
+        right=6pt,
+        top=4pt,
+        bottom=4pt,
+        before skip=10pt,
+        after skip=10pt,
+        fonttitle=\bfseries\small,
+        titlerule=0.5pt
+    }
+}
+
+\newtcolorbox{examenbox}[1][]{schoolstyle, colback=schoolOrange!8, colframe=schoolOrange!80, coltitle=white, title={Examen}, #1}
+\newtcolorbox{warningbox}[1][]{schoolstyle, colback=schoolRed!5, colframe=schoolRed!60, coltitle=white, title={Belangrijk}, #1}
+\newtcolorbox{theorieblok}[1][]{schoolstyle, colback=schoolBlue!5, colframe=schoolBlue!60, coltitle=white, title={Theorie}, #1}
+\newtcolorbox{oefenblok}[1][]{schoolstyle, colback=gray!5, colframe=gray!50, coltitle=black, title={Oefening}, #1}
+
+% ==================== FORMULAS ====================
+\newcommand{\FormulariumChapters}{}
+\newcounter{FormulariumEntryCounter}
+
+\makeatletter
+\newcommand{\addformulariumentry}[5]{%
+  \ifinlist{#1}{\FormulariumChapters}{}{%
+    \listgadd{\FormulariumChapters}{#1}%
+    \global\csdef{ChapterFormulas@#1}{}
+  }%
+  \csxappto{ChapterFormulas@#1}{%
+    \noexpand\item[\noexpand\textbf{#2}] \noexpand$\displaystyle \unexpanded{#3}$ --- \unexpanded{#4} {\noexpand(\noexpand\hyperref[frm:#5]{p.~\noexpand\pageref{frm:#5}})}\noexpand\par
+  }%
+}
+
+\newcommand{\frm}[3]{%
+  \stepcounter{FormulariumEntryCounter}%
+  \begin{tcolorbox}[schoolstyle, colback=schoolBlue!2, colframe=schoolBlue!30, title={#1}, coltitle=schoolBlue!80!black]
+    \vspace{2pt}
+    {\centering\large $\displaystyle #2$\par}
+    \vspace{4pt}
+    {\small\itshape #3}\label{frm:\theFormulariumEntryCounter}%
+  \end{tcolorbox}%
+  \@ifundefined{chapter}{%
+    \protected@write\@auxout{}{\string\addformulariumentry{0}{#1}{\unexpanded{#2}}{\unexpanded{#3}}{\theFormulariumEntryCounter}}%
+  }{%
+    \protected@write\@auxout{}{\string\addformulariumentry{\thechapter}{#1}{\unexpanded{#2}}{\unexpanded{#3}}{\theFormulariumEntryCounter}}%
+  }%
+}
+\makeatother
+
+\makeatletter
+\newcommand{\printChapterFormulas}[1]{%
+  \@ifundefined{chapter}{%
+    % Article class - don't show chapter headings if chapter is 0
+    \ifnum#1>0
+      \par\subsection*{Hoofdstuk #1}%
+      \begin{description}[leftmargin=3cm,labelsep=1em]%
+        \csuse{ChapterFormulas@#1}%
+      \end{description}\par
+    \else
+      \begin{description}[leftmargin=3cm,labelsep=1em]%
+        \csuse{ChapterFormulas@#1}%
+      \end{description}\par
+    \fi
+  }{%
+    % Report/book class
+    \par\section*{Hoofdstuk #1}%
+    \begin{description}[leftmargin=3cm,labelsep=1em]%
+      \csuse{ChapterFormulas@#1}%
+    \end{description}\par
+  }%
+}
+
+\newcommand{\printformularium}{%
+  \par
+  \@ifundefined{chapter}{\section*{Formularium}}{\chapter*{Formularium}}%
+  \ifdefempty{\FormulariumChapters}{%
+    \noindent\textit{Nog geen formules geregistreerd. Compileer tweemaal.}%
+  }{%
+    \forlistloop{\printChapterFormulas}{\FormulariumChapters}%
+  }%
+  \par
+}
+\makeatother
+
+% ==================== FIGURES ====================
+\newcommand{\fig}[4][0.8\linewidth]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=#1]{#2}
+    \caption{#3}\label{#4}
+  \end{figure}%
+}
+
+\newcommand{\autofig}[3][0.8\linewidth]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=#1]{#2}
+    \caption{#3}%
+  \end{figure}%
+}
+
+\newcommand{\img}[2]{\autofig{#1}{#2}}
+
+% ==================== SYMBOLS ====================
+\newcommand{\SymbolList}{}
+
+\makeatletter
+\newcommand{\symentry}[3]{\g@addto@macro\SymbolList{$#1$ & #2 & #3\\}}
+\newcommand{\symwrite}[3]{\protected@write\@auxout{}{\string\symentry{#1}{#2}{#3}}}
+\newcommand{\sym@key}[1]{\pdfmdfivesum{\detokenize{#1}}}
+\newcommand{\sym}[3]{
+    \expandafter\ifx\csname sym@seen@#1\endcsname\relax
+        \expandafter\gdef\csname sym@seen@#1\endcsname{}
+        \begin{tcolorbox}[schoolstyle, colback=white, colframe=schoolGray!40, title=]
+            \textbf{\ensuremath{#1}} --- #2 \hfill {\footnotesize\textcolor{schoolGray}{#3}}
+        \end{tcolorbox}%
+        \symwrite{#1}{#2}{#3}%
+    \else
+        \textbf{\ensuremath{#1}}%
+    \fi
+}
+
+\newcommand{\printsymbols}{%
+    \par
+    \@ifundefined{chapter}{\section*{Symbolenlijst}}{\chapter*{Symbolenlijst}}%
+    \begin{tabularx}{\textwidth}{l X l}
+    \toprule
+    \textbf{Symbool} & \textbf{Beschrijving} & \textbf{Eenheid} \\
+    \midrule
+    \SymbolList
+    \bottomrule
+    \end{tabularx}\par
+}
+\makeatother
+
+% ==================== MATH SHORTCUTS ====================
+% Common operators and notation
+\newcommand{\diff}{\mathrm{d}}  % Differential d
+\newcommand{\dx}{\diff x}
+\newcommand{\dy}{\diff y}
+\newcommand{\dt}{\diff t}
+\newcommand{\dv}{\diff v}
+
+% Derivatives
+\newcommand{\dd}[2]{\frac{\diff #1}{\diff #2}}  % d/dx
+\newcommand{\ddn}[3]{\frac{\diff^{#3} #1}{\diff #2^{#3}}}  % n-th derivative
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}  % Partial derivative
+\newcommand{\pdn}[3]{\frac{\partial^{#3} #1}{\partial #2^{#3}}}  % n-th partial
+
+% Vector notation
+\renewcommand{\vec}[1]{\mathbf{#1}}  % Bold vectors
+\newcommand{\uvec}[1]{\hat{\mathbf{#1}}}  % Unit vectors
+\newcommand{\mat}[1]{\mathbf{#1}}  % Matrices
+
+% Common sets
+\newcommand{\RR}{\mathbb{R}}  % Real numbers
+\newcommand{\NN}{\mathbb{N}}  % Natural numbers
+\newcommand{\ZZ}{\mathbb{Z}}  % Integers
+\newcommand{\QQ}{\mathbb{Q}}  % Rationals
+\newcommand{\CC}{\mathbb{C}}  % Complex numbers
+
+% Brackets that scale automatically
+\newcommand{\abs}[1]{\left|#1\right|}  % Absolute value
+\newcommand{\norm}[1]{\left\|#1\right\|}  % Norm
+\newcommand{\paren}[1]{\left(#1\right)}  % Parentheses
+\newcommand{\bracket}[1]{\left[#1\right]}  % Square brackets
+\newcommand{\curlybrace}[1]{\left\{#1\right\}}  % Curly braces
+\newcommand{\avg}[1]{\left\langle#1\right\rangle}  % Angle brackets (average)
+
+% Quick fractions
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\third}{\frac{1}{3}}
+\newcommand{\quarter}{\frac{1}{4}}
+
+% ==================== CROSS-REFERENCES ====================
+% Quick equation/figure/table references
+\newcommand{\eqnref}[1]{vergelijking~\eqref{#1}}  % "vergelijking (1)"
+\newcommand{\Eqnref}[1]{Vergelijking~\eqref{#1}}  % "Vergelijking (1)" at start
+\newcommand{\figref}[1]{figuur~\ref{#1}}  % "figuur 1"
+\newcommand{\Figref}[1]{Figuur~\ref{#1}}  % "Figuur 1" at start
+\newcommand{\tabref}[1]{tabel~\ref{#1}}  % "tabel 1"
+\newcommand{\Tabref}[1]{Tabel~\ref{#1}}  % "Tabel 1" at start
+\newcommand{\secref}[1]{sectie~\ref{#1}}  % "sectie 1.2"
+\newcommand{\Secref}[1]{Sectie~\ref{#1}}  % "Sectie 1.2" at start
+
+% ==================== CODE LISTINGS ====================
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    breakatwhitespace=false,
+    numbers=left,
+    numberstyle=\tiny\color{schoolGray},
+    numbersep=5pt,
+    frame=single,
+    frameround=tttt,
+    rulecolor=\color{schoolGray!40},
+    backgroundcolor=\color{gray!5},
+    commentstyle=\color{schoolGreen!70},
+    keywordstyle=\color{schoolBlue},
+    stringstyle=\color{schoolRed},
+    showstringspaces=false,
+    tabsize=4,
+    captionpos=b
+}
+
+% ==================== THEOREM ENVIRONMENTS ====================
+% Dutch theorem environments
+\theoremstyle{definition}
+\newtheorem{stelling}{Stelling}
+\newtheorem{definitie}{Definitie}
+
+\theoremstyle{remark}
+\newtheorem*{opmerking}{Opmerking}
+
+% ==================== UNITS & CONSTANTS ====================
+% Quick unit shortcuts (requires siunitx loaded by user)
+\newcommand{\km}{\kilo\meter}
+\newcommand{\kmh}{\kilo\meter\per\hour}
+\newcommand{\ms}{\meter\per\second}
+\newcommand{\mss}{\meter\per\second\squared}
+\newcommand{\degC}{\degreeCelsius}
+\newcommand{\Nm}{\newton\meter}
+\newcommand{\kN}{\kilo\newton}
+\newcommand{\MW}{\mega\watt}
+\newcommand{\kW}{\kilo\watt}
+\newcommand{\kJ}{\kilo\joule}
+\newcommand{\MJ}{\mega\joule}
+\newcommand{\kPa}{\kilo\pascal}
+\newcommand{\MPa}{\mega\pascal}
+
+% ==================== UTILITY MACROS ====================
+% Centered equation with description
+\newcommand{\eqnbox}[2]{%
+    \begin{center}
+    \fbox{\parbox{0.9\textwidth}{
+        \centering
+        $\displaystyle #1$\\
+        \vspace{2pt}
+        {\footnotesize\itshape #2}
+    }}
+    \end{center}
+}
+
+% Quick table of values
+\newenvironment{valuetable}[1]{%
+    \begin{table}[ht]
+    \centering
+    \caption{#1}
+    \\begin{tabular}{@{}ll@{}}
+    \toprule
+}{%
+    \bottomrule
+    \end{tabular}
+    \end{table}
+}
+
+% Inline fraction for text mode
+\newcommand{\ifrac}[2]{#1/#2}
+
+% Degree symbol
+\newcommand{\degree}{^\circ}
+
+% ==================== WORKFLOW HELPERS ====================
+% Quick placeholder for missing content
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\FIXME}[1]{\textcolor{red}{\textbf{[FIXME: #1]}}}
+\newcommand{\NOTE}[1]{\textcolor{schoolOrange}{\textbf{[NOTE: #1]}}}
+
+% Citation placeholder
+\newcommand{\citeme}{\textcolor{red}{[CITATIE NODIG]}}
+
+\endinput

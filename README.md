@@ -157,3 +157,25 @@ Kort overzicht van de map `Productietechnologie`:
 
 - The `formularium` feature writes an external file `<jobname>.fmr` at the end of each run and reads it when you place `\begin{formularium} ... \end{formularium}`. Run `pdflatex` twice after adding/removing formulas so the entries appear in place.
 
+## Unified Workflow & Templates (New)
+
+Located in `latex_templates/`, this repository now features a streamlined workflow:
+
+- **`school-macros.sty`**: A high-readability, minimalist package. It includes:
+  - Custom boxes: `conceptbox`, `warningbox`, `examenbox`, `procesbox`, `oefenblok`, `theorieblok`.
+  - Formula management: `\frm{Title}{Formula}{Note}` (automatically builds a formularium).
+  - Symbol management: `\sym{Symbol}{Description}{Unit}` (automatically builds a symbol list).
+  - Modern typography: Pre-configured with `microtype`, `lmodern`, and `parskip`.
+- **`new_document_template.tex`**: A clean template to start new school summaries.
+- **`macro_usage_guide.tex`**: A comprehensive guide and live demo of all available macros.
+
+### Optimized Build Process
+To ensure all cross-references, symbol lists, and the formularium are generated correctly with a single command:
+
+1. Open PowerShell in the project directory.
+2. Run the provided build script:
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File latex_templates/build.ps1 -File your_file.tex
+   ```
+   *Note: This script uses `latexmk` for a reliable multi-pass build and automatic cleanup.*
+

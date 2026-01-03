@@ -1,0 +1,28 @@
+\babel@toc {dutch}{}\relax 
+\contentsline {section}{\numberline {1}Essentiële Boxen}{2}{section.1}%
+\contentsline {section}{\numberline {2}Formules}{2}{section.2}%
+\contentsline {section}{\numberline {3}Symbolen}{2}{section.3}%
+\contentsline {section}{\numberline {4}Figuren}{2}{section.4}%
+\contentsline {section}{\numberline {5}Nuttige Wiskunde}{2}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Afgeleiden}{2}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Vectoren}{3}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Haakjes}{3}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Snelle Breuken}{3}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Eenheden}{3}{section.6}%
+\contentsline {section}{\numberline {7}Nadruk}{3}{section.7}%
+\contentsline {section}{\numberline {8}Lijsten}{3}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Opsomming (itemize)}{3}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Genummerd (enumerate)}{3}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Beschrijving (description)}{4}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Tabellen}{4}{section.9}%
+\contentsline {section}{\numberline {10}Grafieken}{4}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Functie Plot}{4}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Data Plot}{4}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Eenvoudig Diagram}{5}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Geavanceerde Layout}{5}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Tekst naast Figuur}{5}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Tabellen met veel tekst}{5}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Layout Tips}{5}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Workflow}{6}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Typisch Document}{6}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Belangrijk}{6}{subsection.12.2}%

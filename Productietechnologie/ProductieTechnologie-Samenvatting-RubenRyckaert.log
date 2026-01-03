@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.21)  23 DEC 2025 19:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.16)  29 DEC 2025 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ProductieTechnologie-Samenvatting-RubenRyckaert
-(./ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+**./ProductieTechnologie-Samenvatting-RubenRyckaert.tex
+(ProductieTechnologie-Samenvatting-RubenRyckaert.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-14>
-(c:/tools/TinyTeX/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2025-11-06>
+(C:\Program Files\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
-(c:/tools/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -24,46 +24,45 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+) (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count284
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2068.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2070.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2072.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2073.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
 \U@D=\dimen149
-\l@unhyphenated=\language3
- (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+\l@unhyphenated=\language79
+ (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count285
- (c:/tools/TinyTeX/texmf-dist/tex/generic/babel/locale/nl/babel-dutch.tex)
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4175.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Program Files\MiKTeX\tex/generic/babel/locale/nl\babel-dutch.tex)
 Package babel Info: Importing font and identification data for dutch
-(babel)             from babel-nl.ini. Reported on input line 4320.
- (c:/tools/TinyTeX/texmf-dist/tex/generic/babel-dutch/dutch.ldf
+(babel)             from babel-nl.ini. Reported on input line 4298.
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/babel-dutch\dutch.ldf
 Language: dutch 2021/08/29 v3.8l Dutch support from the babel system
-
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language 'Dutch' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 49.
-
-Package babel Info: Hyphen rules for 'dutch' set to \l@english
-(babel)             (\language0). Reported on input line 51.
 Package babel Info: Making " an active character on input line 127.
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+)) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+) (C:\Program Files\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -97,12 +96,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count286
 )
@@ -118,34 +117,34 @@ LaTeX Info: Redefining \textls on input line 1449.
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count288
- (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip51
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen151
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen152
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count289
@@ -195,46 +194,46 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+)) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen160
 \Gin@req@width=\dimen161
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+) (C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks27
 \pgfutil@tempdima=\dimen162
 \pgfutil@tempdimb=\dimen163
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box56
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+ (C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks28
 \pgfkeys@temptoks=\toks29
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks30
 ))
 \pgf@x=\dimen164
@@ -257,27 +256,27 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokb=\toks32
 \t@pgf@tokc=\toks33
 \pgf@sys@id@count=\count305
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count306
 \pgfsyssoftpath@bigbuffer@items=\count307
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -287,18 +286,18 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen174
 \pgfmath@count=\count308
 \pgfmath@box=\box57
 \pgfmath@toks=\toks34
 \pgfmath@stack@operand=\toks35
 \pgfmath@stack@operation=\toks36
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count309
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen175
 \pgf@picmaxx=\dimen176
@@ -314,75 +313,75 @@ File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yy=\dimen186
 \pgf@zx=\dimen187
 \pgf@zy=\dimen188
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen189
 \pgf@path@lasty=\dimen190
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen191
 \pgf@shorten@start@additional=\dimen192
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box58
 \pgf@hbox=\box59
 \pgf@layerbox@main=\box60
 \pgf@picture@serial@count=\count310
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen193
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen194
 \pgf@pt@y=\dimen195
 \pgf@pt@temp=\dimen196
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen197
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen198
 \pgf@sys@shading@range@num=\count311
 \pgf@shadingcount=\count312
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box61
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box62
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen199
 \pgf@nodesepend=\dimen256
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+) (C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen257
 \pgffor@skip=\dimen258
 \pgffor@stack=\toks37
 \pgffor@toks=\toks38
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count313
 \pgfplotmarksize=\dimen259
@@ -403,36 +402,36 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofchildren=\count315
 \tikznumberofcurrentchild=\count316
 \tikz@fig@count=\count317
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count318
 \pgfmatrixcurrentcolumn=\count319
 \pgf@matrix@numberofcolumns=\count320
 )
 \tikz@expandcount=\count321
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+))) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowinset=\dimen268
 \pgfarrowlength=\dimen269
 \pgfarrowwidth=\dimen270
 \pgfarrowlinewidth=\dimen271
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryangles.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryangles.code.tex
 File: tikzlibraryangles.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryquotes.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybabel.code.tex
 File: tikzlibrarybabel.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen272
 \pgfdecoratedremainingdistance=\dimen273
 \pgfdecoratedinputsegmentcompleteddistance=\dimen274
@@ -443,17 +442,17 @@ File: tikzlibrarybabel.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfdecorationsegmentlength=\dimen278
 )
 \tikz@lib@dec@box=\box67
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+ (C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (c:/tools/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+)) (C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip55
 \f@nch@offset@elh=\skip56
@@ -470,16 +469,16 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip67
 \f@nch@widthR=\skip68
 \@temptokenb=\toks39
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
- (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
+) (C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
+ (C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks40
 \verbatim@line=\toks41
 \verbatim@in@stream=\read4
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+) (C:\Program Files\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (c:/tools/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+ (C:\Program Files\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \tcb@titlebox=\box68
@@ -495,18 +494,18 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box74
 \tcb@temp=\box75
 \tcb@temp=\box76
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/float/float.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count326
 \float@exts=\toks42
 \float@box=\box77
 \@float@everytoks=\toks43
 \@floatcapt=\box78
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (c:/tools/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count327
@@ -521,51 +520,51 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen286
 \Gm@layoutvoffset=\dimen287
 \Gm@dimlist=\toks44
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (c:/tools/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (c:/tools/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count330
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen288
 \Hy@linkcounter=\count331
 \Hy@pagecounter=\count332
- (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (c:/tools/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count333
- (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -579,15 +578,15 @@ Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count334
- (c:/tools/TinyTeX/texmf-dist/tex/latex/url/url.sty
+ (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen289
- (c:/tools/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count335
@@ -605,26 +604,26 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count338
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count339
 \c@bookmark@seq@number=\count340
- (c:/tools/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip69
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 \BKM@id=\count341
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+)) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen292
 \captionmargin=\dimen293
@@ -640,7 +639,7 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count343
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip70
 \enit@outerparindent=\dimen300
@@ -648,17 +647,17 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box79
 \enit@count@id=\count344
 \enitdp@description=\count345
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/mhchem/mhchem.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/mhchem\mhchem.sty
 Package: mhchem 2024/01/29 v4.10 for typesetting chemical formulae
- (c:/tools/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-11-14 L3 programming layer (loader) 
-
-(c:/tools/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-11-06 L3 programming layer (loader) 
+ (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count346
-)) (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+)) (C:\Program Files\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count347
 \calc@Bcount=\count348
@@ -670,7 +669,7 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count349
 \calc@Cskip=\skip73
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/chemgreek/chemgreek.sty (c:/tools/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/chemgreek\chemgreek.sty (C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
@@ -693,7 +692,7 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 \mhchem@option@minusmathsidebearingright=\dimen304
 \mhchem@option@minustextsidebearingleft=\dimen305
 \mhchem@option@minustextsidebearingright=\dimen306
-) (./productie-macros.sty
+) (productie-macros.sty
 
 LaTeX Warning: You have requested package `./productie-macros',
                but the package provides `productie-macros'.
@@ -704,14 +703,14 @@ LaTeX Warning: You have requested package `./productie-macros',
                but the package provides `productie-macros'.
 
 Package: productie-macros 2025/12/20 Productie macros: frm, formularium, fig
-(c:/tools/TinyTeX/texmf-dist/tex/generic/xstring/xstring.sty (c:/tools/TinyTeX/texmf-dist/tex/generic/xstring/xstring.tex
+(C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/generic/xstring\xstring.tex
 \xs_counta=\count354
 \xs_countb=\count355
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 \c@FormulariumEntryCounter=\count356
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_number_uncert_offset_int=\count357
 \l__siunitx_number_exponent_fixed_int=\count358
@@ -727,6 +726,9 @@ Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_angle_marker_box=\box80
 \l__siunitx_angle_unit_box=\box81
 \l__siunitx_compound_count_int=\count367
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
 \l__siunitx_table_tmp_box=\box82
 \l__siunitx_table_tmp_dim=\dimen308
 \l__siunitx_table_column_width_dim=\dimen309
@@ -740,7 +742,7 @@ Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
 \l__siunitx_unit_tmp_int=\count368
 \l__siunitx_unit_position_int=\count369
 \l__siunitx_unit_total_int=\count370
- (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+ (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen312
 \ar@mcellbox=\box88
@@ -759,7 +761,7 @@ Package siunitx Info: Option "detect-all" has been deprecated in this release.
 (siunitx)             text-family-to-math = true, text-series-to-math = true"
 (siunitx)             as a replacement.
 
- (c:/tools/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen314
 \lightrulewidth=\dimen315
@@ -778,7 +780,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count373
 \@lastruleclass=\count374
 \@thisrulewidth=\dimen326
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+) (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen327
 \TX@old@table=\dimen328
@@ -787,13 +789,13 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen331
 \TX@cols=\count375
 \TX@ftn=\toks47
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count376
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count377
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/cleveref/cleveref.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/cleveref\cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -810,7 +812,7 @@ Package cleveref Info: always capitalise cross-reference names on input line 782
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
 )
 ==> First Aid for cleveref.sty applied!
-(c:/tools/TinyTeX/texmf-dist/tex/latex/titlesec/titlesec.sty
+(C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box90
 \beforetitleunit=\skip86
@@ -821,18 +823,18 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen334
 \titlewidthlast=\dimen335
 \titlewidthfirst=\dimen336
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/placeins/placeins.sty
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/base/flafter.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\flafter.sty
 Package: flafter 2025/08/22 v1.4z Standard LaTeX floats after reference (FMi)
 Applying: [2025/06/01] float order in 2-column on input line 49.
 Already applied: [2015/01/01] float order in 2-column on input line 152.
 Already applied: [0000/00/00] float order in 2-column on input line 254.
 )
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 162.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+ (C:\Program Files\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux
+) (ProductieTechnologie-Samenvatting-RubenRyckaert.aux
 Package babel Info: 'dutch' activates 'dutch' shorthands.
 (babel)             Reported on input line 9.
 )
@@ -876,13 +878,26 @@ Package microtype Info: Adjustment of interword spacing enabled.
 Package microtype Info: Using default spacing set `alltext-nott'.
 Package microtype Info: Adjustment of character kerning enabled.
 Package microtype Info: Using default kerning set `alltext'.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count378
+\scratchdimen=\dimen337
+\scratchbox=\box91
+\nofMPsegments=\count379
+\nofMParguments=\count380
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count381
+\MPscratchDim=\dimen338
+\MPnumerator=\count382
+\makeMPintoPDFobject=\count383
+\everyMPtoPDFconversion=\toks50
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -924,23 +939,28 @@ Package caption Info: End \AtBeginDocument code.
 
 Package chemgreek Info: Activating mapping `default' on line 162.
 
+(C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-dutch.trsl
+File: translations-basic-dictionary-dutch.trsl (dutch translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `dutch'. on input line 162.
+
 
 Package productie-macros Warning: If you see ``No hyphenation patterns were preloaded for the language "Dutch"'' please install Dutch hyphenation patterns and rebuild your TeX format (e.g., using tlmgr). on input line 162.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 164.
-(c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 164.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+ (C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 164.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+ (C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 164.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+ (C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -950,35 +970,35 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 164.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 164.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 164.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (c:/tools/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+) (C:\Users\ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{c:/tools/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}] (./ProductieTechnologie-Samenvatting-RubenRyckaert.toc
+{C:/Users/ruben/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (ProductieTechnologie-Samenvatting-RubenRyckaert.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
- [2{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+ [2{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
 Package babel Info: 'dutch' activates 'dutch' shorthands.
 (babel)             Reported on input line 77.
  [3] [4] [5])
 \tf@toc=\write4
 \openout4 = `ProductieTechnologie-Samenvatting-RubenRyckaert.toc'.
 
- [6{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [7]
+ [6{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}] [7]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 173.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
@@ -991,54 +1011,49 @@ Package microtype Warning: I cannot find a spacing list for font
 (microtype)                `TS1/lmr/m/n/8' (context: `nonfrench'). Switching off
 (microtype)                spacing for this font on input line 173.
 
-[8{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/tools/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+[8{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 Hoofdstuk 1.
 [9]
-<straalbewerkingen.png, id=435, 451.6875pt x 364.36125pt>
+<straalbewerkingen.png, id=432, 451.6875pt x 364.36125pt>
 File: straalbewerkingen.png Graphic file (type png)
 <use straalbewerkingen.png>
 Package pdftex.def Info: straalbewerkingen.png  used on input line 208.
 (pdftex.def)             Requested size: 241.84843pt x 195.09535pt.
  [10 <./straalbewerkingen.png>]
-<image1.png, id=443, 460.72125pt x 395.97937pt>
+<image1.png, id=440, 460.72125pt x 395.97937pt>
 File: image1.png Graphic file (type png)
 <use image1.png>
 Package pdftex.def Info: image1.png  used on input line 265.
 (pdftex.def)             Requested size: 154.78653pt x 133.03003pt.
-<image2.png, id=444, 496.10344pt x 389.95688pt>
+<image2.png, id=441, 496.10344pt x 389.95688pt>
 File: image2.png Graphic file (type png)
 <use image2.png>
 Package pdftex.def Info: image2.png  used on input line 266.
 (pdftex.def)             Requested size: 154.78653pt x 121.66486pt.
-<image3.png, id=445, 763.35187pt x 395.22656pt>
+<image3.png, id=442, 763.35187pt x 395.22656pt>
 File: image3.png Graphic file (type png)
 <use image3.png>
 Package pdftex.def Info: image3.png  used on input line 267.
 (pdftex.def)             Requested size: 154.78653pt x 80.14148pt.
-<image5.png, id=446, 477.28313pt x 383.18156pt>
+<image5.png, id=443, 477.28313pt x 383.18156pt>
 File: image5.png Graphic file (type png)
 <use image5.png>
 Package pdftex.def Info: image5.png  used on input line 277.
 (pdftex.def)             Requested size: 241.84843pt x 194.16292pt.
  [11 <./image1.png> <./image2.png> <./image3.png>]
-<image6.png, id=455, 401.24907pt x 493.0922pt>
+<image6.png, id=452, 401.24907pt x 493.0922pt>
 File: image6.png Graphic file (type png)
 <use image6.png>
 Package pdftex.def Info: image6.png  used on input line 296.
 (pdftex.def)             Requested size: 193.47578pt x 237.76501pt.
-<image7.png, id=456, 322.20375pt x 402.00188pt>
+<image7.png, id=453, 322.20375pt x 402.00188pt>
 File: image7.png Graphic file (type png)
 <use image7.png>
 Package pdftex.def Info: image7.png  used on input line 297.
 (pdftex.def)             Requested size: 193.47578pt x 241.39926pt.
-
-Underfull \hbox (badness 2894) in paragraph at lines 307--308
-[]\T1/lmr/bx/n/12 (+10) Toleranties\T1/lmr/m/n/12 (+10) : Be-grijp de di-a-gram-men en de re-latie tussen IT-klasse en
- []
-
-[12 <./image5.png> <./image6.png> <./image7.png>]
+ [12 <./image5.png> <./image6.png> <./image7.png>]
 Hoofdstuk 2.
-<image9.png, id=466, 380.17032pt x 239.39438pt>
+<image9.png, id=463, 380.17032pt x 239.39438pt>
 File: image9.png Graphic file (type png)
 <use image9.png>
 Package pdftex.def Info: image9.png  used on input line 320.
@@ -1049,91 +1064,91 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 Hoofdstuk 3.
 [14]
-<image10.png, id=481, 636.87938pt x 335.00156pt>
+<image10.png, id=478, 636.87938pt x 335.00156pt>
 File: image10.png Graphic file (type png)
 <use image10.png>
 Package pdftex.def Info: image10.png  used on input line 397.
 (pdftex.def)             Requested size: 290.22107pt x 152.65596pt.
-<image11.png, id=482, 967.36406pt x 426.84468pt>
+<image11.png, id=479, 967.36406pt x 426.84468pt>
 File: image11.png Graphic file (type png)
 <use image11.png>
 Package pdftex.def Info: image11.png  used on input line 416.
 (pdftex.def)             Requested size: 386.95897pt x 170.74136pt.
  [15 <./image10.png>]
-<image20.png, id=490, 328.22626pt x 189.70876pt>
+<image20.png, id=487, 328.22626pt x 189.70876pt>
 File: image20.png Graphic file (type png)
 <use image20.png>
 Package pdftex.def Info: image20.png  used on input line 429.
 (pdftex.def)             Requested size: 193.47578pt x 111.82587pt.
  [16 <./image11.png> <./image20.png>]
-<image12.png, id=497, 377.15906pt x 332.74312pt>
+<image12.png, id=494, 377.15906pt x 332.74312pt>
 File: image12.png Graphic file (type png)
 <use image12.png>
 Package pdftex.def Info: image12.png  used on input line 449.
 (pdftex.def)             Requested size: 193.47578pt x 170.69188pt.
-<image14.png, id=498, 440.39531pt x 171.64125pt>
+<image14.png, id=495, 440.39531pt x 171.64125pt>
 File: image14.png Graphic file (type png)
 <use image14.png>
 Package pdftex.def Info: image14.png  used on input line 456.
 (pdftex.def)             Requested size: 193.47578pt x 75.40451pt.
  [17 <./image12.png> <./image14.png>]
-<image15.png, id=507, 490.83376pt x 349.305pt>
+<image15.png, id=504, 490.83376pt x 349.305pt>
 File: image15.png Graphic file (type png)
 <use image15.png>
 Package pdftex.def Info: image15.png  used on input line 486.
 (pdftex.def)             Requested size: 241.84843pt x 172.10966pt.
-<image16.png, id=508, 366.61969pt x 419.31656pt>
+<image16.png, id=505, 366.61969pt x 419.31656pt>
 File: image16.png Graphic file (type png)
 <use image16.png>
 Package pdftex.def Info: image16.png  used on input line 508.
 (pdftex.def)             Requested size: 193.47578pt x 221.28976pt.
  [18 <./image15.png>]
-<image17.png, id=516, 402.75468pt x 346.29375pt>
+<image17.png, id=513, 402.75468pt x 346.29375pt>
 File: image17.png Graphic file (type png)
 <use image17.png>
 Package pdftex.def Info: image17.png  used on input line 525.
 (pdftex.def)             Requested size: 193.47578pt x 166.3512pt.
-<image21.png, id=517, 445.665pt x 327.47343pt>
+<image21.png, id=514, 445.665pt x 327.47343pt>
 File: image21.png Graphic file (type png)
 <use image21.png>
 Package pdftex.def Info: image21.png  used on input line 544.
 (pdftex.def)             Requested size: 193.47578pt x 142.16498pt.
  [19 <./image16.png> <./image17.png>]
-<image18.png, id=527, 657.95813pt x 188.95593pt>
+<image18.png, id=523, 657.95813pt x 188.95593pt>
 File: image18.png Graphic file (type png)
 <use image18.png>
 Package pdftex.def Info: image18.png  used on input line 580.
 (pdftex.def)             Requested size: 338.58632pt x 97.23697pt.
  [20 <./image21.png>]
-<image23.png, id=534, 481.8pt x 411.78844pt>
+<image23.png, id=530, 481.8pt x 411.78844pt>
 File: image23.png Graphic file (type png)
 <use image23.png>
 Package pdftex.def Info: image23.png  used on input line 609.
 (pdftex.def)             Requested size: 241.84843pt x 206.70425pt.
  [21 <./image18.png> <./image23.png>]
-<image22.png, id=543, 593.96906pt x 356.0803pt>
+<image22.png, id=539, 593.96906pt x 356.0803pt>
 File: image22.png Graphic file (type png)
 <use image22.png>
 Package pdftex.def Info: image22.png  used on input line 618.
 (pdftex.def)             Requested size: 241.84843pt x 144.9887pt.
-<image25.png, id=544, 525.46312pt x 368.87813pt>
+<image25.png, id=540, 525.46312pt x 368.87813pt>
 File: image25.png Graphic file (type png)
 <use image25.png>
 Package pdftex.def Info: image25.png  used on input line 643.
 (pdftex.def)             Requested size: 290.22107pt x 203.74477pt.
  [22 <./image22.png>]
-<image26.png, id=555, 953.81343pt x 426.09187pt>
+<image26.png, id=551, 953.81343pt x 426.09187pt>
 File: image26.png Graphic file (type png)
 <use image26.png>
 Package pdftex.def Info: image26.png  used on input line 665.
 (pdftex.def)             Requested size: 483.69687pt x 216.08167pt.
-<image27.png, id=556, 450.18187pt x 201.00093pt>
+<image27.png, id=552, 450.18187pt x 201.00093pt>
 File: image27.png Graphic file (type png)
 <use image27.png>
 Package pdftex.def Info: image27.png  used on input line 678.
 (pdftex.def)             Requested size: 241.84843pt x 107.98375pt.
  [23 <./image25.png> <./image26.png>]
-<image28.png, id=565, 814.54312pt x 380.92313pt>
+<image28.png, id=561, 814.54312pt x 380.92313pt>
 File: image28.png Graphic file (type png)
 <use image28.png>
 Package pdftex.def Info: image28.png  used on input line 697.
@@ -1141,62 +1156,57 @@ Package pdftex.def Info: image28.png  used on input line 697.
 
 Hoofdstuk 4.
 [24 <./image27.png> <./image28.png>]
-<image29.png, id=573, 364.36125pt x 307.1475pt>
+<image29.png, id=569, 364.36125pt x 307.1475pt>
 File: image29.png Graphic file (type png)
 <use image29.png>
 Package pdftex.def Info: image29.png  used on input line 726.
 (pdftex.def)             Requested size: 217.66211pt x 183.48381pt.
-<image30.png, id=574, 317.68687pt x 365.11406pt>
+<image30.png, id=570, 317.68687pt x 365.11406pt>
 File: image30.png Graphic file (type png)
 <use image30.png>
 Package pdftex.def Info: image30.png  used on input line 727.
 (pdftex.def)             Requested size: 217.66211pt x 250.1629pt.
  [25 <./image29.png> <./image30.png>]
-<image31.png, id=587, 294.34969pt x 375.65344pt>
+<image31.png, id=583, 294.34969pt x 375.65344pt>
 File: image31.png Graphic file (type png)
 <use image31.png>
 Package pdftex.def Info: image31.png  used on input line 748.
 (pdftex.def)             Requested size: 193.47578pt x 246.91747pt.
  [26 <./image31.png>] [27]
-<image32.png, id=602, 568.37344pt x 396.7322pt>
+<image32.png, id=598, 568.37344pt x 396.7322pt>
 File: image32.png Graphic file (type png)
 <use image32.png>
 Package pdftex.def Info: image32.png  used on input line 823.
 (pdftex.def)             Requested size: 386.95897pt x 270.11331pt.
  [28 <./image32.png>]
-<image33.png, id=611, 735.49782pt x 361.35pt>
+<image33.png, id=607, 735.49782pt x 361.35pt>
 File: image33.png Graphic file (type png)
 <use image33.png>
 Package pdftex.def Info: image33.png  used on input line 843.
 (pdftex.def)             Requested size: 483.69687pt x 237.64813pt.
-
-Underfull \hbox (badness 1460) in paragraph at lines 859--860
-[]\T1/lmr/bx/n/12 (+10) Snedediepte $\OML/lmm/m/it/12 a$\T1/lmr/m/n/12 (+10) : Een grotere snedediepte ver-g-root door-gaans $\OML/lmm/m/it/12 b$ \T1/lmr/m/n/12 (+10) en ver-hoogt de
- []
-
-[29 <./image33.png>]
-<image34.png, id=621, 548.80031pt x 301.8778pt>
+ [29 <./image33.png>]
+<image34.png, id=617, 548.80031pt x 301.8778pt>
 File: image34.png Graphic file (type png)
 <use image34.png>
 Package pdftex.def Info: image34.png  used on input line 880.
 (pdftex.def)             Requested size: 217.66211pt x 119.72638pt.
-<image35.png, id=622, 448.67625pt x 319.94531pt>
+<image35.png, id=618, 448.67625pt x 319.94531pt>
 File: image35.png Graphic file (type png)
 <use image35.png>
 Package pdftex.def Info: image35.png  used on input line 881.
 (pdftex.def)             Requested size: 217.66211pt x 155.21234pt.
-<image36.png, id=623, 936.49875pt x 414.04688pt>
+<image36.png, id=619, 936.49875pt x 414.04688pt>
 File: image36.png Graphic file (type png)
 <use image36.png>
 Package pdftex.def Info: image36.png  used on input line 893.
 (pdftex.def)             Requested size: 241.84843pt x 106.9231pt.
  [30 <./image34.png> <./image35.png> <./image36.png>]
-<image37.png, id=633, 438.13687pt x 234.8775pt>
+<image37.png, id=629, 438.13687pt x 234.8775pt>
 File: image37.png Graphic file (type png)
 <use image37.png>
 Package pdftex.def Info: image37.png  used on input line 908.
 (pdftex.def)             Requested size: 217.66211pt x 116.68582pt.
-<image38.png, id=634, 295.1025pt x 203.25937pt>
+<image38.png, id=630, 295.1025pt x 203.25937pt>
 File: image38.png Graphic file (type png)
 <use image38.png>
 Package pdftex.def Info: image38.png  used on input line 909.
@@ -1206,13 +1216,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 951--954
 
  []
 
-<image39.png, id=642, 429.85594pt x 294.34969pt>
+<image39.png, id=638, 429.85594pt x 294.34969pt>
 File: image39.png Graphic file (type png)
 <use image39.png>
 Package pdftex.def Info: image39.png  used on input line 957.
 (pdftex.def)             Requested size: 386.95897pt x 264.97963pt.
 [32 <./image39.png>]
-<image40.png, id=649, 712.91344pt x 289.08pt>
+<image40.png, id=645, 712.91344pt x 289.08pt>
 File: image40.png Graphic file (type png)
 <use image40.png>
 Package pdftex.def Info: image40.png  used on input line 968.
@@ -1224,17 +1234,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 972--975
 
 Hoofdstuk 5.
 [33 <./image40.png>]
-<image41.png, id=660, 475.7775pt x 492.33937pt>
+<image41.png, id=656, 475.7775pt x 492.33937pt>
 File: image41.png Graphic file (type png)
 <use image41.png>
 Package pdftex.def Info: image41.png  used on input line 1010.
 (pdftex.def)             Requested size: 217.66211pt x 225.23929pt.
-<image42.png, id=661, 576.65437pt x 447.17062pt>
+<image42.png, id=657, 576.65437pt x 447.17062pt>
 File: image42.png Graphic file (type png)
 <use image42.png>
 Package pdftex.def Info: image42.png  used on input line 1011.
 (pdftex.def)             Requested size: 217.66211pt x 168.78711pt.
-<image43.png, id=663, 267.24844pt x 439.6425pt>
+<image43.png, id=659, 267.24844pt x 439.6425pt>
 File: image43.png Graphic file (type png)
 <use image43.png>
 Package pdftex.def Info: image43.png  used on input line 1037.
@@ -1248,7 +1258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1294--1299
  []
 
 [38]
-<image44.png, id=695, 864.22874pt x 405.01312pt>
+<image44.png, id=690, 864.22874pt x 405.01312pt>
 File: image44.png Graphic file (type png)
 <use image44.png>
 Package pdftex.def Info: image44.png  used on input line 1377.
@@ -1260,12 +1270,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1477--1485
 
  []
 
-<image45.png, id=711, 427.5975pt x 189.70876pt>
+<image45.png, id=706, 427.5975pt x 189.70876pt>
 File: image45.png Graphic file (type png)
 <use image45.png>
 Package pdftex.def Info: image45.png  used on input line 1507.
 (pdftex.def)             Requested size: 290.22107pt x 128.75998pt.
-<image46.png, id=712, 298.11375pt x 202.50656pt>
+<image46.png, id=707, 298.11375pt x 202.50656pt>
 File: image46.png Graphic file (type png)
 <use image46.png>
 Package pdftex.def Info: image46.png  used on input line 1520.
@@ -1275,22 +1285,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1556--1561
 
  []
 
-<47.png, id=726, 346.29375pt x 207.02344pt>
+<47.png, id=721, 346.29375pt x 207.02344pt>
 File: 47.png Graphic file (type png)
 <use 47.png>
 Package pdftex.def Info: 47.png  used on input line 1573.
 (pdftex.def)             Requested size: 241.84843pt x 144.58688pt.
 [43]
-<image48.png, id=732, 602.25pt x 201.75375pt>
+<image48.png, id=727, 602.25pt x 201.75375pt>
 File: image48.png Graphic file (type png)
 <use image48.png>
 Package pdftex.def Info: image48.png  used on input line 1586.
 (pdftex.def)             Requested size: 386.95897pt x 129.63606pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1615--1615
-[]|\T1/lmr/m/n/12 (+10) Geen com-pen-satie nodig;
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 1615--1615
 []|\T1/lmr/m/n/12 (+10) Spelingcompensatie on-mis-
@@ -1298,16 +1303,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1615--1615
 
 
 Underfull \hbox (badness 2970) in paragraph at lines 1615--1615
-[]|\T1/lmr/m/n/12 (+10) Stijgt gelei-delijk ti-j-dens in-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1615--1615
-[]|\T1/lmr/m/n/12 (+10) Werkstuk wordt 'in klem'
+[]|\T1/lmr/m/n/12 (+10) Stijgt ge-lei-de-lijk tij-dens in-
  []
 
 [44 <./47.png> <./image48.png>] [45]
-<image49.png, id=746, 470.50781pt x 149.05687pt>
+<image49.png, id=741, 470.50781pt x 149.05687pt>
 File: image49.png Graphic file (type png)
 <use image49.png>
 Package pdftex.def Info: image49.png  used on input line 1649.
@@ -1315,7 +1315,7 @@ Package pdftex.def Info: image49.png  used on input line 1649.
 
 Hoofdstuk 7.
 [46 <./image49.png>]
-<image56.png, id=753, 517.935pt x 246.1697pt>
+<image56.png, id=748, 517.935pt x 246.1697pt>
 File: image56.png Graphic file (type png)
 <use image56.png>
 Package pdftex.def Info: image56.png  used on input line 1684.
@@ -1325,7 +1325,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1693--1696
 
  []
 
-<image57.png, id=754, 283.0575pt x 162.6075pt>
+<image57.png, id=749, 283.0575pt x 162.6075pt>
 File: image57.png Graphic file (type png)
 <use image57.png>
 Package pdftex.def Info: image57.png  used on input line 1778.
@@ -1337,13 +1337,13 @@ Package microtype Warning: I cannot find a spacing list for font
 (microtype)                spacing for this font on input line 1789.
 
 [48 <./image57.png>]
-<image58.png, id=768, 350.81062pt x 244.66406pt>
+<image58.png, id=763, 350.81062pt x 244.66406pt>
 File: image58.png Graphic file (type png)
 <use image58.png>
 Package pdftex.def Info: image58.png  used on input line 1808.
 (pdftex.def)             Requested size: 386.95897pt x 269.8966pt.
  [49 <./image58.png>]
-<image59.png, id=778, 490.83376pt x 248.42813pt>
+<image59.png, id=773, 490.83376pt x 248.42813pt>
 File: image59.png Graphic file (type png)
 <use image59.png>
 Package pdftex.def Info: image59.png  used on input line 1862.
@@ -1355,7 +1355,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1932--1934
 
  []
 
-<image50.png, id=790, 324.46219pt x 163.3603pt>
+<image50.png, id=784, 324.46219pt x 163.3603pt>
 File: image50.png Graphic file (type png)
 <use image50.png>
 Package pdftex.def Info: image50.png  used on input line 1937.
@@ -1366,7 +1366,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1942--1945
  []
 
 [52]
-<image51.png, id=797, 287.57437pt x 146.79843pt>
+<image51.png, id=791, 287.57437pt x 146.79843pt>
 File: image51.png Graphic file (type png)
 <use image51.png>
 Package pdftex.def Info: image51.png  used on input line 1975.
@@ -1386,18 +1386,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2012--2017
 
  []
 
-<image52.png, id=816, 512.66531pt x 301.125pt>
+<image52.png, id=810, 512.66531pt x 301.125pt>
 File: image52.png Graphic file (type png)
 <use image52.png>
 Package pdftex.def Info: image52.png  used on input line 2024.
 (pdftex.def)             Requested size: 386.95897pt x 227.29054pt.
-<image53.png, id=817, 277.035pt x 146.79843pt>
+<image53.png, id=811, 277.035pt x 146.79843pt>
 File: image53.png Graphic file (type png)
 <use image53.png>
 Package pdftex.def Info: image53.png  used on input line 2045.
 (pdftex.def)             Requested size: 290.22107pt x 153.78673pt.
 [55 <./image52.png>]
-<image54.png, id=825, 536.75531pt x 274.02374pt>
+<image54.png, id=819, 536.75531pt x 274.02374pt>
 File: image54.png Graphic file (type png)
 <use image54.png>
 Package pdftex.def Info: image54.png  used on input line 2054.
@@ -1407,7 +1407,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2059--2062
 
  []
 
-<image55.png, id=826, 319.1925pt x 137.01187pt>
+<image55.png, id=820, 319.1925pt x 137.01187pt>
 File: image55.png Graphic file (type png)
 <use image55.png>
 Package pdftex.def Info: image55.png  used on input line 2075.
@@ -1415,35 +1415,35 @@ Package pdftex.def Info: image55.png  used on input line 2075.
 [56 <./image53.png> <./image54.png>]
 Hoofdstuk 9.
 [57 <./image55.png>]
-<image60.png, id=841, 402.75468pt x 300.3722pt>
+<image60.png, id=835, 402.75468pt x 300.3722pt>
 File: image60.png Graphic file (type png)
 <use image60.png>
 Package pdftex.def Info: image60.png  used on input line 2111.
 (pdftex.def)             Requested size: 241.84843pt x 180.36678pt.
  [58 <./image60.png>]
-<image61.png, id=850, 444.91219pt x 346.29375pt>
+<image61.png, id=844, 444.91219pt x 346.29375pt>
 File: image61.png Graphic file (type png)
 <use image61.png>
 Package pdftex.def Info: image61.png  used on input line 2213.
 (pdftex.def)             Requested size: 217.66211pt x 169.41592pt.
-<image62.png, id=851, 299.61937pt x 225.84375pt>
+<image62.png, id=845, 299.61937pt x 225.84375pt>
 File: image62.png Graphic file (type png)
 <use image62.png>
 Package pdftex.def Info: image62.png  used on input line 2214.
 (pdftex.def)             Requested size: 217.66211pt x 164.07195pt.
  [59 <./image61.png> <./image62.png>]
-<image63.png, id=860, 682.80093pt x 306.39468pt>
+<image63.png, id=854, 682.80093pt x 306.39468pt>
 File: image63.png Graphic file (type png)
 <use image63.png>
 Package pdftex.def Info: image63.png  used on input line 2293.
 (pdftex.def)             Requested size: 290.22107pt x 130.23238pt.
  [60 <./image63.png>]
-<image64.png, id=871, 489.32813pt x 295.1025pt>
+<image64.png, id=865, 489.32813pt x 295.1025pt>
 File: image64.png Graphic file (type png)
 <use image64.png>
 Package pdftex.def Info: image64.png  used on input line 2315.
 (pdftex.def)             Requested size: 241.84843pt x 145.85329pt.
-<image65.png, id=872, 1039.63406pt x 216.81pt>
+<image65.png, id=866, 1039.63406pt x 216.81pt>
 File: image65.png Graphic file (type png)
 <use image65.png>
 Package pdftex.def Info: image65.png  used on input line 2335.
@@ -1460,425 +1460,414 @@ Package microtype Warning: I cannot find a spacing list for font
 (microtype)                spacing for this font on input line 2341.
 
 [61 <./image64.png> <./image65.png>]
-<image66.png, id=881, 1042.64531pt x 552.56438pt>
+<image66.png, id=875, 1042.64531pt x 552.56438pt>
 File: image66.png Graphic file (type png)
 <use image66.png>
 Package pdftex.def Info: image66.png  used on input line 2346.
 (pdftex.def)             Requested size: 386.95897pt x 205.06953pt.
-<image67.png, id=882, 636.87938pt x 282.30469pt>
+<image67.png, id=876, 636.87938pt x 282.30469pt>
 File: image67.png Graphic file (type png)
 <use image67.png>
 Package pdftex.def Info: image67.png  used on input line 2367.
 (pdftex.def)             Requested size: 386.95897pt x 171.525pt.
-<image68.png, id=883, 353.06906pt x 185.94469pt>
+<image68.png, id=877, 353.06906pt x 185.94469pt>
 File: image68.png Graphic file (type png)
 <use image68.png>
 Package pdftex.def Info: image68.png  used on input line 2375.
 (pdftex.def)             Requested size: 145.11053pt x 76.42223pt.
-<image69.png, id=884, 307.1475pt x 252.19218pt>
+<image69.png, id=878, 307.1475pt x 252.19218pt>
 File: image69.png Graphic file (type png)
 <use image69.png>
 Package pdftex.def Info: image69.png  used on input line 2376.
 (pdftex.def)             Requested size: 145.11053pt x 119.14604pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2387--2389
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2398
 
  []
 
 [62 <./image66.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2390--2399
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2400--2402
+Underfull \hbox (badness 10000) in paragraph at lines 2399--2401
 
  []
 
 [63 <./image67.png> <./image68.png> <./image69.png>]
-<image70.png, id=902, 288.3272pt x 307.90031pt>
+<image70.png, id=896, 288.3272pt x 307.90031pt>
 File: image70.png Graphic file (type png)
 <use image70.png>
-Package pdftex.def Info: image70.png  used on input line 2425.
+Package pdftex.def Info: image70.png  used on input line 2424.
 (pdftex.def)             Requested size: 145.11053pt x 154.96457pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2430--2447
+Underfull \hbox (badness 10000) in paragraph at lines 2429--2446
 
  []
 
 [64 <./image70.png>]
-<image71.png, id=909, 185.94469pt x 388.45125pt>
+<image71.png, id=903, 185.94469pt x 388.45125pt>
 File: image71.png Graphic file (type png)
 <use image71.png>
-Package pdftex.def Info: image71.png  used on input line 2450.
+Package pdftex.def Info: image71.png  used on input line 2449.
 (pdftex.def)             Requested size: 145.11053pt x 303.15671pt.
-<.png, id=910, 463.7325pt x 331.99031pt>
+<.png, id=904, 463.7325pt x 331.99031pt>
 File: .png Graphic file (type png)
 <use .png>
-Package pdftex.def Info: .png  used on input line 2471.
+Package pdftex.def Info: .png  used on input line 2470.
 (pdftex.def)             Requested size: 217.66211pt x 155.82776pt.
-<image72.png, id=911, 414.79968pt x 105.39375pt>
+<image72.png, id=905, 414.79968pt x 105.39375pt>
 File: image72.png Graphic file (type png)
 <use image72.png>
-Package pdftex.def Info: image72.png  used on input line 2472.
+Package pdftex.def Info: image72.png  used on input line 2471.
 (pdftex.def)             Requested size: 217.66211pt x 55.30359pt.
  [65 <./image71.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2491--2496
+Underfull \hbox (badness 10000) in paragraph at lines 2490--2495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2554--2559
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2558
 
  []
 
-[66 <./.png> <./image72.png>] [67]
-<image75.png, id=932, 210.7875pt x 198.7425pt>
+[66 <./.png> <./image72.png>]
+<image75.png, id=919, 210.7875pt x 198.7425pt>
 File: image75.png Graphic file (type png)
 <use image75.png>
-Package pdftex.def Info: image75.png  used on input line 2586.
+Package pdftex.def Info: image75.png  used on input line 2585.
 (pdftex.def)             Requested size: 145.11053pt x 136.82011pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2591--2593
+ [67]
+Underfull \hbox (badness 10000) in paragraph at lines 2590--2592
 
  []
 
-<image73.png, id=933, 252.945pt x 403.5075pt>
+<image73.png, id=926, 252.945pt x 403.5075pt>
 File: image73.png Graphic file (type png)
 <use image73.png>
-Package pdftex.def Info: image73.png  used on input line 2607.
+Package pdftex.def Info: image73.png  used on input line 2606.
 (pdftex.def)             Requested size: 145.11053pt x 231.49165pt.
 [68 <./image75.png> <./image73.png>]
-<image74.png, id=942, 369.63094pt x 380.92313pt>
+<image74.png, id=935, 369.63094pt x 380.92313pt>
 File: image74.png Graphic file (type png)
 <use image74.png>
-Package pdftex.def Info: image74.png  used on input line 2622.
+Package pdftex.def Info: image74.png  used on input line 2621.
 (pdftex.def)             Requested size: 193.47578pt x 199.38895pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2652--2658
+Underfull \hbox (badness 10000) in paragraph at lines 2651--2657
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2684--2684
+Underfull \hbox (badness 10000) in paragraph at lines 2683--2683
 []|\T1/lmr/m/n/12 (+10) Laserstraalbewerking
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2684--2684
+Underfull \hbox (badness 10000) in paragraph at lines 2683--2683
 []|\T1/lmr/m/n/12 (+10) Elektronenstraalbewerking
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2684--2684
-[]|\T1/lmr/m/n/12 (+10) Ruw sni-j-den van dikke
- []
-
-[69 <./image74.png>] [70]
-<image76.png, id=956, 246.9225pt x 217.5628pt>
+[69 <./image74.png>]
+<image76.png, id=944, 246.9225pt x 217.5628pt>
 File: image76.png Graphic file (type png)
 <use image76.png>
-Package pdftex.def Info: image76.png  used on input line 2716.
+Package pdftex.def Info: image76.png  used on input line 2715.
 (pdftex.def)             Requested size: 241.84843pt x 213.09058pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2726--2728
+Underfull \hbox (badness 10000) in paragraph at lines 2725--2727
 
  []
 
-<image77.png, id=957, 340.27126pt x 146.04562pt>
+[70]
+<image77.png, id=950, 340.27126pt x 146.04562pt>
 File: image77.png Graphic file (type png)
 <use image77.png>
-Package pdftex.def Info: image77.png  used on input line 2771.
+Package pdftex.def Info: image77.png  used on input line 2770.
 (pdftex.def)             Requested size: 338.58632pt x 145.3299pt.
-[71 <./image76.png>]
-<Type_lasers.png, id=964, 494.59781pt x 232.61906pt>
+ [71 <./image76.png>]
+<Type_lasers.png, id=957, 494.59781pt x 232.61906pt>
 File: Type_lasers.png Graphic file (type png)
 <use Type_lasers.png>
-Package pdftex.def Info: Type_lasers.png  used on input line 2810.
+Package pdftex.def Info: Type_lasers.png  used on input line 2809.
 (pdftex.def)             Requested size: 386.95897pt x 181.9923pt.
- [72 <./image77.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2815--2821
+
+Underfull \hbox (badness 10000) in paragraph at lines 2814--2820
 
  []
 
-<Reflecteren in functie van de golflengte.png, id=972, 349.305pt x 228.855pt>
+<Reflecteren in functie van de golflengte.png, id=958, 349.305pt x 228.855pt>
 File: Reflecteren in functie van de golflengte.png Graphic file (type png)
 <use Reflecteren in functie van de golflengte.png>
-Package pdftex.def Info: Reflecteren in functie van de golflengte.png  used on input line 2824.
+Package pdftex.def Info: Reflecteren in functie van de golflengte.png  used on input line 2823.
 (pdftex.def)             Requested size: 193.47578pt x 126.7611pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2830--2833
+[72 <./image77.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2829--2832
 
  []
 
-<Absorptie van polycarbonaat.png, id=973, 444.91219pt x 294.34969pt>
+<Absorptie van polycarbonaat.png, id=966, 444.91219pt x 294.34969pt>
 File: Absorptie van polycarbonaat.png Graphic file (type png)
 <use Absorptie van polycarbonaat.png>
-Package pdftex.def Info: Absorptie van polycarbonaat.png  used on input line 2838.
+Package pdftex.def Info: Absorptie van polycarbonaat.png  used on input line 2837.
 (pdftex.def)             Requested size: 193.47578pt x 128.00064pt.
-[73 <./Type_lasers.png> <./Reflecteren in functie van de golflengte.png>]
-<Kwaliteit laserstraal.png, id=983, 423.08063pt x 220.57407pt>
+[73 <./Type_lasers.png> <./Reflecteren in functie van de golflengte.png> <./Absorptie van polycarbonaat.png>]
+<Kwaliteit laserstraal.png, id=977, 423.08063pt x 220.57407pt>
 File: Kwaliteit laserstraal.png Graphic file (type png)
 <use Kwaliteit laserstraal.png>
-Package pdftex.def Info: Kwaliteit laserstraal.png  used on input line 2856.
+Package pdftex.def Info: Kwaliteit laserstraal.png  used on input line 2855.
 (pdftex.def)             Requested size: 241.84843pt x 126.08864pt.
- [74 <./Absorptie van polycarbonaat.png> <./Kwaliteit laserstraal.png>]
-<Laserfocussen.png, id=991, 313.17pt x 346.29375pt>
+ [74 <./Kwaliteit laserstraal.png>]
+<Laserfocussen.png, id=985, 313.17pt x 346.29375pt>
 File: Laserfocussen.png Graphic file (type png)
 <use Laserfocussen.png>
-Package pdftex.def Info: Laserfocussen.png  used on input line 2908.
+Package pdftex.def Info: Laserfocussen.png  used on input line 2907.
 (pdftex.def)             Requested size: 241.84843pt x 267.4396pt.
  [75 <./Laserfocussen.png>]
-<NC-lasers.png, id=999, 752.0597pt x 302.63063pt>
+<NC-lasers.png, id=992, 752.0597pt x 302.63063pt>
 File: NC-lasers.png Graphic file (type png)
 <use NC-lasers.png>
-Package pdftex.def Info: NC-lasers.png  used on input line 2933.
+Package pdftex.def Info: NC-lasers.png  used on input line 2932.
 (pdftex.def)             Requested size: 386.95897pt x 155.71567pt.
- [76 <./NC-lasers.png>]
-<Kleinefiguurdoorlasersnijden.png, id=1006, 165.61874pt x 157.33781pt>
+<Kleinefiguurdoorlasersnijden.png, id=993, 165.61874pt x 157.33781pt>
 File: Kleinefiguurdoorlasersnijden.png Graphic file (type png)
 <use Kleinefiguurdoorlasersnijden.png>
-Package pdftex.def Info: Kleinefiguurdoorlasersnijden.png  used on input line 2952.
+Package pdftex.def Info: Kleinefiguurdoorlasersnijden.png  used on input line 2951.
 (pdftex.def)             Requested size: 193.47578pt x 183.81079pt.
- [77 <./Kleinefiguurdoorlasersnijden.png>]
+ [76 <./NC-lasers.png>] [77 <./Kleinefiguurdoorlasersnijden.png>]
 Hoofdstuk 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2987--2991
+Underfull \hbox (badness 10000) in paragraph at lines 2986--2990
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2992--2996
+Underfull \hbox (badness 10000) in paragraph at lines 2991--2995
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2996--3002
+Underfull \hbox (badness 10000) in paragraph at lines 2995--3001
 
  []
 
 [78]
-<Kracht-wegdiagram van Ponsen.png, id=1017, 375.65344pt x 357.58594pt>
+<Kracht-wegdiagram van Ponsen.png, id=1010, 375.65344pt x 357.58594pt>
 File: Kracht-wegdiagram van Ponsen.png Graphic file (type png)
 <use Kracht-wegdiagram van Ponsen.png>
-Package pdftex.def Info: Kracht-wegdiagram van Ponsen.png  used on input line 3008.
+Package pdftex.def Info: Kracht-wegdiagram van Ponsen.png  used on input line 3007.
 (pdftex.def)             Requested size: 217.66211pt x 207.19809pt.
-<Het Ponsprocess.png, id=1018, 367.3725pt x 278.54062pt>
+<Het Ponsprocess.png, id=1011, 367.3725pt x 278.54062pt>
 File: Het Ponsprocess.png Graphic file (type png)
 <use Het Ponsprocess.png>
-Package pdftex.def Info: Het Ponsprocess.png  used on input line 3009.
+Package pdftex.def Info: Het Ponsprocess.png  used on input line 3008.
 (pdftex.def)             Requested size: 217.66211pt x 165.03456pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3014--3018
+Underfull \hbox (badness 10000) in paragraph at lines 3013--3017
 
  []
 
-<image80.png, id=1019, 339.51843pt x 211.54031pt>
+<image80.png, id=1012, 339.51843pt x 211.54031pt>
 File: image80.png Graphic file (type png)
 <use image80.png>
-Package pdftex.def Info: image80.png  used on input line 3029.
+Package pdftex.def Info: image80.png  used on input line 3028.
 (pdftex.def)             Requested size: 217.66211pt x 135.6145pt.
 [79 <./Kracht-wegdiagram van Ponsen.png> <./Het Ponsprocess.png>]
-<snijspleetbelang.png, id=1031, 292.84406pt x 164.86594pt>
+<snijspleetbelang.png, id=1024, 292.84406pt x 164.86594pt>
 File: snijspleetbelang.png Graphic file (type png)
 <use snijspleetbelang.png>
-Package pdftex.def Info: snijspleetbelang.png  used on input line 3049.
+Package pdftex.def Info: snijspleetbelang.png  used on input line 3048.
 (pdftex.def)             Requested size: 386.95897pt x 217.87273pt.
  [80 <./image80.png> <./snijspleetbelang.png>]
-<Schuifspanningen bij Ponsen.png, id=1040, 193.47281pt x 243.15843pt>
+<Schuifspanningen bij Ponsen.png, id=1033, 193.47281pt x 243.15843pt>
 File: Schuifspanningen bij Ponsen.png Graphic file (type png)
 <use Schuifspanningen bij Ponsen.png>
-Package pdftex.def Info: Schuifspanningen bij Ponsen.png  used on input line 3075.
+Package pdftex.def Info: Schuifspanningen bij Ponsen.png  used on input line 3074.
 (pdftex.def)             Requested size: 217.66211pt x 273.56369pt.
  [81 <./Schuifspanningen bij Ponsen.png>]
-<Fijnsnijden.png, id=1046, 291.33844pt x 253.69781pt>
+<Fijnsnijden.png, id=1039, 291.33844pt x 253.69781pt>
 File: Fijnsnijden.png Graphic file (type png)
 <use Fijnsnijden.png>
-Package pdftex.def Info: Fijnsnijden.png  used on input line 3117.
+Package pdftex.def Info: Fijnsnijden.png  used on input line 3116.
 (pdftex.def)             Requested size: 386.95897pt x 336.9919pt.
  [82 <./Fijnsnijden.png>]
-<Ruw oppervlakte Knappelen.png, id=1053, 332.74312pt x 300.3722pt>
+<Ruw oppervlakte Knappelen.png, id=1046, 332.74312pt x 300.3722pt>
 File: Ruw oppervlakte Knappelen.png Graphic file (type png)
 <use Ruw oppervlakte Knappelen.png>
-Package pdftex.def Info: Ruw oppervlakte Knappelen.png  used on input line 3155.
+Package pdftex.def Info: Ruw oppervlakte Knappelen.png  used on input line 3154.
 (pdftex.def)             Requested size: 193.47578pt x 174.65598pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3160--3162
+Underfull \hbox (badness 10000) in paragraph at lines 3159--3161
 
  []
 
 [83 <./Ruw oppervlakte Knappelen.png>] [84]
 Hoofdstuk 11.
 [85]
-<Tabel van soorten legeringen die gegoten worden.png, id=1072, 934.24031pt x 241.65282pt>
+<Tabel van soorten legeringen die gegoten worden.png, id=1064, 934.24031pt x 241.65282pt>
 File: Tabel van soorten legeringen die gegoten worden.png Graphic file (type png)
 <use Tabel van soorten legeringen die gegoten worden.png>
-Package pdftex.def Info: Tabel van soorten legeringen die gegoten worden.png  used on input line 3281.
+Package pdftex.def Info: Tabel van soorten legeringen die gegoten worden.png  used on input line 3280.
 (pdftex.def)             Requested size: 386.95897pt x 100.0923pt.
  [86 <./Tabel van soorten legeringen die gegoten worden.png>]
-<Zandgieten.png, id=1079, 477.28313pt x 446.41782pt>
+<Zandgieten.png, id=1071, 477.28313pt x 446.41782pt>
 File: Zandgieten.png Graphic file (type png)
 <use Zandgieten.png>
-Package pdftex.def Info: Zandgieten.png  used on input line 3334.
+Package pdftex.def Info: Zandgieten.png  used on input line 3333.
 (pdftex.def)             Requested size: 217.66211pt x 203.58362pt.
  [87] [88 <./Zandgieten.png>] [89]
-<Kernen_gieten.png, id=1101, 662.475pt x 288.3272pt>
+<Kernen_gieten.png, id=1093, 662.475pt x 288.3272pt>
 File: Kernen_gieten.png Graphic file (type png)
 <use Kernen_gieten.png>
-Package pdftex.def Info: Kernen_gieten.png  used on input line 3464.
+Package pdftex.def Info: Kernen_gieten.png  used on input line 3463.
 (pdftex.def)             Requested size: 483.69687pt x 210.51668pt.
-<Autozandvormen.png, id=1102, 554.82281pt x 201.00093pt>
+<Autozandvormen.png, id=1094, 554.82281pt x 201.00093pt>
 File: Autozandvormen.png Graphic file (type png)
 <use Autozandvormen.png>
-Package pdftex.def Info: Autozandvormen.png  used on input line 3480.
+Package pdftex.def Info: Autozandvormen.png  used on input line 3479.
 (pdftex.def)             Requested size: 290.22107pt x 105.14061pt.
  [90 <./Kernen_gieten.png> <./Autozandvormen.png>]
-<verlorenwasgieten.png, id=1111, 192.72pt x 352.31625pt>
+<verlorenwasgieten.png, id=1103, 192.72pt x 352.31625pt>
 File: verlorenwasgieten.png Graphic file (type png)
 <use verlorenwasgieten.png>
-Package pdftex.def Info: verlorenwasgieten.png  used on input line 3525.
+Package pdftex.def Info: verlorenwasgieten.png  used on input line 3524.
 (pdftex.def)             Requested size: 193.47578pt x 353.69699pt.
  [91] [92 <./verlorenwasgieten.png>]
-<Kostenverschillendetechniekengieten.png, id=1123, 603.0028pt x 369.63094pt>
+<Kostenverschillendetechniekengieten.png, id=1115, 603.0028pt x 369.63094pt>
 File: Kostenverschillendetechniekengieten.png Graphic file (type png)
 <use Kostenverschillendetechniekengieten.png>
-Package pdftex.def Info: Kostenverschillendetechniekengieten.png  used on input line 3626.
+Package pdftex.def Info: Kostenverschillendetechniekengieten.png  used on input line 3625.
 (pdftex.def)             Requested size: 483.69687pt x 296.49475pt.
  [93]
 Hoofdstuk 12.
 [94 <./Kostenverschillendetechniekengieten.png>]
-<kenmerkeneneisenmachines.png, id=1135, 972.63374pt x 360.59718pt>
+<kenmerkeneneisenmachines.png, id=1127, 972.63374pt x 360.59718pt>
 File: kenmerkeneneisenmachines.png Graphic file (type png)
 <use kenmerkeneneisenmachines.png>
-Package pdftex.def Info: kenmerkeneneisenmachines.png  used on input line 3664.
+Package pdftex.def Info: kenmerkeneneisenmachines.png  used on input line 3663.
 (pdftex.def)             Requested size: 386.95897pt x 143.4605pt.
  [95 <./kenmerkeneneisenmachines.png>]
-<image85.png, id=1142, 301.125pt x 308.65312pt>
+<image85.png, id=1134, 301.125pt x 308.65312pt>
 File: image85.png Graphic file (type png)
 <use image85.png>
-Package pdftex.def Info: image85.png  used on input line 3696.
+Package pdftex.def Info: image85.png  used on input line 3695.
 (pdftex.def)             Requested size: 217.66211pt x 223.11078pt.
  [96 <./image85.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3726.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3725.
+ (C:\Program Files\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3759.
- (c:/tools/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3758.
+ (C:\Program Files\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<WorkflowCADCAM.png, id=1149, 173.89969pt x 295.1025pt>
+<WorkflowCADCAM.png, id=1141, 173.89969pt x 295.1025pt>
 File: WorkflowCADCAM.png Graphic file (type png)
 <use WorkflowCADCAM.png>
-Package pdftex.def Info: WorkflowCADCAM.png  used on input line 3800.
+Package pdftex.def Info: WorkflowCADCAM.png  used on input line 3799.
 (pdftex.def)             Requested size: 145.11053pt x 246.25885pt.
  [97] [98]
 Hoofdstuk 13.
 [99 <./WorkflowCADCAM.png>] [100]
-<positioneren.png, id=1179, 270.25969pt x 459.96844pt>
+<positioneren.png, id=1170, 270.25969pt x 459.96844pt>
 File: positioneren.png Graphic file (type png)
 <use positioneren.png>
-Package pdftex.def Info: positioneren.png  used on input line 3882.
+Package pdftex.def Info: positioneren.png  used on input line 3881.
 (pdftex.def)             Requested size: 217.66211pt x 370.45981pt.
  [101]
-<image82.png, id=1184, 231.11343pt x 430.60875pt>
+<image82.png, id=1175, 231.11343pt x 430.60875pt>
 File: image82.png Graphic file (type png)
 <use image82.png>
-Package pdftex.def Info: image82.png  used on input line 3895.
+Package pdftex.def Info: image82.png  used on input line 3894.
 (pdftex.def)             Requested size: 145.11053pt x 270.37163pt.
-<voorkomenbuiging.png, id=1185, 354.57469pt x 264.23718pt>
+<voorkomenbuiging.png, id=1176, 354.57469pt x 264.23718pt>
 File: voorkomenbuiging.png Graphic file (type png)
 <use voorkomenbuiging.png>
-Package pdftex.def Info: voorkomenbuiging.png  used on input line 3902.
+Package pdftex.def Info: voorkomenbuiging.png  used on input line 3901.
 (pdftex.def)             Requested size: 145.11053pt x 108.14037pt.
  [102 <./positioneren.png>]
-<universeeltegenspecifiek.png, id=1192, 563.85657pt x 292.84406pt>
+<universeeltegenspecifiek.png, id=1183, 563.85657pt x 292.84406pt>
 File: universeeltegenspecifiek.png Graphic file (type png)
 <use universeeltegenspecifiek.png>
-Package pdftex.def Info: universeeltegenspecifiek.png  used on input line 3913.
+Package pdftex.def Info: universeeltegenspecifiek.png  used on input line 3912.
 (pdftex.def)             Requested size: 145.11053pt x 75.36461pt.
-<tolerantie.png, id=1193, 277.78781pt x 505.89pt>
+<tolerantie.png, id=1184, 277.78781pt x 505.89pt>
 File: tolerantie.png Graphic file (type png)
 <use tolerantie.png>
-Package pdftex.def Info: tolerantie.png  used on input line 3920.
+Package pdftex.def Info: tolerantie.png  used on input line 3919.
 (pdftex.def)             Requested size: 217.66211pt x 396.3989pt.
-<Ruwheid.png, id=1194, 350.81062pt x 392.21532pt>
+<Ruwheid.png, id=1185, 350.81062pt x 392.21532pt>
 File: Ruwheid.png Graphic file (type png)
 <use Ruwheid.png>
-Package pdftex.def Info: Ruwheid.png  used on input line 3921.
+Package pdftex.def Info: Ruwheid.png  used on input line 3920.
 (pdftex.def)             Requested size: 217.66211pt x 243.3565pt.
  [103 <./image82.png> <./voorkomenbuiging.png>] [104 <./universeeltegenspecifiek.png> <./tolerantie.png> <./Ruwheid.png>]
-<image83.png, id=1213, 875.52094pt x 410.2828pt>
+<image83.png, id=1204, 875.52094pt x 410.2828pt>
 File: image83.png Graphic file (type png)
 <use image83.png>
-Package pdftex.def Info: image83.png  used on input line 3940.
+Package pdftex.def Info: image83.png  used on input line 3939.
 (pdftex.def)             Requested size: 483.69687pt x 226.67043pt.
  [105 <./image83.png>]
-<image84.png, id=1221, 593.96906pt x 310.15875pt>
+<image84.png, id=1212, 593.96906pt x 310.15875pt>
 File: image84.png Graphic file (type png)
 <use image84.png>
-Package pdftex.def Info: image84.png  used on input line 3965.
+Package pdftex.def Info: image84.png  used on input line 3964.
 (pdftex.def)             Requested size: 241.84843pt x 126.29036pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 3966.
+(caption)                particular \caption on input line 3965.
 See the caption package documentation for explanation.
 
 [106 <./image84.png>]
 Hoofdstuk 14.
 [107]
-<gemaaktEnVastgelegdeKosten.png, id=1233, 458.46281pt x 310.15875pt>
+<gemaaktEnVastgelegdeKosten.png, id=1224, 458.46281pt x 310.15875pt>
 File: gemaaktEnVastgelegdeKosten.png Graphic file (type png)
 <use gemaaktEnVastgelegdeKosten.png>
-Package pdftex.def Info: gemaaktEnVastgelegdeKosten.png  used on input line 4051.
+Package pdftex.def Info: gemaaktEnVastgelegdeKosten.png  used on input line 4050.
 (pdftex.def)             Requested size: 217.66211pt x 147.2512pt.
-<imperfectiefrezen.png, id=1234, 229.60782pt x 126.4725pt>
+<imperfectiefrezen.png, id=1225, 229.60782pt x 126.4725pt>
 File: imperfectiefrezen.png Graphic file (type png)
 <use imperfectiefrezen.png>
-Package pdftex.def Info: imperfectiefrezen.png  used on input line 4058.
+Package pdftex.def Info: imperfectiefrezen.png  used on input line 4057.
 (pdftex.def)             Requested size: 193.47578pt x 106.5758pt.
-<designenvoortoeslagen.png, id=1235, 430.60875pt x 152.06813pt>
+<designenvoortoeslagen.png, id=1226, 430.60875pt x 152.06813pt>
 File: designenvoortoeslagen.png Graphic file (type png)
 <use designenvoortoeslagen.png>
-Package pdftex.def Info: designenvoortoeslagen.png  used on input line 4063.
+Package pdftex.def Info: designenvoortoeslagen.png  used on input line 4062.
 (pdftex.def)             Requested size: 290.22107pt x 102.49304pt.
  [108 <./gemaaktEnVastgelegdeKosten.png>] [109 <./imperfectiefrezen.png> <./designenvoortoeslagen.png>]
-<regelsDFM.png, id=1252, 150.5625pt x 238.64156pt>
+<regelsDFM.png, id=1243, 150.5625pt x 238.64156pt>
 File: regelsDFM.png Graphic file (type png)
 <use regelsDFM.png>
-Package pdftex.def Info: regelsDFM.png  used on input line 4109.
+Package pdftex.def Info: regelsDFM.png  used on input line 4108.
 (pdftex.def)             Requested size: 145.11053pt x 230.02182pt.
  [110 <./regelsDFM.png>]
 Hoofdstuk 15.
 Hoofdstuk 16.
-[111] [112] (./ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
+[111] [112] (ProductieTechnologie-Samenvatting-RubenRyckaert.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-14>
+L3 programming layer <2025-11-06>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 39973 strings out of 469519
- 819156 string characters out of 5470279
- 1216522 words of memory out of 5000000
- 67359 multiletter control sequences out of 15000+600000
- 770517 words of font info for 253 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 84i,13n,104p,1040b,1392s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy7.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/tools/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on ProductieTechnologie-Samenvatting-RubenRyckaert.pdf (112 pages, 11268543 bytes).
+ 41155 strings out of 467871
+ 850916 string characters out of 5428442
+ 1240487 words of memory out of 5000000
+ 68751 multiletter control sequences out of 15000+600000
+ 770527 words of font info for 253 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,13n,104p,1046b,1392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on ProductieTechnologie-Samenvatting-RubenRyckaert.pdf (112 pages, 11466442 bytes).
 PDF statistics:
- 1913 PDF objects out of 2073 (max. 8388607)
- 1504 compressed objects within 16 object streams
+ 1896 PDF objects out of 2073 (max. 8388607)
  419 named destinations out of 1000 (max. 500000)
  86168 words of extra memory for PDF output out of 89155 (max. 10000000)
 
