@@ -528,17 +528,26 @@ Of prijzen wordt aangepast om het als een betere deal te laten lijken (€9,99 i
 
 \section{Module 2: Lineair Programmeren}
 
-Lineair programmeren (LP) is een wiskundige methode om de beste uitkomst (zoals maximale winst of laagste kosten) te bepalen in een model waarvan de vereisten worden weergegeven door lineaire relaties.
+Lineair programmeren (LP) is een wiskundige methode om de
+ beste uitkomst (zoals maximale winst of laagste kosten) te bepalen
+wanneer je lineaire relaties hebt.
+
+Hieronder een voorbeeld 
+waarbij je twee producten maakt met verschillende winstbijdragen
+maar je bent beperkt in grondstoffen en tijd.
 
 \begin{figure}[ht]
     \centering
     \begin{minipage}{0.45\textwidth}
         \textbf{Kernbegrippen van LP}
         \begin{description}
-            \item[\concept{Doelfunctie}] De formule die je wilt maximaliseren (winst) of minimaliseren (kosten). Bijvoorbeeld: $Z = 3x_1 + 5x_2$.
-            \item[\concept{Beperkingen}] De limieten waarbinnen je moet werken (tijd, budget, grondstoffen). Deze vormen lijnen in de grafiek.
-            \item[\concept{Toegelaten Gebied}] De zone die aan \textit{alle} beperkingen voldoet. De oplossing ligt altijd in dit gebied.
-            \item[\concept{Optimale Oplossing}] Het punt in het toegelaten gebied waar de doelfunctie maximaal is. Dit is altijd een hoekpunt.
+            \item[\concept{Doelfunctie:}] Wat wil je 
+            optimaliseren of maximaliseren? (bijv. winst, kosten)
+            \[\text{Maximize } Max_Z = c_1x_1 + c_2x_2\]
+            \item[\concept{Beperkingen:}] De limieten waarbinnen 
+            je moet werken (tijd, budget, grondstoffen).
+             Deze vormen lijnen in de grafiek. 
+             \[\text{Beperking kost} 1: a_{11}x_1 + a_{12}x_2 \leq b_1\]
         \end{description}
     \end{minipage}%
     \hfill
@@ -581,7 +590,25 @@ Lineair programmeren (LP) is een wiskundige methode om de beste uitkomst (zoals 
     \end{minipage}
 \end{figure}
 
-Als je moet bepalen hoe je het meeste winst maakt afhankelijk van verschillende producten en beperkingen, dan gebruik je lineair programmeren. De grafische methode werkt goed voor 2 variabelen; voor meer variabelen gebruik je de Simplex-methode (via software).
+Als je moet bepalen hoe je het meeste winst
+ maakt afhankelijk van verschillende producten en beperkingen, 
+ dan gebruik je lineair programmeren. De grafische methode werkt goed voor 2 variabelen;
+ voor meer variabelen gebruik je de Simplex-methode.
+
+ \subsection{Simplex Methode}
+
+\begin{enumerate}
+    \item \textbf{Standaardvorm:} Zet alle ongelijkheden ($\leq$) om in vergelijkingen (=) door Slack Variabelen (s) toe te voegen. 
+    Slack vangt het ongebruikte deel van een middel op.
+    \item \textbf{Start:} Begin in de oorsprong (alles 0).
+    \item \textbf{Iteratie (Pivoteren):}
+    \begin{enumerate}
+        \item Kies de binnenkomende variabele (Entering Variable): Kijk naar de doelfunctie-rij. Welke variabele heeft de meest negatieve coëfficiënt? Die levert de meeste winststijging op.
+        \item Kies de uitgaande variabele (Leaving Variable): Doe de Minimum Ratio Test (Rechterzijde / Binnenkomende kolom). De kleinste positieve ratio wint. Dit is de beperking die je als eerste raakt (de flessenhals).
+        \item Update: Reken de tabel om zodat de nieuwe variabele in de basis komt en de oude eruit gaat.
+    \end{enumerate}
+    \item \textbf{Stop:} Als er geen negatieve getallen meer in de doelfunctie-rij staan, heb je het optimum bereikt
+\end{enumerate}
 
 \subsection{Simplex Methode: Voorbeeld}
 Stel we produceren twee producten ($x_1$ en $x_2$). Elk product vereist een bepaalde tijd voor assemblage en elektronica. We willen de winst ($P$) maximaliseren.
@@ -666,11 +693,201 @@ In de kolom "Oplossing" lezen we de optimale waarden af voor de **basisvariabele
     Beide afdelingen draaien dus op volle capaciteit (bottlenecks).
 \end{itemize}
 
+\subsection{Sensitiviteitsanalyse}
+
+In de praktijk veranderen dingen. De winstmarges kunnen stijgen of dalen. Je krijgt meer of minder materiaal. Wat gebeurt er met je optimale plan? Moet je alles opnieuw berekenen?
+
+Sensitiviteitsanalyse geeft antwoord: \textbf{Hoeveel mag iets veranderen voordat je plan niet meer werkt?}
+
+\subsubsection{A. Wat als de winst per product verandert?}
+
+\begin{theorieblok}[Doelfunctie-coëfficiënten]
+De coëfficiënten in de doelfunctie zijn de winstbedragen per product (bijv. €7 per product A, €5 per product B).
+\end{theorieblok}
+
+Stel je wint nu €7 op product A. Maar morgen stijgt de vraag en kun je €8 vragen.
+
+\textbf{Wat gebeurt er?} De winstlijn kantelt. Je gaat meer product A maken.
+
+\textbf{Hoeveel mag veranderen?} Tot ongeveer een bepaald punt. Als je €9 per product A kunt vragen, is het misschien niet meer winstgevend om product B te maken. Dan maak je enkel product A.
+
+\begin{itemize}
+    \item \textbf{Binnen de grens:} Je houdt dezelfde producten. Alleen je totale winst stijgt of daalt.
+    \item \textbf{Voorbij de grens:} Je switch naar een ander productie-plan. Je moet opnieuw denken over wat je maakt.
+\end{itemize}
+
+\subsubsection{B. Wat als je meer of minder materiaal hebt?}
+
+\begin{theorieblok}[Rechterzijde van beperkingen (RHS)]
+Beperkingen hebben getallen aan de rechterkant: "Assemblage $\leq$ 240 uur". Die 240 is de rechterzijde.
+\end{theorieblok}
+
+Stel je hebt 240 uur assemblagewerk. Nu krijg je een stagiair: plots heb je 270 uur.
+
+\textbf{Wat gebeurt er?} Je kunt meer producten maken. 
+Je winstgrens schuift omhoog. Maar misschien wordt elektronica nu de bottleneck in plaats van assemblage.
+
+\textbf{Hoeveel mag veranderen?} Tot je een ander probleem tegenkomt. Als je van 240 naar 180 uur gaat, kan je misschien helemaal geen optimaal plan meer vinden.
+
+\begin{itemize}
+    \item \textbf{Binnen de grens:} Hetzelfde plan werkt. Je maakt gewoon meer of minder stukken.
+    \item \textbf{Voorbij de grens:} Een ander hulpmiddel (machine, tijd, grondstof) wordt nu het probleem. Je plan valt in duigen.
+\end{itemize}
+
+\subsubsection{C. Hoeveel waard is één extra eenheid?}
+
+\begin{theorieblok}[Schaduwprijs (Shadow Price)]
+Dit is: hoeveel extra winst je krijgt als je één eenheid extra krijgt van iets wat beperkt is.
+\end{theorieblok}
+
+Je hebt precies genoeg assemblagewerk (240 uur). Je bent dus volledig aan het werk.
+
+Vraag: \textbf{Hoeveel zou het je waard zijn om 1 extra uur assemblage te hebben?}
+
+Antwoord: Als je schaduwprijs €5 is, levert 1 extra uur €5 extra winst op.
+
+\textbf{Praktisch voorbeeld:}
+\begin{itemize}
+    \item Je schaduwprijs voor assemblage = €5 per uur.
+    \item Een uur huren van iemand anders kost €3.
+    \item \textbf{Doe het!} Je verdient €5 en betaalt €3. Netto €2 winst.
+    \item Maar als huren €6 kost?
+    \item \textbf{Niet doen!} Je verdient €5 maar betaalt €6. Je verliest €1.
+\end{itemize}
+
+\textbf{Belangrijk:} Schaduwprijzen werken alleen als je al volledig aan het werk bent (geen overschot). Als je nog grondstof over hebt, is de schaduwprijs €0 (meer ervan helpt niet).
+
+\begin{description}
+    \item[Schaduwprijs:] 
+    De waarde van één extra eenheid van iets wat beperkt is (hulpbron, grondstof, tijd).
+    \item[Bereik:] 
+    Binnen dit bereik blijft je schaduwprijs geldig.
+    \item[Verandering:] 
+    Als dingen veel veranderen, verandert je hele plan.
+\end{description}
+
+
+\begin{oefenblok}[Oefening 1: Verandering in Winstmarges]
+    Context: Een bedrijf maakt mountainbikes ($x_1$) en racefietsen ($x_2$). 
+    Huidig optimaal plan: 2 mountainbikes, 2 racers. Totale winst: \$50.
+    
+    \textbf{Vraag A:} De marketingafdeling meldt dat door een promotie de winst op een Mountainbike ($x_1$) daalt van \$15 naar \$11.
+    \begin{itemize}
+        \item Blijft ons huidige productieplan (2 mountainbikes, 2 racers) optimaal?
+        \item Wat is de nieuwe totale winst?
+    \end{itemize}
+    
+    \textbf{Gegeven uit sensitivity analyse:}
+    \begin{itemize}
+        \item Huidige winst mountainbike: \$15
+        \item Allowable Decrease: \$5
+    \end{itemize}
+    
+    \textbf{Oplossing:}
+    \begin{enumerate}
+        \item \textbf{Bereken de verandering:} De daling is $15 - 11 = 4$
+        \item \textbf{Vergelijk met toegestane range:} 
+        Omdat de daling (4) kleiner is dan de toegestane daling (5), verandert de basis niet.
+        \item \textbf{Conclusie:} We produceren nog steeds dezelfde aantallen ($x_1 = 2, x_2 = 2$)
+        \item \textbf{Nieuwe Winst:} 
+        \begin{align*}
+            Z_{\text{nieuw}} &= (11 \times 2) + (10 \times 2) \\
+            &= 22 + 20 = \$42
+        \end{align*}
+        Alternatief: Oude winst (50) - daling $(4 \times 2 \text{ fietsen}) = \$42$
+    \end{enumerate}
+    
+    \vspace{5mm}
+    
+    \textbf{Vraag B:} De winst op een Racefiets ($x_2$) stijgt plotseling naar \$20. Blijven we hetzelfde doen?
+    
+    \textbf{Gegeven:}
+    \begin{itemize}
+        \item Huidige winst racefiets: \$10
+        \item Allowable Increase: \$5
+    \end{itemize}
+    
+    \textbf{Oplossing:}
+    \begin{enumerate}
+        \item \textbf{Bereken de verandering:} De stijging is $20 - 10 = 10$
+        \item \textbf{Vergelijk met toegestane range:} 
+        De stijging (10) is groter dan de toegestane stijging (5)
+        \item \textbf{Conclusie:} We vallen \textbf{buiten de range}. Het huidige productieplan is niet langer optimaal. 
+        We moeten het model opnieuw oplossen (waarschijnlijk wordt het interessanter om meer racefietsen te maken ten koste van mountainbikes).
+    \end{enumerate}
+\end{oefenblok}
+
+\begin{oefenblok}[Oefening 2: Verandering in Beperkingen (Shadow Prices)]
+    Context: Zelfde bedrijf. De productie wordt beperkt door machinecapaciteit (Metal Finishing).
+    
+    \textbf{Gegeven uit sensitivity analyse:}
+    \begin{itemize}
+        \item Shadow Price voor machinecapaciteit: \$10
+        \item Allowable Increase: 1 uur
+    \end{itemize}
+    
+    \textbf{Vraag C:} Je krijgt de kans om 1 uur extra machinecapaciteit te huren bij de buren. 
+    De buurman vraagt hiervoor \$8. Moet je dit doen?
+    
+    \textbf{Oplossing:}
+    \begin{enumerate}
+        \item \textbf{Betekenis Shadow Price:} 1 extra uur levert ons \$10 extra winst op (zolang we binnen de range blijven)
+        \item \textbf{Check de range:} We voegen 1 uur toe. De Allowable Increase is 1. 
+        We zitten dus precies op de grens, maar het mag nog net.
+        \item \textbf{Berekening:}
+        \begin{itemize}
+            \item Opbrengst van extra uur: \$10
+            \item Kosten van extra uur: \$8
+            \item Netto winst: $10 - 8 = \$2$
+        \end{itemize}
+        \item \textbf{Conclusie:} \textbf{Ja}, je moet dit doen. Het verhoogt de totale winst van het bedrijf met \$2.
+    \end{enumerate}
+    
+    \vspace{5mm}
+    
+    \textbf{Vraag D:} Stel dat de buurman 3 uur extra capaciteit aanbiedt voor een totaalprijs van \$20 
+    (dus \$6,66 per uur). Doen?
+    
+    \textbf{Oplossing:}
+    \begin{enumerate}
+        \item \textbf{Kosten vs. Baten:} De prijs (\$6,66) is lager dan de schaduwprijs (\$10), 
+        dus het lijkt een goede deal.
+        \item \textbf{Check de range:} De Allowable Increase is echter maar 1 uur.
+        \item \textbf{Conclusie:} Een toename van 3 uur valt \textbf{buiten de range}. 
+        Hierdoor verandert de basisstructuur van onze oplossing (een andere beperking wordt de flessenhals). 
+        De schaduwprijs van \$10 is niet meer geldig voor die laatste 2 uur. 
+        
+        We kunnen \textbf{niet met zekerheid} zeggen of dit winstgevend is zonder het model opnieuw op te lossen.
+    \end{enumerate}
+\end{oefenblok}
+
+\begin{theorieblok}[Samenvatting Sensitiviteitsanalyse]
+    \textbf{Objective Coefficients (Winst):}
+    \begin{itemize}
+        \item Zolang je binnen de ``Allowable'' grenzen blijft, verandert je productieaantal ($x$) niet
+        \item Je totale winst ($Z$) verandert wel
+    \end{itemize}
+    
+    \textbf{Constraints (RHS - Beperkingen):}
+    \begin{itemize}
+        \item De Shadow Price vertelt je wat 1 extra eenheid waard is
+        \item Zolang je binnen de ``Allowable'' grenzen blijft, is deze prijs geldig
+        \item Ga je erbuiten, dan verandert de basis en is de schaduwprijs niet meer bruikbaar
+    \end{itemize}
+\end{theorieblok}
+
+\begin{examenbox}
+    MAAK OEFENINGEN VAN DEZE MODULE.
+\end{examenbox}
+
+
+
+
 \section{Module 3: Investering}
 Deze module stelt de vraag, Wat is een goede investering?
 Een investering is een uitgave nu met de verwachting van toekomstige opbrengsten.
 Dit kan gaan om geld of productiviteit zoals het kopen van machines of opleidingen voor personeel.
-\textbf{Cashflow} is het geld dat binnenkomt en uitgaat over een bepaalde periode.
+\belangrijk{Cashflow of Kasstroom} is het geld dat binnenkomt en uitgaat over een bepaalde periode.
 
 Maar waarom zou je investering nu doen in plaats van later?
 Je moet investeren omdat inflatie de waarde van geld vermindert over tijd.
@@ -716,7 +933,7 @@ Stel dat je vandaag \text{€}1.000 op je spaarrekening hebt. De gemiddelde infl
 \subsection{Basisgegevens investeringsevaluatie}
 Een paar belangrijke begrippen bij investeringsevaluatie:
 \begin{description}
-    \item[Horizont] De periode waarin je de investering bekijkt (bijv. 5 jaar).
+    \item[Horizon] De periode waarin je de investering bekijkt (bijv. 5 jaar).
     \begin{itemize}
         \item fysieke levensduur: Hoe lang gaat de investering mee?
         \item economische levensduur: Hoe lang levert de investering waarde op?
@@ -809,7 +1026,7 @@ maar de fiscus laat dit niet altijd toe.
      Deze is te berekenen met de formule van inflatie, maar dan met een positief rentepercentage.
  \end{description}
 
- \subsection{actualisatie en annuïteiten}
+ \subsection{Actualisatie en annuïteiten}
 
  Hoe kunnen we nu weten wat de waarde is van toekomstige cashflows in het heden?
  Of als we iets afbetalen in termijnen, wat is dan de waarde van die betalingen nu?
@@ -900,7 +1117,7 @@ maar de fiscus laat dit niet altijd toe.
     A = \frac{500}{6.1446} \approx 81.34~\text{€}
     \]
 
-    6.1446 is de annuïteitsfactor moet je opzoeken in een tabel. Je zoekt dan 10 jaar en 10\% op.
+    6.1446 is de annuïteitsfactor, je kunt deze berekenen of je zoekt ze in een tabel. Je zoekt dan 10 jaar en 10\% op.
     Dus je moet elk jaar 81.34 euro betalen om de lening van 500 euro terug te betalen in 10 jaar.
     \newline
 
@@ -981,7 +1198,7 @@ maar de fiscus laat dit niet altijd toe.
     Met dit kunen we de Profitability Index (PI) berekenen:
     \frm{Formule Profitability Index (PI)}
     {
-        PI_2 = \frac{NHW}{I_0} => PI_1 = \frac{HW}{I_0} => PI_2 = PI_1 + -1
+        PI_2 = \frac{NHW}{I_0} => PI_1 = \frac{HW}{I_0} => PI_2 = PI_1 -1
     }
     {met $PI$ de profitability index, $NHW$ de netto huidige waarde, $HW$ de huidige waarde, $I_0$ de initiële investering.}
 
@@ -1008,6 +1225,8 @@ maar de fiscus laat dit niet altijd toe.
 \end{figure}
 \FloatBarrier
 
+
+
 \begin{examenbox}
     De formules zijn gegeven maar weet wat ze betekenen en hoe je ze gebruikt.
     Zorg ook dat je de voordelen en nadelen van de twee methodes kent.
@@ -1015,6 +1234,41 @@ maar de fiscus laat dit niet altijd toe.
     Payback is simpel maar kijkt niet naar de tijdswaarde van geld.
     Discounted Cashflow is complexer maar geeft een beter beeld van de investering over tijd.
 \end{examenbox}
+
+\begin{oefenblok}[IRR Berekening]
+    \textbf{Opgave:} Je bedrijf overweegt een investering van €50.000. 
+    De cashflows voor de komende 4 jaar zijn respectievelijk:
+    \begin{itemize}
+        \item Jaar 0: -€50.000 (initiële investering)
+        \item Jaar 1: €15.000
+        \item Jaar 2: €18.000
+        \item Jaar 3: €16.000
+        \item Jaar 4: €14.000
+    \end{itemize}
+    
+    \textbf{Bepaal de IRR van deze investering.}
+    
+    \vspace{5mm}
+    
+    \textbf{Oplossing:}
+    
+    We gebruiken de IRR-formule: 
+    $$0 = -50.000 + \frac{15.000}{(1+IRR)^1} + \frac{18.000}{(1+IRR)^2} + \frac{16.000}{(1+IRR)^3} + \frac{14.000}{(1+IRR)^4}$$
+    
+    Dit is een niet-lineaire vergelijking die we niet analytisch kunnen oplossen. 
+    We gebruiken \textbf{iteratie} of een \textbf{financiële calculator}:
+    
+    \begin{itemize}
+        \item Bij $IRR = 0\%$: NHW = $15.000 + 18.000 + 16.000 + 14.000 - 50.000 = 13.000$ (positief, €13.000)
+        \item Bij $IRR = 10\%$: NHW = $\frac{15.000}{1,10} + \frac{18.000}{1,21} + \frac{16.000}{1,331} + \frac{14.000}{1,4641} - 50.000 \approx 2.067$ (positief, €2.067)
+        \item Bij $IRR = 15\%$: NHW $\approx -1.500$ (negatief, €1.500)
+    \end{itemize}
+    
+    De IRR ligt tussen 10\% en 15\%. Met nauwkeurigere berekening: \textbf{IRR $\approx$ 11,8\%}
+    
+    \textbf{Conclusie:} De investering levert ongeveer 11,8\% rendement op. 
+    Als dit hoger is dan de geëiste rentabiliteit (hurdle rate), accepteer je de investering.
+\end{oefenblok}
 
 
 
@@ -1143,6 +1397,28 @@ Vaste kosten zijn dus een recht lijn op een grafiek. Variable kosten zijn een st
         \label{fig:vastevariablekosten}
 \end{figure}
 \FloatBarrier
+
+\begin{itemize}
+    \item \textbf{degressief:} In de het begin
+    gaan de prijzen snel omhoog omdat sommige dingen
+    zoals bijvoorbeeld de oven veel kosten om te draaien.
+    \item \textbf{Proportioneel:} De kosten stijgen recht evenredig met de productie.
+    
+    \item \textbf{Progressief:}
+    Vanaf een punt ga je teveel produceren.
+    Je oven en kok moeten bijvoorbeeld overuren draaien
+    waardoor je meer moet betalen of je meer 
+    onderhoud moet doen.
+    Je gaat dus meer betalen per extra eenheid.
+
+\end{itemize}
+
+=> Er is dus een optimaal punt waar je de laagste kostprijs hebt.
+
+\begin{examenbox}
+    Deze grafieken moeten kunnen tekenen 
+    en uitleggen wat ze betekenen.
+\end{examenbox}
 
 
 \subsubsection{Fifo en Libo}
@@ -1413,6 +1689,8 @@ De break-even analyse bepaalt het punt waarop een bedrijf geen winst of verlies 
 
 In de realiteit zijn deze grafiekn niet lineair omdat de variable kosten kunnen veranderen met de
  productie \ref{fig:vastevariablekosten}.
+Je wilt dus rond q2 zitten want daar is het optimale tussen de productie 
+en de kostprijs.
 
  \begin{figure}[ht]
       \centering
@@ -1518,8 +1796,8 @@ Je zet passiva in (het doet niks het is passief) en zet het in op activa (het do
 
 \begin{figure}[ht]
       \centering
-        \includegraphics[width=0.45\textwidth]{balans1.png}
-            \includegraphics[width=0.45\textwidth]{balans2.png}
+        \includegraphics[width=0.8\textwidth]{balans1.png}
+            \includegraphics[width=0.8\textwidth]{balans2.png}
       \caption{Voorbeeld van een Balans}
       \label{fig:balans.png}
 \end{figure}
@@ -1631,12 +1909,11 @@ Een jaarrekening geef alleen zicht op het verleden
 Om de jaarrekeningen te analyseren ga je een financiële analyse doen.
 
 Types van financiele analyse:
-\begin{itemize}
-    \item Horizontale analyse: Vergelijkt cijfers over meerdere jaren om trends te identificeren.
-    \item Verticale analyse: Analyseert de verhouding van elk item ten opzichte van een basispost binnen hetzelfde jaar.
-    \item Ratio-analyse: Berekenen van financiële ratio's om de prestaties en gezondheid van het bedrijf te beoordelen.
-\end{itemize}
-
+\begin{description}
+    \item [Horizontale analyse:] Vergelijkt cijfers over meerdere jaren om trends te identificeren.
+    \item [Verticale analyse:] Analyseert de verhouding van elk item ten opzichte van een basispost binnen hetzelfde jaar.
+    \item [Ratio-analyse:] Berekenen van financiële ratio's om de prestaties en gezondheid van het bedrijf te beoordelen.
+\end{description}
 Er zijn er meer maar in de cursus zien we deze drie
 \newline 
 
@@ -1710,6 +1987,7 @@ Door Ratio analyse te doen over meerdere jaarrekeningen
 kun je de gezondheid van een bedrijf beoordelen.
 
 \begin{description}
+
     \item[Financiele ratio's:]
     \begin{itemize}
     \item \textbf{Liquiditeit:} Je gaat kijken naar je het geld. Hoeveel geld heeft 
@@ -1942,10 +2220,105 @@ Hoe productief is elke werknemer. Hoe hoger hoe productieve de werknemers zijn.
 \end{figure}
 \FloatBarrier
 
+
 \subsection{Conclusie}
 Het is belangrijk om 
 meerdere ratio's te gebruiken om een volledig beeld te krijgen van de 
 financiële gezondheid van een bedrijf.
+
+\subsection{Termenlijst Module 5}
+
+\subsubsection{Basisdocumenten}
+\begin{description}
+    \item[Balans] Momentopname van wat bedrijf bezit (activa) en hoe dit gefinancierd is (passiva)
+    \item[Resultatenrekening] Overzicht van inkomsten en uitgaven over een periode (video van winst/verlies)
+    \item[Toelichting] Extra notities bij balans met details over waarderingsmethoden en risico's
+\end{description}
+
+\subsubsection{Activa (Bezittingen)}
+\begin{description}
+    \item[Vaste activa] Langetermijn investeringen (gebouwen, machines, patenten)
+    \item[Vlottende activa] Kortetermijn bezittingen die binnen 1 jaar in cash omgezet worden (voorraden, vorderingen, bank)
+    \item[Immateriële activa] Niet-fysieke bezittingen (patenten, licenties, merkrechten)
+    \item[Vorderingen] Geld dat klanten nog schuldig zijn
+\end{description}
+
+\subsubsection{Passiva (Financiering)}
+\begin{description}
+    \item[Eigen vermogen] Geld van eigenaren/aandeelhouders (inbreng + ingehouden winst)
+    \item[Vreemd vermogen] Geld van externe financiers (leningen, schulden aan leveranciers)
+    \item[Kortlopende schulden] Schulden die binnen 1 jaar terugbetaald moeten worden
+    \item[Langlopende schulden] Schulden met looptijd langer dan 1 jaar
+\end{description}
+
+\subsubsection{Resultatenrekening}
+\begin{description}
+    \item[Bedrijfsresultaat] Winst uit kernactiviteiten van het bedrijf (operationeel resultaat)
+    \item[Operationeel resultaat] Winst voor interest en belastingen (EBIT - Earnings Before Interest and Taxes)
+    \item[Financieel resultaat] Rente-inkomsten/-kosten, plus andere financiële opbrengsten/lasten
+    \item[Uitzonderlijk resultaat] Eenmalige gebeurtenissen (brand, verkoop divisie, herstructurering)
+    \item[Resultaat van het boekjaar] Netto winst na alle kosten, belastingen en opbrengsten
+\end{description}
+
+\subsubsection{Standaarden \& Verslagen}
+\begin{description}
+    \item[BE GAAP] Belgische boekhoudstandaard (Generally Accepted Accounting Principles)
+    \item[IFRS] Internationale boekhoudstandaard (International Financial Reporting Standards)
+    \item[Jaarverslag] Commentaar over jaarrekening met risico's, continuïteit en toekomstplannen
+    \item[Commissarisverslag] Auditorverslag waarin accountant opinie geeft over betrouwbaarheid jaarrekening
+\end{description}
+
+\subsubsection{Analysetypes}
+\begin{description}
+    \item[Horizontale analyse] Vergelijking cijfers over meerdere jaren om trends te zien
+    \item[Verticale analyse] Analyse verhoudingen binnen hetzelfde jaar (elk item t.o.v. totaal)
+    \item[Ratio-analyse] Berekenen van financiële ratio's om prestaties en gezondheid te beoordelen
+\end{description}
+
+\subsubsection{Liquiditeit}
+\begin{description}
+    \item[Liquiditeit] Vermogen om korte termijn schulden te betalen met beschikbare middelen
+    \item[Current ratio] Vlottende activa / Kortlopende schulden (moet > 1 zijn)
+    \item[Acid test] (Vlottende activa - Voorraden) / Kortlopende schulden (strenger dan current ratio)
+    \item[Netto werkkapitaal] Vlottende activa - Kortlopende schulden (moet positief zijn)
+    \item[Behoefte aan werkkapitaal] Kapitaal nodig voor dagelijkse cyclus (inkoop → productie → verkoop → betaling)
+\end{description}
+
+\subsubsection{Solvabiliteit}
+\begin{description}
+    \item[Solvabiliteit] Vermogen om alle schulden (kort + lang) op lange termijn terug te betalen
+    \item[Interestdekkingsratio] Operationeel resultaat / Interestkosten (meet of bedrijf rente kan betalen)
+    \item[Schuldratio] Totale schuld / Totale activa (aandeel vreemd vermogen in financiering)
+    \item[Gearing ratio] (Totale schuld - Cash) / Eigen vermogen (meet financieel risico)
+\end{description}
+
+\subsubsection{Efficiëntie (Rotatie)}
+\begin{description}
+    \item[Voorraadrotatie] Snelheid waarmee voorraad wordt vervangen (in dagen)
+    \item[Klantenrotatie] Snelheid waarmee klanten betalen (in dagen)
+    \item[Leveranciersrotatie] Tijd die bedrijf neemt om leveranciers te betalen (in dagen)
+\end{description}
+
+\subsubsection{Rentabiliteit}
+\begin{description}
+    \item[Bruto winstmarge] Bedrijfsresultaat / Omzet (winstgevendheid kernactiviteiten)
+    \item[Nettowinstmarge] Resultaat boekjaar / Omzet (totale winstgevendheid na alle kosten)
+    \item[ROE] Return on Equity: Resultaat boekjaar / Eigen vermogen (rendement aandeelhouders)
+    \item[ROA] Return on Assets: Resultaat boekjaar / Totale activa (efficiëntie activagebruik)
+    \item[EPS] Earnings Per Share: Winst per aandeel
+    \item[Koers-winstratio] Marktprijs aandeel / Winst per aandeel (waardering door markt)
+\end{description}
+
+\subsubsection{Overige belangrijke termen}
+\begin{description}
+    \item[BTV] Bruto Toegevoegde Waarde: waarde die onderneming toevoegt aan grondstoffen
+    \item[EBIT] Earnings Before Interest and Taxes (zie Operationeel resultaat)
+    \item[Operationele kasstroom] Geld gegenereerd uit normale bedrijfsactiviteiten
+    \item[Liquide middelen] Cash en direct beschikbare geldmiddelen
+    \item[Handelsvorderingen] Geld dat klanten verschuldigd zijn voor geleverde producten/diensten
+    \item[Handelsschulden] Geld dat bedrijf verschuldigd is aan leveranciers
+\end{description}
+
 
 
 \section{Examenoefeningen}

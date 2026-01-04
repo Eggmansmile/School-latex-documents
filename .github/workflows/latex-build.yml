@@ -3,6 +3,8 @@ name: Build LaTeX
 on:
   push:
     branches: [ main, master, MAIN ]
+    tags:
+      - 'v*'
   pull_request:
     branches: [ main, master, MAIN ]
   workflow_dispatch:
@@ -39,6 +41,16 @@ jobs:
         run: |
           latexmk -pdf -interaction=nonstopmode -file-line-error "ProductieTechnologie-Samenvatting-RubenRyckaert.tex"
 
+      - name: Build `Ingenieur en economie oefeningen` (latexmk)
+        working-directory: "Ingenieur en economie oefeningen"
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "Ingenieur&economie-oefeningen-RubenRyckaert.tex"
+
+      - name: Build `Ingenieur en economie samenvatting` (latexmk)
+        working-directory: "Ingenieur en economie oefeningen"
+        run: |
+          latexmk -pdf -interaction=nonstopmode -file-line-error "Ingenieur&economie-samenvatting-RubenRyckaert.tex"
+
       - name: Build `Examenoefening` (latexmk)
         working-directory: ./math-systems
         run: |
@@ -53,9 +65,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: built-pdfs
+          retention-days: 90
           path: |
             math-systems/MATHSYS-Oefeningen-RubenRyckaert.pdf
             math-systems/Examenoefening.pdf
-            "Warmte en stromingen/Warmte en stromingen Samenvatting Ruben Ryckaert.pdf"
+            Warmte en stromingen/Warmte en stromingen Samenvatting Ruben Ryckaert.pdf
             Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.pdf
+            Ingenieur en economie oefeningen/Ingenieur&economie-oefeningen-RubenRyckaert.pdf
+            Ingenieur en economie oefeningen/Ingenieur&economie-samenvatting-RubenRyckaert.pdf
             latex_templates/template_examples.pdf
