@@ -24,6 +24,7 @@ jobs:
             texlive-latex-recommended texlive-latex-extra texlive-xetex \
             texlive-fonts-recommended texlive-fonts-extra texlive-pictures \
             texlive-science texlive-bibtex-extra biber texlive-lang-european \
+            texlive-plain-generic texlive-luatex \
             latexmk poppler-utils
 
       - name: Build `MATHSYS` (latexmk)
