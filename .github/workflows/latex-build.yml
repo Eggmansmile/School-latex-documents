@@ -27,51 +27,51 @@ jobs:
             texlive-plain-generic texlive-luatex \
             latexmk poppler-utils
 
-      - name: Build `MATHSYS` (latexmk)
-        working-directory: ./math-systems
+      - name: Find and Build LaTeX documents
         run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "MATHSYS-Oefeningen-RubenRyckaert.tex"
-
-      - name: Build `Warmte en stromingen` (latexmk)
-        working-directory: "Warmte en stromingen"
-        run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "Warmte en stromingen Samenvatting Ruben Ryckaert.tex"
-
-      - name: Build `Productietechnologie` (latexmk)
-        working-directory: ./Productietechnologie
-        run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "ProductieTechnologie-Samenvatting-RubenRyckaert.tex"
-
-      - name: Build `Ingenieur en economie oefeningen` (latexmk)
-        working-directory: "Ingenieur en economie oefeningen"
-        run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "Ingenieur&economie-oefeningen-RubenRyckaert.tex"
-
-      - name: Build `Ingenieur en economie samenvatting` (latexmk)
-        working-directory: "Ingenieur en economie oefeningen"
-        run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "Ingenieur&economie-samenvatting-RubenRyckaert.tex"
-
-      - name: Build `Examenoefening` (latexmk)
-        working-directory: ./math-systems
-        run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "Examenoefening.tex"
-
-      - name: Build `template_examples` (latexmk)
-        working-directory: ./latex_templates
-        run: |
-          latexmk -pdf -interaction=nonstopmode -file-line-error "template_examples.tex"
+          # Vind alle hoofddocumenten (exclusief subfiles en templates)
+          find . -type f -name "*.tex" \
+            ! -path "*/.git/*" \
+            ! -path "*/assets/*" \
+            ! -name "school-macros.sty" \
+            ! -name "*-macros.sty" \
+            ! -name "Examenoefening.tex" \
+            -exec grep -l "\\documentclass" {} \; > main_docs.txt
+          
+          echo "## Build Results 📊" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Document | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|----------|--------|" >> $GITHUB_STEP_SUMMARY
+          
+          # Build elk gevonden document
+          while IFS= read -r texfile; do
+            dir=$(dirname "$texfile")
+            file=$(basename "$texfile")
+            name=$(basename "$texfile" .tex)
+            
+            echo "Building: $texfile"
+            
+            cd "$dir"
+            if latexmk -pdf -interaction=nonstopmode -file-line-error "$file" 2>&1 | tee build.log; then
+              echo "| $name | ✅ Success |" >> $GITHUB_STEP_SUMMARY
+              echo "✅ Success: $texfile"
+            else
+              echo "| $name | ❌ Failed |" >> $GITHUB_STEP_SUMMARY
+              echo "❌ Failed: $texfile"
+              # Toon laatste regels van de log voor debugging
+              tail -20 build.log || true
+            fi
+            cd - > /dev/null
+          done < main_docs.txt
 
       - name: Upload built PDFs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: built-pdfs
           retention-days: 90
+          if-no-files-found: warn
           path: |
-            math-systems/MATHSYS-Oefeningen-RubenRyckaert.pdf
-            math-systems/Examenoefening.pdf
-            Warmte en stromingen/Warmte en stromingen Samenvatting Ruben Ryckaert.pdf
-            Productietechnologie/ProductieTechnologie-Samenvatting-RubenRyckaert.pdf
-            Ingenieur en economie oefeningen/Ingenieur&economie-oefeningen-RubenRyckaert.pdf
-            Ingenieur en economie oefeningen/Ingenieur&economie-samenvatting-RubenRyckaert.pdf
-            latex_templates/template_examples.pdf
+            **/*.pdf
+            !**/assets/**
+            !**/.git/**
